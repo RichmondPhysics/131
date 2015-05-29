@@ -1,0 +1,652 @@
+#This file was created by <vineyard> Sat Jul  8 12:25:06 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Kepler's Laws
+\begin_float footnote 
+\layout Standard
+
+Adapted from 
+\bar under 
+Activities in Astronomy
+\bar default 
+, D.
+ Hoff, L.
+ Kelsey, and J.
+ Neff, Kendall/Hunt Publishing Co., 1978.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Objectives:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item The applicability of Kepler's Laws 
+\backslash 
+item The mass of the moon
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent {
+\backslash 
+bf Introduction} 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent Based on data provided by Tycho Brahe, Johannes Kepler devised
+ three laws of planetary motion:
+\layout Standard
+
+
+\latex latex 
+1.
+ The orbits of the planets are ellipses with the sun at one focus.
+\layout Standard
+
+
+\latex latex 
+2.
+ A line segment connecting the sun and a given planet sweeps out equal areas
+ in equal time intervals.
+\layout Standard
+
+
+\latex latex 
+3.
+ The square of the period is proportional to the cube of the semi-major
+ axis of the orbit.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent Newton's Law of Gravitation generalized these laws to apply to
+ any two bodies in orbital motion about one another.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent Newton's analysis led to the following formulation of Kepler's
+ Third Law:
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{equation} T^2 = 
+\backslash 
+frac{4
+\backslash 
+pi^2}{G(M + m)}a^3 
+\backslash 
+end{equation}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent where $M$ and $m$ are the two masses, $T$ is the period of mutual
+ revolution, $G$ is the universal gravitational constant, and $a$ is the
+ semi-major axis of their relative orbit.
+ 
+\backslash 
+
+\backslash 
+
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Apparatus:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item ruler
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity 1: The ellipse} 
+\backslash 
+
+\backslash 
+
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent {
+\backslash 
+bf Discussion} An ellipse is the set of points in the plane for which the
+ sum of the distances from two fixed points is constant.
+ The two points are called foci (the plural of focus).
+ If the center of the ellipse is at the origin, then the standard form of
+ the equation of an ellipse is
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{equation} 
+\backslash 
+frac{x^2}{a^2} + 
+\backslash 
+frac{y^2}{b^2} = 1 
+\backslash 
+end{equation}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent where the curve intercepts the $x$-axis at $(a,0)$ and $(-a,0)$,
+ and the $y$-axis at $(0,b)$ and $(0,-b)$.
+ If $a > b$, then the foci are at $(
+\backslash 
+pm c,0)$, where $c = 
+\backslash 
+sqrt{a^2 - b^2}$.
+ If $a < b$, then the foci are at $(0,
+\backslash 
+pm c)$, where now $c = 
+\backslash 
+sqrt{b^2 - a^2}$.
+ If $a = b$, the ellipse is a circle.
+ The departure from circularity is quantified with the term eccentricity,
+ defined symbolically as
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{equation} 
+\backslash 
+varepsilon = 
+\backslash 
+frac{c}{a} 
+\backslash 
+end{equation}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent when $a > b$.
+ If $P$ is any point on the ellipse, then the sum of its distances from
+ the foci is $2a$ for $a > b$, or $2b$ for $a < b$.
+ An ellipse can be drawn with a string tacked at the foci, pulling the string
+ taut with a pencil, and running the pencil around.
+ 
+\backslash 
+
+\backslash 
+
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Sketch an ellipse with an eccentricity of 1.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vskip35pt
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Sketch an ellipse with an eccentricity of 0.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vskip35pt
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity 2: Explorer 35 and Kepler's Laws}
+\backslash 
+
+\backslash 
+
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent {
+\backslash 
+bf Discussion} Explorer 35 lifted off from Cape Kennedy on 19 July 1967,
+ and entered orbit around the moon on 22 July.
+ The satellite, weighing 230 lbs.
+ (1.04.4 kg), carried instruments for measuring solar x-rays and energetic
+ particles; the solar wind in interplanetary space and its interaction with
+ the moon; and the magnetic properties of the moon.
+ It continued operation until June 1973, having accomplished all its mission
+ objectives.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent The data
+\backslash 
+footnote{From the NASA-Goddard Space Flight Center.} below form a sample
+ set of positions of Explorer 35 in its elliptical orbit about the moon.
+ The time interval between position measurements is 15 minutes.
+ The unit of length is the radius of the moon.
+ The center of the coordinate system is the center of the moon.
+ 
+\backslash 
+
+\backslash 
+
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Using Cricket Graph, plot the data and find the major axis and foci.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Find the semi-major axis, the minor axis, the semi-minor axis, the
+ eccentricity, and the period of the orbit (this last one, by inspection).
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vskip35pt
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Verify Kepler's First Law.
+ [Hint: refer to the definition of an ellipse.]
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vskip35pt
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Determine the areas swept out in a time interval at different points
+ of the orbit and show that Kepler's Second Law is valid.
+ [Hint: use triangles as an approximation.]
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vskip35pt
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Using the Newtonian form of Kepler's Third Law, find the mass of the
+ moon in kilograms.
+ [radius of the moon = 1738 km; and G = 6.668 $times$ 10$^{-8}$ cm$^3$/gm
+ sec$^2$ = 8.642 $
+\backslash 
+times$ 10$^{-13}$ km$^3$/kg hr$^2$]
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vfill 
+\backslash 
+pagebreak 
+\layout Standard
+
+
+\series bold 
+Questions:
+\series default 
+ 
+\layout Enumerate
+\added_space_bottom 30mm 
+Discuss variations in your measurements used to validate the First and Second
+ Laws.
+\layout Enumerate
+\added_space_bottom 30mm 
+Noting the number of significant figures in the data, how do the variations
+ in your measurements compare to the uncertainties in the data?
+\layout Enumerate
+
+Estimate the uncertainty in your determination of the mass of the moon.
+ What has a greater effect, uncertainties in 
+\begin_inset Formula \( a \)
+\end_inset 
+
+ or those in 
+\begin_inset Formula \( T \)
+\end_inset 
+
+?
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vfill 
+\backslash 
+pagebreak
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{center} 
+\backslash 
+begin{tabular}{c c c c|c c c c} 
+\backslash 
+hline 
+\backslash 
+multicolumn{2}{c}{Elapsed} & X & Y & 
+\backslash 
+multicolumn{2}{c}{Elapsed} & X & Y 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+multicolumn{2}{c}{time} & & & 
+\backslash 
+multicolumn{2}{c}{time} & & 
+\backslash 
+
+\backslash 
+ (h) & (m) & (lunar radii) & (lunar radii) & (h) & (m) & (lunar radii) &
+ (lunar radii) 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 0 & 00 & -3.62 & 1.04 & 6 & 00 & 0.27 & 4.86 
+\backslash 
+
+\backslash 
+ 0 & 15 & -3.46 & 0.63 & 6 & 15 & -0.56 & 4.95 
+\backslash 
+
+\backslash 
+ 0 & 30 & -3.25 & 0.20 & 6 & 30 & -0.84 & 5.01 
+\backslash 
+
+\backslash 
+ 0 & 45 & -2.97 & -0.22 & 6 & 45 & -1.12 & 5.03 
+\backslash 
+
+\backslash 
+ 1 & 00 & -2.60 & -0.65 & 7 & 00 & -1.38 & 5.04 
+\backslash 
+
+\backslash 
+ 1 & 15 & -2.14 & -1.03 & 7 & 15 & -1.64 & 5.00 
+\backslash 
+
+\backslash 
+ 1 & 30 & -1.55 & -1.37 & 7 & 30 & -1.89 & 4.95 
+\backslash 
+
+\backslash 
+ 1 & 45 & -0.85 & -1.58 & 7 & 45 & -2.14 & 4.87 
+\backslash 
+
+\backslash 
+ 2 & 00 & -0.03 & -1.59 & 8 & 00 & -2.37 & 4.77 
+\backslash 
+
+\backslash 
+ 2 & 15 & +0.78 & -1.32 & 8 & 15 & -2.59 & 4.65 
+\backslash 
+
+\backslash 
+ 2 & 30 & 1.45 & -0.79 & 8 & 30 & -2.80 & 4.50 
+\backslash 
+
+\backslash 
+ 2 & 45 & 1.87 & -0.11 & 8 & 45 & -2.99 & 4.33 
+\backslash 
+
+\backslash 
+ 3 & 00 & 2.09 & +0.58 & 9 & 00 & -3.17 & 4.14 
+\backslash 
+
+\backslash 
+ 3 & 15 & 2.16 & 1.22 & 9 & 15 & -3.33 & 3.93 
+\backslash 
+
+\backslash 
+ 3 & 30 & 2.11 & 1.82 & 9 & 30 & -3.49 & 3.69 
+\backslash 
+
+\backslash 
+ 3 & 45 & 1.99 & 2.35 & 9 & 45 & -3.59 & 3.42 
+\backslash 
+
+\backslash 
+ 4 & 00 & 1.82 & 2.81 & 10 & 00 & -3.69 & 3.15 
+\backslash 
+
+\backslash 
+ 4 & 15 & 1.61 & 3.22 & 10 & 15 & -3.77 & 2.85 
+\backslash 
+
+\backslash 
+ 4 & 30 & 1.37 & 3.59 & 10 & 30 & -3.81 & 2.52 
+\backslash 
+
+\backslash 
+ 4 & 45 & 1.11 & 3.90 & 10 & 45 & -3.83 & 2.20 
+\backslash 
+
+\backslash 
+ 5 & 00 & 0.85 & 4.16 & 11 & 00 & -3.81 & 1.83 
+\backslash 
+
+\backslash 
+ 5 & 15 & 0.58 & 4.40 & 11 & 15 & -3.76 & 1.46 
+\backslash 
+
+\backslash 
+ 5 & 30 & 0.28 & 4.58 & 11 & 30 & -3.65 & 1.06 
+\backslash 
+
+\backslash 
+ 5 & 45 & 0.00 & 4.74 & 11 & 45 & -3.51 & 0.65 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{tabular} 
+\backslash 
+end{center}
+\the_end

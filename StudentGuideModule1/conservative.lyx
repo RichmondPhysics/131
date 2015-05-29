@@ -1,0 +1,385 @@
+#This file was created by <vineyard> Mon Jul 10 14:36:38 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Conservative and Non-Conservative Forces
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To investigate the conditions under which mechanical energy is conserved.
+ 
+\layout Itemize
+
+To relate conservative and non-conservative forces to the net work done
+ by a force when an object moves in a closed loop.
+\layout Standard
+
+
+\series bold 
+Is Mechanical Energy Conserved for a Sliding Object? 
+\layout Standard
+
+In the last two sessions you should have found that mechanical energy is
+ conserved for a freely falling object.
+ Let's investigate whether mechanical energy is conserved when an object
+ slides down an inclined plane in the presence of a friction force.
+\layout Standard
+
+In this activity you will raise the incline just enough to allow the block
+ to slide at a constant velocity (see the figure below).
+ By measuring the velocity you can determine if mechanical energy is conserved.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 170 80
+file conservative_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+Wooden block with hook 
+\layout Itemize
+
+Board to use as an incline S
+\layout Itemize
+
+Spring scale 
+\layout Itemize
+
+Meter stick 
+\layout Itemize
+
+Variety of masses 
+\layout Itemize
+
+Triple-beam balance 
+\layout Itemize
+
+Stop watch
+\layout Standard
+
+
+\series bold 
+Activity 1: Is Mechanical Energy Conserved for a Sliding Block? 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Raise the incline until the block slides at a constant velocity once
+ it is pushed gently to overcome the static friction force.
+ What is the potential energy of the block at point A relative to the bottom
+ of the ramp? Show your data and calculation.
+\layout Standard
+\added_space_bottom 20mm 
+(b) What is the velocity of the block as it travels down the incline? Show
+ your data and calculation.
+\layout Standard
+\added_space_bottom 20mm 
+(c) What is the kinetic energy of the block at the bottom of the incline?
+ Does it change as the block slides? Show your calculation.
+\layout Standard
+\added_space_bottom 20mm 
+(d) What is the potential energy change, U, of the block when it reaches
+ point B? Explain.
+\layout Standard
+\added_space_bottom 10mm 
+(e) Assuming the initial kinetic energy (just after your starter shove)
+ is the same as the final kinetic energy, what is the kinetic energy change,
+ K, of the block when it reaches point B? 
+\layout Standard
+\added_space_bottom 20mm 
+(f) Is mechanical energy conserved as a result of the sliding.
+ Cite the evidence for your answer.
+\layout Standard
+
+As you examine the activities you just completed you should conclude that
+ the conservation of mechanical energy will probably only hold in situations
+ where there are no friction forces present.
+ 
+\layout Standard
+
+
+\series bold 
+Conservative and Non-Conservative Forces
+\series default 
+ 
+\layout Standard
+
+Physicists have discovered that certain conservative forces such as gravitationa
+l forces and spring forces do no total work on an object when it moves in
+ a closed loop.
+ Other forces involving friction are not conservative and hence the total
+ work these forces do on an object moving in a closed loop is not zero.
+ In this next activity you will try to determine the validity of this assertion.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 140 98
+file conservative_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+It is not hard to see that a gravitational force does no net work when an
+ object moves at a constant speed through a complete round trip.
+ In the above figure, it takes negative external work to lower a mass from
+ point a to point b, as the force of gravity takes care of the work.
+ On the other hand, raising the mass from point b to point a requires positive
+ external work to be done against the force of gravity, and thus the net
+ work done by the gravitational force for the complete trip is zero.
+ When a frictional force is present it always does net work on an object
+ as it undergoes a round trip.
+ For example, when a block slides from point a to point b on a horizontal
+ surface, it takes work to overcome the frictional force that opposes the
+ motion.
+ When the block slides back from point b to point a, the frictional force
+ still opposes the motion of the block so that net work is done.
+ Let's make this idea more concrete by sliding a block around a horizontal
+ loop on your lab table in the presence of a frictional force and computing
+ the work it does.
+ Then you can raise and lower the block around a similar vertical loop and
+ calculate the work the gravitational force does.
+\layout Standard
+
+
+\series bold 
+Activity 2: Are Frictional Forces Conservative According to the Loop Rule?
+\series default 
+ 
+\layout Standard
+
+(a) Put masses on the wooden block and use the spring scale to pull the
+ block around a rectangular path on your table top at constant velocity.
+ Draw arrows along the path for the direction of motion and the direction
+ of the force you exert on the block.
+ List the measured forces and distances for each of the four segments of
+ the path to calculate the work you do around the entire path a to b to
+ a as shown.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 254 86
+file conservative_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 10mm \added_space_bottom 10mm 
+(b) What is the change in K as you progress around the loop?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Is the frictional force conservative or non-conservative (i.e.
+ is the total work done by the friction force zero or non-zero)? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Is mechanical energy conserved? Explain.
+ 
+\layout Standard
+
+Let's return once again to our old friend the gravitational force and apply
+ an external force to move the same block (without the masses) in a vertical
+ loop above the table.
+ Be very, very careful to pay attention to the direction of the gravitational
+ force relative to the direction of the motion.
+ Remember that work is the dot product of this force and the displacement
+ in each case so that the work done by the gravitational force when the
+ block moves up and when it moves down are not the same.
+ What happens to the work when the gravitational force is perpendicular
+ to the direction of motion, as is the case in moving from left to right
+ and then later from right to left?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 320 174
+file conservative_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 3: Are G-Forces Conservative? 
+\layout Standard
+\added_space_bottom 40mm 
+(a) Use the spring scale and raise and lower the wooden block around a rectangul
+ar path above your tabletop at a constant speed without allowing it to slide
+ at all.
+ Draw arrows along the path for the direction of motion and the direction
+ of the gravitational force exerted on the block.
+ Use your measured distances, the measurement of the mass of the block and
+ the dot product notation to calculate the work done by the gravitational
+ force on the block over the entire path a to b to a as shown.
+ Be careful not to let the block slide on the table or rub against it.
+ Don't forget to specify the units! Hints: (1) In path 1 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x = x
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ - x
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+y = y
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ - y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ etc.
+ (2) Keep track of the signs.
+ For which paths is the work negative? Positive?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Is the gravitational force conservative or non-conservative according
+ to the loop rule? Explain.
+\layout Standard
+
+
+\series bold 
+The Conservation of "Missing" Energy
+\series default 
+ 
+\layout Standard
+
+We have seen in the case of the sliding block that the Law of Conservation
+ of Mechanical Energy does not seem to hold for forces involving friction.
+ The question is, where does the "missing" energy 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+E go when frictional forces are present? All the energy in the system might
+ not be potential energy or kinetic energy.
+ If we are clever and keep adding new kinds of energy to our collection,
+ we might be able to salvage a Law of Conservation of Energy.
+ If we can, this law has the potential to be much more general and powerful
+ than the Law of Conservation of Mechanical Energy.
+\layout Standard
+
+
+\series bold 
+Activity 4: What Happens to the Missing Energy?
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Rub the sliding block back and forth vigorously against your hand? What
+ sensation do you feel?
+\layout Standard
+\added_space_bottom 20mm 
+(b) How might this sensation account for the missing energy?
+\layout Standard
+
+Physicists call the energy which is lost by a system as a result of work
+ done against frictional forces thermal energy.
+ This thermal energy may lead to an increase in the system's internal energy.
+ Using the symbol E
+\begin_inset Formula \( _{int} \)
+\end_inset 
+
+ to represent the change in internal energy of a system that experiences
+ frictional forces allows us to express the Law of Conservation of Total
+ Energy mathematically with the expression
+\begin_inset Formula 
+\[
+E=U+K+\Delta E_{int}=constant\]
+
+\end_inset 
+
+
+\layout Standard
+
+We are not prepared in this part of the course to consider the nature of
+ internal energy or its actual measurement, so the Law of Conservation of
+ Energy will for now remain an untested hypothesis.
+ However, we will re-consider the concept of internal energy later in the
+ course when we deal with heat and temperature.
+\the_end

@@ -1,0 +1,844 @@
+#This file was created by <vineyard> Thu Jul  6 16:37:15 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Newton's 3rd Law, Tension, and Normal Forces
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To investigate Newton's 3rd law of motion.
+ 
+\layout Itemize
+
+To explore the characteristics of two different types of passive forces:
+ tension (in strings, ropes, springs, and chains), and normal forces (which
+ support objects affected by gravity).
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+Spring scales (2) 
+\layout Itemize
+
+Variety of masses 
+\layout Itemize
+
+Rubber band 
+\layout Itemize
+
+Various lengths of string 
+\layout Itemize
+
+Pulleys (2)
+\layout Standard
+
+
+\series bold 
+An Introduction to Newton's Third Law 
+\layout Standard
+
+In order to apply Newton's laws to complex situations with strings, pulleys,
+ inclined planes and so forth, we need to consider a third force law formulated
+ by Newton having to do with the forces of interaction between two objects.
+ In order to "discover" some simple aspects of the third law, you should
+ make some straightforward observations using 2 spring scales and a set
+ of masses.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 393 138
+file newton_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 1: Newton's 3rd Law Forces of Interaction 
+\layout Standard
+\added_space_bottom 20mm 
+Set up the situations shown in the diagram above and see if there are any
+ circumstances in which the object that is pulling and the object that is
+ being pulled exert different forces on each other.
+ Describe your conclusions below.
+ Note: You can drag the mass set block across the table for your dynamic
+ observations.
+\layout Standard
+
+In contemporary English, Newton's third law can be stated as follows:
+\layout Standard
+
+
+\series bold 
+Newton's Third Law 
+\layout Standard
+
+
+\shape italic 
+If one object exerts a force on a second object, then the second object
+ exerts a force back on the first object which is equal in magnitude and
+ opposite in direction to that exerted on it by the first object.
+\layout Standard
+
+In mathematical terms, using vector notation, we would say that the forces
+ of interaction of object 1 on object 2 are related to the forces of interaction
+ of object 2 on object 1 as follows:
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 219 67
+file newton_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Newton actually formulated the third law by studying the interactions between
+ objects when they collide.
+ It is difficult to understand the significance of this law fully without
+ first studying collisions.
+ Thus, we will consider this law again in the study of collision processes.
+\layout Standard
+
+
+\series bold 
+Tension Forces 
+\layout Standard
+
+When you pull on one end of a rope attached to a crate, a force is transmitted
+ down the rope to the crate.
+ If you pull hard enough the crate may begin to slide.
+ Tension is the name given to forces transmitted in this way along devices
+ that can stretch such as strings, ropes, rubber bands, springs, and wires.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 418 83
+file newton_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+The end of the rope which is tied to the crate can apply a force to the
+ crate only if you first pull on the other end of the rope.
+ Thus, tension, like friction, is a passive force that only acts in reaction
+ to an active force.
+ However, the characteristics of tension are very different than those of
+ friction.
+ In order to analyze situations in which objects are attached by strings,
+ rubber bands, or ropes it is necessary to understand some attributes of
+ tension forces.
+ We need to answer the following related questions:
+\layout Enumerate
+
+(a) What is the mechanism for creating tension in strings, ropes, and rubber
+ bands? (b) If a string exerts a tension force on an object at one end,
+ what is the magnitude and direction of the tension force it exerts on another
+ object at its other end?
+\layout Enumerate
+
+What happens to the magnitude and directions of the tension forces at each
+ end of a string and in the middle of that string when the direction of
+ the string is changed by a post or pulley?
+\layout Enumerate
+
+Can a flexible force transmitter (like a string) support a lateral (or sideways)
+ force?
+\layout Standard
+
+
+\series bold 
+Mechanisms for Tension and the Direction of Forces 
+\layout Standard
+
+For these observations you should stretch a rubber band and then a string
+ between your hands as shown in the diagram below.
+ First, just feel the directions of the forces.
+ Then add the spring scales and both feel and measure the forces.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 357 51
+file newton_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 2: Tension Mechanisms & Force Directions 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Pull on the two ends of a rubber band.
+ (Forget about the spring scales for now).
+ Does the rubber band stretch? What is the direction of the force applied
+ by the rubber band on your right hand? On your left hand?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Does the magnitude of the forces applied by the rubber band on each
+ hand feel the same?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Repeat this activity with a string instead of a rubber band.
+ This time, use a spring scale at each end to measure the forces at the
+ ends of the string.
+ Does the string stretch? (Look carefully!)
+\layout Standard
+\added_space_bottom 10mm 
+(d) If you pull by the same amount on the string as you did on the rubber
+ band, does substituting the string for the rubber band change anything
+ about the directions and magnitudes of the tension forces exerted on each
+ hand? 
+\layout Standard
+\added_space_bottom 20mm 
+(e) If the forces caused by the string on your left and right hands respectively
+ are given by F
+\begin_inset Formula \( _{T1} \)
+\end_inset 
+
+ and F
+\begin_inset Formula \( _{T2} \)
+\end_inset 
+
+, what is the equation that relates these two forces?
+\layout Standard
+
+
+\series bold 
+Tension Forces when a String Changes Direction 
+\layout Standard
+
+Suppose you were to hang equal masses of m = 0.5 kg in the various configurations
+ shown below.
+ Predict and measure the tension in the string for each of the following
+ situations.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 344 258
+file newton_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 3: Tension and Direction Changes
+\layout Standard
+
+(a) For each configuration shown above, predict the reading in newtons on
+ each of the spring scales; these readings indicate the forces that are
+ transmitted by the tensions at various places along the string.
+ Then measure all of the forces and record their values.
+ Note: Remember that m = 0.5 kg.
+\layout Standard
+
+
+\hfill 
+Predicted Force Magnitudes 
+\hfill 
+Measured Force Magnitudes
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{A} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{A} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{B} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{B} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{C} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{C} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{D} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{D} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{E} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{E} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{F} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{F} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{G} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{G} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{H} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{H} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+
+\hfill 
+F
+\begin_inset Formula \( _{I} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+F
+\begin_inset Formula \( _{I} \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ N
+\hfill 
+
+\layout Standard
+
+(b) Based on Newton's third law and the observations you just made, answer
+ the following questions using vector notation.
+ If the muscle man in the diagram below is pulling to the left on a rope
+ with a force of 
+\series bold 
+F 
+\series default 
+= -(150 N)
+\series bold 
+i
+\series default 
+.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 336 92
+file newton_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(1) What is the magnitude and direction of the force that the rope is exerting
+ on the man? 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(2) What force is the left-hand rope exerting on the monkey's right arm?
+ 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(3) What force is the spring scale experiencing on its left end? 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(4) What force is the spring scale experiencing on its right end? 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(5) What is the reading on the spring scale? 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(6) What force is the rope exerting on the tree? 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(7) What force is the tree exerting on the rope? 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+\added_space_bottom 20mm 
+(c) Summarize what your observations reveal about the nature of tension
+ forces everywhere along a string.
+\layout Standard
+
+
+\series bold 
+Can a String Support Lateral Forces? 
+\layout Standard
+
+Take a look at the diagram below.
+ Can the strongest member of your group stretch a string or rope so that
+ it is perfectly horizontal when a 10 kg mass is hanging from it? In other
+ words, can the string provide a force that just balances the force exerted
+ by the mass?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 239 174
+file newton_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 4: Can a String Support a Lateral Force?
+\series default 
+ 
+\layout Standard
+
+(a) Draw a vector diagram showing the directions of the forces exerted by
+ the strings on the mass hook in the diagram below.
+ What would happen to the direction of the forces as 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ goes to zero? Do you think it will be possible to support the mass when
+ 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ = 0? Why?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 226 162
+file newton_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) Now, experiment with holding a mass horizontally with a string.
+ What do you conclude about the ability of a string to support a mass having
+ a force which is perpendicular to the direction of the string?
+\layout Standard
+
+
+\series bold 
+Normal Forces
+\series default 
+ 
+\layout Standard
+
+A book resting on a table does not move; neither does a person pushing against
+ a wall.
+ According to Newton's first law the net force on the book and on the person's
+ hand must be zero.
+ We have to invent another type of passive force to explain why books don't
+ fall through tables and hands don't usually punch through walls.
+ The force exerted by any surface always seems to act in a direction perpendicul
+ar to that surface; such a force is known as a normal force.
+ Normal forces are passive forces because they seem to act in response to
+ active forces like pushing forces and gravitational forces.
+\layout Standard
+
+
+\series bold 
+Activity 5: Normal Forces 
+\layout Standard
+
+(a) The diagram below shows a block sliding along a table near the surface
+ of the earth at a constant velocity.
+ According to Newton's first law, what is the net force on the block? In
+ other words, what is the vector sum of all the forces on the block?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 192 62
+file newton_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 30mm 
+(b) The net force is made up of four forces.
+ What are the two active forces? What are the two passive forces? In what
+ direction does each one act? Draw a diagram indicating the direction of
+ each of the forces.
+\layout Standard
+
+
+\series bold 
+Gravitational Force on a Mass on an Incline 
+\layout Standard
+
+Suppose that a block of mass m is perched on an incline of angle 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ as shown in the diagram below.
+ Also suppose that you know the angle of the incline and the magnitude and
+ direction of the gravitational force vector.
+ What do you predict the magnitude of the components of the force vector
+ will be parallel to the plane? Perpendicular to the plane?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 304 104
+file newton_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 6: Components of F
+\begin_inset Formula \( _{g} \)
+\end_inset 
+
+ on an Incline 
+\layout Standard
+\added_space_bottom 20mm 
+(a) The angle that the incline makes with the horizontal and the angle between
+ F
+\begin_inset Formula \( _{perpendicular} \)
+\end_inset 
+
+ and F
+\begin_inset Formula \( _{g} \)
+\end_inset 
+
+ are the same.
+ Explain why.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Choose a coordinate system with the x-axis parallel to the plane with
+ the positive direction up the plane.
+ Using normal mathematical techniques for finding the components of a vector,
+ find the values of F
+\begin_inset Formula \( _{parallel} \)
+\end_inset 
+
+ and F
+\begin_inset Formula \( _{perpendicular} \)
+\end_inset 
+
+ as a function of F
+\begin_inset Formula \( _{g} \)
+\end_inset 
+
+ and the angle of the incline 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+.
+\layout Standard
+
+(c) What is the equation for the magnitude of the normal force exerted on
+ the block by the surface of the incline? Hint: Use Newton's first law and
+ the knowledge that the block is not moving in a direction perpendicular
+ to the plane.
+\the_end

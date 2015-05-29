@@ -1,0 +1,611 @@
+#This file was created by <vineyard> Wed Jul  5 09:55:58 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Position vs.
+ Time Graphs
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To learn about two of the ways that physicists can describe motion in one
+ dimension-words and graphs.
+ 
+\layout Itemize
+
+To learn how to relate graphs of position vs.
+ time to the motions they represent.
+\layout Standard
+
+
+\series bold 
+Introduction
+\series default 
+ 
+\layout Standard
+
+The focus of this unit on kinematics is to be able to describe your position
+ as a function of time using words and graphs.
+ You will use a motion detector attached to a computer in the laboratory
+ to learn to describe one-dimensional motion.
+\layout Standard
+
+The ultrasonic motion detector sends out a series of sound pulses that are
+ of too high a frequency to hear.
+ These pulses reflect from objects in the vicinity of the motion detector
+ and some of the sound energy returns to the detector.
+ The computer is able to record the time it takes for reflected sound waves
+ to return to the detector and then, by knowing the speed of sound in air,
+ figure out how far away the reflecting object is.
+ There are several things to watch out for when using a motion detector.
+ (1) Do not get closer than 0.15 meters from the detector because it cannot
+ record reflected pulses which come back too soon.
+ (2) The ultrasonic waves come out in a cone of about 15
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+.
+ It will see the closest object.
+ Be sure there is a clear path between the object whose motion you want
+ to track and the motion detector.
+ (3) The motion detector is very sensitive and will detect slight motions.
+ You can try to glide smoothly along the floor, but don't be surprised to
+ see small bumps in velocity graphs.
+ (4) Some objects like bulky sweaters are good sound absorbers and may not
+ be "seen" well by a motion detector.
+ You may want to hold a book or a board in front of you if you have loose
+ clothing on.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+Ultrasonic motion detector 
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (Position Graphs application)
+\layout Itemize
+
+Wooden board
+\layout Itemize
+
+Masking tape for marking distances
+\layout Standard
+
+
+\series bold 
+Position vs.
+ Time Graphs of Your Motion 
+\layout Standard
+
+The purpose of this unit is to learn how to relate graphs of position as
+ a function of time to the motions they represent.
+ How does a position vs.
+ time graph look when you move slowly? Quickly? What happens when you move
+ toward the motion detector? Away? After completing the next few activities,
+ you should be able to look at a position vs.
+ time graph and describe the motion of the object.
+ You should also be able to look at the motion of an object and sketch a
+ graph representing that motion.
+\layout Standard
+
+Note that the motion detector measures the distance of an object from the
+ detector, and that the motion detector is located at the origin of each
+ graph.
+ It is common to refer to the distance of an object from some origin as
+ the position of the object.
+ Therefore, it is better to refer to these graphs as position vs.
+ time graphs than distance vs.
+ time graphs.
+\layout Standard
+
+You will use the 
+\shape italic 
+DataStudio
+\shape default 
+ software to do the following activities.
+ An application has been created for this purpose.
+ Launch the 
+\series bold 
+Position Graphs 
+\series default 
+application from the 
+\series bold 
+131 Workshop
+\series default 
+ submenu of the 
+\series bold 
+Apple
+\series default 
+ menu.
+ To start a data run, click the 
+\series bold 
+Start
+\series default 
+ button.
+ To stop a data run, click the 
+\series bold 
+Stop
+\series default 
+ button.
+ After a data run, the graph can be expanded by clicking on the 
+\series bold 
+Scale to fit
+\series default 
+ button in the upper left corner of the Graph window.
+ Multiple data sets can be displayed on the same graph.
+ Data can be removed from the graph by selecting 
+\series bold 
+Delete Last Data Run
+\series default 
+ or 
+\series bold 
+Delete All Data Runs
+\series default 
+ from the 
+\series bold 
+Experiment
+\series default 
+ menu.
+ When you are finished with the activities, choose 
+\series bold 
+Quit
+\series default 
+ from the 
+\series bold 
+File
+\series default 
+ menu and do not save this activity.
+\layout Standard
+
+Before you begin the activities, you should mark a position scale on the
+ floor.
+ To do this, position one person at approximately 1 meter in front of the
+ motion detector and run the VI for 1 second.
+ The computer will display a horizontal line showing the position measured
+ by the detector.
+ The person standing in front of the detector should then adjust his/her
+ position and the procedure repeated until the 1 meter position is established.
+ Mark the 1 meter position on the floor with a piece of masking tape and
+ then mark the 2, 3 and 4 meter positions using the 2 meter stick.
+\layout Standard
+
+
+\series bold 
+Activity 1: Making Position vs.
+ Time Graphs 
+\layout Standard
+
+Make position-time graphs for the following motions and sketch the graph
+ you observe in each case:
+\layout Standard
+
+(a) Starting at 0.5 m, walk away from the origin (i.e.
+ the detector) slowly and steadily.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 165 127
+file position_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Walk away from the origin medium-fast and steadily.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 165 127
+file position_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(c) Walk toward the detector (origin) slowly and steadily.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 165 127
+file position_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(d) Describe the difference between the graph you made by walking away slowly
+ and the one made by walking away more quickly.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Describe the difference between the graph made by walking toward and
+ the one made walking away from the motion detector.
+\layout Standard
+
+
+\series bold 
+Activity 2: Predicting a Position vs.
+ Time Graph
+\series default 
+ 
+\layout Standard
+
+(a) Suppose your were to start 1.0 m in front of the detector and walk away
+ slowly and steadily for 4 seconds, stop for 4 seconds, and then walk toward
+ the detector quickly.
+ Sketch your prediction on the axes below using a dashed line.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 468 247
+file position_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Test your prediction by moving in the way described and making a graph
+ of your motion with the motion detector.
+ Sketch the trace of your actual motion on the above graph with a solid
+ line.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(c) Is your prediction the same as the final result? If not, describe how
+ you would move to make a graph that looks like your prediction.
+\layout Standard
+
+
+\series bold 
+Activity 3: Matching Position vs.
+ Time Graphs
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 408 190
+file position_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 30mm 
+(a) Describe in your own words how you would move in order to match the
+ graph shown above.
+\layout Standard
+
+(b) Move to match the above graph on the computer screen.
+ You may try a number of times.
+ It helps to work as a team.
+ Get the times right.
+ Get the positions right.
+ Do this for yourself.
+ (Each person in your group should do his or her own match.) You will not
+ learn very much by just watching!
+\layout Standard
+\added_space_bottom 20mm 
+(c) What was the difference in the way you moved to produce the two differently
+ sloped parts of the graph you just matched?
+\layout Standard
+
+(d) Make curved position vs.
+ time graphs like those shown below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 284 108
+file position_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(e) Describe how you must move to produce a position vs.
+ time graph with each of the shapes shown.
+\layout Standard
+\added_space_bottom 10mm 
+Graph 1 answer:
+\layout Standard
+\added_space_bottom 10mm 
+Graph 2 answer:
+\layout Standard
+\added_space_bottom 20mm 
+(f) What is the general difference between motions which result in a straight-li
+ne position vs.
+ time graph and those that result in a curved-line position vs.
+ time graph?
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+
+Answer the following questions in the spaces provided.
+\layout Standard
+
+1.What do you do to create a horizontal line on a position-time graph?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 123 87
+file position_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+2.
+ How do you walk to create a straight line that slopes up?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 123 87
+file position_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+3.
+ How do you walk to create a straight line that slopes down?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 123 87
+file position_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+4.
+ How do you move so the graph goes up steeply at first, then continues up
+ gradually?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 123 87
+file position_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+5.
+ How do you walk to create a U-shaped graph?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 123 87
+file position_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Answer the following about the two objects , A and B, whose motion produced
+ the following position-time graphs.
+\layout Standard
+
+6.
+ (a) Which object is moving faster? (b) Which starts ahead? Define what
+ you mean by "ahead.
+ "(c) What does the intersection mean?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 206 113
+file position_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+7.
+ (a) Which object is moving faster? (b) Which object has a negative velocity
+ according to the convention we have established?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 194 105
+file position_fig11.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+8.
+ (a) Which object is moving faster? (b) Which starts ahead? Define what
+ you mean by "ahead.
+ "
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 194 105
+file position_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Sketch the position-time graph corresponding to each of the following descriptio
+ns of the motion of an object.
+\layout Standard
+
+9.
+ The object moves with a steady (constant) velocity away from the origin.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 176 100
+file position_fig13.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+10.
+ The object is standing still.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 176 100
+file position_fig13.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+11.
+ The object moves with a steady (constant) velocity toward the origin for
+ 5 seconds and stands still for 5 seconds.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 176 100
+file position_fig13.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+12.
+ The object moves with a steady velocity away from the origin for 5 seconds,
+ then reverses direction and moves at the same speed toward the origin for
+ 5 seconds.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 176 100
+file position_fig13.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+13.
+ The object moves away from the origin, starting slowly and speeding up.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 176 100
+file position_fig13.eps
+flags 9
+
+\end_inset 
+
+
+\the_end

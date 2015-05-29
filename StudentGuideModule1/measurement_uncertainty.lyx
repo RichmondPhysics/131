@@ -1,0 +1,378 @@
+#This file was created by <vineyard> Wed Jul  5 09:54:53 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Measurement Uncertainty and Variation
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To explore the mathematical meaning of the standard deviation and standard
+ error associated with a set of measurements.
+ 
+\layout Itemize
+
+To investigate random and systematic variations associated with a set of
+ measurements.
+\layout Standard
+
+
+\series bold 
+Statistics - The Inevitability of Uncertainty 
+\layout Standard
+
+With care and attention, it is commonly believed that both mistakes and
+ systematic errors can be eliminated completely.
+ However, inherent uncertainties do not result from mistakes or errors.
+ Instead, they can be attributed in part to the impossibility of building
+ measuring equipment that is precise to an infinite number of significant
+ figures.
+ The ruler provides us with an example of this.
+ It can be made better and better, but it always has an ultimate limit of
+ precision.
+\layout Standard
+
+Another cause of inherent uncertainties is the large number of random variations
+ affecting any phenomenon being studied.
+ For instance, if you repeatedly drop a baseball from the level of the lab
+ table and measure the time of each fall, the measurements will most probably
+ not all be the same.
+ Even if the stop watch was gated electronically so as to be as precise
+ as possible, there would be small fluctuations in the flow of currents
+ through the circuits as a result of random thermal motion of atoms and
+ molecules that make up the wires and circuit elements.
+ This could change the stop watch reading from measurement to measurement.
+ The sweaty palm of the experimenter could cause the ball to stick to the
+ hand for an extra fraction of a second, slight air currents in the room
+ could change the ball's time of fall, vibrations could cause the floor
+ to oscillate up and down an imperceptible distance, and so on.
+\layout Standard
+
+
+\series bold 
+Repeated Time-of-Fall Data
+\series default 
+ 
+\layout Standard
+
+In the first two activities, you and your partners will take repeated data
+ on the time of fall of a ball and study how the data varies from some average
+ value for the time-of-fall.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+A ball 
+\layout Itemize
+
+A stop watch 
+\layout Itemize
+
+A 2-meter stick
+\layout Standard
+
+
+\series bold 
+Activity 1: Timing a Falling Ball
+\series default 
+ 
+\layout Standard
+\added_space_bottom 50mm 
+(a) Drop the ball so it falls through a height of exactly 2.0 m at least
+ 20 times in rapid succession and measure the time of fall.
+ Be as exact as possible about the height from which you drop the ball.
+ Record the data in a table below.
+\layout Standard
+\added_space_bottom 10mm 
+(b) Enter your data as a single column in Cricket Graph and run single column
+ statistics on the data.
+ See Appendix C for instructions.
+ Report the average (mean) value in the space below.
+\layout Standard
+
+
+\series bold 
+The Standard Deviation as a Measure of Uncertainty 
+\layout Standard
+
+How certain are we that the average fall-time determined in the previous
+ activity is accurate? The average of a number of measurements does not
+ tell the whole story.
+ If all the times you measured were the same, the average would seem to
+ be very precise.
+ If each of the measurements varied from the others by a large amount, we
+ would be less certain of the meaning of the average time.
+ We need criteria for determining the certainty of our data.
+ Statisticians often use a quantity called the standard deviation as a measure
+ of the level of uncertainty in data.
+ The standard deviation is usually represented by the Greek letter 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+ (sigma).
+ A customary way of expressing an experimentally determined value is: Mean
+ ± 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+.
+ The formal mathematical definition of 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+ can be found in Appendix A.
+\layout Standard
+
+In the next activity you will use Cricket Graph (see Appendix C) to calculate
+ the value of the standard deviation for the repeated fall-time data you
+ just obtained and explore how the standard deviation is related to variation
+ in your data.
+ In particular, you will try to answer this question: What percentage of
+ your data lies within one standard deviation of the average you calculated?
+\layout Standard
+
+
+\series bold 
+Activity 2: Standard Deviation
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Report the value for the standard deviation of your data in the space
+ below.
+\layout Standard
+\added_space_bottom 10mm 
+(b) Calculate the average plus the standard deviation, <t> + 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+, and the average minus the standard deviation, <t> - 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+, and record the results in the space below.
+\layout Standard
+\added_space_bottom 10mm 
+(c) Determine the number of your data points that lie within ±
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+ of the average and write the result in the space below.
+ Also, calculate the percentage of data points lying within a standard deviation
+ of the average and report that result.
+\layout Standard
+\added_space_bottom 50mm 
+(d) Combine your results with those obtained by the other groups in the
+ class and create a table in the space below with the following column headings:
+ Lab Station, <t> (s), 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+ (s), %Data ± 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Study the last column, which represents the percentage of data points
+ lying within one standard deviation of the average.
+ What does the standard deviation, 
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+, tell you about the approximate probability that another measurement will
+ lie within ±
+\begin_inset Formula \( \sigma  \)
+\end_inset 
+
+ of the average?
+\layout Standard
+
+
+\series bold 
+Systematic Error - How About the Accuracy of Your Timing Device and Timing
+ Methods?
+\series default 
+ 
+\layout Standard
+
+As the result of problems with your measuring instrument or the procedures
+ you are using, each of your measurements may tend to be consistently too
+ high or too low.
+ If this is the case, you probably have a source of systematic error.
+ There are several types of systematic error.
+\layout Standard
+
+Most of us have set a watch or clock only to see it gain or lose a certain
+ amount of time each day or week.
+ In ordinary language we would say that such a time keeping device is inaccurate.
+ In scientific terms, we would say that it is subject to systematic error.
+ In the case of a stopwatch or digital timer that doesn't run continuously
+ like a clock, we have to ask an additional set of questions.
+ Does it start up immediately? Does it stop exactly when the event is over?
+ Is there some delay in the start and stop time? A delay in starting or
+ stopping a timer could also cause systematic error.
+\layout Standard
+
+Finally, systematic error can be present as a result of the methods you
+ and your partner are using for making the measurement.
+ For example, are you starting the timer exactly at the beginning of the
+ event being measured and stopping it exactly at the end? Are you dropping
+ the ball from a little above the exact starting point each time? A little
+ below?
+\layout Standard
+
+It is possible to correct for systematic error if you can quantify it.
+ Suppose that God, who is a theoretical physicist, said that the distance
+ in meters, y, that a ball falls after a time of t seconds near the earth's
+ surface in most places is given by the equation
+\begin_inset Formula 
+\[
+y=\frac{1}{2}gt^{2}\]
+
+\end_inset 
+
+
+\layout Standard
+
+where g is the gravitational constant (equal to 9.8 m/s/s).
+ (In this idealized equation the effects of air resistance have been neglected.)
+\layout Standard
+
+Does the theoretical value for the time-of-fall lie within the standard
+ error of your average measured value? In the activity that follows, you
+ should compare your average time-of-fall with that expected by theory to
+ determine if a systematic error exists.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 3: Is There Systematic Error in the Data? 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Calculate the theoretical, God given, time-of-fall in the space below.
+\layout Standard
+\added_space_bottom 10mm 
+(b) Does the theoretical value lie in the range of your own average value
+ with its associated uncertainty? If not, you probably have a source of
+ systematic error.
+\layout Standard
+\added_space_bottom 30mm 
+(c) If you seem to have systematic error, explain whether the measured times
+ tend to be too short or too long and list some of the possible causes of
+ it in the space below.
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+\added_space_bottom 30mm 
+1.
+ Suppose you made the following five length measurements of the width of
+ a piece of 8 1/2" X 11" paper which has been cut carefully by a manufacturer
+ using an unfamiliar centimeter rule: 21.33 cm, 21.52 cm, 21.47.
+ cm, 21.21 cm, 21.45 cm.
+ (a) Find the mean and standard deviation of the measurements.
+ The formal mathematical definition of s is given in Appendix A.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Is there any evidence of uncertainty in the measurements or are they
+ precise? Explain.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(c) Is there any evidence of systematic error in the measurements? If so,
+ what might cause this? Explain.
+\layout Standard
+
+2.
+ Suppose Ashley and Ryan each throw darts at targets as shown below.
+ Each of them is trying very hard to hit the bulls eye each time.
+ Discuss in essay form which of the two students has the least uncertainty
+ associated with his or her throws and is thus more precise.
+ Is one of the students less accurate is the sense of having a systematic
+ error associated with his or her throws? What factors like eyesight and
+ coordination might cause one to be more precise and another more accurate?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 348 169
+file measurement_uncertainty_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\the_end

@@ -1,0 +1,559 @@
+#This file was created by <vineyard> Fri Jul  7 09:30:15 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Gravity and Free Fall
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Standard
+
+To explore the phenomenon of gravity and study the nature of motion along
+ a vertical line near the earth's surface.
+\layout Standard
+
+
+\series bold 
+Overview 
+\layout Standard
+
+When an object falls close to the surface of the earth, there is no obvious
+ force being applied to it.
+ Whatever is causing it to move is invisible.
+ Most people casually refer to the cause of falling motions as the action
+ of "gravity." What is gravity? Can we describe its effects mathematically?
+ Can Newton's laws be interpreted in such a why that they can be used for
+ the mathematical prediction of motions that are influenced by gravity?
+ In this investigation we will study the phenomenon of gravity for vertical
+ motion.
+ You will need:
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A tennis ball.
+ 
+\layout Itemize
+
+A video analysis system (
+\shape italic 
+Adobe Premier
+\shape default 
+ and 
+\shape italic 
+VideoPoint
+\shape default 
+).
+ 
+\layout Itemize
+
+The Demon Drop video.
+ 
+\layout Itemize
+
+Graphing software (
+\shape italic 
+Cricket Graph
+\shape default 
+).
+\layout Standard
+
+
+\series bold 
+Vertical Motion: Describing How Objects Rise and Fall 
+\layout Standard
+
+Let's begin the study of the phenomenon of gravity by predicting the nature
+ of the motion of an object, such as a tennis ball, when it is tossed up
+ and then allowed to fall vertically near the surface of the earth.
+ This is not easy since motion happens pretty fast! To help you with this
+ prediction you should toss a ball in the laboratory several times and see
+ what you think is going on.
+\layout Standard
+
+
+\series bold 
+Activity 1: Predicting the Motion of a Tossed Ball 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Toss a ball straight up a couple of times and then describe how you
+ think it might be moving when it is moving upward.
+ Some possibilities include: (1) rising at a constant velocity; (2) rising
+ with an increasing acceleration; (3) rising with a decreasing acceleration;
+ or (4) rising at a constant acceleration.
+ What do you think?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Explain the basis for your prediction.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Now describe how you think the ball might be moving when it is moving
+ downward.
+ Some possibilities include: (1) falling at a constant velocity; (2) falling
+ with an increasing acceleration; (3) falling with a decreasing acceleration;
+ or (4) falling at a constant acceleration.
+ What do you think?
+\layout Standard
+\added_space_bottom 20mm 
+(d) Explain the basis for your prediction.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Do you expect the acceleration when the ball is rising to be different
+ in some way than the acceleration when the ball is falling? Why or why
+ not?
+\layout Standard
+\added_space_bottom 20mm 
+(f) What do you think that the acceleration will be at the moment when the
+ ball is at its highest point? Why?
+\layout Standard
+
+The motion of a tossed ball is too fast to observe carefully by eye without
+ the aid of special instruments.
+ In the next activity we will use a video analysis system to study the motion
+ of a freely falling object.
+ The Demon Drop is a popular ride at the Cedar Run Amazement Park in Sandusky,
+ Ohio.
+ It allows 8 people to get into a little cage and experience free fall.
+ Physics teacher Bob Speers of Firelands College in Huron Ohio took a video
+ tape of the drop which you can analyze using the VideoPoint software.
+ You will use a sequence of these video frames and mathematical modeling
+ techniques to find an equation that describes the fall.
+\layout Standard
+
+
+\series bold 
+Activity 2: Analyzing the Motion of the Demon Drop
+\series default 
+ 
+\layout Standard
+
+(a) Determine the y position of the Demon Drop at different times during
+ the motion.
+ To do this: 
+\layout Enumerate
+
+Start up 
+\shape italic 
+VideoPoint
+\shape default 
+ by going to the Apple Menu in the upper left corner of the screen and click
+ and drag down to highlight 
+\shape italic 
+VideoPoint alias
+\shape default 
+.
+ Click the mouse in the window titled "About VideoPoint".
+ 
+\layout Enumerate
+
+Click on 
+\series bold 
+Open Movie
+\series default 
+ and select the Demon Drop video.
+ 
+\layout Enumerate
+
+
+\shape italic 
+VideoPoint
+\shape default 
+ will request the number of objects you want to track in the movie.
+ Enter 1" in the space provided and click 
+\series bold 
+OK
+\series default 
+.
+ You will now see several windows.
+ One contains the movie and has control buttons and a slider along the bottom
+ of the frame to control the motion of the film.
+ Experiment with these controls to learn their function.
+ Another window below the movie frame contains position and time data and
+ a third window to the right of the frame describes the coordinate system
+ in use.
+ 
+\layout Enumerate
+
+This is a good time to calibrate the scale.
+ We will use the distance between the horizontal struts on the tower which
+ is 4.0 m.
+ Under the 
+\series bold 
+Movie
+\series default 
+ menu highlight 
+\series bold 
+Scale Movie
+\series default 
+.
+ A dialog box will appear.
+ Enter the distance between the struts and set 
+\series bold 
+Scale Type
+\series default 
+ to 
+\series bold 
+Fixed
+\series default 
+.
+ Click 
+\series bold 
+Continue
+\series default 
+.
+ Move the cursor over the frame and click on two adjacent struts.
+ 
+\layout Enumerate
+
+You are now ready to record the position and time data.
+ Go to the first frame of interest.
+ Move the cursor over the frame and it will change into a small circle with
+ an attached label.
+ Place the circle over the object of interest in the frame and click.
+ The x and y positions will be stored and the film advanced one frame.
+ Move the circle over the position of the object in the frame and repeat.
+ Continue this process until you have mapped out the motion of the demon
+ drop cage.
+ 
+\layout Enumerate
+
+When you have entered all the points you want, click on the Data Table window
+ below the movie frame.
+ Scroll down through the data table to find your data.
+ Click and drag across all the rows and columns of the entries to highlight
+ all of your data.
+ Under the 
+\series bold 
+Edit 
+\series default 
+menu highlight 
+\series bold 
+Copy
+\series default 
+.
+ 
+\layout Enumerate
+
+Start up 
+\shape italic 
+Cricket Graph
+\shape default 
+ by going to the Apple Menu in the upper left corner of the screen and click
+ and drag down to highlight 
+\shape italic 
+Cricket Graph alias
+\shape default 
+.
+ You will see a window with a set of blank rows and columns.
+ Click the mouse in the upper left box and under the 
+\series bold 
+Edit
+\series default 
+ menu highlight 
+\series bold 
+Paste
+\series default 
+.
+ The data your just copied from 
+\shape italic 
+VideoPoint
+\shape default 
+ should now fill the table and you can analyze it with the methods described
+ in 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+.
+ 
+\layout Enumerate
+
+Use 
+\shape italic 
+Cricket Graph
+\shape default 
+ to plot a graph of y vs.
+ t.
+ See 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+ for details.
+ Affix a copy of the graph to the unit.
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(c) What is the initial value of y (usually denoted y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+) in the coordinate system you chose? 
+\layout Standard
+\added_space_bottom 20mm 
+(d) By examining your data table, calculate the approximate value of the
+ initial velocity of the cage in the y-direction.
+ Include the sign of the velocity and its units.
+ (Use the convention that on the y-axis up is positive and down is negative.)
+\layout Standard
+\added_space_bottom 20mm 
+(e) Examine the graph of your data.
+ What does the nature of this motion look like? Constant velocity, constant
+ acceleration, an increasing or decreasing acceleration? How does your observati
+on compare with the prediction you made for the cage on its way down in
+ Activity 1?
+\layout Standard
+\added_space_bottom 10mm 
+(f) Using the convention that on the y-axis up is positive and down is negative,
+ is the acceleration positive or negative (i.e.
+ in what direction is the magnitude of the velocity increasing)?
+\layout Standard
+
+(g) If you think the object is undergoing a constant acceleration, use the
+ modeling technique you used before to find an equation that describes y
+ as a function of t as the cage drops.
+ Hints: (1) You might try to model the system with kinematic equation number
+ 1.
+ (2) Since you are dealing with the second dimension (i.e.
+ the vertical dimension), you should replace x with y and x
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ with y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+.
+ Write the equation of motion in the space below.
+ Then use coefficients of time to find the values of a, vo and yo with the
+ appropriate units.
+ Note: Since the acceleration is caused by gravity, our notation for it
+ will be g rather than just a.
+ Also, when you have found a good fit to the data, print it and attach a
+ copy to this unit.
+\layout Enumerate
+\added_space_bottom 5mm 
+The equation of motion with proper units is: y =
+\layout Enumerate
+\added_space_bottom 5mm 
+The acceleration with proper sign and units is: g = 
+\layout Enumerate
+\added_space_bottom 5mm 
+The initial velocity with proper sign and units is: v
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ = 
+\layout Enumerate
+\added_space_bottom 5mm 
+The initial position with proper sign and units is: y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ = 
+\layout Standard
+
+In the next activity we will use a video analysis system to study the motion
+ of a freely falling object.
+ You will use a sequence of these video frames and mathematical modeling
+ techniques to find an equation that describes the fall.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 3: Analyzing the Motion of the Tennis Ball
+\series default 
+ 
+\layout Standard
+
+(a) Make a movie of a tennis ball in flight by following these steps.
+\layout Enumerate
+
+Turn on the video camera and center the field of view on the region where
+ you will toss the ball.
+ This region should be about 2 meters from the camera to get a large enough
+ area for the flight of the ball.
+ Place a ruler or meter stick somewhere in the field-of-view where it won't
+ interfere with the motion.
+ This ruler will be user later to determine the scale.
+ 
+\layout Enumerate
+
+Make a movie of the tennis ball being dropped from rest.
+ Make sure most of the trajectory is visible to the camera.
+ See 
+\series bold 
+Appendix D: Video Analysis 
+\series default 
+for details on making the movie.
+ When you save the movie file give it the name Ball.
+\layout Standard
+
+(b) Determine the vertical position, y, of the tennis ball at different
+ times during the motion.
+ To do this follow the instructions in 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ to the movie data.
+ Prepare this last file for analysis by following the instructions in the
+ last section of 
+\series bold 
+Appendix D
+\series default 
+.
+\layout Standard
+
+(c) Use 
+\shape italic 
+Cricket Graph
+\shape default 
+ to plot a graph of y vs.
+ t.
+ See 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+ for details.
+ Affix a copy of the graph to the unit.
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(d) Where did you place your origin? What is the initial value of y (usually
+ denoted y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+) in the coordinate system you chose? 
+\layout Standard
+\added_space_bottom 20mm 
+(e) By examining your data table, calculate the approximate value of the
+ initial velocity of the ball in the y-direction.
+ Include the sign of the velocity and its units.
+ (Use the convention that on the y-axis up is positive and down is negative.)
+\layout Standard
+\added_space_bottom 20mm 
+(f) Examine the graph of your data.
+ What does the nature of this motion look like? Constant velocity, constant
+ acceleration, an increasing or decreasing acceleration? How does your observati
+on compare with the prediction you made earlier in this unit for the ball
+ on its way down?
+\layout Standard
+\added_space_bottom 20mm 
+(g) Using the convention that on the y-axis up is positive and down is negative,
+ is the acceleration positive or negative (i.e., in what direction is the
+ magnitude of the velocity increasing)?
+\layout Standard
+
+(h) If you think the object is undergoing a constant acceleration, use the
+ fitting capability of 
+\shape italic 
+Cricket Graph
+\shape default 
+ (see 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+ for details) to find an equation that describes y as a function of t as
+ the ball drops.
+ Hints: (1) You might try to model the system with a second order equation
+ like the kinematic equation for uniformly accelerated motion.
+ (2) Write the equation of motion in the space below.
+ Then use coefficients of the best-fit equation to find the values of a,
+ v
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ and y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ with the appropriate units.
+ Note: Since the acceleration is caused by gravity, our notation for it
+ will be g rather than just a.
+ Also, when you have found a good fit to the data, print it and attach a
+ copy to this unit.
+ 
+\layout Enumerate
+\added_space_bottom 5mm 
+The equation of motion with proper units is: y =
+\layout Enumerate
+\added_space_bottom 5mm 
+The acceleration with proper sign and units is: g = 
+\layout Enumerate
+\added_space_bottom 5mm 
+The initial velocity with proper sign and units is: v
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ = 
+\layout Enumerate
+
+The initial position with proper sign and units is: y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ = 
+\the_end

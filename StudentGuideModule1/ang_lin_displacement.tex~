@@ -1,0 +1,75 @@
+
+\section{Connecting Angular Displacement with Linear Displacement along the Arc}
+
+Name \rule{2.0in}{0.1pt}\hfill{}Section \rule{1.0in}{0.1pt}\hfill{}Date \rule{1.0in}{0.1pt}
+
+{\noindent \bf Objectives:}
+
+\begin{list}{$\bullet$}{\itemsep0pt \parsep0pt}
+
+\item Discover the relationship between arc length, radius, and angle \item Understand radian measure
+
+\end{list}
+
+\textbf{Apparatus}
+
+\begin{itemize}
+\item Wooden disks
+\item Meter stick
+\item String
+\end{itemize}
+{\noindent \bf Activity} \begin{enumerate}
+
+\item With the string and meter stick, determine the circumference of the disk in cm.
+
+\bigskip
+
+\begin{center} circumference = \rule{3cm}{0.4pt} \end{center}
+
+\item Calculate the disk's diameter and radius.
+
+\bigskip
+
+\begin{center} diameter = \rule{3cm}{0.4pt} \hspace{1cm} radius = \rule{3cm}{0.4pt} \end{center}
+
+\item Check that the meter stick is inserted in the base with the scale visible.
+
+\item Be sure the string is attached at the 0-mark on the disk. Wind the string around the disk one full rotation so that the 0-mark and the beginning of the string are at the bottom of the disk and the string is wound around once in such a way that when you unwind it, you can pull it along the meter stick and the disk will rotate counter-clockwise.
+
+\item In this configuration, note the position of the tag on the string with reference to the meter stick.
+
+\item While keeping the string taut, pull it gently to displace the tag five centimeters. Record in the table below the angular position of the bottom of the disk.
+
+\item Repeat step 6 in five centimeter increments until the string is completely unwound.
+
+\item Calculate the angular displacements and plot linear displacement versus angular displacement.
+
+\end{enumerate}
+
+\pagebreak
+
+\begin{center} \tabcolsep1cm \setlength{\unitlength}{1mm} \begin{tabular}{|c|c|c|} \hline $\Delta s$ & $\theta$ & $\Delta\theta$ \\ (cm) & (rad) & (rad) \\ \hline \hline 5.0&& \\ \hline 10.0&& \\ \hline 15.0&& \\ \hline 20.0&& \\ \hline 25.0&& \\ \hline 30.0&& \\ \hline 35.0&& \\ \hline 40.0&& \\ \hline 45.0&& \\ \hline \end{tabular} \end{center}
+
+\smallskip
+
+{\noindent \bf Questions:}
+
+\begin{enumerate}
+\item Do your data points appear to fall on a line? Did you expect them to? Explain. \vspace{15mm}
+
+\item If you were to fit a line through these points, would that line go through the
+origin? Explain. \vspace{15mm}
+
+\item Fit a line through the data. Express in words the meaning of the slope. What
+is its physical interpretation? \vspace{15mm}
+
+\item If a bigger disk were used, what would your result be? For a given angular displacement
+of the bigger disk, how would the linear displacement differ? \vspace{15mm}
+
+\item What is the ratio of some arc length to the radius of the disk? \vspace{15mm}
+
+\item The unit given for the angular displacement is rad, which is an abbreviation
+for radians. Express, in words, the meaning of the term. \vspace{15mm}
+
+\item How many radians are in half the circumference of the disk? In the whole circumference?
+\end{enumerate}

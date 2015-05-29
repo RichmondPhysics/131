@@ -1,0 +1,425 @@
+#This file was created by <vineyard> Wed Jul  5 10:32:00 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Converting Units
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Objectives:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Introduction to units 
+\backslash 
+item Exploration of relations between different systems of measurement
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Apparatus:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item string 
+\backslash 
+item scissors 
+\backslash 
+item meter stick
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity:} 
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Cut the string into three pieces, 1-meter, 1-foot, and 30-cm, respectively.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Compare them.
+ Enter into the table below how many lengths of one piece it requires to
+ make each of the others.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Cut a length of string equivalent to your anatomical foot; compare
+ this piece to the others.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{center} 
+\backslash 
+begin{tabular}{|l|c|c|c|c|c|} 
+\backslash 
+hline 
+\backslash 
+multicolumn{2}{|c||}{} & 
+\backslash 
+multicolumn{4}{c|}{
+\backslash 
+bf equal one of these?} 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+multicolumn{1}{|c}{}& 
+\backslash 
+multicolumn{1}{c||}{pieces}& 1-meter &1-foot & 30-cm & anatomical foot 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+hline {
+\backslash 
+bf How} & 
+\backslash 
+multicolumn{1}{c||}{1-meter} &&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+cline{2-6} {
+\backslash 
+bf many} & 
+\backslash 
+multicolumn{1}{c||}{1-foot} &&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+cline{2-6} {
+\backslash 
+bf of} & 
+\backslash 
+multicolumn{1}{c||}{30-cm} &&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+cline{2-6} {
+\backslash 
+bf these} & 
+\backslash 
+multicolumn{1}{c||}{anatomical foot} &&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+end{tabular} 
+\backslash 
+end{center}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Devise your own measurement system; name it; select length, mass, and
+ time standards and choose names and abbreviations for them; and define
+ these.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{center} system name 
+\backslash 
+rule{3in}{0.2pt} 
+\backslash 
+end{center} 
+\backslash 
+begin{tabbing} length: 
+\backslash 
+= name 
+\backslash 
+rule{1in}{0.2pt} 
+\backslash 
+= abbreviation 
+\backslash 
+rule{0.5in}{0.2pt} 
+\backslash 
+= definition 
+\backslash 
+rule{1.5in}{0.2pt} 
+\backslash 
+
+\backslash 
+ mass: 
+\backslash 
+> name 
+\backslash 
+rule{1in}{0.2pt} 
+\backslash 
+> abbreviation 
+\backslash 
+rule{0.5in}{0.2pt} 
+\backslash 
+> definition 
+\backslash 
+rule{1.5in}{0.2pt} 
+\backslash 
+
+\backslash 
+ time: 
+\backslash 
+> name 
+\backslash 
+rule{1in}{0.2pt} 
+\backslash 
+> abbreviation 
+\backslash 
+rule{0.5in}{0.2pt} 
+\backslash 
+> definition 
+\backslash 
+rule{1.5in}{0.2pt} 
+\backslash 
+end{tabbing}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Compare your measurement system to the Standard International (MKSA)
+ system.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{tabbing} 1 
+\backslash 
+ 
+\backslash 
+rule{1in}{0.2pt} 
+\backslash 
+= = 
+\backslash 
+= 
+\backslash 
+rule{0.25in}{0.2pt} 
+\backslash 
+ 
+\backslash 
+= meters 
+\backslash 
+kill 1 meter 
+\backslash 
+> = 
+\backslash 
+> 
+\backslash 
+rule{0.25in} {0.2pt} 
+\backslash 
+ 
+\backslash 
+> 
+\backslash 
+rule{1in}{0.2pt}s 
+\backslash 
+
+\backslash 
+ 1 kilogram 
+\backslash 
+> = 
+\backslash 
+> 
+\backslash 
+rule{0.25in} {0.2pt} 
+\backslash 
+ 
+\backslash 
+> 
+\backslash 
+rule{1in}{0.2pt}s 
+\backslash 
+
+\backslash 
+ 1 second 
+\backslash 
+> = 
+\backslash 
+> 
+\backslash 
+rule{0.25in} {0.2pt} 
+\backslash 
+ 
+\backslash 
+> 
+\backslash 
+rule{1in}{0.2pt}s 
+\backslash 
+
+\backslash 
+ 1 
+\backslash 
+ 
+\backslash 
+rule{1in}{0.2pt} = 
+\backslash 
+rule{0.25in}{0.2pt} 
+\backslash 
+ meters 
+\backslash 
+
+\backslash 
+ 1 
+\backslash 
+ 
+\backslash 
+rule{1in}{0.2pt} = 
+\backslash 
+rule{0.25in}{0.2pt} 
+\backslash 
+ kilograms 
+\backslash 
+
+\backslash 
+ 1 
+\backslash 
+ 
+\backslash 
+rule{1in}{0.2pt} = 
+\backslash 
+rule{0.25in}{0.2pt} 
+\backslash 
+ seconds 
+\backslash 
+end{tabbing}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+pagebreak
+\layout Standard
+
+
+\latex latex 
+Questions Are anatomical units practical for measurement? Explain.
+ 
+\backslash 
+item What criteria should be satisfied by a good clock? 
+\backslash 
+item Can you explain the nearly universal use of the metric system in scientific
+ work?
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\the_end

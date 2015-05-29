@@ -1,0 +1,386 @@
+#This file was created by <vineyard> Wed Jul  5 10:01:50 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Relating Position and Velocity Graphs
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objective 
+\layout Standard
+
+To understand the relationship between position vs.
+ time and velocity vs.
+ time graphs.
+\layout Standard
+
+
+\series bold 
+Introduction
+\series default 
+ 
+\layout Standard
+
+You have looked at position and velocity vs.
+ time graphs separately.
+ Since position vs.
+ time and velocity vs.
+ time graphs are different ways to represent the same motion, it ought to
+ be possible to figure out the velocity at which someone is moving by examining
+ her/his position vs.
+ time graph.
+ Conversely, you ought to be able to figure out how far someone has traveled
+ (change in position) from a velocity vs.
+ time graph.
+\layout Standard
+
+To explore how position vs.
+ time and velocity vs.
+ time graphs are related, you will use the 
+\series bold 
+Position & Velocity Graphs 
+\series default 
+application in the 
+\series bold 
+131 Workshop
+\series default 
+ submenu of the 
+\series bold 
+Apple
+\series default 
+ menu.
+ For some of the runs it may be necessary to adjust the time axis for one
+ of the graphs so that the time scales are the same for the position and
+ velocity graphs.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+Ultrasonic motion detector 
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (Position & Velocity Graphs application)
+\layout Itemize
+
+Wooden board
+\layout Standard
+
+
+\series bold 
+Activity 1: Predicting Velocity Graphs from Position Graphs
+\series default 
+ 
+\layout Standard
+
+(a) Carefully study the position graph shown below and predict the velocity
+ vs.
+ time graph that would result from the motion.
+ Using a dashed line, sketch your prediction of the corresponding velocity
+ vs.
+ time graph on the velocity axes.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 249 213
+file relating_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) After each person in your group has sketched a prediction, test your
+ prediction by matching the position vs.
+ time graph shown.
+ When you have made a good duplicate of the position graph, sketch your
+ actual graph over the existing position vs.
+ time graph.
+\layout Standard
+
+(c) Use a solid line to draw the actual velocity graph on the same graph
+ with your prediction.
+ (Do not erase your prediction).
+\layout Standard
+\added_space_bottom 20mm 
+(d) How would the position graph be different if you moved faster? Slower?
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(e) How would the velocity graph be different if you moved faster? Slower?
+ 
+\layout Standard
+
+
+\series bold 
+Activity 2: Average Velocity Calculations
+\series default 
+ 
+\layout Standard
+
+(a) Find your average velocity from your velocity graph in the previous
+ activity.
+ This can be done using the Smart Tool on the graph menu bar (sixth box
+ along the top of the graph window).
+\layout Standard
+
+Velocity values (m/s)
+\latex latex 
+ 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt} 
+\backslash 
+rule{0.5in}{0.1pt}
+\layout Standard
+
+Average value of the velocity: 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ m/s
+\layout Standard
+\added_space_bottom 10mm 
+(b) Average velocity during a particular time interval can also be calculated
+ as the change in position divided by the change in time.
+ (The change in position is often called the displacement.) By definition,
+ this is also the slope of the position vs.
+ time graph for that time period.
+ Use the cursors on the position vs.
+ time graph to read the position and time coordinates for two typical points
+ while you were moving.
+ (For a more accurate answer, use two points as far apart as possible but
+ still typical of the motion, and within the time interval over which you
+ took velocity readings in Activity 1.) Record the coordinates of the points
+ below.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Calculate the change in position (displacement) between the two points
+ in part (b).
+ Also calculate the corresponding change in time (time interval).
+ Divide the change in position by the change in time to calculate the average
+ velocity.
+ Show your calculations below.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Is the average velocity positive or negative? Is this what you expected?
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(e) Does the average velocity you just calculated from the position graph
+ agree with the average velocity you estimated from the velocity graph?
+ Do you expect them to agree? How would you account for any differences?
+\layout Standard
+
+
+\series bold 
+Activity 3: Finding Position from a Velocity Graph 
+\layout Standard
+
+(a) Carefully study the velocity graph that follows.
+ Using a dashed line, sketch your prediction of the corresponding position
+ graph on the bottom set of axes.
+ (Assume that you started at the 1-meter mark.)
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 339 213
+file relating_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) After each person has sketched a prediction, do your group's best to
+ duplicate the top (velocity vs.
+ time) graph by walking.
+ When you have made a good duplicate of the velocity vs.
+ time graph, draw your actual result over the existing velocity vs.
+ time graph.
+ (c) Use a solid line to draw the actual position vs.
+ time graph on the same axes with your prediction.
+ Do not erase your prediction.
+\layout Standard
+
+(c) Use a solid line to draw the actual velocity graph on the same graph
+ with your prediction.
+ (Do not erase your prediction.)
+\layout Standard
+\added_space_bottom 10mm 
+(d) How can you tell from a velocity vs.
+ time graph that the moving object has changed direction?
+\layout Standard
+\added_space_bottom 10mm 
+(e) What is the velocity at the moment the direction changes? 
+\layout Standard
+\added_space_bottom 10mm 
+(f) Is it possible to actually move your body (or an object) to make vertical
+ lines on a position vs.
+ time graph? Why or why not? What would the velocity be for a vertical section
+ of a position vs.
+ time graph? 
+\layout Standard
+\added_space_bottom 10mm 
+(g) How can you tell from a position vs.
+ time graph that your motion is steady (motion at a constant velocity)?
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(h) How can you tell from a velocity vs.
+ time graph that your motion is steady (constant velocity)? 
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+
+1.
+ Draw the velocity graphs for an object whose motion produced the position-time
+ graphs shown below on the left.
+ Position is in meters and velocity in meters per second.
+ Note: Unlike most real objects, you can assume these objects can change
+ velocity so quickly that it looks instantaneous with this time scale.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 365 134
+file relating_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 365 134
+file relating_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 365 134
+file relating_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+2.
+ Draw careful graphs below of position and velocity for a cart that (a)
+ moves away from the origin at a slow and steady (constant) velocity for
+ the first 5 seconds; (b) moves away at a medium-fast, steady (constant)
+ velocity for the next 5 seconds; (c) stands still for the next 5 seconds;
+ (d) moves toward the origin at a slow and steady (constant) velocity for
+ the next 5 seconds; (e) stands still for the last 5 seconds.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 239 219
+file relating_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\the_end

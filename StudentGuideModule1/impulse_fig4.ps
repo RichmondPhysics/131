@@ -1,0 +1,4172 @@
+%!PS-Adobe-3.0
+%%Title: ( Physics 500 student title)
+%%Version: 1 2
+%%Creator: (QuarkXPress\252 4.04: LaserWriter 8 8.6.5)
+%%CreationDate: (D:19990719142532)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%BoundingBox: 0 0 612 792
+%%Pages: 1
+%%DocumentProcessColors: (atend)
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources:
+%%+ procset (Adobe Acrobat - PDF operators) 1.2 0
+%%+ procset (Adobe Acrobat - type operators) 1.2 0
+%%EndComments
+%%BeginDefaults
+%%EndDefaults
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+%%BeginResource: l2check
+%%Copyright: Copyright 1993 Adobe Systems Incorporated. All Rights Reserved.
+systemdict /languagelevel known
+{ systemdict /languagelevel get 1 eq }
+{ true }
+ifelse
+{
+initgraphics /Helvetica findfont 18 scalefont setfont
+72 600 moveto (Error: Your printer driver needs to be configured) dup show
+72 580 moveto (for printing to a PostScript Language Level 1 printer.) dup show
+exch = =
+/Helvetica-Bold findfont 16 scalefont setfont
+72 520 moveto (Windows and Unix) show
+/Times-Roman findfont 16 scalefont setfont
+72 500 moveto (Select ªLanguage Level 1º in the PostScript options section) show
+72 480 moveto (of the Acrobat print dialog.) show
+/Helvetica-Bold findfont 16 scalefont setfont
+72 440 moveto (Macintosh) show
+/Times-Roman findfont 16 scalefont setfont
+72 420 moveto (In the Chooser, select your printer driver.) show
+72 400 moveto (Then select your printer and click the Setup button.) show
+72 380 moveto (Follow any on-screen dialogs that may appear.) show
+showpage
+quit
+}
+if
+%%EndResource
+/currentpacking where{pop currentpacking true setpacking}if
+%%BeginResource: procset pdfvars
+%%Copyright: Copyright 1987-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%Version: 4.0 2
+%%Title: definition of dictionary of variables used by PDF & PDFText procsets
+userdict /PDF 160 dict put
+userdict /PDFVars 86 dict dup begin put
+/_save 0 def
+/_cshow 0 def
+/InitAll 0 def
+/TermAll 0 def
+/DocInitAll 0 def
+/DocTermAll 0 def
+/_lp /none def
+/_doClip 0 def
+/sfc 0 def
+/_sfcs 0 def
+/_sfc 0 def
+/ssc 0 def
+/_sscs 0 def
+/_ssc 0 def
+/_fcs 0 def
+/_scs 0 def
+/_fp 0 def
+/_sp 0 def
+/AGM_MAX_CS_COMPONENTS 10 def
+/_fillColors [ 0 1 AGM_MAX_CS_COMPONENTS { array } for ] def
+/_strokeColors [ 0 1 AGM_MAX_CS_COMPONENTS { array } for ] def
+/_fc null def
+/_sc null def
+/DefaultGray [/DeviceGray] def
+/DefaultRGB [/DeviceRGB] def
+/DefaultCMYK [/DeviceCMYK] def
+/_inT false def
+/_tr -1 def
+/_rise 0 def
+/_ax 0 def
+/_cx 0 def
+/_ld 0 def
+/_tm matrix def
+/_ctm matrix def
+/_mtx matrix def
+/_hy (-) def
+/_fScl 0 def
+/_hs 1 def
+/_pdfEncodings 2 array def
+/_baselineadj 0 def
+/_fTzero false def
+/_Tj 0 def
+/_italMtx [1 0 .212557 1 0 0] def
+/_italMtx_WMode1 [1 -.212557 0 1 0 0] def
+/_italMtxType0 [1 0 .1062785 1 0 0] def
+/_italMtx_WMode1Type0 [1 -.1062785 0 1 0 0] def
+/_basefont 0 def
+/_basefonto 0 def
+/_pdf_oldCIDInit null def
+/_pdf_FontDirectory 30 dict def
+/_categories 10 dict def
+/_sa? true def
+/_op? false def
+/_OP? false def
+/_opmode 0 def
+/_ColorSep5044? false def
+/_tmpcolr? [] def
+/_tmpop? {} def
+/_processColors 0 def
+/_defaulttransfer currenttransfer def
+/_defaultflatness currentflat def
+/_defaulthalftone null def
+/_defaultcolortransfer null def
+/_defaultblackgeneration null def
+/_defaultundercolorremoval null def
+/_defaultcolortransfer null def
+end
+%%EndResource
+PDFVars begin PDF begin
+%%BeginResource: procset pdfutil
+%%Copyright: Copyright 1993-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%Version: 4.0 2
+%%Title: Basic utilities used by other PDF procsets
+/bd {bind def} bind def
+/ld {load def} bd
+/bld {
+dup length dict begin
+{ null def } forall
+bind
+end
+def
+} bd
+/dd { PDFVars 3 1 roll put } bd
+/xdd { exch dd } bd
+/Level2?
+systemdict /languagelevel known
+{ systemdict /languagelevel get 2 ge } { false } ifelse
+def
+/Level3?
+systemdict /languagelevel known
+{systemdict /languagelevel get 3 eq } { false } ifelse
+def
+/getifknown {
+2 copy known { get true } { pop pop false } ifelse
+} bd
+/here {
+currentdict exch getifknown
+} bd
+/isdefined? { where { pop true } { false } ifelse } bd
+/StartLoad { dup dup not { /_save save dd } if } bd
+/EndLoad { if not { _save restore } if } bd
+%%EndResource
+%%BeginResource: procset pdf
+%%Version: 4.0 3
+%%Copyright: Copyright 1998-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%Title: General operators for PDF, common to all Language Levels.
+[/b/B/b*/B*/BDC/BI/BMC/BT/BX/c/cm/cs/CS/d/d0/d1/Do/DP/EI/EMC/ET/EX/f/f*/g/G/gs
+/h/i/j/J/k/K/l/m/M/MP/n/q/Q/re/rg/RG/ri/s/S/sc/SC/scn/SCN/sg/Tc/Td/TD/Tf/Tj/TJ
+/TL/Tm/Tr/Ts/Tw/Tz/T*/v/w/W/W*/y/'/"
+/applyInterpFunc/applystitchFunc/domainClip/EF/encodeInput/gsDI/ilp/icl
+/initgs/int/limit/PS/rangeClip/RC/rf/makePat/csfamily 
+/? /! /| /: /+ /GetGlyphDirectory
+] {null def} bind forall
+/v { currentpoint 6 2 roll c } bd
+/y { 2 copy c } bd
+/h/closepath ld
+/d/setdash ld
+/j/setlinejoin ld
+/J/setlinecap ld
+/M/setmiterlimit ld
+/w/setlinewidth ld
+/i {
+dup 0 eq { pop _defaultflatness } if
+setflat
+} bd
+/gsDI {
+begin
+/OP here { /_OP? xdd } if
+/op here { /_op? xdd }
+{ /OP here { /_op? xdd } if }
+ifelse
+/OPM here { /_opmode xdd } if
+/Font here { aload pop Tf } if
+/LW here { w } if
+/LC here { J } if
+/LJ here { j } if
+/ML here { M } if
+/D here { aload pop d } if
+end
+} bd
+/ilp { /_lp /none dd } bd
+/icl { /_doClip 0 dd } bd
+/W { /_doClip 1 dd } bd
+/W* { /_doClip 2 dd } bd
+/n {
+{{} {clip} {eoclip}} _doClip get exec
+icl
+newpath
+} bd
+/s { h S } bd
+/B { q f Q S } bd
+/B* { q f* Q S } bd
+/b { h B } bd
+/b* { h B* } bd
+/q/save ld
+/Q { restore ilp } bd
+/GetCSFamily {
+dup type /arraytype eq {0 get} if
+} bd
+/GetCompsDict
+11 dict begin
+/DeviceGray { pop 1 } bd
+/DeviceRGB { pop 3 } bd
+/DeviceCMYK { pop 4 } bd
+/CIEBasedA { pop 1 } bd
+/CIEBasedABC { pop 3 } bd
+/CIEBasedDEF { pop 3 } bd
+/CIEBasedDEFG { pop 4 } bd
+/DeviceN { 1 get length } bd
+/Separation { pop 1 } bd
+/Indexed { pop 1 } bd
+/Pattern { pop 0 } bd
+currentdict
+end
+def
+/GetComps {
+GetCompsDict
+1 index GetCSFamily
+get exec
+} bd
+/cs
+{
+dup _fcs eq
+{ pop }
+{ dup /_fcs xdd
+GetComps
+_fillColors exch get
+/_fc xdd
+/_fp null dd
+} ifelse
+} bd
+/CS
+{
+dup _scs eq
+{ pop }
+{ dup /_scs xdd GetComps _strokeColors exch get /_sc xdd /_sp null dd }
+ifelse
+} bd
+/sc {
+_fc astore pop
+ilp
+} bd
+/SC {
+_sc astore pop
+ilp
+} bd
+/g { DefaultGray cs sc } bd
+/rg { DefaultRGB cs sc } bd
+/k { DefaultCMYK cs sc } bd
+/G { DefaultGray CS SC } bd
+/RG { DefaultRGB CS SC } bd
+/K { DefaultCMYK CS SC } bd
+/cm { _mtx astore concat } bd
+/re {
+4 2 roll m
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+h
+} bd
+/RC/rectclip ld
+/EF/execform ld
+/PS { cvx exec } bd
+/initgs {
+/DefaultGray [/DeviceGray] dd
+/DefaultRGB [/DeviceRGB] dd
+/DefaultCMYK [/DeviceCMYK] dd
+0 g 0 G
+[] 0 d
+0 j
+0 J
+10 M
+1 w
+true setSA
+/_op? false dd
+/_OP? false dd
+/_opmode 0 dd
+/_defaulttransfer load settransfer
+0 i
+/RelativeColorimetric ri
+newpath
+} bd
+/int {
+dup 2 index sub 3 index 5 index sub div 6 -2 roll sub mul
+exch pop add exch pop
+} bd
+/limit {
+dup 2 index le { exch } if pop
+dup 2 index ge { exch } if pop
+} bd
+/domainClip {
+Domain aload pop 3 2 roll
+limit
+} [/Domain] bld
+/applyInterpFunc {
+0 1 DimOut 1 sub
+{
+dup C0 exch get exch
+dup C1 exch get exch
+3 1 roll
+1 index sub
+3 index
+N exp mul add
+exch
+currentdict /Range_lo known
+{
+dup Range_lo exch get exch
+Range_hi exch get
+3 2 roll limit
+}
+{
+pop
+}
+ifelse
+exch
+} for
+pop
+} [/DimOut /C0 /C1 /N /Range_lo /Range_hi] bld
+/encodeInput {
+NumParts 1 sub
+0 1 2 index
+{
+dup Bounds exch get
+2 index gt
+{ exit }
+{ dup
+3 index eq
+{ exit }
+{ pop } ifelse
+} ifelse
+} for
+3 2 roll pop
+dup Bounds exch get exch
+dup 1 add Bounds exch get exch
+2 mul
+dup Encode exch get exch
+1 add Encode exch get
+int
+} [/NumParts /Bounds /Encode] bld
+/rangeClip {
+exch dup Range_lo exch get
+exch Range_hi exch get
+3 2 roll
+limit
+} [/Range_lo /Range_hi] bld
+/applyStitchFunc {
+Functions exch get exec
+currentdict /Range_lo known {
+0 1 DimOut 1 sub {
+DimOut 1 add -1 roll
+rangeClip
+} for
+} if
+} [/Functions /Range_lo /DimOut] bld
+%%EndResource
+%%BeginResource: procset pdflev2
+%%Version: 4.0 5
+%%Copyright: Copyright 1987-1999 Adobe Systems Incorporated. All Rights Reserved.
+%%LanguageLevel: 2
+%%Title: PDF operators, with code specific for Level 2
+/_defaulthalftone currenthalftone dd
+/_defaultblackgeneration currentblackgeneration dd
+/_defaultundercolorremoval currentundercolorremoval dd
+/_defaultcolortransfer [currentcolortransfer] dd
+/initialize {
+_defaulthalftone sethalftone
+/_defaultblackgeneration load setblackgeneration
+/_defaultundercolorremoval load setundercolorremoval
+_defaultcolortransfer aload pop setcolortransfer
+false setoverprint
+<</MaxFormItem 0>> setuserparams
+} bd
+/terminate { } bd
+/m/moveto ld
+/l/lineto ld
+/c/curveto ld
+/setSA/setstrokeadjust ld
+/defineRes/defineresource ld
+/findRes/findresource ld
+currentglobal
+true systemdict /setglobal get exec
+[/Function /ExtGState /Form /Shading /FunctionDictionary /MadePattern /PatternPrototype /DataSource]
+{ /Generic /Category findresource dup length dict copy /Category defineresource pop }
+forall
+systemdict /setglobal get exec
+/ri
+{
+/findcolorrendering isdefined?
+{
+mark exch
+findcolorrendering
+counttomark 2 eq
+{ type /booleantype eq
+{ dup type /nametype eq
+{ dup /ColorRendering resourcestatus
+{ pop pop
+dup /DefaultColorRendering ne
+{
+/ColorRendering findresource
+setcolorrendering
+} if
+} if
+} if
+} if
+} if
+cleartomark
+}
+{ pop
+} ifelse
+} bd
+/_sfcs {_fcs setcolorspace} bind dd
+/_sscs {_scs setcolorspace} bind dd
+/_sfc
+{
+_fc aload pop
+_fp null eq
+{ setcolor }
+{ _fp setpattern }
+ifelse
+} bind dd
+/_ssc
+{
+_sc aload pop
+_sp null eq { setcolor} { _sp setpattern } ifelse
+} bind dd
+/scn {
+dup type /dicttype eq
+{ dup /_fp xdd
+/PaintType get 1 eq
+{ /_fc _fillColors 0 get dd ilp }
+{ /_fc _fillColors
+_fcs 1 get
+GetComps get dd
+sc
+}
+ifelse
+}
+{ sc }
+ifelse
+} bd
+/SCN {
+dup type /dicttype eq
+{ dup /_sp xdd
+/PaintType get 1 eq
+{ /_sc _strokeColors 0 get dd ilp }
+{ /_sc _strokeColors _scs 1 get GetComps get dd
+SC
+}
+ifelse
+}
+{ SC }
+ifelse
+} bd
+/gs
+{
+begin
+/SA here { setstrokeadjust } if
+/BG here { setblackgeneration } if
+/UCR here { setundercolorremoval } if
+/FL here { i } if
+/RI here { ri } if
+/TR here
+{
+dup xcheck
+{ settransfer }
+{ aload pop setcolortransfer }
+ifelse
+} if
+/sethalftonephase isdefined? { /HTP here { sethalftonephase } if } if
+/HT here { sethalftone } if
+currentdict gsDI
+end
+} bd
+/sfc {
+_op? setoverprint
+_lp /fill ne {
+_sfcs
+_sfc
+/_lp /fill dd
+} if
+} dd
+/ssc {
+_OP? setoverprint
+_lp /stroke ne {
+_sscs
+_ssc
+/_lp /stroke dd
+} if
+} dd
+/f {
+{ { sfc fill }
+{gsave sfc fill grestore clip newpath icl ilp}
+{gsave sfc fill grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/f* {
+{ { sfc eofill }
+{gsave sfc eofill grestore clip newpath icl ilp}
+{gsave sfc eofill grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/S {
+{ { ssc stroke }
+{gsave ssc stroke grestore clip newpath icl ilp}
+{gsave ssc stroke grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/rf {
+{ { sfc rectfill }
+{gsave sfc rectfill grestore clip newpath icl ilp}
+{gsave sfc rectfill grestore eoclip newpath icl ilp}
+} _doClip get exec
+} bd
+/knownColorants? {
+pop false
+} bd
+/makePat {
+gsave
+dup /Matrix get concat
+matrix makepattern
+grestore
+/MadePattern defineRes pop
+} bd
+%%EndResource
+%%BeginResource: procset pdftext
+%%Version: 4.0 2
+%%Copyright: Copyright 1987-1998 Adobe Systems Incorporated. All Rights Reserved.
+%%Title: Text operators for PDF
+PDF /PDFText 75 dict dup begin put
+/docinitialize
+{
+/resourcestatus where {
+pop
+/CIDParams /ProcSet resourcestatus {
+pop pop
+false /CIDParams /ProcSet findresource /SetBuildCompatible get exec
+} if
+} if
+PDF begin
+PDFText /_pdfDefineIdentity-H known
+{ PDFText /_pdfDefineIdentity-H get exec}
+if
+end
+} bd
+/initialize {
+PDFText begin
+/_intT false dd
+0 Tr
+} bd
+/terminate { end } bd
+/_safeput
+{
+Level2? not
+{
+2 index load dup dup length exch maxlength ge
+{ dup length 5 add dict copy
+3 index xdd
+}
+{ pop }
+ifelse
+}
+if
+3 -1 roll load 3 1 roll put
+}
+bd
+/pdf_has_composefont? systemdict /composefont known def
+/CopyFont {
+{
+1 index /FID ne 2 index /UniqueID ne and
+{ def } { pop pop } ifelse
+} forall
+} bd
+/Type0CopyFont
+{
+exch
+dup length dict
+begin
+CopyFont
+[
+exch
+FDepVector
+{
+dup /FontType get 0 eq
+{
+1 index Type0CopyFont
+/_pdfType0 exch definefont
+}
+{
+/_pdfBaseFont exch
+2 index exec
+}
+ifelse
+exch
+}
+forall
+pop
+]
+/FDepVector exch def
+currentdict
+end
+} bd
+/cHexEncoding
+[/c00/c01/c02/c03/c04/c05/c06/c07/c08/c09/c0A/c0B/c0C/c0D/c0E/c0F/c10/c11/c12
+/c13/c14/c15/c16/c17/c18/c19/c1A/c1B/c1C/c1D/c1E/c1F/c20/c21/c22/c23/c24/c25
+/c26/c27/c28/c29/c2A/c2B/c2C/c2D/c2E/c2F/c30/c31/c32/c33/c34/c35/c36/c37/c38
+/c39/c3A/c3B/c3C/c3D/c3E/c3F/c40/c41/c42/c43/c44/c45/c46/c47/c48/c49/c4A/c4B
+/c4C/c4D/c4E/c4F/c50/c51/c52/c53/c54/c55/c56/c57/c58/c59/c5A/c5B/c5C/c5D/c5E
+/c5F/c60/c61/c62/c63/c64/c65/c66/c67/c68/c69/c6A/c6B/c6C/c6D/c6E/c6F/c70/c71
+/c72/c73/c74/c75/c76/c77/c78/c79/c7A/c7B/c7C/c7D/c7E/c7F/c80/c81/c82/c83/c84
+/c85/c86/c87/c88/c89/c8A/c8B/c8C/c8D/c8E/c8F/c90/c91/c92/c93/c94/c95/c96/c97
+/c98/c99/c9A/c9B/c9C/c9D/c9E/c9F/cA0/cA1/cA2/cA3/cA4/cA5/cA6/cA7/cA8/cA9/cAA
+/cAB/cAC/cAD/cAE/cAF/cB0/cB1/cB2/cB3/cB4/cB5/cB6/cB7/cB8/cB9/cBA/cBB/cBC/cBD
+/cBE/cBF/cC0/cC1/cC2/cC3/cC4/cC5/cC6/cC7/cC8/cC9/cCA/cCB/cCC/cCD/cCE/cCF/cD0
+/cD1/cD2/cD3/cD4/cD5/cD6/cD7/cD8/cD9/cDA/cDB/cDC/cDD/cDE/cDF/cE0/cE1/cE2/cE3
+/cE4/cE5/cE6/cE7/cE8/cE9/cEA/cEB/cEC/cED/cEE/cEF/cF0/cF1/cF2/cF3/cF4/cF5/cF6
+/cF7/cF8/cF9/cFA/cFB/cFC/cFD/cFE/cFF] def
+/modEnc {
+/_enc xdd
+/_icode 0 dd
+counttomark 1 sub -1 0
+{
+index
+dup type /nametype eq
+{
+_enc _icode 3 -1 roll put
+_icode 1 add
+}
+if
+/_icode xdd
+} for
+cleartomark
+_enc
+} bd
+/trEnc {
+/_enc xdd
+255 -1 0 {
+exch dup -1 eq
+{ pop /.notdef }
+{ Encoding exch get }
+ifelse
+_enc 3 1 roll put
+} for
+pop
+_enc
+} bd
+/TE {
+/_i xdd
+StandardEncoding 256 array copy modEnc
+_pdfEncodings exch _i exch put
+} bd
+/TZ
+{
+/_usePDFEncoding xdd
+findfont
+dup length 6 add dict
+begin
+{
+1 index /FID ne { def } { pop pop } ifelse
+} forall
+/pdf_origFontName FontName def
+/FontName exch def
+_usePDFEncoding 0 ge
+{
+/Encoding _pdfEncodings _usePDFEncoding get def
+pop
+}
+{
+_usePDFEncoding -1 eq
+{
+counttomark 0 eq
+{ pop }
+{
+Encoding 256 array copy
+modEnc /Encoding exch def
+}
+ifelse
+}
+{
+256 array
+trEnc /Encoding exch def
+}
+ifelse
+}
+ifelse
+pdf_EuroProcSet pdf_origFontName known
+{
+pdf_origFontName pdf_AddEuroGlyphProc
+} if
+FontName currentdict
+end
+definefont pop
+}
+bd
+/Level2?
+systemdict /languagelevel known
+{systemdict /languagelevel get 2 ge}
+{false}
+ifelse
+def
+Level2?
+{
+/_pdfFontStatus
+{
+currentglobal exch
+/Font resourcestatus
+{pop pop true}
+{false}
+ifelse
+exch setglobal
+} bd
+}
+{
+/_pdfFontStatusString 50 string def
+_pdfFontStatusString 0 (fonts/) putinterval
+/_pdfFontStatus
+{
+FontDirectory 1 index known
+{ pop true }
+{
+_pdfFontStatusString 6 42 getinterval
+cvs length 6 add
+_pdfFontStatusString exch 0 exch getinterval
+{ status } stopped
+{pop false}
+{
+{ pop pop pop pop true}
+{ false }
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+ifelse
+Level2?
+{
+/_pdfCIDFontStatus
+{
+/CIDFont /Category resourcestatus
+{
+pop pop
+/CIDFont resourcestatus
+{pop pop true}
+{false}
+ifelse
+}
+{ pop false }
+ifelse
+} bd
+}
+if
+/_pdfString100 100 string def
+/_pdfComposeFontName
+{
+dup length 1 eq
+{
+0 get
+1 index
+type /nametype eq
+{
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+2 index exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+exch pop
+true
+}
+{
+pop pop
+false
+}
+ifelse
+}
+{
+false
+}
+ifelse
+dup {exch cvn exch} if
+} bd
+/_pdfConcatNames
+{
+exch
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+3 -1 roll exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+cvn
+} bind def
+/_pdfTextTempString 50 string def
+/_pdfRegOrderingArray [(Adobe-Japan1) (Adobe-CNS1) (Adobe-Korea1) (Adobe-GB1)] def
+/_pdf_CheckSupplements
+{
+1 index _pdfTextTempString cvs
+false
+_pdfRegOrderingArray
+{
+2 index exch
+anchorsearch
+{ pop pop pop true exit}
+{ pop }
+ifelse
+}
+forall
+exch pop
+{
+/CIDFont findresource
+/CIDSystemInfo get /Supplement get
+exch /CMap findresource
+/CIDSystemInfo get
+dup type /dicttype eq
+{/Supplement get}
+{pop 0 }
+ifelse
+ge
+}
+{ pop pop true }
+ifelse
+} bind def
+pdf_has_composefont?
+{
+/_pdfComposeFont
+{
+2 copy _pdfComposeFontName not
+{
+2 index
+}
+if
+(pdf) exch _pdfConcatNames
+dup _pdfFontStatus
+{ dup findfont 5 2 roll pop pop pop true}
+{
+4 1 roll
+1 index /CMap resourcestatus
+{
+pop pop
+true
+}
+{false}
+ifelse
+1 index true exch
+{
+_pdfCIDFontStatus not
+{pop false exit}
+if
+}
+forall
+and
+{
+1 index 1 index 0 get _pdf_CheckSupplements
+{
+3 -1 roll pop
+2 index 3 1 roll
+composefont true
+}
+{
+pop pop exch pop false
+}
+ifelse
+}
+{
+_pdfComposeFontName
+{
+dup _pdfFontStatus
+{
+exch pop
+1 index exch
+findfont definefont true
+}
+{
+pop exch pop
+false
+}
+ifelse
+}
+{
+exch pop
+false
+}
+ifelse
+}
+ifelse
+{ true }
+{
+dup _pdfFontStatus
+{ dup findfont true }
+{ pop false }
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+{
+/_pdfComposeFont
+{
+_pdfComposeFontName not
+{
+dup
+}
+if
+dup
+_pdfFontStatus
+{exch pop dup findfont true}
+{
+1 index
+dup type /nametype eq
+{pop}
+{cvn}
+ifelse
+eq
+{pop false}
+{
+dup _pdfFontStatus
+{dup findfont true}
+{pop false}
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+ifelse
+/_pdfStyleDicts 4 dict dup begin
+/Adobe-Japan1 4 dict dup begin
+Level2?
+{
+/Serif
+/HeiseiMin-W3-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiMin-W3}
+{
+/HeiseiMin-W3 _pdfCIDFontStatus
+{/HeiseiMin-W3}
+{/Ryumin-Light}
+ifelse
+}
+ifelse
+def
+/SansSerif
+/HeiseiKakuGo-W5-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiKakuGo-W5}
+{
+/HeiseiKakuGo-W5 _pdfCIDFontStatus
+{/HeiseiKakuGo-W5}
+{/GothicBBB-Medium}
+ifelse
+}
+ifelse
+def
+/HeiseiMaruGo-W4-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiMaruGo-W4}
+{
+/HeiseiMaruGo-W4 _pdfCIDFontStatus
+{/HeiseiMaruGo-W4}
+{
+/Jun101-Light-RKSJ-H _pdfFontStatus
+{ /Jun101-Light }
+{ SansSerif }
+ifelse
+}
+ifelse
+}
+ifelse
+/RoundSansSerif exch def
+/Default Serif def
+}
+{
+/Serif /Ryumin-Light def
+/SansSerif /GothicBBB-Medium def
+{
+(fonts/Jun101-Light-83pv-RKSJ-H) status
+}stopped
+{pop}{
+{ pop pop pop pop /Jun101-Light }
+{ SansSerif }
+ifelse
+/RoundSansSerif exch def
+}ifelse
+/Default Serif def
+}
+ifelse
+end
+def
+/Adobe-Korea1 4 dict dup begin
+/Serif /HYSMyeongJo-Medium def
+/SansSerif /HYGoThic-Medium def
+/RoundSansSerif SansSerif def
+/Default Serif def
+end
+def
+/Adobe-GB1 4 dict dup begin
+/Serif /STSong-Light def
+/SansSerif /STHeiti-Regular def
+/RoundSansSerif SansSerif def
+/Default Serif def
+end
+def
+/Adobe-CNS1 4 dict dup begin
+/Serif /MKai-Medium def
+/SansSerif /MHei-Medium def
+/RoundSansSerif SansSerif def
+/Default Serif def
+end
+def
+end
+def
+/TZzero
+{
+/_fyAdj xdd
+/_wmode xdd
+/_styleArr xdd
+/_regOrdering xdd
+3 copy
+_pdfComposeFont
+{
+5 2 roll pop pop pop
+}
+{
+[
+0 1 _styleArr length 1 sub
+{
+_styleArr exch get
+_pdfStyleDicts _regOrdering 2 copy known
+{
+get
+exch 2 copy known not
+{ pop /Default }
+if
+get
+}
+{
+pop pop pop /Unknown
+}
+ifelse
+}
+for
+]
+exch pop
+2 index 3 1 roll
+_pdfComposeFont
+{3 -1 roll pop}
+{
+findfont dup /FontName get exch
+}
+ifelse
+}
+ifelse
+dup /WMode 2 copy known
+{ get _wmode ne }
+{ pop pop _wmode 1 eq}
+ifelse
+_fyAdj 0 ne or
+{
+exch _wmode _pdfConcatNames _fyAdj _pdfConcatNames
+dup _pdfFontStatus
+{ exch pop dup findfont false}
+{ exch true }
+ifelse
+}
+{
+dup /FontType get 0 ne
+}
+ifelse
+{
+dup /FontType get 3 eq _wmode 1 eq and
+{
+_pdfVerticalRomanT3Font dup length 10 add dict copy
+begin
+/_basefont exch
+dup length 3 add dict
+begin
+{1 index /FID ne {def}{pop pop} ifelse }
+forall
+/Encoding Encoding dup length array copy
+dup 16#27 /quotesingle put
+dup 16#60 /grave put
+_regOrdering /Adobe-Japan1 eq
+{dup 16#5c /yen put dup 16#a5 /yen put dup 16#b4 /yen put}
+if
+def
+FontName
+currentdict
+end
+definefont
+def
+/Encoding _basefont /Encoding get def
+/_fauxfont true def
+}
+{
+dup length 3 add dict
+begin
+{1 index /FID ne {def}{pop pop} ifelse }
+forall
+FontType 0 ne
+{
+/Encoding Encoding dup length array copy
+dup 16#27 /quotesingle put
+dup 16#60 /grave put
+_regOrdering /Adobe-Japan1 eq
+{dup 16#5c /yen put}
+if
+def
+/_fauxfont true def
+} if
+} ifelse
+/WMode _wmode def
+/BaseLineAdj _fyAdj def
+dup dup /FontName exch def
+currentdict
+end
+definefont pop
+}
+{
+pop
+}
+ifelse
+/_pdf_FontDirectory 3 1 roll _safeput
+}
+bd
+/swj {
+dup 4 1 roll
+dup length exch stringwidth
+exch 5 -1 roll 3 index mul add
+4 1 roll 3 1 roll mul add
+6 2 roll /_cnt 0 dd
+{1 index eq {/_cnt _cnt 1 add dd} if} forall pop
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} bd
+/jss {
+4 1 roll
+{
+pop pop
+(0) exch 2 copy 0 exch put
+gsave
+exch false charpath currentpoint
+5 index setmatrix stroke
+3 -1 roll
+32 eq
+{
+moveto
+5 index 5 index rmoveto currentpoint
+}
+if
+grestore
+moveto
+2 copy rmoveto
+} exch cshow
+6 {pop} repeat
+} def
+/jsfTzero {
+{
+pop pop
+(0) exch 2 copy 0 exch put
+exch show
+32 eq
+{
+4 index 4 index rmoveto
+}
+if
+2 copy rmoveto
+} exch cshow
+5 {pop} repeat
+} def
+/jsp
+{
+{
+pop pop
+(0) exch 2 copy 0 exch put
+32 eq
+dup {currentfont /Encoding get dup length 33 ge 
+{32 get /space eq and}{pop}ifelse
+}if
+{ exch 5 index 5 index 5 index 5 -1 roll widthshow }
+{ false charpath }
+ifelse
+2 copy rmoveto
+} exch cshow
+5 {pop} repeat
+} bd
+/trj { _cx 0 fWModeProc 32 _ax 0 fWModeProc 6 5 roll } bd
+/pjsf { trj sfc fawidthshowProc } bd
+/pjss { trj _ctm ssc jss } bd
+/pjsc { trj jsp } bd
+/_Tjdef [
+/pjsf load
+/pjss load
+{
+dup
+currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+} bind
+{
+trj swj rmoveto
+} bind
+{
+dup currentpoint 4 2 roll gsave
+pjsf
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll
+currentpoint gsave newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll gsave
+dup currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+/pjsc load
+] def
+/BT
+{
+/_inT true dd
+_ctm currentmatrix pop matrix _tm copy pop
+0 _rise _baselineadj add translate _hs 1 scale
+0 0 moveto
+} bd
+/ET
+{
+/_inT false dd
+_tr 3 gt {clip} if
+_ctm setmatrix newpath
+} bd
+/Tr {
+_inT { _tr 3 le {currentpoint newpath moveto} if } if
+dup /_tr xdd
+_Tjdef exch get /_Tj xdd
+} bd
+/Tj {
+userdict /$$copystring 2 index put
+_Tj
+} bd
+/iTm { _ctm setmatrix _tm concat 0 _rise _baselineadj add translate _hs 1 scale } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/Td { _mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto } bd
+/TD { dup /_ld xdd Td } bd
+/_nullProc {} bd
+/Tf {
+dup 1000 div /_fScl xdd
+_pdf_FontDirectory 2 index 2 copy known
+{get exch 3 -1 roll pop}
+{pop pop}
+ifelse
+Level2?
+{ selectfont }
+{ exch findfont exch scalefont setfont}
+ifelse
+currentfont dup
+/_nullProc exch
+/WMode known
+{
+1 index /WMode get 1 eq
+{pop /exch}
+if
+}
+if
+load /fWModeProc xdd
+dup
+/FontType get 0 eq dup _cx 0 ne and
+{ /jsfTzero }
+{ /awidthshow }
+ifelse
+load /fawidthshowProc xdd
+/_fTzero xdd
+dup /BaseLineAdj known
+{ dup /BaseLineAdj get _fScl mul }
+{ 0 }
+ifelse
+/_baselineadj xdd
+dup /_pdfT3Font known
+{ 0 }
+{_tr}
+ifelse
+_Tjdef exch get /_Tj xdd
+_intT
+{currentpoint iTm moveto}
+if
+pop
+} bd
+/TL { neg /_ld xdd } bd
+/Tw {
+/_cx xdd
+_cx 0 ne _fTzero and
+{ /jsfTzero }
+{ /awidthshow }
+ifelse
+load /fawidthshowProc xdd
+} bd
+/Tc { /_ax xdd } bd
+/Ts { /_rise xdd currentpoint iTm moveto } bd
+/Tz { 100 div /_hs xdd iTm } bd
+/Tk { exch pop _fScl mul neg 0 fWModeProc rmoveto } bd
+/T* { 0 _ld Td } bd
+/' { T* Tj } bd
+/" { exch Tc exch Tw ' } bd
+/TJ {
+{
+dup type /stringtype eq
+{ Tj }
+{ 0 exch Tk }
+ifelse
+} forall
+} bd
+/T- { _hy Tj } bd
+/d0/setcharwidth ld
+/d1 { setcachedevice /sfc{}dd /ssc{}dd } bd
+/nND {{/.notdef} repeat} bd
+/T3Defs {
+/BuildChar
+{
+1 index /Encoding get exch get
+1 index /BuildGlyph get exec
+}
+def
+/BuildGlyph {
+exch begin
+GlyphProcs exch get exec
+end
+} def
+/_pdfT3Font true def
+} bd
+/_pdfBoldRomanWidthProc
+{
+stringwidth 1 index 0 ne { exch .03 add exch }if setcharwidth
+0 0
+} bd
+/_pdfType0WidthProc
+{
+dup stringwidth 0 0 moveto
+2 index true charpath pathbbox
+0 -1
+7 index 2 div .88
+setcachedevice2
+pop
+0 0
+} bd
+/_pdfType0WMode1WidthProc
+{
+dup stringwidth
+pop 2 div neg -0.88
+2 copy
+moveto
+0 -1
+5 -1 roll true charpath pathbbox
+setcachedevice
+} bd
+/_pdfBoldBaseFont
+11 dict begin
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/Encoding cHexEncoding def
+/_setwidthProc /_pdfBoldRomanWidthProc load def
+/_bcstr1 1 string def
+/BuildChar
+{
+exch begin
+_basefont setfont
+_bcstr1 dup 0 4 -1 roll put
+dup
+_setwidthProc
+3 copy
+moveto
+show
+_basefonto setfont
+moveto
+show
+end
+}bd
+currentdict
+end
+def
+pdf_has_composefont?
+{
+/_pdfBoldBaseCIDFont
+11 dict begin
+/CIDFontType 1 def
+/CIDFontName /_pdfBoldBaseCIDFont def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/_setwidthProc /_pdfType0WidthProc load def
+/_bcstr2 2 string def
+/BuildGlyph
+{
+exch begin
+_basefont setfont
+_bcstr2 1 2 index 256 mod put
+_bcstr2 0 3 -1 roll 256 idiv put
+_bcstr2 dup _setwidthProc
+3 copy
+moveto
+show
+_basefonto setfont
+moveto
+show
+end
+}bd
+currentdict
+end
+def
+/_pdfDefineIdentity-H
+{
+/Identity-H /CMap resourcestatus
+{
+pop pop
+}
+{
+/CIDInit/ProcSet findresource begin 12 dict begin
+begincmap
+/CIDSystemInfo
+3 dict begin
+/Registry (Adobe) def
+/Ordering (Identity) def
+/Supplement 0 def
+currentdict
+end
+def
+/CMapName /Identity-H def
+/CMapVersion 1 def
+/CMapType 1 def
+1 begincodespacerange
+<0000> <ffff>
+endcodespacerange
+1 begincidrange
+<0000> <ffff> 0
+endcidrange
+endcmap
+CMapName currentdict/CMap defineresource pop
+end
+end
+} ifelse
+} def
+} if
+/_pdfVerticalRomanT3Font
+10 dict begin
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/_bcstr1 1 string def
+/BuildChar
+{
+exch begin
+_basefont setfont
+_bcstr1 dup 0 4 -1 roll put
+dup
+_pdfType0WidthProc
+moveto
+show
+end
+}bd
+currentdict
+end
+def
+/MakeBoldFont
+{
+dup /ct_SyntheticBold known
+{
+dup length 3 add dict begin
+CopyFont
+/ct_StrokeWidth .03 0 FontMatrix idtransform pop def
+/ct_SyntheticBold true def
+currentdict
+end
+definefont
+}
+{
+dup dup length 3 add dict
+begin
+CopyFont
+/PaintType 2 def
+/StrokeWidth .03 0 FontMatrix idtransform pop def
+/dummybold currentdict
+end
+definefont
+dup /FontType get dup 9 ge exch 11 le and
+{
+_pdfBoldBaseCIDFont
+dup length 3 add dict copy begin
+dup /CIDSystemInfo get /CIDSystemInfo exch def
+/_Type0Identity /Identity-H 3 -1 roll [ exch ] composefont
+/_basefont exch def
+/_Type0Identity /Identity-H 3 -1 roll [ exch ] composefont
+/_basefonto exch def
+currentdict
+end
+/CIDFont defineresource
+}
+{
+_pdfBoldBaseFont
+dup length 3 add dict copy begin
+/_basefont exch def
+/_basefonto exch def
+currentdict
+end
+definefont
+}
+ifelse
+}
+ifelse
+} bd
+/MakeBold {
+1 index
+_pdf_FontDirectory 2 index 2 copy known
+{get}
+{exch pop}
+ifelse
+findfont
+dup
+/FontType get 0 eq
+{
+dup /WMode known {dup /WMode get 1 eq }{false} ifelse
+version length 4 ge
+and
+{version 0 4 getinterval cvi 2015 ge }
+{true}
+ifelse
+{/_pdfType0WidthProc}
+{/_pdfType0WMode1WidthProc}
+ifelse
+_pdfBoldBaseFont /_setwidthProc 3 -1 roll load put
+{MakeBoldFont} Type0CopyFont definefont
+}
+{
+dup /_fauxfont known not 1 index /SubstMaster known not and
+{
+_pdfBoldBaseFont /_setwidthProc /_pdfBoldRomanWidthProc load put
+MakeBoldFont
+}
+{
+2 index 2 index eq
+{ exch pop }
+{
+dup length dict begin
+CopyFont
+currentdict
+end
+definefont
+}
+ifelse
+}
+ifelse
+}
+ifelse
+pop pop
+dup /dummybold ne
+{/_pdf_FontDirectory exch dup _safeput }
+{ pop }
+ifelse
+}bd
+/MakeItalic {
+_pdf_FontDirectory exch 2 copy known
+{get}
+{exch pop}
+ifelse
+dup findfont
+dup /FontInfo 2 copy known
+{
+get
+/ItalicAngle 2 copy known
+{get 0 eq }
+{ pop pop true}
+ifelse
+}
+{ pop pop true}
+ifelse
+{
+exch pop
+dup /FontType get 0 eq Level2? not and
+{ dup /FMapType get 6 eq }
+{ false }
+ifelse
+{
+dup /WMode 2 copy known
+{
+get 1 eq
+{ _italMtx_WMode1Type0 }
+{ _italMtxType0 }
+ifelse
+}
+{ pop pop _italMtxType0 }
+ifelse
+}
+{
+dup /WMode 2 copy known
+{
+get 1 eq
+{ _italMtx_WMode1 }
+{ _italMtx }
+ifelse
+}
+{ pop pop _italMtx }
+ifelse
+}
+ifelse
+makefont
+dup /FontType get 42 eq Level2? not or
+{
+dup length dict begin
+CopyFont
+currentdict
+end
+}
+if
+1 index exch
+definefont pop
+/_pdf_FontDirectory exch dup _safeput
+}
+{
+pop
+2 copy ne
+{
+/_pdf_FontDirectory 3 1 roll _safeput
+}
+{ pop pop }
+ifelse
+}
+ifelse
+}bd
+/MakeBoldItalic {
+/dummybold exch
+MakeBold
+/dummybold
+MakeItalic
+}bd
+Level2?
+{
+/pdf_CopyDict
+{1 index length add dict copy}
+def
+}
+{
+/pdf_CopyDict
+{
+1 index length add dict
+1 index wcheck
+{ copy }
+{ begin
+{def} forall
+currentdict
+end
+}
+ifelse
+}
+def
+}
+ifelse
+/pdf_AddEuroGlyphProc
+{
+currentdict /CharStrings known
+{
+CharStrings /Euro known not
+{
+dup
+/CharStrings
+CharStrings 1 pdf_CopyDict
+begin
+/Euro pdf_EuroProcSet 4 -1 roll get def
+currentdict
+end
+def
+/pdf_PSBuildGlyph /pdf_PSBuildGlyph load def
+/pdf_PathOps /pdf_PathOps load def
+/Symbol eq
+{
+/Encoding Encoding dup length array copy
+dup 160 /Euro put def
+}
+if
+}
+{ pop
+}
+ifelse
+}
+{ pop
+}
+ifelse
+}
+def
+/pdf_PathOps 4 dict dup begin
+/m {moveto} def
+/l {lineto} def
+/c {curveto} def
+/cp {closepath} def
+end
+def
+/pdf_PSBuildGlyph
+{
+gsave
+8 -1 roll pop
+7 1 roll
+currentdict /PaintType 2 copy known {get 2 eq}{pop pop false} ifelse
+dup 9 1 roll
+{
+currentdict /StrokeWidth 2 copy known
+{
+get 2 div
+5 1 roll
+4 -1 roll 4 index sub
+4 1 roll
+3 -1 roll 4 index sub
+3 1 roll
+exch 4 index add exch
+4 index add
+5 -1 roll pop
+}
+{
+pop pop
+}
+ifelse
+}
+if
+setcachedevice
+pdf_PathOps begin
+exec
+end
+{
+currentdict /StrokeWidth 2 copy known
+{ get }
+{ pop pop 0 }
+ifelse
+setlinewidth stroke
+}
+{
+fill
+}
+ifelse
+grestore
+} def
+/pdf_EuroProcSet 13 dict def
+pdf_EuroProcSet
+begin
+/Courier-Bold
+{
+600 0 6 -12 585 612
+{
+385 274 m
+180 274 l
+179 283 179 293 179 303 c
+179 310 179 316 180 323 c
+398 323 l
+423 404 l
+197 404 l
+219 477 273 520 357 520 c
+409 520 466 490 487 454 c
+487 389 l
+579 389 l
+579 612 l
+487 612 l
+487 560 l
+449 595 394 612 349 612 c
+222 612 130 529 98 404 c
+31 404 l
+6 323 l
+86 323 l
+86 304 l
+86 294 86 284 87 274 c
+31 274 l
+6 193 l
+99 193 l
+129 77 211 -12 359 -12 c
+398 -12 509 8 585 77 c
+529 145 l
+497 123 436 80 356 80 c
+285 80 227 122 198 193 c
+360 193 l
+cp
+600 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Courier-BoldOblique /Courier-Bold load def
+/Courier
+{
+600 0 17 -12 578 584
+{
+17 204 m
+97 204 l
+126 81 214 -12 361 -12 c
+440 -12 517 17 578 62 c
+554 109 l
+501 70 434 43 366 43 c
+266 43 184 101 154 204 c
+380 204 l
+400 259 l
+144 259 l
+144 270 143 281 143 292 c
+143 299 143 307 144 314 c
+418 314 l
+438 369 l
+153 369 l
+177 464 249 529 345 529 c
+415 529 484 503 522 463 c
+522 391 l
+576 391 l
+576 584 l
+522 584 l
+522 531 l
+473 566 420 584 348 584 c
+216 584 122 490 95 369 c
+37 369 l
+17 314 l
+87 314 l
+87 297 l
+87 284 88 272 89 259 c
+37 259 l
+cp
+600 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Courier-Oblique /Courier load def
+/Helvetica
+{
+556 0 24 -19 541 703
+{
+541 628 m
+510 669 442 703 354 703 c
+201 703 117 607 101 444 c
+50 444 l
+25 372 l
+97 372 l
+97 301 l
+49 301 l
+24 229 l
+103 229 l
+124 67 209 -19 350 -19 c
+435 -19 501 25 509 32 c
+509 131 l
+492 105 417 60 343 60 c
+267 60 204 127 197 229 c
+406 229 l
+430 301 l
+191 301 l
+191 372 l
+455 372 l
+479 444 l
+194 444 l
+201 531 245 624 348 624 c
+433 624 484 583 509 534 c
+cp
+556 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Helvetica-Oblique /Helvetica load def
+/Helvetica-Bold
+{
+556 0 12 -19 563 710
+{
+563 621 m
+537 659 463 710 363 710 c
+216 710 125 620 101 462 c
+51 462 l
+12 367 l
+92 367 l
+92 346 l
+92 337 93 328 93 319 c
+52 319 l
+12 224 l
+102 224 l
+131 58 228 -19 363 -19 c
+417 -19 471 -12 517 18 c
+517 146 l
+481 115 426 93 363 93 c
+283 93 254 166 246 224 c
+398 224 l
+438 319 l
+236 319 l
+236 367 l
+457 367 l
+497 462 l
+244 462 l
+259 552 298 598 363 598 c
+425 598 464 570 486 547 c
+507 526 513 517 517 509 c
+cp
+556 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Helvetica-BoldOblique /Helvetica-Bold load def
+/Symbol
+{
+750 0 20 -12 714 685
+{
+714 581 m
+650 645 560 685 465 685 c
+304 685 165 580 128 432 c
+50 432 l
+20 369 l
+116 369 l
+115 356 115 347 115 337 c
+115 328 115 319 116 306 c
+50 306 l
+20 243 l
+128 243 l
+165 97 300 -12 465 -12 c
+560 -12 635 25 685 65 c
+685 155 l
+633 91 551 51 465 51 c
+340 51 238 131 199 243 c
+555 243 l
+585 306 l
+184 306 l
+183 317 182 326 182 336 c
+182 346 183 356 184 369 c
+614 369 l 644 432 l
+199 432 l
+233 540 340 622 465 622 c
+555 622 636 580 685 520 c
+cp
+750 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-Bold
+{
+500 0 16 -14 478 700
+{
+367 308 m
+224 308 l
+224 368 l
+375 368 l
+380 414 l
+225 414 l
+230 589 257 653 315 653 c
+402 653 431 521 444 457 c
+473 457 l
+473 698 l
+444 697 l
+441 679 437 662 418 662 c
+393 662 365 700 310 700 c
+211 700 97 597 73 414 c
+21 414 l
+16 368 l
+69 368 l
+69 359 68 350 68 341 c
+68 330 68 319 69 308 c
+21 308 l
+16 262 l
+73 262 l
+91 119 161 -14 301 -14 c
+380 -14 443 50 478 116 c
+448 136 l
+415 84 382 40 323 40 c
+262 40 231 77 225 262 c
+362 262 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-BoldItalic
+{
+500 0 9 -20 542 686
+{
+542 686 m
+518 686 l
+513 673 507 660 495 660 c
+475 660 457 683 384 683 c
+285 683 170 584 122 430 c
+58 430 l
+34 369 l
+105 369 l
+101 354 92 328 90 312 c
+34 312 l
+9 251 l
+86 251 l
+85 238 84 223 84 207 c
+84 112 117 -14 272 -14 c
+326 -14 349 9 381 9 c
+393 9 393 -10 394 -20 c
+420 -20 l
+461 148 l
+429 148 l
+416 109 362 15 292 15 c
+227 15 197 55 197 128 c
+197 162 204 203 216 251 c
+378 251 l
+402 312 l
+227 312 l
+229 325 236 356 241 369 c
+425 369 l
+450 430 l
+255 430 l
+257 435 264 458 274 488 c
+298 561 337 654 394 654 c
+437 654 484 621 484 530 c
+484 516 l
+516 516 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-Italic
+{
+500 0 23 -10 595 692
+{
+399 317 m
+196 317 l
+199 340 203 363 209 386 c
+429 386 l
+444 424 l
+219 424 l
+246 514 307 648 418 648 c
+448 648 471 638 492 616 c
+529 576 524 529 527 479 c
+549 475 l
+595 687 l
+570 687 l
+562 674 558 664 542 664 c
+518 664 474 692 423 692 c
+275 692 162 551 116 424 c
+67 424 l
+53 386 l
+104 386 l
+98 363 93 340 90 317 c
+37 317 l
+23 279 l
+86 279 l
+85 266 85 253 85 240 c
+85 118 137 -10 277 -10 c
+370 -10 436 58 488 128 c
+466 149 l
+424 101 375 48 307 48 c
+212 48 190 160 190 234 c
+190 249 191 264 192 279 c
+384 279 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+/Times-Roman
+{
+500 0 10 -12 484 692
+{
+347 298 m
+171 298 l
+170 310 170 322 170 335 c
+170 362 l
+362 362 l
+374 403 l
+172 403 l
+184 580 244 642 308 642 c
+380 642 434 574 457 457 c
+481 462 l
+474 691 l
+449 691 l
+433 670 429 657 410 657 c
+394 657 360 692 299 692 c
+204 692 94 604 73 403 c
+22 403 l
+10 362 l
+70 362 l
+69 352 69 341 69 330 c
+69 319 69 308 70 298 c
+22 298 l
+10 257 l
+73 257 l
+97 57 216 -12 295 -12 c
+364 -12 427 25 484 123 c
+458 142 l
+425 101 384 37 316 37 c
+256 37 189 84 173 257 c
+335 257 l
+cp
+500 0 m
+}
+pdf_PSBuildGlyph
+} def
+end
+currentdict readonly pop end
+%%EndResource
+PDFText begin
+[39/quotesingle 96/grave 128/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash
+/.notdef/plusminus/.notdef/.notdef/yen/mu/.notdef/.notdef
+/.notdef/.notdef/.notdef/ordfeminine/ordmasculine/.notdef/ae/oslash
+/questiondown/exclamdown/logicalnot/.notdef/florin/.notdef/.notdef
+/guillemotleft/guillemotright/ellipsis/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide
+/.notdef/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright
+/fi/fl/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand
+/Acircumflex/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex
+/Idieresis/Igrave/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve/dotaccent/ring/cedilla
+/hungarumlaut/ogonek/caron
+0 TE
+[1/dotlessi/caron 39/quotesingle 96/grave 
+127/bullet/Euro/bullet/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE
+/bullet/Zcaron/bullet/bullet/quoteleft/quoteright/quotedblleft
+/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/bullet/zcaron/Ydieresis/space/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine
+/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus
+/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash
+/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde
+/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute
+/ucircumflex/udieresis/yacute/thorn/ydieresis
+1 TE
+end
+currentdict readonly pop
+end end
+/currentpacking where {pop setpacking}if
+PDFVars/DocInitAll{[ PDFText]{/docinitialize get exec}forall }put
+PDFVars/InitAll{[PDF PDFText]{/initialize get exec}forall initgs}put
+PDFVars/TermAll{[PDFText PDF]{/terminate get exec}forall}put
+PDFVars begin PDF begin
+PDFVars/DocInitAll get exec PDFVars/InitAll get exec
+%%IncludeResource Courier
+[ 9 /space 39 /quotesingle 96 /grave 127 /.notdef/Adieresis/Aring
+/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla
+/eacute/egrave/ecircumflex/edieresis/iacute/igrave
+/icircumflex/idieresis/ntilde/oacute/ograve/ocircumflex
+/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet
+/paragraph/germandbls/registered/copyright/trademark/acute
+/dieresis/notequal/AE/Oslash/infinity/plusminus
+/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega
+/ae/oslash/questiondown/exclamdown/logicalnot/radical
+/florin/approxequal/Delta/guillemotleft/guillemotright/ellipsis
+/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright
+/divide/lozenge/ydieresis/Ydieresis/fraction/Euro
+/guilsinglleft/guilsinglright/fi/fl/daggerdbl/periodcentered
+/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/apple/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve
+/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+/N5272/Courier -1 TZ
+%%IncludeResource Times-Roman
+[ 9 /space 39 /quotesingle 96 /grave 127 /.notdef/Adieresis/Aring
+/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla
+/eacute/egrave/ecircumflex/edieresis/iacute/igrave
+/icircumflex/idieresis/ntilde/oacute/ograve/ocircumflex
+/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet
+/paragraph/germandbls/registered/copyright/trademark/acute
+/dieresis/notequal/AE/Oslash/infinity/plusminus
+/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega
+/ae/oslash/questiondown/exclamdown/logicalnot/radical
+/florin/approxequal/Delta/guillemotleft/guillemotright/ellipsis
+/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright
+/divide/lozenge/ydieresis/Ydieresis/fraction/Euro
+/guilsinglleft/guilsinglright/fi/fl/daggerdbl/periodcentered
+/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/apple/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve
+/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+/N5248/Times-Roman -1 TZ
+%%IncludeResource Helvetica-Bold
+[ 9 /space 39 /quotesingle 96 /grave 127 /.notdef/Adieresis/Aring
+/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla
+/eacute/egrave/ecircumflex/edieresis/iacute/igrave
+/icircumflex/idieresis/ntilde/oacute/ograve/ocircumflex
+/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet
+/paragraph/germandbls/registered/copyright/trademark/acute
+/dieresis/notequal/AE/Oslash/infinity/plusminus
+/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega
+/ae/oslash/questiondown/exclamdown/logicalnot/radical
+/florin/approxequal/Delta/guillemotleft/guillemotright/ellipsis
+/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright
+/divide/lozenge/ydieresis/Ydieresis/fraction/Euro
+/guilsinglleft/guilsinglright/fi/fl/daggerdbl/periodcentered
+/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/apple/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve
+/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+/N5249/Helvetica-Bold -1 TZ
+%%IncludeResource Helvetica
+[ 9 /space 39 /quotesingle 96 /grave 127 /.notdef/Adieresis/Aring
+/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla
+/eacute/egrave/ecircumflex/edieresis/iacute/igrave
+/icircumflex/idieresis/ntilde/oacute/ograve/ocircumflex
+/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet
+/paragraph/germandbls/registered/copyright/trademark/acute
+/dieresis/notequal/AE/Oslash/infinity/plusminus
+/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega
+/ae/oslash/questiondown/exclamdown/logicalnot/radical
+/florin/approxequal/Delta/guillemotleft/guillemotright/ellipsis
+/space/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright
+/divide/lozenge/ydieresis/Ydieresis/fraction/Euro
+/guilsinglleft/guilsinglright/fi/fl/daggerdbl/periodcentered
+/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave
+/Oacute/Ocircumflex/apple/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve
+/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+/N5244/Helvetica -1 TZ
+PDFVars/TermAll get exec end end
+
+%%EndSetup
+%%Page: 123 1
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+/N9310 <<
+/SA true 
+/OP false 
+>> /ExtGState defineRes pop
+/N9195 <<
+/SA false 
+/OP false 
+>> /ExtGState defineRes pop
+%%EndPageSetup
+0 0 612 792 RC
+BT
+/N5244 1 Tf
+10 0 0 10 90 746 Tm
+0 g
+/N9195 /ExtGState findRes gsDI
+0 Tc
+0 Tw
+(Name _____________________)Tj [-3479.89999 ]TJ (Class ______________)Tj [-10738.59999 ]TJ (Date _________)Tj 
+/N5249 1 Tf
+0 -70.79998 TD
+(P11)Tj [-14921.09999 ]TJ (\2511999)Tj 
+10 0 2.12599 10 291 38 Tm
+( PASCO scientific)Tj 
+10 0 0 10 531 38 Tm
+(p. 71)Tj 
+ET
+0.75299 g
+90 702 275 12 rf
+BT
+10 0 0 10 90 704 Tm
+0 g
+0.03689 Tc
+0.36909 Tw
+(PART II: Sensor Calibration and Equipment Setup)Tj 
+/N5248 1 Tf
+12 0 0 12 90 687 Tm
+0 Tc
+0 Tw
+(\245)Tj [-2066.69999 ]TJ (You do not need to calibrate the Motion Sensor.)Tj 
+0 -1.5 TD
+(\245)Tj [-2066.69999 ]TJ (To calibrate the Force Sensor, refer to the tutorial in the introduction\
+ of this manual.)Tj 
+T*
+(1.)Tj 
+/N5272 1 Tf
+0.75 0 TD
+( )Tj 
+/N5248 1 Tf
+1.66659 0 TD
+(Place the Dynamics Track on a horizontal surface.)Tj 
+-2.41668 -1.5 TD
+(2.)Tj 
+/N5272 1 Tf
+0.75 0 TD
+( )Tj 
+/N5248 1 Tf
+1.66659 0 TD
+(Mount the Economy Force Sensor on the Accessory Bracket. Mount the Acces\
+sory)Tj 
+0 -1 TD
+(Bracket in the T-slot on the side of the Dynamics Track.)Tj 
+-2.41668 -1.5 TD
+(3.)Tj [-1666.59999 ]TJ (Use a book or other method to raise the end of the Dynamics Track that i\
+s opposite to the)Tj 
+2.41668 -1 TD
+(end with the Force Sensor about 1.5 cm so the cart will have approximate\
+ly the same speed)Tj 
+T*
+(for each trial.)Tj 
+-2.41668 -1.5 TD
+(4.)Tj [-1666.59999 ]TJ (Place the Motion Sensor at the raised end of the Dynamics Track so it ca\
+n measure the)Tj 
+2.41668 -1 TD
+(motion of the cart. Put a mark on the Dynamics Track at least the minimu\
+m distance away)Tj 
+T*
+(from the Motion Sensor. For all trials start the cart at this place.)Tj 
+-2.41668 -1.5 TD
+(5.)Tj [-1666.59999 ]TJ (Brace the Force Sensor end of the Dynamics Track against a heavy mass so\
+ the Dynamics)Tj 
+2.41668 -1 TD
+(Track will not move during the collision.)Tj 
+-2.41668 -1.5 TD
+(6.)Tj [-1666.59999 ]TJ (Measure t)Tj [-28.79998 ]TJ (he mass of the cart. Record the mass value in the Data Table in the Lab \
+Report)Tj 
+2.41668 -1 TD
+(section.)Tj 
+-2.41668 -2.75 TD
+(7.)Tj [-1666.59999 ]TJ (Unscrew the hook attachment from the front of the Force Sensor. In its p\
+lace, put the)Tj 
+2.41668 -1 TD
+(magnetic bumper from the Accessory Bracket with Bumpers.)Tj 
+ET
+1 g
+30 760 1 1 rf
+0.75 g
+
+90 354 138 -12 rf
+BT
+/N5249 1 Tf
+10 0 0 10 90 344 Tm
+0 g
+(PART III: Data Recording)Tj 
+/N5248 1 Tf
+12 0 0 12 90 327 Tm
+(1.)Tj [-1666.59999 ]TJ (Prior to each data run, press the tare button on the side of the Force S\
+ensor to zero the)Tj 
+2.41668 -1 TD
+(sensor.)Tj 
+-2.41668 -1.5 TD
+(2.)Tj [-1666.59999 ]TJ (Place the cart on the Dynamics Track at the starting mark made during se\
+tup.)Tj 
+T*
+(3.)Tj [-1666.59999 ]TJ (Release the cart so that it rolls toward the Force Sensor. Begin da)Tj [-30.09999 ]TJ (ta recording.)Tj 
+T*
+(4.)Tj [-1666.59999 ]TJ (End data recording after the cart has rebounded from the collision with \
+the Force Sensor\325s)Tj 
+2.41668 -1 TD
+(magnetic bumper.)Tj 
+-2.41668 -1.5 TD
+(\245)Tj [-2066.69999 ]TJ (The data will appear as Run #1.)Tj 
+ET
+0 0 0 1 K
+0 J
+0 j
+0.19299 w
+3.86399 M
+[]0 d
+/N9310 /ExtGState findRes gsDI
+158.58799 369.97099 m
+159.42599 369.91398 159.43199 371.25999 158.59298 371.20298 c
+156.00099 372.59999 l
+155.91198 372.64599 155.78298 372.61999 155.71798 372.54299 c
+154.84698 371.54199 l
+155.90899 371.20599 l
+S 
+0 0 0 0.39999 k
+155.90299 371.20599 m
+158.39799 371.20599 l
+158.98699 371.24699 159.16999 370.34999 158.63499 370.07699 c
+158.63499 370.10398 l
+158.63499 361.91398 l
+158.64498 361.73399 158.56799 361.54998 158.44699 361.41598 c
+158.42298 361.39099 l
+158.29598 361.26399 158.10798 361.20698 157.92698 361.20698 c
+122.36898 361.20698 l
+122.08999 361.20698 121.82398 361.31698 121.62699 361.51399 c
+121.42999 361.71099 121.31999 361.97698 121.31999 362.25599 c
+121.31999 374.32099 l
+123.78599 392.65998 l
+125.96199 408.79598 148.93499 410.38798 153.38099 394.78799 c
+158.91198 375.34999 l
+159.05198 374.85798 158.95298 374.32899 158.64498 373.91999 c
+158.33599 373.51199 157.85499 373.27198 157.34298 373.27198 c
+150.46199 373.27198 l
+150.46199 371.41198 l
+150.46199 371.32199 150.56599 371.18598 150.68699 371.18598 c
+155.90998 371.20298 l
+155.90299 371.20599 l
+b* 
+0.19699 w
+3.86399 M
+138.80499 399.79098 m
+138.80499 381.48999 l
+138.80499 400.82299 m
+138.80499 380.45999 l
+139.70999 377.65098 m
+139.80899 377.65098 l
+139.77198 377.56999 m
+139.77198 378.70298 l
+149.04899 392.625 m
+149.10998 392.27999 l
+145.37699 398.74499 m
+145.64498 398.51998 l
+148.66899 387.23699 m
+148.54899 386.90798 l
+149.10998 389.00099 m
+149.04899 388.65699 l
+148.54899 394.37298 m
+148.66899 394.04399 l
+140.78898 380.39698 m
+140.44499 380.33599 l
+149.23799 390.81498 m
+149.23799 390.46598 l
+146.90998 384.06799 m
+146.68499 383.80099 l
+147.92799 385.57598 m
+147.75299 385.27299 l
+147.75299 396.00799 m
+147.92799 395.70498 l
+146.68499 397.48098 m
+146.90998 397.21299 l
+145.64498 382.76098 m
+145.37699 382.53599 l
+143.86999 399.76298 m
+144.17298 399.58799 l
+144.17298 381.69299 m
+143.86999 381.51799 l
+142.20899 400.50399 m
+142.53799 400.38398 l
+142.53799 380.89698 m
+142.20899 380.77699 l
+140.44499 400.94499 m
+140.78898 400.88499 l
+140.60598 379.41699 m
+140.62699 379.30198 l
+130.70098 397.21299 m
+130.92599 397.48098 l
+138.97999 380.20799 m
+138.62998 380.20799 l
+138.62998 401.07398 m
+138.97999 401.07398 l
+136.82099 400.88499 m
+137.16598 400.94499 l
+137.16598 380.33599 m
+136.82099 380.39698 l
+135.40098 380.77699 m
+135.07299 380.89698 l
+128.5 392.27999 m
+128.56098 392.625 l
+135.07299 400.38398 m
+135.40098 400.50399 l
+133.43699 399.58799 m
+133.73999 399.76298 l
+132.23298 382.53599 m
+131.96499 382.76098 l
+131.96499 398.51998 m
+132.23298 398.74499 l
+133.73999 381.51799 m
+133.43699 381.69299 l
+129.68199 395.70498 m
+129.85699 396.00799 l
+130.92599 383.80099 m
+130.70098 384.06799 l
+129.85699 385.27299 m
+129.68199 385.57598 l
+128.94198 394.04399 m
+129.06098 394.37298 l
+128.56098 388.65699 m
+128.5 389.00099 l
+128.37199 390.46598 m
+128.37199 390.81498 l
+129.06098 386.90798 m
+128.94198 387.23699 l
+146.79699 397.34698 m
+147.18598 396.88299 147.53799 396.38099 147.83999 395.85699 c
+148.60899 394.20899 m
+148.81599 393.63999 148.97499 393.04798 149.07998 392.45199 c
+149.07998 388.82899 m
+148.97499 388.23298 148.81599 387.64099 148.60899 387.07199 c
+148.20498 366.51998 m
+147.93798 366.09399 147.47198 365.83599 146.96998 365.83599 c
+146.79699 383.93399 m
+146.40798 383.47099 145.97499 383.03698 145.51098 382.64898 c
+144.02198 399.67599 m
+144.54598 399.37298 145.04798 399.02099 145.51098 398.63299 c
+144.02198 381.60499 m
+143.49798 381.30299 142.94198 381.04399 142.37399 380.83699 c
+142.37399 400.44398 m
+142.94198 400.23799 143.49798 399.97799 144.02198 399.67599 c
+149.23799 390.63999 m
+149.23799 390.03599 149.18499 389.42498 149.07998 388.82899 c
+149.07998 392.45199 m
+149.18499 391.85699 149.23799 391.24499 149.23799 390.63999 c
+148.60899 387.07199 m
+148.40199 386.50399 148.14299 385.94799 147.83999 385.42399 c
+147.83999 395.85699 m
+148.14299 395.33299 148.40199 394.77699 148.60899 394.20899 c
+146.96998 372.28498 m
+147.47198 372.28498 147.93798 372.02699 148.20498 371.60198 c
+148.42698 367.29299 m
+148.41499 367.04098 148.35099 366.73199 148.20498 366.51998 c
+147.83999 385.42399 m
+147.53799 384.89999 147.18598 384.39799 146.79699 383.93399 c
+145.51098 398.63299 m
+145.97499 398.24398 146.40798 397.80999 146.79699 397.34698 c
+145.51098 382.64898 m
+145.04798 382.25999 144.54598 381.90798 144.02198 381.60499 c
+135.23699 400.44398 m
+135.80499 400.65098 136.39799 400.80999 136.99398 400.91499 c
+140.61698 400.91499 m
+141.21299 400.80999 141.80499 400.65098 142.37399 400.44398 c
+142.37399 380.83699 m
+141.80499 380.62998 141.21299 380.47099 140.61698 380.36599 c
+133.58898 381.60499 m
+133.06498 381.90798 132.56298 382.25999 132.09899 382.64898 c
+148.20498 371.60198 m
+148.33399 371.38198 148.43299 371.08599 148.42698 370.82798 c
+138.80499 401.07398 m
+139.40998 401.07398 140.02099 401.01998 140.61698 400.91499 c
+S 
+140.61698 380.36599 m
+140.02099 380.26098 139.40998 380.20799 138.80499 380.20799 c
+124.81199 372.28498 m
+146.96998 372.28498 l
+146.96998 365.83599 m
+124.81199 365.83599 l
+129.76998 395.85699 m
+130.07199 396.38099 130.42399 396.88299 130.81298 397.34698 c
+138.80499 380.20799 m
+138.19999 380.20799 137.58898 380.26098 136.99398 380.36599 c
+136.99398 380.36599 m
+136.39799 380.47099 135.80499 380.62998 135.23699 380.83699 c
+135.23699 380.83699 m
+134.66799 381.04399 134.11299 381.30299 133.58898 381.60499 c
+133.58898 399.67599 m
+134.11299 399.97799 134.66799 400.23799 135.23699 400.44398 c
+132.09899 398.63299 m
+132.56298 399.02198 133.06498 399.37298 133.58898 399.67599 c
+130.81298 397.34698 m
+131.20199 397.80999 131.63598 398.24398 132.09899 398.63299 c
+132.09899 382.64898 m
+131.63598 383.03698 131.20199 383.47099 130.81298 383.93399 c
+136.99398 400.91499 m
+137.58898 401.01998 138.19999 401.07398 138.80499 401.07398 c
+129.76998 385.42399 m
+129.46699 385.94799 129.20799 386.50399 129.00099 387.07199 c
+129.00099 394.20899 m
+129.20799 394.77699 129.46798 395.33299 129.76998 395.85699 c
+130.81298 383.93399 m
+130.42399 384.39799 130.07199 384.89999 129.76998 385.42399 c
+128.37199 390.64099 m
+128.37199 391.24499 128.42599 391.85699 128.53099 392.45199 c
+129.00099 387.07199 m
+128.79499 387.64099 128.63598 388.23298 128.53099 388.82899 c
+128.53099 392.45199 m
+128.63598 393.04798 128.79499 393.63999 129.00099 394.20899 c
+128.53099 388.82899 m
+128.42599 389.42498 128.37199 390.03599 128.37199 390.64099 c
+124.81199 365.83599 m
+124.30999 365.83599 123.84399 366.09399 123.57699 366.51998 c
+123.35499 370.82798 m
+123.36698 371.07998 123.43099 371.38999 123.57699 371.60198 c
+123.57699 371.60198 m
+123.84399 372.02699 124.30999 372.28498 124.81199 372.28498 c
+123.57699 366.51998 m
+123.44799 366.73899 123.34899 367.03599 123.35499 367.29299 c
+148.42698 370.82798 m
+148.42698 367.29299 l
+123.35499 367.29299 m
+123.35499 370.82798 l
+121.31999 374.32099 m
+121.35299 374.31799 l
+157.92698 361.20698 m
+157.92799 361.20698 l
+150.46199 371.41198 m
+150.46199 371.41198 l
+123.76799 360.98699 m
+123.76799 361.20698 l
+126.68199 360.98699 m
+123.76799 360.98699 l
+126.68199 360.98699 m
+126.68199 361.20698 l
+154.07598 360.98699 m
+154.07598 361.20698 l
+154.07598 360.98699 m
+156.98999 360.98699 l
+156.98999 360.98699 m
+156.98999 361.20698 l
+136.78999 369.83099 m
+136.37399 370.51899 135.47799 370.73699 134.78898 370.31999 c
+134.09899 369.90299 133.87699 369.00698 134.29299 368.31999 c
+134.70799 367.63198 135.60398 367.41299 136.29399 367.83099 c
+136.98298 368.24798 137.20498 369.14299 136.78999 369.83099 c
+s 
+3.86399 M
+147.54399 364.02598 m
+148.02999 363.82499 l
+148.23098 364.30999 l
+148.57598 364.16699 l
+148.37399 363.68199 l
+148.85998 363.47999 l
+148.71699 363.13598 l
+148.23199 363.33699 l
+148.02999 362.85099 l
+147.68598 362.99398 l
+147.88699 363.47999 l
+147.40098 363.68099 l
+147.54399 364.02598 l
+h
+149.43099 362.64498 m
+150.10398 363.31698 149.60699 364.73399 148.79699 365.03999 c
+148.17999 365.32199 147.45298 365.18499 146.97999 364.69799 c
+146.50698 364.21199 146.39199 363.47999 146.69198 362.87199 c
+147.08399 362.08299 148.28099 361.67399 149.01998 362.24798 c
+149.17098 362.35398 149.32699 362.49099 149.43099 362.64498 c
+s 
+3.86399 M
+151.10198 375.03599 m
+150.59399 375.17298 l
+150.45799 374.66398 l
+150.09698 374.76098 l
+150.23399 375.26899 l
+149.72599 375.40499 l
+149.82199 375.76599 l
+150.32998 375.62899 l
+150.46699 376.13699 l
+150.82699 376.04098 l
+150.68998 375.53298 l
+151.19799 375.39599 l
+151.10198 375.03599 l
+h
+149.23799 374.36399 m
+148.68699 375.01399 148.74099 375.97999 149.35899 376.56599 c
+149.97799 377.15199 150.94599 377.15199 151.56498 376.56599 c
+152.18399 375.97999 152.23699 375.01399 151.68598 374.36399 c
+151.09298 373.69299 149.80599 373.57299 149.23799 374.36399 c
+h
+124.32598 375.10598 m
+123.80599 375.18798 l
+123.72499 374.66799 l
+123.35598 374.72599 l
+123.43798 375.24598 l
+122.91899 375.32699 l
+122.97599 375.69599 l
+123.49598 375.61399 l
+123.57699 376.13299 l
+123.94599 376.07598 l
+123.86399 375.55599 l
+124.38398 375.47499 l
+124.32598 375.10598 l
+h
+123.35699 376.97799 m
+122.14299 376.79098 121.59999 375.05999 122.54699 374.23899 c
+122.67599 374.12899 122.82398 374.00399 122.98498 373.94198 c
+123.61399 373.65399 124.35699 373.80198 124.82798 374.30999 c
+125.29798 374.81698 125.38999 375.56898 125.05599 376.17498 c
+124.72198 376.78099 124.03698 377.10499 123.35699 376.97799 c
+h
+124.33799 363.31498 m
+123.81599 363.375 l
+123.75599 362.85198 l
+123.38598 362.89399 l
+123.44499 363.41598 l
+122.92199 363.47599 l
+122.96398 363.84599 l
+123.48699 363.78698 l
+123.54598 364.30899 l
+123.91699 364.26799 l
+123.85699 363.74499 l
+124.37998 363.68598 l
+124.33799 363.31498 l
+h
+122.98498 365.03999 m
+122.125 364.64299 121.75498 363.41699 122.35099 362.64498 c
+122.46199 362.49798 122.60398 362.34698 122.76199 362.24798 c
+123.36898 361.67898 124.85598 362.05999 125.08999 362.87199 c
+125.38999 363.47999 125.27499 364.21199 124.80198 364.69898 c
+124.32899 365.18499 123.60198 365.32199 122.98498 365.03999 c
+h
+134.08599 369.14199 m
+133.35598 369.04598 l
+133.34098 370.15499 134.15798 371.09799 135.25698 371.24198 c
+136.35598 371.38598 137.38798 370.68598 137.65998 369.61099 c
+136.92999 369.51499 l
+134.15199 368.63499 m
+133.42199 368.53898 l
+133.69398 367.46499 134.72698 366.76399 135.82598 366.90798 c
+136.92498 367.05198 137.74099 367.99598 137.72698 369.10398 c
+136.99699 369.00799 l
+135.01699 372.28498 m
+135.01699 372.125 l
+133.53199 371.86999 132.44599 370.58198 132.44599 369.07499 c
+132.44599 367.56799 133.53199 366.28099 135.01699 366.02499 c
+135.01699 365.83599 l
+136.06599 372.28498 m
+136.06599 372.125 l
+137.55099 371.86999 138.63598 370.58198 138.63598 369.07499 c
+138.63598 367.56799 137.55099 366.28099 136.06599 366.02499 c
+136.06599 365.83599 l
+137.05699 381.51699 m
+137.05699 380.96798 137.47898 380.51199 138.02598 380.47099 c
+138.80499 380.44099 l
+139.58499 380.47099 l
+140.13198 380.51199 140.55398 380.96798 140.55398 381.51699 c
+140.55398 399.76499 l
+140.55398 400.31298 140.13198 400.76899 139.58499 400.81098 c
+138.80499 400.83999 l
+138.02598 400.81098 l
+137.47898 400.76899 137.05699 400.31298 137.05699 399.76499 c
+137.05699 381.51699 l
+h
+138.65399 377.96899 m
+138.65899 378.10198 138.79699 378.20199 138.92298 378.19999 c
+139.05398 378.20399 139.20298 378.09799 139.20298 377.95899 c
+139.20199 377.89199 139.15299 377.80899 139.09599 377.77598 c
+138.92898 377.73599 l
+138.79998 377.72898 138.65399 377.83099 138.65399 377.96899 c
+h
+138.76799 378.26298 m
+138.66099 378.19699 138.55398 378.10598 138.55599 377.97099 c
+138.55799 377.89599 138.58599 377.79899 138.63899 377.74299 c
+138.70698 377.67498 138.83099 377.61299 138.92999 377.62298 c
+139.11898 377.60998 139.30099 377.77198 139.30198 377.96199 c
+139.30299 378.09698 139.19898 378.20498 139.08499 378.26298 c
+138.71099 378.49598 m
+138.71398 378.54798 138.75299 378.60998 138.79899 378.63499 c
+138.92898 378.66398 l
+139.02398 378.66799 139.14599 378.59999 139.14698 378.49398 c
+139.13999 378.38699 139.02499 378.31199 138.92498 378.31298 c
+138.82398 378.31199 138.71499 378.38999 138.71099 378.49598 c
+h
+139.04098 378.25099 m
+139.12298 378.30599 139.24499 378.39099 139.24598 378.49499 c
+139.23899 378.65798 139.07798 378.77799 138.92399 378.77699 c
+138.76998 378.77899 138.61399 378.65098 138.61199 378.49198 c
+138.61099 378.39199 138.71899 378.29998 138.80198 378.25299 c
+137.71099 378.19898 m
+137.78199 377.82299 l
+137.85198 377.71499 137.95498 377.62199 138.08999 377.62298 c
+138.22499 377.62199 138.32598 377.71499 138.39299 377.82398 c
+138.45698 378.19898 l
+138.43699 378.43099 138.39599 378.77899 138.08999 378.77699 c
+137.80499 378.77899 137.71499 378.42799 137.71099 378.19898 c
+h
+138.08699 378.66398 m
+138.32499 378.66299 138.34698 378.37399 138.35899 378.19999 c
+138.36299 378.02799 138.30899 377.73799 138.08699 377.73599 c
+137.97499 377.73699 137.88999 377.82499 137.85099 377.92399 c
+137.82499 378.01098 137.80599 378.10899 137.80999 378.19999 c
+137.81098 378.36898 137.86599 378.66299 138.08699 378.66398 c
+s 
+139.97198 378.63099 m
+139.90699 378.74299 l
+139.70399 378.74299 l
+139.70698 377.57598 l
+138.62998 380.20799 m
+138.62998 379.15798 l
+138.97999 379.15798 l
+138.97999 380.20799 l
+140.44499 380.33599 m
+140.60598 379.41699 l
+140.62699 379.30198 l
+140.97099 379.36299 l
+140.78898 380.39698 l
+142.20899 380.77699 m
+142.56799 379.79098 l
+142.89698 379.91099 l
+142.85699 380.01998 l
+142.53799 380.89698 l
+143.86999 381.51799 m
+144.39498 380.60899 l
+144.69799 380.78399 l
+144.17298 381.69299 l
+136.82099 380.39698 m
+136.63899 379.36299 l
+136.98399 379.30198 l
+137.16598 380.33599 l
+135.07299 380.89698 m
+134.71398 379.91099 l
+135.04199 379.79098 l
+135.40098 380.77699 l
+133.43699 381.69299 m
+132.91299 380.78399 l
+133.21598 380.60899 l
+133.56498 381.21499 l
+133.73999 381.51799 l
+145.37699 382.53599 m
+145.97698 381.82199 l
+146.05198 381.73199 l
+146.31999 381.95698 l
+146.24499 382.04699 l
+145.64498 382.76098 l
+146.68499 383.80099 m
+147.39898 383.20098 l
+147.48899 383.12599 l
+147.71299 383.39399 l
+147.62399 383.46899 l
+146.90998 384.06799 l
+147.75299 385.27299 m
+148.05599 385.09799 l
+148.66099 384.74798 l
+148.83599 385.05099 l
+148.23098 385.40098 l
+147.92799 385.57598 l
+148.54899 386.90798 m
+149.42599 386.58898 l
+149.53498 386.54899 l
+149.65499 386.87799 l
+149.54499 386.91799 l
+148.66899 387.23699 l
+149.04899 388.65699 m
+149.96798 388.49499 l
+150.08299 388.47399 l
+150.14299 388.81898 l
+150.02799 388.83898 l
+149.10998 389.00099 l
+149.23799 390.46598 m
+150.28698 390.46598 l
+150.28698 390.81498 l
+149.23799 390.81498 l
+150.84399 391.03099 m
+151.08699 391.02999 151.10899 390.73498 151.12098 390.55899 c
+151.125 390.38398 151.06999 390.08999 150.84399 390.08699 c
+150.73098 390.08799 150.64399 390.17799 150.60499 390.27799 c
+150.57798 390.36599 150.55899 390.46598 150.56298 390.55899 c
+150.56399 390.73098 150.61999 391.02899 150.84399 391.03099 c
+h
+150.46299 390.55799 m
+150.53498 390.17599 l
+150.60598 390.06498 150.70999 389.97099 150.84799 389.97198 c
+150.98399 389.97099 151.08699 390.06599 151.15499 390.17698 c
+151.22099 390.55799 l
+151.19999 390.79299 151.15899 391.14799 150.84799 391.14498 c
+150.55799 391.14799 150.46598 390.79098 150.46299 390.55799 c
+h
+151.36399 390.80198 m
+151.37699 390.69198 151.41999 390.56098 151.49198 390.47499 c
+151.83599 389.97198 l
+151.91598 390.02799 l
+151.60598 390.48098 l
+151.72299 390.47299 l
+151.89799 390.46899 152.06799 390.62599 152.06498 390.80299 c
+152.06799 390.99099 151.88999 391.14599 151.70999 391.14498 c
+151.52699 391.14799 151.36399 390.98399 151.36399 390.80198 c
+h
+151.96499 390.80899 m
+151.96299 390.67799 151.82598 390.58499 151.70399 390.58699 c
+151.58299 390.58198 151.46199 390.68499 151.46398 390.80899 c
+151.46499 390.93598 151.59498 391.03298 151.71499 391.03099 c
+151.83399 391.03298 151.96598 390.93499 151.96499 390.80899 c
+h
+149.10998 392.27999 m
+150.02799 392.44198 l
+150.14299 392.46199 l
+150.08299 392.80699 l
+149.96798 392.78599 l
+149.04899 392.625 l
+148.66899 394.04399 m
+149.54499 394.36399 l
+149.65499 394.40299 l
+149.53498 394.73199 l
+149.42599 394.69198 l
+148.54899 394.37298 l
+147.75299 396.00799 m
+148.05599 396.18299 l
+148.66099 396.53298 l
+148.83599 396.22999 l
+148.23098 395.87998 l
+147.92799 395.70498 l
+146.68499 397.48098 m
+147.48899 398.15499 l
+147.71299 397.88699 l
+147.62399 397.81199 l
+146.90998 397.21299 l
+145.64498 398.51998 m
+146.24499 399.23498 l
+146.31999 399.32398 l
+146.05198 399.54899 l
+145.37699 398.74499 l
+S 
+144.17298 399.58799 m
+144.69799 400.49699 l
+144.39498 400.67199 l
+143.86999 399.76298 l
+142.53799 400.38398 m
+142.85699 401.26098 l
+142.89698 401.36999 l
+142.56799 401.48999 l
+142.52799 401.37998 l
+142.20899 400.50399 l
+140.78898 400.88499 m
+140.95098 401.80299 l
+140.97099 401.91799 l
+140.62699 401.97898 l
+140.60598 401.86399 l
+140.44499 400.94499 l
+138.97999 401.07398 m
+138.97999 402.12298 l
+138.62998 402.12298 l
+138.62998 401.07398 l
+137.16598 400.94499 m
+136.98399 401.97898 l
+136.63899 401.91799 l
+136.65899 401.80299 l
+136.82099 400.88499 l
+138.44699 403.02799 m
+138.51699 402.65798 l
+138.58599 402.55198 138.68598 402.46099 138.81898 402.46199 c
+138.95098 402.46099 139.04998 402.55198 139.11599 402.65899 c
+139.17898 403.02799 l
+139.15998 403.25498 139.11999 403.59698 138.81898 403.59498 c
+138.53898 403.59799 138.44999 403.25299 138.44699 403.02799 c
+h
+138.81599 403.48498 m
+139.04998 403.48399 139.07099 403.19898 139.08299 403.02799 c
+139.08699 402.85998 139.03399 402.57499 138.81599 402.57199 c
+138.70599 402.57398 138.62199 402.66099 138.58499 402.75799 c
+138.55899 402.84298 138.53999 402.93899 138.54399 403.02799 c
+138.54499 403.19499 138.59899 403.48298 138.81599 403.48498 c
+h
+135.40098 400.50399 m
+135.08198 401.37998 l
+135.04199 401.48999 l
+134.71398 401.36999 l
+134.75399 401.26098 l
+135.07299 400.38398 l
+133.73999 399.76298 m
+133.21598 400.67199 l
+132.91299 400.49699 l
+133.43699 399.58799 l
+132.23298 398.74499 m
+131.63398 399.45999 l
+131.55899 399.54899 l
+131.29098 399.32398 l
+131.96499 398.51998 l
+130.92599 397.48098 m
+130.21099 398.07998 l
+130.12199 398.15499 l
+129.89698 397.88699 l
+129.98599 397.81199 l
+130.70098 397.21299 l
+129.85699 396.00799 m
+129.55499 396.18299 l
+128.94898 396.53298 l
+128.77398 396.22999 l
+129.37998 395.87998 l
+129.68199 395.70498 l
+129.06098 394.37298 m
+128.18499 394.69198 l
+128.07499 394.73199 l
+127.95599 394.40299 l
+128.06498 394.36399 l
+128.94198 394.04399 l
+128.56098 392.625 m
+127.64299 392.78599 l
+127.52799 392.80699 l
+127.46699 392.46199 l
+127.58198 392.44198 l
+128.5 392.27999 l
+128.37199 390.81498 m
+127.32299 390.81498 l
+127.32299 390.46598 l
+128.37199 390.46598 l
+128.5 389.00099 m
+127.58198 388.83898 l
+127.46699 388.81898 l
+127.52799 388.47399 l
+127.64299 388.49499 l
+128.56098 388.65699 l
+128.94198 387.23699 m
+128.06498 386.91799 l
+127.95599 386.87799 l
+128.07499 386.54899 l
+128.18499 386.58898 l
+129.06098 386.90798 l
+129.68199 385.57598 m
+128.77398 385.05099 l
+128.94898 384.74798 l
+129.55499 385.09799 l
+129.85699 385.27299 l
+130.70098 384.06799 m
+129.98599 383.46899 l
+129.89698 383.39399 l
+130.12199 383.12599 l
+130.21099 383.20098 l
+130.92599 383.80099 l
+131.96499 382.76098 m
+131.29098 381.95698 l
+131.55899 381.73199 l
+131.63398 381.82199 l
+132.23298 382.53599 l
+S 
+0 0 0 0 k
+1.03898 w
+3.86399 M
+151.23699 371.13598 373.18399 -9.35598 re
+B 
+0 0 0 0.29998 k
+1.97698 w
+447.12599 385.48498 m
+445.59399 385.48799 l
+444.97999 386.01399 444.56498 386.64399 443.80499 386.97198 c
+443.22698 387.22099 442.79798 387.28199 442.19699 387.09599 c
+441.47599 386.87298 441.05099 386.43998 440.78999 385.76599 c
+440.52799 385.08599 440.65098 384.375 440.91398 383.98899 c
+441.30999 383.40699 441.64698 383.05999 442.32099 382.85998 c
+443.19699 382.60099 443.92999 382.76899 444.60398 383.38598 c
+443.79998 384.18998 l
+443.53298 383.90699 443.26199 383.79798 442.87298 383.81898 c
+442.52799 383.83599 442.30599 383.93899 442.06898 384.18998 c
+441.70799 384.57099 441.61799 385.05099 441.85699 385.51899 c
+442.07398 385.94299 442.43299 386.11499 442.90798 386.14199 c
+443.42098 386.17098 443.67999 385.86799 444.08799 385.55398 c
+444.50799 385.23098 444.39599 385.03898 444.85598 384.77699 c
+445.21099 384.57499 445.76799 384.54499 y
+447.12599 384.48799 447.12599 384.51899 v
+447.12599 385.48498 l
+b 
+0 0 0 0.5 k
+0.76199 w
+476.63899 385.11299 m
+476.60198 382.98498 l
+476.54598 382.47999 l
+476.39999 381.99299 l
+476.16799 381.54098 l
+475.85798 381.13899 l
+475.47999 380.79899 l
+475.04598 380.53399 l
+474.57099 380.35299 l
+474.07199 380.25999 l
+473.56298 380.25999 l
+473.06399 380.35299 l
+472.58898 380.53399 l
+472.15599 380.79899 l
+471.77699 381.13899 l
+471.46699 381.54098 l
+471.23399 381.99299 l
+471.08799 382.47999 l
+471.03298 382.98498 l
+470.99598 385.11299 l
+476.63899 385.11299 l
+b 
+0 0 0 0.69999 k
+475.33898 385.11299 m
+475.30299 383.00698 l
+475.28799 382.19699 474.62799 381.54798 473.81698 381.54798 c
+473.00698 381.54798 472.34698 382.19699 472.33299 383.00698 c
+472.29598 385.11299 l
+475.33898 385.11299 l
+b 
+0 0 0 0.5 k
+495.35198 379.46899 m
+495.35198 379.11399 495.21199 378.77499 494.96099 378.52398 c
+494.70999 378.27299 494.36999 378.13198 494.01599 378.13198 c
+487.34599 378.13198 l
+488.05899 378.13198 488.67799 378.75799 488.68099 379.48199 c
+495.35198 379.46899 l
+b 
+493.40499 390.75599 m
+493.40699 391.64999 l
+493.14099 391.98298 l
+492.87298 392.31799 l
+492.60198 392.65599 l
+492.33099 392.99499 l
+492.05299 393.34298 l
+491.77398 393.69198 l
+491.07199 394.56698 l
+488.51799 394.56698 l
+488.51699 394.60798 l
+488.48199 395.31999 487.89498 395.87998 487.18199 395.87998 c
+491.19898 395.87998 l
+491.56199 395.87998 491.90899 395.73298 492.16099 395.47198 c
+494.97698 392.55599 l
+495.21798 392.30699 495.35198 391.97399 495.35198 391.62699 c
+495.35198 390.75599 l
+493.40499 390.75599 l
+b 
+0 0 0 0.59999 k
+488.68899 390.76599 m
+488.58599 393.17799 l
+488.51699 394.60798 l
+488.51799 394.56698 l
+491.07199 394.56698 l
+491.77398 393.69198 l
+492.05299 393.34298 l
+492.33099 392.99499 l
+492.60198 392.65599 l
+492.87298 392.31799 l
+493.14099 391.98298 l
+493.40699 391.64999 l
+493.40499 390.75599 l
+488.68899 390.76599 l
+b* 
+0 0 0 0.5 k
+488.66999 379.96699 m
+498.16699 379.96699 l
+498.17399 385.11299 l
+498.18699 390.24899 l
+488.69198 390.25898 l
+488.75999 388.91099 l
+488.86799 386.34399 l
+488.90399 385.11299 l
+488.84799 383.77799 l
+488.73999 381.21099 l
+488.66999 379.96699 l
+b 
+0 0 0 0.29998 k
+455.86999 394.99099 m
+447.84399 390.35798 l
+447.75299 385.11299 l
+447.85198 379.44599 l
+487.78399 379.44599 l
+488.08699 385.11299 l
+487.97799 387.47599 l
+487.59298 394.56698 l
+466.39199 394.56698 l
+466.39199 395.88198 l
+484.21398 395.87998 l
+487.18199 395.87998 l
+487.89498 395.87998 488.48298 395.31999 488.51699 394.60798 c
+488.70599 390.67999 l
+488.70698 390.64498 l
+488.70599 390.58599 l
+488.70098 390.44198 l
+488.69999 390.35998 l
+488.70098 390.30299 l
+488.70298 390.24598 l
+488.75999 388.91099 l
+488.86799 386.34399 l
+488.90399 385.11299 l
+488.84799 383.77799 l
+488.73999 381.21099 l
+488.68598 379.97999 l
+488.68399 379.89299 l
+488.68399 379.80799 l
+488.68598 379.72898 l
+488.68798 379.65798 l
+488.68899 379.59599 l
+488.68798 379.55099 l
+488.68099 379.40399 l
+488.64698 378.69198 488.05999 378.13198 487.34599 378.13198 c
+448.51998 378.13198 l
+447.79098 378.13198 447.19599 378.71699 447.18399 379.44599 c
+447.08499 385.11299 l
+447.17599 390.35798 l
+447.18399 390.82699 447.43798 391.25698 447.84399 391.49198 c
+456.00498 396.19999 l
+456.23399 396.30999 l
+456.47599 396.40599 l
+456.73098 396.48699 l
+456.86299 396.52099 l
+456.99598 396.54998 l
+457.17498 396.58198 l
+457.35598 396.60398 l
+457.53999 396.61799 l
+457.72599 396.62298 l
+466.39199 396.62298 l
+466.39199 395.30899 l
+457.72599 395.30899 l
+457.45899 395.30299 l
+457.19299 395.28599 l
+457.05799 395.27299 l
+456.92399 395.25599 l
+456.79098 395.23699 l
+456.65899 395.21499 l
+456.47698 395.17898 l
+456.29998 395.13699 l
+456.125 395.08999 l
+455.86999 394.99099 l
+b* 
+0 0 0 0.39999 k
+487.59298 394.56698 m
+466.39199 394.56698 l
+466.39199 395.30899 l
+457.72599 395.30899 l
+457.45899 395.30299 l
+457.19299 395.28599 l
+457.05799 395.27299 l
+456.92399 395.25599 l
+456.79098 395.23699 l
+456.65899 395.21499 l
+456.47698 395.17898 l
+456.29998 395.13699 l
+456.125 395.08999 l
+455.95599 395.03898 l
+447.84399 390.35798 l
+447.75299 385.11299 l
+447.85198 379.44599 l
+487.78399 379.44599 l
+488.08699 385.11299 l
+487.97799 387.47599 l
+487.59298 394.56698 l
+b 
+500.84698 381.38299 m
+500.84698 381.25099 l
+500.83999 381.24398 l
+500.82499 381.22999 l
+500.79299 381.19799 l
+500.76599 381.17298 l
+500.73899 381.14498 l
+500.69898 381.10499 l
+500.69898 381.20399 l
+500.73298 381.23799 l
+500.76599 381.27299 l
+500.78799 381.29699 l
+500.80899 381.32099 l
+500.83299 381.35299 l
+500.84498 381.37399 l
+500.84698 381.38299 l
+b* 
+0 0 0 0.5 k
+498.61999 388.94499 2.07899 -0.28799 re
+B 
+498.61999 388.50898 2.07899 -0.45698 re
+B 
+498.61999 387.84098 2.07899 -0.59599 re
+B 
+498.61999 386.98799 2.07899 -0.69398 re
+B 
+498.61999 386.00698 2.07899 -0.74499 re
+B 
+498.61999 384.96398 2.07899 -0.74499 re
+B 
+498.61999 383.93199 2.07899 -0.69398 re
+B 
+498.61999 382.97999 2.07899 -0.59599 re
+B 
+498.61999 382.17399 2.07899 -0.45799 re
+B 
+498.61999 381.56799 2.07899 -0.28799 re
+B 
+498.61999 389.11999 2.07899 -0.09799 re
+B 
+0 0 0 0.69999 k
+500.84698 388.84298 m
+500.84698 388.84599 l
+500.83999 388.86099 l
+500.82499 388.88299 l
+500.79299 388.92298 l
+500.76599 388.95199 l
+500.73899 388.98199 l
+500.69898 389.02198 l
+498.61999 389.02198 l
+498.61999 388.94499 l
+500.69898 388.94499 l
+500.73298 388.91299 l
+500.76599 388.88499 l
+500.78799 388.86698 l
+500.80899 388.85299 l
+500.83299 388.83999 l
+500.84698 388.84298 l
+b* 
+500.69898 388.50898 m
+500.73298 388.48199 l
+500.76599 388.45899 l
+500.78799 388.44799 l
+500.80899 388.43998 l
+500.83299 388.43699 l
+500.84498 388.44499 l
+500.84698 388.45698 l
+500.84698 388.46299 l
+500.83999 388.48599 l
+500.82499 388.51399 l
+500.79299 388.55899 l
+500.76599 388.58999 l
+500.73899 388.61999 l
+500.69898 388.65699 l
+498.61999 388.65699 l
+498.61999 388.50898 l
+500.69898 388.50898 l
+b* 
+500.69898 387.84098 m
+500.73298 387.81999 l
+500.76599 387.80599 l
+500.78799 387.80099 l
+500.80899 387.79998 l
+500.83299 387.80899 l
+500.84498 387.82598 l
+500.84698 387.84298 l
+500.84698 387.85198 l
+500.83999 387.88099 l
+500.82499 387.91198 l
+500.79299 387.96099 l
+500.76599 387.99099 l
+500.73899 388.01899 l
+500.69898 388.05099 l
+498.61999 388.05099 l
+498.61999 387.84098 l
+500.69898 387.84098 l
+b 
+500.69898 386.98799 m
+500.73298 386.97499 l
+500.76599 386.96899 l
+500.78799 386.96998 l
+500.80899 386.97698 l
+500.83299 386.99598 l
+500.84498 387.02099 l
+500.84698 387.04299 l
+500.84698 387.05398 l
+500.83999 387.08699 l
+500.82499 387.11999 l
+500.79299 387.16799 l
+500.76599 387.19599 l
+500.73899 387.21998 l
+500.69898 387.24499 l
+498.61999 387.24499 l
+498.61999 386.98799 l
+500.69898 386.98799 l
+b 
+500.69898 386.00698 m
+500.73298 386.00199 l
+500.76599 386.00599 l
+500.78799 386.01399 l
+500.80899 386.02699 l
+500.83299 386.05499 l
+500.84498 386.08699 l
+500.84698 386.11199 l
+500.84698 386.12399 l
+500.83999 386.15798 l
+500.82499 386.19198 l
+500.79299 386.23599 l
+500.76599 386.25898 l
+500.73899 386.27699 l
+500.69898 386.29299 l
+498.61999 386.29299 l
+498.61999 386.00698 l
+500.69898 386.00698 l
+b 
+500.84698 385.11299 m
+500.84698 385.125 l
+500.83999 385.15899 l
+500.82499 385.18899 l
+500.79299 385.22599 l
+500.76599 385.24398 l
+500.73899 385.25498 l
+500.69898 385.26098 l
+498.61999 385.26098 l
+498.61999 384.96398 l
+500.69898 384.96398 l
+500.73298 384.96899 l
+500.76599 384.98199 l
+500.78799 384.99598 l
+500.80899 385.01399 l
+500.83299 385.04998 l
+500.84498 385.08599 l
+500.84698 385.11299 l
+b 
+500.84698 384.11299 m
+500.84698 384.125 l
+500.83999 384.15599 l
+500.82499 384.18199 l
+500.79299 384.20899 l
+500.76599 384.21998 l
+500.73899 384.22299 l
+500.69898 384.21899 l
+498.61999 384.21899 l
+498.61999 383.93199 l
+500.69898 383.93199 l
+500.73298 383.94499 l
+500.76599 383.96598 l
+500.78799 383.98599 l
+500.80899 384.00799 l
+500.83299 384.04899 l
+500.84498 384.08699 l
+500.84698 384.11299 l
+b 
+500.84698 383.18199 m
+500.84698 383.19198 l
+500.83999 383.21798 l
+500.82499 383.23799 l
+500.79299 383.25399 l
+500.76599 383.25599 l
+500.73899 383.25199 l
+500.69898 383.23799 l
+498.61999 383.23799 l
+498.61999 382.97999 l
+500.69898 382.97999 l
+500.73298 383.00199 l
+500.76599 383.02899 l
+500.78799 383.05198 l
+500.80899 383.07798 l
+500.83299 383.12098 l
+500.84498 383.15699 l
+500.84698 383.18199 l
+b 
+500.84698 382.38198 m
+500.84698 382.39099 l
+500.83999 382.40998 l
+500.82499 382.42199 l
+500.79299 382.42498 l
+500.76599 382.41899 l
+500.73899 382.40798 l
+500.69898 382.38398 l
+498.61999 382.38398 l
+498.61999 382.17399 l
+500.69898 382.17399 l
+500.73298 382.20199 l
+500.76599 382.23399 l
+500.78799 382.25898 l
+500.80899 382.28599 l
+500.83299 382.32798 l
+500.84498 382.36199 l
+500.84698 382.38198 l
+b 
+500.84698 381.76899 m
+500.84698 381.77398 l
+500.83999 381.78498 l
+500.82499 381.78799 l
+500.79299 381.77999 l
+500.76599 381.76599 l
+500.73899 381.74798 l
+500.69898 381.71699 l
+498.61999 381.71699 l
+498.61999 381.56799 l
+500.69898 381.56799 l
+500.73298 381.59999 l
+500.76599 381.63499 l
+500.78799 381.65998 l
+500.80899 381.68699 l
+500.83299 381.72499 l
+500.84498 381.75299 l
+500.84698 381.76899 l
+b* 
+500.84698 381.38299 m
+500.84698 381.38598 l
+500.83999 381.38798 l
+500.82499 381.38198 l
+500.79299 381.36099 l
+500.76599 381.34098 l
+500.73899 381.31698 l
+500.69898 381.28099 l
+498.61999 381.28099 l
+498.61999 381.20399 l
+500.69898 381.20399 l
+500.73298 381.23799 l
+500.76599 381.27299 l
+500.78799 381.29699 l
+500.80899 381.32099 l
+500.83299 381.35299 l
+500.84498 381.37399 l
+500.84698 381.38299 l
+b* 
+498.17399 382.47898 m
+498.26399 382.42599 l
+498.47399 382.23599 l
+498.61999 381.99398 l
+498.61999 388.23098 l
+498.47399 387.98899 l
+498.26399 387.79899 l
+498.17399 387.74699 l
+498.17399 382.47898 l
+b* 
+498.08499 379.97999 m
+498.08499 379.98899 l
+488.69599 390.25898 m
+488.69499 390.26799 l
+487.34599 378.13198 m
+487.42898 378.15798 l
+487.50999 378.23199 l
+487.58399 378.35299 l
+487.64898 378.51599 l
+487.70199 378.71398 l
+487.74299 378.94099 l
+487.76799 379.18798 l
+487.77799 379.44599 l
+447.85198 379.44599 m
+447.86698 379.18798 l
+447.90599 378.94099 l
+447.96899 378.71398 l
+448.05198 378.51599 l
+448.15199 378.35299 l
+448.26699 378.23199 l
+448.39099 378.15798 l
+448.51998 378.13198 l
+498.17399 385.11299 m
+488.90399 385.11299 l
+494.01599 378.13198 m
+493.89799 378.15798 l
+493.78498 378.23199 l
+493.68099 378.35299 l
+493.58898 378.51599 l
+493.51298 378.71398 l
+493.45599 378.94099 l
+493.41999 379.18798 l
+493.40599 379.44599 l
+447.18399 379.44599 m
+447.19499 379.44398 l
+447.22898 379.44299 l
+447.28498 379.44198 l
+447.45999 379.44198 l
+447.57499 379.44299 l
+447.70698 379.44398 l
+447.85198 379.44599 l
+447.08499 385.11299 m
+447.75299 385.11299 l
+497.44699 379.46899 m
+494.61499 379.46899 l
+455.95599 395.03898 m
+455.88798 395.23799 l
+455.83999 395.43199 l
+455.81298 395.61399 l
+455.80899 395.77999 l
+455.82598 395.92498 l
+455.86599 396.04598 l
+455.92599 396.13798 l
+456.00498 396.19999 l
+457.72599 395.30899 m
+457.72599 396.62298 l
+487.59298 394.56698 m
+487.58399 394.82398 l
+487.55999 395.07099 l
+487.52099 395.29798 l
+487.46998 395.49699 l
+487.40798 395.65998 l
+487.33799 395.78099 l
+487.26098 395.85499 l
+487.18199 395.87998 l
+455.95599 395.03898 m
+455.91198 395.01499 l
+455.86999 394.99099 l
+488.91899 385.11299 m
+488.10699 385.11299 l
+455.86898 396.125 m
+455.93699 396.16299 l
+456.00498 396.19999 l
+447.84399 391.49198 m
+447.77099 391.42898 l
+447.71699 391.33699 l
+447.68399 391.21899 l
+447.67199 391.07699 l
+447.68399 390.91499 l
+447.71699 390.73899 l
+447.77099 390.55099 l
+447.84399 390.35798 l
+488.91899 385.11299 m
+498.17399 385.11299 l
+491.07199 394.56698 m
+491.07499 394.82398 l
+491.08299 395.07099 l
+491.09498 395.29798 l
+491.10998 395.49699 l
+491.12899 395.65998 l
+491.15098 395.78099 l
+491.17498 395.85499 l
+491.19898 395.87998 l
+447.17599 390.35798 m
+447.18798 390.35899 l
+447.22198 390.35998 l
+447.27799 390.36099 l
+447.45199 390.36099 l
+447.56799 390.35998 l
+447.69898 390.35899 l
+447.84399 390.35798 l
+447.75299 385.11299 m
+447.08499 385.11299 l
+493.40699 391.64999 m
+493.72698 391.65299 l
+494.06599 391.65299 l
+494.40199 391.65199 l
+494.71299 391.64999 l
+494.97898 391.64498 l
+495.18199 391.63999 l
+495.30899 391.63398 l
+495.35198 391.62699 l
+491.07199 394.56698 m
+491.26799 394.75399 l
+491.46099 394.93299 l
+491.64299 395.09599 l
+491.80699 395.23599 l
+491.94499 395.34799 l
+492.05398 395.42599 l
+492.12599 395.46798 l
+492.16099 395.47198 l
+493.40699 391.64999 m
+493.61399 391.88099 l
+493.84298 392.09698 l
+494.08198 392.28698 l
+494.31698 392.44099 l
+494.53498 392.54899 l
+494.72499 392.60598 l
+494.875 392.60798 l
+494.97698 392.55599 l
+S 
+488.68099 379.40399 m
+488.67999 379.40399 l
+488.60499 379.40699 l
+488.41699 379.41598 l
+488.13198 379.42898 l
+487.77799 379.44599 l
+493.40599 379.44599 m
+493.40599 379.46899 l
+487.59298 394.56698 m
+487.94999 394.58299 l
+488.23799 394.59698 l
+488.43199 394.60499 l
+488.51399 394.60798 l
+488.51699 394.60798 l
+S 
+0 0 0 0.39999 k
+500.69898 389.02198 m
+500.69898 389.11999 l
+500.73298 389.08599 l
+500.76599 389.05299 l
+500.78799 389.03099 l
+500.80899 389.01098 l
+500.83299 388.98799 l
+500.84498 388.97698 l
+500.84698 388.97399 l
+500.84698 388.84298 l
+500.84698 388.84599 l
+500.83999 388.86099 l
+500.82499 388.88299 l
+500.79299 388.92298 l
+500.76599 388.95199 l
+500.73899 388.98199 l
+500.69898 389.02198 l
+b 
+500.84698 388.84298 m
+500.84698 388.45698 l
+500.84698 388.46299 l
+500.83999 388.48599 l
+500.82499 388.51399 l
+500.79299 388.55899 l
+500.76599 388.58999 l
+500.73899 388.61999 l
+500.69898 388.65699 l
+500.69898 388.94499 l
+500.73298 388.91299 l
+500.76599 388.88499 l
+500.78799 388.86698 l
+500.80899 388.85299 l
+500.83299 388.83999 l
+500.84698 388.84298 l
+b 
+500.69898 388.50898 m
+500.73298 388.48199 l
+500.76599 388.45899 l
+500.78799 388.44799 l
+500.80899 388.43998 l
+500.83299 388.43699 l
+500.84498 388.44499 l
+500.84698 388.45698 l
+500.84698 387.84298 l
+500.84698 387.85198 l
+500.83999 387.88099 l
+500.82499 387.91198 l
+500.79299 387.96099 l
+500.76599 387.99099 l
+500.73899 388.01899 l
+500.69898 388.05099 l
+500.69898 388.50898 l
+b 
+500.69898 387.84098 m
+500.73298 387.81999 l
+500.76599 387.80599 l
+500.78799 387.80099 l
+500.80899 387.79998 l
+500.83299 387.80899 l
+500.84498 387.82598 l
+500.84698 387.84298 l
+500.84698 387.04299 l
+500.84698 387.05398 l
+500.83999 387.08699 l
+500.82499 387.11999 l
+500.79299 387.16799 l
+500.76599 387.19599 l
+500.73899 387.21998 l
+500.69898 387.24499 l
+500.69898 387.84098 l
+b 
+500.69898 386.98799 m
+500.73298 386.97499 l
+500.76599 386.96899 l
+500.78799 386.96998 l
+500.80899 386.97698 l
+500.83299 386.99598 l
+500.84498 387.02099 l
+500.84698 387.04299 l
+500.84698 386.11199 l
+500.84698 386.12399 l
+500.83999 386.15798 l
+500.82499 386.19198 l
+500.79299 386.23599 l
+500.76599 386.25898 l
+500.73899 386.27699 l
+500.69898 386.29299 l
+500.69898 386.98799 l
+b 
+500.69898 386.00698 m
+500.73298 386.00199 l
+500.76599 386.00599 l
+500.78799 386.01399 l
+500.80899 386.02699 l
+500.83299 386.05499 l
+500.84498 386.08699 l
+500.84698 386.11199 l
+500.84698 385.11299 l
+500.84698 385.125 l
+500.83999 385.15899 l
+500.82499 385.18899 l
+500.79299 385.22599 l
+500.76599 385.24398 l
+500.73899 385.25498 l
+500.69898 385.26098 l
+500.69898 386.00698 l
+b 
+500.84698 384.11299 m
+500.84698 384.125 l
+500.83999 384.15599 l
+500.82499 384.18199 l
+500.79299 384.20899 l
+500.76599 384.21998 l
+500.73899 384.22299 l
+500.69898 384.21899 l
+500.69898 384.96398 l
+500.73298 384.96899 l
+500.76599 384.98199 l
+500.78799 384.99598 l
+500.80899 385.01399 l
+500.83299 385.04998 l
+500.84498 385.08599 l
+500.84698 385.11299 l
+500.84698 384.11299 l
+b 
+500.69898 383.23799 m
+500.69898 383.93199 l
+500.73298 383.94499 l
+500.76599 383.96598 l
+500.78799 383.98599 l
+500.80899 384.00799 l
+500.83299 384.04899 l
+500.84498 384.08699 l
+500.84698 384.11299 l
+500.84698 383.18199 l
+500.84698 383.19198 l
+500.83999 383.21798 l
+500.82499 383.23799 l
+500.79299 383.25399 l
+500.76599 383.25599 l
+500.73899 383.25199 l
+500.69898 383.23799 l
+b 
+500.69898 382.38398 m
+500.69898 382.97999 l
+500.73298 383.00199 l
+500.76599 383.02899 l
+500.78799 383.05198 l
+500.80899 383.07798 l
+500.83299 383.12098 l
+500.84498 383.15699 l
+500.84698 383.18199 l
+500.84698 382.38198 l
+500.84698 382.39099 l
+500.83999 382.40998 l
+500.82499 382.42199 l
+500.79299 382.42498 l
+500.76599 382.41899 l
+500.73899 382.40798 l
+500.69898 382.38398 l
+b 
+500.69898 381.69999 m
+500.69898 382.15798 l
+500.73298 382.18499 l
+500.76599 382.21798 l
+500.78799 382.24299 l
+500.80899 382.26998 l
+500.83299 382.31199 l
+500.84498 382.34498 l
+500.84698 382.36599 l
+500.84698 382.38198 l
+500.84698 381.76899 l
+500.84698 381.77398 l
+500.83999 381.78498 l
+500.82499 381.78799 l
+500.79299 381.77999 l
+500.76599 381.76599 l
+500.73899 381.74798 l
+500.69898 381.71699 l
+500.69898 381.69999 l
+b* 
+500.69898 381.28099 m
+500.69898 381.56799 l
+500.73298 381.59999 l
+500.76599 381.63499 l
+500.78799 381.65998 l
+500.80899 381.68699 l
+500.83299 381.72499 l
+500.84498 381.75299 l
+500.84698 381.76899 l
+500.84698 381.38299 l
+500.84698 381.38598 l
+500.83999 381.38798 l
+500.82499 381.38198 l
+500.79299 381.36099 l
+500.76599 381.34098 l
+500.73899 381.31698 l
+500.69898 381.28099 l
+b 
+0 0 0 0.5 k
+498.61999 381.20399 2.07899 -0.09799 re
+B 
+488.09999 385.11299 m
+447.77299 385.11299 l
+S 
+0 0 0 0.39999 k
+488.70298 390.75599 m
+497.56498 390.75599 l
+497.84799 390.75599 498.07998 390.52899 498.08499 390.24598 c
+488.70298 390.24598 l
+488.70098 390.30299 l
+488.69999 390.35998 l
+488.70098 390.44198 l
+488.70599 390.58599 l
+488.70698 390.64498 l
+488.70599 390.67999 l
+488.70298 390.75599 l
+b 
+488.68399 379.46899 m
+497.56498 379.46899 l
+497.84799 379.46899 498.07998 379.69599 498.08499 379.97999 c
+488.68598 379.97999 l
+488.68399 379.89299 l
+488.68399 379.80799 l
+488.68598 379.72898 l
+488.68798 379.65798 l
+488.68899 379.59599 l
+488.68798 379.55099 l
+488.68399 379.46899 l
+b 
+0 0 0 0.5 k
+0.38398 w
+3.86399 M
+461.76599 363.02999 m
+461.73799 420.60798 l
+463.56399 422.43399 l
+524.69898 422.43399 l
+526.52499 420.60798 l
+526.52499 362.89898 l
+524.79499 361.16799 l
+463.37199 361.16799 l
+461.76599 363.02999 l
+b 
+461.73799 393.75399 m
+524.12199 393.75399 l
+525.08299 394.04299 l
+525.37098 395.00399 l
+525.37098 405.76998 l
+526.33299 405.76998 l
+466.25498 415.73899 m
+466.25498 416.67599 467.01499 417.43598 467.95199 417.43598 c
+468.88899 417.43598 469.64799 416.67599 469.64799 415.73899 c
+469.64799 414.80299 468.88899 414.04299 467.95199 414.04299 c
+467.01499 414.04299 466.25498 414.80299 466.25498 415.73899 c
+s 
+0 0 0 0.29998 k
+485.93199 415.76699 m
+485.93199 416.10099 486.20298 416.37199 486.53799 416.37199 c
+486.87199 416.37199 487.14299 416.10099 487.14299 415.76699 c
+487.14299 415.43299 486.87199 415.16198 486.53799 415.16198 c
+486.20298 415.16198 485.93199 415.43299 485.93199 415.76699 c
+b 
+518.67098 415.73899 m
+518.67098 416.67599 519.43099 417.43598 520.36698 417.43598 c
+521.30398 417.43598 522.06399 416.67599 522.06399 415.73899 c
+522.06399 414.80299 521.30398 414.04299 520.36698 414.04299 c
+519.43099 414.04299 518.67098 414.80299 518.67098 415.73899 c
+h
+466.25498 367.32798 m
+466.25498 368.26499 467.01499 369.02398 467.95199 369.02398 c
+468.88899 369.02398 469.64799 368.26499 469.64799 367.32798 c
+469.64799 366.39099 468.88899 365.63198 467.95199 365.63198 c
+467.01499 365.63198 466.25498 366.39099 466.25498 367.32798 c
+h
+518.67098 367.32798 m
+518.67098 368.26499 519.43099 369.02398 520.36698 369.02398 c
+521.30398 369.02398 522.06399 368.26499 522.06399 367.32798 c
+522.06399 366.39099 521.30398 365.63198 520.36698 365.63198 c
+519.43099 365.63198 518.67098 366.39099 518.67098 367.32798 c
+s 
+501.24398 415.76699 m
+501.24398 416.10099 501.51499 416.37199 501.84899 416.37199 c
+502.18399 416.37199 502.45399 416.10099 502.45399 415.76699 c
+502.45399 415.43299 502.18399 415.16198 501.84899 415.16198 c
+501.51499 415.16198 501.24398 415.43299 501.24398 415.76699 c
+b 
+485.93199 401.76799 m
+485.93199 402.10198 486.20298 402.37298 486.53799 402.37298 c
+486.87199 402.37298 487.14299 402.10198 487.14299 401.76799 c
+487.14299 401.43299 486.87199 401.16299 486.53799 401.16299 c
+486.20298 401.16299 485.93199 401.43299 485.93199 401.76799 c
+b 
+501.24398 401.76799 m
+501.24398 402.10198 501.51499 402.37298 501.84899 402.37298 c
+502.18399 402.37298 502.45399 402.10198 502.45399 401.76799 c
+502.45399 401.43299 502.18399 401.16299 501.84899 401.16299 c
+501.51499 401.16299 501.24398 401.43299 501.24398 401.76799 c
+b 
+470.38899 401.76799 m
+470.38899 402.10198 470.65998 402.37298 470.99398 402.37298 c
+471.32798 402.37298 471.59899 402.10198 471.59899 401.76799 c
+471.59899 401.43299 471.32798 401.16299 470.99398 401.16299 c
+470.65998 401.16299 470.38899 401.43299 470.38899 401.76799 c
+b 
+513.57598 401.76799 m
+513.57598 402.10198 513.84698 402.37298 514.18199 402.37298 c
+514.51599 402.37298 514.78599 402.10198 514.78599 401.76799 c
+514.78599 401.43299 514.51599 401.16299 514.18199 401.16299 c
+513.84698 401.16299 513.57598 401.43299 513.57598 401.76799 c
+b 
+485.93199 387.28799 m
+485.93199 387.62199 486.20298 387.89299 486.53799 387.89299 c
+486.87199 387.89299 487.14299 387.62199 487.14299 387.28799 c
+487.14299 386.95399 486.87199 386.68299 486.53799 386.68299 c
+486.20298 386.68299 485.93199 386.95399 485.93199 387.28799 c
+b 
+493.55499 387.28799 m
+493.55499 387.62199 493.82499 387.89299 494.15998 387.89299 c
+494.49398 387.89299 494.76499 387.62199 494.76499 387.28799 c
+494.76499 386.95399 494.49398 386.68299 494.15998 386.68299 c
+493.82499 386.68299 493.55499 386.95399 493.55499 387.28799 c
+b 
+485.93199 376.55699 m
+485.93199 376.89099 486.20298 377.16198 486.53799 377.16198 c
+486.87199 377.16198 487.14299 376.89099 487.14299 376.55699 c
+487.14299 376.22299 486.87199 375.95199 486.53799 375.95199 c
+486.20298 375.95199 485.93199 376.22299 485.93199 376.55699 c
+b 
+493.55499 376.55699 m
+493.55499 376.89099 493.82499 377.16198 494.15998 377.16198 c
+494.49398 377.16198 494.76499 376.89099 494.76499 376.55699 c
+494.76499 376.22299 494.49398 375.95199 494.15998 375.95199 c
+493.82499 375.95199 493.55499 376.22299 493.55499 376.55699 c
+b 
+468.53399 387.31399 m
+468.53399 387.86099 468.97698 388.30398 469.52398 388.30398 c
+470.06999 388.30398 470.51298 387.86099 470.51298 387.31399 c
+470.51298 386.76799 470.06999 386.32499 469.52398 386.32499 c
+468.97698 386.32499 468.53399 386.76799 468.53399 387.31399 c
+b 
+472.02299 383.37298 m
+472.02299 385.14099 473.45599 386.57299 475.22299 386.57299 c
+476.99099 386.57299 478.42399 385.14099 478.42399 383.37298 c
+478.42399 381.60499 476.99099 380.17298 475.22299 380.17298 c
+473.45599 380.17298 472.02299 381.60499 472.02299 383.37298 c
+b 
+517.77799 387.31399 m
+517.77799 387.86099 518.22099 388.30398 518.76699 388.30398 c
+519.31399 388.30398 519.75698 387.86099 519.75698 387.31399 c
+519.75698 386.76799 519.31399 386.32499 518.76699 386.32499 c
+518.22099 386.32499 517.77799 386.76799 517.77799 387.31399 c
+b 
+524.43798 393.78898 m
+526.55299 393.78898 l
+S 
+0 0 0 0 k
+464.61099 417.24299 m
+469.46598 419.10598 l
+471.32899 414.25099 l
+466.47399 412.38798 l
+464.61099 417.24299 l
+b 
+0 0 0 0.29998 k
+467.02398 415.60899 m
+467.02398 416.10299 467.42399 416.50299 467.91799 416.50299 c
+468.41099 416.50299 468.81098 416.10299 468.81098 415.60899 c
+468.81098 415.11599 468.41099 414.71598 467.91799 414.71598 c
+467.42399 414.71598 467.02398 415.11599 467.02398 415.60899 c
+b 
+0 0 0 0 k
+516.92999 417.27799 m
+521.78498 419.14099 l
+523.64898 414.28599 l
+518.79399 412.42298 l
+516.92999 417.27799 l
+b 
+0 0 0 0.29998 k
+519.34399 415.64399 m
+519.34399 416.13798 519.74398 416.53799 520.23699 416.53799 c
+520.73098 416.53799 521.13099 416.13798 521.13099 415.64399 c
+521.13099 415.15098 520.73098 414.75099 520.23699 414.75099 c
+519.74398 414.75099 519.34399 415.15098 519.34399 415.64399 c
+b 
+0 0 0 0.79998 k
+463.31599 363.98799 m
+471.89299 371.98699 l
+472.22898 372.29998 472.70799 372.33099 472.96398 372.05599 c
+473.21998 371.78199 473.15499 371.30599 472.81999 370.99299 c
+464.24198 362.99499 l
+463.90699 362.68199 463.42698 362.65098 463.17199 362.92498 c
+462.91598 363.19898 462.97999 363.67498 463.31599 363.98799 c
+b 
+465.61698 365.08299 m
+464.375 366.41398 464.44799 368.5 465.77899 369.74198 c
+467.11099 370.98298 469.19699 370.90998 470.43798 369.57899 c
+471.67999 368.24699 471.60699 366.16099 470.27598 364.91999 c
+468.94398 363.67799 466.85798 363.75099 465.61698 365.08299 c
+b 
+515.71598 364.02598 m
+524.29399 372.02398 l
+524.62899 372.33699 525.10798 372.36799 525.36399 372.09399 c
+525.61999 371.81898 525.55599 371.34298 525.21998 371.03099 c
+516.64299 363.03199 l
+516.30699 362.71899 515.82798 362.68798 515.57199 362.96199 c
+515.31599 363.23699 515.38099 363.71299 515.71598 364.02598 c
+b 
+518.01699 365.11999 m
+516.77499 366.45098 516.84799 368.53698 518.17999 369.77899 c
+519.51098 371.02099 521.59698 370.94799 522.83898 369.61599 c
+524.08099 368.28498 524.00799 366.19898 522.67599 364.95698 c
+521.34498 363.71598 519.25898 363.78799 518.01699 365.11999 c
+b 
+469.19499 397.04798 m
+469.34498 397.18499 469.69599 397.19299 y
+471.64299 397.17799 l
+471.64299 396.67298 l
+472.69999 396.67298 l
+472.69999 397.17799 l
+474.76998 397.19299 l
+475.25498 397.19799 475.44299 397 v
+475.65199 396.77999 475.56698 396.23098 y
+475.55999 393.83699 l
+469.07099 393.83699 l
+469.07099 396.33699 l
+468.98699 396.85899 469.19499 397.04798 v
+b 
+512.16799 397.04798 m
+512.31799 397.18499 512.66799 397.19299 y
+514.63398 397.17799 l
+514.63899 396.67298 l
+515.64898 396.67298 l
+515.66699 397.17799 l
+517.74299 397.19299 l
+518.22799 397.19799 518.41598 397 v
+518.625 396.77999 518.53898 396.23098 y
+518.55099 393.83699 l
+512.04399 393.83699 l
+512.04399 396.33699 l
+511.95999 396.85899 512.16799 397.04798 v
+b 
+0 0 0 0.39999 k
+0.47198 w
+3.86399 M
+346.23399 394.17599 m
+346.23399 374.77899 l
+267.54199 374.82998 l
+267.54199 394.17599 l
+346.23399 394.17599 l
+b 
+343.37298 374.82998 m
+342.04199 372.52499 339.58198 371.10398 336.91899 371.10398 c
+334.25698 371.10398 331.79699 372.52499 330.46598 374.82998 c
+343.37298 374.82998 l
+b 
+0 0 0 0.59999 k
+340.12998 374.82998 m
+338.28399 373.24099 335.55398 373.24099 333.70899 374.82998 c
+340.12998 374.82998 l
+b* 
+0 0 0 0.39999 k
+283.30999 374.82998 m
+281.97898 372.52499 279.51899 371.10398 276.85699 371.10398 c
+274.19398 371.10398 271.73399 372.52499 270.40299 374.82998 c
+283.30999 374.82998 l
+b 
+0 0 0 0.59999 k
+280.06698 374.82998 m
+278.22198 373.24099 275.49198 373.24099 273.64599 374.82998 c
+280.06698 374.82998 l
+b* 
+346.23399 394.08198 m
+346.23399 393.45599 l
+267.54199 397.78199 m
+267.54199 393.45599 l
+S 
+0 0 0 0.29998 k
+259.94099 394.06698 m
+259.94099 396.85798 l
+259.94799 396.97099 l
+259.96699 397.07699 l
+259.99699 397.17599 l
+260.04699 397.28799 l
+260.10798 397.38798 l
+260.17799 397.47698 l
+260.25599 397.55299 l
+260.35099 397.62599 l
+260.45199 397.68499 l
+260.55799 397.72999 l
+260.66699 397.76098 l
+260.77699 397.77799 l
+260.86099 397.78199 l
+267.54199 397.78199 l
+267.54199 394.06698 l
+259.94099 394.06698 l
+b 
+0 0 0 0.5 k
+258.50999 374.82998 9.03199 19.22599 re
+B 
+0 0 0 0.29998 k
+258.50999 374.84698 m
+258.50999 394.06698 l
+258.13798 394.06698 257.78199 393.90899 257.51998 393.64599 c
+257.25698 393.38299 257.10899 393.02699 257.10899 392.65499 c
+257.10899 376.23098 l
+257.10899 375.85899 257.25698 375.50399 257.51998 375.24099 c
+257.78199 374.97799 258.13798 374.84698 258.50999 374.84698 c
+b 
+0 0 0 0.5 k
+346.23399 394.08198 m
+346.23399 374.82998 l
+355.26599 374.82998 l
+355.26599 394.05599 l
+346.23399 394.08198 l
+b 
+0 0 0 0.29998 k
+355.26599 394.06999 m
+355.26599 374.81799 l
+355.63699 374.81799 355.99398 374.97799 356.25599 375.24099 c
+356.51899 375.50399 356.66699 375.85899 356.66699 376.23098 c
+356.66699 392.65499 l
+356.66699 393.02699 356.51899 393.38299 356.25599 393.64599 c
+355.99398 393.90899 355.63699 394.06999 355.26599 394.06999 c
+b 
+346.23399 394.08198 m
+346.25399 397.18598 l
+353.83499 397.18998 l
+353.83499 394.10899 l
+346.23399 394.08198 l
+b 
+267.54199 397.90599 m
+346.25399 397.90599 l
+346.23399 397.90599 l
+346.23399 394.17999 l
+267.54199 394.17999 l
+267.54199 397.90599 l
+b* 
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Trailer
+%%DocumentProcessColors: Black
+%%DocumentNeededResources:
+%%+ font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Courier
+%%+ font Times-Roman
+%%EOF

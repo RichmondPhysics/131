@@ -1,0 +1,721 @@
+#This file was created by <vineyard> Mon Jul 10 14:40:06 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Changing Motion
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To learn how to relate graphs of acceleration vs.
+ time to the motions they represent.
+ 
+\layout Itemize
+
+To understand the relationship between position vs.
+ time, velocity vs.
+ time, and acceleration vs.
+ time graphs.
+\layout Standard
+
+
+\series bold 
+Velocity and Acceleration Graphs
+\series default 
+ 
+\layout Standard
+
+We are interested in having you learn to describe simple motions in which
+ the velocity of an object is changing.
+ In order to learn to describe motion in more detail for some simple situations,
+ you will be asked to observe and describe the motion of a dynamics cart
+ on a track.
+ Although graphs and words are still important representations of these
+ motions, you will also be asked to draw velocity vectors, arrows that indicate
+ both the direction and speed of a moving object.
+ Thus, you will also learn how to represent simple motions with velocity
+ diagrams .
+\layout Standard
+
+In the last session, you looked at position vs.
+ time and velocity vs.
+ time graphs of the motion of your body as you moved at a "constant" velocity.
+ The data for the graphs were collected using a motion detector.
+ Your goal in this session is to learn how to describe various kinds of
+ motion in more detail.
+ It is not enough when studying motion in physics to simply say that "the
+ object is moving toward the right" or "it is standing still." You have probably
+ realized that a velocity vs.
+ time graph is better than a position vs.
+ time graph when you want to know how fast and in what direction you are
+ moving at each instant in time as you walk.
+ When the velocity of an object is changing, it is also important to know
+ how it is changing.
+ The rate of change of velocity is known as the acceleration.
+ 
+\layout Standard
+
+In order to get a feeling for acceleration, it is helpful to create and
+ learn to interpret velocity vs.
+ time and acceleration vs.
+ time graphs for some relatively simple motions of a cart on a track.
+ You will be observing the cart with the motion detector as it moves at
+ a constant velocity and as it changes its velocity at a constant rate.
+ Use the 
+\series bold 
+P, V & A Graphs
+\series default 
+ application in the 
+\series bold 
+131 Workshop
+\series default 
+ submenu of the 
+\series bold 
+Apple
+\series default 
+ menu for all of the activities in this unit.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+Ultrasonic motion detector 
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (P, V & A Graphs application)
+\layout Itemize
+
+Dynamics cart and track 
+\layout Itemize
+
+Lab stand to incline the track 
+\layout Standard
+
+
+\series bold 
+Graphing a Constant Velocity Cart Motion 
+\layout Standard
+
+Let's start by giving the cart a push along the level track and graphing
+ its motion.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 1: Position, Velocity and Acceleration Graphs of Constant Velocity
+\series default 
+ 
+\layout Standard
+
+(a) Based on your observations of the motions of your body in the last session,
+ how should the position and velocity graphs look if you move the cart at
+ a constant velocity away from the motion detector starting at the 0.5 meter
+ mark? Sketch your predictions with dashed lines on the axes that follow.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 415 375
+file changing_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Acceleration is defined as the time rate of change of velocity.
+ Sketch your prediction of the cart acceleration on the axes that follow
+ using a dashed line.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 415 195
+file changing_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(c) Test your prediction.
+ Be sure that the cart is never closer than 0.15 meter from the motion detector.
+ Try several times until you get a fairly constant velocity.
+ Sketch your results with solid lines on the axes shown above.
+ The acceleration vs.
+ time graphs will exhibit small fluctuations due to irregularities in the
+ motion of the cart.
+ You should ignore these fluctuations and draw smooth patterns.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Did your graphs agree with your predictions? What characterizes constant
+ velocity motion on a position vs.
+ time graph? 
+\layout Standard
+\added_space_bottom 10mm 
+(e) What characterizes constant velocity motion on a velocity vs.
+ time graph?
+\layout Standard
+\added_space_bottom 10mm 
+(f) What characterizes constant velocity motion on a acceleration vs.
+ time graph?
+\layout Standard
+
+
+\series bold 
+Finding Accelerations
+\series default 
+ 
+\layout Standard
+
+To find the average acceleration of the cart during some time interval (the
+ average time rate of change of its velocity), you must measure its velocity
+ at two different times, calculate the difference between the final value
+ and the initial value and divide by the time interval.
+\layout Standard
+
+To find the acceleration vector from two velocity vectors, you must first
+ find the vector representing the change in velocity by subtracting the
+ initial velocity vector from the final one.
+ Then you divide this vector by the time interval.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 2: Representing Acceleration
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Does the acceleration vs.
+ time graph you observed agree with this method of calculating acceleration?
+ Explain.
+ Does it agree with your prediction?
+\layout Standard
+
+(b) The diagram below shows the positions of the cart at equal time intervals.
+ (This is like taking snapshots of the cart at equal time intervals.) At
+ each indicated time, sketch a vector above the cart which might represent
+ the velocity of the cart at that time while it is moving at a constant
+ velocity away from the motion detector.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 418 106
+file changing_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(c) Explain how you would find the vector representing the change in velocity
+ between the times 1.0 s and 2.0 s in the diagram above.
+ From this vector, what value would you calculate for the acceleration?
+ Explain.
+ Is this value in agreement with the acceleration graph you obtained in
+ Activity 1?
+\layout Standard
+
+
+\series bold 
+Speeding Up at a Moderate Rate
+\series default 
+ 
+\layout Standard
+
+In the next activity you will look at velocity and acceleration graphs of
+ the motion of a cart when its velocity is changing.
+ You will be able to see how these two representations of the motion are
+ related to each other when the cart is speeding up.
+\layout Standard
+
+In order to get your cart speeding up smoothly use the lab stand to raise
+ the track approximately one-third the height of the lab stand at the end
+ where the motion detector is mounted.
+\layout Standard
+
+
+\series bold 
+Activity 3: Graphs Depicting Speeding Up
+\series default 
+ 
+\layout Standard
+
+(a) Predict the shape of the position, velocity, and acceleration vs.
+ time graphs for the cart moving away from the sensor and speeding up.
+ Sketch your predictions on the following axes using dashed lines.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 415 375
+file changing_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 415 195
+file changing_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Create graphs of the motion of your cart as it moves away from the detector
+ and speeds up.
+ Sketch the graphs neatly on the above axes using solid lines.
+\layout Standard
+\added_space_bottom 15mm 
+(c) How does your position graph differ from the position graphs for steady
+ (constant velocity) motion? 
+\layout Standard
+\added_space_bottom 15mm 
+(d) What feature of your velocity graph signifies that the motion was away
+ from the detector? 
+\layout Standard
+\added_space_bottom 15mm 
+(e) What feature of your velocity graph signifies that the cart was speeding
+ up? How would a graph of motion with a constant velocity differ? 
+\layout Standard
+\added_space_bottom 15mm 
+(f) During the time that the cart is speeding up, is the acceleration positive
+ or negative? How does speeding up while moving away from the detector result
+ in this sign of acceleration? Hint: Remember that acceleration is the rate
+ of change of velocity.
+ Look at how the velocity is changing.
+ 
+\layout Standard
+\added_space_bottom 15mm 
+(g) How does the velocity vary in time as the cart speeds up? Does it increase
+ at a steady rate or in some other way? 
+\layout Standard
+\added_space_bottom 15mm 
+(h) How does the acceleration vary in time as the cart speeds up? Is this
+ what you expect based on the velocity graph? Explain.
+\layout Standard
+
+
+\series bold 
+Using Vectors to Describe the Acceleration
+\series default 
+ 
+\layout Standard
+
+Let's return to the Vector Diagram representation and use it to describe
+ the acceleration.
+\layout Standard
+
+
+\series bold 
+Activity 4: Acceleration Vectors
+\series default 
+ 
+\layout Standard
+
+(a) The diagram that follows shows the positions of the cart at equal time
+ intervals.
+ At each indicated time, sketch a vector above the cart which might represent
+ the velocity of the cart at that time while it is moving away from the
+ motion detector and speeding up.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 418 106
+file changing_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) Show below how you would find the approximate length and direction of
+ the vector representing the change in velocity between the times 1.0 s and
+ 2.0 s using the diagram above.
+ No quantitative calculations are needed.
+ Based on the direction of this vector and the direction of the positive
+ x-axis, what is the sign of the acceleration? Does this agree with your
+ answer to Activity 3 (f)?
+\layout Standard
+
+
+\series bold 
+Measuring Acceleration 
+\layout Standard
+
+In this investigation you will analyze the motion of your accelerated cart
+ quantitatively.
+ This analysis will be quantitative in the sense that your results will
+ consist of numbers.
+ You will determine the cart's acceleration from the slope of your velocity
+ vs.
+ time graph and compare it to the average acceleration read from the acceleratio
+n vs.
+ time graph.
+ You can display actual values for your acceleration and velocity data using
+ the Smart Tool on the graph window menu.
+\layout Standard
+
+
+\series bold 
+Activity 5: Calculating Accelerations
+\series default 
+ 
+\layout Standard
+\added_space_bottom 30mm 
+(a) List 10 of the typical accelerations of the cart measured in Activity
+ 3.
+ Use the Smart Tool on the Acceleration vs.
+ Time graph to get these values.
+ (Only use values from the portion of the graph after the cart was released
+ and before you stopped it.)
+\layout Standard
+\added_space_bottom 10mm 
+(b) Calculate the average value of the acceleration and record it below.
+ 
+\layout Standard
+
+(c) The average acceleration during a particular time period is defined
+ as the change in velocity divided by the change in time.
+ This is the average rate of change of velocity.
+ By definition, the rate of change of a quantity graphed with respect to
+ time is also the slope of the curve.
+ Thus the (average) slope of an object's velocity vs.
+ time graph is the (average) acceleration of the object.
+\layout Standard
+\added_space_bottom 10mm 
+Use the Smart Tool to read the velocity and time coordinates for two typical
+ points on the velocity graph.
+ For a more accurate answer, use two points as far apart in time as possible
+ but still during the time the cart was speeding up.
+ Record the points in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Calculate the change in velocity between points 1 and 2.
+ Also calculate the corresponding change in time (time interval).
+ Divide the change in velocity by the change in time.
+ This is the average acceleration.
+ Show and then summarize your calculations below.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(e) Is the acceleration positive or negative? Is this what you expected?
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(f) Does the average acceleration you just calculated agree with the average
+ acceleration you calculated from the acceleration graph? Do you expect
+ them to agree? How would you account for any differences? 
+\layout Standard
+
+
+\series bold 
+Speeding Up at a Faster Rate
+\series default 
+ 
+\layout Standard
+
+Suppose that you accelerate your cart at a faster rate by raising the track
+ to approximately two-thirds the height of the lab stand.
+ How would your velocity and acceleration graphs change? 
+\layout Standard
+
+
+\series bold 
+Activity 6: Calculating Accelerations
+\series default 
+ 
+\layout Standard
+
+(a) Resketch the velocity and acceleration graphs you found in Activity
+ 3 using the axes that follow.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 271 371
+file changing_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) In the previous set of axes, use a dashed line or another color to sketch
+ your predictions for the general graphs that depict a cart speeding up
+ at a faster rate.
+ Exact predictions are not expected.
+ We just want to know how you think the general shapes of the graphs will
+ change.
+\layout Standard
+
+(c) Test your predictions by accelerating the cart with the track raised
+ to approximately two-thirds the height of the lab stand.
+ Repeat if necessary to get nice graphs and then sketch the results in the
+ axes that follow.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 271 371
+file changing_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(d) Did the general shapes of your velocity and acceleration graphs agree
+ with your predictions? How is the greater magnitude (size) of acceleration
+ represented on a velocity vs.
+ time graph? 
+\layout Standard
+\added_space_bottom 20mm 
+(e) How is the greater magnitude (size) of acceleration represented on an
+ acceleration vs.
+ time graph? 
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+
+1.
+ An object moving along a line (the + position axis) has the acceleration-time
+ graph shown below.
+ Describe how might the object move to create this graph if it is moving
+ away from the origin?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 214 100
+file changing_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+2.
+ Sketch on the axes below a velocity-time graph that goes with the above
+ acceleration-time graph.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 100
+file changing_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+3.
+ For each of the velocity-time graphs below, sketch the shape of the acceleratio
+n-time graph that goes with it.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 208
+file changing_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 208
+file changing_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+4.
+ The following is a velocity-time graph for a car.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 103
+file changing_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+What is the average acceleration of the car? Show your work below.
+\layout Standard
+
+5.
+ Which position-time graph below could be that for a cart that is steadily
+ accelerating away from the origin?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 436 121
+file changing_fig11.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+A car can move along a line (the + position axis).
+ Sketch velocity-time and acceleration-time graphs which correspond to each
+ of the following descriptions of the car's motion.
+\layout Standard
+
+6.
+ The car starts from rest and moves away from the origin increasing its
+ speed at a steady rate.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 234 228
+file changing_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+7.
+ The car is moving away from the origin at a constant velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 234 228
+file changing_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+8.
+ The car starts from rest and moves away from the origin increasing its
+ speed at a steady rate twice as large as in (6) above.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 234 228
+file changing_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+9.
+ The car is moving away from the origin at a constant velocity twice as
+ large as in (7) above.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 234 228
+file changing_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\the_end

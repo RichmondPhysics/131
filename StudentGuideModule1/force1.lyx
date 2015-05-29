@@ -1,0 +1,720 @@
+#This file was created by <vineyard> Thu Jul  6 16:44:01 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Force and Motion I
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To learn how to use a force probe to measure force.
+ 
+\layout Itemize
+
+To understand the relationship between forces applied to an object and its
+ motions.
+ 
+\layout Itemize
+
+To find a mathematical relationship between the force applied to an object
+ and its acceleration.
+\layout Standard
+
+
+\series bold 
+Overview 
+\layout Standard
+
+In the previous labs, you have used a motion detector to display position-time,
+ velocity-time and acceleration-time graphs of the motion of different objects.
+ You were not concerned about how you got the objects to move, i.e.
+ what forces (pushes or pulls) acted on the objects.
+ From your experiences, you know that force and motion are related in some
+ way.
+ To start your bicycle moving, you must apply a force to the pedal.
+ To start up your car, you must step on the gas pedal to get the engine
+ to apply a force to the road through the tires.
+\layout Standard
+
+But, exactly how is force related to the quantities you used in the previous
+ unit to describe motion--position, velocity and acceleration? In this unit
+ you will pay attention to forces and how they affect motion.
+ You will apply forces to a cart, and observe the nature of its resulting
+ motion graphically with a motion detector.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+Force probe 
+\layout Itemize
+
+Variety of hanging masses 
+\layout Itemize
+
+Low friction pulley and string 
+\layout Itemize
+
+Motion detector 
+\layout Itemize
+
+Dynamics cart and track 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (V, A & F Graphs application)
+\layout Standard
+
+
+\series bold 
+Measuring Forces
+\series default 
+ 
+\layout Standard
+
+In this investigation you will use a force probe to measure forces.
+ The force probe puts out a voltage signal proportional to the force applied
+ to the arm of the probe.
+ Physicists have defined a standard unit of force called the newton, abbreviated
+ N.
+ For your work on forces and the motions they cause, it will be more convenient
+ to have the force probe read directly in newtons rather than voltage.
+ 
+\shape italic 
+Before each measurement you should zero the force probe by removing all
+ forces and pushing the TARE button.
+\layout Standard
+
+
+\series bold 
+Motion and Force
+\series default 
+ 
+\layout Standard
+
+Now you can use the force probe to apply measured amounts of force to an
+ object.
+ You can also use the motion detector, as in the previous units, to examine
+ the motion of the object.
+ In this way you will be able to establish the relationship between motion
+ and force.
+\layout Standard
+
+
+\series bold 
+Activity 1: Pushing and Pulling a Cart
+\series default 
+ 
+\layout Standard
+
+In this activity you will move a cart by pushing and pulling it with your
+ hand.
+ You will measure the force, velocity and acceleration.
+ Then you will be able to look for relationships between the applied force
+ and the motion quantities, to see which is (are) related to force.
+\layout Standard
+
+(a) Set up the cart, force probe and motion detector on the level track
+ as shown in Figure 1.
+ Measure and record the mass of the cart and force probe assembly.
+\layout Standard
+
+\begin_float fig 
+\layout Standard
+\align center 
+
+\begin_inset Figure size 477 93
+file force1_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Caption
+
+Equipment setup for qualitative measurements of force and motion.
+\end_float 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Suppose you grasp the hook on the force probe and move the cart forwards
+ and backwards in front of the motion detector.
+ Do you think that either the velocity or the acceleration graph will look
+ like the force graph? Is either of these motion quantities related to force?
+ That is to say, if you apply a changing force to the cart, will the velocity
+ or acceleration change in the same way as the force?
+\layout Standard
+
+(c) To test your predictions, open the V, A & F Graphs application.
+ Grasp the end of the force probe arm and start acquiring data.
+ When you hear the clicks, pull the cart away from the motion detector,
+ and quickly stop it.
+ Then push it back towards the motion detector, and again quickly stop it.
+ Be sure that the cart never gets closer than 0.15 m away from the detector
+ and be careful of the wires.
+ Repeat until you get a good run, and adjust the sampling time and scale
+ of the axes if necessary.
+ Sketch your graphs on the axes below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 372 408
+file force1_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(d) Does either graph--velocity or acceleration--resemble the force graph?
+ Which one? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Based on your observations, does it appear that either the velocity
+ or acceleration of the cart might be related to the applied force? Explain.
+\layout Standard
+
+
+\series bold 
+Activity 2: Speeding Up 
+\layout Standard
+
+You have seen in the previous activity that force and acceleration seem
+ to be related.
+ But just what is the relationship between force and acceleration? 
+\layout Standard
+
+(a) Suppose you have a cart with very little friction, and that you pull
+ this cart with a constant force as shown below on the force-time graph.
+ Sketch on the axes below the velocity-time and acceleration-time graphs
+ of the cart's motion.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 373 399
+file force1_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) Describe in words the predicted shape of the velocity vs.
+ time and acceleration vs.
+ time graphs for the cart.
+\layout Standard
+
+(c) Test your predictions.
+ Set up the pulley, cart, string, motion detector and force probe as shown
+ in Figure 2.
+ The cart should be the same mass as before.
+ Zero the force probe.
+ Hang 50 g from the end of the string.
+ Start the data acquisition.
+ Release the cart when you hear the clicks of the motion detector.
+ Be sure that there is enough slack in the force probe cables to complete
+ the motion and catch the cart before it crashes into the pulley.
+ Repeat until you get good graphs in which the cart is seen by the motion
+ detector over the entire motion.
+ Sketch the actual velocity, acceleration and force graphs for the motion
+ of interest on the axes below and indicate the scale on the axes.
+ Draw smooth graphs; don't worry about small bumps.
+\layout Standard
+
+\begin_float fig 
+\layout Standard
+\align center 
+
+\begin_inset Figure size 471 74
+file force1_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Caption
+
+Equipment setup for quantitative measurements of force and motion.
+\end_float 
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 363 397
+file force1_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(d) Is the force which is applied to the cart by the string constant, increasing
+ or decreasing? Explain based on your graph.
+\layout Standard
+\added_space_bottom 20mm 
+(e) How does the acceleration graph vary in time? Does this agree with your
+ prediction? What kind of acceleration corresponds to a constant applied
+ force?
+\layout Standard
+\added_space_bottom 20mm 
+(f) How does the velocity graph vary in time? Does this agree with your
+ prediction? What kind of velocity corresponds to a constant applied force?
+\layout Standard
+\added_space_bottom 20mm 
+(g) Use the Smart Tool to determine the average force and the average accelerati
+on and record them below.
+ Find the mean values only during the time interval when the force and accelerat
+ion are nearly constant.
+ See Appendix B for details on the use of the Smart Tool feature of DataStudio.
+\layout Standard
+
+
+\series bold 
+Activity 3: Acceleration from Different Forces 
+\layout Standard
+
+In the previous activity you have examined the motion of a cart with a constant
+ force applied to it.
+ But, what is the relationship between acceleration and force? If you apply
+ a larger force to the same cart (same mass as before) how will the acceleration
+ change? In this activity you will try to answer these questions by applying
+ different forces to the cart, and measuring the corresponding accelerations.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Suppose you pulled the cart with a force about twice as large as before.
+ What would happen to the acceleration of the cart? Explain.
+\layout Standard
+
+(b) Test your prediction by replacing the 50-g mass with a 100-g mass and
+ creating graphs of the motion as before.
+ Repeat until you have a good run.
+ Sketch the results on the axes below.
+ Don't forget to put the scale on the axes.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 363 397
+file force1_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(c) Use the Smart Tool to find the average force and the average acceleration
+ and record them below.
+ Find the mean values only during the time interval when the force and accelerat
+ion are nearly constant.
+\layout Standard
+\added_space_bottom 15mm 
+(d) How did the force applied to the cart compare to that with the smaller
+ force in Activity 2?
+\layout Standard
+\added_space_bottom 20mm 
+(e) How did the acceleration of the cart compare to that caused by the smaller
+ force in Activity 2? Did this agree with your prediction? Explain.
+\layout Standard
+
+
+\series bold 
+Activity 4: The Relationship Between Acceleration and Force 
+\layout Standard
+
+If you accelerate the same cart (same mass) with another force, you will
+ then have three data points--enough data to plot a graph of acceleration
+ vs.
+ force.
+ You can then find the mathematical relationship between acceleration and
+ force.
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Accelerate the cart with a force roughly midway between the other two
+ forces tried.
+ Use a hanging mass about midway between those used in the last two activities.
+ Record the mass below.
+\layout Standard
+
+(b) Graph velocity, acceleration and force.
+ Sketch the graphs on the axes in Activity 3 using dashed lines.
+\layout Standard
+
+(c) Find the mean acceleration and force, as before, and record the values
+ in the table below.
+ Also, enter the values from the previous two activities in the table.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+7 3 0 0 -1 -1 -1 -1
+1 1 0 0
+0 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 1 0 0
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+
+\newline 
+Average Force (N)
+\newline 
+Average Acceleration (m/s
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+)
+\newline 
+Activity 2
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+Activity 3
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+Activity 4
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\layout Standard
+
+(d) Determine the mathematical relationship between the acceleration of
+ the cart and the force applied to the cart by fitting the data with a function.
+ Label and print the graph showing the best fit and put a copy in your notebook
+ at the end of this unit.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Does there appear to be a simple mathematical relationship between the
+ acceleration of a cart (with fixed mass) and the force applied to the cart
+ (measured by the force probe mounted on the cart)? Write down the equation
+ you found and describe the mathematical relationship in words.
+\layout Standard
+\added_space_bottom 20mm 
+(f) If you increased the force applied to the cart by a factor of ten, how
+ would you expect the acceleration to change? How would you expect the accelerat
+ion-time graph of the cart's motion to change? Explain based on your graphs.
+\layout Standard
+\added_space_bottom 20mm 
+(g) If you increased the force applied to the cart by a factor of ten, how
+ would you expect the velocity-time graph of the cart's motion to change?
+ Explain based on your graphs.
+\layout Standard
+
+Comment: The relationship which you have been examining between the acceleration
+ of the cart and the applied force is known as Newton's Second Law.
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+
+1.
+ A force is applied which makes an object move with the acceleration shown
+ below.
+ Assuming that friction is negligible, sketch a force-time graph of the
+ force on the object on the axes below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 249 190
+file force1_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+Explain your answer:
+\layout Standard
+
+2.
+ Roughly sketch the velocity-time graph for the object in question 1 on
+ the axes below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 249 100
+file force1_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+3.
+ A cart can move along a horizontal line (the + position axis).
+ It moves with the velocity shown below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 213 100
+file force1_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Assuming that friction is so small that it can be neglected, sketch on the
+ axes that follow the acceleration-time and force-time graphs of the cart's
+ motion.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 213 190
+file force1_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+Explain both of your graphs.
+\layout Standard
+
+Questions 4-6 refer to an object which can move in either direction along
+ a horizontal line (the + position axis).
+ Assume that friction is so small that it can be neglected.
+ Sketch the shape of the graph of the force applied to the object which
+ would produce the motion described.
+ 
+\layout Standard
+
+4.
+ The object moves away from the origin with a constant acceleration.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 223 107
+file force1_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+5.
+ The object moves toward the origin with a constant acceleration.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 223 107
+file force1_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+6.
+ The object moves away from the origin with a constant velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 223 107
+file force1_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Questions 7 and 8 refer to an object which can move along a horizontal line
+ (the + position axis).
+ Assume that friction is so small that it can be ignored.
+ The object s velocity-time graph is shown below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 233 120
+file force1_fig11.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+7.
+ Sketch the shapes of the acceleration-time and force-time graphs on the
+ axes below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 213 190
+file force1_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+8.
+ Suppose that the force applied to the object were twice as large.
+ Sketch with dashed lines on the same axes above the force, acceleration,
+ and velocity.
+\layout Standard
+
+Questions 9 refer to an object which can move along a horizontal line (the
+ + position axis).
+ Assume that friction is so small that it can be ignored.
+ The object s velocity-time graph is shown below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 233 121
+file force1_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+9.
+ Sketch the shapes of the acceleration and force graphs on the axes below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 213 190
+file force1_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\the_end

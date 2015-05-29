@@ -1,0 +1,1501 @@
+#This file was created by <vineyard> Thu Jul 13 17:30:50 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Angular Momentum and Torque as Vectors
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+Objectives 
+\layout Standard
+
+To understand the definitions of torque and angular momentum as vector quantitie
+s and to understand the mathematical properties and some applications of
+ the vector cross product.
+ We will also learn the relationship between torque and angular momentum.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A horizontal pivot 
+\layout Itemize
+
+Two identical spring scales
+\layout Itemize
+
+A ruler 
+\layout Itemize
+
+A protractor 
+\layout Itemize
+
+Rods and connectors (Styrofoam ball and bamboo skewers)
+\layout Itemize
+
+Two small masses (100g & 200g) 
+\layout Itemize
+
+A Rotating Disk System 
+\layout Itemize
+
+String 
+\layout Standard
+
+
+\series bold 
+Overview
+\series default 
+ 
+\layout Standard
+
+This unit presents us with a consolidation and extension of the concepts
+ in rotational motion that you have studied so far.
+ You studied the analogy and relationships between rotational and linear
+ quantities (i.e., position and angle, linear velocity and angular velocity,
+ linear acceleration and angular acceleration, and force and torque) without
+ taking into account, in any formal way, the fact that these quantities
+ actually behave like the mathematical entities we call vectors.
+ We will discuss the vector nature of rotational quantities and, in addition,
+ define a new vector quantity called angular momentum that is the rotational
+ analog of linear momentum.
+ 
+\layout Standard
+
+Angular momentum and torque are special vectors because they are the product
+ of two other vectors a position vector and a force or linear momentum vector.
+ To describe them we need to introduce a new type of vector product known
+ as the vector cross product.
+ We will explore the definition and unique nature of the vector cross product
+ used to define torque and angular momentum.
+ We will study the relationship between torque and angular momentum as well
+ as the theoretical basis of the Law of Conservation of Angular Momentum.
+\layout Standard
+
+
+\series bold 
+Observation of Torque when 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ are not Perpendicular
+\series default 
+ 
+\layout Standard
+
+Recently, you "discovered" that if we define torque as the product of a
+ lever arm and perpendicular force, an object does not rotate when the sum
+ of the torques acting on it add up to zero.
+ However, we didn't consider cases where 
+\series bold 
+
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+
+\series default 
+ and 
+\series bold 
+
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+
+\series default 
+ are not perpendicular, and we didn't figure out a way to tell the direction
+ of the rotation resulting from a torque.
+ Let's consider these complications by generating torques with spring balances
+ and a lever arm once more.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 1: Torque as a Function of Angle
+\series default 
+ 
+\layout Standard
+
+(a) Suppose you were to hold one of the scales at an angle of 90
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ with respect to the lever arm, r
+\begin_inset Formula \( _{h} \)
+\end_inset 
+
+, and pull on it with a steady force.
+ Meanwhile you can pull on the other scale at several angles other than
+ 90
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ from its lever arm, r
+\begin_inset Formula \( _{app} \)
+\end_inset 
+
+, as shown below.
+ Would the magnitude of the balancing force be less than, greater than,
+ or equal to the force needed at 90
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+? What do you predict? Explain.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 216 90
+file ang_mom_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) You should determine exactly how the forces compare to that needed at
+ a 90
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ angle.
+ Determine this force for at least four different angles and figure out
+ a mathematical relationship between F, r, and 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+.
+ Set up a spreadsheet to do the calculations shown in the table below.
+ Hint: Should you multiply the product of the measured values of r and F
+ by sin 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ or by cos 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ to get a torque that is equal in magnitude to the holding torque?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+12 11 0 0 -1 -1 -1 -1
+1 0 0 0
+0 1 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 1 0 0
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+r
+\begin_inset Formula \( _{h} \)
+\end_inset 
+
+
+\newline 
+F
+\begin_inset Formula \( _{h} \)
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula \( \tau _{h} \)
+\end_inset 
+
+
+\newline 
+r
+\begin_inset Formula \( _{app} \)
+\end_inset 
+
+
+\newline 
+F
+\begin_inset Formula \( _{app} \)
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula \( \cos \theta  \)
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula \( \sin \theta  \)
+\end_inset 
+
+
+\newline 
+r
+\begin_inset Formula \( _{app} \)
+\end_inset 
+
+F
+\begin_inset Formula \( _{app}\cos \theta  \)
+\end_inset 
+
+ 
+\newline 
+r
+\begin_inset Formula \( _{app} \)
+\end_inset 
+
+F
+\begin_inset Formula \( _{app}\sin \theta  \)
+\end_inset 
+
+
+\newline 
+(m)
+\newline 
+(N)
+\newline 
+(N-m)
+\newline 
+(m)
+\newline 
+(N)
+\newline 
+(deg)
+\newline 
+(rad)
+\newline 
+
+\newline 
+
+\newline 
+(N-m)
+\newline 
+(N-m)
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\layout Standard
+\added_space_bottom 20mm 
+(c) Within the limits of uncertainty, what is the most plausible mathematical
+ relationship between 
+\begin_inset Formula \( \tau  \)
+\end_inset 
+
+ and r, F, and 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+?
+\layout Standard
+
+The activity you just completed should give you a sense of what happens
+ to the magnitude of the torque when the pulling force, 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+, is not perpendicular to the vector, 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+, from the axis of rotation.
+ But how do we define the direction of the rotation that results when the
+ torque is applied to an object that is initially at rest and not balanced
+ by another torque? Let's consider the directions we might associate with
+ angular velocity and torque in this situation.
+\layout Standard
+
+
+\series bold 
+Activity 2: Angular Rotation, Torque, and Direction 
+\layout Standard
+
+(a) Suppose a particle is moving around in a circle with an angular velocity
+ that has a magnitude of 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+ associated with it.
+ According to observer #1, does the particle appear to be moving clockwise
+ or counter clockwise? How about the direction of the particle's motion
+ according to observer #2?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 199 71
+file ang_mom_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) Is the clockwise vs.
+ counterclockwise designation a good way to determine the direction associated
+ with w in an unambiguous way? Why or why not? 
+\layout Standard
+\added_space_bottom 20mm 
+(c) Can you devise a better way to assign a minus or plus sign to an angular
+ velocity?
+\layout Standard
+\added_space_bottom 20mm 
+(d) Similar consideration needs to be given to torque as a vector.
+ Can you devise a rule to assign a minus or plus sign to a torque? Describe
+ the rule.
+\layout Standard
+
+
+\series bold 
+Discussion of the Vector Cross Product 
+\layout Standard
+
+An alternative to describing positive and negative changes in angle is to
+ associate a positive or negative vector with the axis of rotation using
+ an arbitrary but well accepted rule called the right hand rule.
+ By using vectors we can describe separate rotations of many body systems
+ all rotating in different planes about different axes.
+ 
+\layout Standard
+
+By using this vector assignment for direction, angular velocity and torque
+ can be described mathematically as "vector cross products." The vector cross
+ product is a very strange type of vector multiplication worked out many
+ years ago by mathematicians who had never even heard of angular velocity
+ or torque.
+ The peculiar properties of the vector cross product and its relationship
+ to angular velocity and torque is explained in most introductory physics
+ textbooks.
+ The key properties of the vector that is the cross product of two vectors
+ 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ are that:
+\layout Enumerate
+
+The magnitude of the cross product is rFsin
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ where 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ is the angle between the two vectors; 
+\begin_inset Formula 
+\[
+\left| \overrightarrow{r}\times \overrightarrow{F}\right| =\left| \overrightarrow{r}\right| \left| \overrightarrow{F}\right| \sin \theta .\]
+
+\end_inset 
+
+The term 
+\begin_inset Formula \( \sin \theta  \)
+\end_inset 
+
+ represents the component of 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ along a line perpendicular to 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+.
+\layout Enumerate
+
+The cross product of two vectors 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ is a vector that lies in a direction perpendicular to both 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ and is up if 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ causes a counter-clockwise rotation, and is down if 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ causes a clockwise rotation.
+ These properties of the cross product are pictured below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 186 132
+file ang_mom_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+The spatial relationships between 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+, 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+, and 
+\begin_inset Formula \( \overrightarrow{\tau } \)
+\end_inset 
+
+ are very difficult to visualize.
+ In the next activity you can connect some thin rods of various sizes to
+ each other at angles of your own choosing and make some "vector cross products."
+\layout Standard
+
+
+\series bold 
+Activity 3: Making Models of Vector Cross Products
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Pick out rods of two different lengths and connect them at some angle
+ you choose.
+ Consider one of the rods to be the 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ vector and the other to be the 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ vector.
+ Measure the angle 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ and the lengths of 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ in meters.
+ Then compute the magnitude of the cross product as rFsin
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ in newton meters (N m).
+ Show your units! Note: You should assume that the magnitude of the force
+ in newtons is represented by the length of the rod in meters.
+\layout Standard
+
+(b) Attach a "cross product" rod perpendicular to the plane determined by
+ 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ with a length of rFsin
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+.
+ Sketch the location of 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ relative to 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ in the space below.
+ Show the direction and magnitude of the resultant torque 
+\begin_inset Formula \( \overrightarrow{\tau } \)
+\end_inset 
+
+.
+ 
+\shape italic 
+Finally, show your cross product model to an instructor or fellow student
+ for confirmation of its validity.
+ 
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 243 140
+file ang_mom_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Figure 2: A Model of the Vector Cross Product
+\layout Standard
+
+(c) In the diagrams below the vectors 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ lie in the plane of the paper.
+ Calculate the torques for the following two sets of 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ vectors.
+ In each case measure the length of the 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ vector in meters and assume that the length of the 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ vector in cm represents the force in newtons.
+ Use a protractor to measure the angle, 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+, between the extension of the 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+-vector and the 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+-vector.
+ Calculate the magnitude of the torques.
+ Place the appropriate symbol to indicate the direction of the torque in
+ the circle as follows: a circle with an x in it indicates a vector into
+ the page, while a circle with a dot in it indicates a vector out of the
+ page.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 222 83
+file ang_mom_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 5mm 
+r = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ m 
+\hfill 
+F = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 
+\hfill 
+
+\begin_inset Formula \( \tau  \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ N
+\begin_inset Formula \( \cdot  \)
+\end_inset 
+
+m 
+\layout Standard
+\added_space_bottom 5mm 
+r = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ m 
+\hfill 
+F = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ N 
+\hfill 
+
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 
+\hfill 
+
+\begin_inset Formula \( \tau  \)
+\end_inset 
+
+ = 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ N
+\begin_inset Formula \( \cdot  \)
+\end_inset 
+
+m
+\layout Standard
+
+
+\series bold 
+Momentum and its Rotational Analog
+\series default 
+ 
+\layout Standard
+
+Once we have defined the properties of the vector cross product, another
+ important rotational vector is easily obtained, that of angular momentum
+ relative to an axis of rotation.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 4: Angular and Linear Momentum 
+\layout Standard
+
+(a) Write the rotational analogs of the linear quantities shown.
+ Note: Include the formal definition (which is different than the analog)
+ in spaces marked with an asterisk (*).
+ For example the rotational analog for velocity is angular velocity 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+ and the definition of its magnitude is |
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+| = d
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+/dt rather than v/r.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+13 3 0 0 -1 -1 -1 -1
+1 1 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 1 0 0
+2 1 0 "5cm" ""
+2 1 0 "5cm" ""
+2 1 1 "5cm" ""
+0 2 1 0 0 0 0 "" ""
+0 2 1 0 0 0 0 "" ""
+0 2 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+Linear Quantity
+\newline 
+Rotational Quantity
+\newline 
+Definition
+\newline 
+
+\newline 
+
+\newline 
+*
+\newline 
+x (position) 
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+*
+\newline 
+v (velocity) 
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+*
+\newline 
+a (acceleration) 
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+*
+\newline 
+F (Force) 
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+m (mass) 
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+F = ma
+\newline 
+
+\newline 
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) What do you think will be the rotational definition of angular momentum
+ in terms of the vectors 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \overrightarrow{p} \)
+\end_inset 
+
+? 
+\series bold 
+Hint:
+\series default 
+ This is similar mathematically to the definition of torque and also involves
+ a vector cross product.
+ Note that torque is to angular momentum as force is to momentum.
+\layout Standard
+\added_space_bottom 20mm 
+(c) What is the rotational analog in terms of the quantities I and 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+? Do you expect the angular momentum to be a vector? Explain.
+\layout Standard
+
+(d) Summarize your guesses in the table below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+5 2 0 0 -1 -1 -1 -1
+1 1 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 1 0 0
+2 1 0 "7cm" ""
+2 1 1 "5cm" ""
+0 2 1 0 0 0 0 "" ""
+0 2 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+Linear Equation 
+\newline 
+Rotational Equation 
+\newline 
+
+\newline 
+
+\newline 
+
+\begin_inset Formula \( \overrightarrow{p}=m\overrightarrow{v} \)
+\end_inset 
+
+ [definition in terms of 
+\begin_inset Formula \( \overrightarrow{r} \)
+\end_inset 
+
+ & 
+\begin_inset Formula \( \overrightarrow{p} \)
+\end_inset 
+
+]
+\newline 
+
+\begin_inset Formula \( \overrightarrow{L}= \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+
+\newline 
+
+\begin_inset Formula \( \overrightarrow{p}=m\overrightarrow{v} \)
+\end_inset 
+
+ [definition in terms of I & 
+\begin_inset Formula \( \overrightarrow{\omega } \)
+\end_inset 
+
+]
+\newline 
+
+\begin_inset Formula \( \overrightarrow{L}= \)
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Torque and Change of Angular Momentum 
+\layout Standard
+
+Earlier in this course you applied a very brief force along a line through
+ the center of mass of a rolling cart.
+ Do you remember how it moved? What happened when you applied a gentle but
+ steady force along a line through the center of mass of the cart? Let's
+ do analogous things to a disk that is free to rotate on a relatively frictionle
+ss bearing, with the idea of formulating laws for rotational motion that
+ are analogous to Newton's laws for linear motion.
+ 
+\layout Standard
+
+Figure out how to use a system like that shown in the figure below to observe
+ the motion of the disk under the influence of a brief torque and a steady
+ torque.
+ In describing the Laws of Rotational Motion be sure to consider vector
+ properties and take both the magnitudes and directions of the relevant
+ quantities into account in your wordings.
+ 
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 400 85
+file ang_mom_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 5: Applied Torques and Resultant Motion 
+\layout Standard
+
+(a) What happens to the angular velocity and hence the angular momentum
+ of the disk before, during, and after the application of a brief torque?
+ State a First Law of Rotational Motion (named after yourself, of course)
+ in terms of torques and angular momenta.
+ 
+\series bold 
+Hint:
+\series default 
+ Newton's first law states that the center-of-mass of a system of particles
+ or a rigid object that experiences no net external force will continue
+ to move at constant velocity.
+\layout Standard
+\added_space_bottom 20mm 
+The Rotational First Law in words:
+\layout Standard
+\added_space_bottom 10mm 
+The Rotational First Law as a mathematical expression: 
+\layout Standard
+\added_space_bottom 20mm 
+(b) What happens to the magnitude and direction of the angular velocity
+ (and hence the angular momentum) of the disk during the application of
+ a steady torque? How do they change relative to the magnitude and direction
+ of the torque? If possible, give a precise statement of a Second Law of
+ Rotational Motion relating the net torque on an object to its change in
+ angular momentum.
+ 
+\series bold 
+Note:
+\series default 
+ Take both magnitudes and directions of the relevant vectors into account
+ in your statement.
+ Hint: Newton's second law of motion states that the center-of-mass of a
+ system of particles or rigid object that experiences a net external force
+ will undergo an acceleration inversely proportional to its mass.
+\layout Standard
+\added_space_bottom 20mm 
+The Rotational Second Law in Words:
+\layout Standard
+\added_space_bottom 20mm 
+The Rotational Second Law as a Vector Equation:
+\layout Standard
+
+
+\series bold 
+Angular Momentum Conservation 
+\layout Standard
+
+Now you can use the vector expression for Newton's second law of Rotational
+ Motion to show that, in theory, we expect angular momentum on a system
+ to be conserved if the net torque on that system is zero.
+\the_end

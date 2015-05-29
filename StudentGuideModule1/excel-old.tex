@@ -1,0 +1,139 @@
+
+\section{Introduction to Excel}
+
+Microsoft Excel is the spreadsheet program we will use for much of our
+data analysis and graphing.  It is a powerful and easy-to-use
+application for graphing, fitting, and manipulating data. In this
+appendix, we will briefly describe how to use Excel to do some useful
+tasks.  
+
+\subsection{Data and formulae}
+
+The figure below shows a sample Excel spreadsheet containing data
+from a made-up experiment.  The experimenter was trying to measure
+the density of a certain material by taking a set of cubes
+made of the material and measuring their masses and the lengths of
+the sides of the cubes.  The first two columns contain her measured
+results.  \textbf{Note that the top of each column contains both
+a description of the quantity contained in that column and its units.}
+You should make sure that all of the columns of your data tables do as well.
+You should also make sure that the whole spreadsheet has a descriptive
+title and your names at the top.
+
+In the third column, the experimenter has figured out the volume
+of each of the cubes, by taking the cube of the length of a side.
+To avoid repetitious calculations, she had Excel do this automatically.
+She entered the formula ``=B3$\wedge$3'' (without the quotes) into cell C3.
+Note the equals sign, which indicates to Excel that a formula is coming.
+The $\wedge$ sign stands for raising to a power.  After entering a formula
+into a cell, you can grab the square in the lower right corner of the
+cell with the mouse and drag it down the column.  This will copy
+the cell, making the appropriate changes, into the rest of the column.
+For instance, in this case, cell C4 contains the formula ``=B4$\wedge$3,''
+and so forth.
+
+Column D was similarly produced with a formula that divides the
+mass in column A by the volume in column C.
+
+At the bottom of the spreadsheet we find the mean and standard
+deviation of the calculated densities (that is, of the numbers
+in cells D3 through D6).  Those are computed
+using the formulae ``=average(D3:D6)'' and ``=stdev(D3:D6)''.
+
+{\par\centering \resizebox{5in}{!}{\includegraphics{excelwindow.eps}} \par}
+
+
+\subsection{Graphs}
+
+Making graphs in Excel is relatively easy.  First, use the mouse
+to select the columns of numbers you want to graph.  (If the two
+columns aren't next to each other, select the first one, then hold
+down the control key while selecting the second one.)
+Then click on the ``chart wizard'' button (which looks like this
+\includegraphics{bargraph.eps}).  
+
+There are a number of different styles of graphs that the chart wizard
+can generate.  In nearly every case, you will want to select an
+``XY (scatter)'' graph.  Click ``Next'' to proceed to customize
+your graph.  The most useful customization options come in step 3
+of the process.  Under ``Title,'' you can put appropriate labels
+on the $x$ and $y$ axes of your graphs and give the overall graph
+a descriptive title.  \textbf{All graphs must have correctly labeled
+axes (including units).}  If the graph contains only one set of data
+points, you may wish to uncheck the box that says ``Show legend'':
+the information in the legend is probably already contained in the
+title and axis labels, so the legend just takes up space.
+
+Sometimes, you may want to make a graph in Excel where the $x$ column
+is to the right of the $y$ column in your worksheet.  In these cases,
+Excel will make the graph with the $x$ and $y$ axes reversed.  There
+are at least two ways to fix this problem.  The simplest way is to make
+a copy of the $y$ column in the worksheet and paste it so that it's
+to the right of the $x$ column.  If you don't want to do that, here's
+another way.  In step 2 of the chart wizard, look under the ``Series''
+tab.  Click on this icon \includegraphics{excelicon.eps} next to the
+place where it says ``X values.''  You can now select which column of data you
+want to go on the $x$ axis. Do the same thing to select the correct
+$y$ column.
+
+\subsection{Fitting lines and curves}
+
+After you've made a graph, you can have Excel draw a straight line or
+curve that is a best fit to the data.  Under the ``chart'' menu,
+select ``Add trendline.''  The most common sort of trendline you
+will add is a linear fit, but you can also have Excel draw other
+sorts of best-fit
+curves.  Under the ``options'' tab, you can check a box that causes
+Excel to display the equation for the line or curve it has drawn.
+{\bf Excel will not put the correct units on the numbers in this equation,
+but you should.}
+
+\subsection{Making Histograms}
+
+A histogram is a useful graphing tool when you want to analyze groups of data, based on the frequency at given intervals. 
+In other words, you graph groups of numbers according to how often they appear.
+You start by choosing a set of `bins', {\it i.e.}, creating a table of numbers that mark the edges of the intervals.
+You then go through your data, sorting the numbers into each bin or interval, and tabulating the number of data points that fall into each bin (this is the 
+frequency).
+At the end, you have a visualization of the distribution of your data.   
+
+Start by entering your raw data in a column like the one shown in the left-hand panel of Figure \ref{hist2}.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[height=2.5in]{histogram_plots/histf2.eps}\hspace{0.4in}\includegraphics[height=2.5in]{histogram_plots/histf3.eps}
+\caption{Column data and bins (left-hand panel) and dialog box (right-hand panel)  for making a histogram in Excel.}\label{hist2}
+\end{center}
+\end{figure}
+Look over your numbers to see what is the range of the data.
+If you have lots of values to sift through you might consider sorting your data is ascending or descending order.
+To do this task, choose the column containing your data by clicking on the letter at the top of the column, 
+go to {\tt Data} in the menubar, select {\tt Sort}, and pick
+ascending or descending.
+The data will be rearranged in the order you've chosen and it will be easier to see the range of the data.
+For an example, see the middle column of data in the left-hand panel of Figure \ref{hist2}.
+Now to create your bins pick a new column on your spreadsheet and enter the values of the bin edges.
+Make sure the bins you choose cover the range of the data. 
+See the left-hand panel of Figure \ref{hist2} again for an example.
+
+You now have the ingredients for making the histogram.
+Go to {\tt Tools} in the menubar, select {\tt Data Analysis}, and choose {\tt Histogram}.
+You should see a dialog box like the one in the right-hand panel of  Figure \ref{hist2}.
+Click in the box labeled {\tt Input Range} and then highlight the column on the spreadsheet containing your data.
+Next, click in the box labeled {\tt Bin Range} and highlight the column on the spreadsheet containing the bins.
+Under {\tt Output Options}, select {\tt New Worksheet Ply} and give the worksheet a name.
+Click {\tt OK} in the {\tt Histogram} dialog box.
+You should now see a new worksheet with columns labeled {\tt Bin} and {\tt Frequency} and a new tab at the bottom with the name you put in
+the {\tt New Worksheet Ply} entry.
+See the left-hand panel in Figure \ref{hist5}.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[height=2.5in]{histogram_plots/histf4.eps}\hspace{0.4in}\includegraphics[height=2.5in]{histogram_plots/histf5.eps}
+\caption{Newly-created worksheet (left-hand panel) and final plot (right-hand panel) for  histogram worksheet in Excel.}\label{hist5}
+\end{center}
+\end{figure}
+Your original data are still available on another worksheet (probably labeled {\tt Sheet1}).
+Now highlight the {\tt Bins} and {\tt Frequency} columns by clicking and dragging across the column headings (the {\tt A} and {\tt B}
+at the top of the columns in the left-hand panel of Fig. \ref{hist5}) and then go to {\tt Chart Wizard} (see Appendix C.2 above).
+Pick {\tt Column} and then follow the wizard to produce the plot. 
+Make sure you properly label the axes including the units for each quantity.
+The final results should look something like the right-hand panel of Figure \ref{hist5}.

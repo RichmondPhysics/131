@@ -1,0 +1,612 @@
+#This file was created by <vineyard> Mon Jul 24 15:55:31 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Two-Dimensional Collisions
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Standard
+
+To test experimentally that the Law of Conservation of Momentum holds for
+ two-dimensional collisions in isolated systems.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A set of ball bearings, pendulum bob, a protractor, a level, some carts,
+ and a wooden board.
+\layout Itemize
+
+A video analysis system (
+\shape italic 
+Adobe Premier
+\shape default 
+ and 
+\shape italic 
+VideoPoint
+\shape default 
+).
+\layout Standard
+
+
+\series bold 
+2-D Collisions Intelligent Guesses & Observations 
+\layout Standard
+
+Conservation of momentum can be used to solve a variety of collision and
+ explosion problems.
+ So far we have only considered momentum conservation in one dimension,
+ but real collisions lead to motions in two and three dimensions.
+ For example, air molecules are continually colliding in space and bouncing
+ off in different directions.
+ 
+\layout Standard
+
+You probably know more about two dimensional collisions than you think.
+ Draw on your prior experience with one-dimensional collisions to anticipate
+ the outcome of several two dimensional collisions.
+ Suppose you were a witness to several accidents in which you closed your
+ eyes at the moment of collision each time two vehicles heading toward each
+ other crashed.
+ Even though you couldn't stand to look, can you predict the outcome of
+ the following accidents?
+\layout Standard
+
+You see car A enter an intersection at the same time as car B coming from
+ its left enters the intersection.
+ Car B is the same make and model as car A and is traveling at the same
+ speed.
+ The two cars collide and bounce off one another.
+ What happens? Hint: You can use a symmetry argument, your intuition or
+ a quick analysis of 1-D results.
+ For example, pick a coordinate system and think about two separate accidents:
+ the x accident in which car B is moving at speed v
+\begin_inset Formula \( _{bx} \)
+\end_inset 
+
+ and car A is standing still, and the y accident in which car A is moving
+ at speed v
+\begin_inset Formula \( _{ay} \)
+\end_inset 
+
+ = v
+\begin_inset Formula \( _{bx} \)
+\end_inset 
+
+ and car B is standing still.
+ 
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 230 67
+file twod_collisions_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+The diagram below shows an aerial view of several possible two-dimensional
+ accidents that might occur.
+ The first is a collision at right angles of two identical cars.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 347 240
+file twod_collisions_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 1: Qualitative 2-D Collisions 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Using the diagram above, draw a dotted line in the direction you think
+ your two cars will move after a collision between cars with equal masses
+ and velocities.
+ Explain your reasoning in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Draw a dotted line for the direction the cars might move if car A were
+ traveling at a speed much greater than that of car B.
+ Explain your reasoning in the space below.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(c) If instead of a car, the vehicle A were a large truck traveling at the
+ same speed as car B, in what direction will the vehicles move? Draw the
+ dotted lines.
+ Explain your reasoning in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Now suppose that the two vehicles are traveling at the same speed.
+ If the two vehicles were to stick together; in what direction would they
+ move after the collision, if they undergo a perfectly inelastic collision?
+ Explain your reasoning in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Finally, set up these types of collisions.
+ Observe each type of collision several times.
+ Draw solid lines in the diagram above for the results.
+ How good were your predictions? Explain your reasoning in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(f) What rules have you devised to predict more or less what is going to
+ happen as the result of a two dimensional collision?
+\layout Standard
+
+
+\series bold 
+Theory of 2D Momentum Conservation 
+\layout Standard
+
+Since momentum is a vector, the Law of Conservation of Momentum in two dimension
+s requires that if the vector conservation equation is broken into components
+ then the conservation law must also hold for each of the vector components.
+ Thus, if we consider the interaction of several objects, and if 
+\begin_inset Formula 
+\[
+\Sigma \overrightarrow{p}=\overrightarrow{p_{1i}}+\overrightarrow{p_{2i}}+\overrightarrow{p_{3i}}+\ldots =\overrightarrow{p_{1f}}+\overrightarrow{p_{2f}}+\overrightarrow{p_{3f}}+\ldots =a\: constant\]
+
+\end_inset 
+
+then
+\begin_inset Formula 
+\[
+\Sigma p_{x}=p_{1ix}+p_{2ix}+p_{3ix}+\ldots =p_{1fx}+p_{2fx}+p_{3fx}+\ldots =a\: constant\]
+
+\end_inset 
+
+
+\layout Standard
+
+and
+\begin_inset Formula 
+\[
+\Sigma p_{y}=p_{1iy}+p_{2iy}+p_{3iy}+\ldots =p_{1fy}+p_{2fy}+p_{3fy}+\ldots =a\: constant\]
+
+\end_inset 
+
+
+\layout Standard
+
+If a coordinate system is chosen and a given momentum vector makes an angle
+ 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ with respect to the designated x-axis then the momentum vector can be broken
+ into components in the usual way:
+\begin_inset Formula 
+\[
+\overrightarrow{p}=p_{x}\widehat{i}+p_{y}\widehat{j}=p\cos \theta \widehat{i}+p\sin \theta \widehat{j}\]
+
+\end_inset 
+
+
+\layout Standard
+
+Let's consider an interaction in which a large mass collides with two smaller
+ hard masses connected by a blob of clay.
+ Assume that this interaction causes the bundle of masses to divide into
+ three fragments as shown in the figure below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 413 142
+file twod_collisions_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 2: Taking Components 
+\layout Standard
+\added_space_bottom 5mm 
+(a) Consider mass #1.
+ Suppose m
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ = 2.0 kg and the speed v
+\begin_inset Formula \( _{1i} \)
+\end_inset 
+
+ = 1.5 m/s.
+ What is the initial x-component of momentum? The initial y-component of
+ momentum? Show your calculations.
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{1ix} \)
+\end_inset 
+
+ = 
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{1iy} \)
+\end_inset 
+
+ = 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Consider mass #2.
+ Suppose m
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+ = 1.8 kg and the speed v
+\begin_inset Formula \( _{2i} \)
+\end_inset 
+
+ = 2.3 m/s.
+ If 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ = 40
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+, what is the initial x-component of momentum? The initial y-component of
+ momentum? Show your calculations.
+\layout Standard
+
+
+\series bold 
+Is Momentum Conserved in Two Dimensions? 
+\layout Standard
+
+During the last few sessions we have placed a lot of faith in the power
+ of Newton's second and third laws to predict that momentum is always conserved
+ in collisions.
+ We have tested the conservation of momentum for one-dimensional collisions
+ and have shown mathematically and experimentally for one-dimensional collisions
+ that if momentum is conserved the center- of-mass of a system will move
+ at a constant velocity regardless of how many internal interactions take
+ place.
+ Now, let's test whether a collision in an isolated two body system will
+ conserve momentum within the limits of experimental uncertainty.
+ 
+\layout Standard
+
+Consider two ball bearings that are free to move in two dimensions on a
+ table.
+ We will record and analyze a video of the two bearings colliding.
+ You can then find the x- and y-components of the momentum for each bearing
+ and test the conservation of momentum in a closed system.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 3: Testing the Conservation of Momentum 
+\layout Standard
+
+(a) Make a movie of two ball bearings colliding by following these steps.
+ 
+\layout Enumerate
+
+Turn the camera on and center the wooden board in the field of view.
+ The camera should be about 1 m above the center of the board where one
+ bearing(the target) will sit.
+ The target bearing should be located straight down below the camera.
+ Use the pendulum bob to position the camera and bearing.
+ Make sure the board is flat by using the small level available at each
+ station.
+ Place a ruler somewhere in the field-of-view where it won't interfere with
+ the collision and parallel to one edge of the field of view.
+ This ruler will be user later to determine the scale.
+ 
+\layout Enumerate
+
+Make a movie of one bearing (the projectile) rolling into the other, stationary
+ bearing (the target).
+ See 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for details on making the movie.
+ Make the collision a glancing one so that the projectile is scattered to
+ some large angle (otherwise, you will only test momentum conservation in
+ one dimension).
+\layout Standard
+\added_space_bottom 5mm 
+(b) Determine the position of both bearings (the target and the projectile)
+ during the motion.
+ To do this task follow the instructions in 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for creating, calibrating, and analyzing movie data.
+ On each frame click once on the projectile bearing and once on the target.
+ The data table should contain five columns with the values of time, x and
+ y positions of the projectile, and x and y positions of the target.
+ When you calibrate the movie data, note the number of frames per second
+ and record the time interval between successive frames.
+\layout Standard
+\added_space_bottom 5mm 
+
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t = 
+\layout Standard
+\added_space_bottom 5mm 
+(c) Record the masses of the two ball bearings.
+\layout Standard
+\added_space_bottom 5mm 
+m
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ = 
+\hfill 
+m
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+ = 
+\hfill 
+
+\layout Standard
+
+(d) Create a graph of vertical position versus horizontal position for the
+ projectile.
+ See 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+ for more details.
+ Make sure the x and y axes cover intervals of the same size so the plot
+ is not distorted.
+ You can adjust the range of an axis by double-clicking anywhere along the
+ axis and modifying the parameters in the pop-up window that appears.
+ Next, you need to plot the position of the target on the same graph.
+ Under the 
+\series bold 
+Graph
+\series default 
+ menu in 
+\shape italic 
+Cricket Graph
+\shape default 
+ drag down to 
+\series bold 
+Overlay Graph
+\series default 
+ and then drag over to the scatter plot icon and release the mouse.
+ Select the vertical and horizontal position data for the target and click
+ OK.
+ You should see both sets of data on a single graph.
+ If not, try again.
+ If there are still problems, consult your instructor.
+ Print the graph and attach it to this unit.
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(e) Draw by eye a best fit line through the points corresponding to the
+ trajectory of the projectile before the collision.
+ This line will become a new x-axis when you analyze the momentum components
+ of the system.
+ Draw best fit lines through the points for both ball bearings after the
+ collision.
+ What are the angles of the paths of the target and projectile after the
+ collision with respect to trajectory of the incoming projectile before
+ the collision? 
+\layout Standard
+\added_space_bottom 5mm 
+(f) Use the graph to measure the distance each bearing covered before and
+ after the collision.
+ What is the average velocity for each ball bearing before and after the
+ collision? (Hint: Use the value of 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t that you found earlier).
+\layout Standard
+\added_space_bottom 5mm 
+v
+\begin_inset Formula \( _{1i} \)
+\end_inset 
+
+ = 
+\hfill 
+v
+\begin_inset Formula \( _{1f} \)
+\end_inset 
+
+ = 
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+v
+\begin_inset Formula \( _{2i} \)
+\end_inset 
+
+ = 
+\hfill 
+v
+\begin_inset Formula \( _{2f} \)
+\end_inset 
+
+ = 
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+(e) What are the momentum components for each ball bearing before and after
+ the collision? What is the momentum of the system before the collision
+ along the path of the incoming projectile? What is the momentum of the
+ entire system after the collision? Within the limits of experimental uncertaint
+y is momentum conserved? What is your evidence? What are possible sources
+ of uncertainty in your data?
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{1ix} \)
+\end_inset 
+
+ = 
+\hfill 
+p
+\begin_inset Formula \( _{1iy} \)
+\end_inset 
+
+ = 
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{2ix} \)
+\end_inset 
+
+ = 
+\hfill 
+p
+\begin_inset Formula \( _{2iy} \)
+\end_inset 
+
+ =
+\hfill 
+ 
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{1fx} \)
+\end_inset 
+
+ = 
+\hfill 
+p
+\begin_inset Formula \( _{1fy} \)
+\end_inset 
+
+ =
+\hfill 
+ 
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{2fx} \)
+\end_inset 
+
+ =
+\hfill 
+p
+\begin_inset Formula \( _{2fy} \)
+\end_inset 
+
+ = 
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{ix} \)
+\end_inset 
+
+ = 
+\hfill 
+p
+\begin_inset Formula \( _{iy} \)
+\end_inset 
+
+ =
+\hfill 
+ 
+\layout Standard
+\added_space_bottom 5mm 
+p
+\begin_inset Formula \( _{fx} \)
+\end_inset 
+
+ = 
+\hfill 
+p
+\begin_inset Formula \( _{fy} \)
+\end_inset 
+
+ =
+\hfill 
+ 
+\the_end

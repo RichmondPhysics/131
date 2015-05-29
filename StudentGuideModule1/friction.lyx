@@ -1,0 +1,754 @@
+#This file was created by <vineyard> Thu Jul  6 17:49:54 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Friction and Applying the Laws of Motion
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To explore the characteristics of friction.
+ 
+\layout Itemize
+
+To learn to use free body diagrams to make predictions about the behavior
+ of systems which are acted on by multiple forces in two and three dimensions.
+\layout Standard
+
+
+\series bold 
+Predicting and Measuring Friction Factors 
+\layout Standard
+
+If Newton's laws are to be used to describe the sliding of a block in contact
+ with a flat surface, we must postulate the existence of a passive frictional
+ force that crops up to oppose the applied force.
+ There are two kinds of frictional forces: static friction and kinetic or
+ sliding friction, which is the friction between surfaces in relative motion.
+ We will concentrate on the study of kinetic friction for a sliding block.
+\layout Standard
+
+
+\series bold 
+Apparatus 
+\layout Itemize
+
+Wooden block with hook 
+\layout Itemize
+
+Spring scale 
+\layout Itemize
+
+Variety of masses 
+\layout Itemize
+
+Triple-beam balance
+\layout Standard
+
+
+\series bold 
+Activity 1: Prediction of Friction Factors 
+\layout Standard
+\added_space_bottom 20mm 
+(a) List several parameters that might influence the magnitude of the kinetic
+ frictional force.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Describe how you might do an experiment to determine the effect of mass
+ on the magnitude of the frictional force.
+\layout Standard
+
+
+\series bold 
+Measuring the Effect of Mass on Kinetic Friction 
+\layout Standard
+
+Let's determine how mass actually influences the frictional force.
+ Perform the experiment that you designed in the previous activity to determine
+ how the frictional force varies with mass.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 2: Friction Data and Analysis 
+\layout Standard
+\added_space_bottom 50mm 
+(a) Create a data table for the frictional force as a function of mass in
+ the space below.
+ You should make at least 5-7 measurements.
+ 
+\layout Standard
+\added_space_bottom 15mm 
+(b) Graph the frictional force (vertical axis) versus the mass and find
+ the best fit to the data.
+ Print the graph showing the fit and put a copy in your notebook.
+ Write the equation (with appropriate units) that describes the data in
+ the space below.
+ 
+\layout Standard
+\added_space_bottom 30mm 
+(c) Look up kinetic friction in the index of your text.
+ Read about the coefficient of sliding friction, 
+\begin_inset Formula \( \mu _{k} \)
+\end_inset 
+
+, and figure out how to determine 
+\begin_inset Formula \( \mu _{k} \)
+\end_inset 
+
+ from the fit to your data.
+ Calculate 
+\begin_inset Formula \( \mu _{k} \)
+\end_inset 
+
+ for the block sliding on the table.
+ How does your value compare with the appropriate value in the table in
+ your text? 
+\layout Standard
+
+
+\series bold 
+Theories of Friction
+\series default 
+ 
+\layout Standard
+
+No material is perfectly "smooth and flat." Any surface when examined under
+ a microscope is full of irregularities.
+ It is usually assumed that sliding friction forces result from the rubbing
+ of rough surfaces, i.e.
+ from the interlocking of surface bumps during the sliding process.
+ How reasonable is this explanation for sliding friction?
+\layout Standard
+
+
+\series bold 
+Activity 3: What Surfaces Have High Friction?
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Which kinds of surfaces do you think will have the most friction rough
+ ones or smooth ones? Why?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Examine the table of coefficients of friction in a text.
+ Do the values listed in this table support your predictions? Are you surprised?
+ 
+\layout Standard
+
+The fact that smooth surfaces sometimes have more sliding friction associated
+ with them than rough surfaces has led to the modern view that other factors
+ such as adhesion (i.e.
+ the attraction between molecules on sliding surfaces) also play a major
+ role in friction.
+ Predicting the coefficient of sliding friction for different types of surfaces
+ is not always possible and there is much yet to be learned about the nature
+ of the forces that govern sliding friction.
+ Most authors of introductory physics texts still tend, incorrectly, to
+ equate smooth surfaces with "frictionless ones" and to claim that the rubbing
+ of rough surfaces is the cause of friction.
+\layout Standard
+
+
+\series bold 
+Free Body Diagrams-Putting It All Together
+\series default 
+ 
+\layout Standard
+
+You have made a series of observations which hopefully led you to reconstruct
+ Newton's three laws of motion and some of its ramifications for yourself.
+ In summary the laws are:
+\layout Standard
+
+
+\series bold 
+Newton's First Law:
+\series default 
+ If the net force acting on an object is zero its acceleration is zero.
+ [If 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+
+\series bold 
+F
+\series default 
+ = 0 then 
+\series bold 
+a
+\series default 
+ = 0 so that 
+\series bold 
+v
+\series default 
+ = constant or zero.]
+\layout Standard
+
+
+\series bold 
+Newton's Second Law:
+\series default 
+ The net force on an object can be calculated by multiplying its mass times
+ its acceleration.
+ [
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+
+\series bold 
+F
+\series default 
+ = m
+\series bold 
+a
+\series default 
+]
+\layout Standard
+
+
+\series bold 
+Newton's Third Law:
+\series default 
+ Any two objects that interact exert forces on each other which are equal
+ in magnitude and opposite in direction.
+ [
+\series bold 
+F
+\series default 
+
+\begin_inset Formula \( _{12} \)
+\end_inset 
+
+ = -
+\series bold 
+F
+\series default 
+
+\begin_inset Formula \( _{21} \)
+\end_inset 
+
+]
+\layout Standard
+
+These three laws are incredibly powerful because an understanding of them
+ allows you to either: (1) use a complete knowledge of forces on a system
+ of objects to predict motions in the system or (2) identify the forces
+ on a system of objects based on observations of its motions.
+ In fact, you have already used a belief in Newton's laws to identify several
+ active and passive "invisible" forces".
+ The forces identified so far are shown in the table below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+5 2 0 0 -1 -1 -1 -1
+1 1 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 1 0 0
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+Active Forces
+\newline 
+Passive Forces
+\newline 
+External Forces (pushes or pulls) 
+\series bold 
+F
+\series default 
+
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+
+\newline 
+Tension Force T
+\newline 
+Gravitational Force 
+\series bold 
+W
+\series default 
+ = m
+\series bold 
+g
+\series default 
+
+\newline 
+Normal Force 
+\series bold 
+N
+\series default 
+
+\newline 
+Centripetal Force 
+\series bold 
+F
+\series default 
+
+\begin_inset Formula \( _{c} \)
+\end_inset 
+
+ = m
+\series bold 
+a
+\series default 
+
+\begin_inset Formula \( _{c} \)
+\end_inset 
+
+ = m(v
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+/r
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+)(-
+\series bold 
+r
+\series default 
+)
+\newline 
+Static Friction Force f = 
+\begin_inset Formula \( \mu _{s} \)
+\end_inset 
+
+N
+\newline 
+
+\newline 
+Kinetic Friction Force f = 
+\begin_inset Formula \( \mu _{k} \)
+\end_inset 
+
+N
+\layout Standard
+
+Using Free Body Diagrams to Predict Motions and Calculate Forces 
+\layout Standard
+
+The key to the effective application of Newton's laws is to identify and
+ diagram all the forces acting on each object in a system of interest.
+ The next step is to define a coordinate system and break the forces down
+ into components to take advantage of the fact that if 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+
+\series bold 
+F
+\series default 
+ = m
+\series bold 
+a 
+\series default 
+then 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+F
+\begin_inset Formula \( _{x} \)
+\end_inset 
+
+ = ma
+\begin_inset Formula \( _{x} \)
+\end_inset 
+
+ and 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+F
+\begin_inset Formula \( _{y} \)
+\end_inset 
+
+ = ma
+\begin_inset Formula \( _{y} \)
+\end_inset 
+
+.
+\layout Standard
+
+A free-body diagram consists of a set of arrows representing all the forces
+ on an object, but NOT the forces that the object exerts on other objects.
+ To create a free-body diagram you should do as follows: 
+\layout Enumerate
+
+Draw arrows to represent all force acting on the object or objects in the
+ system of interest.
+ 
+\layout Enumerate
+
+Place the tail of each arrow at the point where the force acts on the object.
+ 
+\layout Enumerate
+
+Each arrow should point in the direction of the force it represents.
+ 
+\layout Enumerate
+
+The relative lengths of the arrows should, if possible, be made to correspond
+ to the magnitudes of the forces.
+ 
+\layout Enumerate
+
+A set of coordinate axis should be chosen and indicated and all of the arrows
+ should be labeled using standard notation to indicate the type of force
+ involved.
+\layout Standard
+
+
+\series bold 
+Important Note:
+\series default 
+ The idea of using a single force vector to summarize external forces that
+ act in the same direction is a useful simplification which is not real.
+ For example, when a block rests on a table, we will say that the table
+ exerts a normal force on the block.
+ It is conventional to draw a single upward arrow at the point where the
+ middle of the bottom surface of the block touches the table.
+ This arrow actually represents the sum of all the smaller forces at each
+ point where the block touches the table.
+ This is shown in the diagram below:
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 195 63
+file friction_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+An Example of a Free-Body Diagram
+\series default 
+ 
+\layout Standard
+
+Consider a block of mass m sliding on a rough inclined plane as shown in
+ the diagram below.
+ It has three forces on it: (1) a gravitational force, (2) a normal force
+ perpendicular to the surface of the plane, and (3) the friction force opposing
+ its motion down the plane.
+\layout Standard
+
+Since the block is sliding it could either be moving at a constant velocity
+ or with a constant acceleration.
+ Thus, it is possible that the vector sum of forces on it is not equal to
+ zero in some cases.
+ For example, if there is accelerated motion, then: 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+
+\series bold 
+F
+\series default 
+ = 
+\series bold 
+N
+\series default 
+ + 
+\series bold 
+W
+\series default 
+ + 
+\series bold 
+f 
+\series default 
+= m
+\series bold 
+a
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 200 130
+file friction_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Based on this example, try your hand at drawing the free body diagrams for
+ the situations described below.
+ In each case, write the equation for the vector sum of forces.
+ As always, be sure to put arrows over symbols representing vector quantities.
+\layout Standard
+
+
+\series bold 
+Activity 4: Some Free-Body Diagrams
+\series default 
+ 
+\layout Standard
+
+(a) A block slides freely down a smooth inclined plane.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 141 77
+file friction_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) A block is on a rough plane but is not moving due to static friction.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 141 77
+file friction_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(c) A block is on a rough plane but the coefficient of friction between
+ the block and the plane is small.
+ The block is sliding down the plane at a constant velocity so that kinetic
+ friction is acting.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 141 77
+file friction_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(d) The block is on a frictionless plane but is attached to a hanging mass
+ of 2m by one of our famous "massless" strings over a pulley.
+ Construct free-body diagrams for the forces on the mass m and for the forces
+ on the mass 2m.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 155 85
+file friction_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Breaking the Forces into Components-An Example
+\series default 
+ 
+\layout Standard
+
+Consider the case of the block sliding down a "smooth" plane with a negligible
+ amount of friction.
+ The free body diagram and coordinate system chosen for analysis are shown
+ in the figure below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 200 130
+file friction_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Taking components: W
+\begin_inset Formula \( _{x} \)
+\end_inset 
+
+ = -W sin 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ and W
+\begin_inset Formula \( _{y} \)
+\end_inset 
+
+ = -W cos 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+
+\layout Standard
+
+There is no motion perpendicular to the surface so 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+F
+\begin_inset Formula \( _{y} \)
+\end_inset 
+
+ = 0 = N + W
+\begin_inset Formula \( _{y} \)
+\end_inset 
+
+ so that N = -W
+\begin_inset Formula \( _{y} \)
+\end_inset 
+
+ = W cos 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+.
+\layout Standard
+
+There is no balancing force for the x-component of W so according to Newton's
+ second law 
+\begin_inset Formula \( \Sigma  \)
+\end_inset 
+
+F
+\begin_inset Formula \( _{x} \)
+\end_inset 
+
+ = ma
+\begin_inset Formula \( _{x} \)
+\end_inset 
+
+ = -W sin 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ = - mg sin 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ and therefore a
+\begin_inset Formula \( _{x} \)
+\end_inset 
+
+ = - g sin 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+.
+\layout Standard
+
+
+\series bold 
+Activity 5: Solving an Inclined Plane Problem
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Consider a block sliding down a rough inclined plane at a constant velocity.
+ What is the net force on it?
+\layout Standard
+
+(b) Refer to the free-body diagram you created for this situation in the
+ last activity.
+ Break the forces up into components and apply Newton's first law to find
+ the equation for the coefficient of kinetic friction as a function of m,
+ 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+, and g.
+ You may need to consult a standard textbook for hints on how to tackle
+ this problem.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 141 77
+file friction_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\the_end

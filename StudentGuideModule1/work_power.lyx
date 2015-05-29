@@ -1,0 +1,533 @@
+#This file was created by <vineyard> Sat Jul  8 13:09:37 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Work and Power
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To extend the intuitive notion of work as physical effort to a formal mathematic
+al definition of work as a function of force and distance.
+ 
+\layout Itemize
+
+To understand the concept of power and its relationship to work.
+\layout Standard
+
+
+\series bold 
+Apparatus 
+\layout Itemize
+
+Spring scale 
+\layout Itemize
+
+Wooden block with hook 
+\layout Itemize
+
+Variety of masses
+\layout Standard
+
+The Concept of Physical Work 
+\layout Standard
+
+Suppose you are president of the Richmond Load 'n' Go Co.
+ A local college has three jobs available and will allow you to choose which
+ one you want before offering the other two jobs to rival companies.
+ All three jobs pay the same amount of money.
+ Which one would you choose for your crew?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 445 166
+file work_power_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Activity 1: Choosing Your Job 
+\layout Standard
+\added_space_bottom 30mm 
+Examine the descriptions of the jobs shown in figure above.
+ Which one would you be most likely to choose? Least likely to choose? Explain
+ the reasons for your answer.
+\layout Standard
+
+You obviously want to do the least amount of work for the most money.
+ Before you reconsider your answers later in this unit, you should do a
+ series of activities to get a better feel for what physicists mean by work
+ and how the president of Load 'n' Go can make top dollar.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 197 70
+file work_power_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+In everyday language we refer to doing work whenever we expend effort.
+ In order to get an intuitive feel for how we might define work mathematically,
+ you should experiment with moving your textbook back and forth along a
+ table top and a rougher surface such as a carpeted floor.
+\layout Standard
+
+
+\series bold 
+Activity 2: This is Work!
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Pick a distance of a meter or so.
+ Sense how much effort it takes to push a heavy book that distance.
+ How much more effort does it take to push it twice as far? 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Pile another similar book on top of the original one and sense how much
+ effort it takes to push the two books through the distance you picked.
+ Comment below.
+\layout Standard
+\added_space_bottom 20mm 
+(c) From your study of sliding friction, what is the relationship between
+ the mass of a sliding object and the friction force it experiences? On
+ the basis of your experience with sliding friction, estimate how much more
+ force you have to apply to push two books compared to one book.
+\layout Standard
+\added_space_bottom 20mm 
+(d) If the "effort" it takes to move an object is associated with physical
+ work, guess an equation that can be used to define work mathematically
+ when the force on an object and its displacement (i.e., the distance it moves)
+ lie along the same line.
+\layout Standard
+
+In physics, work is not simply effort.
+ In fact, the physicist's definition of work is precise and mathematical.
+ In order to have a full understanding of how work is defined in physics,
+ we need to consider its definition in a very simple situation and then
+ enrich it later to include more realistic situations.
+\layout Standard
+
+
+\series bold 
+A Simple Definition of Physical Work:
+\series default 
+ If an object that is moving in a straight line experiences a constant force
+ in the direction of its motion during the time it is undergoing a displacement,
+ the work done by the external force , F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+, is defined as the product of the force and the displacement of the object.
+ 
+\begin_inset Formula 
+\[
+W=F_{ext}\Delta x\]
+
+\end_inset 
+
+
+\layout Standard
+
+where W represents the work done by the external force, F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+ is the magnitude of the force, and 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x the displacement of the object.
+ Work done by a force is always positive!
+\layout Standard
+
+What if the force of interest and the displacement are in the opposite direction
+? For instance, what about the work done against the force of sliding friction,
+ F
+\begin_inset Formula \( _{f} \)
+\end_inset 
+
+, when a block slides down an inclined plane as a result of the gravitational
+ force? In this case we refer to work done against a force.
+ This is given by
+\begin_inset Formula 
+\[
+W_{against}=-F_{f}\Delta x\]
+
+\end_inset 
+
+
+\layout Standard
+
+Work done against a force is always negative!
+\layout Standard
+
+
+\series bold 
+Activity 3: Applying the Physics Definition of Work
+\series default 
+ 
+\layout Standard
+
+(a) Does effort necessarily result in physical work? Suppose two guys are
+ in an evenly match tug of war.
+ They are obviously expending effort to pull on the rope, but according
+ to the definition of physical work, are they doing any physical work? Explain.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 291 109
+file work_power_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) A wooden block with a mass of .30 kg is pushed along a sheet of ice that
+ has no friction with a constant external force of 10 N which acts in a
+ horizontal direction.
+ After it moves a distance of 0.40 m how much work has been done on the block
+ by the external force?
+\layout Standard
+
+(c) The same wooden block with a mass of .30 kg is pushed along a table with
+ a constant external force of 10 N which acts in a horizontal direction.
+ It moves a distance of 0.40 m.
+ However, there is a friction force opposing its motion.
+ Assume that the coefficient of sliding friction, 
+\begin_inset Formula \( \mu _{k} \)
+\end_inset 
+
+, is 0.20.
+ 
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 186 58
+file work_power_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Enumerate
+\added_space_bottom 20mm 
+According to the definitions of work done by a force and work done against
+ a force, what is the work associated with the external force? Is work done
+ by this force or against it? Is the work positive or negative? Show your
+ calculations.
+\layout Enumerate
+\added_space_bottom 20mm 
+According to the definitions of work, what is the work associated with the
+ friction force? Is work done by the friction force or against it? Is the
+ work positive or negative? Show your calculations.
+\layout Standard
+
+(d) Suppose you lift a 0.3 kg object through a distance of 1.0 m.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 65 81
+file work_power_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Enumerate
+\added_space_bottom 20mm 
+What is the work associated with the force that the earth exerts on the
+ object? Is work done by this force or against it? Is the work positive
+ or negative? Show your calculations.
+\layout Enumerate
+\added_space_bottom 20mm 
+What is the work associated with the external force you apply to the object?
+ Is work done by this force or against it? Is the work positive or negative?
+ Show your calculations.
+\layout Standard
+
+
+\series bold 
+Pulling at an Angle What Happens When the Force and the Displacement Are
+ Not Along the Same Line? 
+\layout Standard
+
+Let's be more quantitative about measuring force and distance and calculating
+ the work.
+ How should work be calculated when the external force and the displacement
+ of an object are not in the same direction?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 361 61
+file work_power_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+To investigate this, you will use a spring scale to measure the force necessary
+ to slide a block along the table at a constant speed.
+ Before you make your simple force measurements, you should put some weights
+ on your block so that it slides along a smooth surface at a constant velocity
+ even when it is being pulled with a force that is 45 degrees from the horizonta
+l.
+\layout Standard
+
+
+\series bold 
+Activity 4: Calculating Work
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Hold a spring scale horizontal to the table and use it to pull the block
+ a distance of 0.5 meters along the horizontal surface in such a way that
+ the block moves at a constant speed.
+ Record the force in newtons and the distance in meters in the space below
+ and calculate the work done on the block in joules.
+ (Note that there is a special unit for work the joule or J for short.
+ One joule is equal to one newton times one meter, i.e.
+ J = N.m)
+\layout Standard
+\added_space_bottom 20mm 
+(b) Repeat the measurement, only this time pull on the block at a 45
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ angle with respect to the horizontal.
+ Pull the block at about the same speed.
+ Is the force needed larger or smaller than you measured in part (a)?
+\layout Standard
+\added_space_bottom 30mm 
+(c) Assuming that the actual physical work done in part (b) is the same
+ as the physical work done in part (a) above, how could you enhance the
+ mathematical definition of work so that the forces measured in part (b)
+ could be used to calculate work? In other words, use your data to postulate
+ a mathematical equation that relates the physical work, W, to the magnitude
+ of the applied force, F, the magnitude of the displacement, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+s, and the angle, 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+, between F and 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+s.
+ Explain your reasoning.
+ Hint: sin 30
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ = .500, sin 45
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ = .707, cos 30
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ = .865, cos 45
+\begin_inset Formula \( ^{\circ } \)
+\end_inset 
+
+ = .707.
+\layout Standard
+
+
+\series bold 
+Work as a Dot Product 
+\layout Standard
+
+Review the definition of dot (or scalar) product as a special product of
+ two vectors in your textbook, and convince yourself that the dot product
+ can be used to define physical work in general cases when the force is
+ constant but not necessarily in the direction of the displacement resulting
+ from it.
+ 
+\begin_inset Formula 
+\[
+W=\overrightarrow{F}\bullet \overrightarrow{s}\]
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 5: How Much Work Goes with Each Job? 
+\layout Standard
+\added_space_bottom 30mm 
+(a) Re-examine the descriptions of the jobs shown in the figure on the first
+ page of this section.
+ What is the minimum physical work done in job 1?
+\layout Standard
+\added_space_bottom 30mm 
+(b) What is the minimum physical work done in job 2?
+\layout Standard
+\added_space_bottom 30mm 
+(c) What is the minimum physical work is done in job 3?
+\layout Standard
+\added_space_bottom 20mm 
+(d) Was your original intuition about which job to take correct? Which job
+ should Richmond Load 'n' Go try to land?
+\layout Standard
+
+
+\series bold 
+The Concept of Power
+\series default 
+ 
+\layout Standard
+
+People are interested in more than physical work.
+ They are also interested in the rate at which physical work can be done.
+ Average power, 
+\begin_inset Formula \( \left\langle P\right\rangle  \)
+\end_inset 
+
+, is defined as the ratio of the amount of work done, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+W, to the time interval, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t, it takes to do the work, so that
+\begin_inset Formula 
+\[
+\left\langle P\right\rangle =\frac{\Delta W}{\Delta t}.\]
+
+\end_inset 
+
+
+\layout Standard
+
+Instantaneous power is given by the derivative of work with respect to time,
+ or
+\begin_inset Formula 
+\[
+P=\frac{dW}{dt}.\]
+
+\end_inset 
+
+
+\layout Standard
+
+If work is measured in joules and time in seconds then the fundamental unit
+ of power is in joules/second where 1 joule/second equals one watt.
+ However, a more traditional unit of power is the horsepower, which represents
+ the rate at which a typical work horse can do physical work.
+ It turns out that 
+\shape italic 
+1 horsepower (or hp) = 746 watts = 746 joules/second
+\shape default 
+.
+\layout Standard
+
+Those of you who are car buffs know that horsepower is a big deal in rating
+ high performance cars.
+ The hp in a souped-up car is in the hundreds.
+ How does your stair climbing ability stack up? Let's see how long it takes
+ you to climb the three stories of stairs in the science center.
+\layout Standard
+
+
+\series bold 
+Activity 6: Rate the Horsepower in Your Legs
+\series default 
+ 
+\layout Standard
+\added_space_bottom 30mm 
+(a) Determine the time it takes you to climb the three flights of stairs
+ in the science center.
+ Then measure the height of the climb and compute the work done against
+ the force of gravity.
+\layout Standard
+
+(b) Compute the average power, 
+\begin_inset Formula \( \left\langle P\right\rangle  \)
+\end_inset 
+
+, you expended in hp.
+ How does this compare to the horsepower of your favorite automobile? If
+ you're not into cars, how do you stack up against a horse?
+\the_end

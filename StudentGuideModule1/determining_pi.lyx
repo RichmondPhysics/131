@@ -1,0 +1,272 @@
+#This file was created by <vineyard> Mon Jul 24 15:23:32 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Determining 
+\latex latex 
+$
+\backslash 
+pi$
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Objectives:}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Determine the relationship between circumference and diameter 
+\backslash 
+item Understand the meaning of $
+\backslash 
+pi$
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\series bold 
+Apparatus:
+\layout Itemize
+
+Wooden disks
+\layout Itemize
+
+Meter stick
+\layout Itemize
+
+String
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity:}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item With a meter stick, measure the diameter of one of the disks.
+ Enter the value (or an average of several such measurements) in the table
+ below.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item With a string and meter stick, measure the circumference of the same
+ disk, and enter the value (or average of several measurements) in the table
+ below.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Repeat the previous steps i.
+ and ii.
+ for each of the disks.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{center} 
+\backslash 
+begin{tabular}{|c|c|c|} 
+\backslash 
+hline disk & diameter (cm) & circumference (cm) 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline
+\backslash 
+hline 1 & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 2 & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 3 & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 4 & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 5 & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+end{tabular} 
+\backslash 
+end{center}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Graph circumference versus diameter using your measurement data.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Fit data and determine the slope of the resulting line.
+ 
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vspace{10pt}
+\layout Standard
+
+
+\latex latex 
+slope 
+\backslash 
+rule{1.5in}{0.2pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vspace{10pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Questions:}
+\layout Standard
+\added_space_bottom 10mm 
+1.
+ What quantity is identified with the slope of the graph? 
+\layout Standard
+\added_space_bottom 20mm 
+2.
+ Must the line go through the origin? Explain.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+3.If the diameter of the largest disk increased by a factor of 2.7, by how
+ much would its circumference change? 
+\layout Standard
+
+4.
+ If you formed a circle with a string 15 mm shorter than the circumference
+ of the smallest disk, its diameter would be how much smaller than the disk's?
+\the_end

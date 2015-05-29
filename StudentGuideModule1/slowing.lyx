@@ -1,0 +1,1128 @@
+#This file was created by <vineyard> Wed Jul  5 13:33:48 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Slowing Down, Speeding Up, and Turning
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To learn how to relate graphs of acceleration vs.
+ time to the motions they represent.
+ 
+\layout Itemize
+
+To understand the relationship between velocity vs.
+ time and acceleration vs.
+ time graphs.
+\layout Standard
+
+
+\series bold 
+About Slowing Down, Speeding Up and Turning 
+\layout Standard
+
+In the previous session, you explored the characteristics of position vs.
+ time, velocity vs.
+ time and acceleration vs.
+ time graphs of the motion of a dynamics cart.
+ In the cases examined, the cart was always moving away from a motion detector,
+ either at a constant velocity or with a constant acceleration.
+ Under these conditions, the velocity and acceleration are both positive.
+ You also learned how to find the magnitude of the acceleration from velocity
+ vs.
+ time and acceleration vs.
+ time graphs, and how to represent the velocity and acceleration using vectors.
+ 
+\layout Standard
+
+In the motions you studied in the last session, the velocity and acceleration
+ vectors representing the motion of the cart both pointed in the same direction.
+ In order to get a better feeling for acceleration, it will be helpful to
+ examine velocity vs.
+ time and acceleration vs.
+ time graphs for some slightly more complicated motions of a cart on an
+ inclined track.
+ Again you will use the motion detector to observe the cart as it changes
+ its velocity at a constant rate.
+ Only this time the motion may be toward the detector, and the cart may
+ be speeding up or slowing down.
+\layout Standard
+
+
+\series bold 
+Apparatus 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+Ultrasonic motion detector 
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (V & A Graphs application)
+\layout Itemize
+
+Dynamics cart and track 
+\layout Itemize
+
+Lab stand to incline the track
+\layout Standard
+
+
+\series bold 
+Slowing Down and Speeding Up 
+\layout Standard
+
+In this activity you will look at a cart moving along an inclined track
+ and slowing down.
+ A car being brought to rest by the steady action of brakes is a good example
+ of this type of motion.
+ Later you will examine the motion of the cart toward the motion detector
+ and speeding up.
+ In both cases, we are interested in the shapes of the velocity vs.
+ time and acceleration vs.
+ time graphs, as well as the vectors representing velocity and acceleration.
+ 
+\layout Standard
+
+Let's start with the creation of velocity and acceleration graphs of when
+ it is moving away from the motion detector and slowing down.
+ To do this activity, the track should be inclined with a lab stand at one
+ end and the motion detector should be set up at the lower end of the track.
+ Adjust the incline so that the track is at approximately one-third the
+ height of the lab stand.
+\layout Standard
+
+Now when you give the cart a push away from the motion detector, it will
+ slow down after it is released.
+ In this activity you will examine the velocity and acceleration of this
+ motion.
+\layout Standard
+
+
+\series bold 
+Activity 1: Graphs Depicting Slowing Down
+\series default 
+ 
+\layout Standard
+
+(a) If you give the cart a push away from the motion detector and release
+ it, will the acceleration be positive, negative or zero (after it is released)?
+ Sketch your predictions for the velocity vs.
+ time and acceleration vs.
+ time graphs on the axes below using dashed lines.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 251 355
+file slowing_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) To test your predictions, locate the cart 0.15 m from the motion detector
+ and gently push the cart away from the motion detector once it starts clicking.
+ Catch the cart before it turns around or hits the end of the track.
+\layout Standard
+
+Draw the results on the axes above using solid lines for the part of the
+ motion after the cart is released.
+ You may have to try a few times to get a good run.
+ Don't forget to change the scales if this will make your graphs clearer
+ before making the sketch and change the scale on the axes shown, if needed.
+ The acceleration vs.
+ time graphs will exhibit small fluctuations due to irregularities in the
+ motion of the cart.
+ You should ignore these fluctuations and draw smooth patterns.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Did the shapes of your velocity and acceleration graphs agree with your
+ predictions? How is the sign of the acceleration represented on a velocity
+ vs.
+ time graph? 
+\layout Standard
+\added_space_bottom 20mm 
+(d) How is the sign of the acceleration represented on an acceleration vs.
+ time graph? 
+\layout Standard
+\added_space_bottom 20mm 
+(e) Is the sign of the acceleration what you predicted? How does slowing
+ down while moving away from the detector result in this sign of acceleration?
+ Hint: Remember that acceleration is the rate of change of velocity.
+ Look at how the velocity is changing.
+\layout Standard
+
+
+\series bold 
+Constructing Acceleration Vectors for Slowing Down 
+\layout Standard
+
+Let's consider a diagrammatic representation of a cart which is slowing
+ down and use vector techniques to figure out the direction of the acceleration.
+\layout Standard
+
+
+\series bold 
+Activity 2: Vector Diagrams for Slowing Down
+\series default 
+ 
+\layout Standard
+
+(a) The diagram that follows shows the positions of the cart at equal time
+ intervals.
+ (This is like taking snapshots of the cart at equal time intervals.) At
+ each indicated time, sketch a vector above the cart which might represent
+ the velocity of the cart at that time while it is moving away from the
+ motion detector and slowing down.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 451 86
+file slowing_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) Show below how you would find the vector representing the change in
+ velocity between the times 1s and 2 s in the diagram above.
+ Based on the direction of this vector and the direction of the positive
+ x-axis, what is the sign of the acceleration? Does this agree with your
+ answer to Question (e) in Activity 1?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Based on your observations in this activity and in the last session,
+ state a general rule to predict the sign and direction of the acceleration
+ if you know the sign of the velocity (i.e.
+ the direction of motion) and whether the object is speeding up or slowing
+ down.
+\layout Standard
+
+
+\series bold 
+Speeding Up Toward the Motion Detector
+\series default 
+ 
+\layout Standard
+
+Let's investigate another common situation.
+ Suppose the cart is allowed to speed up when traveling toward the motion
+ detector.
+ What will the direction of the acceleration be? Positive or negative? 
+\layout Standard
+
+
+\series bold 
+Activity 3: Graphs Depicting Speeding Up
+\series default 
+ 
+\layout Standard
+
+(a) Use the general rule that you stated in Activity 2 to predict the shapes
+ of the velocity and acceleration graphs.
+ Sketch your predictions using dashed lines on the axes that follow.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 251 355
+file slowing_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Test your predictions by releasing the cart from rest at the end of
+ the track after the motion detector starts clicking.
+ Catch the cart before it gets too close to the detector.
+\layout Standard
+
+Draw the results using solid lines on the axes above.
+ You may have to try a few times to get a good run.
+ Don't forget to change the scales if this will make your graphs clearer
+ before making the sketch and change the scale on the axes shown, if needed.
+\layout Standard
+\added_space_bottom 20mm 
+(c) How does your velocity graph show that the cart was moving toward the
+ detector? 
+\layout Standard
+\added_space_bottom 20mm 
+(d) During the time that the cart was speeding up, is the acceleration positive
+ or negative? Does this agree with your prediction? Explain how speeding
+ up while moving toward the detector results in this sign of acceleration.
+ Hint: Think about how the velocity is changing.
+\layout Standard
+
+
+\series bold 
+Constructing Acceleration Vectors for Speeding Up
+\series default 
+ 
+\layout Standard
+
+Let's consider a diagrammatic representation of a cart which is speeding
+ up and use vector techniques to figure out the direction of the acceleration.
+\layout Standard
+
+
+\series bold 
+Activity 4: Vector Diagrams for Speeding Up
+\series default 
+ 
+\layout Standard
+
+(a) The diagram that follows shows the positions of the cart at equal time
+ intervals.
+ (This is like taking snapshots of the cart at equal time intervals.) At
+ each indicated time, sketch a vector above the cart which might represent
+ the velocity of the cart at that time while it is moving toward the motion
+ detector and speeding up.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 451 86
+file slowing_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) Show below how you would find the vector representing the change in
+ velocity between the times 1s and 2 s in the diagram above.
+ Based on the direction of this vector and the direction of the positive
+ x-axis, what is the sign of the acceleration? Does this agree with your
+ answer to Question (d) in Activity 3?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Was the general rule you developed in Activity 2 (c) correct? If not,
+ modify it and restate it here.
+ 
+\layout Standard
+
+
+\series bold 
+Moving Toward the Detector and Slowing Down 
+\layout Standard
+
+There is one more possible combination of velocity and acceleration for
+ the cart, that of moving toward the detector while slowing down.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 5: Slowing Down Toward the Detector
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Use your general rule to predict the direction and sign of the acceleration
+ when the cart is slowing down as it moves toward the detector.
+ Explain why the acceleration should have this direction and this sign in
+ terms of the velocity and how the velocity is changing.
+ 
+\layout Standard
+
+(b) The diagram below shows the positions of the cart at equal time intervals
+ for slowing down while moving toward the detector.
+ At each indicated time, sketch a vector above the cart which might represent
+ the velocity of the cart at that time while it is moving toward the motion
+ detector and slowing down.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 451 86
+file slowing_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(c) Show below how you would find the vector representing the change in
+ velocity between the times 1s and 2 s in the diagram above.
+ Based on the direction of this vector and the direction of the positive
+ x-axis, what is the sign of the acceleration? Does this agree with the
+ prediction you made in part (a)?
+\layout Standard
+
+
+\series bold 
+Acceleration and Turning Around 
+\layout Standard
+
+In the last session and in the first activity in this session, you looked
+ at velocity vs.
+ time and acceleration vs.
+ time graphs for a cart moving in one direction with a changing velocity.
+ In this investigation you will look at what happens when the cart slows
+ down, turns around and then speeds up.
+\layout Standard
+
+To practice this motion you should position the cart 0.15 m from the detector
+ and give the cart a gentle push away from the motion detector.
+ It should move up the track, slow down, reverse direction and then move
+ back down toward the detector.
+ Try it without activating the motion detector! Be sure that the cart does
+ not hit the end of the track before it turns around.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 6: Reversing Direction 
+\layout Standard
+
+(a) For each part of the motion-away from the detector, at the turning point,
+ and toward the detector, predict in the table that follows whether the
+ velocity will be positive, zero or negative.
+ Also indicate whether the acceleration is positive, zero or negative.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+3 4 0 0 -1 -1 -1 -1
+1 0 0 0
+1 0 0 0
+1 1 0 0
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+
+\newline 
+Moving Away
+\newline 
+Turning Around
+\newline 
+Moving Toward
+\newline 
+Velocity
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+Acceleration
+\newline 
+
+\newline 
+
+\newline 
+
+\layout Standard
+
+(b) Sketch the predicted shapes of the velocity vs.
+ time and acceleration vs.
+ time graphs of this entire motion on the axes that follow using dashed
+ lines.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 395 355
+file slowing_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(c) Test your predictions by making graphs of the motion.
+ Use the procedures you used in the slowing down and speeding up activities.
+ You may have to try a few times to get a good run.
+ Don't forget to change the scales if this will make your graphs clearer.
+ When you get a good run, sketch both graphs on the axes above using solid
+ lines.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Did the cart have a zero velocity at any point in the motion? (Hint:
+ Look at the velocity graph.
+ What was the velocity of the cart at the end of the ramp?) Does this agree
+ with your prediction? How much time did it spend at zero velocity before
+ it started back toward the detector? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(e) According to your acceleration graph, what is the acceleration at the
+ instant the cart comes to rest? Is it positive, negative or zero? Does
+ this agree with your prediction? 
+\layout Standard
+\added_space_bottom 20mm 
+(f) Explain the observed sign of the acceleration at the end of the ramp.
+ (Hint: Remember that acceleration is the rate of change of velocity.
+ When the cart is at rest at the end of the ramp, what will its velocity
+ be in the next instant? Will it be positive or negative?) 
+\layout Standard
+
+
+\series bold 
+Tossing a Ball 
+\layout Standard
+
+Suppose you throw a ball up into the air.
+ It moves upward, reaches its highest point and then moves back down toward
+ your hand.
+ What can you say about the directions of its velocity and acceleration
+ vectors at various points?
+\layout Standard
+
+
+\series bold 
+Activity 7: The Rise and Fall of a Ball
+\series default 
+ 
+\layout Standard
+
+(a) Consider the ball toss carefully.
+ Assume that upward is the positive direction.
+ Indicate in the table that follows whether the velocity is positive, zero
+ or negative during each of the three parts of the motion.
+ Also indicate if the acceleration is positive, zero or negative.
+ Hint: Remember, to find the acceleration you must look at the change in
+ velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+4 4 0 0 -1 -1 -1 -1
+1 0 0 0
+0 0 0 0
+1 0 0 0
+1 1 0 0
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+
+\newline 
+Moving Up
+\newline 
+At Highest Point
+\newline 
+Moving Down
+\newline 
+
+\newline 
+(After Release)
+\newline 
+
+\newline 
+
+\newline 
+Velocity
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+Acceleration
+\newline 
+
+\newline 
+
+\newline 
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) In what ways is the motion of the ball similar to the motion of the
+ cart which you just observed?
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+
+1.
+ An object moving along a line (the + position axis) has the acceleration-time
+ graph below.
+ How might the object move to create this graph If it is moving toward the
+ origin?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 214 100
+file slowing_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+2.
+ Sketch on the axes below the velocity-time graph that goes with the above
+ acceleration- time graph.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 100
+file slowing_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+3.
+ How would an object move to create each of the three labeled parts of the
+ acceleration- time graph shown below?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 100
+file slowing_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+A: 
+\layout Standard
+\added_space_bottom 10mm 
+B: 
+\layout Standard
+\added_space_bottom 10mm 
+C:
+\layout Standard
+
+4.
+ Sketch below a velocity-time graph which might go with the acceleration-time
+ graph in question (3).
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 100
+file slowing_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+5.
+ Sketch the shape of the acceleration-time graph that goes with the velocity-tim
+e graph shown below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 214 208
+file slowing_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+6.
+ A car moves along a line [the + position axis].
+ Fill in the table below with the sign (+ or -) of the velocity and acceleration
+ of the car for each of the motions described.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+6 5 0 0 -1 -1 -1 -1
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+1 0 0 0
+0 1 0 0
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+
+\newline 
+Position
+\newline 
+Velocity
+\newline 
+Acceleration
+\newline 
+Acceleration
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+Speeding Up
+\newline 
+Slowing Down
+\newline 
+Car Moves Away
+\newline 
++
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+from the Origin
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+Car Moves Toward
+\newline 
++
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+the Origin
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\layout Standard
+
+7.
+ For each of the position-time graphs shown, sketch below it the corresponding
+ velocity- time and acceleration-time graphs.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 411 304
+file slowing_fig11.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+8.
+ Describe how you would move to produce the velocity-time graph shown below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 189 107
+file slowing_fig12.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+9.
+ Sketch a position-time graph corresponding to the velocity-time graph above.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 192 107
+file slowing_fig13.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+10.
+ Sketch an acceleration-time graph corresponding to the velocity-time graph
+ above.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 187 107
+file slowing_fig14.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+A car can move in either direction along a line (the + position axis).
+ Sketch velocity-time and acceleration-time graphs that correspond to each
+ of the following descriptions of the car's motion.
+\layout Standard
+
+11.
+ The car is moving toward the origin at a constant velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 224 201
+file slowing_fig15.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+12.
+ The car starts from rest and moves toward the origin, speeding up at a
+ steady rate.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 224 201
+file slowing_fig15.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+13.
+ A ball is tossed in the air.
+ It moves upward, reaches its highest point and falls back downward.
+ Sketch a velocity-time and an acceleration-time graph for the ball from
+ the moment it leaves the thrower's hand until the moment just before it
+ reaches her hand again.
+ Consider the positive direction to be upward.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 224 201
+file slowing_fig15.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+14.
+ Each of the pictures below represents a car driving down a road.The motion
+ of the car is described.
+ In each case, draw velocity and acceleration vectors above the car which
+ might represent the described motion.
+ Also specify the sign of the velocity and the sign of the acceleration.
+ (The positive position direction is toward the right.)
+\layout Standard
+
+(a) The driver has stepped on the accelerator and the car is just starting
+ to move forward.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 238 51
+file slowing_fig16.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) The car is moving forward.
+ The brakes have been applied.
+ The car is slowing down, but has not yet come to rest.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 238 51
+file slowing_fig16.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(c) The car is moving backward.
+ The brakes have been applied.
+ The car is slowing down, but has not yet come to rest.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 238 51
+file slowing_fig16.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+The following graphs represent the motions of objects along the positive
+ position axis.
+ Notice that the motion of the objects is represented by position, velocity,
+ or acceleration graphs.
+\layout Standard
+
+Answer the following questions.
+ You may use a graph more than once or not at all, and there may be more
+ correct choices than blanks.
+ If none of the graphs is correct, answer none.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 527 324
+file slowing_fig17.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+15.
+ Pick one graph that gives enough information to indicate that the velocity
+ is always negative.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\layout Standard
+
+Pick three graphs that represent the motion of an object whose velocity
+ is constant.
+\layout Standard
+
+16.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 17.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 18.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\layout Standard
+
+19.
+ Pick one graph that definitely indicates an object has reversed direction.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\layout Standard
+
+20.
+ Pick one graph that might possibly be that of an object standing still.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\layout Standard
+
+Pick 3 graphs that represent the motion of objects whose acceleration is
+ changing.
+\layout Standard
+
+21.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 22.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 23.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\layout Standard
+
+Pick a velocity graph and an acceleration graph that could describe the
+ motion of the same object during the time shown.
+\layout Standard
+
+24.
+ Velocity graph.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ 25.
+ Acceleration graph.
+ 
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\the_end

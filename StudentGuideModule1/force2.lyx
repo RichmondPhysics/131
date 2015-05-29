@@ -1,0 +1,586 @@
+#This file was created by <vineyard> Wed Jul  5 10:08:47 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Force and Motion II
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objective
+\series default 
+ 
+\layout Standard
+
+To understand the relationship between the direction of the force applied
+ to an object and the direction of the acceleration of the object.
+ 
+\layout Standard
+
+
+\series bold 
+Overview
+\series default 
+ 
+\layout Standard
+
+In the previous lab you examined the one-dimensional motions of an object
+ caused by a single force applied to the object.
+ You have seen that when friction is so small that it can be ignored, a
+ single constant applied force will cause an object to have a constant accelerat
+ion.
+ (The object will speed up at a steady rate.) 
+\layout Standard
+
+Under these conditions, you have seen that the acceleration is proportional
+ to the applied force, if the mass of the object is not changed.
+ You saw that when a constant force is applied to a cart, the cart speeds
+ up at a constant rate so that it has a constant acceleration.
+ If the applied force is made larger, then the acceleration is proportionally
+ larger.
+ This allows you to define force more precisely not just in terms of the
+ stretches of rubber bands and springs, but as the entity (the "thing")
+ that causes acceleration.
+\layout Standard
+
+The goal of this lab is to continue to develop the relationship between
+ force and acceleration, an important part of the first two of Newton's
+ famous laws of motion.
+ You will explore motions in which the applied force (and hence the acceleration
+ of the object) is in a different direction than the object's velocity.
+ In this case the object is slowing down in the sense that its speed is
+ decreasing.
+\layout Standard
+
+
+\series bold 
+Apparatus 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+Force probe 
+\layout Itemize
+
+Variety of hanging masses 
+\layout Itemize
+
+Low friction pulley and string 
+\layout Itemize
+
+Motion detector 
+\layout Itemize
+
+Dynamics cart (with flag) and track 
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (V, A & F Graphs application)
+\layout Standard
+
+
+\series bold 
+Speeding Up and Slowing Down 
+\layout Standard
+
+So far you have looked at cases where the velocity, force and acceleration
+ all have the same sign (all positive).
+ That is, the vectors representing each of these three vector quantities
+ all point in the same direction.
+ For example, if the cart is moving toward the right and a force is exerted
+ toward the right, then the cart will speed up.
+ Thus the acceleration is also toward the right.
+ The three vectors can be represented as:
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 328 52
+file force2_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+If the positive x direction is toward the right, then you could also say
+ that the velocity, acceleration and also force are all positive.
+ In this investigation, you will examine the vectors representing velocity,
+ force and acceleration for other motions of the cart.
+ This will be an extension of your earlier observations of changing motion.
+\layout Standard
+
+
+\series bold 
+Activity 1: Slowing Down
+\series default 
+ 
+\layout Standard
+
+Set up the cart, pulley, hanging mass and motion detector as shown below.
+ Now when you give the cart a push away from the motion detector, it will
+ slow down after it is released.
+ In this activity you will examine the acceleration and the applied force.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 463 132
+file force2_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(a) Suppose that you position the cart 0.15 m from the motion detector and
+ give it a push away from the motion detector and release it.
+ Draw below vectors which might represent the velocity, force and acceleration
+ of the cart at each time after it is released and is moving toward the
+ right.
+ Be sure to mark your arrows with 
+\begin_inset Formula \( \overrightarrow{v} \)
+\end_inset 
+
+, 
+\begin_inset Formula \( \overrightarrow{a} \)
+\end_inset 
+
+, or 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ as appropriate.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 471 142
+file force2_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(b) If the positive x direction is toward the right, what are the signs
+ of the velocity, force and acceleration after the cart is released and
+ is moving toward the right?
+\layout Standard
+
+(c) To test your predictions: 
+\layout Enumerate
+
+Zero the force probe.
+\layout Enumerate
+
+Hang a 50-g mass from the end of the string.
+\layout Enumerate
+
+Use the V, A & F Graphs application to graph the motion.
+ 
+\layout Enumerate
+
+Test to be sure that the motion detector sees the cart during its complete
+ motion, and that the string and force probe cable are not interfering with
+ the motion detector.
+ You may need to move the motion detector to the side slightly so that it
+ does not see the string.
+ Also make sure that the cables to the motion detector do not impede the
+ motion of the cart.
+ Remember that the back of the cart must always be at least 0.15 meter from
+ the motion detector.
+ 
+\layout Enumerate
+
+Start recording data.
+ When the motion detector starts clicking, give the cart a short push away
+ from the motion detector and then let it go.
+ Stop the cart before it reverses its direction.
+ Repeat until you get a good run.
+ 
+\layout Enumerate
+
+Sketch your velocity, acceleration and force graphs on the axes below.
+ Label the time scale on these axes.
+ Indicate with an arrow the time when the push stopped.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 363 397
+file force2_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(d) Did the signs of the velocity, force and acceleration agree with your
+ predictions? If not, can you now explain the signs?
+\layout Standard
+\added_space_bottom 20mm 
+(e) Did the velocity and acceleration both have the same sign? Explain these
+ signs based on the relationship between acceleration and velocity.
+\layout Standard
+\added_space_bottom 20mm 
+(f) Did the force and acceleration have the same sign? Were the force and
+ acceleration in the same direction? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(g) Based on your observations, draw below vectors which might represent
+ the velocity, force and acceleration for the cart at the same instant in
+ time.
+ Do these agree with your predictions? If not, can you now explain the direction
+s of the vectors?
+\layout Standard
+\added_space_bottom 20mm 
+(h) After you released the cart, was the force applied by the falling mass
+ constant, increasing or decreasing? Explain why this kind of force is necessary
+ to cause the observed motion of the cart.
+\layout Standard
+
+
+\series bold 
+Activity 2: Speeding Up Toward the Motion Detector 
+\layout Standard
+
+Using the same setup as in the last activity, you can start with the cart
+ at the opposite end of the table from the motion detector and release it
+ from rest.
+ It will then be accelerated toward the motion detector as a result of the
+ force applied by the falling mass.
+\layout Standard
+
+(a) Suppose that you release the cart from rest and let it move toward the
+ motion detector.
+ Draw on the diagram below vectors which might represent the velocity, force
+ and acceleration of the cart at each time after it is released and is moving
+ toward the left.
+ Be sure to mark your arrows with 
+\series bold 
+v
+\series default 
+, 
+\series bold 
+a
+\series default 
+, or 
+\series bold 
+F
+\series default 
+ as appropriate.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 471 142
+file force2_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+(b) What are the signs of the velocity, force and acceleration after the
+ cart is released and is moving toward the motion detector? (The positive
+ x direction is toward the right.)
+\layout Standard
+
+(c) Test your predictions.
+ Use a hanging mass of 100 g.
+ Start recording data.
+ When you hear the motion detector, release the cart from rest as far away
+ from the motion detector as possible.
+ Catch the cart before it hits the motion detector.
+ Repeat until you get a good run.
+ Sketch your graphs on the above axes with dashed lines.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Which of the signs--velocity, force and/or acceleration are the same
+ as in the previous activity--where the cart was slowing down and moving
+ away, and which are different? Explain any differences in terms of the
+ differences in the motion of the cart.
+\layout Standard
+\added_space_bottom 30mm 
+(e) Based on your observations, draw below vectors which might represent
+ the velocity, force and acceleration for the cart at the same instant in
+ time.
+ Do these agree with your predictions? If not, can you now explain the direction
+s of the vectors?
+\layout Standard
+\added_space_bottom 20mm 
+(f) Write down a simple rule in words which describes the relationship between
+ the direction of the applied force and the direction of the acceleration
+ for any motion of the cart.
+\layout Standard
+\added_space_bottom 20mm 
+(g) Is the direction of the velocity always the same as the direction of
+ the force? Is the direction of the acceleration always the same as the
+ direction of the force? In terms of its magnitude and direction, what is
+ the effect of a force on the motion of an object?
+\layout Standard
+
+
+\series bold 
+Homework 
+\layout Standard
+
+Questions 1-6 refer to a toy car which can move in either direction along
+ a horizontal line (the + position axis).
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 239 64
+file force2_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Assume that friction is so small that it can be ignored.
+ Sketch the shape of the graph of the applied force which would keep the
+ car moving as described in each statement.
+\layout Standard
+
+1.
+ The toy car moves away from the origin with a constant velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+2.
+ The toy car moves toward the origin with a constant velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+3.
+ The toy car moves away from the origin with a steadily decreasing velocity
+ (a constant acceleration).
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+4.
+ The toy car moves away from the origin, speeds up and then slows down.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+5.
+ The toy car moves toward the origin with a steadily increasing speed (
+ a constant acceleration).
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+6.
+ The toy car is given a push away form the origin and released.
+ It continues to move with a constant velocity.
+ sketch the force after the car is released.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+7.
+ A cart is moving toward the right and speeding up, as shown in the diagram
+ below.
+ Draw arrows above the cart representing the magnitudes and directions of
+ the net (combined) forces you think are needed on the cart at the times
+ shown to maintain its motion with a steadily increasing velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 451 94
+file force2_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+Explain the reasons for your answers.
+\layout Standard
+\added_space_bottom 20mm 
+8.
+ If the positive direction is toward the right, what is the sign of the
+ force at t = 2 sec in question 7.
+ Explain.
+\layout Standard
+
+9.
+ A cart is moving toward the right and slowing down, as shown in the diagrams
+ below.
+ Draw arrows above the cart representing the magnitudes and directions of
+ the net (combined) forces you think are needed on the cart at t = 0 s,
+ t = 1 s, etc.
+ to maintain its motion with a steadily decreasing velocity.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 451 90
+file force2_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 20mm 
+Explain the reasons for your answers.
+\layout Standard
+\added_space_bottom 20mm 
+10.
+ If the positive direction is toward the right, what is the sign of the
+ force at t = 2 sec in question 9? Explain.
+\layout Standard
+
+11.
+ A toy car can move in either direction along a horizontal line (the + position
+ axis).
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 239 64
+file force2_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Assume that friction is so small that it can be ignored.
+ A force toward the right of constant magnitude is applied to the car.
+ Sketch on the axes below using a solid line the shape of the acceleration-time
+ graph of the car.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 87
+file force2_fig10.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Explain the shape of your graph in terms of the applied force.
+\the_end

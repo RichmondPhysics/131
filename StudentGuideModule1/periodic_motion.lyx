@@ -1,0 +1,443 @@
+#This file was created by <vineyard> Mon Jul 17 10:04:39 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Periodic Motion
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+Objectives 
+\layout Itemize
+
+To learn directly about some of the characteristics of periodic motion period,
+ frequency, and amplitude.
+ 
+\layout Itemize
+
+To investigate the relationships between position, velocity, acceleration,
+ and force in simple harmonic motion.
+ 
+\layout Itemize
+
+To investigate energy in simple harmonic motion.
+\layout Standard
+
+
+\series bold 
+Introduction 
+\layout Standard
+
+Periodic motion is motion that repeats itself.
+ You can see the repetition in the position-, velocity-, or acceleration-time
+ graphs.
+ The length of time to go through one cycle and begin to repeat the motion
+ is called the period.
+ The number of cycles in each second is called the frequency.
+ The unit of frequency, cycles per second is given a special name--Hertz.
+\layout Standard
+
+
+\series bold 
+Motion of a Mass Hanging from a Spring
+\series default 
+ 
+\layout Standard
+
+In this unit you will investigate the motion of a mass hanging from a spring.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+Large spring 
+\layout Itemize
+
+Force probe 
+\layout Itemize
+
+Motion detector 
+\layout Itemize
+
+Variety of masses 
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (Position & Velocity Graphs application and SHM application)
+\layout Standard
+
+
+\series bold 
+Activity 1: Periodic Motion of a Mass-Spring System
+\series default 
+ 
+\layout Standard
+
+(a) Open the Position & Velocity Graphs application in the 131 Workshop
+ submenu of the Apple menu.
+ Hang the large spring from the force probe hook with the large diameter
+ coils down and hang a 200-g mass from the spring.
+ Place the motion detector facing up directly below the spring.
+ Push the mass straight upward 15 cm, and let go.
+ Adjust the height of the support so that the mass comes no closer than
+ 0.15 m to the detector.
+ Record data for a few seconds to display position-time and velocity-time
+ graphs of the motion.
+ Sketch the graphs on the axes below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 409 268
+file periodic_motion_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Comment: Note that when an object returns to the same position, it does
+ not necessarily mean that a cycle is ending.
+ It must return to the same position, and the velocity and acceleration
+ must also return to the same values in both magnitude and direction for
+ this to be the start of a new cycle.
+ 
+\layout Standard
+
+(b) Label the graphs above with: "B" at the Beginning of a cycle and "E"
+ at the End of the same complete cycle.
+ "A" on each spot where the mass is moving Away from the detector fastest.
+ "T" on each spot where the mass is moving Toward the detector fastest.
+ "S" on each spot where the mass is standing Still.
+ "F" where the mass is Farthest from the motion detector.
+ "C" where the mass is Closest to the motion detector.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Do the position and velocity graphs appear to have the same period?
+ Do their peaks occur at the same times? If not, how are the peaks related
+ in time?
+\layout Standard
+\added_space_bottom 10mm 
+(d) Use the Smart Tool to measure the period and frequency of the motion.
+ (For better accuracy, measure the total time over as many cycles as possible
+ and divide by the number of cycles.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Using the Smart Tool, determine and record the maximum displacement.
+ Then record data with the mass at rest to find the equilibrium position.
+ Draw a straight line on your position graph indicating the equilibrium
+ position in terms of the distance from the motion detector.
+ Calculate and record the amplitude of the motion (the difference between
+ the maximum displacement and the equilibrium position).
+\layout Standard
+
+
+\series bold 
+Simple Harmonic Motion 
+\layout Standard
+
+The motion of a mass hanging from a spring that you looked at in Activity
+ 1 is a close approximation to a kind of periodic motion called simple harmonic
+ motion (sometimes abbreviated SHM).
+\layout Standard
+
+
+\series bold 
+Activity 2: What Factors Determine the Period of the Mass-Spring System?
+ 
+\layout Standard
+\added_space_bottom 30mm 
+What can you do to change the period of the SHM of the mass-spring system?
+ What will happen to the period if you increase the amplitude? Increase
+ the mass? Increase the spring constant (use a stiffer spring)?
+\layout Standard
+
+
+\series bold 
+Activity 3: The Period of SHM and the Amplitude
+\series default 
+ 
+\layout Standard
+\added_space_bottom 30mm 
+(a) Repeat the procedure of Activity 1, but with a different starting position
+ (other than 15 cm).
+ (Warning: Do not make the amplitude so large that the mass comes closer
+ than 0.15 m from the motion detector.) When you have good graphs, find and
+ record the period and the amplitude using the methods described in Activity
+ 1.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Take ratios of the period and the amplitude of Activity 1 to those determine
+d here.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Is there evidence that the period depends on amplitude? (Did the change
+ in amplitude result in a comparable change in period?) Explain.
+ How does this compare with your prediction?
+\layout Standard
+
+
+\series bold 
+Activity 4: The Dependence of the Period of a SHM on the Mass
+\series default 
+ 
+\layout Standard
+\added_space_bottom 30mm 
+(a) Carefully measure the period for two other masses.
+ Record the masses and the measured periods in a table the space below along
+ with the mass and period from Activity 1.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Does the period depend on the mass? Does it increase or decrease as
+ mass is increased?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Determine the mathematical relationship between the period T and the
+ mass m by finding a function that fits the data.
+ Write the equation that provides the best fit to the data in the space
+ below.
+\layout Standard
+
+
+\series bold 
+Comment:
+\series default 
+ You should have found that T is independent of amplitude and proportional
+ to 
+\begin_inset Formula \( \sqrt{m} \)
+\end_inset 
+
+.
+ The actual expression for the period is
+\begin_inset Formula 
+\[
+T=2\pi \sqrt{\frac{m}{k}.}\]
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Velocity, Acceleration, Force and Energy 
+\layout Standard
+
+In this investigation you will look more carefully at the distance, velocity
+ and acceleration graphs for simple harmonic motion.
+ You will also look at the force graph, and will examine the energy associated
+ with simple harmonic motion.
+\layout Standard
+
+
+\series bold 
+Activity 5: Determination of the Spring Constant 
+\layout Standard
+\added_space_bottom 40mm 
+Measure the distance the spring stretches for four different masses and
+ use this data to determine the spring constant, k.
+ Record your data and the result for k in the space below.
+\layout Standard
+
+
+\series bold 
+Activity 6: Velocity, Acceleration, and Force for SHM
+\series default 
+ 
+\layout Standard
+
+(a) Consider the motion you looked at in Activity 1 when the mass was 200
+ g and the initial position was 15 cm.
+ Sketch the position and velocity graphs that you observed on the axes below
+ using dashed lines.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 341 117
+file periodic_motion_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 355 380
+file periodic_motion_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Based on what you know about the relationships between velocity, acceleratio
+n, and force, use dashed lines to sketch your predictions for the acceleration
+ and force graphs.
+\layout Standard
+
+(c) Suspend the 200-g mass from the spring and open the SHM application.
+ Start the mass oscillating with an amplitude of 15 cm and record data for
+ a few seconds.
+ When you have obtained good graphs, sketch the results on the above axes
+ using solid lines.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(d) When the mass is at its maximum distance from the detector, is the velocity
+ maximum, minimum or some other value according to your graphs? Does this
+ agree with your predictions? Does this agree with your observations of
+ the oscillating mass? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(e) When the mass has its maximum positive velocity, is its distance from
+ the detector maximum, minimum, the equilibrium value or some other value
+ according to your graphs? What about when it reaches maximum negative velocity?
+ Does this agree with your predictions? Does this agree with your observations
+ of the oscillating mass? Explain.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(f) According to your graphs, for what distances from the detector is the
+ acceleration maximum? For what distances is the acceleration zero? What
+ is the velocity in each of these cases?
+\layout Standard
+\added_space_bottom 20mm 
+(g) Compare the force and acceleration-time graphs.
+ Describe any similarities.
+ Does the force graph agree with your prediction?
+\layout Standard
+\added_space_bottom 20mm 
+(h) From your graphs, what would you say is the relationship between force
+ and acceleration? 
+\layout Standard
+\added_space_bottom 20mm 
+(i) Compare the force and distance(position)-time graphs.
+ What would you say is the relationship between force and position? 
+\layout Standard
+
+
+\series bold 
+Activity 7: Energy of a Mass Undergoing SHM 
+\layout Standard
+
+Now use the graphs from the last activity to examine the energy relationships
+ in simple harmonic motion.
+ 
+\layout Standard
+
+(a) At what points is the kinetic energy of the mass zero? Label these points
+ on your distance and velocity graphs above with a K.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Calculate the elastic potential energy due to the spring at one of these
+ points.
+ Label the point you use on your velocity and distance graphs with a 1.
+ Use U = (1/2)kx
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+ where x is the distance from the equilibrium position and k is the force
+ constant of the spring which you have already measured.
+ Use the Smart Tool to measure x.
+ Show your data and calculations in the space below.
+ 
+\layout Standard
+
+(c) At what points is the potential energy zero? Label these points with
+ a P on your distance and velocity graphs.
+\layout Standard
+\added_space_bottom 20mm 
+(d) If you measured the kinetic energy at one of these points, what would
+ you expect its value to be? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Check your prediction.
+ Calculate the kinetic energy at one of these points.
+ Label the point you use on your velocity graph with a 2.
+ Use K = (1/2) mv
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+.
+ Use the Smart Tool to determine v.
+ Show your data and calculations in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(f) Did your calculated kinetic energy agree with your prediction?
+\layout Standard
+\added_space_bottom 20mm 
+(g) If you calculated the potential and kinetic energies at a point where
+ neither of these was zero, what would you expect the total energy to be?
+ Explain.
+\layout Standard
+\added_space_bottom 40mm 
+(h) Check your prediction.
+ Pick a point where the mass has both kinetic and potential energy and calculate
+ them both.
+ Label this point on your distance and velocity graphs with a 3.
+ Show your calculations.
+\layout Standard
+
+(i) Does your result agree with your prediction? Does it appear that energy
+ is conserved? Explain.
+\the_end

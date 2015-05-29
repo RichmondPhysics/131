@@ -1,0 +1,349 @@
+#This file was created by <vineyard> Mon Jul 24 15:20:21 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Measuring and Graphing Horizontal Motion
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+\align center 
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To explore the nature of horizontal motion.
+ 
+\layout Itemize
+
+To learn to use Cricket Graph for graphing and fitting data.
+\layout Standard
+
+
+\series bold 
+Measuring the Horizontal Motion of a Bowling Ball
+\series default 
+ 
+\layout Standard
+
+A key to understanding how to describe motion near the surface of the earth
+ is to observe horizontal motions and vertical motions separately.
+ Eventually, situations in which an object undergoes both horizontal and
+ vertical motion can be analyzed and understood as a combination of these
+ two kinds of basic motions.
+\layout Standard
+
+Lets start with horizontal motion.
+ How do you think the horizontal position of a bowling ball changes over
+ time as it rolls along on a smooth surface? For example, suppose you were
+ to roll the ball a distance of 6.0 meters on a fairly level smooth floor.
+ Do you expect that the ball would: (1) move at a steady speed, (2) speed
+ up, or (3) slow down? To observe the horizontal motion of a "bowling ball"
+ you can use a bocce ball which is slightly smaller but quite similar to
+ a regulation bowling ball.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+A bocce ball 
+\layout Itemize
+
+3 stop watches 
+\layout Itemize
+
+A 2-meter stick 
+\layout Itemize
+
+Masking tape for marking distances 
+\layout Itemize
+
+A smooth level surface (> 7 meters in length)
+\layout Standard
+
+
+\series bold 
+Activity 1: Horizontal Motion 
+\layout Standard
+\added_space_bottom 20mm 
+(a) What do you predict will happen to the position of the ball as a function
+ of time? Will the ball move at a steady speed, speed up, or slow down after
+ it leaves the bowler's hand? Why?
+\layout Standard
+
+(b) Find a 7 meter length of smooth floor and use masking tape to mark off
+ a starting line and distances of 2.00 m, 4.00 m, and 6.00 m.
+ from the starting line.
+ Then: (1) Bowl the ball along the surface.
+ (2) Measure the time it takes to travel 2.0 m, 4.0 m & 6.0 m.
+ (3) Record the results in the table below.
+\layout Standard
+
+
+\series bold 
+Note:
+\series default 
+ This is a cooperative project.
+ You will need a bowler, three people to measure the times, and someone
+ to stop the ball.
+ Practice several times before recording data in the table below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+5 2 0 0 -1 -1 -1 -1
+1 1 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 1 0 0
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+t (s)
+\newline 
+x (m)
+\newline 
+0.00
+\newline 
+0.00
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\newline 
+
+\layout Standard
+\added_space_bottom 20mm 
+(c) Calculate the average speed, v, in m/s of the bowling ball as it travels
+ the 6.00 meters.
+\layout Standard
+
+
+\series bold 
+Graphing the Horizontal Motion
+\series default 
+ 
+\layout Standard
+
+In this activity, you should graph your data for the position of the ball
+ as a function of the rolling-time of the ball.
+ This graphing should be done both by hand and on the computer.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 2: Drawing a Graph of Position vs.
+ Time
+\series default 
+ 
+\layout Standard
+
+(a) Fill in the units and the scale numbers in the graph below and plot
+ the data you collected.
+ You should plot a "fourth" data point on your graph by reasoning out what
+ rolling-time you would measure for your ball if you were to roll it a distance
+ of zero meters.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 203 161
+file measuring_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+(b) Now use Cricket Graph on the computer to create the same graph.
+ See Appendix C for instructions.
+ Print the graph and insert a copy in your notebook at the end of this unit.
+\layout Standard
+
+
+\series bold 
+How does the Position of the Ball Vary with Time?
+\series default 
+ 
+\layout Standard
+
+We are interested in the mathematical nature of the relationship between
+ position and time for rolling on a level surface.
+ Some definitions of mathematical relationships are shown in the sketches
+ below.
+ Figure (a) shows a function y that increases with x so that y = f(x).
+ In sketch (b) y is a linear function that increases with x so that y =
+ mx + b, where m is the slope and b is the y intercept.
+ In figure (c) y is proportional to x (y = mx where b = 0).
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 419 146
+file measuring_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 3: The Mathematical Relationships
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) By comparing the shape of the graph you have just produced with the
+ sketches shown above, would you say that the position, x, increases with
+ time, t? Decreases with time? Is it a linear function of t? Is it proportional
+ to t? Explain.
+\layout Standard
+\added_space_bottom 20mm 
+(b) How do the results compare with the prediction you made in Activity
+ 1? Are you surprised?
+\layout Standard
+\added_space_bottom 20mm 
+(c) What do you think would happen to the slope, m, of the graph, if the
+ ball had been rolled faster? Would it increase? Decrease? Stay the same?
+\layout Standard
+
+
+\series bold 
+Activity 4: Mathematical Modeling
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Create a mathematical model of the bowling ball motion data you collected
+ in Activity 1.
+ This can be done by using Cricket Graph to fit the data with a line.
+ See Appendix C for instructions.
+ Be sure to label the graph.
+ Then print it and insert a copy into your notebook.
+ Does the line provide a good description of the data?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Write the equation describing the motion in the form Position (m) =
+ ( ? m/s) Time (s) + ( ? m).
+\layout Standard
+\added_space_bottom 20mm 
+(c) Compare the slope of the line with the average speed you calculated
+ in Activity 1.
+ A good way to do this is by calculating the % difference between the two
+ (See Appendix A).
+\layout Standard
+\added_space_bottom 20mm 
+(d) Give a brief discussion of the meaning of the slope of a graph of Position
+ vs.
+ Time.
+ What does it tell you?
+\layout Standard
+
+
+\series bold 
+Homework
+\series default 
+ 
+\layout Standard
+
+The diagram below shows the graphs of three possible relationships between
+ the time, t, in seconds and the position, x, in centimeters that the object
+ has traveled.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 192 146
+file measuring_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(a) Which graphs represent position as a linear function of time? A, B,
+ and/or C?
+\layout Standard
+
+(b) Which graphs, if any, show position as proportional to time?
+\the_end

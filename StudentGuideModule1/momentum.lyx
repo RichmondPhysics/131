@@ -1,0 +1,583 @@
+#This file was created by <vineyard> Mon Jul 10 15:35:48 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Momentum and Momentum Change
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To understand the definition of momentum and its vector nature as it applies
+ to one- dimensional collisions.
+ 
+\layout Itemize
+
+To reformulate Newton's second law in terms of change in momentum, using
+ the fact that Newton's "motion" is what we refer to as momentum.
+ 
+\layout Itemize
+
+To develop the concept of impulse to explain how forces act over time when
+ an object undergoes a collision.
+ 
+\layout Itemize
+
+To use Newton's second law to develop a mathematical equation relating impulse
+ and momentum change for any object experiencing a force.
+\layout Standard
+
+
+\series bold 
+Overview 
+\layout Standard
+
+In the next few units we will explore the forces of interaction between
+ two or more objects and study the changes in motion that result from these
+ interactions.
+ We are especially interested in studying collisions and explosions in which
+ interactions take place in fractions of a second or less.
+ Early investigators spent a considerable amount of time trying to observe
+ collisions and explosions, but they encountered difficulties.
+ This is not surprising, since the observation of the details of such phenomena
+ requires the use of instrumentation that was not yet invented (such as
+ the high speed camera).
+ However, the principles of the outcomes of collisions were well understood
+ by the late seventeenth century, when several leading European scientists
+ (including Sir Isaac Newton) developed the concept of quantity -of-motion
+ to describe both elastic collisions (in which objects bounce off each other)
+ and inelastic collisions (in which objects stick together).
+ These days we use the word momentum rather than motion in describing collisions
+ and explosions.
+\layout Standard
+
+We will begin our study of collisions by exploring the relationship between
+ the forces experienced by an object and its momentum change.
+ It can be shown mathematically from Newton's laws and experimentally from
+ our own observations that the integral of force experienced by an object
+ over time is equal to its change in momentum.
+ This time-integral of force is defined as a special quantity called impulse,
+ and the statement of equality between impulse and momentum change is known
+ as the impulse momentum theorem.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+Dynamics carts (2) and track
+\layout Standard
+
+
+\series bold 
+Defining Momentum 
+\layout Standard
+
+In this session we are going to develop the concept of momentum to predict
+ the outcome of collisions.
+ But you don't officially know what momentum is because we haven't defined
+ it yet.
+ Lets start by predicting what will happen as a result of a simple one-dimension
+al collision.
+ This should help you figure out how to define momentum to enable you to
+ describe collisions in mathematical terms.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 361 110
+file momentum_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+It's early fall and you are driving along a two lane highway in a rented
+ moving van.
+ It is full of all of your possessions so you and the loaded truck were
+ weighed in at 8000 lbs.
+ You have just slowed down to 15 MPH because you're in a school zone.
+ It's a good thing you thought to do that because a group of first graders
+ is just starting to cross the road.
+ Just as you pass the children you see a 2000 lb sports car in the oncoming
+ lane heading straight for the children at about 80 MPH.
+ What a fool the driver is! A desperate thought crosses your mind.
+ You figure that you just have time to swing into the oncoming lane and
+ speed up a bit before making a head-on collision with the sports car.
+ You want your truck and the sports car to crumple into a heap that sticks
+ together and doesn't move.
+ Can you save the children or is this just a suicidal act? For simulated
+ observations of this situation you can use two carts of different masses
+ set up to stick together in trial collisions.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 1: Can You Stop the Car?
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Predict how fast you would have to be going to completely stop the sports
+ car.
+ Explain the reasons for your prediction.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Try some head on collisions with the carts of different masses to simulate
+ the event.
+ Describe some of your observations.
+ What happens when the less massive cart is moving much faster than the
+ more massive cart? Much slower? At about the same speed?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Based on your intuitive answers in parts (a) and (b) and your observations,
+ what mathematical definition might you use to describe the momentum (or
+ motion) you would need to stop an oncoming vehicle traveling with a known
+ mass and velocity?
+\layout Standard
+
+Just to double check your reasoning, you should have come to the conclusion
+ that momentum is defined by the vector equation
+\begin_inset Formula 
+\[
+\overrightarrow{p}=m\overrightarrow{v}.\]
+
+\end_inset 
+
+
+\layout Standard
+
+Expressing Newton's Second Law Using Momentum 
+\layout Standard
+
+Originally Newton did not use the concept of acceleration or velocity in
+ his laws.
+ Instead he used the term "motion", which he defined as the product of mass
+ and velocity (a quantity we now call momentum).
+ Let's examine a translation from Latin of Newton's first two laws (with
+ some parenthetical changes for clarity).
+\layout Standard
+
+
+\shape italic 
+Newton's First Two Laws of Motion
+\layout Enumerate
+
+
+\shape italic 
+Every body continues in its state of rest, or of uniform motion in a right
+ line, unless it is compelled to change that state by forces impressed on
+ it.
+ 
+\layout Enumerate
+
+
+\shape italic 
+The (rate of) change of motion is proportional to the motive force impressed:
+ and is made in the direction in which that force is impressed.
+\layout Standard
+
+The more familiar contemporary statement of the second law is that the net
+ force on an object is the product of its mass and its acceleration where
+ the direction of the force and of the resulting acceleration are the same.
+ Newton's statement of the law and the more modern statement are mathematically
+ equivalent, as you will show.
+\layout Standard
+
+
+\series bold 
+Activity 2: Re-expressing Newton's Second Law
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Write down the contemporary mathematical expression for Newton's second
+ law relating net force to mass and acceleration.
+ Please use vector signs and a summation sign where appropriate.
+\layout Standard
+\added_space_bottom 10mm 
+(b) Write down the definition of instantaneous acceleration in terms of
+ the rate of change of velocity.
+ Again, use vector signs.
+\layout Standard
+\added_space_bottom 20mm 
+(c) It can be shown that if an object has a changing velocity and a constant
+ mass then 
+\begin_inset Formula \( m\frac{d\overrightarrow{v}}{dt}=\frac{d\left( m\overrightarrow{v}\right) }{dt} \)
+\end_inset 
+
+.
+ Explain why.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Show that 
+\begin_inset Formula \( \Sigma \overrightarrow{F}=m\overrightarrow{a}=\frac{d\overrightarrow{p}}{dt} \)
+\end_inset 
+
+.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Explain in detail why Newton's statement of the second law and the mathemati
+cal expression 
+\begin_inset Formula \( \Sigma \overrightarrow{F}=\frac{d\overrightarrow{p}}{dt} \)
+\end_inset 
+
+ are two representations of the same statement, i.e.
+ are logically equivalent.
+\layout Standard
+
+
+\series bold 
+Momentum Change and Collision Forces
+\series default 
+ 
+\layout Standard
+
+
+\shape italic 
+What's Your Intuition?
+\shape default 
+ 
+\layout Standard
+
+You are sleeping in your sister's room while she is away at college.
+ Your house is on fire and smoke is pouring into the partially open bedroom
+ door.
+ The room is so messy that you cannot get to the door.
+ The only way to close the door is to throw either a blob of clay or a super
+ ball at the door there's not enough time to throw both.
+\layout Standard
+
+
+\series bold 
+Activity 3: What Packs the Biggest Wallop-A Clay Blob or a Super ball? 
+\layout Standard
+\added_space_bottom 20mm 
+Assuming that the clay blob and the super ball have the same mass, which
+ would you throw to close the door the clay blob (which will stick to the
+ door) or the super ball (which will bounce back with almost the same velocity
+ it had before it collided with the door)? Give reasons for your choice,
+ using any notions you already have or any new concepts developed in physics
+ such as force, momentum, Newton's laws, etc.
+ Remember, your life depends on it!
+\layout Standard
+
+
+\series bold 
+Momentum Changes
+\series default 
+ 
+\layout Standard
+
+It would be nice to be able to use Newton's formulation of the second law
+ of motion to find collision forces, but it is difficult to measure the
+ rate of change of momentum during a rapid collision without special instruments.
+ However, measuring the momenta of objects just before and just after a
+ collision is usually not too difficult.
+ This led scientists in the seventeenth and eighteenth centuries to concentrate
+ on the overall changes in momentum that resulted from collisions.
+ They then tried to relate changes in momentum to the forces experienced
+ by an object during a collision.
+ In the next activity you are going to explore the mathematics of calculating
+ momentum changes.
+\layout Standard
+
+
+\series bold 
+Activity 4: Predicting Momentum Changes 
+\layout Standard
+\added_space_bottom 20mm 
+Which object undergoes the most momentum change during the collision with
+ a door the clay blob or the super ball? Explain your reasoning carefully.
+\layout Standard
+
+Let's check your reasoning with some formal calculations of the momentum
+ changes for both inelastic and elastic collisions.
+ This is a good review of the properties of one-dimensional vectors.
+ Recall that momentum is defined as a vector quantity that has both magnitude
+ and direction.
+ Mathematically, momentum change is given by the equation
+\begin_inset Formula 
+\[
+\Delta \overrightarrow{p}=\overrightarrow{p_{f}}-\overrightarrow{p_{i}}\]
+
+\end_inset 
+
+
+\layout Standard
+
+where 
+\begin_inset Formula \( \overrightarrow{p_{i}} \)
+\end_inset 
+
+ is the initial momentum of the object just before and 
+\begin_inset Formula \( \overrightarrow{p_{f}} \)
+\end_inset 
+
+ is its final momentum just after a collision.
+\layout Standard
+
+
+\series bold 
+Activity 5: Calculating 1D Momentum Changes
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Suppose a dead ball (or clay blob) is dropped on a table and "sticks"
+ in such a way that it has an initial momentum just before it hits of 
+\begin_inset Formula \( \overrightarrow{p_{i}}=-p_{iy}\widehat{j} \)
+\end_inset 
+
+ where 
+\begin_inset Formula \( \widehat{j} \)
+\end_inset 
+
+ is a unit vector pointing along the positive y axis.
+ Express the final momentum of the dead ball in the same vector notation.
+\layout Standard
+\added_space_bottom 10mm 
+(b) What is the change in momentum of the clay blob as a result of its collision
+ with the table? Use the same type of unit vector notation to express your
+ answer.
+\layout Standard
+\added_space_bottom 10mm 
+(c) Suppose that a live ball (or a super ball) is dropped on a table and
+ "bounces" on the table in an elastic collision so that its speed just before
+ and just after the bounce are the same.
+ Also suppose that just before it bounces it has an initial momentum 
+\begin_inset Formula \( \overrightarrow{p_{i}}=-p_{iy}\widehat{j} \)
+\end_inset 
+
+ where 
+\begin_inset Formula \( \widehat{j} \)
+\end_inset 
+
+ is a unit vector pointing along the positive y-axis.
+ What is the final momentum of the ball in the same vector notation? Hint:
+ Does the final 
+\begin_inset Formula \( \overrightarrow{p} \)
+\end_inset 
+
+ vector point along the +y or y axis? 
+\layout Standard
+\added_space_bottom 10mm 
+(d) What is the change in momentum of the ball as a result of the collision?
+ Use the same type of unit vector notation to express your result.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(e) The answer is not zero.
+ Why? How does this result compare with your prediction? Discuss this situation.
+\layout Standard
+\added_space_bottom 30mm 
+(f) Suppose the mass of each ball is 0.2 kg and that they are dropped from
+ 1 m above the table.
+ Using this value for mass of the balls and a calculated value for the velocity
+ of each of the balls just before they hit the table, you can calculate
+ the momentum just before the collision 
+\begin_inset Formula \( \overrightarrow{p_{i}} \)
+\end_inset 
+
+ for each of the balls.
+ Also calculate the momentum of the balls just after the collision 
+\begin_inset Formula \( \overrightarrow{p_{f}} \)
+\end_inset 
+
+ and the change in momentum 
+\begin_inset Formula \( \Delta \overrightarrow{p} \)
+\end_inset 
+
+ for each ball.
+ Show your calculations in the space below.
+\layout Standard
+
+
+\series bold 
+Applying Newton's Second Law to the Collision Process (The Egg Toss)
+\layout Standard
+
+Suppose somebody tosses you a raw egg and you catch it.
+ In physics jargon, one would say (in a very official tone of voice) that
+ "the egg and the hand have undergone an inelastic collision." What is the
+ relationship between the force you have to exert on the egg to stop it,
+ the time it takes you to stop it, and the momentum change that the egg
+ experiences? You ought to have some intuition about this matter.
+ In more ordinary language, would you catch an egg slowly or fast?
+\layout Standard
+
+
+\series bold 
+Activity 6: Momentum Changes and Average Forces on an Egg: What's Your Intuition
+?
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) If you catch an egg of mass m that is heading toward your hand at speed
+ v what is the magnitude of the momentum change that it undergoes?
+\layout Standard
+\added_space_bottom 10mm 
+(b) Does the total momentum change differ if you catch the egg more slowly
+ or is it the same?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Suppose the time you take to bring the egg to a stop is 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t.
+ Would you rather catch the egg in such a way that 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t is small or large.
+ Why?
+\layout Standard
+\added_space_bottom 20mm 
+(d) What do you suspect might happen to the average force you exert on the
+ egg while catching it when 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t is small?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 380 172
+file momentum_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+You can use Newton's second law to derive a mathematical relationship between
+ momentum change, force, and collision times for objects.
+ This derivation leads to the impulse- momentum theorem.
+ Let's apply Newton's second law to the egg catching scenario.
+\layout Standard
+
+
+\series bold 
+Activity 7: Force and Momentum Change 
+\layout Standard
+
+(a) Sketch an arrow representing the magnitude and direction of the force
+ exerted by your hand on the egg as you catch it.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 68 58
+file momentum_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(b) Write the mathematical expression for Newton's second law in terms of
+ the net force and the time rate of change of momentum.
+ (See Activity 2(e) for details.)
+\layout Standard
+\added_space_bottom 20mm 
+(c) Explain why, if 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ is a constant during the collision lasting a time 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t , then 
+\begin_inset Formula \( \frac{d\overrightarrow{p}}{dt}=\frac{\Delta \overrightarrow{p}}{\Delta t} \)
+\end_inset 
+
+.
+ 
+\layout Standard
+
+(d) Show that for a constant force 
+\begin_inset Formula \( \overrightarrow{F} \)
+\end_inset 
+
+ the change in momentum is given by 
+\begin_inset Formula \( \Delta \overrightarrow{p}=\overrightarrow{F}\Delta t \)
+\end_inset 
+
+.
+ Note that for a constant force, the term 
+\begin_inset Formula \( \overrightarrow{F}\Delta t \)
+\end_inset 
+
+ is known as the impulse given to one body by another.
+\the_end

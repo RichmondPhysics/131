@@ -1,0 +1,977 @@
+#This file was created by <vineyard> Wed Jul  5 10:06:33 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Equations to Define Velocity and Acceleration
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Standard
+
+To learn how physicists use mathematical equations to describe simple one-dimens
+ional motions by:
+\layout Enumerate
+
+Understanding the mathematical definitions of both average and instantaneous
+ velocity and acceleration as well as the meaning of the slope of a position
+ vs.
+ time graph and of a velocity vs.
+ time graph.
+\layout Enumerate
+
+Learning to use different techniques for measuring length and time and to
+ use mathematical definitions of average velocity and acceleration in one
+ dimension to determine these quantities from fundamental measurements.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+Ruler with centimeter scale
+\layout Standard
+
+
+\series bold 
+Measuring Position as a Function of Time
+\series default 
+ 
+\layout Standard
+
+When you used the motion detector, the computer took care of all the length
+ and time measurements needed to track motion automatically.
+ In order to understand more about how the motion software actually translates
+ measurements into one dimensional velocities and accelerations it is helpful
+ to make your own length and time measurements for a cart system.
+\layout Standard
+
+Consider the type of uniformly accelerating cart motion that you studied
+ in the previous two units.
+ Suppose that instead of a motion detector you have a video camera off to
+ one side so you can film the location of the cart 30 times each second.
+ (This is the rate at which a standard video camera records frames.) By displayin
+g frames at regular time intervals it is possible to view the position of
+ the cart on each frame as shown in the figure below.
+ This figure shows a scale diagram of the position of an accelerating cart
+ at 8 equally spaced time intervals.
+ The cart actually moved a distance of just less than 1 meter.
+ Every 6th frame was displayed in the cart movie, so that 5 frames were
+ recorded each second.
+ At each time the center of the cart is located in the upper left corner
+ of the rectangle with a number 1 in it.
+ 
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 491 192
+file equations_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 1: Position vs.
+ Time from a Cart Video
+\series default 
+ 
+\layout Standard
+
+(a) Let's start the measuring process by recording the key scaling factors
+ that will be used to calibrate the time and distance measurements.
+ How much time, t, has elapsed between frame 0 and frame 1, between frame
+ 1 and frame 2, etc.
+ What is the calibration factor (i.e.
+ how many real meters are represented by each centimeter in the diagram)?
+\layout Standard
+
+t =   
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+ s 
+\hfill 
+m/cm = 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+(b) Use a ruler to measure the cart's distance from the origin (i.e.
+ its position) in cm at each of the times (0.00 s, 0.20 s, etc.) and fill in
+ columns 1 and 2 in table the below.
+\layout Standard
+
+(c) Use the scaling factor between "diagram centimeters" and real meters
+ to calculate the position in meters of the cart.
+ Place the results in column 3.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center \LyXTable
+multicol5
+21 6 0 0 -1 -1 -1 -1
+1 0 0 0
+0 0 0 0
+0 0 0 0
+0 1 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 1 0 0
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 0 "" ""
+8 1 1 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+0 8 1 0 0 0 0 "" ""
+
+
+\newline 
+Distance from
+\newline 
+Elapsed 
+\newline 
+Actual distance
+\newline 
+Average
+\newline 
+Average
+\newline 
+
+\newline 
+origin in diagram
+\newline 
+time
+\newline 
+from origin
+\newline 
+velocity
+\newline 
+acceleration
+\newline 
+
+\newline 
+1
+\newline 
+2
+\newline 
+3
+\newline 
+4
+\newline 
+5
+\newline 
+Position
+\newline 
+x (cm)
+\newline 
+t (s)
+\newline 
+x (m)
+\newline 
+<v> (m/s)
+\newline 
+<a> (m/s/s)
+\newline 
+x
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+0.000
+\newline 
+
+\newline 
+-
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+0.100
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+0.200
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+0.300
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+0.400
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+0.500
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{3} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+0.600
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+0.700
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{4} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+0.800
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+0.900
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{5} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+1.000
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+1.100
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{6} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+1.200
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+1.300
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{7} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+1.400
+\newline 
+
+\newline 
+-
+\newline 
+
+\newline 
+
+\newline 
+-
+\newline 
+1.500
+\newline 
+-
+\newline 
+
+\newline 
+-
+\newline 
+x
+\begin_inset Formula \( _{8} \)
+\end_inset 
+
+
+\newline 
+
+\newline 
+1.600
+\newline 
+
+\newline 
+-
+\newline 
+-
+\layout Standard
+
+
+\series bold 
+How Do You Define Average Velocity Mathematically?
+\layout Standard
+
+By considering the work you did with the motion detector and with the measuremen
+ts you just performed in Activity 1, you should be able to define average
+ velocity along a line in words or even mathematically.
+ Remember that velocity is the rate of change of position divided by the
+ time interval over which the change occurred.
+ 
+\layout Standard
+
+Note: Mathematically, change is defined as the difference between the final
+ value of something minus the initial value of something.
+\layout Standard
+\align center 
+Change = (Final Value) - (Initial Value)
+\layout Standard
+
+
+\series bold 
+Activity 2: Defining Velocity in One Dimension
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Describe in words as accurately as possible what the word "velocity"
+ means by drawing on your experience with studying velocity graphs of motion.
+ Hint: How can you tell from the graph the direction an object moves? How
+ can you tell how fast it is moving?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Suppose that you have a long tape measure and a timer to keep track
+ of a cart or your partner who is moving irregularly along a line.
+ For the purposes of this analysis, assume that the object of interest is
+ a mere point mass.
+ Describe what you would need to measure and how you would use these measurement
+s to calculate velocity at a given moment in time.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Can you put this description in mathematical terms? Denote the average
+ velocity with the symbol < v >.
+ Suppose the distance from the origin (where the motion detector was when
+ it was being used) to your partner is x
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ at a time t
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ just before the moment of interest and that the distance changes to x
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+ at a later time t
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+ which is just after the moment of interest.
+ Write the equation you would use to calculate the average velocity, < v
+ > , as a function of x
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+, x
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+, t
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+, and t
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+.
+ What happens to the sign of < v > when x
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ is greater than x
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+?
+\layout Standard
+\added_space_bottom 20mm 
+(d) Use the mathematical definition in part (c) to calculate the average
+ velocity for each time interval of the cart motion described in Activity
+ 1 and fill in column 4 of the table in Activity 1.
+ Show at least one sample calculation in the space below.
+ Important note: t
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+ - t
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ represents a time interval, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t, between two measurements of position and is not necessarily the total
+ time that has elapsed since a clock started.
+\layout Standard
+
+
+\series bold 
+Defining Average Acceleration Mathematically
+\series default 
+ 
+\layout Standard
+
+By considering the work you did with the motion detector, you should be
+ able to define average acceleration in one dimension mathematically.
+ It is similar to the mathematical definition of average velocity which
+ you developed in Activity 2.
+ All of the circumstances in which accelerations are positive and negative
+ are described by the equation that defines them.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 3: Defining Average Acceleration 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Describe in words as accurately as possible what the word "acceleration"
+ means by drawing on your experience with studying velocity and acceleration
+ graphs of motion.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Suppose the cart's average velocity is <v
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+> at a time t
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+ and that the average velocity changes to <v
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+> at a later time t
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+.
+ Write an equation for the average acceleration in the space below.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(c) Use the mathematical definition in part (b) to calculate the average
+ acceleration of the cart motion depicted in Activity 1 and fill in column
+ 5 of the table in Activity 1 for each time interval (i.e.
+ 0.00 to 0.20 s, 0.20 s to 0.40 s, etc.).
+ Show at least one sample calculation in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(d) Suppose you are walking away from a motion detector.
+ How does the rate of your walking change if <v
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+> is greater than <v
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+>? Is your acceleration positive or negative? Use the mathematical equation
+ in part (b) to explain your answer.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(e) Suppose you are walking toward a motion detector.
+ How is your speed (i.e.
+ magnitude of velocity) changing for <v
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+> > <v
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+>? Is your acceleration positive or negative? Be very careful with your
+ mathematics on this one.
+ It's tricky!
+\layout Standard
+\added_space_bottom 20mm 
+(f) Is the sign of <a> always the same as the sign of the velocities? Why
+ or why not?
+\layout Standard
+
+
+\series bold 
+Instantaneous Velocity and the Slope of a Position vs.
+ Time Graph
+\series default 
+ 
+\layout Standard
+
+What happens if we want to know the velocity of an object at a single instant?
+ That is, we'd like to estimate the velocity of an object during a time
+ interval which is too small to measure directly.
+ Since velocity is a measure of the change in position over time, it is
+ possible to use techniques developed in calculus to estimate how a continuously
+ varying function of position vs.
+ time changes during a very short time interval.
+ Let's start by considering how we might determine the slope of a continuous
+ function and proceed from there.
+\layout Standard
+
+
+\series bold 
+Activity 4: Defining the Slope or Tangent
+\series default 
+ 
+\layout Standard
+
+(a) In the figure below, what is the equation for the average slope of the
+ curve at the highlighted point in terms of x
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+, x
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+, t
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+, and t
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 232 147
+file equations_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(b) How is the value of the slope related to the average velocity in the
+ time interval [t
+\begin_inset Formula \( _{1} \)
+\end_inset 
+
+, t
+\begin_inset Formula \( _{2} \)
+\end_inset 
+
+] ?
+\layout Standard
+\added_space_bottom 20mm 
+(c) Since the rate of change of position is increasing as time goes on (so
+ that the position "curve" is not linear), how can you calculate a more
+ accurate value of the slope? Hint: Feel free to use different x and t values
+ in your "calculation" to correspond to a different time interval.
+\layout Standard
+\added_space_bottom 20mm 
+(d) How would you find the "exact" value of the slope at the point in time
+ of interest?
+\layout Standard
+\added_space_bottom 20mm 
+(e) Look up the formal definition of a derivative in your calculus book
+ and list it below.
+ Usually it has to do with f(x) and how it changes with x.
+\layout Standard
+\added_space_bottom 20mm 
+(f) Notice that in our position vs.
+ time graph we are interested in how x changes with t.
+ Thus, we would use the notation x(t) to indicate that x is a function of
+ t.
+ By letting x play the role of f and t play the role of x, rewrite the definitio
+n of the derivative.
+\layout Standard
+\added_space_bottom 20mm 
+(g) How might the instantaneous value of velocity at the highlighted point
+ be related to the derivative of x with respect to t at that same point?
+\layout Standard
+\added_space_bottom 20mm 
+(h) Suppose that x(t) = t
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+ + 1, where x is in centimeters and t is in seconds.
+ What is the derivative of this function with respect to time? What is its
+ instantaneous velocity?
+\layout Standard
+\added_space_bottom 20mm 
+(i) What is the instantaneous velocity, v, in cm/s at t = 1 s? At t = 2
+ s?
+\layout Standard
+
+
+\series bold 
+Acceleration as the Slope of a Velocity Graph
+\series default 
+ 
+\layout Standard
+
+Just as velocity is the rate of change of position, acceleration is the
+ rate of change of velocity.
+ How do we find the acceleration of an object at a single instant (i.e.
+ during a time interval which is too small to measure directly).
+ Since acceleration is the rate of change of velocity, the acceleration
+ of an object is given by the slope of a smooth curve drawn through its
+ velocity vs.
+ time graph.
+\layout Standard
+
+Let's apply this graphical analysis approach to the task of finding the
+ instantaneous acceleration for the cart motion described in Activity 1.
+\layout Standard
+
+
+\series bold 
+Activity 5: Accelerations from the Cart Data 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Refer to the data that you analyzed and recorded in the table in Activity
+ 1.
+ Use Cricket Graph to fit the velocity (y axis) vs.
+ time (x axis) data with a line.
+ Label the resulting graph and put a copy in your notebook.
+ The slope of the line represents the acceleration of the cart.
+ Report its value in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(b) How does the value for acceleration which you determined from the slope
+ compare to those you determined earlier from the average accelerations
+ at the mid-point of each time interval between average velocity values.
+ In other words, how does the slope compare with the averages reported in
+ column 5 of the table in Activity 1? Find the average and standard deviation
+ of the elements in column 5 of the table and report them in the space below.
+ (You can use Cricket Graph for this.)
+\layout Standard
+
+(d) Does the acceleration determined by the slope lie within one standard
+ deviation of the average of the average accelerations? 
+\the_end

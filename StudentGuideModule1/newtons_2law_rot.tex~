@@ -1,0 +1,184 @@
+
+\section{Newton's Second Law for Rotation\footnote{
+1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE
+(U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified
+locally and may not have been classroom tested at Dickinson College.
+}}
+
+Name \rule{2.0in}{0.1pt}\hfill{}Section \rule{1.0in}{0.1pt}\hfill{}Date \rule{1.0in}{0.1pt}
+
+\textbf{Objectives} 
+
+To understand torque and its relation to angular acceleration and moment of
+inertia on the basis of both observations and theory. 
+
+\textbf{Apparatus}
+
+\begin{itemize}
+\item A Rotating Disk System 
+\item A hanging mass of 200 g (for applying torque) 
+\item String and pulley
+\item Meter stick and ruler
+\item Vernier caliper
+\item Small water bubble level
+\item A video analysis system (\textit{VideoPoint}).
+\end{itemize}
+\textbf{Overview} 
+
+We have used the definition of moment of inertia, $I$, to determine a theoretical equation for the moment of inertia of a uniform disk. This equation was given by
+\[
+I=\frac{1}{2}Mr^{2}.\]
+
+
+Does this equation adequately describe the moment of inertia of a rotating
+disk system? If so, then we should find that, if we apply a known torque, \( \tau  \), to the disk system, its resulting angular acceleration, \( \alpha  \), is actually related to the system's moment of inertia, $I$, by the equation
+\[
+\tau =I\alpha \quad \mbox{or}\quad \alpha =\tau /I\]
+
+
+The purpose of this experiment is to determine if, within the limits of experimental
+uncertainty, the measured angular acceleration of a rotating disk system is
+the same as its theoretical value. The theoretical value of angular acceleration can be calculated using theoretically determined values for the torque on the
+system and its moment of inertia.
+
+\textbf{Theoretical Calculations} 
+
+You'll need to take some basic measurements on the rotating disk system
+to determine theoretical values for $I$ and \( \tau  \). Values of moment of
+inertia calculated from the dimensions of a rotating object are theoretical
+because they purport to describe the resistance of an object to rotation. An
+experimental value is obtained by applying a known torque to the object and
+measuring the resultant angular acceleration.
+
+\newpage
+
+\textbf{Activity 1: Theoretical Calculations }
+
+(a) Calculate the theoretical value of the moment of inertia of the metal disk
+using basic measurements of its radius and mass. Ignore the small hole in the
+middle in your calculation (i.e. assume the disk is uniform). Be sure to state 
+units!
+\vspace{5mm}
+
+\( r_{d} =\) \hfill{}\( M_{d}= \) \hfill{}
+\vspace{5mm}
+
+\( I = \) 
+\vspace{5mm}
+
+(b) In preparation for calculating the torque on your system, summarize the
+measurements for the falling mass, $m$, and the radius of the spool that has the string wrapped around it in the space below. The diameter of the spool can be measured using the vernier caliper. Don't forget the units!
+\vspace{5mm}
+
+$m = $\hfill{}\(r_{s}= \)\hfill{} 
+\vspace{5mm}
+
+(c) Calculate the theoretical value for the torque on the rotating system as
+a function of the magnitude of the hanging mass and the radius, \( r_{s} \),
+of the spool, assuming the tension in the string is equal to the weight of the 
+falling mass (this introduces an error of less than 1/2 of 1 percent if 
+$m$ = 200 g). Remember that torque equals force (tension in the string) times 
+moment arm (radius of spool). Be sure to include units.
+\vspace{5mm}
+
+\( \tau _{th}= \)
+\vspace{5mm}
+
+(d) Based on the values of torque and moment of inertia that you just 
+calculated, what is the theoretical value of the angular acceleration of the 
+disk? (Refer to equations in \textbf{Overview}). Be sure to include units.
+\vspace{5mm}
+
+\( \alpha _{th}= \)
+\vspace{5mm}
+
+\textbf{Activity 2: Experimental Measurement of Angular Acceleration} 
+
+(a) Place the video camera about 1 m above the rotator, and center the rotator in the field of view of the camera by viewing the rotator with the \textit{VideoPoint Capture} software. Use the small level to ensure that the surface of the rotator is level. Place a ruler of known length in the field of view of the camera and parallel to one side of the frame.
+
+(b) Place the rotator so the string will pass smoothly over the pulley and put
+200 g of mass on the end of the string. Release the rotator and use the
+video camera to record the motion of the disk for at least two full turns. See
+\textbf{Appendix D: Video Analysis Using VideoPoint} or 
+\textbf{Appendix E: Video analysis Using Tracker} for details.
+
+(c) Determine the angular displacement of the rotator as a function of time. If using \textbf{VideoPoint}, follow the instructions in \textbf{Appendix D: Video Analysis} for recording, calibrating, and analyzing a movie data file. \textbf{Important:} Be careful to place the origin of your coordinate system on the axle of the rotator BEFORE recording data, so the angular displacement you measure will be the desired one (see \textbf{Changing the Origin} in \textbf{Appendix D}). Use a marker at or near the edge of the disk to record position for each frame. The resulting file should contain three columns with the values of time, x-position, and y-position for two complete revolutions.
+
+(d) What is the expression for the angular displacement of the disk (relative to the x axis) in terms of the x and y positions of the marker that you recorded above? (Note that these positions will be relative to an origin that you placed on the axle of the rotator in part (c).)
+\vspace{5mm}
+
+\( \theta  \)= 
+\vspace{5mm}
+
+(e) We want to graph the angular displacement of the disk as a function of time.
+To do this:
+
+\begin{enumerate}
+\item Export your data to an \textit{Excel} file and launch 
+\textit{Excel}.
+
+\item Calculate the angular displacement \( \theta  \) in radians for the first row
+in the spreadsheet. Record the result here.
+You will use this result later to check the calculations you make with 
+\textit{Excel}.
+
+
+$\theta =$
+
+\item Calculating the angular position for all the data as we just did
+would be horribly tedious. Instead, use an {\it Excel} formula to
+figure out the angular positions.  (See Appendix C for details.)
+You may find it helpful to know that there is an {\it Excel} function
+ATAN2 that takes the inverse tangent of the ratio of two numbers.
+For instance, if you put ``=ATAN2(C3,D3)'' into a cell, {\it Excel}
+will calculate the inverse tangent of the ratio of the number
+in cell D3 to the number in cell C3.  (Note that the ratio
+that is taken has the second argument on top: in this case, it's 
+D3/C3, not C3/D3.)
+
+\item Does the value of the first row agree with the calculation you made in part
+(2) above? If it does not check both calculations again. If that fails consult
+your instructor. 
+\item Graph the angular displacement (column 4) as a function of time (column 1).
+You will see discontinuous jumps in your data because the function you used
+in part (3) always calculates angles in the range \( -\pi  \) to \( +\pi  \).
+\textbf{You must add different increments of \( 2\pi  \), \(4 \pi  \), etc. to adjust
+the scale of the angular displacement.} If you don't do this step, you will not be able to do part (f) below.  You should create another
+column of data in your data table containing the angular positions with
+appropriate multiples of $2\pi$ added to them.
+\end{enumerate}
+(f) We now want to extract the angular acceleration from the data.
+
+\begin{enumerate}
+\item To describe the time dependence of the angular displacement what type of 
+function should we use to fit the data? (Refer to Activity 6 part (d) of the 
+previous experiment.) How are the coefficients of the polynomial related to 
+the angular acceleration?
+\vspace{30mm}
+
+
+\item Fit the data with a polynomial and write the resulting equation for the 
+time dependence of the angular position in the space below. Be sure to include 
+the proper units with the coefficients. Determine the experimental value for the
+angular acceleration from the fit and record it below. Also, print a copy of
+your plot with the fitted curve and the equation and include it with this unit.
+\vspace{50mm}
+
+\end{enumerate}
+
+
+\textbf{Activity 3: Comparing Theory with Experiment }
+
+(a) Summarize the theoretical and experimental values of angular acceleration. 
+Be sure to include the proper units.
+\vspace{10mm}
+
+\( \alpha _{th}= \)
+\vspace{10mm}
+
+\( \alpha _{exp}= \) 
+\vspace{15mm}
+
+(b) Do theory and experiment agree within the limits of experimental 
+uncertainty? Calculate the percent difference.
+

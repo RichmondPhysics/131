@@ -1,0 +1,762 @@
+#This file was created by <vineyard> Wed Jul 12 17:19:24 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Newton's Laws and Momentum Conservation
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Itemize
+
+To study the forces between objects that undergo collisions and other types
+ of interactions in a short time period.
+ 
+\layout Itemize
+
+To formulate the Law of Conservation of Momentum as a theoretical consequence
+ of Newton's laws and to test it experimentally.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A tennis ball.
+ 
+\layout Itemize
+
+A video analysis system (
+\shape italic 
+Adobe Premier
+\shape default 
+ and 
+\shape italic 
+VideoPoint
+\shape default 
+).
+ 
+\layout Itemize
+
+Graphing and curve fitting software (
+\shape italic 
+Cricket Graph
+\shape default 
+).
+ 
+\layout Itemize
+
+2 force probes 
+\layout Itemize
+
+2 dynamics carts 
+\layout Itemize
+
+A track, a pendulum bob, and a level.
+\layout Itemize
+
+
+\shape italic 
+Science Workshop 750 Interface
+\layout Itemize
+
+
+\shape italic 
+DataStudio
+\shape default 
+ software (Two Force Probes application)
+\layout Standard
+
+
+\series bold 
+Predicting Interaction Forces between Objects
+\series default 
+ 
+\layout Standard
+
+We recently focused our attention on the change in momentum that an object
+ undergoes when it experiences a force that is extended over time (even
+ if that time is very short!).
+ Since interactions like collisions and explosions never involve just one
+ object, we would like to turn our attention to the mutual forces of interaction
+ between two or more objects.
+ As usual, you will be asked to make some predictions about interaction
+ forces and then be given the opportunity to test these predictions.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 1: Predicting Interaction Forces
+\series default 
+ 
+\layout Standard
+
+(a) Suppose the masses of two objects are the same and that the objects
+ are moving toward each other at the same speed so that
+\begin_inset Formula 
+\[
+m_{1}=m_{2}\quad and\quad \overrightarrow{v_{1}}=-\overrightarrow{v_{2}}\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 310 76
+file newtons_laws_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Predict the relative magnitudes of the forces between object 1 and object
+ 2.
+ Place a check next to your prediction! 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 1 exerts more force on object 2.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ The objects exert the same force on each other.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 2 exerts more force on object 1.
+\layout Standard
+
+(b) Suppose the masses of two objects are the same and that object 1 is
+ moving toward object 2, but object 2 is at rest.
+\begin_inset Formula 
+\[
+m_{1}=m_{2}\quad and\quad \overrightarrow{v_{1}}>\overrightarrow{v_{2}}\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 292 75
+file newtons_laws_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Predict the relative magnitudes of the forces between object 1 and object
+ 2.
+ Place a check next to your prediction! 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 1 exerts more force on object 2.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ The objects exert the same force on each other.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 2 exerts more force on object 1.
+\layout Standard
+
+(c) Suppose the mass of object 1 is much less than that of object 2 and
+ that it is pushing object 2 that has a dead motor so that both objects
+ move in the same direction at speed v.
+\begin_inset Formula 
+\[
+m_{1}\ll m_{2}\quad and\quad \overrightarrow{v_{1}}=\overrightarrow{v_{2}}\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 348 123
+file newtons_laws_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Predict the relative magnitudes of the forces between object 1 and object
+ 2.
+ Place a check next to your prediction.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 1 exerts more force on object 2.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ The objects exert the same force on each other.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 2 exerts more force on object 1.
+\layout Standard
+
+(d) Suppose the mass of object 1 is greater than that of object 2 and that
+ the objects are moving toward each other at the same speed so that
+\begin_inset Formula 
+\[
+m_{1}>m_{2}\quad and\quad \overrightarrow{v_{1}}=-\overrightarrow{v_{2}}\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 363 91
+file newtons_laws_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Predict the relative magnitudes of the forces between object 1 and object
+ 2.
+ Place a check next to your prediction.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 1 exerts more force on object 2.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ The objects exert the same force on each other.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 2 exerts more force on object 1.
+\layout Standard
+
+(e) Suppose the mass of object 1 is greater than that of object 2 and that
+ object 2 is moving in the same direction as object 1 but not quite as fast
+ so that
+\begin_inset Formula 
+\[
+m_{1}>m_{2}\quad and\quad \overrightarrow{v_{1}}>\overrightarrow{v_{2}}\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 229 194
+file newtons_laws_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Predict the relative magnitudes of the forces between object 1 and object
+ 2.
+ Place a check next to your prediction.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 1 exerts more force on object 2.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ The objects exert the same force on each other.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 2 exerts more force on object 1.
+\layout Standard
+
+(f) Suppose the mass of object 1 is greater than that of object 2 and that
+ both objects are at rest until an explosion occurs, so that
+\begin_inset Formula 
+\[
+m_{1}>m_{2}\quad and\quad \overrightarrow{v_{1}}=\overrightarrow{v_{2}}=0\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 369 66
+file newtons_laws_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Predict the relative magnitudes of the forces between object 1 and object
+ 2.
+ Place a check next to your prediction.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 1 exerts more force on object 2.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ The objects exert the same force on each other.
+ 
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+rule{0.5in}{0.1pt}
+\latex default 
+ Object 2 exerts more force on object 1.
+\layout Standard
+\added_space_bottom 30mm 
+(g) Provide a summary of your predictions.
+ What are the circumstances under which you predict that one object will
+ exert more force on another object?
+\layout Standard
+
+
+\series bold 
+Measuring Mutual Forces of Interaction 
+\layout Standard
+
+In order to test the predictions you made in the last activity you can study
+ gentle collisions between two force probes attached to carts.
+ You can strap additional masses to one of the carts to increase its total
+ mass so it has significantly more mass than the other.
+ If a compression spring is available you can set up an "explosion" between
+ the two carts by compressing the spring between the force probes on each
+ cart and letting it go.
+ You can make and display the force measurements with the Two Force Probes
+ application.
+ You can also determine the areas under the force vs.
+ time graphs to find the impulses experienced by the carts during the collisions.
+ See 
+\series bold 
+Appendix B Introduction to DataStudio
+\series default 
+ for instructions on finding the area under a curve.
+\layout Standard
+
+
+\series bold 
+Activity 2: Measuring Slow Forces
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Play a gentle tug-of-war in which you push the ends of the two force
+ probes back and forth for about 10 seconds with your partner using properly
+ calibrated force probes.
+ What do you observe about the mutual forces?
+\layout Standard
+\added_space_bottom 20mm 
+(b) Play a gentle tug-of-war in which you pull the ends of two force probes
+ back and forth for about 10 seconds with your partner using properly calibrated
+ force probes.
+ What do you observe about the mutual forces?
+\layout Standard
+
+Now that you're warmed up to this two force measurement technique go ahead
+ and try some different types of gentle collisions between two carts of
+ different masses and initial velocities.
+\layout Standard
+
+
+\series bold 
+Activity 3: Measuring Collision Forces 
+\layout Standard
+\added_space_bottom 40mm 
+(a) Use the two carts to explore various situations that correspond to the
+ predictions you made about mutual forces.
+ Your goal is to find out under what circumstances one object exerts more
+ force on another object.
+ Describe what you did in the space below and attach a printout of at least
+ one of your graphs of force 1 vs.
+ time and force 2 vs.
+ time.
+\layout Standard
+\added_space_bottom 30mm 
+(b) What can you conclude about forces of interactions during collisions?
+ Under what circumstances does one object experience a different magnitude
+ of force than another during a collision? How do the magnitudes and directions
+ of the forces compare on a moment by moment basis in each case? 
+\layout Standard
+\added_space_bottom 20mm 
+(c) Do your conclusions have anything to do with Newton's third law?
+\layout Standard
+\added_space_bottom 30mm 
+(d) How does the vector impulse due to object 1 acting on object 2 compare
+ to the impulse of object 2 acting on object 1 in each case? Are they the
+ same in magnitude or different? Do they have the same sign or a different
+ sign? Remember 
+\begin_inset Formula \( \overrightarrow{I}=\int _{t_{i}}^{t_{f}}\overrightarrow{F}dt \)
+\end_inset 
+
+.
+\layout Standard
+
+
+\series bold 
+Newton's Laws and Momentum Conservation
+\series default 
+ 
+\layout Standard
+
+In your investigations of interaction forces, you should have found that
+ the forces between two objects are equal in magnitude and opposite in sign
+ on a moment by moment basis for all the interactions you studied.
+ This is of course a testimonial to the seemingly universal applicability
+ of Newton's third law to interactions between ordinary masses.
+ You can combine the findings of the impulse-momentum theorem (which is
+ really another form of Newton's second law since we derived it mathematically
+ from the second law) to derive the Law of Conservation of Momentum shown
+ below.
+\layout Standard
+\align center 
+
+\series bold 
+Law of Conservation of Momentum
+\series default 
+
+\begin_inset Formula 
+\[
+\Sigma \overrightarrow{p}=\overrightarrow{p_{1i}}+\overrightarrow{p_{2i}}=\overrightarrow{p_{1f}}+\overrightarrow{p_{2f}}=constant\: in\: time\]
+
+\end_inset 
+
+
+\layout Standard
+
+where 1 refers to object 1 and 2 refers to object 2 and i refers to the
+ initial momenta and f to the final momenta.
+\layout Standard
+
+
+\series bold 
+Activity 4: Deriving Momentum Conservation 
+\layout Standard
+\added_space_bottom 10mm 
+(a) What did you conclude in the last activity about the magnitude and sign
+ of the impulse on object 1 due to object 2 and vice versa when two objects
+ interact? In other words, how does 
+\begin_inset Formula \( \overrightarrow{I_{1}} \)
+\end_inset 
+
+ compare to 
+\begin_inset Formula \( \overrightarrow{I_{2}} \)
+\end_inset 
+
+? 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Since you have already verified experimentally that the impulse-momentum
+ theorem holds, what can you conclude about how the change in momentum of
+ object 1, 
+\begin_inset Formula \( \Delta \overrightarrow{p_{1}} \)
+\end_inset 
+
+, as a result of the interaction compares to the change in momentum of object
+ 2, 
+\begin_inset Formula \( \Delta \overrightarrow{p_{2}} \)
+\end_inset 
+
+, as a result of the interaction? Remember 
+\begin_inset Formula \( \overrightarrow{I}=\Delta \overrightarrow{p} \)
+\end_inset 
+
+.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Use the definition of momentum change to show that the Law of Conservation
+ of Momentum ought to hold for a collision, so that 
+\begin_inset Formula \( \Sigma \overrightarrow{p} \)
+\end_inset 
+
+ = 
+\begin_inset Formula \( \overrightarrow{p_{1i}} \)
+\end_inset 
+
+ + 
+\begin_inset Formula \( \overrightarrow{p_{2i}} \)
+\end_inset 
+
+ = 
+\begin_inset Formula \( \overrightarrow{p_{1f}} \)
+\end_inset 
+
+ + 
+\begin_inset Formula \( \overrightarrow{p_{2f}} \)
+\end_inset 
+
+ = constant in time.
+\layout Standard
+
+In the next few units you will continue to study one- and two-dimensional
+ collisions using momentum conservation.
+ Right now you will attempt to test the Law of Conservation of Momentum
+ for a simple situation by using video analysis.
+ To do this you will make and analyze a video movie in which two carts of
+ different masses undergo a one-dimensional elastic collision.
+ You may not be able to finish this in class, but you can complete the project
+ for homework.
+\layout Standard
+
+
+\series bold 
+Testing Momentum Conservation 
+\layout Standard
+
+You just used theoretical grounds to derive momentum conservation.
+ This idea still must be tested against experiment.
+ You will make this test by colliding two carts on a track and recording
+ and analyzing their motion before and after they hit.
+\layout Standard
+
+
+\series bold 
+Activity 5: Colliding Carts 
+\layout Standard
+
+(a) Make a movie of two carts colliding by following these steps.
+ 
+\layout Enumerate
+
+Turn the camera on and center the track in the field-of-view.
+ The camera should be about 1 m above the center of the track where one
+ cart (the target) will sit.
+ The target cart should be located straight down below the camera.
+ Use the pendulum bob to position the camera and cart.
+ Align the track so that it is parallel to the border of the movie image.
+ Make sure the track is flat by using the small level available at each
+ station.
+ Place a ruler somewhere in the field-of-view where it won't interfere with
+ the collision.
+ This ruler will be user later to determine the scale.
+ 
+\layout Enumerate
+
+Make a movie of one cart (the projectile) rolling into the other, stationary
+ cart (the target).
+ See 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for details on making the movie.
+ When you save the movie file give it the name Collision.
+\layout Standard
+
+(b) Determine the position of both carts (the target and the projectile)
+ during the motion.
+ To do this task follow the instructions in 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for recording and calibrating the video data.
+ Mark two objects on each frame; click once on the projectile cart and once
+ on the target cart.
+ The data table should contain five columns with the values of time, x and
+ y positions of the projectile cart, and x and y positions of the target
+ cart.
+ Note: Since this is a horizontal 1D collision the y-coordinates are of
+ no interest.
+ They should be constant for each frame.
+ If they are not, consult your instructor.
+\layout Standard
+
+(c) Create graphs of position versus time for both carts.
+ See 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+ for more details.
+ Print the graphs and attach them to your write-up.
+ 
+\layout Standard
+\added_space_bottom 40mm 
+(d) Use your data to calculate the momenta of carts 1 and 2 before the collision.
+\layout Standard
+\added_space_bottom 40mm 
+(e) Use the data to calculate the momenta of carts 1 and 2 after the collision.
+\layout Standard
+
+(f) Within the limits of experimental uncertainty, does momentum seem to
+ be conserved (i.e., is the total momentum of the two cart system the same
+ before and after the collision)?
+\the_end

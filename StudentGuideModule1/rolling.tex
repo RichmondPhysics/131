@@ -1,0 +1,130 @@
+
+\section{Rolling}
+
+Name \rule{2.0in}{0.1pt}\hfill{}Section \rule{1.0in}{0.1pt}\hfill{}Date \rule{1.0in}{0.1pt}
+
+\textbf{Objectives }
+
+To apply our understanding of rotation to the case of rolling without skidding
+and discover its fundamental properties. 
+
+\textbf{Apparatus}
+
+\begin{itemize}
+\item A spool for rolling. 
+\item A meter stick and a ruler 
+\item A video analysis system (\textit{VideoPoint}).
+\end{itemize}
+\textbf{Overview }
+
+We have extensively studied the linear motion of objects and we recently began
+the study of rotational motion. When something rolls it is combining both types
+of motion in one. In addition, the motion requires a unique application of forces
+and it has some surprising characteristics that are often poorly understood.
+In this unit we will investigate these unique features.
+
+\textbf{Activity 1: Rolling --- Guesses and Predictions }
+
+To begin our investigation consider the following questions. You might find
+it useful to test some of your answers by simply rolling the spool along the
+table and observing its motion.
+
+\begin{enumerate}
+\item In your own words, what is rolling?\vspace{20mm}
+
+\item How is the rotational motion related to the linear motion?\vspace{20mm}
+
+\item Make a sketch of the spool rolling and the forces acting on the spool. What
+is the effect, if any, of friction? How would the motion change if there was
+no friction in the system at all?\vspace{30mm}
+
+\end{enumerate}
+\textbf{Activity 2: Investigating Rolling} 
+
+(a) Make a movie of the spool rolling along your laboratory table by following
+these steps. 
+
+\begin{enumerate}
+\item Turn the camera on and point it along the long axis of your table. The camera
+should be around 1 m from where you will roll the spool along the surface of
+the table. Place a ruler somewhere in the field of view where it won't interfere
+with the motion and parallel to one edge of the field of view. This ruler will
+be user later to determine the scale. 
+\item Practice rolling the spool in front of the camera a few times to make sure the
+camera is pointing so there is no change in the vertical position of the center
+of the spool as it moves across the camera's field of view. Make a movie of
+the spool rolling at a constant speed along the table. See \textbf{Appendix
+D: Video Analysis} for details on making the movie.
+\end{enumerate}
+(b) Determine the position of a point on the rim of the spool and the center
+of the spool during the motion. To do this task follow the instructions in \textbf{Appendix
+D: Video Analysis} for creating and calibrating movie data. On each frame click
+first on the point on the rim and then on the center. Make sure the vertical
+position of the center did not change much during the movie. If it did, check
+the orientation of your camera and retake the movie. The file should contain
+five columns with the values of time, x and y positions of the point on the
+rim, and x and y positions of the center of the spool.
+
+(c) Create a plot of the horizontal position of the center of the spool versus
+time. See \textbf{Appendix C: Introduction to Excel} for more details.
+Fit your data and extract the speed of the center of the spool. Print your plot
+and attach it to your write-up. Measure the radius of the spool.
+\vspace{5mm}
+
+\( v_{\mbox{\small spool}} \) = \hfill{}\( r_{\mbox{\small spool}} \) = \hfill{}
+\vspace{5mm}
+
+(d) What is the general expression for the angular displacement of the point
+on the rim relative to the center of the spool in terms of the x and y positions
+that you recorded above? 
+\vspace{5mm}
+
+\( \theta _{\mbox{\small rim}}= \) 
+\vspace{5mm}
+
+(e) We want to graph the angular displacement of the point on the rim relative
+to the center as a function of time. To do this:
+
+\begin{enumerate}
+\item Calculate the angular displacement \( \theta _{\mbox{\small rim}} \) in radians for the first
+row in your data table. Record the result here.
+
+$\theta _{1}=$
+
+\item Calculating the angular displacement for all the data as we just did
+would be horribly tedious. Instead, use an {\it Excel} formula to
+figure out the angular displacements.  (See Appendix C for details.)
+You may find it helpful to know that there is an {\it Excel} function
+ATAN2 that takes the inverse tangent of the ratio of two numbers.
+For instance, if you put ``=ATAN2(C3,D3)'' into a cell, {\it Excel}
+will calculate the inverse tangent of the ratio of the number
+in cell D3 to the number in cell C3.  (Note that the ratio
+that is taken has the second argument on top: in this case, it's 
+D3/C3, not C3/D3.)
+
+
+\item Graph the angular displacement as a function of time.
+You will see discontinuous jumps in your data because the function you used
+in part (3) always calculates angles in the range \( -\pi  \) to \( \pi  \).
+You must add different increments of \( 2\pi  \), \( 4\pi  \), etc. to adjust
+the scale of the angular displacement. Do this, print your plot and attach it
+to your write-up. 
+\end{enumerate}
+(f) Fit your graph of the angular displacement versus time and extract the angular
+speed. Calculate the ratio of the speed of the center of the spool and the angular
+speed. What are the units of this ratio? Is it close in value to any property
+of the spool? Is it related to any property of the spool? Why?
+\vspace{5mm}
+
+\( \omega _{\mbox{\small rim}}= \)\hfill{} \( v_{\mbox{\small spool}}/
+\omega _{\mbox{\small rim}}= \)\hfill{}
+\vspace{10mm}
+
+(g) Make a plot of the vertical and horizontal components of the position of
+the point on the rim as a function of time. Attach a copy of your plot to the
+unit. What is the speed of the point on the rim when it is in contact with the
+table? Explain.
+\vspace{20mm}
+
+(h) How would you define rolling now? What is the role of friction?
+

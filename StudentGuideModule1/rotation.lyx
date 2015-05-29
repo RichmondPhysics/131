@@ -1,0 +1,649 @@
+#This file was created by <vineyard> Mon Jul 24 16:01:16 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Introduction to Rotation
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material may have been modified locally and may not have
+ been classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Standard
+
+To understand the definitions of angular velocity and angular acceleration
+ and the kinematic equations for rotational motion on the basis of observations.
+ We will discover the relationship between linear velocity and angular velocity
+ and between linear acceleration and angular acceleration.
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A rotator consisting of an axle, a metal disk, and a fixture to hold the
+ disk.
+ 
+\layout Itemize
+
+A stopwatch.
+ 
+\layout Itemize
+
+A meter stick, drawing compass, flexible ruler, a protractor, and some string.
+\layout Standard
+
+
+\series bold 
+Overview 
+\layout Standard
+
+Earlier in the course, we studied centripetal force and acceleration, which
+ characterize circular motion.
+ In general, however, we have focused on studying motion along a straight
+ line as well as the motion of projectiles.
+ We have defined several measurable quantities to help us describe linear
+ and parabolic motion, including position, velocity, acceleration, force,
+ and mass.
+ In the real world, many objects undergo circular motion and/or rotate while
+ they move.
+ The electron orbiting a proton in a hydrogen atom, an ice skater spinning,
+ and a hammer which tumbles about while its center-of-mass moves along a
+ parabolic path are just three of many rotating objects.
+ 
+\layout Standard
+
+Since many objects undergo rotational motion it is useful to be able to
+ describe their motions mathematically.
+ The study of rotational motion is also very useful in obtaining a deeper
+ understanding of the nature of linear and parabolic motion.
+\layout Standard
+
+We are going to try to define several new quantities and relationships to
+ help us describe the rotational motion of rigid objects, i.e., objects that
+ do not change shape.
+ These quantities will include angular velocity, angular acceleration, rotationa
+l inertia and torque.
+ We will then use these new concepts to develop an extension of Newton's
+ second law to describe rotational motion for masses more or less concentrated
+ at a single point in space (e.g., the electron in the hydrogen atom) and
+ for extended objects (like the tumbling hammer).
+\layout Standard
+
+
+\series bold 
+Rigid vs.
+ Non-rigid Objects
+\series default 
+ 
+\layout Standard
+
+We will begin our study of rotational motion with a consideration of some
+ characteristics of the rotation of rigid objects about a fixed axis of
+ rotation.
+ The motions of objects, such as clouds, that change size and shape as time
+ passes are hard to analyze mathematically.
+ In this unit we will focus primarily on the study of the rotation of particles
+ and rigid objects around an axis that is not moving.
+ A rigid object is defined as an object that can move along a line or can
+ rotate without the relative distances between its parts changing.
+ 
+\layout Standard
+
+Shown in the figure below are examples of a non-rigid object in the form
+ of a cloud that can change shape and of a rigid object in the form of an
+ empty coffee cup that does not change shape.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 239 84
+file rotation_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 0.3cm 
+A hammer tossed end over end and an empty coffee cup are examples of rigid
+ objects.
+ A ball of clay that deforms permanently in a collision and a cloud that
+ grows are examples of non-rigid objects.
+ 
+\layout Standard
+
+
+\series bold 
+A Puzzler
+\series default 
+ 
+\layout Standard
+
+Use your imagination to solve the rotational puzzler outlined below.
+ It's one that might stump someone who hasn't taken physics.
+\layout Standard
+
+
+\series bold 
+Activity 1: Horses of a Different Speed 
+\layout Standard
+
+You are on a white horse, riding off at sunset with your beau on a chestnut
+ mare riding at your side.
+ Your horse has a speed of 4.0 m/s and your beau's horse has a speed of 3.5
+ m/s, yet he/she constantly remains at your side.
+ Where are your horses? Make a sketch to explain your answer.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 104 90
+file rotation_fig3.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Review of the Geometry of Circles 
+\layout Standard
+
+Remember way back before you came to college when you studied equations
+ for the circumference and the area of a circle? Let's review those equations
+ now, since you'll need them a lot from here on in.
+\layout Standard
+
+
+\series bold 
+Activity 2: Circular Geometry
+\series default 
+ 
+\layout Standard
+
+(a) What is the equation for the circumference, C, of a circle of radius
+ r? What are its units?
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 53 55
+file rotation_fig4.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(b) What is the equation for the area, A, of a circle of radius r? What
+ are its units?
+\layout Standard
+\added_space_bottom 20mm 
+(c) If someone told you that the area of a circle was A = r, how could you
+ refute them immediately? What's wrong with the idea of area being proportional
+ to r?
+\layout Standard
+
+
+\series bold 
+Distance from an Axis of Rotation and Speed 
+\layout Standard
+
+Let's begin our study by examining the rotation of objects about a common
+ axis that is fixed.
+ What happens to the speeds of different parts of a rigid object that rotates
+ about a common axis? How does the speed of the object depend on its distance
+ from an axis? You should be able to answer this question by observing the
+ rotational speed of the rotator at each experimental station.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 248 140
+file rotation_fig5.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Place the disk in the fixture and slowly rotate it a constant speed.
+ The figure below shows the rotator and the definition of angular displacement.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 198 97
+file rotation_fig6.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 3: Spinning the Rotator Speed vs.
+ Radius
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Measure how long it takes the white marker to sweep through a known
+ angle.
+ Record the time and the angle in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Calculate the distance of the paths traced out by outer edge of the
+ white marker and the inner edge as it rotated through the angle you just
+ recorded.
+ (Note: What do you need to measure to perform this calculation?) Record
+ your data below.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Calculate the average speed of the outer edge of the white marker and
+ the average speed of the inner edge of the marker.
+ How do they compare?
+\layout Standard
+\added_space_bottom 20mm 
+(d) Do the speeds seem to be related in any way to the distances of inner
+ and outer edges of the white marker from the axis of rotation? If so, describe
+ the relationship mathematically.
+\layout Standard
+\added_space_bottom 10mm 
+(e) As you rotate, does the distance from the axis of rotation to the outer
+ edge of the white marker change?
+\layout Standard
+\added_space_bottom 10mm 
+(f) As you rotate, does the distance from the axis of rotation to the inner
+ edge of the white marker change?
+\layout Standard
+\added_space_bottom 10mm 
+(g) At any given time during your rotation, is the angle between the reference
+ axis and the inner edge of the white marker the same as the angle between
+ the axis and the outer edge of the white marker, or do the angles differ?
+\layout Standard
+\added_space_bottom 10mm 
+(h)At any given time during your rotation, is the rate of change of the
+ angle between the reference axis and the inner edge of the white marker
+ the same as the rate of change of the angle between the axis and the outer
+ edge, or do the rates differ?
+\layout Standard
+\added_space_bottom 20mm 
+(i) What happens to the linear velocity, 
+\series bold 
+v
+\series default 
+, of the outer edge of the marker as it rotates at a constant rate? Hint:
+ What happens to the magnitude of the velocity, i.e., its speed? What happens
+ to its direction?
+\layout Standard
+\added_space_bottom 20mm 
+(j) Is the outer edge of the white marker accelerating? Why or why not?
+\layout Standard
+
+
+\series bold 
+Radians, Radii, and Arc Lengths
+\series default 
+ 
+\layout Standard
+
+An understanding of the relationship between angles in radians, angles in
+ degrees, and arc lengths is critical in the study of rotational motion.
+ There are two common units used to measure angles degrees and radians.
+\layout Enumerate
+
+A degree is defined as 1/360th of a rotation in a complete circle.
+\layout Enumerate
+
+A radian is defined as the angle for which the arc along the circle is equal
+ to its radius as shown in the figure below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 195 106
+file rotation_fig7.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+In the next series of activities you will be relating angles, arc lengths,
+ and radii for a circle.
+\layout Standard
+
+
+\series bold 
+Activity 4: Relating Arcs, Radii, and Angles
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Let's warm up with a review of same very basic mathematics.
+ What should the constant of proportionality be between the circumference
+ of a circle and its radius? How do you know?
+\layout Standard
+\added_space_bottom 40mm 
+(b) Now, test your prediction.
+ You and your partners should draw four circles each with a different radius.
+ Measure the radius and circumference of each circle.
+ Enter your data into 
+\shape italic 
+CricketGraph
+\shape default 
+ and fit it.
+ Attach the plot to your laboratory write-up and record your results below.
+ 
+\layout Standard
+\added_space_bottom 30mm 
+(c) What is the slope of the line that you see (it should be straight)?
+ Is that what you expected? What is the % discrepancy between the slope
+ you obtained from your measurements and that which you predicted in part
+ (a)?
+\layout Standard
+\added_space_bottom 40mm 
+(d) Approximately how many degrees are in one radian? Let's do this experimental
+ly.
+ Using the compass draw a circle and measure its radius.
+ Then, use the flexible ruler to trace out a length of arc, s, that has
+ the same length as the radius.
+ Next measure the angle in degrees that is subtended by the arc.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Theoretically, how many degrees are in one radian? Please calculate
+ your result to three significant figures.
+ Using the equation for the circumference of a circle as a function of its
+ radius and the constant p=3.1415927...
+ figure out a general equation to find degrees from radians.
+ 
+\series bold 
+Hint:
+\series default 
+ How many times does a radius fit onto the circumference of a circle? How
+ many degrees fit in the circumference of a circle?
+\layout Standard
+\added_space_bottom 20mm 
+(e) If an object moves 30 degrees on the circumference of a circle of radius
+ 1.5 m, what is the length of its path?
+\layout Standard
+\added_space_bottom 20mm 
+(f) If an object moves 0.42 radians on the circumference of a circle of radius
+ 1.5 m, what is the length of its path?
+\layout Standard
+
+(g) Remembering the relationship between the speed of the outer edge of
+ the rotator and the distance, r, from the rotator's axis the outer edge,
+ what equations would you use to define the magnitude of the average "angular"
+ velocity, <
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+>? 
+\series bold 
+Hint:
+\series default 
+ In words, <
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+> is defined as the amount of angle swept out by the object per unit time.
+ Note that the answer is not simply 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+/t!
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align left 
+
+\begin_inset Figure size 142 109
+file rotation_fig8.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(h) How many radians are there in a full circle consisting of 360 degrees?
+\layout Standard
+\added_space_bottom 10mm 
+(i) When an object moves in a complete circle in a fixed amount of time,
+ what quantity (other than time) remains unchanged for circles of several
+ different radii? 
+\layout Standard
+
+
+\series bold 
+Relating Linear and Angular Quantities
+\series default 
+ 
+\layout Standard
+
+It's very useful to know the relationship between the variables s, v, and
+ a, which describe linear motion and the corresponding variables 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+, 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+, and 
+\begin_inset Formula \( \alpha  \)
+\end_inset 
+
+, which describe rotational motion.
+ You now know enough to define these relationships.
+\layout Standard
+
+
+\series bold 
+Activity 5: Linear and Angular Variables 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Using the definition of the radian, what is the general relationship
+ between a length of arc, s, on a circle and the variables r and 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ in radians.
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Assume that an object is moving in a circle of constant radius, r.
+ Take the derivative of s with respect to time to find the velocity of the
+ object.
+ By using the relationship you found in part (a) above, show that the magnitude
+ of the linear velocity, v, is related to the magnitude of the angular velocity,
+ 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+, by the equation v = 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+r.
+\layout Standard
+\added_space_bottom 20mm 
+(c) Assume that an object is accelerating in a circle of constant radius,
+ r.
+ Take the derivative of v with respect to time to find the acceleration
+ of the object.
+ By using the relationship you found in part (b) above, show that the linear
+ acceleration, a
+\begin_inset Formula \( _{t} \)
+\end_inset 
+
+, tangent to the circle is related to the angular acceleration, 
+\begin_inset Formula \( \alpha  \)
+\end_inset 
+
+, by the equation a
+\begin_inset Formula \( _{t} \)
+\end_inset 
+
+ = 
+\begin_inset Formula \( \alpha  \)
+\end_inset 
+
+r.
+\layout Standard
+
+
+\series bold 
+The Rotational Kinematic Equations for Constant 
+\begin_inset Formula \( \alpha  \)
+\end_inset 
+
+ 
+\layout Standard
+
+The set of definitions of angular variables are the basis of the physicist's
+ description of rotational motion.
+ We can use them to derive a set of kinematic equations for rotational motion
+ with constant angular acceleration that are similar to the equations for
+ linear motion.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 6: The Rotational Kinematic Equations 
+\layout Standard
+
+The figure below shows a massless string is wound around a spool of radius
+ r.
+ The mass falls with a constant acceleration, a.
+ Refer to this figure and answer the following questions.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 246 151
+file rotation_fig9.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 10mm 
+(a) What is the equation for 
+\begin_inset Formula \( \theta  \)
+\end_inset 
+
+ in terms of y and r?
+\layout Standard
+\added_space_bottom 10mm 
+(b) What is the equation for 
+\begin_inset Formula \( \omega  \)
+\end_inset 
+
+ in terms of v and r?
+\layout Standard
+\added_space_bottom 10mm 
+(c) What is the equation for 
+\begin_inset Formula \( \alpha  \)
+\end_inset 
+
+ in terms of a and r?
+\layout Standard
+
+(d) Consider the falling mass in the figure above.
+ Suppose you are standing on your head so that the positive y-axis is pointing
+ down.
+ Using the relationships between the linear and angular variables in parts
+ (a), (b), and (c), derive the rotational kinematic equations for constant
+ accelerations for each to the linear kinematic equations listed below.
+ 
+\series bold 
+Warning:
+\series default 
+ Don't just write the analogous equations! Show the substitutions needed
+ to derive the equations on the right from those on the left.
+\layout Enumerate
+\added_space_bottom 20mm 
+
+\begin_inset Formula \( v=v_{0}+at\qquad \qquad \qquad \omega = \)
+\end_inset 
+
+
+\layout Enumerate
+\added_space_bottom 20mm 
+
+\begin_inset Formula \( y=y_{0}+v_{0}t+\frac{1}{2}at^{2}\qquad \qquad \theta = \)
+\end_inset 
+
+
+\layout Enumerate
+
+
+\begin_inset Formula \( v^{2}=v_{0}^{2}+2ay\qquad \qquad \qquad \omega ^{2}= \)
+\end_inset 
+
+
+\the_end

@@ -1,0 +1,250 @@
+#This file was created by <vineyard> Mon Jul 24 15:38:55 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+The Ski Jump
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Objectives:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Introduce projectile motion 
+\backslash 
+item Discover the angular dependence for trajectories
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent {
+\backslash 
+small {
+\backslash 
+bf Note:} The ski jump works by releasing the metal ball to roll down the
+ channel and recording where it lands.
+ For the purposes of laboratory exercise, the ball should be released from
+ the same vertical height for all trials; use the horizontal support attached
+ to the tall rod as a convenient reference point.
+ The launch point is connected to a horizonal support attached to a short
+ rod.
+ This horizonal support rotates when you move the base of the tall rod nearer
+ to or farther from the shorter rod.
+ This rotation determines the angle at which the jump originates.
+ The launching angle may be determined with a ruler and protractor by holding
+ the ruler against the track in parallel with the launch point and then
+ measuring the angle above the horizontal with the protractor (see figure
+ below).}
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 178 146
+file ski_jump_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Apparatus:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item jump chute 
+\backslash 
+item metal ball 
+\backslash 
+item protractor and ruler 
+\backslash 
+item two wooden boards 
+\backslash 
+item sheets of white and carbon paper
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity:} 
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item
+\protected_separator 
+ Set up the jump and landing surface so that the launch point and landing
+ surface are at the same height.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item
+\protected_separator 
+ With the benefit of several trial runs at different angles, decide where
+ you should tape a piece of white paper down so all jumps will land on the
+ paper.
+ Cover the paper with a piece of carbon paper, ink side down.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item
+\protected_separator 
+ Attempt several jumps each at a number of different angles, say 20, 30,
+ 37, 45, 53, 60, and 70 degrees.
+ Circle the impact points for a given angle and label them before proceeding
+ to the next angle.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item
+\protected_separator 
+ Note the relative ranges of the ball's flight as a function of the launching
+ angle: 
+\backslash 
+vskip35pt
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+pagebreak
+\layout Standard
+
+
+\series bold 
+Questions:
+\layout Enumerate
+\added_space_bottom 20mm 
+Is the range always the same, or does it depend on the angle? Describe the
+ dependence, if any.
+ 
+\layout Enumerate
+\added_space_bottom 10mm 
+At which angle is the range a maximum?
+\layout Enumerate
+\added_space_bottom 20mm 
+How are the ranges and angles related on either side of the maximum?
+\layout Enumerate
+
+How do you think this angular dependence would change for landing surfaces
+ at different heights? Test your predictions.
+\the_end

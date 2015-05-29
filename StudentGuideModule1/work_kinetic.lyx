@@ -1,0 +1,552 @@
+#This file was created by <vineyard> Mon Jul 10 10:04:58 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Work and Kinetic Energy
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To discover Hooke's law.
+ 
+\layout Itemize
+
+To understand the concept of kinetic energy and its relationship to work
+ as embodied in the work-energy theorem.
+ 
+\layout Itemize
+
+To develop an understanding of the physical significance of mathematical
+ integration.
+\layout Standard
+
+
+\series bold 
+The Force Exerted on a Mass by an Extended Spring
+\series default 
+ 
+\layout Standard
+
+So far we have pushed and pulled on an object with a constant force and
+ calculated the work needed to displace that object.
+ In most real situations the force on an object can change as it moves.
+ 
+\layout Standard
+
+What happens to the average force needed to stretch a spring from 0 to 1
+ cm compared to the average force needed to extend the same spring from
+ 10 to 11 cm? How does the applied force on a spring affect the amount by
+ which it stretches, i.e.
+ its displacement.
+\layout Standard
+
+
+\series bold 
+Apparatus 
+\layout Itemize
+
+A large spring 
+\layout Itemize
+
+A support rod to hang the spring 
+\layout Itemize
+
+A 2-meter stick 
+\layout Itemize
+
+A variety of masses
+\layout Standard
+
+
+\series bold 
+Activity 1: Are Spring Forces Constant?
+\series default 
+ 
+\layout Standard
+\added_space_bottom 10mm 
+Hang the spring from a support rod with the large diameter coils in the
+ downward position.
+ Extend the spring from 0 to 1 cm.
+ Feel the force needed to extend the spring.
+ Extend the spring from 10 to 11 cm.
+ Feel the force needed to extend the spring again.
+ How do the two forces compare? Are they the same? 
+\layout Standard
+
+
+\series bold 
+The Force and Work Needed to Stretch a Spring
+\series default 
+ 
+\layout Standard
+
+Now we would like to be able to quantify the force and work needed to extend
+ a spring as a function of its displacement from an equilibrium position
+ (i.e.
+ when it is "unstretched" ).
+\layout Standard
+
+
+\series bold 
+Activity 2: Force vs.
+ Displacement for a Spring 
+\layout Standard
+\added_space_bottom 60mm 
+(a) Measure the distance from the floor to the lower end of the spring and
+ record this distance as s
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ below.
+ Create a data table in the space below with the column headings m (kg),
+ s (m), F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+ (N), x (m), 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x (m), <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+> (N), 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+W (J), and W
+\begin_inset Formula \( _{total} \)
+\end_inset 
+
+ (J).
+ Hang different masses in 0.100 kg increments up to 1.000 kg and measure the
+ distance from the floor to the lower end of the spring, s, for each mass.
+ Record the values of m and s in the data table.
+ Calculate and record the external force, F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+, and the stretch of the spring, x (= s
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ - s), for each mass.
+\layout Standard
+\added_space_bottom 10mm 
+(b) Create a graph of F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+ (vertical axis) vs.
+ x.
+ Is the graph linear? If the force, F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+, increases with the displacement in a proportional way, fit the data to
+ find the slope of the line.
+ Insert a copy of the graph into your notebook.
+ Use the symbol k to represent the slope of the line.
+ What is the value of k? What are its units? Note: k is known as the spring
+ constant.
+\layout Standard
+\added_space_bottom 10mm 
+(c) Write the equation describing the relationship between the external
+ force, F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+, and the total displacement, x, of the spring from its equilibrium using
+ the symbols F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+, k, and x.
+\layout Standard
+
+Note: Any restoring force on an object which is proportional to its displacement
+ is known as a Hooke's Law Force.
+ There was an erratic, contentious genius named Robert Hooke who was born
+ in 1635.
+ He played with springs and argued with Newton.
+\layout Standard
+
+
+\series bold 
+Calculating Work when the Force is not Constant 
+\layout Standard
+
+We would like to expand the definition of work so it can be used to calculate
+ the work associated with stretching a spring and the work associated with
+ other forces that are not constant.
+ A helpful approach is to plot the average force needed to move an object
+ for each successive displacement 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x as a bar graph like that shown in the figure below.
+ The figure shows a graph representing the average applied force causing
+ each unit of displacement of an object.
+ This graph represents force that is not constant but not the force vs.
+ displacement of a typical spring.
+\layout Standard
+
+Note: The bar graph below is intended to illustrate mathematical concepts.
+ Any similarity between the values of the forces in the bar graph and any
+ real set of forces is purely coincidental.
+ In general, the force causing work to be done on an object is not constant.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 335 214
+file work_kinetic_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Activity 3: Force vs.
+ Distance in a Bar Graph 
+\layout Standard
+
+(a) Calculate the width of each displacement, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x, and the average external force, <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+>, for each displacement and record the values in the table above.
+ Plot <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+> vs.
+ x as a bar graph on the grid below.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 248 226
+file work_kinetic_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+How can we calculate the work done in stretching the spring? We can use
+ several equivalent techniques: (1) adding up little pieces of <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+> 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x, (2) finding the area under the "curve" you created, or (3) using mathematical
+ integration.
+\layout Standard
+
+All three methods should yield about the same result.
+ If you have not yet encountered integrals in a calculus course, you can
+ compare the results of using the first two methods.
+ If you have studied integrals in calculus you may want to consult your
+ instructor or the textbook about how to set up the appropriate definite
+ integral to calculate the work needed to stretch the spring.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 4: Calculation of Work 
+\layout Standard
+\added_space_bottom 5mm 
+(a) Calculate the work needed to stretch the spring by adding up small increment
+s of <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+> 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x in your table.
+ Also record the running sum in the table and summarize the result below.
+ Don't forget to specify units.
+\layout Standard
+\added_space_bottom 5mm 
+W
+\begin_inset Formula \( _{total} \)
+\end_inset 
+
+ = 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Calculate the work needed to stretch the spring by computing the area
+ under the curve in the graph of <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+> vs.
+ x that you just created.
+\layout Standard
+\added_space_bottom 20mm 
+(c) How does adding up the little rectangles in part (a) compare to finding
+ the area under the curve in part (b)? 
+\layout Standard
+
+Note that in the limit where the x values are very small the sum of <F
+\begin_inset Formula \( _{ext} \)
+\end_inset 
+
+> 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+x, known by mathematicians as the Riemann sum, converges to the mathematical
+ integral and to the area under the curve.
+\layout Standard
+
+
+\series bold 
+Defining Kinetic Energy and Its Relationship to Work
+\series default 
+ 
+\layout Standard
+
+What happens when you apply an external force to an object that is free
+ to move and has no friction forces on it? Obviously it should experience
+ an acceleration and end up being in a different state of motion.
+ Can we relate the change in motion of the object to the amount of work
+ that is done on it?
+\layout Standard
+
+Let's consider a fairly simple situation.
+ Suppose an object is lifted through a distance s near the surface of the
+ earth and then allowed to fall.
+ During the time it is falling it will experience a constant force as a
+ result of the attraction between the object and the earth glibly called
+ the force of gravity.
+ You can use the theory we have already developed for the gravitational
+ force to compare the velocity of the object to the work done on it by the
+ gravitational field as it falls through a distance y.
+ This should lead naturally to the definition of a new quantity called kinetic
+ energy, which is a measure of the amount of "motion" gained as a result
+ of the work done on the mass.
+ 
+\layout Standard
+
+
+\series bold 
+Activity 5: Equations for Falling v vs.
+ y 
+\layout Standard
+\added_space_bottom 10mm 
+(a) An object of mass m is dropped near the surface of the earth.
+ What is the magnitude and direction of its acceleration g?
+\layout Standard
+\added_space_bottom 10mm 
+(b) If the object has no initial velocity and is allowed to fall for a time
+ t under the influence of the gravitational force, what kinematic equation
+ describes the relationship between the distance the object falls, y, and
+ its time of fall, t? Assume y
+\begin_inset Formula \( _{0} \)
+\end_inset 
+
+ = 0.
+\layout Standard
+\added_space_bottom 10mm 
+(c) Do you expect the magnitude of the velocity to increase, decrease or
+ remain the same as the distance increases? Note: This is an obvious question!!
+\layout Standard
+\added_space_bottom 20mm 
+(d) Differentiate the equation you wrote down in part (b) to find a relationship
+ between v, the acceleration g, and time t.
+\layout Standard
+\added_space_bottom 20mm 
+(e) Eliminate t from the equations you obtained in parts (b) and (d) to
+ get an expression that describes how the velocity, v, of the falling object
+ depends on the distance, y, through which it has fallen.
+ 
+\layout Standard
+
+You can use the kinematic equations to derive the functional relationship
+ you hopefully discovered experimentally in the last activity.
+ If we define the kinetic energy (K) of a moving object as the quantity
+ K = (1/2)mv
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+, then we can relate the change in kinetic energy as an object falls to
+ the work done on it.
+ Note that for an object initially at rest the initial kinetic energy is
+ K
+\begin_inset Formula \( _{i} \)
+\end_inset 
+
+ = 0, so the change in kinetic energy is given by the difference between
+ the initial and final kinetic energies.
+ 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+K = K
+\begin_inset Formula \( _{f} \)
+\end_inset 
+
+ - K
+\begin_inset Formula \( _{i} \)
+\end_inset 
+
+ = (1/2)mv
+\begin_inset Formula \( ^{2} \)
+\end_inset 
+
+.
+\layout Standard
+
+
+\series bold 
+Activity 6: Computing Work and Kinetic Energy of a Falling Mass
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Suppose the mass of your falling object is 0.35 kg.
+ What is the value of the work done by the gravitational force when the
+ mass is dropped through a distance of y = 1.2 m? 
+\layout Standard
+\added_space_bottom 20mm 
+(b) Use the kinematic equation you derived in Activity 5(e) that relates
+ v and y to find the velocity of the falling object after it has fallen
+ 1.2 m.
+\layout Standard
+\added_space_bottom 20mm 
+(c) What is the kinetic energy of the object before it is dropped? After
+ it has fallen 1.2 m? What is the change in kinetic energy, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+K, as a result of the fall?
+\layout Standard
+\added_space_bottom 20mm 
+(d) How does the work done by the gravitational force compare to the kinetic
+ energy change, 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+K, of the object?
+\layout Standard
+
+
+\series bold 
+Activity 7: The Mathematical Relationship between Work and Kinetic Energy
+ Change During a Fall 
+\layout Standard
+\added_space_bottom 10mm 
+(a) Since our simplified case involves a constant acceleration, write down
+ the equation you derived in Activity 5(e) to describe the speed, v, of
+ a falling object as a function of the distance y which it fell.
+\layout Standard
+\added_space_bottom 10mm 
+(b) Using the definition of work, show that W = mgy when the object is dropped
+ through a distance y.
+\layout Standard
+\added_space_bottom 20mm 
+(c) By combining the equations in parts (a) and (b) above, show that in
+ theory the work done on a mass falling under the influence of the gravitational
+ attraction exerted on it by the earth is given by the equation W = 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+K.
+\layout Standard
+
+You have just proven an example of the work-energy theorem which states
+ that the change in kinetic energy of an object is equal to the net work
+ done on it for all the forces acting on it.
+\begin_inset Formula 
+\[
+W=\Delta K\qquad [Work-Energy\: Theorem]\]
+
+\end_inset 
+
+
+\layout Standard
+
+Although you have only shown the work-energy theorem for a special cases
+ where no friction is present, it can be applied to any situation in which
+ the net force can be calculated.
+ For example, the net force on an object might be calculated as a combination
+ of applied, spring, gravitational, and friction forces.
+\the_end

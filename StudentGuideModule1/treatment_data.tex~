@@ -1,0 +1,98 @@
+\appendix
+
+
+\section{Treatment of Experimental Data}
+
+\textbf{Recording Data }
+
+When performing an experiment, record all required original observations as
+soon as they are made. By ``original observations'' is meant
+what you actually see, not quantities found by calculation. For example, suppose
+you want to know the stretch of a coiled spring as caused by an added weight.
+You must read a scale both before and after the weight is added and then subtract
+one reading from the other to get the desired result. The proper scientific
+procedure is to record both readings as seen. Errors in calculations can be
+checked only if the original readings are on record.
+
+All data should be recorded with units. If several measurements are made of
+the same physical quantity, the data should be recorded in a table with the
+units reported in the column heading.
+
+\textbf{Significant Figures} 
+
+A laboratory worker must learn to determine how many figures in any measurement
+or calculation are reliable, or ``significant'' (that is, have
+physical meaning), and should avoid making long calculations using figures which
+he/she could not possibly claim to know. \textit{All sure figures plus one estimated
+figure are considered significant.}
+
+The measured diameter of a circle, for example, might be recorded to four significant
+figures, the fourth figure being in doubt, since it is an estimated fraction
+of the smallest division on the measuring apparatus. How this doubtful fourth
+figure affects the accuracy of the computed area can be seen from the following
+example.
+
+Assume for example that the diameter of the circle has been measured as .5264
+cm, with the last digit being in doubt as indicated by the line under it. When
+this number is squared the result will contain eight digits, of which the last
+five are doubtful. Only one of the five doubtful digits should be retained,
+yielding a four-digit number as the final result.
+
+In the sample calculation shown below, each doubtful figure has a short line
+under it. Of course, each figure obtained from the use of a doubtful figure
+will itself be doubtful. The result of this calculation should be recorded as
+0.2771 cm\( ^{2} \), including the doubtful fourth figure. (The zero to the
+left of the decimal point is often used to emphasize that no significant figures
+precede the decimal point. This zero is not itself a significant figure.)
+
+{\par\centering (.526\underbar{4} cm)\( ^{2} \) = .277\underbar{09696} cm\( ^{2} \)
+= 0.277\underbar{1} cm\( ^{2} \)\par}
+
+\textit{In multiplication and division, the rule is that a calculated result
+should contain the same number of significant figures as the least that were
+used in the calculation.}
+
+\textit{In addition and subtraction, do not carry a result beyond the first
+column that contains a doubtful figure.}
+
+\textbf{Statistical Analysis} 
+
+Any measurement is an intelligent estimation of the true value of the quantity
+being measured. To arrive at a ``best value'' we usually make
+several measurements of the same quantity and then analyze these measurements
+statistically. The results of such an analysis can be represented in several
+ways. Those in which we are most interested in this course are the following:
+
+\underbar{Mean} - The mean is the sum of a number of measurements of a quantity
+divided by the number of such measurements.
+(In other words, the mean is is the same thing as what people
+generally call the ``average.'')
+It generally represents the best estimate
+of true value of the measured quantity. 
+
+\underbar{Standard Deviation} - The standard deviation (\( \sigma  \)) is a
+measure of the range on either side of the mean within which approximately two-thirds
+of the measured values fall. For example, if the mean is 9.75 m/s\( ^{2} \)
+and the standard deviation is 0.10 m/s\( ^{2} \), then approximately two-thirds
+of the measured values lie within the range 9.65 m/s\( ^{2} \) to 9.85 m/s\( ^{2} \).
+A customary way of expressing an experimentally determined value is: Mean\( \pm  \)\( \sigma  \),
+or (9.75\( \pm  \) 0.10) m/s\( ^{2} \). Thus, the standard deviation is an
+indicator of the spread in the individual measurements, and a small \( \sigma  \)
+implies high precision. Also, it means that the probability of any future measurement
+falling in this range is approximately two to one. The equation for calculating
+the standard deviation is
+\[
+\sigma =\sqrt{\frac{\sum \left( x_{i}-\left\langle x\right\rangle \right) ^{2}}{N-1}}\]
+ where \( x_{i} \) are the individual measurements, \( \left\langle x\right\rangle  \)
+is the mean, and $N$ is the total number of measurements.
+
+\underbar{\% Difference} - Often one wishes to compare the value of a quantity
+determined in the laboratory with the best known or ``accepted value''
+of the quantity obtained through repeated determinations by a number of investigators.
+\textit{The \% difference is calculated by subtracting the accepted value from
+your value, dividing by the accepted value, and multiplying by 100.} If your
+value is greater than the accepted value, the \% difference will be positive.
+If your value is less than the accepted value, the \% difference will be negative.
+The \% difference between two values in a case where neither is an accepted
+value can be calculated by choosing either one as the accepted value.
+

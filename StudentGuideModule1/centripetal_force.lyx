@@ -1,0 +1,497 @@
+#This file was created by <vineyard> Fri Jul  7 16:17:13 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Centripetal Force
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objective
+\series default 
+ 
+\layout Standard
+
+To explore the phenomenon of uniform circular motion and the accelerations
+ and forces needed to maintain it.
+\layout Standard
+
+
+\series bold 
+Overview
+\series default 
+ 
+\layout Standard
+
+In a previous unit you began the study of the application of Newton's laws
+ to projectile motion.
+ In this unit we are going to consider the application of Newton's laws
+ to another phenomenon in two dimensions.
+ Since Newton's laws can be used to predict types of motion or the conditions
+ for no motion, their applications are useful in many endeavors including
+ human body motion, astrophysics, and engineering.
+\layout Standard
+
+You will explore uniform circular motion, in which an object moves at a
+ constant speed in a circle.
+ In particular, you will develop a mathematical description of centripetal
+ acceleration and the force needed to keep an object moving in a circle.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 132 134
+file centripetal_fig1.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+An airplane.
+ 
+\layout Itemize
+
+A video analysis system (Adobe Premier and VideoPoint).
+ 
+\layout Itemize
+
+A spring scale.
+ Graphing software (CricketGraph).
+ 
+\layout Standard
+
+
+\series bold 
+Moving in a Circle at a Constant Speed 
+\layout Standard
+
+When a race car speeds around a circular track, or when David twirled a
+ stone at the end of a rope to clobber Goliath, or when a planet like Venus
+ orbits the sun, they undergo uniform circular motion.
+ Understanding the forces which govern orbital motion has been vital to
+ astronomers in their quest to understand the laws of gravitation.
+ 
+\layout Standard
+
+But we are getting ahead of ourselves, for as we have done in the case of
+ linear and projectile motion we will begin our study by considering situations
+ involving external applied forces that lead to circular motion in the absence
+ of friction.
+ We will then use our belief in Newton's laws to see how the circular motions
+ of the planets can be used to help astronomers discover the laws of gravitation.
+\layout Standard
+\added_space_top 0.3cm \added_space_bottom 0.3cm \align center 
+
+\begin_inset Figure size 347 52
+file centripetal_fig2.eps
+flags 9
+
+\end_inset 
+
+
+\layout Standard
+
+Let's begin our study with some very simple considerations.
+ Suppose an astronaut goes into outer space, ties a ball to the end of a
+ rope, and spins the ball so that it moves at a constant speed.
+\layout Standard
+
+
+\series bold 
+Activity 1: Uniform Circular Motion 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Consider the figure above.
+ What is the speed of a ball that moves in a circle of radius r = 2.5 m if
+ it takes 0.50 s to complete one revolution?
+\layout Standard
+\added_space_bottom 20mm 
+(b) The speed of the ball is constant! Would you say that this is accelerated
+ motion?
+\layout Standard
+\added_space_bottom 20mm 
+(c) What is the definition of acceleration? (Remember that acceleration
+ is a vector!)
+\layout Standard
+\added_space_bottom 20mm 
+(d) Are velocity and speed the same thing? Is the velocity of the ball constant?
+ (Hint: Velocity is a vector quantity!)
+\layout Standard
+\added_space_bottom 20mm 
+(e) In light of your answers to (c) and (d), would you like to change your
+ answer to part (b)? Explain.
+\layout Standard
+
+
+\series bold 
+Using Vectors to Diagram How Velocity Changes
+\series default 
+ 
+\layout Standard
+
+By now you should have concluded that since the direction of the motion
+ of an object undergoing uniform circular motion is constantly changing,
+ its velocity is also changing and thus it is accelerating.
+ We would like you to figure out how to calculate the direction of the accelerat
+ion and its magnitude as a function of the speed v of an object such as
+ a ball as it revolves and as a function of the radius of the circle in
+ which it revolves.
+ In order to use vectors to find the direction of velocity change in circular
+ motion, let's review some rules for adding velocity vectors.
+\layout Standard
+
+Figure 3: 1.
+ To Draw Velocities: Draw an arrow representing the velocity, v1, of the
+ object at time t1.
+ Draw another arrow representing the velocity, v2, of the object at time
+ t2.
+ 2.
+ To Draw Velocity Change: Find the change in the velocity Dv = v2 - v1 during
+ the time interval t = t2 t1.
+ Start by using the rules of vector sums to rearrange the terms so that
+ v1 + Dv = v2.
+ Next place the tails of the two velocity vectors together halfway between
+ the original and final location of the object.
+ The change in velocity is the vector that points from the head of the first
+ velocity vector to the head of the second velocity vector.
+ 3.
+ To Draw Acceleration: The acceleration equals the velocity change Dv divided
+ by the time interval t needed for the change.
+ Thus, a is in the same direction as v but is a different length unless
+ ( t = 1).
+ Thus, even if you do not know the time interval, you can still determine
+ the direction of the acceleration because it points in the same direction
+ as v.
+ 
+\layout Standard
+
+The acceleration associated with uniform circular motion is known as centripetal
+ acceleration.
+ You will use the vector diagram technique to find its direction.
+\layout Standard
+
+Activity 2: The Direction of Centripetal Acceleration (a) Determine the
+ direction of motion of the ball shown below if it is moving counter-clockwise
+ at a constant speed.
+ Note that the direction of the ball's velocity is always tangential to
+ the circle as it moves around.
+ Draw an arrow representing the direction and magnitude of the ball's velocity
+ as it passes the dot just before it reaches point A.
+ Label this vector v1.
+\layout Standard
+
+(b) Next, use the same diagram to draw the arrow representing the velocity
+ of the ball when it is at the dot just after it passes point A.
+ Label this vector v2.
+\layout Standard
+
+(c) Find the direction and magnitude of the change in velocity as follows.
+ In the space below, make an exact copy of both vectors, placing the tails
+ of the two vectors together.
+ (See Figure 2, diagram 2.) Next, draw the vector that must be added to vector
+ v1 to add up to vector v2 ; label this vector Dv.
+ Be sure that vectors v1 and v2 have the same magnitude and direction in
+ this drawing that they had in your drawing in part (a)! (Again, see Figure
+ 2.)
+\layout Standard
+
+(d) Now, draw an exact copy of Dv on your sketch in part (a).
+ Place the tail of this copy at point A.
+ Again, make sure that your copy has the exact magnitude and direction as
+ the original Dv in part (c).
+\layout Standard
+
+(e) Now that you know the direction of the change in velocity, what is the
+ direction of the centripetal acceleration, ac?
+\layout Standard
+
+(f) If you redid the analysis for point B at the opposite end of the circle,
+ what do you think the direction of the centripetal acceleration, ac, would
+ be now?
+\layout Standard
+
+(g) As the ball moves on around the circle, what is the direction of its
+ acceleration?
+\layout Standard
+
+(h) Use Newton's second law in vector form (SF = ma ) to describe the direction
+ of the net force on the ball as it moves around the circle.
+\layout Standard
+
+(i) If the ball is being twirled around on a string, what is the source
+ of the net force needed to keep it moving in a circle?
+\layout Standard
+
+Using Mathematics to Derive How Centripetal Acceleration Depends on Radius
+ and Speed.
+ You haven't done any experiments yet to see how centripetal acceleration
+ depends on the radius of the circle and the speed of the object.
+ You can use the rules of mathematics and the definition of acceleration
+ to derive the relationship between speed, radius, and magnitude of centripetal
+ acceleration.
+\layout Standard
+
+Activity 3: How Does ac Depend on v and r? (a) Do you expect you would need
+ more centripetal acceleration or less centripetal acceleration to cause
+ an object moving at a certain speed to rotate in a smaller circle? In other
+ words, would the magnitude, ac, have to increase or decrease as r decreases
+ if circular motion is to be maintained? Explain.
+\layout Standard
+
+(b) Do you expect you would need more centripetal acceleration or less centripet
+al acceleration to cause an object to rotate at a given radius r if the
+ speed v is increased? In other words, would the magnitude, ac, have to
+ increase or decrease as v increases if circular motion is to be maintained?
+ Explain.
+\layout Standard
+
+You should have guessed that it requires more acceleration to move an object
+ of a certain speed in a circle of smaller radius and that it also takes
+ more acceleration to move an object that has a higher speed in a circle
+ of a given radius.
+ Lets use the definition of acceleration in two-dimensions and some accepted
+ mathematical relationships to show that the magnitude of centripetal accelerati
+on should actually be given by the equation [Eq.
+ 1] In order to do this derivation you will want to use the following definition
+ for acceleration [Eq.
+ 2]
+\layout Standard
+
+Activity 4: Finding the Equation for ac (a) Refer to the diagram below.
+ Explain why, at the two points shown on the circle, the angle between the
+ position vectors at times t1 and t2 is the same as the angle between the
+ velocity vectors at times t1 and t2.
+ Hint: In circular motion, velocity vectors are always perpendicular to
+ their position vectors.
+\layout Standard
+
+(b) Since the angles are the same and since the magnitudes of the displacements
+ never change (i.e., r= r1 = r2) and the magnitudes of the velocities never
+ change (i.e., v = v1 = v2), use the properties of similar triangles to explain
+ why .
+\layout Standard
+
+(c) Now use the equation in part (b) and the definition of < a > to show
+ that 
+\layout Standard
+
+(d) The speed of the object as it rotates around the circle is given by
+ .
+ Is the change in arc length, s, larger or smaller than the magnitude of
+ the change in the position vector, r? Explain why the arc length change
+ and the change in the position vector are approximately the same when t
+ is very small (so that the angle q becomes very small) i.e., why is s r?
+\layout Standard
+
+(e) If s r, then what is the equation for the speed in terms of r and t?
+\layout Standard
+
+(f) Using the equation in part (c), show that as t > 0, the instantaneous
+ value of the centripetal acceleration is given by Eq.
+ 1.
+\layout Standard
+
+(g) If the object has a mass m, what is the equation for the magnitude of
+ the centripetal force needed to keep the object rotating in a circle (in
+ terms of v, r, and m)? In what direction does this force point as the object
+ rotates in its circular orbit?
+\layout Standard
+
+Experimental Test of the Centripetal Force Equation The theoretical consideratio
+ns in the last activity should have led you to the conclusion that, whenever
+ you see an object of mass m moving in a circle of radius r at a constant
+ speed v, it must at all times be experiencing a net centripetal force directed
+ toward the center of the circle that has a magnitude of [Eq.
+ 3]
+\layout Standard
+
+Let's check this out.
+ Does this rather odd equation really work for an external force?
+\layout Standard
+
+To test the validity of the derivation we must compare it to experience.
+ We will use a "toy" airplane suspended from a string and flying in a circular
+ path.
+ We will use the video analysis system to measure the properties of the
+ motion and determine the horizontal and vertical components of the force
+ exerted on the airplane using Equation 3.
+ We will compare that result with a direct measurement of the tension in
+ the string.
+ Activity 5: Verifying the Fc Equation (a) Measure the mass of the airplane
+ and the length of the portion of the string that hangs below the horizontal
+ post with the hole in it.
+ Record the values below.
+ 
+\layout Standard
+
+m = R = (b) The airplane is suspended from a spring scale.
+ The string should pass straight down from the scale through the small hole
+ in the horizontal post.
+ The camera should be placed about 1 meter above the airplane.
+ Turn on the camera and center the spring scale in the frame by using the
+ pendulum.
+ Is the reading of the spring scale consistent with the mass of the airplane?
+ Mount a ruler somewhere in the camera's field-of-view to serve as a scaling
+ object.
+ Launch the plane into uniform circular motion.
+ When the motion is steady record a movie of at least one complete revolution
+ and record the reading of the spring scale.
+ See Appendix D: Video Analysis for details.
+ Save the movie in a file entitled Centripetal.
+\layout Standard
+
+Fscale = 
+\layout Standard
+
+(c) Determine the position of the airplane during one complete revolution.
+ To do this task follow the instructions in the second section of Appendix
+ D: Video Analysis for recording and calibrating a data file entitled Centripeta
+l Data.
+ As you analyze the movie frame-by-frame, estimate to the nearest fraction
+ of a frame the number of frames for one complete revolution.
+ Record your result.
+ When you calibrate the time and position data, note the number of frames
+ per second of the movie and convert that number to the time interval between
+ frames, Dt.
+ What is the time interval for one complete revolution? Prepare your file
+ for analysis by following the instructions in the last section of Appendix
+ D.
+ The file should contain three columns with the values of time, x-position,
+ and y-position.
+\layout Standard
+
+Nframe = Dt = 
+\layout Standard
+
+trev = 
+\layout Standard
+
+(d) Make a graph of the trajectory of the airplane during one full revolution.
+ See Appendix C: Introduction to Cricket Graph for details on using the
+ graphing software.
+ When you make your plot make sure the x and y axes cover the same size
+ range otherwise you will distort the path of the airplane.
+ Print your plot and attach it to your write-up.
+\layout Standard
+
+(1) Is the motion circular? What is your evidence?
+\layout Standard
+
+(2) What is the radius of the motion? 
+\layout Standard
+
+r =
+\layout Standard
+
+(f) To test the validity of the expression for Fc we must know the speed.
+ Use the measurements of the radius of the airplane's trajectory and the
+ time for one complete revolution to calculate the average speed.
+\layout Standard
+
+vave = 
+\layout Standard
+
+(g) Use your results for the mass, the average velocity of the airplane,
+ and the radius of the circular motion to predict the centripetal force
+ exerted by the string.
+\layout Standard
+
+Fc = 
+\layout Standard
+
+(h) We need one more piece of the puzzle to predict the tension in the string,
+ namely, the vertical component of the force exerted on the airplane by
+ the string.
+ Recall that we know r, the radius of the airplane's circular path, and
+ R, the total length of the string that is actually rotating.
+ (1) Using these two distances (r and R) calculate the angle the string
+ makes with the horizontal.
+\layout Standard
+
+q = 
+\layout Standard
+
+(2) We determined the horizontal component of the force on the airplane
+ in part (g).
+ Now with the angle q generate an expression for the vertical component
+ exerted by the string and calculate it.
+ Make a vector diagram of the different components.
+ Generate an expression for the total force acting on the airplane due to
+ the string and calculate the result.
+\layout Standard
+
+Fy = Fplane = 
+\layout Standard
+
+(i) Compare your result for Fstring with the measurement of the spring scale
+ Fscale.
+ Within experimental uncertainty, how well does your data support the hypothesis
+ that Fc =mv2/r? 
+\layout Standard
+
+(j) Discuss the major sources of uncertainty in this experiment.
+\the_end
