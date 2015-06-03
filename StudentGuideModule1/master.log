@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 14:08
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 14:28
 entering extended mode
 **master.tex
 (master.tex
@@ -95,8 +95,9 @@ e/RRM/JK)
 \Gin@req@width=\dimen112
 )
 (master.aux (measuring/measuring.aux) (walking_speed.aux)
-No file position.aux.
-(velocity.aux) (relating.aux) (changing.aux) (slowing.aux) (equations.aux)
+(position/position.aux)
+No file velocity.aux.
+(relating.aux) (changing.aux) (slowing.aux) (equations.aux)
 (measurement_uncertainty.aux) (grav_freefall.aux) (projectile.aux)
 (circ_motion.aux) (force1.aux) (force2.aux) (combining.aux) (force_mass.aux)
 (newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux) (work_power.aux)
@@ -193,7 +194,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 44.
 )
 \tf@toc=\write3
- [3] (position/position.tex
+ [3] (velocity/velocity.tex
 Requested font "cmr12" at 14.4pt
 Requested font "cmmi12" at 14.4pt
 Requested font "cmsy10" at 14.4pt
@@ -209,65 +210,79 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 Requested font "ecti1000" at 10.0pt
- [8
+File: velocity/velocity_fig1.eps Graphic file (type eps)
+
+<velocity/velocity_fig1.eps>
+File: velocity/velocity_fig1.eps Graphic file (type eps)
+ <velocity/velocity_fig1.eps> [16
+
 
 
 
 ]
-File: position/position_fig1.eps Graphic file (type eps)
+File: velocity/velocity_fig1.eps Graphic file (type eps)
 
-<position/position_fig1.eps>
-File: position/position_fig1.eps Graphic file (type eps)
- <position/position_fig1.eps>
-File: position/position_fig1.eps Graphic file (type eps)
+<velocity/velocity_fig1.eps>
+File: velocity/velocity_fig2.eps Graphic file (type eps)
+ <velocity/velocity_fig2.eps>
+Underfull \vbox (badness 1629) has occurred while \output is active []
 
-<position/position_fig1.eps> [9]
-File: position/position_fig2.eps Graphic file (type eps)
- <position/position_fig2.eps>
-File: position/position_fig3.eps Graphic file (type eps)
+ [17]
+File: velocity/velocity_fig2.eps Graphic file (type eps)
 
-<position/position_fig3.eps> [10]
-File: position/position_fig4.eps Graphic file (type eps)
- <position/position_fig4.eps> [11]
-File: position/position_fig5.eps Graphic file (type eps)
+<velocity/velocity_fig2.eps> [18]
+File: velocity/velocity_fig3.eps Graphic file (type eps)
+ <velocity/velocity_fig3.eps>
+File: velocity/velocity_fig4.eps Graphic file (type eps)
 
-<position/position_fig5.eps>
-File: position/position_fig6.eps Graphic file (type eps)
- <position/position_fig6.eps>
-File: position/position_fig7.eps Graphic file (type eps)
+<velocity/velocity_fig4.eps>
+File: velocity/velocity_fig5.eps Graphic file (type eps)
+ <velocity/velocity_fig5.eps>
+File: velocity/velocity_fig6.eps Graphic file (type eps)
 
-<position/position_fig7.eps>
-File: position/position_fig8.eps Graphic file (type eps)
- <position/position_fig8.eps>
-File: position/position_fig9.eps Graphic file (type eps)
-
-<position/position_fig9.eps> [12]
-File: position/position_fig10.eps Graphic file (type eps)
- <position/position_fig10.eps>
-File: position/position_fig11.eps Graphic file (type eps)
-
-<position/position_fig11.eps>
-File: position/position_fig12.eps Graphic file (type eps)
- <position/position_fig12.eps>
-File: position/position_fig13.eps Graphic file (type eps)
-
-<position/position_fig13.eps> [13]
-File: position/position_fig13.eps Graphic file (type eps)
- <position/position_fig13.eps>
-File: position/position_fig13.eps Graphic file (type eps)
-
-<position/position_fig13.eps>
-File: position/position_fig13.eps Graphic file (type eps)
- <position/position_fig13.eps>
-File: position/position_fig13.eps Graphic file (type eps)
-
-<position/position_fig13.eps>
+<velocity/velocity_fig6.eps>
+File: velocity/velocity_fig7.eps Graphic file (type eps)
+ <velocity/velocity_fig7.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14])
-[15] (master.aux (measuring/measuring.aux) (walking_speed.aux)
-(position/position.aux) (velocity.aux) (relating.aux) (changing.aux)
-(slowing.aux) (equations.aux) (measurement_uncertainty.aux) (grav_freefall.aux)
+ [19]
+File: velocity/velocity_fig8.eps Graphic file (type eps)
+
+<velocity/velocity_fig8.eps>
+Underfull \vbox (badness 2020) has occurred while \output is active []
+
+ [20]
+File: velocity/velocity_fig9.eps Graphic file (type eps)
+
+<velocity/velocity_fig9.eps>
+File: velocity/velocity_fig10.eps Graphic file (type eps)
+ <velocity/velocity_fig10.eps>
+File: velocity/velocity_fig11.eps Graphic file (type eps)
+
+<velocity/velocity_fig11.eps>
+File: velocity/velocity_fig12.eps Graphic file (type eps)
+ <velocity/velocity_fig12.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+File: velocity/velocity_fig13.eps Graphic file (type eps)
+
+<velocity/velocity_fig13.eps>
+File: velocity/velocity_fig14.eps Graphic file (type eps)
+ <velocity/velocity_fig14.eps>
+File: velocity/velocity_fig15.eps Graphic file (type eps)
+
+<velocity/velocity_fig15.eps>
+File: velocity/velocity_fig15.eps Graphic file (type eps)
+ <velocity/velocity_fig15.eps> [22]
+File: velocity/velocity_fig16.eps Graphic file (type eps)
+
+<velocity/velocity_fig16.eps>
+File: velocity/velocity_fig16.eps Graphic file (type eps)
+ <velocity/velocity_fig16.eps>) [23] (master.aux
+(measuring/measuring.aux) (walking_speed.aux) (position/position.aux)
+(velocity/velocity.aux) (relating.aux) (changing.aux) (slowing.aux)
+(equations.aux) (measurement_uncertainty.aux) (grav_freefall.aux)
 (projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux) (combining.aux)
 (force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux)
 (work_power.aux) (work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux)
@@ -278,10 +293,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
 (video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux)) ) 
 Here is how much of TeX's memory you used:
- 1780 strings out of 428760
- 21663 string characters out of 3163265
- 91869 words of memory out of 3000000
- 4882 multiletter control sequences out of 15000+200000
+ 1787 strings out of 428760
+ 21852 string characters out of 3163265
+ 89869 words of memory out of 3000000
+ 4885 multiletter control sequences out of 15000+200000
  16479 words of font info for 38 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  30i,10n,43p,417b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
