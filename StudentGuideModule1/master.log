@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 13:37
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 14:08
 entering extended mode
 **master.tex
 (master.tex
@@ -94,7 +94,19 @@ e/RRM/JK)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(master.aux)
+(master.aux (measuring/measuring.aux) (walking_speed.aux)
+No file position.aux.
+(velocity.aux) (relating.aux) (changing.aux) (slowing.aux) (equations.aux)
+(measurement_uncertainty.aux) (grav_freefall.aux) (projectile.aux)
+(circ_motion.aux) (force1.aux) (force2.aux) (combining.aux) (force_mass.aux)
+(newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux) (work_power.aux)
+(work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux) (conservative.aux)
+(momentum.aux) (impulse.aux) (newtons_laws.aux) (mom_cons.aux)
+(twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
+(newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
+(periodic_motion.aux) (pendulum_period.aux) (galilean_relativity.aux)
+(twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
+(video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -172,989 +184,106 @@ Requested font "ecsl1000" at 10.0pt
  [1]
 Requested font "ecrm1440" at 14.4pt
 Requested font "ecbx1440" at 14.4pt
- (master.toc)
+ (master.toc
+Requested font "ecbx1000" at 10.0pt
+ [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 44.
+)
 \tf@toc=\write3
- [2] (measuring/measuring.tex
+ [3] (position/position.tex
 Requested font "cmr12" at 14.4pt
 Requested font "cmmi12" at 14.4pt
 Requested font "cmsy10" at 14.4pt
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
 Requested font "ecrm0800" at 8.0pt
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
 Requested font "ecrm0600" at 6.0pt
-Requested font "ecbx1000" at 10.0pt
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
- [3
-
-]
-File: measuring/measuring_fig1.eps Graphic file (type eps)
-
-<measuring/measuring_fig1.eps>
-File: measuring/measuring_fig2.eps Graphic file (type eps)
- <measuring/measuring_fig2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-[5]
-File: measuring/measuring_fig3.eps Graphic file (type eps)
- <measuring/measuring_fig3.eps>) [6] (walking_speed.tex) [7
-
-
-] (position.tex
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 Requested font "ecti1000" at 10.0pt
+ [8
 
-[8
 
 
 ]
-File: position_fig1.eps Graphic file (type eps)
- <position_fig1.eps>
-File: position_fig1.eps Graphic file (type eps)
- <position_fig1.eps>
-File: position_fig1.eps Graphic file (type eps)
- <position_fig1.eps> [9]
-File: position_fig2.eps Graphic file (type eps)
+File: position/position_fig1.eps Graphic file (type eps)
 
-<position_fig2.eps>
-File: position_fig3.eps Graphic file (type eps)
- <position_fig3.eps> [10]
-File: position_fig4.eps Graphic file (type eps)
- <position_fig4.eps> [11]
-File: position_fig5.eps Graphic file (type eps)
+<position/position_fig1.eps>
+File: position/position_fig1.eps Graphic file (type eps)
+ <position/position_fig1.eps>
+File: position/position_fig1.eps Graphic file (type eps)
 
-<position_fig5.eps>
-File: position_fig6.eps Graphic file (type eps)
- <position_fig6.eps>
-File: position_fig7.eps Graphic file (type eps)
- <position_fig7.eps>
-File: position_fig8.eps Graphic file (type eps)
+<position/position_fig1.eps> [9]
+File: position/position_fig2.eps Graphic file (type eps)
+ <position/position_fig2.eps>
+File: position/position_fig3.eps Graphic file (type eps)
 
-<position_fig8.eps>
-File: position_fig9.eps Graphic file (type eps)
- <position_fig9.eps> [12]
-File: position_fig10.eps Graphic file (type eps)
- <position_fig10.eps>
-File: position_fig11.eps Graphic file (type eps)
+<position/position_fig3.eps> [10]
+File: position/position_fig4.eps Graphic file (type eps)
+ <position/position_fig4.eps> [11]
+File: position/position_fig5.eps Graphic file (type eps)
 
-<position_fig11.eps>
-File: position_fig12.eps Graphic file (type eps)
- <position_fig12.eps>
-File: position_fig13.eps Graphic file (type eps)
- <position_fig13.eps> [13]
-File: position_fig13.eps Graphic file (type eps)
+<position/position_fig5.eps>
+File: position/position_fig6.eps Graphic file (type eps)
+ <position/position_fig6.eps>
+File: position/position_fig7.eps Graphic file (type eps)
 
-<position_fig13.eps>
-File: position_fig13.eps Graphic file (type eps)
- <position_fig13.eps>
-File: position_fig13.eps Graphic file (type eps)
- <position_fig13.eps>
-File: position_fig13.eps Graphic file (type eps)
+<position/position_fig7.eps>
+File: position/position_fig8.eps Graphic file (type eps)
+ <position/position_fig8.eps>
+File: position/position_fig9.eps Graphic file (type eps)
 
-<position_fig13.eps>
+<position/position_fig9.eps> [12]
+File: position/position_fig10.eps Graphic file (type eps)
+ <position/position_fig10.eps>
+File: position/position_fig11.eps Graphic file (type eps)
+
+<position/position_fig11.eps>
+File: position/position_fig12.eps Graphic file (type eps)
+ <position/position_fig12.eps>
+File: position/position_fig13.eps Graphic file (type eps)
+
+<position/position_fig13.eps> [13]
+File: position/position_fig13.eps Graphic file (type eps)
+ <position/position_fig13.eps>
+File: position/position_fig13.eps Graphic file (type eps)
+
+<position/position_fig13.eps>
+File: position/position_fig13.eps Graphic file (type eps)
+ <position/position_fig13.eps>
+File: position/position_fig13.eps Graphic file (type eps)
+
+<position/position_fig13.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14])
-[15] (velocity.tex
-File: velocity_fig1.eps Graphic file (type eps)
- <velocity_fig1.eps>
-File: velocity_fig1.eps Graphic file (type eps)
- <velocity_fig1.eps> [16
-
-
-]
-File: velocity_fig1.eps Graphic file (type eps)
-
-<velocity_fig1.eps>
-File: velocity_fig2.eps Graphic file (type eps)
- <velocity_fig2.eps>
-Underfull \vbox (badness 1629) has occurred while \output is active []
-
- [17]
-File: velocity_fig2.eps Graphic file (type eps)
-
-<velocity_fig2.eps> [18]
-File: velocity_fig3.eps Graphic file (type eps)
- <velocity_fig3.eps>
-File: velocity_fig4.eps Graphic file (type eps)
- <velocity_fig4.eps>
-File: velocity_fig5.eps Graphic file (type eps)
-
-<velocity_fig5.eps>
-File: velocity_fig6.eps Graphic file (type eps)
- <velocity_fig6.eps>
-File: velocity_fig7.eps Graphic file (type eps)
- <velocity_fig7.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-File: velocity_fig8.eps Graphic file (type eps)
-
-<velocity_fig8.eps>
-Underfull \vbox (badness 2020) has occurred while \output is active []
-
- [20]
-File: velocity_fig9.eps Graphic file (type eps)
-
-<velocity_fig9.eps>
-File: velocity_fig10.eps Graphic file (type eps)
- <velocity_fig10.eps>
-File: velocity_fig11.eps Graphic file (type eps)
- <velocity_fig11.eps>
-File: velocity_fig12.eps Graphic file (type eps)
-
-<velocity_fig12.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-File: velocity_fig13.eps Graphic file (type eps)
-
-<velocity_fig13.eps>
-File: velocity_fig14.eps Graphic file (type eps)
- <velocity_fig14.eps>
-File: velocity_fig15.eps Graphic file (type eps)
- <velocity_fig15.eps>
-File: velocity_fig15.eps Graphic file (type eps)
-
-<velocity_fig15.eps> [22]
-File: velocity_fig16.eps Graphic file (type eps)
- <velocity_fig16.eps>
-File: velocity_fig16.eps Graphic file (type eps)
- <velocity_fig16.eps>) [23]
-(relating.tex
-File: relating_fig1.eps Graphic file (type eps)
- <relating_fig1.eps> [24
-
-
-]
-Underfull \vbox (badness 1184) has occurred while \output is active []
-
- [25]
-File: relating_fig2.eps Graphic file (type eps)
-
-<relating_fig2.eps> [26]
-File: relating_fig3.eps Graphic file (type eps)
- <relating_fig3.eps>
-File: relating_fig4.eps Graphic file (type eps)
- <relating_fig4.eps>
-File: relating_fig5.eps Graphic file (type eps)
-
-<relating_fig5.eps>
-File: relating_fig6.eps Graphic file (type eps)
- <relating_fig6.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27])
-[28] (changing.tex
-File: changing_fig1.eps Graphic file (type eps)
- <changing_fig1.eps> [29
-
-
-]
-File: changing_fig2.eps Graphic file (type eps)
- <changing_fig2.eps> [30]
-File: changing_fig3.eps Graphic file (type eps)
-
-<changing_fig3.eps> [31]
-File: changing_fig1.eps Graphic file (type eps)
- <changing_fig1.eps>
-File: changing_fig2.eps Graphic file (type eps)
- <changing_fig2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-[33]
-File: changing_fig4.eps Graphic file (type eps)
- <changing_fig4.eps> [34]
-File: changing_fig5.eps Graphic file (type eps)
- <changing_fig5.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-File: changing_fig5.eps Graphic file (type eps)
-
-<changing_fig5.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-File: changing_fig6.eps Graphic file (type eps)
-
-<changing_fig6.eps> [37]
-File: changing_fig7.eps Graphic file (type eps)
- <changing_fig7.eps>
-File: changing_fig8.eps Graphic file (type eps)
- <changing_fig8.eps>
-File: changing_fig9.eps Graphic file (type eps)
-
-<changing_fig9.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-File: changing_fig10.eps Graphic file (type eps)
-
-<changing_fig10.eps>
-File: changing_fig11.eps Graphic file (type eps)
- <changing_fig11.eps> [39]
-File: changing_fig12.eps Graphic file (type eps)
- <changing_fig12.eps>
-File: changing_fig12.eps Graphic file (type eps)
-
-<changing_fig12.eps>
-File: changing_fig12.eps Graphic file (type eps)
- <changing_fig12.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40]
-File: changing_fig12.eps Graphic file (type eps)
-
-<changing_fig12.eps>) [41] (slowing.tex
-File: slowing_fig1.eps Graphic file (type eps)
- <slowing_fig1.eps> [42
-
-
-] [43]
-File: slowing_fig2.eps Graphic file (type eps)
-
-<slowing_fig2.eps>
-File: slowing_fig1.eps Graphic file (type eps)
- <slowing_fig1.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
-[45]
-File: slowing_fig3.eps Graphic file (type eps)
- <slowing_fig3.eps>
-File: slowing_fig4.eps Graphic file (type eps)
- <slowing_fig4.eps> [46]
-File: slowing_fig5.eps Graphic file (type eps)
- <slowing_fig5.eps> [47]
-[48]
-File: slowing_fig6.eps Graphic file (type eps)
- <slowing_fig6.eps>
-File: slowing_fig7.eps Graphic file (type eps)
- <slowing_fig7.eps>
-File: slowing_fig8.eps Graphic file (type eps)
- <slowing_fig8.eps>
-Underfull \vbox (badness 7344) has occurred while \output is active []
-
- [49]
-File: slowing_fig9.eps Graphic file (type eps)
-
-<slowing_fig9.eps>
-File: slowing_fig10.eps Graphic file (type eps)
- <slowing_fig10.eps> [50]
-File: slowing_fig11.eps Graphic file (type eps)
- <slowing_fig11.eps>
-File: slowing_fig12.eps Graphic file (type eps)
-
-<slowing_fig12.eps>
-File: slowing_fig13.eps Graphic file (type eps)
- <slowing_fig13.eps> [51]
-File: slowing_fig14.eps Graphic file (type eps)
- <slowing_fig14.eps>
-File: slowing_fig15.eps Graphic file (type eps)
-
-<slowing_fig15.eps>
-File: slowing_fig15.eps Graphic file (type eps)
- <slowing_fig15.eps> [52]
-File: slowing_fig15.eps Graphic file (type eps)
- <slowing_fig15.eps>
-File: slowing_fig16.eps Graphic file (type eps)
-
-<slowing_fig16.eps>
-File: slowing_fig16.eps Graphic file (type eps)
- <slowing_fig16.eps>
-File: slowing_fig16.eps Graphic file (type eps)
- <slowing_fig16.eps> [53]
-File: slowing_fig17.eps Graphic file (type eps)
-
-<slowing_fig17.eps>
-Overfull \hbox (42.06612pt too wide) in paragraph at lines 522--522
- [][] 
- []
-
-) [54] (equations.tex
-File: equations_fig1.eps Graphic file (type eps)
- <equations_fig1.eps>
-Overfull \hbox (5.93112pt too wide) in paragraph at lines 49--49
- [][] 
- []
-
-[55
-
-
-] [56]
-Underfull \vbox (badness 1286) has occurred while \output is active []
-
- [57]
-File: equations_fig2.eps Graphic file (type eps)
-
-<equations_fig2.eps> [58] [59]) [60] (measurement_uncertainty.tex [61
-
-
-] [62]
-[63]
-File: SampleHist1.eps Graphic file (type eps)
- <SampleHist1.eps> [64]
-File: measurement_uncertainty_fig1.eps Graphic file (type eps)
- <measurement_uncertainty_fig1.eps>) [65]
-(grav_freefall.tex [66
-
-
-] [67] [68]) [69] (projectile.tex [70
-
-
-] [71]) [72]
-(circ_motion.tex [73
-
-
-] [74]
-File: circ_motion_fig1.eps Graphic file (type eps)
- <circ_motion_fig1.eps>
-Requested font "cmbx10" at 10.0pt
-Requested font "cmbx7" at 7.0pt
-Requested font "cmbx5" at 5.0pt
- [75]
-File: circ_motion_fig2.eps Graphic file (type eps)
- <circ_motion_fig2.eps>
-Underfull \vbox (badness 1077) has occurred while \output is active []
-
- [76]
-File: circ_motion_fig3.eps Graphic file (type eps)
-
-<circ_motion_fig3.eps>
-Underfull \vbox (badness 5667) has occurred while \output is active []
-
- [77])
-[78] (force1.tex
-Requested font "cmbx12" at 14.4pt
-Requested font "cmbx8" at 8.0pt
-Requested font "cmbx6" at 6.0pt
- [79
-
-
-]
-File: force1_fig1.eps Graphic file (type eps)
- <force1_fig1.eps>
-File: force1_fig2.eps Graphic file (type eps)
- <force1_fig2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [80]
-[81]
-File: force1_fig3.eps Graphic file (type eps)
- <force1_fig3.eps> [82]
-File: force1_fig4.eps Graphic file (type eps)
- <force1_fig4.eps>
-File: force1_fig5.eps Graphic file (type eps)
- <force1_fig5.eps> [83]
-File: force1_fig5.eps Graphic file (type eps)
-
-<force1_fig5.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [84]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [85]
-[86]
-File: force1_fig6.eps Graphic file (type eps)
- <force1_fig6.eps>
-File: force1_fig7.eps Graphic file (type eps)
- <force1_fig7.eps>
-File: force1_fig8.eps Graphic file (type eps)
- <force1_fig8.eps>
-File: force1_fig9.eps Graphic file (type eps)
- <force1_fig9.eps>
-[87]
-File: force1_fig10.eps Graphic file (type eps)
- <force1_fig10.eps>
-File: force1_fig10.eps Graphic file (type eps)
- <force1_fig10.eps>
-File: force1_fig10.eps Graphic file (type eps)
- <force1_fig10.eps> [88]
-File: force1_fig11.eps Graphic file (type eps)
-
-<force1_fig11.eps>
-File: force1_fig9.eps Graphic file (type eps)
- <force1_fig9.eps>
-File: force1_fig12.eps Graphic file (type eps)
- <force1_fig12.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89]
-File: force1_fig9.eps Graphic file (type eps)
-
-<force1_fig9.eps>) [90] (force2.tex
-File: force2_fig1.eps Graphic file (type eps)
- <force2_fig1.eps> [91
-
-
-]
-File: force2_fig2.eps Graphic file (type eps)
- <force2_fig2.eps>
-File: force2_fig3.eps Graphic file (type eps)
-
-<force2_fig3.eps> [92]
-File: force2_fig4.eps Graphic file (type eps)
- <force2_fig4.eps> [93]
-File: force2_fig5.eps Graphic file (type eps)
- <force2_fig5.eps> [94]
-File: force2_fig6.eps Graphic file (type eps)
-
-<force2_fig6.eps>
-File: force2_fig7.eps Graphic file (type eps)
- <force2_fig7.eps>
-File: force2_fig7.eps Graphic file (type eps)
- <force2_fig7.eps>
-Underfull \vbox (badness 1533) has occurred while \output is active []
-
- [95]
-File: force2_fig7.eps Graphic file (type eps)
-
-<force2_fig7.eps>
-File: force2_fig7.eps Graphic file (type eps)
- <force2_fig7.eps>
-File: force2_fig7.eps Graphic file (type eps)
- <force2_fig7.eps>
-File: force2_fig7.eps Graphic file (type eps)
- <force2_fig7.eps>
-[96]
-File: force2_fig8.eps Graphic file (type eps)
- <force2_fig8.eps>
-File: force2_fig9.eps Graphic file (type eps)
- <force2_fig9.eps>
-Underfull \vbox (badness 7925) has occurred while \output is active []
-
- [97]
-File: force2_fig6.eps Graphic file (type eps)
-
-<force2_fig6.eps>
-File: force2_fig10.eps Graphic file (type eps)
- <force2_fig10.eps>) [98] (combining.tex
-File: force2_fig4.eps Graphic file (type eps)
- <force2_fig4.eps>
-[99
-
-
-] [100]
-File: combining_fig1.eps Graphic file (type eps)
- <combining_fig1.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101]
-File: force2_fig4.eps Graphic file (type eps)
-
-<force2_fig4.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [102]
-[103]
-File: combining_fig2.eps Graphic file (type eps)
- <combining_fig2.eps>
-File: combining_fig3.eps Graphic file (type eps)
- <combining_fig3.eps>
-File: combining_fig4.eps Graphic file (type eps)
- <combining_fig4.eps>
-File: combining_fig4.eps Graphic file (type eps)
-
-<combining_fig4.eps> [104]
-File: combining_fig4.eps Graphic file (type eps)
- <combining_fig4.eps>) [105] (force_mass.tex [106
-
-
-]
-File: force1_fig4.eps Graphic file (type eps)
-
-<force1_fig4.eps>
-File: force2_fig4.eps Graphic file (type eps)
- <force2_fig4.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [107]
-Underfull \vbox (badness 2573) has occurred while \output is active []
-
- [108]
-[109]
-Invalid UTF-8 byte or sequence at line 243 replaced by U+FFFD.
-Missing character: There is no � in font ecrm1000!
- [110] [111] [112]
-File: force2_fig6.eps Graphic file (type eps)
- <force2_fig6.eps>
-File: force_mass_fig1.eps Graphic file (type eps)
- <force_mass_fig1.eps> [113]
-File: combining_fig2.eps Graphic file (type eps)
-
-<combining_fig2.eps>
-File: combining_fig4.eps Graphic file (type eps)
- <combining_fig4.eps>) [114] (newton.tex
-File: newton_fig1.eps Graphic file (type eps)
- <newton_fig1.eps>
-[115
-
-
-]
-File: newton_fig2.eps Graphic file (type eps)
- <newton_fig2.eps>
-File: newton_fig3.eps Graphic file (type eps)
- <newton_fig3.eps>
-File: newton_fig4.eps Graphic file (type eps)
- <newton_fig4.eps> [116]
-File: newton_fig5.eps Graphic file (type eps)
-
-<newton_fig5.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [117]
-File: newton_fig6.eps Graphic file (type eps)
-
-<newton_fig6.eps> [118]
-File: newton_fig7.eps Graphic file (type eps)
- <newton_fig7.eps>
-File: newton_fig8.eps Graphic file (type eps)
- <newton_fig8.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [119]
-File: newton_fig9.eps Graphic file (type eps)
-
-<newton_fig9.eps> [120]
-File: newton_fig10.eps Graphic file (type eps)
- <newton_fig10.eps>) [121] (friction.tex [122
-
-
-] [123]
-File: friction_fig1.eps Graphic file (type eps)
-
-<friction_fig1.eps> [124]
-File: friction_fig2.eps Graphic file (type eps)
- <friction_fig2.eps>
-File: friction_fig3.eps Graphic file (type eps)
- <friction_fig3.eps>
-File: friction_fig4.eps Graphic file (type eps)
-
-<friction_fig4.eps>
-File: friction_fig4.eps Graphic file (type eps)
- <friction_fig4.eps>
-File: friction_fig5.eps Graphic file (type eps)
- <friction_fig5.eps> [125]
-File: friction_fig6.eps Graphic file (type eps)
-
-<friction_fig6.eps>
-File: friction_fig4.eps Graphic file (type eps)
- <friction_fig4.eps>) [126] (elec_grav.tex
-File: elec_grav_fig1.eps Graphic file (type eps)
-
-<elec_grav_fig1.eps>
-File: elec_grav_fig2.eps Graphic file (type eps)
- <elec_grav_fig2.eps>
-Underfull \vbox (badness 5504) has occurred while \output is active []
-
- [127
-
-
-]
-File: elec_grav_fig3.eps Graphic file (type eps)
-
-<elec_grav_fig3.eps>
-File: elec_grav_fig4.eps Graphic file (type eps)
- <elec_grav_fig4.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [128]
-[129]
-Underfull \vbox (badness 3000) has occurred while \output is active []
-
- [130])
-[131] (centripetal.tex
-File: centripetal_fig1.eps Graphic file (type eps)
- <centripetal_fig1.eps>
-File: centripetal_fig2.eps Graphic file (type eps)
- <centripetal_fig2.eps> [132
-
-
-]
-File: circ_motion_fig1.eps Graphic file (type eps)
-
-<circ_motion_fig1.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [133]
-File: circ_motion_fig2.eps Graphic file (type eps)
-
-<circ_motion_fig2.eps> [134] [135]
-File: circ_motion_fig3.eps Graphic file (type eps)
- <circ_motion_fig3.eps> [136] [137] [138]
-Underfull \hbox (badness 10000) in paragraph at lines 354--359
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 360--368
-
- []
-
-) [139] (work_power.tex
-File: work_power_fig1s.eps Graphic file (type eps)
- <work_power_fig1s.eps>
-File: work_power_fig2.eps Graphic file (type eps)
- <work_power_fig2.eps> [140
-
-
-]
-[141]
-File: work_power_fig3.eps Graphic file (type eps)
- <work_power_fig3.eps>
-File: work_power_fig4.eps Graphic file (type eps)
- <work_power_fig4.eps> [142]
-File: work_power_fig5.eps Graphic file (type eps)
- <work_power_fig5.eps>
-File: work_power_fig6.eps Graphic file (type eps)
-
-<work_power_fig6.eps> [143] [144]) [145] (work_kinetic.tex [146
-
-
-]
-File: work_kinetic_fig1.eps Graphic file (type eps)
-
-<work_kinetic_fig1.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [147]
-File: work_kinetic_fig2.eps Graphic file (type eps)
-
-<work_kinetic_fig2.eps> [148] [149] [150]) [151] (conservation_mech.tex
-[152
-
-
-] [153]) [154] (eoverm2.tex
-File: eoverm2/vCrossB.eps Graphic file (type eps)
- <eoverm2/vCrossB.eps> [155
-
-
-] [156]
-File: eoverm2/apparatus1.ps Graphic file (type eps)
-
-<eoverm2/apparatus1.ps> [157]
-File: eoverm2/apparatus2.ps Graphic file (type eps)
- <eoverm2/apparatus2.ps> [158] [159]) [160]
-(conservative.tex
-File: conservative_fig1.eps Graphic file (type eps)
- <conservative_fig1.eps> [161
-
-
-]
-File: conservative_fig2.eps Graphic file (type eps)
- <conservative_fig2.eps>
-[162]
-File: conservative_fig3.eps Graphic file (type eps)
- <conservative_fig3.eps>
-File: conservative_fig4.eps Graphic file (type eps)
- <conservative_fig4.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [163]
-[164]) [165] (momentum.tex
-File: momentum_fig1.eps Graphic file (type eps)
- <momentum_fig1.eps> [166
-
-
-] [167] [168] [169]
-File: momentum_fig2.eps Graphic file (type eps)
-
-<momentum_fig2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [170]
-File: momentum_fig3.eps Graphic file (type eps)
-
-<momentum_fig3.eps>) [171] (impulse.tex
-File: impulse_fig1.eps Graphic file (type eps)
- <impulse_fig1.eps> [172
-
-
-]
-File: impulse_fig2.eps Graphic file (type eps)
-
-<impulse_fig2.eps>
-File: impulse_fig3.eps Graphic file (type eps)
- <impulse_fig3.eps> [173]
-File: impulse_fig4.eps Graphic file (type eps)
- <impulse_fig4.eps> [174]) [175]
-(newtons_laws.tex
-File: newtons_laws_fig1.eps Graphic file (type eps)
- <newtons_laws_fig1.eps> [176
-
-
-]
-File: newtons_laws_fig2.eps Graphic file (type eps)
- <newtons_laws_fig2.eps>
-File: newtons_laws_fig3.eps Graphic file (type eps)
-
-<newtons_laws_fig3.eps>
-File: newtons_laws_fig4.eps Graphic file (type eps)
- <newtons_laws_fig4.eps> [177]
-File: newtons_laws_fig5.eps Graphic file (type eps)
- <newtons_laws_fig5.eps>
-File: newtons_laws_fig6.eps Graphic file (type eps)
-
-<newtons_laws_fig6.eps> [178] [179] [180] [181]) [182] (mom_cons.tex
-File: mom_cons_fig1.eps Graphic file (type eps)
-
-<mom_cons_fig1.eps>
-Overfull \hbox (53.10736pt too wide) in paragraph at lines 68--68
- [][] 
- []
-
-[183
-
-
-]
-File: mom_cons_fig2.eps Graphic file (type eps)
- <mom_cons_fig2.eps> [184]
-File: mom_cons_fig3.eps Graphic file (type eps)
- <mom_cons_fig3.eps>
-File: mom_cons_fig4.eps Graphic file (type eps)
- <mom_cons_fig4.eps>
-[185]
-File: mom_cons_fig5.eps Graphic file (type eps)
- <mom_cons_fig5.eps>
-Underfull \vbox (badness 3148) has occurred while \output is active []
-
- [186]
-[187]) [188] (twod_collisions.tex
-File: twod_collisions_fig1.eps Graphic file (type eps)
- <twod_collisions_fig1.eps>
-File: twod_collisions_fig1s.eps Graphic file (type eps)
-
-<twod_collisions_fig1s.eps>
-Underfull \vbox (badness 5147) has occurred while \output is active []
-
- [189
-
-
-]
-[190] [191] [192]) [193] (ang_lin_displacement.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.48724pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[194
-
-
-]) [195] (rotation.tex
-File: rotation_fig1.eps Graphic file (type eps)
- <rotation_fig1.eps> [196
-
-
-]
-File: rotation_fig3.eps Graphic file (type eps)
- <rotation_fig3.eps>
-File: rotation_fig4.eps Graphic file (type eps)
-
-<rotation_fig4.eps>
-File: rotation_fig5.eps Graphic file (type eps)
- <rotation_fig5.eps> [197]
-File: rotation_fig6.eps Graphic file (type eps)
- <rotation_fig6.eps> [198]
-File: rotation_fig7.eps Graphic file (type eps)
-
-<rotation_fig7.eps> [199]
-File: rotation_fig8.eps Graphic file (type eps)
- <rotation_fig8.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [200]
-[201]
-File: rotation_fig9.eps Graphic file (type eps)
- <rotation_fig9.eps>) [202] (newtons_2law_rot.tex [203
-
-
-] [204] [205])
-[206] (ang_mom.tex
-File: ang_mom_fig1.eps Graphic file (type eps)
- <ang_mom_fig1.eps> [207
-
-
-]
-File: ang_mom_fig2.eps Graphic file (type eps)
- <ang_mom_fig2.eps> [208]
-File: ang_mom_fig3.eps Graphic file (type eps)
-
-<ang_mom_fig3.eps>
-Requested font "cmmib10" at 10.0pt
-Requested font "cmmib7" at 7.0pt
-Requested font "cmmib5" at 5.0pt
-Requested font "cmbsy10" at 10.0pt
-Requested font "cmbsy7" at 7.0pt
-Requested font "cmbsy5" at 5.0pt
- [209]
-File: ang_mom_fig4.eps Graphic file (type eps)
- <ang_mom_fig4.eps>
-File: ang_mom_fig5.eps Graphic file (type eps)
- <ang_mom_fig5.eps> [210]
-File: ang_mom_fig6.eps Graphic file (type eps)
-
-<ang_mom_fig6.eps> [211]) [212] (cons_ang_mom.tex [213
-
-
-] [214]) [215] (hooke.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-[216
-
-
-]) [217] (periodic_motion.tex
-File: periodic_motion_fig1.eps Graphic file (type eps)
- <periodic_motion_fig1.eps>
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
- [218
-
-
-]
-[219] [220]
-File: periodic_motion_fig2.eps Graphic file (type eps)
- <periodic_motion_fig2.eps>
-File: periodic_motion_fig3.eps Graphic file (type eps)
- <periodic_motion_fig3.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [221]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [222]
-[223]) [224] (pendulum_period.tex
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-[225
-
-
-]) [226] (galilean_relativity.tex
-Requested font "ecbi1000" at 10.0pt
- [227
-
-
-] [228] [229]) [230]
-(twins_paradox.tex [231
-
-
-] [232]) [233] (treatment_data.tex [234
-
-
-]) [235]
-(datastudio.tex
-File: datastudio_fig1.eps Graphic file (type eps)
- <datastudio_fig1.eps> [236
-
-
-]) [237] (excel.tex
-Requested font "ecbx1200" at 12.0pt
-
-
-LaTeX Warning: Reference `fig:excel' on page 238 undefined on input line 12.
-
-File: excelfigs/excelwindow.eps Graphic file (type eps)
-<excelfigs/excelwindow.eps>
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 33.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Requested font "ectt1000" at 10.0pt
-File: excelfigs/scatterplot.eps Graphic file (type eps)
-
-<excelfigs/scatterplot.eps> [238
-
-
-]
-
-LaTeX Warning: Reference `hist2' on page 239 undefined on input line 133.
-
-File: excelfigs/histf1.eps Graphic file (type eps)
-<excelfigs/histf1.eps>
-File: excelfigs/histf2.eps Graphic file (type eps)
- <excelfigs/histf2.eps>
-
-LaTeX Warning: Reference `hist2' on page 239 undefined on input line 149.
-
-
-LaTeX Warning: Reference `hist2' on page 239 undefined on input line 155.
-
-[239]
-
-LaTeX Warning: Reference `hist2' on page 240 undefined on input line 162.
-
-
-LaTeX Warning: Reference `hist5' on page 240 undefined on input line 170.
-
-File: excelfigs/histf3.eps Graphic file (type eps)
-<excelfigs/histf3.eps>
-File: excelfigs/histf4.eps Graphic file (type eps)
- <excelfigs/histf4.eps> [240]) [241] (video_analysis.tex
-Overfull \hbox (10.01775pt too wide) in paragraph at lines 81--89
-[]\T1/cmr/m/n/10 Start up \T1/cmr/m/it/10 Video-point \T1/cmr/m/n/10 by go-ing 
-to \T1/cmtt/m/n/10 Start $\OMS/cmsy/m/n/10 !$ \T1/cmtt/m/n/10 Programs $\OMS/cm
-sy/m/n/10 !$ \T1/cmtt/m/n/10 Physics Applications $\OMS/cmsy/m/n/10 !$ \T1/cmtt
-/m/n/10 VideoPoint $\OMS/cmsy/m/n/10 !$ \T1/cmtt/m/n/10 VideoPoint
- []
-
-[242
-
-
-]) [243] (video_analysis_tracker.tex
-File: Tracker_figure.eps Graphic file (type eps)
- <Tracker_figure.eps> [244
-
-
-] [245])
-[246] (instrumentation.tex [247
-
-
-]
-File: instrumentation_fig1.eps Graphic file (type eps)
- <instrumentation_fig1.eps> [248] [249])
-[250] (master.aux (measuring/measuring.aux) (walking_speed.aux) (position.aux)
-(velocity.aux) (relating.aux) (changing.aux) (slowing.aux) (equations.aux)
-(measurement_uncertainty.aux) (grav_freefall.aux) (projectile.aux)
-(circ_motion.aux) (force1.aux) (force2.aux) (combining.aux) (force_mass.aux)
-(newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux) (work_power.aux)
-(work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux) (conservative.aux)
-(momentum.aux) (impulse.aux) (newtons_laws.aux) (mom_cons.aux)
-(twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
+[15] (master.aux (measuring/measuring.aux) (walking_speed.aux)
+(position/position.aux) (velocity.aux) (relating.aux) (changing.aux)
+(slowing.aux) (equations.aux) (measurement_uncertainty.aux) (grav_freefall.aux)
+(projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux) (combining.aux)
+(force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux)
+(work_power.aux) (work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux)
+(conservative.aux) (momentum.aux) (impulse.aux) (newtons_laws.aux)
+(mom_cons.aux) (twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
 (newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
 (periodic_motion.aux) (pendulum_period.aux) (galilean_relativity.aux)
 (twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
-(video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux)) ) 
 Here is how much of TeX's memory you used:
- 2126 strings out of 428760
- 27728 string characters out of 3163265
- 85094 words of memory out of 3000000
- 5038 multiletter control sequences out of 15000+200000
- 21954 words of font info for 53 fonts, out of 3000000 for 9000
+ 1780 strings out of 428760
+ 21663 string characters out of 3163265
+ 91869 words of memory out of 3000000
+ 4882 multiletter control sequences out of 15000+200000
+ 16479 words of font info for 38 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 30i,11n,43p,882b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,10n,43p,417b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on master.pdf (251 pages).
+Output written on master.pdf (12 pages).
