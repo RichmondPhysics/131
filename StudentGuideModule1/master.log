@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 15:20
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 15:34
 entering extended mode
 **master.tex
 (master.tex
@@ -94,20 +94,7 @@ e/RRM/JK)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(master.aux (measuring/measuring.aux) (walking_speed.aux)
-(position/position.aux) (velocity/velocity.aux) (relating/relating.aux)
-(changing/changing.aux) (slowing/slowing.aux)
-No file equations.aux.
-(measurement_uncertainty.aux) (grav_freefall.aux) (projectile.aux)
-(circ_motion.aux) (force1.aux) (force2.aux) (combining.aux) (force_mass.aux)
-(newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux) (work_power.aux)
-(work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux) (conservative.aux)
-(momentum.aux) (impulse.aux) (newtons_laws.aux) (mom_cons.aux)
-(twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
-(newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
-(periodic_motion.aux) (pendulum_period.aux) (galilean_relativity.aux)
-(twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
-(video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux))
+(master.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -185,38 +172,30 @@ Requested font "ecsl1000" at 10.0pt
  [1]
 Requested font "ecrm1440" at 14.4pt
 Requested font "ecbx1440" at 14.4pt
- (master.toc
-Requested font "ecbx1000" at 10.0pt
- [2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 44.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 44.
-)
+ (master.toc)
 \tf@toc=\write3
- [3] (equations/equations.tex
+ [2]
+(measurement_uncertainty/measurement_uncertainty.tex
 Requested font "cmr12" at 14.4pt
 Requested font "cmmi12" at 14.4pt
 Requested font "cmsy10" at 14.4pt
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
 Requested font "ecrm0800" at 8.0pt
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
 Requested font "ecrm0600" at 6.0pt
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
+Requested font "ecbx1000" at 10.0pt
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
-File: equations/equations_fig1.eps Graphic file (type eps)
-
-<equations/equations_fig1.eps>
-Overfull \hbox (5.93112pt too wide) in paragraph at lines 49--49
- [][] 
- []
-
-[55
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+ [3
 
 
 
@@ -225,32 +204,39 @@ Overfull \hbox (5.93112pt too wide) in paragraph at lines 49--49
 
 
 
-] [56]
-Underfull \vbox (badness 1286) has occurred while \output is active []
 
- [57]
-File: equations/equations_fig2.eps Graphic file (type eps)
+] [4] [5]
+File: measurement_uncertainty/SampleHist1.eps Graphic file (type eps)
 
-<equations/equations_fig2.eps> [58] [59]) [60] (master.aux
+<measurement_uncertainty/SampleHist1.eps> [6]
+File: measurement_uncertainty/measurement_uncertainty_fig1.eps Graphic file (ty
+pe eps)
+
+<measurement_uncertainty/measurement_uncertainty_fig1.eps>) [7] (master.aux
 (measuring/measuring.aux) (walking_speed.aux) (position/position.aux)
 (velocity/velocity.aux) (relating/relating.aux) (changing/changing.aux)
-(slowing/slowing.aux) (equations/equations.aux) (measurement_uncertainty.aux)
-(grav_freefall.aux) (projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux
-) (combining.aux) (force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux)
-(centripetal.aux) (work_power.aux) (work_kinetic.aux) (conservation_mech.aux)
-(eoverm2.aux) (conservative.aux) (momentum.aux) (impulse.aux) (newtons_laws.aux
-) (mom_cons.aux) (twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux
-) (newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
+(slowing/slowing.aux) (equations/equations.aux)
+(measurement_uncertainty/measurement_uncertainty.aux) (grav_freefall.aux)
+(projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux) (combining.aux)
+(force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux)
+(work_power.aux) (work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux)
+(conservative.aux) (momentum.aux) (impulse.aux) (newtons_laws.aux)
+(mom_cons.aux) (twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
+(newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
 (periodic_motion.aux) (pendulum_period.aux) (galilean_relativity.aux)
 (twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
-(video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux)) ) 
+(video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1761 strings out of 428760
- 21434 string characters out of 3163265
- 95871 words of memory out of 3000000
+ 1672 strings out of 428760
+ 20138 string characters out of 3163265
+ 79143 words of memory out of 3000000
  4870 multiletter control sequences out of 15000+200000
  15793 words of font info for 37 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 30i,10n,43p,419b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,43p,440b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on master.pdf (10 pages).
+Output written on master.pdf (8 pages).
