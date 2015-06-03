@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 14:38
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  3 JUN 2015 14:50
 entering extended mode
 **master.tex
 (master.tex
@@ -95,15 +95,15 @@ e/RRM/JK)
 \Gin@req@width=\dimen112
 )
 (master.aux (measuring/measuring.aux) (walking_speed.aux)
-(position/position.aux) (velocity/velocity.aux)
-No file relating.aux.
-(changing.aux) (slowing.aux) (equations.aux) (measurement_uncertainty.aux)
-(grav_freefall.aux) (projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux
-) (combining.aux) (force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux)
-(centripetal.aux) (work_power.aux) (work_kinetic.aux) (conservation_mech.aux)
-(eoverm2.aux) (conservative.aux) (momentum.aux) (impulse.aux) (newtons_laws.aux
-) (mom_cons.aux) (twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux
-) (newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
+(position/position.aux) (velocity/velocity.aux) (relating/relating.aux)
+No file changing.aux.
+(slowing.aux) (equations.aux) (measurement_uncertainty.aux) (grav_freefall.aux)
+(projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux) (combining.aux)
+(force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux)
+(work_power.aux) (work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux)
+(conservative.aux) (momentum.aux) (impulse.aux) (newtons_laws.aux)
+(mom_cons.aux) (twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
+(newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
 (periodic_motion.aux) (pendulum_period.aux) (galilean_relativity.aux)
 (twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
 (video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux))
@@ -193,7 +193,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 44.
 )
 \tf@toc=\write3
- [3] (relating/relating.tex
+ [3] (changing/changing.tex
 Requested font "cmr12" at 14.4pt
 Requested font "cmmi12" at 14.4pt
 Requested font "cmsy10" at 14.4pt
@@ -201,61 +201,102 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 6.
 Requested font "ecrm0800" at 8.0pt
 Requested font "ecrm0600" at 6.0pt
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 Requested font "ecti1000" at 10.0pt
-File: relating/relating_fig1.eps Graphic file (type eps)
+File: changing/changing_fig1.eps Graphic file (type eps)
 
-<relating/relating_fig1.eps> [24
+<changing/changing_fig1.eps> [29
+
 
 
 
 
 
 ]
-Underfull \vbox (badness 1184) has occurred while \output is active []
+File: changing/changing_fig2.eps Graphic file (type eps)
+ <changing/changing_fig2.eps> [30]
+File: changing/changing_fig3.eps Graphic file (type eps)
 
- [25]
-File: relating/relating_fig2.eps Graphic file (type eps)
+<changing/changing_fig3.eps> [31]
+File: changing/changing_fig1.eps Graphic file (type eps)
+ <changing/changing_fig1.eps>
+File: changing/changing_fig2.eps Graphic file (type eps)
 
-<relating/relating_fig2.eps> [26]
-File: relating/relating_fig3.eps Graphic file (type eps)
- <relating/relating_fig3.eps>
-File: relating/relating_fig4.eps Graphic file (type eps)
-
-<relating/relating_fig4.eps>
-File: relating/relating_fig5.eps Graphic file (type eps)
- <relating/relating_fig5.eps>
-File: relating/relating_fig6.eps Graphic file (type eps)
-
-<relating/relating_fig6.eps>
+<changing/changing_fig2.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27])
-[28] (master.aux (measuring/measuring.aux) (walking_speed.aux)
-(position/position.aux) (velocity/velocity.aux) (relating/relating.aux)
-(changing.aux) (slowing.aux) (equations.aux) (measurement_uncertainty.aux)
-(grav_freefall.aux) (projectile.aux) (circ_motion.aux) (force1.aux) (force2.aux
-) (combining.aux) (force_mass.aux) (newton.aux) (friction.aux) (elec_grav.aux)
-(centripetal.aux) (work_power.aux) (work_kinetic.aux) (conservation_mech.aux)
-(eoverm2.aux) (conservative.aux) (momentum.aux) (impulse.aux) (newtons_laws.aux
-) (mom_cons.aux) (twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux
-) (newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
+ [32]
+[33]
+File: changing/changing_fig4.eps Graphic file (type eps)
+ <changing/changing_fig4.eps> [34]
+File: changing/changing_fig5.eps Graphic file (type eps)
+ <changing/changing_fig5.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+File: changing/changing_fig5.eps Graphic file (type eps)
+
+<changing/changing_fig5.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+File: changing/changing_fig6.eps Graphic file (type eps)
+
+<changing/changing_fig6.eps> [37]
+File: changing/changing_fig7.eps Graphic file (type eps)
+ <changing/changing_fig7.eps>
+File: changing/changing_fig8.eps Graphic file (type eps)
+
+<changing/changing_fig8.eps>
+File: changing/changing_fig9.eps Graphic file (type eps)
+ <changing/changing_fig9.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+File: changing/changing_fig10.eps Graphic file (type eps)
+
+<changing/changing_fig10.eps>
+File: changing/changing_fig11.eps Graphic file (type eps)
+ <changing/changing_fig11.eps> [39]
+File: changing/changing_fig12.eps Graphic file (type eps)
+
+<changing/changing_fig12.eps>
+File: changing/changing_fig12.eps Graphic file (type eps)
+ <changing/changing_fig12.eps>
+File: changing/changing_fig12.eps Graphic file (type eps)
+
+<changing/changing_fig12.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+File: changing/changing_fig12.eps Graphic file (type eps)
+
+<changing/changing_fig12.eps>) [41] (master.aux (measuring/measuring.aux)
+(walking_speed.aux) (position/position.aux) (velocity/velocity.aux)
+(relating/relating.aux) (changing/changing.aux) (slowing.aux) (equations.aux)
+(measurement_uncertainty.aux) (grav_freefall.aux) (projectile.aux)
+(circ_motion.aux) (force1.aux) (force2.aux) (combining.aux) (force_mass.aux)
+(newton.aux) (friction.aux) (elec_grav.aux) (centripetal.aux) (work_power.aux)
+(work_kinetic.aux) (conservation_mech.aux) (eoverm2.aux) (conservative.aux)
+(momentum.aux) (impulse.aux) (newtons_laws.aux) (mom_cons.aux)
+(twod_collisions.aux) (ang_lin_displacement.aux) (rotation.aux)
+(newtons_2law_rot.aux) (ang_mom.aux) (cons_ang_mom.aux) (hooke.aux)
 (periodic_motion.aux) (pendulum_period.aux) (galilean_relativity.aux)
 (twins_paradox.aux) (treatment_data.aux) (datastudio.aux) (excel.aux)
 (video_analysis.aux) (video_analysis_tracker.aux) (instrumentation.aux)) ) 
 Here is how much of TeX's memory you used:
- 1768 strings out of 428760
- 21462 string characters out of 3163265
- 89869 words of memory out of 3000000
- 4875 multiletter control sequences out of 15000+200000
+ 1781 strings out of 428760
+ 21780 string characters out of 3163265
+ 90869 words of memory out of 3000000
+ 4881 multiletter control sequences out of 15000+200000
  16479 words of font info for 38 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 30i,11n,43p,490b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,43p,417b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on master.pdf (9 pages).
+Output written on master.pdf (17 pages).
