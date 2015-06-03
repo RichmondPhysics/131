@@ -1,0 +1,13 @@
+#this file excludes files we don't want as part of the repository.
+**/*.aux
+**/*.log
+**/*.tex~
+**/*.dvi
+# with the ** wildcard, this should also exclude log and aux files from all subdirectories.
+Thumbs.db
+master.synctex.gz
+master.synctex.gz(busy)
+master.toc
+master.pdf
+**/*eps-converted-to.pdf
+
