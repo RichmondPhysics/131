@@ -1,0 +1,253 @@
+#This file was created by <vineyard> Wed Jul  5 09:55:26 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Measurement and Uncertainty
+\begin_float footnote 
+\layout Standard
+
+1990-93 Dept.
+ of Physics and Astronomy, Dickinson College.
+ Supported by FIPSE (U.S.
+ Dept.
+ of Ed.) and NSF.
+ Portions of this material have been modified locally and may not have been
+ classroom tested at Dickinson College.
+\end_float 
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Itemize
+
+To learn to measure length using a meter stick and a vernier caliper.
+ 
+\layout Itemize
+
+To learn to express the results of measurements with the appropriate number
+ of significant figures.
+ 
+\layout Itemize
+
+To learn how to compensate for systematic error in measurements so that
+ accuracy can be improved.
+\layout Standard
+
+
+\series bold 
+Measuring Lengths and Significant Figures
+\series default 
+ 
+\layout Standard
+
+We are interested in determining the number of significant figures in length
+ measurements you might make.
+ How is the number of significant figures determined? Suppose God could
+ tell us that the "true" width of a certain car key in centimeters was:
+\layout Standard
+
+2.435789345646754456540123544332975774281245623...
+ etc.
+ 
+\layout Standard
+
+If we were to measure the key width with a ruler that is lying around the
+ lab, the precision of our measurement would be limited by the fact that
+ the ruler only has lines marked on it every 0.1 cm.
+ We could estimate to the nearest 1/100th of a centimeter how far the key
+ edge is from the last mark.
+ Thus, we might agree that the best estimate for the width of the key is
+ 2.44 cm.
+ This means we have estimated the key width to three significant figures.
+ 
+\layout Standard
+
+If God announces that the width of a pair of sun glasses is 13.276554577876542677
+87...
+ cm, then upon direct measurement we might estimate the width to be 13.28
+ or 13.27 or 13.26 cm.
+ In this case the estimated width is four significant figures.
+ Obviously, there is uncertainty about the "true" value of the right-most
+ digit.
+\layout Standard
+
+The number of significant figures in a measurement is given by the number
+ of digits from the most certain digit on the left of the number up to and
+ including the first uncertain digit on the right.
+ In reporting a number, all digits except the significant digits should
+ be dropped.
+ (See the discussion of significant figures in Appendix A.)
+\layout Standard
+
+Let's do some length measurements to find out what factors might influence
+ the number of significant figures in a measurement.
+ 
+\layout Standard
+
+
+\series bold 
+Apparatus
+\series default 
+ 
+\layout Itemize
+
+A meter stick 
+\layout Itemize
+
+A vernier caliper 
+\layout Itemize
+
+A rectangular board
+\layout Standard
+
+
+\series bold 
+Activity 1: Length Measurements with the Meter Stick 
+\layout Standard
+\added_space_bottom 20mm 
+(a) What factors might make a determination of the "true" length of an object
+ measured with the meter stick uncertain? 
+\layout Standard
+\added_space_bottom 30mm 
+(b) Measure the width of the board with the meter stick at least seven times
+ and create a table in the space below to list the measurements.
+ For best results, you should use different regions of the meter stick so
+ that, when an average of these measurements is made, non-uniformities in
+ the scale will tend to cancel.
+ Also, you should avoid using the end of the meter stick which might be
+ worn and, therefore, would not be a true zero.
+ The apparent change in the reading on the scale due to the position of
+ the eye is called parallax, an effect which can introduce error into the
+ reading.
+ To reduce the uncertainty due to parallax, you should place the meter stick
+ on edge so that the scale is close to the object being measured.
+ (See Appendix E) 
+\layout Standard
+\added_space_bottom 20mm 
+(c) In general, when a series of measurements are made, the best estimate
+ is the average of those measurements.
+ In the space below list the minimum measurement, the maximum measurement,
+ and the best estimate for the width of your board.
+\layout Standard
+\added_space_bottom 20mm 
+(d) How many significant figures should you report in your best estimate?
+ Why?
+\layout Standard
+\added_space_bottom 20mm 
+(e) For your board, what limits the number of significant figures most -
+ variation in the actual width of the board or limitations in the accuracy
+ of the meter stick? How do you know?
+\layout Standard
+
+
+\series bold 
+Activity 2: Length Measurements with the Vernier Caliper 
+\layout Standard
+\added_space_bottom 30mm 
+(a) Measure the thickness of the board at least seven times and record the
+ results in a table in the space below.
+ Make the measurements at different places along each of the two edges.
+ If you have questions about how to read the vernier, see Appendix E.
+ If you still have questions, consult your instructor.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Record the minimum, maximum, and average of your measurements below.
+\layout Standard
+\added_space_bottom 20mm 
+(c) How many significant figures should you report in your average? Why?
+ 
+\layout Standard
+
+
+\series bold 
+Activity 3: Calculation of Cross-Sectional Area
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Calculate the cross-sectional area of the board in the space below.
+\layout Standard
+\added_space_bottom 20mm 
+(b) How many significant figures should you report in your result? Why?
+\layout Standard
+
+
+\series bold 
+The Inevitability of Uncertainty
+\series default 
+ 
+\layout Standard
+
+In common terminology there are three kinds of "errors": (1) mistakes or
+ human errors, (2) systematic errors due to measurement or equipment problems
+ and (3) inherent uncertainties.
+\layout Standard
+
+
+\series bold 
+Activity 4: Error Types
+\series default 
+ 
+\layout Standard
+\added_space_bottom 20mm 
+(a) Give an example of how a person could make a "mistake" or "human error"
+ while taking a length measurement.
+\layout Standard
+\added_space_bottom 20mm 
+(b) Give an example of how a systematic error could occur because of the
+ condition of the meter stick when a set of length measurements are being
+ made.
+\layout Standard
+
+(c) What might cause inherent uncertainties in a length measurement?
+\the_end

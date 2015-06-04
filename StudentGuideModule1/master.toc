@@ -1,5 +1,4 @@
 \contentsline {section}{\numberline {1}Measuring and Graphing Horizontal Motion\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{3}
-\contentsline {section}{\numberline {2}Walking Speed}{7}
 \contentsline {section}{\numberline {3}Position vs. Time Graphs\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{8}
 \contentsline {section}{\numberline {4}Velocity vs. Time Graphs\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{16}
 \contentsline {section}{\numberline {5}Relating Position and Velocity Graphs\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{24}
@@ -7,8 +6,6 @@
 \contentsline {section}{\numberline {7}Slowing Down, Speeding Up, and Turning\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{42}
 \contentsline {section}{\numberline {8}Equations to Define Velocity and Acceleration\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{55}
 \contentsline {section}{\numberline {1}Measurement, Uncertainty, and Variation\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{3}
-\contentsline {section}{\numberline {10}Gravity and Free Fall\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{66}
-\contentsline {section}{\numberline {11}Projectile Motion\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{70}
 \contentsline {section}{\numberline {12}Uniform Circular Motion\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{73}
 \contentsline {section}{\numberline {1}Force and Motion I\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{3}
 \contentsline {section}{\numberline {2}Force and Motion II\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{15}
@@ -20,31 +17,12 @@
 \contentsline {section}{\numberline {8}Centripetal Force\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{56}
 \contentsline {section}{\numberline {9}Work and Power\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{64}
 \contentsline {section}{\numberline {10}Work and Kinetic Energy\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material have been modified locally and may not have been classroom tested at Dickinson College. }}{70}
-\contentsline {section}{\numberline {23}Conservation of Mechanical Energy\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{152}
-\contentsline {section}{\numberline {24}Weighing an Electron}{155}
 \contentsline {section}{\numberline {25}Conservative and Non-Conservative Forces\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{161}
 \contentsline {section}{\numberline {26}Momentum and Momentum Change\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{166}
 \contentsline {section}{\numberline {27}Impulse, Momentum, and Interactions\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{172}
 \contentsline {section}{\numberline {1}Newton's Laws and Momentum Conservation\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{3}
 \contentsline {section}{\numberline {2}Momentum Conservation and Center of Mass\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{10}
 \contentsline {section}{\numberline {3}Two-Dimensional Collisions\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{16}
-\contentsline {section}{\numberline {31}Connecting Angular Displacement with Linear Displacement along the Arc}{194}
 \contentsline {section}{\numberline {32}Introduction to Rotation\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{196}
-\contentsline {section}{\numberline {33}Newton's Second Law for Rotation\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{203}
 \contentsline {section}{\numberline {34}Angular Momentum and Torque as Vectors\SF@gobble@opt { 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified locally and may not have been classroom tested at Dickinson College. }}{207}
-\contentsline {section}{\numberline {35}Conservation of Angular Momentum}{213}
-\contentsline {section}{\numberline {36}Hooke's Law}{216}
-\contentsline {section}{\numberline {37}Periodic Motion}{218}
-\contentsline {section}{\numberline {38}The Period of a Pendulum}{225}
-\contentsline {section}{\numberline {39}Galilean Relativity}{227}
-\contentsline {section}{\numberline {40}The Twins Paradox}{231}
-\contentsline {section}{\numberline {A}Treatment of Experimental Data}{234}
-\contentsline {section}{\numberline {B}Introduction to DataStudio}{236}
-\contentsline {section}{\numberline {C}Introduction to Excel}{238}
-\contentsline {subsection}{\numberline {C.1}Data and formulae}{238}
-\contentsline {subsection}{\numberline {C.2}Graphs}{238}
-\contentsline {subsection}{\numberline {C.3}Making Histograms}{239}
-\contentsline {subsection}{\numberline {C.4}LINEST}{241}
-\contentsline {section}{\numberline {D}Video Analysis Using VideoPoint}{242}
-\contentsline {section}{\numberline {E}Video Analysis Using Tracker}{244}
-\contentsline {section}{\numberline {F}Instrumentation}{247}
+\contentsline {section}{\numberline {1}Periodic Motion}{4}

@@ -1,0 +1,412 @@
+#This file was created by <vineyard> Sun Jul 16 16:51:55 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+The Period of a Pendulum
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Objectives:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Study the influences on the motion of a simple pendulum 
+\backslash 
+item Calculate the proportionality constant relating the period of oscillation
+ to its determinants
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Introduction:}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent Using dimensional analysis alone, one can predict that the period
+ of a simple pendulum would depend not on its mass but on its length and
+ the acceleration due to gravity according to the relationship:
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{equation} T 
+\backslash 
+sim 
+\backslash 
+sqrt{
+\backslash 
+frac{L}{g}}.
+ 
+\backslash 
+end{equation}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+noindent $T$ is the period, $L$ is the length, and $g$ is the gravitational
+ acceleration.
+ Let's check this prediction experimentally.
+ 
+\backslash 
+
+\backslash 
+
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Apparatus:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item string attached to stand 
+\backslash 
+item collection of masses 
+\backslash 
+item stop watch 
+\backslash 
+item meter stick
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity:} 
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item With $L$ = 1.0 m, place a 1 kg mass at the end of your pendulum.
+ Time twenty-five (25) oscillations of amplitude not greater than 10 degrees.
+ The period is the total time divided by the number of oscillations.
+ Calculate the period and period squared, and enter the relevant data into
+ the table below.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Repeat i.
+ for masses of 500 g, 200 g, 100 g, 50 g, and 20 g.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item With the 200 g mass, fix the length $L$ to be 1.5 m.
+ Time twenty-five (25) oscillations of amplitude not more than 10 degrees.
+ Calculate the period and period squared, and enter the relevant data into
+ the table below.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Repeat iii.
+ for pendulum lengths of 1.0, 0.7, 0.4, 0.25, and 0.15 meters.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{center} 
+\backslash 
+begin{tabular}{|c|c|c|c|c|c|c|} 
+\backslash 
+hline Trial No.
+ & Mass & Length[$L$] & No.
+ of & Total Time & Period[$T$] & $T^2$ 
+\backslash 
+
+\backslash 
+ & (kg) & (m) & Oscillations & (s) & (s) & (s$^2$) 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+hline 1 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 2 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 3 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 4 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 5 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 6 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 7 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 8 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 9 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 10 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 11 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 12 & & & & & & 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+end{tabular} 
+\backslash 
+end{center}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Plot $T$ versus mass and $T^2$ versus $L$ on separate graphs.
+ Fit the data and determine the slopes of the lines of each graph.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vspace{10pt}
+\layout Standard
+
+
+\latex latex 
+slope: period versus mass 
+\backslash 
+rule{1.5in}{0.2pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vspace{10pt}
+\layout Standard
+
+
+\latex latex 
+slope: period$^2$ versus length 
+\backslash 
+rule{1.5in}{0.2pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+vspace{10pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Questions:}
+\layout Enumerate
+\added_space_bottom 20mm 
+Interpret the slope of the period versus mass line: What is the relationship
+ between mass and period? How does the period depend on the mass? 
+\layout Enumerate
+\added_space_bottom 20mm 
+Interpret the slope of the period
+\latex latex 
+$^2$
+\latex default 
+ versus length line: What is the relationship between length and period?
+ How does period depend on pendulum length? 
+\layout Enumerate
+\added_space_bottom 20mm 
+If the length of the pendulum were 
+\latex latex 
+$
+\backslash 
+frac{1}{16}$
+\latex default 
+ its original length, by how much would its period change? 
+\layout Enumerate
+
+Using the relationship between length and period (equation 1), the slope
+ you measured, and the known value of the gravitational acceleration 
+\latex latex 
+[9.8 $
+\backslash 
+frac{m}{s^2}$]
+\latex default 
+, determine the constant of proportionality.
+ What are its units?
+\the_end

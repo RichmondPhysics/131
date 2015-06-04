@@ -1,0 +1,534 @@
+#This file was created by <vineyard> Tue Aug  1 09:33:47 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+
+\layout Title
+
+Investigative Physics
+\newline 
+Module 1: Activity Units for Physics 131
+\layout Author
+
+Gerard P.
+ Gilfoyle, Philip D.
+ Rubin, and Michael F.
+ Vineyard
+\newline 
+Department of Physics
+\newline 
+University of Richmond, VA 23173
+\layout Abstract
+
+The exercises in this manual have been developed to support an investigative
+ physics course that emphasizes active learning.
+ Some of these units have been taken from the Workshop Physics project at
+ Dickinson College and the Tools for Scientific Thinking project at Tufts
+ University and modified for use at the University of Richmond.
+ Others have been developed locally.
+\layout Abstract
+
+The units are made up of activities designed to guide your investigations
+ in the laboratory.
+ The written work will consist primarily of documenting your class activities
+ by filling in the entries in the spaces provided in the units.
+ The entries consist of observations, derivations, calculations, and answers
+ to questions.
+ Although you may use the same data and graphs as your partner(s) and discuss
+ concepts with your classmates, all entries should reflect your own understandin
+g of the concepts and the meaning of the data and graphs you are presenting.
+ Thus, each entry should be written in your own words.
+ Indeed, it is very important to your success in this course that your entries
+ reflect a sound understanding of the phenomena you are observing and analyzing.
+\layout Abstract
+
+We wish to acknowledge the support we have received for this project from
+ the University of Richmond and the Instrumentation and Laboratory Improvement
+ program of the National Science Foundation.
+ Also, we would like to thank our laboratory directors for their invaluable
+ technical assistance.
+\layout Standard
+
+
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{measuring.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{walking_speed.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{converting_units.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{measurement.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{measurement_length.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{determining_pi.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{measurement_uncertainty.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{position.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{velocity.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{relating.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{instantaneous_velocity.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{changing.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{slowing.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{equations.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{grav_freefall.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{acceleration.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{reaction_time.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{tossed_ball.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{independence.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{ski_jump.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{projectile.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{circ_motion.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{force1.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{force2.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{combining.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{force_mass.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{newton.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{atwood.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{friction.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{elec_grav.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{centripetal.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{kepler.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{work_power.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{work_kinetic.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{conservation_mech.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{conservative.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{momentum.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{impulse.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{newtons_laws.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{mom_cons.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{twod_collisions.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{ang_lin_displacement.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{rotation.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{newtons_2law_rot.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{rolling.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{moment_inertia.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{ang_mom.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{cons_ang_mom.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{hooke.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{periodic_motion.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{pendulum_period.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{resonance.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{treatment_data.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{datastudio.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{cricketgraph.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{video_analysis.lyx}
+
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Include \include{instrumentation.lyx}
+
+\end_inset 
+
+
+\the_end

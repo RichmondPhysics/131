@@ -1,0 +1,299 @@
+#This file was created by <vineyard> Wed Jul  5 13:29:20 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Distinguishing Velocity, Change of Velocity, and Acceleration
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Objectives:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Associate equal speeds 
+\backslash 
+item Recognize the time interval required for velocity to change 
+\backslash 
+item Define acceleration
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Apparatus:} 
+\backslash 
+begin{list}{$
+\backslash 
+bullet$}{
+\backslash 
+itemsep0pt 
+\backslash 
+parsep0pt}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item track and cart 
+\backslash 
+item revolving belt 
+\backslash 
+item two stop watches
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{list}
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Activity} 
+\backslash 
+begin{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item You will be comparing the motion of a cart rolling down an inclined
+ plane with the motion of a revolving belt which moves at constant speed
+ parallel to the track.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item The amount of voltage supplied a motor controls the speed of the belt.
+ Turn on the power supply and investigate the different belt speeds that
+ result from adjusting the voltage knob.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Choose a relatively slow, but steady speed.
+ Pick a point on the belt and time its progression between two positions
+ a known distance apart.
+ Thereby, determine the speed of the point, or any point, on the belt.
+ Enter this value in the table below.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Release the cart from rest and time how long it takes to match the
+ speed of the belt.
+ Repeat this five times and enter the values in the table.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Setting the belt to three progressively higher speeds, repeat steps
+ iii and iv for each one.
+ Enter the all necessary values to the table.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Compute average times corresponding to the four different belt speeds.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+item Plot your data on a speed versus time graph.
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+end{enumerate}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+medskip
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+begin{center} 
+\backslash 
+tabcolsep5mm 
+\backslash 
+begin{tabular}{|c|c|c|c|c|c|c|} 
+\backslash 
+hline belt speed & $t_1$ & $t_2$ & $t_3$ & $t_4$ & $t_5$ & $t$ 
+\backslash 
+
+\backslash 
+ (m/s) & (s) & (s) & (s) & (s) & (s) & (s) 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+hline &&&&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline &&&&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline &&&&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline &&&&&& 
+\backslash 
+
+\backslash 
+ 
+\backslash 
+hline 
+\backslash 
+end{tabular} 
+\backslash 
+end{center}
+\layout Standard
+
+
+\latex latex 
+
+\backslash 
+pagebreak
+\layout Standard
+
+
+\latex latex 
+{
+\backslash 
+noindent 
+\backslash 
+bf Questions:}
+\layout Enumerate
+\added_space_bottom 20mm 
+Do your data points appear to fall on a line? Did you expect them to? Explain.
+\layout Enumerate
+\added_space_bottom 20mm 
+If you were to fit a line through these points, would that line go through
+ the origin? Explain.
+ 
+\layout Enumerate
+\added_space_bottom 20mm 
+Fit a line through the data.
+ Express in words the meaning of the slope.
+ What is its physical interpretation? Is it constant? Explain.
+ 
+\layout Enumerate
+
+If the track were tilted more steeply, how would your results have changed?
+ Test your hypothesis by repeating some measurements with the track inclined
+ at different angles.
+ Where your expectations met or not? Express in words what occurred and
+ give a physical explanation.
+\the_end

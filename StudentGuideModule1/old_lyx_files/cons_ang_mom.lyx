@@ -1,0 +1,416 @@
+#This file was created by <vineyard> Sun Jul 16 16:36:39 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Conservation of Angular Momentum
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives
+\series default 
+ 
+\layout Standard
+
+To test the Law of Conservation of Angular Momentum and to explore the applicabi
+lity of angular momentum conservation among objects that experience no external
+ torques.
+ 
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A Rotating Disk System 
+\layout Itemize
+
+A mass of 1 kg 
+\layout Itemize
+
+A meter stick and a ruler 
+\layout Itemize
+
+A video analysis system (
+\shape italic 
+Adobe Premier 
+\shape default 
+and 
+\shape italic 
+VideoPoint
+\shape default 
+)
+\layout Standard
+
+
+\series bold 
+Overview 
+\layout Standard
+
+As a consequence of Newton's laws, angular momentum like linear momentum
+ is believed to be conserved in isolated systems.
+ This means that, no matter how many internal interactions occur, the total
+ angular momentum of any system should remain constant.
+ When one of the objects gains some angular momentum another part of the
+ system must lose the same amount.
+ If angular momentum isn't conserved, then we believe that there is some
+ outside torque acting on the system.
+ By expanding the boundary of the system to include the source of that torque
+ we can always preserve the Law of Angular Momentum Conservation.
+ 
+\layout Standard
+
+In this unit you will test the notion of the conservation of angular momentum.
+ Like the test of the conservation of linear momentum we will investigate
+ what happens when two bodies undergo a "rotational" collision.
+ You will drop a large weight onto a rotating disk and determine the moment
+ of inertia, the angular speed, and finally, the angular momentum of the
+ rotator-disk-weight system before and after this perfectly inelastic collision.
+\layout Standard
+
+
+\series bold 
+Activity 1: The Moment of Inertia Before and After the Collision
+\layout Standard
+\added_space_bottom 5mm 
+(a) Calculate the theoretical value of the rotational inertia of the metal
+ disk using basic measurements of its radius and mass.
+ Be sure to state units and show the expression you used!
+\layout Standard
+\added_space_bottom 5mm 
+r
+\begin_inset Formula \( _{d} \)
+\end_inset 
+
+ = 
+\hfill 
+M
+\begin_inset Formula \( _{d} \)
+\end_inset 
+
+ =
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+I
+\begin_inset Formula \( _{d} \)
+\end_inset 
+
+ =
+\layout Standard
+\added_space_bottom 5mm 
+(b)The rotating fixture that holds the disk has a complex shape.
+ We have determined its moment of inertia without the disk and recorded
+ the result.
+ Record that value here.
+ Be sure to state units.
+\layout Standard
+\added_space_bottom 5mm 
+I
+\begin_inset Formula \( _{f} \)
+\end_inset 
+
+ =
+\layout Standard
+\added_space_bottom 5mm 
+(c) After dropping the weight on the rotating disk, the system will have
+ a new moment of inertia.
+ Derive a formula for the moment of inertia of a disk-shaped weight of mass
+ m
+\begin_inset Formula \( _{w} \)
+\end_inset 
+
+ and radius r
+\begin_inset Formula \( _{w} \)
+\end_inset 
+
+ revolving about the origin at a distance, r
+\begin_inset Formula \( _{r} \)
+\end_inset 
+
+.
+ Measure the mass of the weight and use a vernier caliper to measure its
+ diameter.
+\layout Standard
+\added_space_bottom 5mm 
+I
+\begin_inset Formula \( _{w} \)
+\end_inset 
+
+ = 
+\layout Standard
+\added_space_bottom 5mm 
+m
+\begin_inset Formula \( _{w} \)
+\end_inset 
+
+ = 
+\hfill 
+r
+\begin_inset Formula \( _{w} \)
+\end_inset 
+
+ =
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+(d) Come up with a formula for the rotational inertia, I, of the whole system
+ before and after the collision and calculate the moment of inertia before
+ the collision.
+ Don't forget to include the units.
+\layout Standard
+\added_space_bottom 5mm 
+I
+\begin_inset Formula \( _{before} \)
+\end_inset 
+
+ = 
+\layout Standard
+\added_space_bottom 5mm 
+I
+\begin_inset Formula \( _{after} \)
+\end_inset 
+
+ = 
+\layout Standard
+
+
+\series bold 
+Activity 2: Measurement of Angular Acceleration
+\series default 
+ 
+\layout Standard
+
+(a) Place the video camera about 1 m above the rotator, align the camera
+ with the center of the rotator using the pendulum, and center the rotator
+ in the field-of-view of the camera by viewing it with the 
+\shape italic 
+Adobe Premier
+\shape default 
+ software.
+ Place a ruler of known length in the field-of- view of the camera and parallel
+ to one side of the frame.
+ Check that the rotator is flat with the small water-bubble level.
+\layout Standard
+
+(b) Give the rotator a push and begin recording its motion with the video
+ camera.
+ See 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for details.
+ While the rotator is moving hold the 1 kg weight near the rim of the metal
+ disk and close to, but not quite touching, the surface of the moving metal
+ disk.
+ After at least one revolution of the metal disk drop the 1-kg mass onto
+ the disk and record the motion of the disk for at least one revolution
+ afterward.
+ When you save the movie give it the name 
+\shape italic 
+Angular
+\shape default 
+.
+\layout Standard
+\added_space_bottom 5mm 
+(c) Measure the distance of the center of the weight you dropped from the
+ center of the rotator r
+\begin_inset Formula \( _{r} \)
+\end_inset 
+
+.
+ To do this, measure the distance from the center of the rotator to the
+ edge of the weight and use the result from Activity 1 part (c) for the
+ diameter of the weight.
+ Calculate the distance from the origin to the center of the weight.
+ Use these results and those from Activity 1 part (d) to calculate the final
+ moment of inertia.
+\layout Standard
+\added_space_bottom 5mm 
+r
+\begin_inset Formula \( _{edge} \)
+\end_inset 
+
+ = 
+\hfill 
+r
+\begin_inset Formula \( _{w} \)
+\end_inset 
+
+ = 
+\hfill 
+r
+\begin_inset Formula \( _{r} \)
+\end_inset 
+
+ =
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+I
+\begin_inset Formula \( _{after} \)
+\end_inset 
+
+ = 
+\layout Standard
+
+(d) Determine the angular speed before and after the collision.
+ To do this task see the instructions in 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for creating and analyzing a movie file.
+ 
+\layout Enumerate
+
+Find the last frame before you dropped the weight on the rotator and click
+ on the position of the white marker on the metal disk.
+ Under the 
+\series bold 
+Edit
+\series default 
+ menu highlight 
+\series bold 
+Leave/Hide Trails
+\series default 
+.
+ Now go backward through the film until the rotator has gone through one
+ full rotation.
+ Estimate to the nearest fraction of a frame how many frames there are in
+ one revolution.
+ You also need to know the time between frames 
+\begin_inset Formula \( \Delta  \)
+\end_inset 
+
+t which you can get from the data table in 
+\shape italic 
+VideoPoint.
+ 
+\begin_inset Formula 
+\[
+N_{before}=\qquad \qquad \qquad \Delta t=\]
+
+\end_inset 
+
+
+\shape default 
+ Calculate the time for one revolution before the collision and the angular
+ speed.
+ 
+\begin_inset Formula 
+\[
+t_{before}=\qquad \qquad \qquad \omega _{before}=\]
+
+\end_inset 
+
+
+\layout Enumerate
+
+We now follow a similar procedure to determine the angular speed after the
+ collision.
+ Under the 
+\series bold 
+Edit
+\series default 
+ Menu highlight 
+\series bold 
+Clear All...
+
+\series default 
+ to get rid of your previous results.
+ Find the first frame after you dropped the weight on the rotator and click
+ on the position of the white marker.
+ Now click forward and estimate to the nearest fraction of a frame the number
+ of frames in one full revolution.
+ 
+\begin_inset Formula 
+\[
+N_{after}=\qquad \qquad \qquad \Delta t=\]
+
+\end_inset 
+
+Calculate the time for one revolution and the angular speed after the collision.
+\begin_inset Formula 
+\[
+t_{after}=\qquad \qquad \qquad \omega _{after}=\]
+
+\end_inset 
+
+
+\layout Standard
+\added_space_bottom 5mm 
+(e) Calculate the angular momentum before and after the collision.
+ Calculate the percent difference between the two results.
+ Is momentum conserved within the experimental uncertainty? What is the
+ value of the experimental uncertainty? What is your evidence?
+\layout Standard
+\added_space_bottom 5mm 
+L
+\begin_inset Formula \( _{before} \)
+\end_inset 
+
+ = 
+\layout Standard
+\added_space_bottom 20mm 
+L
+\begin_inset Formula \( _{after} \)
+\end_inset 
+
+ = 
+\layout Standard
+
+(f) Would the procedure you followed above change if the weight was moving
+ horizontally at a constant velocity when you dropped it? If it changed,
+ what would be different?
+\the_end

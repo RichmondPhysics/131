@@ -1,0 +1,337 @@
+#This file was created by <vineyard> Tue Jul 11 17:40:59 2000
+#LyX 1.0 (C) 1995-1999 Matthias Ettrich and the LyX Team
+\lyxformat 2.15
+\textclass article
+\language default
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+Rolling
+\layout Standard
+
+Name 
+\latex latex 
+
+\backslash 
+rule{2.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Section 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\latex default 
+
+\hfill 
+Date 
+\latex latex 
+
+\backslash 
+rule{1.0in}{0.1pt}
+\layout Standard
+
+
+\series bold 
+Objectives 
+\layout Standard
+
+To apply our understanding of rotation to the case of rolling without skidding
+ and discover its fundamental properties.
+ 
+\layout Standard
+
+
+\series bold 
+Apparatus
+\layout Itemize
+
+A spool for rolling.
+ 
+\layout Itemize
+
+A meter stick and a ruler 
+\layout Itemize
+
+A video analysis system (Adobe Premier and VideoPoint).
+\layout Standard
+
+
+\series bold 
+Overview 
+\layout Standard
+
+We have extensively studied the linear motion of objects and we recently
+ began the study of rotational motion.
+ When something rolls it is combining both types of motion in one.
+ In addition, the motion requires a unique application of forces and it
+ has some surprising characteristics that are often poorly understood.
+ In this unit we will investigate these unique features.
+\layout Standard
+
+
+\series bold 
+Activity 1: Rolling - Guesses and Predictions 
+\layout Standard
+
+To begin our investigation consider the following questions.
+ You might find it useful to test some of your answers by simply rolling
+ the spool along the table and observing its motion.
+\layout Enumerate
+\added_space_bottom 20mm 
+In your own words, what is rolling?
+\layout Enumerate
+\added_space_bottom 20mm 
+How is the rotational motion related to the linear motion?
+\layout Enumerate
+\added_space_bottom 30mm 
+Make a sketch of the spool rolling and the forces acting on the spool.
+ What is the effect, if any, of friction? How would the motion change if
+ there was no friction in the system at all?
+\layout Standard
+
+
+\series bold 
+Activity 2: Investigating Rolling
+\series default 
+ 
+\layout Standard
+
+(a) Make a movie of the spool rolling along your laboratory table by following
+ these steps.
+ 
+\layout Enumerate
+
+Turn the camera on and point it along the long axis of your table.
+ The camera should be around 1 m from where you will roll the spool along
+ the surface of the table.
+ Place a ruler somewhere in the field-of-view where it won't interfere with
+ the motion and parallel to one edge of the field-of-view.
+ This ruler will be user later to determine the scale.
+ 
+\layout Enumerate
+
+Practice rolling the spool in front of the camera a few times to make sure
+ the camera is pointing so there is no change in the vertical position of
+ the center of the spool as it moves across the camera's field-of-view.
+ Make a movie of the spool rolling at a constant speed along the table.
+ See 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for details on making the movie.
+\layout Standard
+
+(b) Determine the position of a point on the rim of the spool and the center
+ of the spool during the motion.
+ To do this task follow the instructions in 
+\series bold 
+Appendix D: Video Analysis
+\series default 
+ for creating and calibrating movie data.
+ On each frame click first on the point on the rim and then on the center.
+ Make sure the vertical position of the center did not change much during
+ the movie.
+ If it did, check the orientation of your camera and retake the movie.
+ The file should contain five columns with the values of time, x and y positions
+ of the point on the rim, and x and y positions of the center of the spool.
+\layout Standard
+\added_space_bottom 5mm 
+(c) Create a plot of the horizontal position of the center of the spool
+ versus time.
+ See 
+\series bold 
+Appendix C: Introduction to Cricket Graph
+\series default 
+ for more details.
+ Fit your data and extract the speed of the center of the spool.
+ Print your plot and attach it to your write-up.
+ Measure the radius of the spool.
+\layout Standard
+\added_space_bottom 5mm 
+v
+\begin_inset Formula \( _{spool} \)
+\end_inset 
+
+ = 
+\hfill 
+r
+\begin_inset Formula \( _{spool} \)
+\end_inset 
+
+ = 
+\hfill 
+
+\layout Standard
+\added_space_bottom 5mm 
+(d) What is the general expression for the angular displacement of the point
+ on the rim relative to the center of the spool in terms of the x and y
+ positions that you recorded above? 
+\layout Standard
+\added_space_bottom 5mm 
+
+\begin_inset Formula \( \theta _{rim}= \)
+\end_inset 
+
+ 
+\layout Standard
+
+(e) We want to graph the angular displacement of the point on the rim relative
+ to the center as a function of time.
+ To do this:
+\layout Enumerate
+
+Calculate the angular displacement 
+\begin_inset Formula \( \theta _{rim} \)
+\end_inset 
+
+ in radians for the first row in the Data window of Cricket Graph.
+ Record the result here.
+\begin_inset Formula 
+\[
+\theta _{1}=\]
+
+\end_inset 
+
+
+\layout Enumerate
+
+Calculating the angular position for all the data as we just did would be
+ horribly tedious.
+ However, we can take advantage of 
+\shape italic 
+Cricket Graph's
+\shape default 
+ spreadsheet capabilities to speed things up.
+ To enter an equation for column 6 in the 
+\shape italic 
+Cricket Graph
+\shape default 
+ Data window double click on the box at the top of column 6 that has the
+ lone "6" in it.
+ The cursor will now appear in the box at the very top of the 
+\series bold 
+Data
+\series default 
+ window.
+ In that window use the following syntax to calculate the angular position,
+\begin_inset Formula 
+\[
+=ATAN2(C2-C4,C3-C5)\]
+
+\end_inset 
+
+ where C2 refers to column 2 that contains the x values of the point on
+ the rim, C3 refers to column 3 that contains the y values of the point
+ on the rim, C4 refers to the center of the spool's x value, and C5 refers
+ to the center of the spool's y value.
+ The function "ATAN2" calculates the inverse tangent from the ratio of the
+ two arguments.
+ Hit the "Enter" key when you are done.
+ You may find the column that contains the results of your calculation has
+ a numeric format that is difficult to read.
+ You can adjust the number of significant digits that are displayed by clicking
+ on the number at the top of the column of interest and then highlighting
+ 
+\series bold 
+Numeric Format
+\series default 
+ under the 
+\series bold 
+Options
+\series default 
+ menu of 
+\shape italic 
+Cricket Graph
+\shape default 
+.
+ You will be presented with a pop-up window with choices for the number
+ of significant digits to be displayed.
+ 
+\layout Enumerate
+
+Does the value of the first row agree with the calculation you made in part
+ (2) above? If it does not check both calculations again.
+ If that fails consult your instructor.
+ 
+\layout Enumerate
+
+Graph the angular displacement (column 6) as a function of time (column
+ 1).
+ You will see discontinuous jumps in your data because the function you
+ used in part (3) always calculates angles in the range -
+\begin_inset Formula \( \pi  \)
+\end_inset 
+
+ to 
+\begin_inset Formula \( \pi  \)
+\end_inset 
+
+.
+ You must add different increments of 2
+\begin_inset Formula \( \pi  \)
+\end_inset 
+
+, 4
+\begin_inset Formula \( \pi  \)
+\end_inset 
+
+, etc.
+ to adjust the scale of the angular displacement.
+ Do this, print your plot and attach it to your write-up.
+ 
+\layout Standard
+\added_space_bottom 5mm 
+(f) Fit your graph of the angular displacement versus time and extract the
+ angular speed.
+ Calculate the ratio of the speed of the center of the spool and the angular
+ speed.
+ What are the units of this ratio? Is it close in value to any property
+ of the spool? Is it related to any property of the spool? Why?
+\layout Standard
+\added_space_bottom 10mm 
+
+\begin_inset Formula \( \omega _{rim}= \)
+\end_inset 
+
+
+\hfill 
+ 
+\begin_inset Formula \( v_{spool}/\omega _{rim}= \)
+\end_inset 
+
+
+\hfill 
+
+\layout Standard
+\added_space_bottom 20mm 
+(g) Make a plot of the vertical and horizontal components of the position
+ of the point on the rim as a function of time.
+ Attach a copy of your plot to the unit.
+ What is the speed of the point on the rim when it is in contact with the
+ table? Explain.
+\layout Standard
+
+(h) How would you define rolling now? What is the role of friction?
+\the_end
