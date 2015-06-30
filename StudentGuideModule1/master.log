@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  5 JUN 2015 14:04
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.1)  30 JUN 2015 11:18
 entering extended mode
 **master.tex
 (master.tex
@@ -771,8 +771,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: newton/newton_fig9.eps Graphic file (type eps)
 
 <newton/newton_fig9.eps> [121]
-File: newton/newton_fig10.eps Graphic file (type eps)
- <newton/newton_fig10.eps>) [122]
+File: newton/newton_fig10_new.eps Graphic file (type eps)
+ <newton/newton_fig10_new.eps>) [122]
 (friction/friction.tex [123
 
 
@@ -1189,7 +1189,7 @@ File: instrumentation_fig1.eps Graphic file (type eps)
 (video_analysis_tracker.aux) (instrumentation.aux)) ) 
 Here is how much of TeX's memory you used:
  2291 strings out of 428760
- 33680 string characters out of 3163265
+ 33688 string characters out of 3163265
  96087 words of memory out of 3000000
  5084 multiletter control sequences out of 15000+200000
  21954 words of font info for 53 fonts, out of 3000000 for 9000
