@@ -1,0 +1,59 @@
+\section{A Single-Page Summary on Handling Uncertainties}
+
+\textbf{Uncertainties in measurements:}
+\vspace{-0.15cm}
+
+When estimating the uncertainty of a measurement, the actual value should have a \textit{reasonable} probability of lying within your stated range of \textit{best guess $\pm$ uncertainty}.  ``Reasonable probability'' usually means either 67\% or 95\%, called the \textit{confidence interval}.  Sometimes you can only know the uncertainty from reading the manual for the measuring device.  Other times you can use your common sense to determine whether you would be willing to bet a cup of coffee on the final result.
+\vspace{+0.15cm}
+
+\textbf{Propagating uncertainties:}
+\vspace{-0.15cm}
+
+When a calculated quantity depends on a measurement that has uncertainty, do the calculation using both your \textit{best-guess} value and one of the two \textit{worst-case} values, then take the difference of the results.  \textbf{Example:} calculating circumference $C$ from measured diameter of $50\pm2$ cm.
+\begin{itemize} \itemsep1pt
+\vspace{-0.35cm}
+	\item Best guess: $\,C=\pi D =\pi(50 \:\rm{cm}) = 157.1$ cm
+	\item Worst case: $C=\pi D =\pi(52 \:\rm{cm}) =$\underline{ $163.4$  cm}
+\vspace{-0.10cm}
+	\item Difference of:        \hspace{100pt}                   6.3 cm. $\Longrightarrow$ \framebox[1.1\width]{$C=157\pm6$ cm.}
+\end{itemize}
+\vspace{-0.35cm}
+As long as the uncertainties are smallish, you only need to calculate one worst case.
+\vspace{+0.15cm}
+
+\textbf{Two or more sources of uncertainty:}
+\vspace{-0.15cm}
+
+When a calculated quantity depends on two or more measurements that have uncertainty, start by finding the uncertainty in the calculated quantity from each ONE of the measurements separately, as above.  Then combine those individual uncertainties ``in quadrature,'' like legs of a right triangle. \textbf{Example:} calculating $W=F \Delta x$, where $F=45\pm3$ N and $\Delta x=100\pm9$ cm. 
+\begin{itemize} \itemsep1pt
+\vspace{-0.35cm}
+	\item Uncertainty in $F$ only:   \:\:\,($F=45\pm3$ N, $\Delta x=100.000$ cm) $\Longrightarrow W=45\pm3$ Joules.
+	\item Uncertainty in $\Delta x$ only: ($F=45.000$ N, $\Delta x=100\pm9$ cm) $\Longrightarrow W=45\pm4$ Joules.
+\vspace{-0.10cm}
+		\item Combine: $\sqrt{(3 \:\rm{J})^2+(4 \:\rm{J} )^2 } =5$ J.  $\Longrightarrow$ \framebox[1.1\width]{$W=45\pm 5$ Joules.}
+\end{itemize}
+\vspace{-0.35cm}
+Three or more sources of uncertainty combine the same way: $\sqrt{(\:)^2 + (\:)^2 +...+ (\:)^2 }$.
+\vspace{+0.15cm}
+
+\textbf{Correlated uncertainties:}
+\vspace{-0.15cm}
+
+Combining uncertainties in quadrature as above is what you do when the uncertainties are \textit{uncorrelated}: each measurement could be either high or low, independent of the other one.  But if the uncertainties are \textit{correlated} (one measurement high means the other is high too), then calculate a single worst-case scenario with both measurements too high, or both too low. \textbf{Example:} You want the difference between two masses, $m_2-m_1$, each measured on the same scale, which might be miscalibrated by up to 1\%.  Suppose $m_2=400\pm4$ g, and $m_1=300\pm3$ g. 
+\begin{itemize} \itemsep1pt
+\vspace{-0.35cm}
+	\item Best guess: $\,\Delta m=m_2-m_1=400 \:\rm{ g}-300 \:\rm{ g} = 100 \:\rm{ g}$
+	\item Worst case: $  \Delta m=m_2-m_1=404 \:\rm{ g}-303 \:\rm{ g} = \underline{ 101 \:\rm{ g}}$
+\vspace{-0.15cm}
+	\item Difference of: \hspace{151pt}                        $1 \:\rm{g}$. $\Longrightarrow$ \framebox[1.1\width]{$\Delta m=100\pm 1 \:\rm{g}$.}
+\end{itemize}
+\vspace{-0.35cm}
+You can see right away that adding the uncertainties in quadrature would give $100\pm5$ g, which is crazy.  (If they were measured by different scales, then you really could have $m_2=403$ g and $m_1=298$ g, so $\Delta m=100\pm 5$ g would be reasonable, not crazy.)  Also note that for adding the masses, a shortcut is to add the uncertainties directly, not in quadrature: $m_{total}=700\pm 7$ g.
+\vspace{+0.15cm}
+
+\textbf{Disclaimer:}
+\vspace{-0.15cm}
+
+There are enough shortcuts, special techniques, definitions, and rigorous justifications to fill a book. If you want them, go find a book.  This is just a single page.
+
+
