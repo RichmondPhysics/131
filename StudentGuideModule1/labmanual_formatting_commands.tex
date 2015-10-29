@@ -1,0 +1,109 @@
+%% LyX 1.1 created some parts of this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
+\cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
+\usepackage{newclude} %Allows use of /include*{}, which does not give page break at end, so better with \part
+\geometry{verbose,letterpaper}
+\usepackage{fancyhdr}
+\usepackage{babel}
+\setlength\parskip{\medskipamount}
+\setlength\parindent{0pt}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
+\usepackage{comment}
+\usepackage{esvect}
+\usepackage{amsmath} %uncommented by MT 5/2015, used in "E near charged rod"
+\usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
+\usepackage{tabularx} %added by MT 6/2015, for fixed width columns, used in rc_circuits
+\usepackage{titlesec}
+
+%For fixed width columns:
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+
+\addtolength{\oddsidemargin}{1.3cm} %without these two lines, larger margin is on the OUTSIDE.  We want the larger edge on the INSIDE, to allow room for the three hole punches
+\addtolength{\evensidemargin}{-1.3cm}
+
+\setlength\topmargin{0.2in}
+\addtolength{\hoffset}{-1.0cm}
+\addtolength{\textwidth}{2.0cm}
+\addtolength{\voffset}{-1.5cm} %This line is apparently needed on some versions of MikTex XeLatex.  Comment out if your pages appear shifted too high.
+\addtolength{\textheight}{3.5cm}
+% define a strut for extra vertical space in tables.
+\newcommand{\hi}{\rule[-2mm]{0mm}{6mm}}
+
+\pagestyle{fancy}
+%\fancyhead[LE,RO]{\slshape \rightmark} %This is the default for fancy page style
+%\fancyhead[LO,RE]{\slshape \leftmark}
+\fancyhead[LO,RE]{\slshape \rightmark} 
+\fancyhead[LE,RO]{\slshape \leftmark} % Reversed LE, RO to  LO,RE to make headers come out correctly on even/odd pages
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\newenvironment{LyXParagraphIndent}[1]%
+{
+  \begin{list}{}{%
+    \setlength\topsep{0pt}%
+    \addtolength{\leftmargin}{#1}
+    \setlength\parsep{0pt plus 1pt}%
+  }
+  \item[]
+}
+{\end{list}}
+%% Special footnote code from the package 'stblftnt.sty'
+%% Author: Robin Fairbairns -- Last revised Dec 13 1996
+\makeatletter
+\let\SF@@footnote\footnote
+\def\footnote{\ifx\protect\@typeset@protect
+    \expandafter\SF@@footnote
+  \else
+    \expandafter\SF@gobble@opt
+  \fi
+}
+\expandafter\def\csname SF@gobble@opt \endcsname{\@ifnextchar[%]
+  \SF@gobble@twobracket
+  \@gobble
+}
+\edef\SF@gobble@opt{\noexpand\protect
+  \expandafter\noexpand\csname SF@gobble@opt \endcsname}
+\def\SF@gobble@twobracket[#1]#2{}
+
+\makeatother
+
+
+%I make use of some latex features to manage the section numbers. To use those you have to insert the following lines into the latex preamble (before the %"\begin{document}" command).
+
+% two new commands to do labelling. - gpg 12/4/13
+\newcommand{\customlabel}[2]{%
+\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
+
+\newcommand{\actlabel}[1]{%
+\protected@write \@auxout {}{\string \newlabel {#1}{{\arabic{activity}}{}}}}
+
+\newcommand{\makelabheader}
+%{Name: \rule{2.0in}{0.1pt}\hfill{}Section: \rule{1.0in}{0.1pt}\hfill{}Date: \rule{1.0in}{0.1pt}}
+{Name: \rule{2.0in}{0.1pt}\hfill{}Lab Partner(s): \rule{3.0in}{0.1pt}}
+
+%\newcommand{\dir131}{../../131/StudentGuideModule1} %This does not work, because commands can only be made of numeric characters, not numbers.
+
+%A new command for putting a box around a paragraph:
+\newenvironment{newboxed} %maybe there's a better way to do this.  I just cribbed from the web. --MT
+    {\begin{center}
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\\
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+\newcounter{activity}
