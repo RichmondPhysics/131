@@ -8,9 +8,11 @@
 %The master.pdf produced will have only the title page, TOC, and that single lab, though the other lab names will appear in the TOC.
 %\includeonly{measurement_uncertainty/measurement_uncertainty}
 
-\titleformat{\section}{\normalfont\Large\bfseries}{S\thesection}{1em}{}
+\newcommand{\supplementmark}{S}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\supplementmark \thesection}{1em}{}
 \fancyhead[LO,RE]{\slshape \rightmark} 
-\fancyhead[LE,RO]{\slshape S\leftmark} % Reversed LE, RO to  LO,RE to make headers come out correctly on even/odd 
+\fancyhead[LE,RO]{\slshape \supplementmark \leftmark} % Reversed LE, RO to  LO,RE to make headers come out correctly on even/odd 
 \begin{document}
 
 \setcounter{page}{201} 
