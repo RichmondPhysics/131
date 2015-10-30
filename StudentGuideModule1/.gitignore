@@ -9,6 +9,7 @@ master.synctex.gz
 master.synctex.gz(busy)
 master.toc
 master.pdf
+master_supplement.pdf
 **/*eps-converted-to.pdf
 
 #lines below copied from https://github.com/github/gitignore/blob/master/TeX.gitignore
