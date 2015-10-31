@@ -5,7 +5,8 @@
 \usepackage{geometry}
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
-\usepackage{newclude} %Allows use of /include*{}, which does not give page break at end, so better with \part
+%\usepackage{newclude} %Allows use of /include*{}
+%DANGER DANGER: newclude is NOT compatible with package xr, used for external references.
 \geometry{verbose,letterpaper}
 \usepackage{fancyhdr}
 \usepackage{babel}
@@ -20,6 +21,7 @@
 \usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
 \usepackage{tabularx} %added by MT 6/2015, for fixed width columns, used in rc_circuits
 \usepackage{titlesec}
+\usepackage{xr}
 
 %For fixed width columns:
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -107,3 +109,4 @@
     }
 
 \newcounter{activity}
+

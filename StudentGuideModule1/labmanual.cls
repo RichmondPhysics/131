@@ -1,6 +1,6 @@
 %This file, labmanual.cls, started out as `article.cls', and was modified slightly by Ted Bunn and Matt Trawick.
 %The definition of \part was changed to ONLY include the mention of parts in the table of contents, not in the
-%rest of the text.
+%rest of the text.  Also, the few lines defining 
 %%
 %% This is file `article.cls',
 %% generated with the docstrip utility.
@@ -55,9 +55,19 @@
 %%   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %%   Right brace   \}     Tilde         \~}
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{myarticle}
+\ProvidesClass{labmanual}
+%\ProvidesClass{myarticle}
               [2007/10/19 v1.4h
  Standard LaTeX document class]
+%immediateaddcontentsline was added by Matt Trawick, 10/31/2015
+%%see http://tex.stackexchange.com/questions/13914/toc-numbering-problem
+\newcommand\immediateaddcontentsline[3]{%
+        \begingroup
+        \let\origwrite\write
+        \def\write{\immediate\origwrite}%
+        \addcontentsline{#1}{#2}{#3}%
+        \endgroup
+}
 \newcommand\@ptsize{}
 \newif\if@restonecol
 \newif\if@titlepage
@@ -288,10 +298,13 @@
 \def\@part[#1]#2{%
     \ifnum \c@secnumdepth >\m@ne
       \refstepcounter{part}%
-      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+%      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}% %commented out by Matt Trawick 10/31/2015
+      \immediateaddcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
     \else
-      \addcontentsline{toc}{part}{#1}%
+%      \addcontentsline{toc}{part}{#1}% %commented out by Matt Trawick 10/31/2015
+      \immediateaddcontentsline{toc}{part}{#1}%
     \fi
+
     {\parindent \z@ \raggedright
      \interlinepenalty \@M
      \normalfont
