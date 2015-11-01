@@ -5,6 +5,7 @@
 \usepackage{geometry}
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
+\renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
 %\usepackage{newclude} %Allows use of /include*{}
 %DANGER DANGER: newclude is NOT compatible with package xr, used for external references.
 \geometry{verbose,letterpaper}
