@@ -2,7 +2,7 @@
 %% Do not edit unless you really know what you are doing.
 
 \usepackage[T1]{fontenc}
-\usepackage{geometry}
+\usepackage[nomarginpar]{geometry}
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
 \renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
@@ -15,12 +15,13 @@
 \setlength\parindent{0pt}
 \usepackage{graphicx}
 \usepackage{wrapfig}
-\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
+%\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
 \usepackage{comment}
 \usepackage{esvect}
 \usepackage{amsmath} %uncommented by MT 5/2015, used in "E near charged rod"
 \usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
 \usepackage{tabularx} %added by MT 6/2015, for fixed width columns, used in rc_circuits
+\usepackage{microtype}
 \usepackage{titlesec}
 \usepackage{xr}
 
@@ -78,7 +79,6 @@
 \edef\SF@gobble@opt{\noexpand\protect
   \expandafter\noexpand\csname SF@gobble@opt \endcsname}
 \def\SF@gobble@twobracket[#1]#2{}
-
 \makeatother
 
 
@@ -111,3 +111,27 @@
 
 \newcounter{activity}
 
+%  The following command, \answerspace, should be used to replace \vspace.
+%  \vspace{} is not ideal for an answer space for students, for two reasons:
+%  1. It can be ignored if it comes at the end of a page, and
+%  2. The spacing is exact, and Latex will not stretch or compress it at all to make things fit on a page, which means
+%  that other things WILL get stretched or compressed to make things fit, which means those other things will 
+%  end up looking bad, and leading to a lot of underfull \vbox warnings.
+%  \answerspace fixes both of those problems, specifically allowing the space to grow to up to twice the stated size.
+\newcommand{\answerspace}[1]{\vspace*{#1 plus #1}}
+
+%  The next several lines implement \includelab, which replaces \include.
+%  Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
+%  But all 0's can be overridden by writing \includealllabstrue in the master.tex file, which is easier than deleting 
+%  fifty individual `%' signs and then remembering to put them all back, which is what you had to do before.
+%  \includeonly still works as you expect it to.
+\newif\ifincludealllabs
+\newcommand{\includelab}[2]{
+	\ifnum#1=1
+		\include{#2}
+	\else {
+		\ifincludealllabs
+		 	\include{#2}
+		\fi}
+	\fi
+}

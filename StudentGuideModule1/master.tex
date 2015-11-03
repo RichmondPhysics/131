@@ -8,6 +8,9 @@
 %The master.pdf produced will have only the title page, TOC, and that single lab, though the other lab names will appear in the TOC.
 %\includeonly{work_power/work_power}
 
+%Use the following line to override all of the 1's and 0's in the \includelab statements below
+%\includealllabstrue
+
 \begin{document}
 
 \input{131_title_page}
@@ -17,98 +20,98 @@
 %--------------------------------------------
 \part{Kinematics}
 
-\include{measuring/measuring}
-\include{walking_speed}
-	%\include{converting_units}
-	%\include{measurement_length}
-	%\include{determining_pi}
-	%\include{measurement_uncertainty}
-\include{position/position}
-\include{velocity/velocity}
-\include{relating/relating}
-	%\include{instantaneous_velocity/instantaneous_velocity}
-\include{changing/changing}
-\include{slowing/slowing}
-\include{equations/equations}
-	%\include{measurement}
-\include{measurement_uncertainty/measurement_uncertainty}
-\include{grav_freefall}
-\include{vectors/vectors}
-	%\include{acceleration/acceleration}
-	%\include{reaction_time}
-	%\include{tossed_ball}
-	%\include{independence/independence}
-	%\include{ski_jump/ski_jump}
-\include{projectile}
-\include{circ_motion/circ_motion}
+\includelab{1}{measuring/measuring}
+\includelab{1}{walking_speed}
+\includelab{0}{converting_units}
+\includelab{0}{measurement_length}
+\includelab{0}{determining_pi}
+\includelab{0}{measurement_uncertainty}
+\includelab{1}{position/position}
+\includelab{1}{velocity/velocity}
+\includelab{1}{relating/relating}
+\includelab{0}{instantaneous_velocity/instantaneous_velocity}
+\includelab{1}{changing/changing}
+\includelab{1}{slowing/slowing}
+\includelab{1}{equations/equations}
+\includelab{0}{measurement}
+\includelab{1}{measurement_uncertainty/measurement_uncertainty}
+\includelab{1}{grav_freefall}
+\includelab{1}{vectors/vectors}
+\includelab{0}{acceleration/acceleration}
+\includelab{0}{reaction_time}
+\includelab{0}{tossed_ball}
+\includelab{0}{independence/independence}
+\includelab{0}{ski_jump/ski_jump}
+\includelab{1}{projectile}
+\includelab{1}{circ_motion/circ_motion}
 
 %--------------------------------------------
 \part{Newton's Laws}
 
-\include{force1/force1}
-\include{force2/force2}
-\include{combining/combining}
-\include{force_mass/force_mass}
-\include{newton/newton}
-	%\include{atwood/atwood}
-\include{friction/friction}
-\include{check_your_units/check_your_units}
-\include{elec_grav/elec_grav}
-\include{centripetal/centripetal}
-	%\include{kepler}
+\includelab{1}{force1/force1}
+\includelab{1}{force2/force2}
+\includelab{1}{combining/combining}
+\includelab{1}{force_mass/force_mass}
+\includelab{1}{newton/newton}
+\includelab{0}{atwood/atwood}
+\includelab{1}{friction/friction}
+\includelab{1}{check_your_units/check_your_units}
+\includelab{1}{elec_grav/elec_grav}
+\includelab{1}{centripetal/centripetal}
+\includelab{0}{kepler}
 
 %--------------------------------------------
 \part{Conservation Laws}
 
-\include{work_power/work_power}
-\include{work_kinetic/work_kinetic}
-\include{conservation_mech}
-\include{eoverm2/eoverm2}
-\include{conservative/conservative}
-\include{momentum/momentum}
-\include{impulse/impulse}
-\include{newtons_laws/newtons_laws}
-\include{mom_cons/mom_cons}
-\include{twod_collisions/twod_collisions}
+\includelab{1}{work_power/work_power}
+\includelab{1}{work_kinetic/work_kinetic}
+\includelab{1}{conservation_mech}
+\includelab{1}{eoverm2/eoverm2}
+\includelab{1}{conservative/conservative}
+\includelab{1}{momentum/momentum}
+\includelab{1}{impulse/impulse}
+\includelab{1}{newtons_laws/newtons_laws}
+\includelab{1}{mom_cons/mom_cons}
+\includelab{1}{twod_collisions/twod_collisions}
 
 %--------------------------------------------
 \part{Rotational Motion}
 
-\include{ang_lin_displacement}
-\include{rotation/rotation}
-\include{newtons_2law_rot}
-	%\include{rolling}
-	%\include{moment_inertia/moment_inertia}
-\include{ang_mom/ang_mom}
-\include{cons_ang_mom}
+\includelab{1}{ang_lin_displacement}
+\includelab{1}{rotation/rotation}
+\includelab{1}{newtons_2law_rot}
+\includelab{0}{rolling}
+\includelab{0}{moment_inertia/moment_inertia}
+\includelab{1}{ang_mom/ang_mom}
+\includelab{1}{cons_ang_mom}
 
 %--------------------------------------------
 \part{Oscillation}
 
-\include{hooke}
-\include{periodic_motion/periodic_motion}
-\include{pendulum_period}
-	%\include{resonance}
-	%\include{resonance_tubes}
+\includelab{1}{hooke}
+\includelab{1}{periodic_motion/periodic_motion}
+\includelab{1}{pendulum_period}
+\includelab{0}{resonance}
+\includelab{0}{resonance_tubes}
 
 %--------------------------------------------
 \part{Relativity}
 
-\include{galilean_relativity}
-\include{twins_paradox}
+\includelab{1}{galilean_relativity}
+\includelab{1}{twins_paradox}
 
 %--------------------------------------------
 %\part{Appendices}
 \immediateaddcontentsline{toc}{part}{Appendices} %Avoids a Roman part number for the Appendices in the toc
 \appendix
 
-\include{appendices/treatment_data}
-\include{appendices/one_page_uncertainty/one_page_uncertainty}
-\include{appendices/datastudio/datastudio}
-	%\include{appendices/cricketgraph}
-\include{appendices/excel/excel}
-	%\include{appendices/video_analysis/video_analysis}
-\include{appendices/video_analysis_tracker/video_analysis_tracker}
-\include{appendices/instrumentation/instrumentation}
+\includelab{1}{appendices/treatment_data}
+\includelab{1}{appendices/one_page_uncertainty/one_page_uncertainty}
+\includelab{1}{appendices/datastudio/datastudio}
+\includelab{0}{appendices/cricketgraph}
+\includelab{1}{appendices/excel/excel}
+\includelab{0}{appendices/video_analysis/video_analysis}
+\includelab{1}{appendices/video_analysis_tracker/video_analysis_tracker}
+\includelab{1}{appendices/instrumentation/instrumentation}
 
 \end{document}
