@@ -117,8 +117,12 @@
 %  2. The spacing is exact, and Latex will not stretch or compress it at all to make things fit on a page, which means
 %  that other things WILL get stretched or compressed to make things fit, which means those other things will 
 %  end up looking bad, and leading to a lot of underfull \vbox warnings.
-%  \answerspace fixes both of those problems, specifically allowing the space to grow to up to twice the stated size.
-\newcommand{\answerspace}[1]{\vspace*{#1 plus #1}}
+%  \answerspace fixes both of those problems, specifically allowing the space to grow to up to 1.5 times the stated size.
+
+\newlength\answerlength
+\newcommand{\answerspace}[1]{
+	\setlength\answerlength{#1}
+	\vspace*{1.0\answerlength plus 0.5\answerlength}}
 
 %  The next several lines implement \includelab, which replaces \include.
 %  Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
