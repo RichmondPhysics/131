@@ -13,9 +13,10 @@ of angular momentum conservation among objects that experience no external torqu
 \begin{itemize}
 \item A Rotating Disk System 
 \item Masses of 500 g, 1 kg 
-\item A meter stick and a ruler 
+\item An 18 inch ruler and a cm ruler 
+\item A vernier caliper
 \item A small water bubble level
-\item A video analysis system (\textit{VideoPoint} or \textit{Tracker})
+\item A video analysis system (\textit{Tracker})
 \end{itemize}
 \textbf{Overview }
 
@@ -56,6 +57,7 @@ moment of inertia. Derive a formula for the moment of inertia of a cylindrical-s
 \( m_{w} =\)  \hfill{}\(r_{w} =\) \hfill{}
 \vspace{5mm}
 
+\pagebreak[2]
 (d) Come up with a formula for the moment of inertia $I$ of the whole system
 before and after the collision and calculate the moment of inertia before the
 collision only. (The moment of inertia after the collision will be determined AFTER you do the experiment, because you will not know \( r_{r} \) until after you do the experiment.) Don't forget to include the units in \( I_{before} \).
@@ -69,20 +71,18 @@ collision only. (The moment of inertia after the collision will be determined AF
 
 \textbf{Activity 2: Making a Movie of the Collision} 
 
-(a) Place the video camera about 1 m above the rotator, align the camera with
-the center of the rotator using the pendulum, and center the rotator in the
-field of view of the camera by viewing it with the \textit{VideoPoint
-Capture} software.
-Place a ruler of known length in the field of view of the camera and parallel
-to one side of the frame. Check that the rotator is flat with the small water-bubble level.
+(a) Place the video camera about 1 m above the rotator and align the camera with
+the center of the rotator. Open \textbf{Movie Maker} and turn on the camera as explained 
+in \textbf{Appendix \ref{tracker}: Video Analysis Using Tracker}.  Center the rotator in the
+field of view of the camera. Place a ruler of known length in the field of view of the camera and parallel to one side of the frame. Check that the rotator is level with the small water-bubble level.
 
-(b) Give the rotator a push and begin recording its motion with the video camera. See \textbf{Appendix \ref{videopoint}: Video Analysis Using VideoPoint} or \textbf{Appendix \ref{tracker}: Video Analysis Using Tracker} for details on making the movie. While the rotator is moving hold the weight you recorded above near the rim of the disk and close to, but not quite
-touching, the surface of the moving disk. After at least one revolution
-of the disk drop the mass onto the disk and record the motion of
-the disk for at least one revolution afterward. 
+(b) Give the rotator a push and begin recording its motion with the video camera. See \textbf{Appendix \ref{tracker}: Video Analysis Using Tracker} for details on making the movie. 
+While the rotator is moving hold the weight you recorded above near the rim of the disk and 
+close to, but not quite touching, the surface of the moving disk. After at least one revolution
+of the disk drop the weight onto the disk and record the motion of the disk for at least one 
+revolution afterward. Do not rotate the disk too fast or the weight will not stay on it.
 
-(c) \textit{Before removing the weight from the disk}, determine the distance of the center of the weight you dropped from the center of the rotator \( r_{r} \). To do this, measure the distance from the center
-of the rotator to the edge of the weight \( r_{edge} \) and use the result from Activity 1 part (c) for the radius of the weight \( r_{w} \). Calculate the distance from the origin to the center of the weight \( r_{r} \) (it is just the sum of \( r_{edge} \) and \( r_{w} \)). Use these results and those from Activity 1 part (d) to calculate the final moment of inertia.
+(c) \textit{Before removing the weight from the disk}, determine the distance of the center of the weight you dropped from the center of the rotator \( r_{r} \). To do this, measure the distance from the center of the rotator to the edge of the weight \( r_{edge} \) and use the result from Activity 1 part (c) for the radius of the weight \( r_{w} \). Calculate the distance from the origin to the center of the weight \( r_{r} \) (it is just the sum of \( r_{edge} \) and \( r_{w} \)). Use these results and those from Activity 1 part (d) to calculate the final moment of inertia.
 \vspace{5mm}
 
 \( r_{\mbox{\small edge}}  =\) \hfill{}\( r_{w} \) = \hfill{}\( r_{r} \) =\hfill{}
@@ -96,22 +96,27 @@ of the rotator to the edge of the weight \( r_{edge} \) and use the result from 
 Determine the angular speed before and after the collision.
 
 \begin{enumerate}
-\item Find the last frame before you dropped the weight on the rotator and click on
-the position of the white marker on the metal disk. Now go backward through the film until the rotator has gone through one full rotation. Estimate how many frames there are in one rotation. (Step through the frames and count.) This will be called \( N_{\rm before}\). You also need to know the time between frames \( \Delta  t_{\rm frame}\), which is just the reciprocal of the capture rate in frames per second.
-\[
-N_{\mbox{\small before}}=\qquad \qquad \qquad \Delta t_{\rm frame}=\]
-Calculate the time for one rotation (the period $T$ of rotation) before the collision and the angular speed in radians per second.
+%\item Find the last frame before you dropped the weight on the rotator and click on
+%the position of the white marker on the metal disk. Now go backward through the film until the rotator has gone through one full rotation. Estimate how many frames there are in one rotation. (Step through the frames and count.) This will be called \( N_{\rm before}\). You also need to know the time between frames \( \Delta  t_{\rm frame}\), which is just the reciprocal of the capture rate in frames per second.
+%\[
+%N_{\mbox{\small before}}=\qquad \qquad \qquad \Delta t_{\rm frame}=\]
+\item Using \textit{Tracker}, track the outer edge of the white marker on the rotating disk 
+for one full rotation before dropping the weight, and determine the period of rotation from the 
+\textit{Tracker} graph. Record the result here and calculate the corresponding angular velocity 
+in radians per second:
 \[
 T_{\mbox{\small before}}=\qquad \qquad \qquad \omega _{\mbox{\small before}}=\]
 %\newpage
-\item We now follow a similar procedure to determine the angular speed after the collision.
+\item Follow a similar procedure to determine the angular speed after the collision. You will have 
+to create another ``Point Mass'' in \textit{Tracker} in order to track the outer edge of the white 
+marker after dropping the weight. Determine the period of rotation and the angular velocity as 
+before and record the results here:
 %Under the \textbf{Edit} Menu highlight \textbf{Clear All...} to get rid of your%
 %previous results. 
-Find the first frame after you dropped the weight on the rotator
-and click on the position of the white marker. Now go forward through the film and estimate the number of frames in one full rotation.
-\[
-N_{\mbox{\small after}}=\qquad \qquad \qquad \Delta t_{\rm frame}=\]
-Calculate the time for one rotation after the collision and the angular speed in radians per second.
+%Find the first frame after you dropped the weight on the rotator
+%and click on the position of the white marker. Now go forward through the film and estimate the number of frames in one full rotation.
+%\[
+%N_{\mbox{\small after}}=\qquad \qquad \qquad \Delta t_{\rm frame}=\]
 \[
 T_{\mbox{\small after}}=\qquad \qquad \qquad \omega _{\mbox{\small after}}=\]
 
@@ -123,9 +128,8 @@ T_{\mbox{\small after}}=\qquad \qquad \qquad \omega _{\mbox{\small after}}=\]
 (a) Calculate the angular momentum before and after the collision, including UNITS. Calculate the difference between the two results and record it below. 
 Go around to the other lab groups and get their results for the difference between the angular momenta before and after the collision.
 Make a histogram of the results you collect and calculate the average and standard deviation.
-For information on making histograms, see \textbf{Appendix \ref{excel}}. For information on calculating the average and
-standard deviation, see \textbf{Appendix \ref{treatment}}. Record the average and standard deviation here.
-Attach the histogram to this unit.
+For information on making histograms, see \textbf{Appendix \ref{excel}}. For information on calculating the average and standard deviation, see \textbf{Appendix \ref{treatment}}. 
+Record the average and standard deviation here. Attach the histogram to this unit.
 \vspace{5mm}
 
 \( L_{\mbox{\small before}}= \)  
@@ -145,8 +149,7 @@ Use the average and standard deviation for the class to quantitatively answer th
 (c) What does the histogram of the class data tell you? Be quantitative in your answer.
 \vspace{20mm}
 
-(d) Within the limits of experimental uncertainty, is angular momentum 
-conserved?  Be quantitative.
+(d) Does the class data indicate a systematic error?  What do you suppose causes this?
 \vspace{20mm}
 
 (e) Would the procedure you followed above change if the weight was moving horizontally at a constant velocity when you dropped it? 
