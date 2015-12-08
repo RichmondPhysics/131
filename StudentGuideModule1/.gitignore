@@ -1,5 +1,6 @@
 #this file excludes files we don't want as part of the repository.
 **/*.aux
+**/*.idx
 **/*.log
 **/*.tex~
 **/*.dvi
@@ -9,7 +10,7 @@ master.synctex.gz
 master.synctex.gz(busy)
 master.toc
 master.pdf
-master_supplement.pdf
+master_supplement*.pdf
 **/*eps-converted-to.pdf
 
 #lines below copied from https://github.com/github/gitignore/blob/master/TeX.gitignore
@@ -21,6 +22,7 @@ master_supplement.pdf
 *.fls
 *.out
 *.toc
+*.idx
 
 ## Intermediate documents:
 *.dvi
