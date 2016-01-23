@@ -8,7 +8,7 @@ application for graphing, fitting, and manipulating data. In this
 appendix, we will briefly describe how to use Excel to do some useful
 tasks.  The current version is Excel 2013.
 
-\subsection{Data and formulae}
+\subsection{Data and Formulas}
 
 Figure \ref{fig:excel} below shows a sample Excel spreadsheet containing data
 from a made-up experiment.  The experimenter was trying to measure
@@ -50,7 +50,7 @@ mass in column A by the volume in column C.
 At the bottom of the spreadsheet we find the mean and standard
 deviation of the calculated densities (that is, of the numbers
 in cells D5 through D8).  Those are computed
-using the formulae {\tt =average(D5:D8)} and {\tt =stdev(D5:D8)}.
+using the formulas {\tt =average(D5:D8)} and {\tt =stdev(D5:D8)}.
 
 
 
@@ -198,7 +198,7 @@ The result should look like the right hand panel of Figure \ref{hist5}.
 
 \subsection{LINEST}
 
-LINEST is a function in Excel which gives a LINear ESTimate of the slope and the uncertainty in the slope for any linear data set. The uncertainty is based on the scatter of the data points about a perfect straight line. To use LINEST in Excel, perform the following steps:
+LINEST is a function in Excel which gives a LINear ESTimate of the slope and the uncertainty in the slope for any linear data set. It can also give the $y$-intercept and the uncertainty in the $y$-intercept.  The uncertainties are based on the scatter of the data points about a perfect straight line. To use LINEST in Excel, perform the following steps:
 
 \begin{enumerate}
 
@@ -208,9 +208,11 @@ LINEST is a function in Excel which gives a LINear ESTimate of the slope and the
 \item Type comma (,)
 \item Select range of $x$ values
 \item Type comma (,)
-\item Type 1,1)
-\item Hold down control AND shift buttons, press enter
-\item The result should look like this:
+\item To estimate both the slope and the $y$-intercept: Type 1,1)
+
+\textbf{OR}, to estimate only the slope, forcing a $y$-intercept of zero: Type 0,1)
+\item Hold down Control AND Shift buttons, and press Enter
+\item The result should look like this (if you typed ``1,1''):
 
 \begin{center} \begin{tabular}{|c|c|} \hline slope & intercept \\ \hline \( \Delta \)slope & \( \Delta \)intercept \\ \hline \end{tabular} \end{center}
 
