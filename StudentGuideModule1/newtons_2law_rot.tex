@@ -27,7 +27,7 @@ inertia on the basis of both observations and theory.
 
 We have used the definition of moment of inertia, $I$, to determine a theoretical equation for the moment of inertia of a uniform disk. This equation was given by
 \[
-I=\frac{1}{2}Mr^{2}.\]
+I=\frac{1}{2}MR^{2}.\]
 
 
 Does this equation adequately describe the moment of inertia of a rotating
@@ -60,7 +60,7 @@ middle in your calculation (i.e. assume the disk is uniform). Be sure to state
 units!
 \vspace{5mm}
 
-\( r_{d} =\) \hfill{}\( M_{d}= \) \hfill{}
+\( R_{d} =\) \hfill{}\( M_{d}= \) \hfill{}
 \vspace{5mm}
 
 \( I = \) 
@@ -123,17 +123,17 @@ To do this:
 \item Export your data to an \textit{Excel} file and launch 
 \textit{Excel}.
 
-\item Calculate the angular displacement \( \theta  \) in radians for the first row
-in the spreadsheet. Record the result here.
-You will use this result later to check the calculations you make with 
-\textit{Excel}.
-\bigskip
-
-
-$\theta =$
-\bigskip
-
-\item Calculating the angular position for all the data as we just did
+%\item Calculate the angular displacement \( \theta  \) in radians for the first row
+%in the spreadsheet. Record the result here.
+%You will use this result later to check the calculations you make with 
+%\textit{Excel}.
+%\bigskip
+%
+%
+%$\theta =$
+%\bigskip
+%
+\item Calculating the angular position for all the data using the equation you found in part (d) 
 would be horribly tedious. Instead, use an {\it Excel} formula to
 figure out the angular positions.  (See Appendix \ref{excel} for details.)
 You may find it helpful to know that there is an {\it Excel} function
@@ -142,40 +142,35 @@ For instance, if you put ``=ATAN2(C3,D3)'' into a cell, {\it Excel}
 will calculate the inverse tangent of the ratio of the number
 in cell D3 to the number in cell C3.  (Note that the ratio
 that is taken has the second argument on top: in this case, it's 
-D3/C3, not C3/D3.)
+D3/C3, not C3/D3.)  You may want to put the angular position in column 4, assuming the data from \textit{Tracker} are in columns 1, 2, and 3.
 
-\item Does the value of the first row agree with the calculation you made in part
-(2) above? If it does not, check both calculations again. If that fails consult
-your instructor. 
+%\item Does the value of the first row agree with the calculation you made in part
+%(2) above? If it does not, check both calculations again. If that fails consult
+%your instructor. 
 \item Graph the angular displacement (column 4) as a function of time (column 1).
 You will see discontinuous jumps in your data because the function you used
 in part (3) always calculates angles in the range \( -\pi  \) to \( +\pi  \).
 \textbf{You must add different increments of \( 2\pi  \), \(4 \pi  \), etc. to adjust
-the scale of the angular displacement.} If you don't do this step, you will not be able to do part (f) below.  You should create another
-column of data in your data table containing the angular positions with
-appropriate multiples of $2\pi$ added to them.
+the scale of the angular displacement.} If you don't do this step, you will not be able to do part (f) below.  You should create another column of data in your data table containing the 
+angular positions with appropriate multiples of $2\pi$ added to them. Then graph the data again.
 \end{enumerate}
 (f) We now want to extract the angular acceleration from the data.
 
 \begin{enumerate}
 \item To describe the time dependence of the angular displacement what type of 
 function should we use to fit the data? (Refer to Activity 6 part (d) of the 
-previous experiment.) How are the coefficients of the polynomial related to 
+previous experiment.) Which coefficient of the polynomial is related to 
 the angular acceleration?
-\answerspace{30mm}
+\answerspace{40mm}
 
 
-\pagebreak[2]
-\item Fit the data with a polynomial and write the resulting equation for the 
-time dependence of the angular position in the space below. Be sure to include 
-the proper units with the coefficients. Determine the experimental value for the
-angular acceleration from the fit and record it below. Also, print a copy of
-your plot with the fitted curve and the equation and include it with this unit.
+\item Add a trendline to the data with a polynomial fit of order 2 and display the resulting equation for the time dependence on the graph. Write the equation for the angular position as a function of time in the space below. Be sure to include the proper units with the coefficients. Determine the experimental value for the angular acceleration from the fit and record it below. Also, print a 
+copy of your plot with the fitted curve and the equation and include it with this unit.
 \vspace{50mm}
 
 \end{enumerate}
 
-
+\newpage
 \textbf{Activity 3: Comparing Theory with Experiment }
 
 (a) Summarize the theoretical and experimental values of angular acceleration. 
