@@ -1,0 +1,22 @@
+This file is a series of reminders and notes from Matt Trawick to myself or anybody else about some tips I'm figuring out for doing graphics things.
+
+Things I know:
+
+On powerpoint and word, under ACROBAT -> Preferences -> Advanced Settings -> Images, I can turn downsampling and compression OFF for various kinds of images, or control the resolution of downsampling.  These settings can be saved: on my laptop, I've saved them under "Press Quality(1)"  Also, I had to uncheck the box that said "optimize for fast web view".
+
+Also, under ACROBAT -> Preferences -> Advanced Settings -> Color -> Color Management Policies is set to "Leave Color Unchanged".
+
+In Powerpoint, Under File-> options -> advanced , you can turn off compression and downsampling for importing images.  Perhaps it can be made permanent with changing the registry: http://www.cami.miamioh.edu/temlab/pdf/Turn%20Off%20Compression%20in%20Power%20Point.pdf .  May need to change "12.0" to "16.0" in the registry key.  Confirmed: yes, I just set my bitmap export resolution to 1200 dpi.  http://www.pptfaq.com/FAQ00052_Improve_PowerPoint-s_GIF-_BMP-_PNG-_JPG_export_resolution.htm
+
+WOW! When I hit "Create PDF", if I select "current page only", I get low resolution crap.  But when I do ALL the pages, it looks great.  Wow.
+
+When saving from PDF to EPS, under Settings -> Color Management -> Color Handling, set to "Acrobat Color Management"
+
+Things I don't know yet and am puzzled about:
+
+In Microsoft Word, inserted images sometimes show up in the selection pane and sometimes do not.  For instance, a small JPG from the clipboard does show up, but the same file saved and dragged in does not.  In powerpoint, they show up on the selection pane more often (always?), so powerpoint may be a better tool than word.
+
+In powerpoint and word, there's a menu item called "ACROBAT" which produces pdf output.
+There's also "Print" to pdf document.  And there's "Save as" PDF.  It looks like the first two are based on the same settings in Acrobat; the "Save as" Adobe Pdf seems to use a totally different driver.  In general, I'd like to know how to change the default settings for Acrobat so I'm always printing at very high quality.  
+
+RGB settings are apparently not absolute once sent to a printer.  If a powerpoint file contains a drawing object with RGB color and a TIF file with the same RGB color, they can appear the same in powerpoint on screen, the same in a pdf file on screen, but different when printed.  Maybe this has to do with Acrobat's color settings.

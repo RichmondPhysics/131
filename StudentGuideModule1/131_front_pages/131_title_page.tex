@@ -1,13 +1,17 @@
-\newgeometry{total={8in,10.5in},hoffset=0.2in,voffset=0.6in}
+\newgeometry{total={8in,10.5in},hoffset=0.2in,voffset=0.3in}
 %nb: I just messed with the numbers above until it looked okay.  I really don't know what I'm doing. --MT, 4/23/2016
 \thispagestyle{empty}
+\definecolor{darkblue}{RGB}{0,0,160}
+\newpagecolor{darkblue}
 
 \begin{center}
-\includegraphics[width=7.3in]{131_front_pages/131_front_cover.eps}
+\includegraphics[width=7.3in,trim={0 0 .1cm 0},clip]{131_front_pages/131_front_cover.eps}
+\index{color page}
 \end{center}
 \newpage
 
 \restoregeometry
+\restorepagecolor
 
 \title{Physics For Doing!\\
 Part 1: Activities for Physics 131}
