@@ -3,13 +3,7 @@ This is a short list of things we may want to work on.
 List of bad, ugly, pixelated old figures that could be replaced.
 26 combining forces: cart figs not great.
 27 force, mass, accel: cart figs not great.
-30 Friction: pixelated figs.
-32 Elec grav: embarrassing figs.
-33 Centrip force: embarrassing, and easy to fix.
 35 Work and power: 1 easy one.
 36 Work and KE: two medium bad ones.
-40 Momentum change: try the automatic fixer on the boxer.
-43 COM: one bad one, easy to fix.
-46 Intro to rotation: some easy ones to fix.
-50 Angular momentum: some easy ones.
+46 Intro to rotation: three more easy ones to fix.
 
