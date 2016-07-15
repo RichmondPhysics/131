@@ -9,11 +9,11 @@
 \hline \centering{\textbf{What You Want To Do}} & \centering{\textbf{How You Do It}} & \textbf{Button} \\ 
 
 \hline Start Recording Data 
-& Click the `Start' button or select `Start Data' on the Experiment menu  
+& Click the `Record' button
 & \raisebox{-5mm}{\includegraphics{../../131/StudentGuideModule1/appendices/capstone/record_button.eps}} \\ 
 
 \hline Stop Recording Data 
-& Click the `Stop' button or select `Stop Data' on the Experiment menu 
+& Click the `Stop' button
 & \raisebox{-5mm}{\includegraphics{../../131/StudentGuideModule1/appendices/capstone/stop_button.eps}} \\ 
 
 \hline Re-scale the data so it fills the Graph display window 
@@ -21,7 +21,7 @@
 & \raisebox{-5mm}{\includegraphics{../../131/StudentGuideModule1/appendices/capstone/scale_to_fit.eps}} \\ 
 
 \hline Pinpoint the x- and y-coordinate values on the Graph display
-& Click the `Delta Tool' button  
+& Click the `Delta Tool' button, move square to point of interest
 & \raisebox{-5mm}{\includegraphics{../../131/StudentGuideModule1/appendices/capstone/delta_tool.eps}} \\ 
 
 \hline 
@@ -33,19 +33,15 @@
 \textbf{Selecting a Section of Data}
 
 \begin{enumerate}
-\item To select a data section, hold the mouse button down and move the cursor to
-draw a rectangle around the data of interest. The data in the region of interest
-will be highlighted.
-\item To unselect the data, click anywhere in the graph window.
+\item To select a data section, click the \textbf{Highlight} button.  Drag the pink rectangle to the data you wish to highlight.  Adjust the width and height using horizontal and vertical arrows at edges of highlighted region.
+\item To unselect the data, with cursor in highlighted region, right click and select ``Delete highlighter''.
 \end{enumerate}
-\textbf{Fitting a Section of Data}
+\textbf{Finding Average and Standard Deviation of a Section of Data}
 
 \begin{enumerate}
-\item Select the section of data to be fitted.
-\item Click on the \textbf{Fit} button on the Graph Toolbar and select a mathematical
-model. The results of the fit will be displayed on the graph.
-\item To remove the fit, click the \textbf{Fit} button and select the checked function
-type.
+\item Select the section of data of interest, as described above.
+\item Click on the \textbf{Statistics} button on the Graph Toolbar. Use the menu on this button to select maximum, minimum, mean, standard deviation, or any combination.
+\item To remove the results, click on the \textbf{Statistics} button again.
 \end{enumerate}
 
 
@@ -53,13 +49,10 @@ type.
 \textbf{Finding the Area Under a Curve}
 
 \begin{enumerate}
-\item Use the \textbf{Zoom Select} button on the Graph Toolbar to zoom in around the
-region of interest in the graph. See the quick reference guide above for instructions.
-\item Select the section of data that you want to integrate under.
-\item Click the \textbf{Statistics} button on the Graph Toolbar and select \textbf{Area}.
+\item Select the section of data that you want to integrate under, using the procedure described above.
+\item Click the \textbf{Display Area} button on the Graph Toolbar.
 The results of the integration will be displayed on the graph.
-\item To undo the integration, click on the \textbf{Statistics} button and select
-\textbf{Area}.
+\item To undo the integration, click on the \textbf{Display Area} button again.
 \end{enumerate}
 
 \textbf{Calibrating Force Sensors}
@@ -69,35 +62,45 @@ The results of the integration will be displayed on the graph.
 
 \item Open whatever software application you will be using in the current experiment.
 
-\item Click ``Setup''.
+\item Click ``Calibration'' icon on the tools panel on the left side of the screen.
 
-\item Click ``Calibrate Sensors''.
+\item Verify that the type of measurement is set to ``Force'', then click ``Next''.
+
+\item Choose ``Two standards'' as calibration type, then click ``Next''.
 
 \vspace{0.1in}
 \hspace{-0.2in}FOR HORIZONTAL USE:
 
-\item Set force sensor on track, and with no force applied to the sensor, press TARE button on side of the sensor. This sets the sensor to zero. Then set 1st calibration point to 0 newtons, press upper ``Read from sensor'' button.
+\item Set force sensor on track, and with no force applied to the sensor, press TARE button on side of the sensor. This sets the sensor to zero.
 
-\item While holding sensor stationary (with your hand), hang 200g from sensor over a pulley at end of track, as in Figure 2 of the Force and Motion I experiment. Set 2nd calibration point to 1.96 newtons, press lower ``Read from sensor'' button.
+\item With no mass attached, set standard value to 0 for the first point, click ``set current value to standard value'', then click ``Next''.
 
-\item Click ``OK''. Force sensor is now calibrated for the rest of your experiment. Close ``Calibrate Sensors'' window, close ``Setup'' window.
+\item While holding sensor stationary (with your hand), hang 200g from sensor over a pulley at end of track, as in Figure 2 of the Force and Motion I experiment. Set standard value to 1.96 newtons, click ``set current value to standard value'', then click ``Next''.
 
-\item While still holding the force sensor still, press ``Start''. Graph should now show a reading of 1.96 N. Press ``Stop''.
+\item After reviewing calibration, click ``Finish''.
 
-\item Try hanging a different mass from the force sensor (over the pulley); press ``Start'' and check that it is reading correctly.
+\item Click ``Calibration'' button again to close. Force sensor is now calibrated for the rest of your experiment.
+
+\item While still holding the force sensor still, press ``Record''. Graph should now show a reading of 1.96 N. Press ``Stop''.
+
+\item Try hanging a different mass from the force sensor (over the pulley); press ``Record'' and check that it is reading correctly.
 
 \vspace{0.1in}
 \hspace{-0.2in}FOR VERTICAL USE:
 
 \setcounter{enumi}{4}
 
-\item Holding sensor vertically (with hook down and no force applied to it), press TARE button on side of the sensor. This sets the sensor to zero. Then set 1st calibration point to 0 newtons, press upper ``Read from sensor'' button.
+\item Holding sensor vertically (with hook down and no force applied to it), press TARE button on side of the sensor. This sets the sensor to zero.
 
-\item Hang 200 g from sensor, set 2nd calibration point to 1.96 newtons, press lower ``Read from sensor'' button.
+\item With no mass attached, set standard value to 0 for the first point, click ``set current value to standard value'', then click ``Next''.
 
-\item Click ``OK''. Force sensor is now calibrated for the rest of your experiment. Close ``Calibrate Sensors'' window, close ``Setup'' window.
+\item Hang 200 g from sensor, set standard value to 1.96 newtons, click ``set current value to standard value'', then click ``Next''.
 
-\item While still holding the force sensor still, press ``Start''. Graph should now show a reading of 1.96 N. Press ``Stop''.
+\item After reviewing calibration, click ``Finish''.
 
-\item Try hanging a different mass from the force sensor; press ``Start'' and check that it is reading correctly.
+\item Click ``Calibration button again to close. Force sensor is now calibrated for the rest of your experiment.
+
+\item While still holding the force sensor still, press ``Record''. Graph should now show a reading of 1.96 N. Press ``Stop''.
+
+\item Try hanging a different mass from the force sensor; press ``Record'' and check that it is reading correctly.
 \end{enumerate}
