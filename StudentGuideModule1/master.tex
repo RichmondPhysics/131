@@ -11,6 +11,8 @@
 %Use the following line to override all of the 1's and 0's in the \includelab statements below
 %\includealllabstrue
 
+%\renewcommand{\section}{\cleardoublepage\NoExtraPageSection} %Makes each lab start on odd numbered page (right hand side).
+
 \makeindex
 \begin{document}
 
@@ -103,6 +105,8 @@
 %--------------------------------------------
 %\part{Appendices}
 \immediateaddcontentsline{toc}{part}{Appendices} %Avoids a Roman part number for the Appendices in the toc
+\cleardoublepage
+\renewcommand{\section}{\NoExtraPageSection} %Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
 \appendix
 
 \includelab{1}{appendices/treatment_data}
