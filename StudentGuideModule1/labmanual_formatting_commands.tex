@@ -33,6 +33,10 @@
 \SetEnumitemKey{labparts}{wide, label=(\emph{\alph*})} %defines labparts to number parts as (a), (b), etc.
 \usepackage{xcolor}
 \usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
+\usepackage{chngcntr}
+\counterwithin*{footnote}{section} %resets the footnote counter to 1 at every new section (each lab)
+\counterwithin*{equation}{section} %resets the equation counter to 1 at every new section (each lab)
+\counterwithin*{figure}{section} %resets the figure counter to 1 at every new section (each lab)
 
 %For fixed width columns:
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
