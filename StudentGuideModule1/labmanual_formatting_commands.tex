@@ -37,6 +37,9 @@
 \counterwithin*{footnote}{section} %resets the footnote counter to 1 at every new section (each lab)
 \counterwithin*{equation}{section} %resets the equation counter to 1 at every new section (each lab)
 \counterwithin*{figure}{section} %resets the figure counter to 1 at every new section (each lab)
+\usepackage{import}
+\usepackage{xparse}
+
 
 %For fixed width columns:
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -137,20 +140,26 @@
 	\setlength\answerlength{#1}
 	\vspace*{1.0\answerlength plus 0.5\answerlength}}
 
-%  The next several lines implement \includelab, which replaces \include.
 %  Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
 %  But all 0's can be overridden by writing \includealllabstrue in the master.tex file, which is easier than deleting 
 %  fifty individual `%' signs and then remembering to put them all back, which is what you had to do before.
 %  \includeonly still works as you expect it to.
+\begin{comment}
+You can also specify a directory for the file, as in \includelab{1}[path]{file}.
+\end{comment}
+
 \newif\ifincludealllabs
-\newcommand{\includelab}[2]{
-	\ifnum#1=1
-		\include{#2}
-	\else {
-		\ifincludealllabs
-		 	\include{#2}
-		\fi}
+\NewDocumentCommand \includelab { m o m } {%
+  \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
+	\ifnum#1=1 \include{#3} 
+	\else \ifincludealllabs \include{#3} \fi 
 	\fi
+	}
+  {%There is a directory {#1} {#2} {#3} \par
+	\ifnum#1=1 \subincludefrom*{#2} {#3} 
+	\else \ifincludealllabs \subincludefrom*{#2} {#3} \fi 
+	\fi
+	}
 }
 
 \let\NoExtraPageSection\section %This code line can be used to make each lab start on odd numbered page (right hand side).
