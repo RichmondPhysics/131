@@ -135,20 +135,23 @@
 %  that other things WILL get stretched or compressed to make things fit, which means those other things will 
 %  end up looking bad, and leading to a lot of underfull \vbox warnings.
 %  \answerspace fixes both of those problems, specifically allowing the space to grow to up to 1.5 times the stated size.
-
 \newlength\answerlength
 \newcommand{\answerspace}[1]{
 	\setlength\answerlength{#1}
 	\vspace*{1.0\answerlength plus 0.5\answerlength}}
 
-%  Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
-%  But all 0's can be overridden by writing \includealllabstrue in the master.tex file, which is easier than deleting 
-%  fifty individual `%' signs and then remembering to put them all back, which is what you had to do before.
-%  \includeonly still works as you expect it to.
-\begin{comment}
-You can also specify a directory for the file, as in \includelab{1}[path]{file}.
-\end{comment}
-
+% The following lines define a new command \includelab, for including labs in the master.tex file.
+% Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
+% But all 0's can be overridden by writing \includealllabstrue in the master.tex file, which is easier than deleting 
+% fifty individual `%' signs and then remembering to put them all back, which is what you had to do before.
+% \includeonly still works as you expect it to.
+%
+% You can also specify a directory for the file, as in \includelab{1}[path]{file}.
+% This provides a clean way to share files between 131, 132, and 125.  For example, within the 132 master file,
+% if you want to call a 131 lab, you would use: 
+%        \includelab{1}[../../131/StudentGuideModule1/]{velocity/velocity}.  
+% Among other benefits, this creates a file velocity/velocity.aux within the 132 directory structure, 
+% so that the aux file from 132 does not interfere with the aux file from 131.
 \newif\ifincludealllabs
 \NewDocumentCommand \includelab { m o m } {%
   \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
