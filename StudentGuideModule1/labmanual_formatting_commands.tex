@@ -1,70 +1,43 @@
-%% LyX 1.1 created some parts of this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
+%Various Latex formatting parts are here, to keep master.tex files relatively clean.
+
+%---------------------------------------------------------------------------------------------------
+%Things related to fonts and overall page appearance
 
 \usepackage{lmodern}
+\usepackage{babel}
 \usepackage[T1]{fontenc}
 \usepackage[nomarginpar]{geometry}
-\usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
-\cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
-\renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
-%\usepackage{newclude} %Allows use of /include*{}
-%DANGER DANGER: newclude is NOT compatible with package xr, used for external references.
 \geometry{verbose,letterpaper}
-\usepackage{fancyhdr}
-\usepackage{babel}
-\setlength\parskip{\medskipamount}
-\setlength\parindent{0pt}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{microtype} % (apparently not compatible with pdflatex)
-%\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
-\usepackage{comment}
-\usepackage{esvect}
-\usepackage{amsmath} %uncommented by MT 5/2015, used in "E near charged rod"
-\usepackage{amssymb}
-\usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
-\usepackage{tabularx} %added by MT 6/2015, for fixed width columns, used in rc_circuits
-\usepackage{titlesec}
-\usepackage{xr}
-\usepackage{makeidx}
-\usepackage{enumitem} %added 3/2016 by MT.  Tested 100% with other labs, looks like it does no harm.
-%enumitem package allows enumerate[resume], which allows enumerate to play nicely with wrapfig (see induction1).
-%enumitem package also provides very useful [wide] and [nosep] presets. (See, eg. resonance_tubes).
-\SetEnumitemKey{labparts}{wide, label=(\emph{\alph*})} %defines labparts to number parts as (a), (b), etc.
-\usepackage{xcolor}
-\usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
-\usepackage{chngcntr}
-\counterwithin*{footnote}{section} %resets the footnote counter to 1 at every new section (each lab)
-\counterwithin*{equation}{section} %resets the equation counter to 1 at every new section (each lab)
-\counterwithin*{figure}{section} %resets the figure counter to 1 at every new section (each lab)
-\usepackage{import}
-\usepackage{xparse}
-
-\newcommand\specialcaret {\hspace{0.0ex}\raisebox{0.6ex}{\scalebox{0.7}[0.7]{$\boldsymbol{\wedge}$}}\hspace{0.1ex}}
-
-%For fixed width columns:
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
-
-
 \addtolength{\oddsidemargin}{1.0cm} %without these two lines, larger margin is on the OUTSIDE.  We want the larger edge on the INSIDE, to allow room for the three hole punches
 \addtolength{\evensidemargin}{-1.0cm}
-
 \setlength\topmargin{0.2in}
 \addtolength{\hoffset}{-1.0cm}
 \addtolength{\textwidth}{2.0cm}
 \addtolength{\voffset}{-1.5cm} %This line is apparently needed on some versions of MikTex XeLatex.  Comment out if your pages appear shifted too high.
 \addtolength{\textheight}{3.5cm}
-% define a strut for extra vertical space in tables.
-\newcommand{\hi}{\rule[-2mm]{0mm}{6mm}}
 
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 %\fancyhead[LE,RO]{\slshape \rightmark} %This is the default for fancy page style
 %\fancyhead[LO,RE]{\slshape \leftmark}
 \fancyhead[LO,RE]{\slshape \rightmark} 
 \fancyhead[LE,RO]{\slshape \leftmark} % Reversed LE, RO to  LO,RE to make headers come out correctly on even/odd pages
 
+\usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
+\cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
+\renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
+\setlength\parskip{\medskipamount}
+\setlength\parindent{0pt}
+
+\usepackage{xcolor}
+\usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
+\usepackage{microtype} % (apparently not compatible with pdflatex)
+%\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
+
+%---------------------------------------------------------------------------------------------------
+%Footnotes
+% Note by MT, 3/19/2017: I have no idea what the code below is actually doing.  
+% But the Latex compiler crashes whenI take it out, so for now I'm leaving it in.
 
 %% Special footnote code from the package 'stblftnt.sty'
 %% Author: Robin Fairbairns -- Last revised Dec 13 1996
@@ -86,47 +59,16 @@
 \makeatother
 
 
-%I make use of some latex features to manage the section numbers. To use those you have to insert the following lines into the latex preamble (before the %"\begin{document}" command).
+%---------------------------------------------------------------------------------------------------
+%Things related to sectioning and including files
 
-% two new commands to do labelling. - gpg 12/4/13
-\newcommand{\customlabel}[2]{%
-\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
+\usepackage{titlesec}
+\usepackage{xr} %used to allow external references, so that master_supplement.tex can reference appendices, for instance.
+%\usepackage{newclude} %Allows use of /include*{}
+%DANGER DANGER: newclude is NOT compatible with package xr, used for external references.
 
-\newcommand{\actlabel}[1]{%
-\protected@write \@auxout {}{\string \newlabel {#1}{{\arabic{activity}}{}}}}
-
-\newcommand{\makelabheader}
-%{Name: \rule{2.0in}{0.1pt}\hfill{}Section: \rule{1.0in}{0.1pt}\hfill{}Date: \rule{1.0in}{0.1pt}}
-{Name: \rule{2.0in}{0.1pt}\hfill{}Lab Partner(s): \rule{3.0in}{0.1pt}}
-
-%\newcommand{\dir131}{../../131/StudentGuideModule1} %This does not work, because commands can only be made of numeric characters, not numbers.
-
-%A new command for putting a box around a paragraph:
-\newenvironment{newboxed} %maybe there's a better way to do this.  I just cribbed from the web. --MT
-    {\begin{center}
-    \begin{tabular}{|p{0.9\textwidth}|}
-    \hline\\
-    }
-    { 
-    \\\\\hline
-    \end{tabular} 
-    \end{center}
-    }
-
-\newcounter{activity}
-
-%  The following command, \answerspace, should be used to replace \vspace.
-%  \vspace{} is not ideal for an answer space for students, for two reasons:
-%  1. It can be ignored if it comes at the end of a page, and
-%  2. The spacing is exact, and Latex will not stretch or compress it at all to make things fit on a page, which means
-%  that other things WILL get stretched or compressed to make things fit, which means those other things will 
-%  end up looking bad, and leading to a lot of underfull \vbox warnings.
-%  \answerspace fixes both of those problems, specifically allowing the space to grow to up to 1.5 times the stated size.
-\newlength\answerlength
-\newcommand{\answerspace}[1]{
-	\setlength\answerlength{#1}
-	\vspace*{1.0\answerlength plus 0.5\answerlength}}
-
+\usepackage{import}
+\usepackage{xparse}
 % The following lines define a new command \includelab, for including labs in the master.tex file.
 % Usage is \includelab{1}{file} to include it, or \includelab{0}{file} to NOT include it.  
 % But all 0's can be overridden by writing \includealllabstrue in the master.tex file, which is easier than deleting 
@@ -140,6 +82,7 @@
 % Among other benefits, this creates a file velocity/velocity.aux within the 132 directory structure, 
 % so that the aux file from 132 does not interfere with the aux file from 131.
 \newif\ifincludealllabs
+
 \NewDocumentCommand \includelab { m o m } {%
   \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
 	\ifnum#1=1 \include{#3} 
@@ -152,6 +95,80 @@
 	\fi
 	}
 }
+
+
+%---------------------------------------------------------------------------------------------------
+%Packages providing general utilities
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{makeidx}
+\usepackage{esvect}
+\usepackage{amsmath} %uncommented by MT 5/2015, used in "E near charged rod"
+\usepackage{amssymb}
+\usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
+
+\usepackage{tabularx} %added by MT 6/2015, for fixed width columns, used in rc_circuits
+%For fixed width columns:
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+% define a strut for extra vertical space in tables.
+\newcommand{\hi}{\rule[-2mm]{0mm}{6mm}}
+
+%I make use of some latex features to manage the section numbers. To use those you have to insert the following lines into the latex preamble (before the %"\begin{document}" command). -gpg
+% two new commands to do labelling. - gpg 12/4/13
+\newcommand{\customlabel}[2]{%
+\protected@write \@auxout {}{\string \newlabel {#1}{{#2}{}}}}
+
+\newcommand{\actlabel}[1]{%
+\protected@write \@auxout {}{\string \newlabel {#1}{{\arabic{activity}}{}}}}
+
+\newcounter{activity}
+
+\usepackage{enumitem} %added 3/2016 by MT.  Tested 100% with other labs, looks like it does no harm.
+%enumitem package allows enumerate[resume], which allows enumerate to play nicely with wrapfig (see induction1).
+%enumitem package also provides very useful [wide] and [nosep] presets. (See, eg. resonance_tubes).
+\SetEnumitemKey{labparts}{wide, label=(\emph{\alph*})} %defines labparts to number parts as (a), (b), etc.
+
+
+\usepackage{chngcntr} %allows control over counters
+\counterwithin*{footnote}{section} %resets the footnote counter to 1 at every new section (each lab)
+\counterwithin*{equation}{section} %resets the equation counter to 1 at every new section (each lab)
+\counterwithin*{figure}{section} %resets the figure counter to 1 at every new section (each lab)
+
+\newcommand\specialcaret {\hspace{0.0ex}\raisebox{0.6ex}{\scalebox{0.7}[0.7]{$\boldsymbol{\wedge}$}}\hspace{0.1ex}}
+
+\newcommand{\makelabheader}
+%{Name: \rule{2.0in}{0.1pt}\hfill{}Section: \rule{1.0in}{0.1pt}\hfill{}Date: \rule{1.0in}{0.1pt}}
+{Name: \rule{2.0in}{0.1pt}\hfill{}Lab Partner(s): \rule{3.0in}{0.1pt}}
+
+
+%A new command for putting a box around a paragraph:
+\newenvironment{newboxed} %maybe there's a better way to do this.  I just cribbed from the web. --MT
+    {\begin{center}
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\\
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+
+%  The following command, \answerspace, should be used to replace \vspace.
+%  \vspace{} is not ideal for an answer space for students, for two reasons:
+%  1. It can be ignored if it comes at the end of a page, and
+%  2. The spacing is exact, and Latex will not stretch or compress it at all to make things fit on a page, which means
+%  that other things WILL get stretched or compressed to make things fit, which means those other things will 
+%  end up looking bad, and leading to a lot of underfull \vbox warnings.
+%  \answerspace fixes both of those problems, specifically allowing the space to grow to up to 1.5 times the stated size.
+\newlength\answerlength
+\newcommand{\answerspace}[1]{
+	\setlength\answerlength{#1}
+	\vspace*{1.0\answerlength plus 0.5\answerlength}}
 
 \let\NoExtraPageSection\section %This code line can be used to make each lab start on odd numbered page (right hand side).
 
