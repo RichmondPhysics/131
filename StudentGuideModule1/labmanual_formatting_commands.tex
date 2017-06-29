@@ -18,10 +18,12 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-%\fancyhead[LE,RO]{\slshape \rightmark} %This is the default for fancy page style
-%\fancyhead[LO,RE]{\slshape \leftmark}
+
+\newcommand{\headersupplementmark}{} %This can be changed to `Lab' or `Appendix' within master.tex
 \fancyhead[LO,RE]{\slshape \rightmark} 
-\fancyhead[LE,RO]{\slshape \leftmark} % Reversed LE, RO to  LO,RE to make headers come out correctly on even/odd pages
+\fancyhead[LE,RO]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
+\usepackage{titlesec} %must be called AFTER fancyhead.
+\titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection}{1em}{} % At start of section
 
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
@@ -62,7 +64,6 @@
 %---------------------------------------------------------------------------------------------------
 %Things related to sectioning and including files
 
-\usepackage{titlesec}
 \usepackage{xr} %used to allow external references, so that master_supplement.tex can reference appendices, for instance.
 %\usepackage{newclude} %Allows use of /include*{}
 %DANGER DANGER: newclude is NOT compatible with package xr, used for external references.
