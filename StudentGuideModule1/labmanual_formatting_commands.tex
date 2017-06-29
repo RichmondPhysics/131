@@ -170,7 +170,18 @@
 	\setlength\answerlength{#1}
 	\vspace*{1.0\answerlength plus 0.5\answerlength}}
 
-\let\NoExtraPageSection\section %This code line can be used to make each lab start on odd numbered page (right hand side).
+%The following code can be used to make each lab start on odd numbered page (right hand side).
+\let\NoExtraPageSection\section
+\let\NoExtraPagePart\part
+\newcommand{\ForceSectionOddPage}{
+	\renewcommand{\section}{\cleardoublepage\NoExtraPageSection}
+	\renewcommand{\part}{\cleardoublepage\NoExtraPagePart}
+	}
+\newcommand{\NoForceSectionOddPage}{
+	\renewcommand{\section}{\NoExtraPageSection}
+	\renewcommand{\part}{\NoExtraPagePart}
+	}
+
 
 \newif\ifForOneTwentyFive %is set to true in master.tex for PHYS 125.  Allows alternate versions of the labs.  Use with care!
 
