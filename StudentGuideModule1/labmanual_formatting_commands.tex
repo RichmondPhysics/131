@@ -26,9 +26,23 @@
 \usepackage{titlesec} %must be called AFTER fancyhead.
 \titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection}{1em}{} % At start of section
 
+\newcommand\immediateaddcontentsline[3]{%
+        \begingroup
+        \let\origwrite\write
+        \def\write{\immediate\origwrite}%
+        \addcontentsline{#1}{#2}{#3}%
+        \endgroup
+}
+\newcounter{tocpartnum}
+\renewcommand{\part}[1]{
+	\stepcounter{tocpartnum}
+	%\phantomsection
+	\immediateaddcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}{}}
+
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
 \renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
+
 \setlength\parskip{\medskipamount}
 \setlength\parindent{0pt}
 

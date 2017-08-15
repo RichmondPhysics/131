@@ -1,6 +1,4 @@
-%\documentclass[english,twoside]{article}
-\documentclass[english,twoside]{labmanual} %labmanual.cls is a modified version of article.cls, 
-                                                                     %tweaked to handle \part{} differently
+\documentclass[english,twoside]{article}
 
 \input{labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
 \newcommand{\coursefolder}{Phys131} %This defines the place students will look for various files
@@ -104,8 +102,9 @@
 
 %--------------------------------------------
 %\part{Appendices}
+
 \appendix
-\immediateaddcontentsline{toc}{part}{Appendices} %Avoids a Roman part number for the Appendices in the toc
+\immediateaddcontentsline{toc}{part}{Appendices} %Doing this instead of \part avoids a Roman number for Appendices in the toc
 \cleardoublepage
 \NoForceSectionOddPage %Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
 \renewcommand{\headersupplementmark}{Appendix }
@@ -122,5 +121,4 @@
 \includelab{1}{appendices/one_page_uncertainty/one_page_uncertainty}
 %\includelab{0}{appendices/cricketgraph} %totally obsolete
 \includelab{0}{appendices/virtual_machine/virtual_machine} %not needed for any lab in 131, I think. --MT, 2017
-
 \end{document}
