@@ -1,0 +1,156 @@
+\section{Archimedes' Principle}
+%By Shaun Serej, 2017.
+%Matt Trawick edited and converted to Latex.
+
+\makelabheader %(Space for student name, etc., defined in master.tex)
+
+
+\bigskip
+\textbf{Apparatus}
+
+\begin{itemize}[nosep]
+\item Force probe, with calibration weights and support stand
+\item Beaker of water
+\item Pasco 550 interface
+\item Capstone software (\filename{archimedes.cap} experiment file)
+\item Three different samples, denser than water
+\end{itemize}
+
+\bigskip
+\textbf{Introduction}
+
+An upward \textbf{buoyant force} $F_B$ is experienced by objects when they are either fully or partially submerged in a fluid. This buoyant force is caused by the decrease in pressure with height in a fluid, and the magnitude of this upward force is equal to the magnitude of the force exerted by gravity on the fluid displaced by the object. 
+This statement is called \textbf{Archimedes' principle}. Note that there is no reference to the shape, composition, or density of the submerged object: the only factor that comes into play is the volume of the displaced fluid. 
+The volume of displaced fluid is equal to the volume of the submerged portion of the object.
+
+In this lab we will submerge three different objects (made of materials more dense than water) in water and measure their apparent weights. Using these values and the weights of the objects in air, the densities of the objects can be calculated from the following formula:
+\begin{equation}
+\rho = \left( \frac{F}{F-F'}\right)\rho_{\rm w}
+\label{equation_archimedes_density}
+\end{equation}
+
+where $\rho$ is the density of the object, $F$ is the weight of the object in air, $F'$ is the apparent weight of the object when submerged in water, and $\rho_{\rm w}$ is the density of water.
+
+\bigskip
+\textbf{Activity 1: Deriving the equation relating $\rho$ to $F$, $F'$, and $\rho_{\rm w}$}
+
+\begin{enumerate}[labparts]
+\item Draw a free-body diagram for an object of volume $V$, mass $m$, and density $\rho$ when it is hanging freely from a force probe and is in static equilibrium. Call the force measured by the force probe $F$ and write down an equation that relates $F$ to $V$, $m$, and $\rho$.
+\label{part_archimedes_fbd1}
+\answerspace{2in}
+
+\item Draw a free-body diagram for the same object when it is hanging freely from a force probe and is fully submerged in water and is in static equilibrium. Call the force measured by the force probe $F'$ and write down an equation that relates   $F'$ to $V$, $m$, and  $\rho_{\rm w}$.
+\label{part_archimedes_fbd2}
+\answerspace{2in}
+
+\item Use the equation derived in part~\ref{part_archimedes_fbd1} to rewrite the equation in part~\ref{part_archimedes_fbd2} in terms of only $F$, $F'$, $\rho$, and 
+$\rho_{\rm w}$. Note that the volume of the object is related to $m$ and $\rho$. 
+Then, solve the resulting equation for $\rho$ to get Equation~(\ref{equation_archimedes_density}).
+\answerspace{2in}
+
+\end{enumerate}
+
+\textbf{Activity 2: Measuring the densities of three objects}
+
+Plug the force probe into the input channel A on the Pasco 550 interface. Open the file \filename{archimedes.cap} in the \filename{\coursefolder} folder. 
+
+\begin{enumerate}[labparts]
+\item Calibrate the force probe while it is held vertically (with hook down) by its support with a 200 gram mass as outlined in Appendix~\ref{capstone}. Right after completing the calibration procedure and also before each one of the following weight measurements, check the calibration of the force probe by hanging a 200 gram mass from the force probe and recording data for one or two seconds to make sure the force probe measures its weight correctly. 
+
+%\item Before submerging the objects in water, measure their weights in air by hanging them from the force probe. For each sample record data for a few seconds. Then determine the mean and standard deviations of the values of the recorded data. Using the standard deviations and the uncertainties involved in the calibration of the force probe, estimate the uncertainties in the values of the measured weights. Record the values in the table below.
+
+\item Measure the weight $F$ of the the first object in air by hanging it from the force probe.  Also observe the fluctuations in the reading, and use this to estimate the uncertainty in the weight $\delta F$.
+\medskip
+$$
+F= \hspace{2in}
+\delta F =
+$$
+%\medskip
+
+\item Now submerge the first object in water, and measure its new apparent weight $F'$.  Again, use the fluctuations in the reading to estimate the uncertainty $\delta F'$.
+\medskip
+$$
+F= \hspace{2in}
+\delta F =
+$$
+%\medskip
+
+\item Use Equation (\ref{equation_archimedes_density}) to calculate the density $\rho$ of the object.  For the density of water, use $\rho_{\rm w}=0.998 \times 10^3$~kg/m$^3$. \label{part_archimedes_best_case}
+\answerspace{0.75in}
+$$
+\rho =
+$$
+%\smallskip
+
+\item We will now estimate the uncertainty in your value for $\rho$.  First, assume that your measurement of $F'$ is exact, but that the actual value of $F$ is the \textit{worst possible case} of $F + \delta F$.  Calculate what the resulting \textit{worst case scenario} for $\rho$ would be, and use the difference between this worst case value and what you calculated in part~\ref{part_archimedes_best_case} to find the uncertainty $\delta \rho_{{\rm from~} \delta F}$ caused by your measurement in air.
+\answerspace{0.75in}
+$$
+\delta \rho_{{\rm from~} \delta F} =
+$$
+%\medskip
+
+\item Now assume that your measurement of $F$ is exact but that the actual value of $F'$ is the \textit{worst possible case} of $F' + \delta F'$.  Use this to find $\delta \rho_{{\rm from~} \delta F'}$.
+\answerspace{0.75in}
+$$
+\delta \rho_{{\rm from~} \delta F'} =
+$$
+%\medskip
+
+\item To find the overall uncertainty in density $\delta \rho$ for the object, we add the uncertainties from all sources \textit{in quadrature}:
+$$
+\delta \rho = \sqrt{\left( \delta \rho_{{\rm from~} \delta F} \right)^2 + \left( \delta \rho_{{\rm from~} \delta F'} \right)^2}
+$$
+\answerspace{0.5in}
+$$
+\delta \rho =
+$$
+
+\item Summarize your results from above in the following table, and repeat your measurements and calculations for the remaining two samples.
+
+\begin{center} 
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|C{0.7in}|C{0.7in}|C{0.7in}|C{0.7in}|C{1.7in}|} 
+\hline
+Sample & $F$ (N) & $\delta F$ (N) & $F'$ (N) & $\delta F'$ (N) & $\rho \pm \delta \rho$ (kg/m$^3$) \\ 
+\hhline{|=|=|=|=|=|=|}
+1 & & & & & \\ 
+\hline 
+2 & & & & & \\ 
+\hline 
+3 & & & & & \\ 
+\hline 
+\end{tabular} 
+}
+\end{center}
+
+
+\pagebreak[2]
+\item The following table shows the densities of some solid metals. Are your results comparable to these values?  Can you identify the samples by comparing their measured densities with those in the table? 
+
+\begin{center} 
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{2.5in}{|X|r|} 
+\hline
+Material & Density $\rho $ (kg/m$^3$) \\ 
+\hhline{|=|=|}
+Aluminum &  $2.70 \times 10^3$ \\ 
+\hline 
+Copper &  $8.92 \times 10^3$ \\ 
+\hline 
+Iron &  $7.86 \times 10^3$ \\ 
+\hline 
+Lead &  $11.34 \times 10^3$ \\ 
+\hline 
+Gold\footnote{Your sample is probably not actually made out of gold.} &  $19.30 \times 10^3$ \\ 
+\hline 
+Platinum &  $21.45 \times 10^3$ \\ 
+\hline 
+Brass &  $8.4 \times 10^3$ -- $8.7 \times 10^3$\\ 
+\hline 
+\end{tabularx} 
+}
+\end{center}
+
+\end{enumerate}
+
+
