@@ -1,33 +1,42 @@
-
 \section{The Period of a Pendulum}
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
-{\noindent \bf Objectives:} \begin{list}{$\bullet$}{\itemsep0pt \parsep0pt}
+\bigskip
+\textbf{Objectives:}
+\begin{itemize}[nosep]
+\item Study the influences on the motion of a simple pendulum 
+\item Calculate the acceleration due to gravity from measurements of the period and length of a simple pendulum
+\end{itemize}
 
-\item Study the influences on the motion of a simple pendulum \item Calculate the acceleration due to gravity from measurements of the period and length of a simple pendulum
-\end{list}
+\bigskip
+\textbf{Apparatus:}
+\begin{itemize}[nosep]
+\item String attached to stand 
+\item Collection of masses 
+\item Stop watch 
+\item Meter stick
+\end{itemize}
 
-{\noindent \bf Apparatus:} \begin{list}{$\bullet$}{\itemsep0pt \parsep0pt}
+\bigskip
+\textbf{Introduction:}
 
-\item string attached to stand \item collection of masses \item stop watch \item meter stick
+The period of a simple pendulum is related to its length $L$ and the acceleration due to gravity $g$ according to the relationship:
+\begin{equation}
+T=2\pi \sqrt{\frac{L}{g}}.
+\end{equation}
+%\qquad [Eq.\: 1]\]
 
-\end{list}
+This assumes the oscillations are small. Let's check this prediction experimentally. 
 
-{\noindent \bf Introduction:}
+\bigskip
+\textbf{Activity:} 
 
-\noindent The period of a simple pendulum is related to its length and the acceleration due to gravity according to the relationship:
-\[
-T=2\pi \sqrt{\frac{L}{g}}.\qquad [Eq.\: 1]\]
+\begin{enumerate}[labparts]
 
-\noindent $T$ is the period, $L$ is the length, and $g$ is the gravitational acceleration. This assumes the oscillations are small. Let's check this prediction experimentally. 
+\item With $L = 1.0$~m, place a 1-kg mass at the end of your pendulum. Time ten (10) oscillations of amplitude not greater than 10 degrees. The period is the total time divided by the number of oscillations. Calculate the period, and enter the relevant data into the table below.
 
-\medskip
-{\noindent \bf Activity:} \begin{enumerate}
-
-\item With $L$ = 1.0 m, place a 1-kg mass at the end of your pendulum. Time ten (10) oscillations of amplitude not greater than 10 degrees. The period is the total time divided by the number of oscillations. Calculate the period, and enter the relevant data into the table below.
-
-\item Repeat 1 for masses of 500 g, 200 g, 100 g, 50 g, and 20 g.
+\item Repeat part (a) for masses of 500 g, 200 g, 100 g, 50 g, and 20 g.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.1}{
@@ -43,9 +52,9 @@ Trial No. & Mass (kg) & Length $L$ (m) & No. of Oscillations& Total Time (s) & P
 \end{tabular} }
 \end{center}
 
-\item With the 200-g mass, fix the length $L$ to be 1.5 m. Time ten (10) oscillations of amplitude not more than 10 degrees. Calculate the period and period squared, and enter the relevant data into the table below.
+\item With the 200-g mass, fix the length $L$ to be 1.5~m. Time ten (10) oscillations of amplitude not more than 10 degrees. Calculate the period $T$ and $^2$, and enter the relevant data into the table below.
 
-\item Repeat 3 for pendulum lengths of 1.0, 0.7, 0.4, 0.25, and 0.15 meters.
+\item Repeat part (c) for pendulum lengths of 1.0, 0.7, 0.4, 0.25, and 0.15 meters.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.1}{
@@ -61,23 +70,23 @@ Trial No. & Mass (kg) & Length $L$ (m) & No. of Oscillations& Total Time (s) & P
 \end{tabular} }
 \end{center}
 
-\item Plot $T$ as a function of mass from the first set of data and $T^2$ as a function of $L$ from the second set of data on SEPARATE graphs. Fit the data and determine the slopes of the lines of each graph. Be sure to include UNITS with each slope. Print both graphs and include with this unit.
+\item Plot $T$ as a function of mass $m$ from the first set of data and $T^2$ as a function of $L$ from the second set of data on \textit{separate} graphs. Fit the data and determine the slopes of the lines of each graph. Be sure to include units with each slope. Print both graphs and include with this unit.
 
 \end{enumerate}
 
 \vspace{10pt}
 
-slope: period versus mass \rule{1.5in}{0.2pt}
+Slope of $T$ vs. $m$ graph: \rule{1.5in}{0.2pt}
 
 \vspace{10pt}
 
-slope: period$^2$ versus length \rule{1.5in}{0.2pt}
+Slope of $T^2$ vs. $L$ graph:  \rule{1.5in}{0.2pt}
 
 \vspace{10pt}
 
 {\noindent \bf Analysis:}
 
-\begin{enumerate}
+\begin{enumerate}[labparts]
 \item Interpret the slope of the period versus mass line: What is the relationship between mass and period? How does the period depend on the mass? 
 \vspace{20mm}
 
@@ -87,8 +96,8 @@ slope: period$^2$ versus length \rule{1.5in}{0.2pt}
 %\item If the length of the pendulum were $\frac{1}{16}$ its original length, by how much would its period change? 
 %\vspace{20mm}
 
-\item Use LINEST (see \textbf{Appendix \ref{excel}: Excel}) to determine the slope and the uncertainty in the slope of your $T^2$ vs $L$ graph. Set the slope from your data equal to the slope you determined in the previous item, and calculate the acceleration due to gravity $g$. Determine the uncertainty in $g$ from the fact that the fractional uncertainty in $g$ is equal to the fractional uncertainty in the slope of the graph. Write $g$ as $g$ = $g$ \( \pm \ \Delta  g\). Be sure to include proper units. Does the accepted value of [9.80 $\frac{\rm m}{\rm s^2}$] fall within your range of values?
+\item Use LINEST (see Appendix \ref{excel}: Excel) to determine the slope and the uncertainty in the slope of your $T^2$ vs $L$ graph. Set the slope from your data equal to the slope you determined in the previous item, and calculate the acceleration due to gravity $g$. Determine the uncertainty in $g$ from the fact that the fractional uncertainty in $g$ is equal to the fractional uncertainty in the slope of the graph. Write $g$ as $g$ = $g$ \( \pm \ \Delta  g\). Be sure to include proper units. Does the accepted value of [9.80 $\frac{\rm m}{\rm s^2}$] fall within your range of values?
 \vspace{30mm}
 
-\item Make a histogram of the class results for $g$ and calculate the average and standard deviation. For information on making histograms, see \textbf{Appendix \ref{excel}}. For information on calculating the average and standard deviation, see \textbf{Appendix \ref{treatment}}. Record the average and standard deviation here. Attach the histogram to this unit.
+\item Make a histogram of the class results for $g$ and calculate the average and standard deviation. For information on making histograms, see Appendix \ref{excel}. For information on calculating the average and standard deviation, see Appendix \ref{treatment}. Record the average and standard deviation here. Attach the histogram to this unit.
 \end{enumerate}
