@@ -25,6 +25,7 @@
 \fancyhead[LE,RO]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
 \usepackage{titlesec} %must be called AFTER fancyhead.
 \titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection}{1em}{} % At start of section
+\renewcommand{\headersupplementmark}{Lab }
 
 \newcommand\immediateaddcontentsline[3]{%
         \begingroup
@@ -45,6 +46,17 @@
 
 \setlength\parskip{\medskipamount}
 \setlength\parindent{0pt}
+
+\newcommand{\startappendix}{
+	\appendix
+	\immediateaddcontentsline{toc}{part}{Appendices} 
+		%Doing this instead of \part avoids a Roman number for Appendices in the toc
+	\cleardoublepage
+	\NoForceSectionOddPage 
+		%Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
+	\renewcommand{\headersupplementmark}{Appendix }
+	\titleformat{\section}{\normalfont\large\bfseries}{\headersupplementmark \thesection :}{1ex}{}
+}
 
 \usepackage{xcolor}
 \usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
