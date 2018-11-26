@@ -150,27 +150,52 @@ h=\frac{1}{2}gt^{2}\]
 where $g$ is the acceleration due to gravity. In this idealized equation the 
 effects of air resistance have been neglected. 
 
-(a) \emph{Assume} an uncertainty \(\Delta h\) in the height $h$ from 
+(a) \emph{Assume} an uncertainty $\delta h$ in the height $h$ from 
 which you dropped the ball. 
-Write $h$ as $h$ \(\pm\ \Delta h\):
-\vspace{5mm}
+Write $h$ as $h$ \(\pm\ \delta h\):
+\vspace{7mm}
 
 (b) Assume the uncertainty in your average time of fall is the standard 
-deviation \( \sigma  \) that you found in Activity 2. Write the time of fall 
-as $t$ = \(\langle t\rangle \pm  \sigma  \), as you did in Activity 2(b):
-\vspace{5mm}
+deviation \( \sigma  \) that you found in Activity 2; i.e. $\delta t$ = \(\sigma \).  Write the time of fall 
+as $t$ = \(\langle t\rangle \pm  \delta t  \):
+\vspace{7mm}
 
 (c) Now calculate $g$ from the above equation.
 \vspace{15mm}
 
-(d) Next calculate the uncertainty in $g$ from
+(d) Next calculate the uncertainty in $g$. Since $g$ depends on two independent measurements that have uncertainty, you need to find the uncertainty in $g$ from each one of the two measurements separately, as explained in Appendix \ref{uncertainty}. Then, combine those uncertainties ``in quadrature,'' to get the total uncertainty. The following steps will guide you to carry out this calculation.
+\begin {enumerate}
+\item  First, assume that your measurement of $h$  is exact, but that the value of $t$  is the worst case of $t + \delta t$. Calculate the resulting worst-case value for $g$. The difference between this value and the best-guess value is the uncertainty in the value of $g$ caused by the measurement of $t$. 
 
+\vspace {20mm}
 $$
-\frac{\Delta g}{g} = \sqrt{\left(\frac{\Delta h}{h}\right)^2 + \left(\frac{2\Delta t}{t}\right)^2}
+\delta g_{ {\rm due\, to\,} t} =
 $$
-\vspace{15mm}
 
-Write $g$ as $g$ = $g$ \(\pm\ \Delta g\):
+\item  Next, assume that your measurement of $t$ is exact, but that the value of $h$ is the worst case of $h+ \delta h$. Calculate the resulting worst-case value for $g$, and subsequently, the uncertainty in the value of $g$ caused by the measurement of $h$.
+
+\vspace {12mm}
+$$
+\delta g_{ {\rm due\, to\,} h}=
+$$
+
+
+\item Now, add the two uncertainties calculated in the last two steps in quadrature.
+
+\vspace{4mm}
+\hspace {5mm} $\delta g = \sqrt{ \left(\delta g_{{\rm due\, to\,} t}\right)^2 + \left(\delta g_{{\rm due\, to\,} h}\right)^2 } =$
+
+\end {enumerate}
+
+
+%\vspace{15mm}
+
+%$$
+%\frac{\Delta g}{g} = \sqrt{\left(\frac{\Delta h}{h}\right)^2 + \left(\frac{2\Delta t}{t}\right)^2}
+%$$
+%\vspace{15mm}
+
+Finally, write $g$ as $g$ = $g$ \(\pm\ \delta g\):
 
 Does the ``accepted value'' of $g$ (9.80 m/s$^2$) fall within the range of 
 values you have determined for $g$? If not, you probably have a source of 
