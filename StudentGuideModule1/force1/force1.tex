@@ -35,14 +35,12 @@ will pay attention to forces and how they affect motion.
 \textbf{Apparatus} 
 
 \begin{itemize} [nosep]
-\item Force probe 
-\item Variety of hanging masses 
+\item Force probe and variety of hanging masses 
 \item CS2000 compact scale (for measuring mass)
 \item Low friction pulley and string 
 \item Motion detector 
 \item Dynamics cart and track 
-\item Pasco 550 Interface
-\item \textit{Capstone} software (\filename{V\_A\_F\_Graphs.cap} experiment file)
+\item Pasco 550 Interface and \textit{Capstone} software (\filename{V\_A\_F\_Graphs.cap} experiment file)
 \end{itemize}
 \textbf{Measuring Forces} 
 
@@ -70,8 +68,9 @@ You will measure the force, velocity and acceleration.
 \vspace{-0.2cm}
 {\par\centering \includegraphics{force1/force1_fig1.eps} \par}
 
-(a) Calibrate the force probe if you haven't already done so. Then set up the cart, force probe and motion detector on the level track as shown above. Measure the mass of the cart and force probe assembly (using the compact scale), and record the result.
-%\answerspace{15mm}
+(a) Set up the cart, force probe and motion detector on the level track as shown above. 
+Measure the mass of the cart and force probe assembly (using the compact scale), and record the result.
+\answerspace{10mm}
 
 %\begin{figure}[t]
 %{\par\centering \includegraphics{force1/force1_fig1.eps} \par}
@@ -94,7 +93,8 @@ same way as the force?
 (c) To test your predictions, click the \textbf{Record} button, grasp the
 hook on the force probe and push and pull the cart back and forth 3 or 4 times. Be sure that
 the cart never gets closer than 0.15 m away from the detector and be careful
-of the wires. Repeat until you get a good run, and adjust the sampling time
+of the wires. Repeat until you get a good run, and adjust the sampling rate to
+10-20 Hz 
 and scale of the axes if necessary. Sketch your graphs on the axes that follow.
 
 \vspace{-0.3cm}
@@ -138,10 +138,27 @@ the axes below the velocity-time and acceleration-time graphs of the cart's moti
 %\end{figure}
 
 (c) Test your predictions. Set up the pulley, cart, string, motion detector
-and force probe as shown in the figure above. The cart should be the same mass as before. Hang 50 g from the end of the string. Start the data acquisition.
+and force probe as shown in the figure above. 
+The cart should be the same mass as before. 
+Place masses of 100 g, 50 g, and two 20-g masses on the top of the cart.
+You will use these masses to create an applied force on the cart by attaching
+them to the string, running the string over the pulley, and letting gravity do
+the work.
+The masses you hang from the string also contribute to the total mass of the 
+object (cart+masses) being accelerated.
+We sit them on the cart until they are used so the total mass is the same for all
+the trials.
+
+At the start of each trial press the ``TARE'' button on the side of the force sensor 
+when there is no applied force on the hook.
+This step resets the device so you get a proper reading.
+Now take one of those masses, the 50-g one, from the cart and 
+hang it from the end of the string. 
+Start the data acquisition.
 Release the cart when you hear the clicks of the motion detector. Be sure that
 there is enough slack in the force probe cables to complete the motion and catch
-the cart before it crashes into the pulley. Repeat until you get good graphs
+the cart before it crashes into the pulley. Repeat with this configuration of the
+masses until you get good graphs
 in which the cart is seen by the motion detector over the entire motion. Sketch
 the actual velocity, acceleration and force graphs for the motion of interest
 on the axes below and indicate the scale on the axes. Draw smooth graphs; don't
@@ -164,10 +181,10 @@ prediction? What kind of acceleration corresponds to a constant applied force?
 What kind of velocity corresponds to a constant applied force?
 \answerspace{20mm}
 
-(g) Use the \textbf{Statistics} function to determine the average force and the average acceleration
+(g) Use the \textbf Highlight and \textbf{Statistics} functions to determine the average force and the average acceleration
 and record them below. Find the mean values only during the time interval when
 the force and acceleration are nearly constant. See \textbf{Appendix \ref{capstone}} for details on
-the use of the \textbf{Statistics} function of Capstone.
+the use of the \textbf Highlight and  \textbf{Statistics} functions of Capstone.
 \answerspace{20mm}
 
 \textbf{Activity 3: Acceleration from Different Forces }
@@ -184,14 +201,17 @@ What would happen to the acceleration of the cart? Explain.
 \answerspace{20mm}
 
 \pagebreak[3]
-(b) Test your prediction by replacing the 50-g mass with a 100-g mass and creating graphs of the motion as before. Repeat until you have a good run. Sketch the
+(b) Test your prediction by replacing the 50-g mass with the 100-g mass on the cart, 
+returning the 50-g mass to the cart, and taring the force sensor with no force acting on the hook.
+Now create graphs of the motion as before. 
+Repeat until you have a good run. Sketch the
 results on the axes that follow. Don't forget to put the scale on the axes.
 
 \vspace{0.3cm}
 {\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
 \vspace{0.3cm}
 
-(c) Use the \textbf{Statistics} function to find the average force and the average acceleration
+(c) Use the \textbf Highlight and  \textbf{Statistics} functions to find the average force and the average acceleration
 and record them below. Find the mean values only during the time interval when
 the force and acceleration are nearly constant.
 \answerspace{15mm}
@@ -207,8 +227,8 @@ force in Activity 2? Did this agree with your prediction? Explain.
 \pagebreak[2]
 \textbf{Activity 4: The Relationship Between Acceleration and Force }
 
-If you accelerate the same cart (same mass) with another force, you will then
-have three data points--enough data to plot a graph of acceleration \textit{vs.}~force.
+If you accelerate the same cart (same mass) with different forces, you will then
+have enough data to plot a graph of force \textit{vs.}~acceleration.
 You can then find the mathematical relationship between acceleration and force. 
 
 (a) Accelerate the cart with a force roughly midway between the other two forces
@@ -220,32 +240,60 @@ Record the mass below.
 Activity 3 using dashed lines.
 
 (c) Find the mean acceleration and force, as before, and record the values in
-the table below (in the Activity 4 line). Also, enter the values from the previous two activities in the table.
+the table below (in the Activity 4 line). Also, enter the values from the previous 
+two activities in the table.
+Use different combinations of the
+masses to get other applied forces and enter the results in the table. 
 
 \vspace{0.3cm}
-{\centering \begin{tabular}{|c|c|c|}
+{\centering \begin{tabular}{|c|c|c|c|}
 \hline 
 &
 Average Force (N)&
-Average Acceleration (m/s\( ^{2} \))\\
-\hline 
-Activity 2&
-&
-\\
-&
-&
-\\
+Average Acceleration (m/s\( ^{2} \)) &
+Mass on string\\
 \hline 
 Activity 4&
 &
+&
 \\
+&
 &
 &
 \\
 \hline 
 Activity 3&
 &
+&
 \\
+&
+&
+&
+\\
+\hline 
+Activity 2&
+&
+&
+\\
+&
+&
+&
+\\
+\hline 
+Activity 4&
+&
+&
+\\
+&
+&
+&
+\\
+\hline 
+Activity 4&
+&
+&
+\\
+&
 &
 &
 \\
