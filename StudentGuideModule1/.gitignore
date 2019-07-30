@@ -8,10 +8,8 @@
 **/*.DS_Store
 # with the ** wildcard, this should also exclude log and aux files from all subdirectories.
 Thumbs.db
-master.synctex.gz
-master.synctex.gz(busy)
-master.toc
-master.pdf
+
+master*.pdf
 master_supplement*.pdf
 **/*eps-converted-to.pdf
 
