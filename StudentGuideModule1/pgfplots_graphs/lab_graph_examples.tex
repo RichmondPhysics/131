@@ -71,7 +71,7 @@ And, finally, four quadrants:
 \end{tikzpicture}
 \begin{tikzpicture}
 \begin{axis}[lab_noticks_4quads,
-	height = {2in}, width = {3in},
+	height = {2in}, width = {2.5in},
 	xlabel={$x$},
 	ylabel={$U(x)$},
 	ymin=-0.2,
@@ -92,6 +92,7 @@ I also defined a style that includes a grid:
 	xmin=0, xmax=30,
 	ymin=-3, ymax=3,
 	xtick distance = 5,
+	ytick distance = 1,
 ]
 \addplot coordinates {(0,0) (5,0) (5,1) (10,1) (10,0) (15,0) (15,-1) (20,-1) (20,0) (25,0)};
 \end{axis}
