@@ -1,0 +1,112 @@
+\documentclass{article}
+\input{lab_graph_definitions}
+
+\begin{document}
+
+A blank set of axes, in one quadrant, with labels:
+
+\begin{tikzpicture}
+\begin{axis}[lab_noticks_1quad,
+	height = {2in}, width = {2in},
+	xlabel={time (s)},
+	ylabel={position (m)},
+]
+\end{axis}
+\end{tikzpicture}
+
+Two quadrants, with a graph:
+
+\begin{tikzpicture}
+\begin{axis}[lab_noticks_2quads,
+	height = {2in}, width = {2in},
+	xlabel={time (s)},
+	ylabel={velocity (m/s)},
+]
+\addplot coordinates {(0, 0.6) (0.9, 0.6)};
+\end{axis}
+\end{tikzpicture}
+
+Two quadrants with sign labels, and several labeled curves:
+
+\begin{tikzpicture}
+\begin{axis}[lab_noticks_2quads,
+	height = {2in}, width = {2in},
+	xlabel={time (s)},
+	ylabel={position (m)},
+	plus_minus_zero_labels,
+]
+\addplot coordinates {(0,0.1) (0.9,0.8)} node[right] {A};
+\addplot coordinates {(0,0.9) (0.8,0.1)} node[right] {C};
+\addplot[domain=0:0.9] {0.6*x^2 + 0.1} node[right] {B};
+\end{axis}
+\end{tikzpicture}
+
+And, finally, four quadrants:
+
+\begin{tikzpicture}
+\begin{axis}[lab_noticks_4quads,
+	height = {2in}, width = {3in},
+	xlabel={$x$},
+	ylabel={$F(x)$},
+]
+\addplot coordinates {(-0.9, 0.8) (0.9, -0.8)};
+\end{axis}
+\end{tikzpicture}
+\begin{tikzpicture}
+\begin{axis}[lab_noticks_4quads,
+	height = {2in}, width = {3in},
+	xlabel={$x$},
+	ylabel={$U(x)$},
+	ymin=-0.2,
+]
+\addplot [domain=-0.9:0.9] {x^2};
+\end{axis}
+\end{tikzpicture}
+
+\newpage
+
+\begin{tikzpicture}
+\begin{axis}[lab_grid,
+	height = {3in},
+	width = {4.5in},
+	xlabel={time (s)},
+	ylabel={position (m)},
+	xmin=0, xmax=30,
+	ymin=-3, ymax=3,
+	xtick distance = 5,
+]
+\addplot coordinates {(0,0) (5,0) (5,1) (10,1) (10,0) (15,0) (15,-1) (20,-1) (20,0) (25,0)};
+\end{axis}
+\end{tikzpicture}
+
+\newpage
+
+\begin{tikzpicture}
+\begin{groupplot}[lab_grid,
+    group style={
+        group size=1 by 2,
+        xlabels at=edge bottom,
+        xticklabels at=edge bottom,
+        vertical sep=0.2in
+    },
+    width=4.5in,
+    height=2in,
+    xlabel=time (s),
+    xmin=0, xmax=10,
+]
+
+\nextgroupplot[ymax=11, ylabel={position (m)}]
+\addplot coordinates{(0,0) (1,9.94) (2,0.72)(3,1.17)(4,1.05)(5,0.67)(6,0.24)(7,1.75)(8,0)(9,0)(10,1.21)(11,0)};
+
+\nextgroupplot[ymax=51, ylabel={velocity (m/s)}]
+\addplot coordinates{(0,10) (5,10)};
+
+\end{groupplot}
+\makegroupverticals[2]{2, 3, 5, 6.9}
+
+\end{tikzpicture}
+
+
+
+
+\end{document}

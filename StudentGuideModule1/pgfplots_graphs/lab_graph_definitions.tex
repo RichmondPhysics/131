@@ -1,0 +1,91 @@
+\usepackage{pgfplots}
+\usepackage{sansmath}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{pgfplots.groupplots}
+\usetikzlibrary{math}
+\usepackage{xparse} %used for \NewDocumentCommand
+\listfiles
+
+\pgfplotsset{compat=1.16}
+\tikzstyle{every picture}+=[font=\sffamily]
+
+\pgfplotscreateplotcyclelist{lab_solid}{
+	{black}
+}
+
+\pgfplotsset{
+  tick label style = {font=\sansmath\sffamily},
+%  every axis label = {font=\sansmath\sffamily},
+%  legend style = {font=\sffamily},
+%  label style = {font=\sffamily}
+	samples = 200,
+}
+
+
+\pgfplotsset{lab_noticks_1quad/.style={
+	cycle list name = lab_solid,
+	every axis plot/.append style={very thick},
+	axis x line={left, x axis line style={-}}, 
+	axis y line= {left,  y axis line style={-}},
+	xmin=0, xmax=1,
+	ymin=0, ymax=1, %Although there are no ticks, this seems to be needed to make the ticks disappear.
+	tick style={major tick length=0pt},
+	tick style={xtick=\empty,ytick=\empty}
+}}
+
+\pgfplotsset{lab_noticks_2quads/.style={
+	cycle list name = lab_solid,
+	every axis plot/.append style={very thick},
+	axis x line= {middle, x axis line style={-}}, 
+	axis y line= {left,  y axis line style={-}},
+      xlabel style={at=(current axis.right of origin), anchor=west},
+	xmin=0, xmax=1,
+	ymin=-1, ymax=1, 
+	tick style={major tick length=0pt},
+	tick style={xtick=\empty,ytick=\empty},
+}}
+
+\pgfplotsset{lab_noticks_4quads/.style={
+	cycle list name = lab_solid,
+	every axis plot/.append style={very thick},
+	axis x line= {middle, x axis line style={-}}, 
+	axis y line= {middle,  y axis line style={-}},
+      xlabel style={at=(current axis.right of origin), anchor=north east},
+      ylabel style={at=(ticklabel* cs:1.0), anchor=north east},
+	xmin=-1, xmax=1,
+	ymin=-1, ymax=1, 
+	tick style={major tick length=0pt},
+	tick style={xtick=\empty,ytick=\empty},
+}}
+
+\pgfplotsset{plus_minus_zero_labels/.style={
+	extra y ticks = {-0.8, 0, 0.8},
+	extra y tick labels = {\scriptsize{$-$},0,\scriptsize{$+$}},
+}}
+
+\pgfplotsset{lab_grid/.style={
+	cycle list name = lab_solid,
+	every axis plot/.append style={very thick},
+	tick style={grid=major,major tick length=0pt}
+}}
+
+\newcommand{\oldmakegroupverticals}[2]{
+	\coordinate (toppoint) at  (group c1r1.north);
+	\coordinate (botpoint) at  (group c1r#1.south);
+	\foreach \x in {#2} 
+		\draw [black, very thick, dashed] (\x, |- toppoint) -- (\x, |- botpoint);
+}
+
+\NewDocumentCommand \makegroupverticals {o m} {
+	\coordinate (toppoint) at  (group c1r1.north);
+      \IfNoValueTF  {#2} {%If no lastrow given, assume two rows
+		\coordinate (botpoint) at  (group c1r2.south);
+		}
+	{ % else use the value for the number of the last row
+		\coordinate (botpoint) at  (group c1r#1.south);
+	}
+	\foreach \x in {#2} 
+		\draw [black, very thick, dashed] (\x, |- toppoint) -- (\x, |- botpoint);
+}
+
+
