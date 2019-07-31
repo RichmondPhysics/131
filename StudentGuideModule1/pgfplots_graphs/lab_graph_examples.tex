@@ -7,7 +7,7 @@ A blank set of axes, in one quadrant, with labels:
 
 \begin{tikzpicture}
 \begin{axis}[lab_noticks_1quad,
-	height = {2in}, width = {2in},
+	height = {1.5in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={position (m)},
 ]
@@ -26,6 +26,21 @@ Two quadrants, with a graph:
 \end{axis}
 \end{tikzpicture}
 
+With some extra tick marks:
+
+\begin{tikzpicture}
+\begin{axis}[lab_noticks_2quads,
+	height = {2in}, width = {2in},
+	xlabel={time (s)},
+	ylabel={velocity},
+	xtick={0.2,0.5,0.9},
+	xticklabels={A,B,C},
+	ytick={0.2,0.7},
+	yticklabels={min,max},
+]
+\end{axis}
+\end{tikzpicture}
+
 Two quadrants with sign labels, and several labeled curves:
 
 \begin{tikzpicture}
@@ -40,6 +55,8 @@ Two quadrants with sign labels, and several labeled curves:
 \addplot[domain=0:0.9] {0.6*x^2 + 0.1} node[right] {B};
 \end{axis}
 \end{tikzpicture}
+
+\newpage
 
 And, finally, four quadrants:
 
@@ -63,7 +80,8 @@ And, finally, four quadrants:
 \end{axis}
 \end{tikzpicture}
 
-\newpage
+\bigskip
+I also defined a style that includes a grid: 
 
 \begin{tikzpicture}
 \begin{axis}[lab_grid,
@@ -80,6 +98,36 @@ And, finally, four quadrants:
 \end{tikzpicture}
 
 \newpage
+
+Note that the "groupplot" feature can be used to stack graphs:
+
+\hspace{1in}
+\begin{tikzpicture}
+\begin{groupplot}[
+ 	group style={
+      		group size=1 by 2,
+		xlabels at=edge bottom,
+		xticklabels at=edge bottom,
+		vertical sep=0.2in
+		},
+	height=2in, width=2in,
+]
+\nextgroupplot[
+	lab_noticks_2quads,
+	xlabel={time (s)},
+	ymin=0,
+	ylabel={position (m)},
+]
+\nextgroupplot[
+	lab_noticks_2quads,
+	plus_minus_zero_labels,
+	xlabel={time (s)},
+	ylabel={velocity (m/s)},
+]
+\end{groupplot}
+\end{tikzpicture}
+
+Finally, you can drop alignment marks between graphs, as the next two examples show:
 
 \begin{tikzpicture}
 \begin{groupplot}[lab_grid,
@@ -106,7 +154,32 @@ And, finally, four quadrants:
 
 \end{tikzpicture}
 
+\begin{tikzpicture}
+\begin{groupplot}[lab_noticks_2quads,
+	xmin=0,xmax = 772,
+   group style={
+        group size=1 by 3,
+        vertical sep=0.2in
+    },
+    width=4in,
+    height=2in,
+    xlabel=time $t$,
+]
 
+\nextgroupplot[ylabel={current $I(t)$}]
+\addplot [domain=0:720] {0.95*sin(x) }; %Why is it calculating sine in degrees?
+
+\nextgroupplot[ylabel={flux $\Phi(t)$}]
+
+\nextgroupplot[ylabel={emf $\varepsilon(t)$}]
+
+
+\end{groupplot}
+\makegroupverticals[3]{1,2,3,4,5,6,7,8}
+
+\end{tikzpicture}
+
+(Note in the example just above that the x scale (and the locations of the vertical lines) makes NO sense whatsoever!  I have no idea what the hell is wrong here!  --MT)
 
 
 \end{document}

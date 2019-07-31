@@ -29,7 +29,6 @@
 	axis y line= {left,  y axis line style={-}},
 	xmin=0, xmax=1,
 	ymin=0, ymax=1, %Although there are no ticks, this seems to be needed to make the ticks disappear.
-	tick style={major tick length=0pt},
 	tick style={xtick=\empty,ytick=\empty}
 }}
 
@@ -41,7 +40,6 @@
       xlabel style={at=(current axis.right of origin), anchor=west},
 	xmin=0, xmax=1,
 	ymin=-1, ymax=1, 
-	tick style={major tick length=0pt},
 	tick style={xtick=\empty,ytick=\empty},
 }}
 
@@ -54,11 +52,11 @@
       ylabel style={at=(ticklabel* cs:1.0), anchor=north east},
 	xmin=-1, xmax=1,
 	ymin=-1, ymax=1, 
-	tick style={major tick length=0pt},
 	tick style={xtick=\empty,ytick=\empty},
 }}
 
 \pgfplotsset{plus_minus_zero_labels/.style={
+	tick style={major tick length=0pt},
 	extra y ticks = {-0.8, 0, 0.8},
 	extra y tick labels = {\scriptsize{$-$},0,\scriptsize{$+$}},
 }}
