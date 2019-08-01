@@ -67,14 +67,49 @@
 	tick style={grid=major,major tick length=0pt}
 }}
 
-\newcommand{\oldmakegroupverticals}[2]{
-	\coordinate (toppoint) at  (group c1r1.north);
-	\coordinate (botpoint) at  (group c1r#1.south);
-	\foreach \x in {#2} 
-		\draw [black, very thick, dashed] (\x, |- toppoint) -- (\x, |- botpoint);
+
+% The commmand below makes vertical alignment marks through all graphs in a groupplot.
+% (Restricted to only a single column, but multiple rows.  The rows can be 1 though.)
+%
+% How to call:
+% \makegroupverticlas[rows]{x1,x2,x3...}{xmin}{xmax}
+% rows is assumed to be 2 if not specified.  xmin and xmax are the min and max values of the axis.
+% Oh, and it won't work if you define a name for the group; it must remain the default "group".
+%
+% This was a giant pain to get to work.  
+% The problem seems to be that INSIDE the groupplot environment, tikz knows about xmin and xmax
+% (since it can get it from \pgfkeysvalueof{/pgfplots/xmin) but does not know about the top and bottom
+% of the whole group; only of a single axis.
+% But OUTSIDE the grouplot environment, tikz knows about the top and bottom of the group
+% (from group c1r1.north west, for instance), but does not know about the scale of the x axis.
+% Or at least I couldn't figure out how to get it to know about the x axis.  Maybe someone else can.
+% If so, it would be a nice improvement to NOT have to pass it xmin and xmax, or even the number of
+% rows, for that matter. 
+\NewDocumentCommand \makegroupverticals {o m m m} {
+	\coordinate (TL) at (group c1r1.north west); % top left
+      \IfNoValueTF  {#2} {%If no lastrow given, assume two rows
+		\coordinate (BR) at (group c1r3.south east); % bottom right
+		}
+	{ % else use the value for the number of the last row
+		\coordinate (BR) at (group c1r#1.south east); % bottom right
+		}
+	\newdimen\xleft
+	\pgfextractx\xleft{\pgfpointanchor{TL}{center}}
+	\newdimen\xright
+	\pgfextractx\xright{\pgfpointanchor{BR}{center}}
+
+	\newdimen\xx
+	\foreach \x in {#2} { 
+		\tikzmath{\xx = \xleft + (\xright - \xleft) * ((\x - #3) / (#4 - #3))  ;}
+		\draw[black, thick, dashed] (\xx, |- TL) -- (\xx, |- BR);
+		}
 }
 
-\NewDocumentCommand \makegroupverticals {o m} {
+% Here's an older version of makegroupverticals.
+% It does not work, because the x axis coordinates in \x are often wrong,
+% Sometimes by a huge amount.  I suspect there's a way to make this work,
+% with a small fix, so I'll keep it here.
+\NewDocumentCommand \oldmakegroupverticals {o m} {
 	\coordinate (toppoint) at  (group c1r1.north);
       \IfNoValueTF  {#2} {%If no lastrow given, assume two rows
 		\coordinate (botpoint) at  (group c1r2.south);
