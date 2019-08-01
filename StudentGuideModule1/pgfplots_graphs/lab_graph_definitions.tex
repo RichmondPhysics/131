@@ -121,6 +121,10 @@
 		\draw [black, very thick, dashed] (\x, |- toppoint) -- (\x, |- botpoint);
 }
 
+% The lab_axis environment, defined below, is just a thin wrapper around the "tikzpicture" and "axis" 
+% environments, combined.  When called in the starred version ("*", see below) it also centers the graph.
+% Note that it puts small vertical spaces above the graph.  If this is called multiple times on one line, the
+% vertical spaces will build up, and be placed after the graphs, requiring a \vspace{-2em} or whatever. 
 \NewDocumentEnvironment{lab_axis}{s}{
 	\IfBooleanTF #1
 		{ \begin{center} } %if starred
@@ -145,27 +149,26 @@
 \cs_new_eq:cN {endlab_axis*} \endlab_axis
 \ExplSyntaxOff
 
-%This next part doesn't seem to be working yet.
+% This new environment is a thin wrapper around the "tikzpicture" and "groupplot" environments, combined.
+% When called in a star version, it is centered as well.  (Here, the * goes AFTER the }, as in
+% 		\begin{lab_groupplot}*{}blah blah blah.
+% The empty argument above is where you put any line or lines that go after the \end{groupplot} but
+% before the \end{tikzpicture}, which would typically be drawing vertical alignment marks
+% using \makegroupverticals, or other annotations.
 \NewDocumentEnvironment{lab_groupplot}{s m}{
 	\IfBooleanTF #1
 		{ \begin{center} } %if starred
 		{} %if not starred, do nothing
+	\vspace{1em}
 	\begin{tikzpicture}
 	\begin{groupplot}
 	}
 	{\end{groupplot}
 	#2
 	\end{tikzpicture}
+	\vspace{1em}
 	\IfBooleanTF #1
 		{\end{center} } %if starred
 		{} %if not starred, do nothing
 	 }
-% Next four lines allow either 
-%	\begin{labaxis*}... \end{labaxis*} 
-% or 
-% 	\begin{labaxis}*... \end{labaxis}
-\ExplSyntaxOn
-\cs_new:cpn {lab_groupplot*} {lab_groupplot*}
-\cs_new_eq:cN {endlab_groupplot*} \endlab_groupplot
-\ExplSyntaxOff
 
