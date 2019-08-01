@@ -3,33 +3,32 @@
 
 \begin{document}
 
+%\newenvironment{lab_axis}{\vspace{1em}\begin{tikzpicture} \begin{axis}}{\end{axis} \end{tikzpicture}\vspace{1em}}
+
 A blank set of axes, in one quadrant, with labels:
 
-\begin{tikzpicture}
-\begin{axis}[lab_noticks_1quad,
+\begin{lab_axis}[lab_noticks_1quad,
 	height = {1.5in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={position (m)},
 ]
-\end{axis}
-\end{tikzpicture}
+\end{lab_axis}
+
 
 Two quadrants, with a graph:
 
-\begin{tikzpicture}
-\begin{axis}[lab_noticks_2quads,
+
+\begin{lab_axis*}[lab_noticks_2quads,
 	height = {2in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={velocity (m/s)},
 ]
 \addplot coordinates {(0, 0.6) (0.9, 0.6)};
-\end{axis}
-\end{tikzpicture}
+\end{lab_axis*}
 
 With some extra tick marks:
 
-\begin{tikzpicture}
-\begin{axis}[lab_noticks_2quads,
+\begin{lab_axis}[lab_noticks_2quads,
 	height = {2in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={velocity},
@@ -38,13 +37,11 @@ With some extra tick marks:
 	ytick={0.2,0.7},
 	yticklabels={min,max},
 ]
-\end{axis}
-\end{tikzpicture}
+\end{lab_axis}
 
 Two quadrants with sign labels, and several labeled curves:
 
-\begin{tikzpicture}
-\begin{axis}[lab_noticks_2quads,
+\begin{lab_axis}[lab_noticks_2quads,
 	height = {2in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={position (m)},
@@ -53,25 +50,21 @@ Two quadrants with sign labels, and several labeled curves:
 \addplot coordinates {(0,0.1) (0.9,0.8)} node[right] {A};
 \addplot coordinates {(0,0.9) (0.8,0.1)} node[right] {C};
 \addplot[domain=0:0.9] {0.6*x^2 + 0.1} node[right] {B};
-\end{axis}
-\end{tikzpicture}
+\end{lab_axis}
 
 \newpage
 
 And, finally, four quadrants:
 
-\begin{tikzpicture}
-\begin{axis}[lab_noticks_4quads,
+\begin{lab_axis}[lab_noticks_4quads,
 	height = {2in}, width = {3in},
 	xlabel={$x$},
 	ylabel={$F(x)$},
 ]
 \addplot coordinates {(-0.9, 0.8) (0.9, -0.8)};
 \node[anchor=west,text width = 1.5in] at (axis cs: 0.1,0.5)  {Linear spring: \\ $F(x) = -k(x)$};
-\end{axis}
-\end{tikzpicture}
-\begin{tikzpicture}
-\begin{axis}[lab_noticks_4quads,
+\end{lab_axis}
+\begin{lab_axis}[lab_noticks_4quads,
 	height = {2in}, width = {2.5in},
 	xlabel={$x$},
 	ylabel={$U(x)$},
@@ -79,14 +72,14 @@ And, finally, four quadrants:
 ]
 \addplot [domain=-0.9:0.9] {x^2};
 \node[anchor=west] at (axis cs: 0.0,0.5)  {$U = \frac{1}{2}kx^2$};
-\end{axis}
-\end{tikzpicture}
+\end{lab_axis}
+
+(Note that there's a little problem with the spacing above.  The lab\_axis environment puts a little \verb!vspace! before and after each graph.  When two graphs appear on the same line, as above, the vertical space between them gets shoved AFTER both graphs, making the vertical spacing after the graphs too large.  It can be removed by \verb!\vspace{-2em}!.
 
 \bigskip
 I also defined a style that includes a grid: 
 
-\begin{tikzpicture}
-\begin{axis}[lab_grid,
+\begin{lab_axis}[lab_grid,
 	height = {3in},
 	width = {4.5in},
 	xlabel={time (s)},
@@ -97,14 +90,12 @@ I also defined a style that includes a grid:
 	ytick distance = 1,
 ]
 \addplot coordinates {(0,0) (5,0) (5,1) (10,1) (10,0) (15,0) (15,-1) (20,-1) (20,0) (25,0)};
-\end{axis}
-\end{tikzpicture}
-
+\end{lab_axis}
 \newpage
 
 Note that the "groupplot" feature can be used to stack graphs:
 
-\hspace{1in}
+%\begin{lab_groupplot*}{}
 \begin{tikzpicture}
 \begin{groupplot}[
  	group style={
@@ -129,6 +120,7 @@ Note that the "groupplot" feature can be used to stack graphs:
 ]
 \end{groupplot}
 \end{tikzpicture}
+%\end{lab_groupplot*}
 
 Finally, you can drop alignment marks between graphs, as the next two examples show:
 

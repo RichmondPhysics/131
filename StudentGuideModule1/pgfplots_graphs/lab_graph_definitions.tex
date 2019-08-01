@@ -121,4 +121,51 @@
 		\draw [black, very thick, dashed] (\x, |- toppoint) -- (\x, |- botpoint);
 }
 
+\NewDocumentEnvironment{lab_axis}{s}{
+	\IfBooleanTF #1
+		{ \begin{center} } %if starred
+		{} %if not starred, do nothing
+	\vspace{1em}
+	\begin{tikzpicture} 
+	\begin{axis}
+	}
+	{\end{axis} 
+	\end{tikzpicture}
+	\vspace{1em}
+	\IfBooleanTF #1
+		{\end{center} } %if starred
+		{} %if not starred, do nothing
+	 }
+% Next four lines allow either 
+%	\begin{labaxis*}... \end{labaxis*} 
+% or 
+% 	\begin{labaxis}*... \end{labaxis}
+\ExplSyntaxOn
+\cs_new:cpn {lab_axis*} {\lab_axis*}
+\cs_new_eq:cN {endlab_axis*} \endlab_axis
+\ExplSyntaxOff
+
+%This next part doesn't seem to be working yet.
+\NewDocumentEnvironment{lab_groupplot}{s m}{
+	\IfBooleanTF #1
+		{ \begin{center} } %if starred
+		{} %if not starred, do nothing
+	\begin{tikzpicture}
+	\begin{groupplot}
+	}
+	{\end{groupplot}
+	#2
+	\end{tikzpicture}
+	\IfBooleanTF #1
+		{\end{center} } %if starred
+		{} %if not starred, do nothing
+	 }
+% Next four lines allow either 
+%	\begin{labaxis*}... \end{labaxis*} 
+% or 
+% 	\begin{labaxis}*... \end{labaxis}
+\ExplSyntaxOn
+\cs_new:cpn {lab_groupplot*} {lab_groupplot*}
+\cs_new_eq:cN {endlab_groupplot*} \endlab_groupplot
+\ExplSyntaxOff
 
