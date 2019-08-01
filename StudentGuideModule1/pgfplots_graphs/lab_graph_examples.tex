@@ -145,12 +145,15 @@ Finally, you can drop alignment marks between graphs, as the next two examples s
 ]
 
 \nextgroupplot[ymax=15, ylabel={position (m)}]
-\addplot coordinates{(0,1) (1,1)};
-%\addplot coordinates{(0,1) (1,1) (3,5) (5,5) (7,13) (8,13)};
+%\addplot coordinates{(0,1) (1,1)};
+\addplot coordinates{(0,1) (1,1) (3,5) (5,5) (7,13) (8,13)};
 
 \nextgroupplot[ymax=5, ylabel={velocity (m/s)}]
-%\addplot coordinates{(0.5,0.5)};
-\addplot coordinates{(0,0) (1,0) (1,2) (3,2) (3,0) (5,0) (5,4) (7,4) (7,0) (8,0)};
+\addplot coordinates{(0.5,0.5)};
+%Weird!!! Note that the nonfunctional addplot line just above is needed, even though it makes no actual mark.
+%Without the addplot, with at least ONE point somewhere in the visible area, the scale of the x axis is totally wrong.
+
+%\addplot coordinates{(0,0) (1,0) (1,2) (3,2) (3,0) (5,0) (5,4) (7,4) (7,0) (8,0)};
 
 \end{groupplot}
 \makegroupverticals[2]{1, 3, 5, 7}{0}{9}
