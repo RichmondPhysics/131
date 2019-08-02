@@ -18,7 +18,6 @@ A blank set of axes, in one quadrant, with labels:
 Two quadrants, with a graph:
 
 \begin{lab_axis*}[lab_noticks_2quads,
-	height = {2in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={velocity (m/s)},
 ]
@@ -28,7 +27,6 @@ Two quadrants, with a graph:
 With some extra tick marks:
 
 \begin{lab_axis}[lab_noticks_2quads,
-	height = {2in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={velocity},
 	xtick={0.2,0.5,0.9},
@@ -64,7 +62,7 @@ And, finally, four quadrants:
 \node[anchor=west,text width = 1.5in] at (axis cs: 0.1,0.5)  {Linear spring: \\ $F(x) = -k(x)$};
 \end{lab_axis}
 \begin{lab_axis}[lab_noticks_4quads,
-	height = {2in}, width = {2.5in},
+	width = {2.5in},
 	xlabel={$x$},
 	ylabel={$U(x)$},
 	ymin=-0.2,
@@ -73,23 +71,82 @@ And, finally, four quadrants:
 \node[anchor=west] at (axis cs: 0.0,0.5)  {$U = \frac{1}{2}kx^2$};
 \end{lab_axis}
 
+\vspace{-2em}
 (Note that there's a little problem with the spacing above.  The lab\_axis environment puts a little \verb!vspace! before and after each graph.  When two graphs appear on the same line, as above, the vertical space between them gets shoved AFTER both graphs, making the vertical spacing after the graphs too large.  It can be removed by \verb!\vspace{-2em}!.
 
 \bigskip
 I also defined a style that includes a grid: 
 
-\begin{lab_axis}[lab_grid,
-	height = {3in},
-	width = {4.5in},
+\begin{lab_axis}*[lab_grid,
+	height = {2in},
+	width = {4in},
 	xlabel={time (s)},
 	ylabel={position (m)},
 	xmin=0, xmax=30,
-	ymin=-3, ymax=3,
+	ymin=-2, ymax=2,
 	xtick distance = 5,
 	ytick distance = 1,
 ]
 \addplot coordinates {(0,0) (5,0) (5,1) (10,1) (10,0) (15,0) (15,-1) (20,-1) (20,0) (25,0)};
 \end{lab_axis}
+
+You can also add minor tick marks to it: 
+
+\begin{lab_axis}*[lab_grid,
+	height = {2in},
+	width = {4in},
+	xlabel={time (s)},
+	ylabel={position (m)},
+	xmin=0, xmax=30,
+	ymin=-2, ymax=2,
+	xtick distance = 5,
+	ytick distance = 1,
+	minor tick num=1,
+	minor x tick num=4,
+%	minor tick num=1, %use this for both x and y
+]
+\end{lab_axis}
+
+\newpage
+
+And you can make various labels disappear: 
+
+\begin{lab_axis}[lab_grid,
+	xlabel={time (s)},
+	ylabel={position (m)},
+	xmin=0, xmax=20,
+	ymin=-2, ymax=2,
+]
+\end{lab_axis}
+\begin{lab_axis}[lab_grid,
+	xlabel={time (s)},
+	ylabel={position (m)},
+	xmin=0, xmax=20,
+	ymin=-2, ymax=2,
+	yticklabels = { , , },
+]
+\end{lab_axis}
+
+\begin{lab_axis}[lab_grid,
+	xlabel={time (s)},
+	ylabel={position (m)},
+	xmin=0, xmax=20,
+	ymin=-2, ymax=2,
+	yticklabels = { , , },
+	extra tick style={yticklabels= { , , }},
+]
+\end{lab_axis}
+\begin{lab_axis}[lab_grid,
+	xlabel={time (s)},
+	ylabel={position (m)},
+	xmin=0, xmax=20,
+	ymin=-2, ymax=2,
+	yticklabels = { , , },
+	extra tick style={yticklabels= { , , }},
+	xticklabels = { , , },
+]
+\end{lab_axis}
+
 \newpage
 
 Note that the "groupplot" feature can be used to stack graphs:
@@ -105,9 +162,9 @@ Note that the "groupplot" feature can be used to stack graphs:
 	height=2in, width=2in,
 ]
 \nextgroupplot[
-	lab_noticks_2quads,
+	lab_noticks_1quad,
 	xlabel={time (s)},
-	ymin=0,
+      xlabel style={at=(current axis.right of origin), anchor=west},
 	ylabel={position (m)},
 ]
 \nextgroupplot[
@@ -162,7 +219,7 @@ Finally, you can drop alignment marks between graphs, as the next two examples s
     xlabel=time $t$,
 ]
 \nextgroupplot[ylabel={current $I(t)$}]
-\addplot [domain=0:720] {0.95*sin(x) }; %Why is it calculating sine in degrees?
+\addplot [domain=0:720] {0.90*sin(x) }; %Why is it calculating sine in degrees?
 
 \nextgroupplot[ylabel={flux $\Phi(t)$}]
 
