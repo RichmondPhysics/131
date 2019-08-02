@@ -1,17 +1,25 @@
+% This file loads all packages and makes all definitions used for making various graphs,
+% using Tikz and pgfplots.  It was developed in July-August 2019 by Matt Trawick.
+% The goal is to pre-define several basic types of graphs used in our manuals (plain axes
+% with qualitative graphs, or empty grids with scales, etc.) that could be easily used and
+% tweaked throughout the manual, for stylistic uniformity.
+% These could gradually (or not so gradually) replace the hodge-podge of .eps files
+% generated from difference sources that are currently used in the manuals.
 \usepackage{pgfplots}
-\usepackage{sansmath}
+\usepackage{sansmath} 
 \usepgfplotslibrary{groupplots}
 \usetikzlibrary{pgfplots.groupplots}
 \usetikzlibrary{math}
 \usepackage{xparse} %used for \NewDocumentCommand
-\listfiles
+% xparse is actually used elsewhere as well, so doesn't need to be called here for the main lab manual.
+% I'm keeping the line in for when this file is called by another .tex file, for instance if you're just testing
+% how things work.
 
-\pgfplotsset{compat=1.16}
+\pgfplotsset{compat=1.16} %Version 1.16 is the current version, as of July 2019
+
+%-------------------------------------------------------------------------
+% Below, set several style choices used throughout the manual.
 \tikzset{every picture/.style={font=\sffamily}}
-
-\pgfplotscreateplotcyclelist{lab_solid}{
-	{black}
-}
 
 \pgfplotsset{
   tick label style = {font=\sansmath\sffamily},
@@ -21,17 +29,38 @@
 	samples = 200,
 }
 
+% This pre-defines a "cycle" of colors and styles that can be used for successive plots added to an axis.
+% In this case the "cycle" has only one entry, so all plots look the same.
+\pgfplotscreateplotcyclelist{lab_solid}{
+	{black}
+}
 
+%---------------------------------------------------------------------------
+% This part predefines several named styles ("lab_noticks_1quad" for a single-quadrant set of blank axes, etc.)
+% that can be called for various graphs used throughout the manual.
+% Each option within the defined style can be overridden individually as needed, or
+% additional options added. For instance,
+% 		\begin{lab_axis}[lab_noticks_2quads,
+% 			ymin = -0.5,
+% 			....
+%
+% These "styles" are really just lists of options, and can be combined if needed, as in 
+% 		\begin{lab_axis}[lab_noticks_2quads,
+%			plus_minus_zero_labels
+% 			....
+
+% single quadrant:
 \pgfplotsset{lab_noticks_1quad/.style={
 	cycle list name = lab_solid,
 	every axis plot/.append style={very thick},
-	axis x line={left, x axis line style={-}}, 
+	axis x line={left, x axis line style={-}}, % solid line with no arrow.
 	axis y line= {left,  y axis line style={-}},
 	xmin=0, xmax=1,
 	ymin=0, ymax=1, %Although there are no ticks, this seems to be needed to make the ticks disappear.
 	tick style={xtick=\empty,ytick=\empty}
 }}
 
+% two quadrants (I and IV):
 \pgfplotsset{lab_noticks_2quads/.style={
 	cycle list name = lab_solid,
 	every axis plot/.append style={very thick},
@@ -43,6 +72,7 @@
 	tick style={xtick=\empty,ytick=\empty},
 }}
 
+%four quadrants:
 \pgfplotsset{lab_noticks_4quads/.style={
 	cycle list name = lab_solid,
 	every axis plot/.append style={very thick},
@@ -55,24 +85,24 @@
 	tick style={xtick=\empty,ytick=\empty},
 }}
 
-\pgfplotsset{plus_minus_zero_labels/.style={
-	tick style={major tick length=0pt},
-	extra y ticks = {-0.8, 0, 0.8},
-	extra y tick labels = {\scriptsize{$-$},0,\scriptsize{$+$}},
-}}
-
 \pgfplotsset{lab_grid/.style={
 	cycle list name = lab_solid,
 	every axis plot/.append style={very thick},
 	tick style={grid=major,major tick length=0pt}
 }}
 
+\pgfplotsset{plus_minus_zero_labels/.style={
+	tick style={major tick length=0pt},
+	extra y ticks = {-0.8, 0, 0.8},
+	extra y tick labels = {\scriptsize{$-$},0,\scriptsize{$+$}},
+}}
+
 
 % The commmand below makes vertical alignment marks through all graphs in a groupplot.
-% (Restricted to only a single column, but multiple rows.  The rows can be 1 though.)
+% (Restricted to only a single column, but multiple rows.  The number of rows can be "1" though.)
 %
 % How to call:
-% \makegroupverticlas[rows]{x1,x2,x3...}{xmin}{xmax}
+% 		\makegroupverticlas[rows]{x1,x2,x3...}{xmin}{xmax}
 % rows is assumed to be 2 if not specified.  xmin and xmax are the min and max values of the axis.
 % Oh, and it won't work if you define a name for the group; it must remain the default "group".
 %
@@ -121,10 +151,22 @@
 		\draw [black, very thick, dashed] (\x, |- toppoint) -- (\x, |- botpoint);
 }
 
-% The lab_axis environment, defined below, is just a thin wrapper around the "tikzpicture" and "axis" 
+
+%------------------------------------------------------------------------------------------------------------------
+% Finally, this next section defines two (currently) environments, simply for convenience, to make
+% these graphs less cumbersome to call.  You can still make graphs by using 
+% 		\begin{tikzpicture}
+% 		\begin{axis}
+%		 .....
+% if you want.
+
+
+% The lab_axis environment, defined below, is basically a thin wrapper around the "tikzpicture" and "axis" 
 % environments, combined.  When called in the starred version ("*", see below) it also centers the graph.
-% Note that it puts small vertical spaces above the graph.  If this is called multiple times on one line, the
-% vertical spaces will build up, and be placed after the graphs, requiring a \vspace{-2em} or whatever. 
+% Note that it also puts small vertical spaces above and below the graph.  If this is called multiple times on 
+% one line, the vertical spaces will build up and be placed after the graphs, requiring a 
+%		\vspace{-2em} 
+% (or whatever length you need) to undo.
 \NewDocumentEnvironment{lab_axis}{s}{
 	\IfBooleanTF #1
 		{ \begin{center} } %if starred
@@ -150,11 +192,11 @@
 \ExplSyntaxOff
 
 % This new environment is a thin wrapper around the "tikzpicture" and "groupplot" environments, combined.
-% When called in a star version, it is centered as well.  (Here, the * goes AFTER the }, as in
+% When called in the starred version, it is centered as well.  (Here, the "*" goes AFTER the "}", as in
 % 		\begin{lab_groupplot}*{}blah blah blah.
 % The empty argument above is where you put any line or lines that go after the \end{groupplot} but
 % before the \end{tikzpicture}, which would typically be drawing vertical alignment marks
-% using \makegroupverticals, or other annotations.
+% using \makegroupverticals, or adding other annotations.
 \NewDocumentEnvironment{lab_groupplot}{s m}{
 	\IfBooleanTF #1
 		{ \begin{center} } %if starred
