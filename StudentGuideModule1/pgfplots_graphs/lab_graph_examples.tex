@@ -3,17 +3,14 @@
 
 \begin{document}
 
-%\newenvironment{lab_axis}{\vspace{1em}\begin{tikzpicture} \begin{axis}}{\end{axis} \end{tikzpicture}\vspace{1em}}
-
 A blank set of axes, in one quadrant, with labels:
 
 \begin{lab_axis}[lab_noticks_1quad,
-	height = {1.5in}, width = {2in},
+	height = {1.7in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={position (m)},
 ]
 \end{lab_axis}
-
 
 Two quadrants, with a graph:
 
@@ -39,7 +36,6 @@ With some extra tick marks:
 Two quadrants with sign labels, and several labeled curves:
 
 \begin{lab_axis}[lab_noticks_2quads,
-	height = {2in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={position (m)},
 	plus_minus_zero_labels,
@@ -159,7 +155,7 @@ Note that the "groupplot" feature can be used to stack graphs:
 		xticklabels at=edge bottom,
 		vertical sep=0.2in
 		},
-	height=2in, width=2in,
+	height=2in, width=2.5in,
 ]
 \nextgroupplot[
 	lab_noticks_1quad,
@@ -174,7 +170,6 @@ Note that the "groupplot" feature can be used to stack graphs:
 	ylabel={velocity (m/s)},
 ]
 \end{lab_groupplot}
-
 
 Finally, you can drop alignment marks between graphs, as the next two examples show:
 
@@ -202,10 +197,7 @@ Finally, you can drop alignment marks between graphs, as the next two examples s
 %Without the addplot, with at least ONE point somewhere in the visible area, the scale of the x axis is totally wrong.
 
 %\addplot coordinates{(0,0) (1,0) (1,2) (3,2) (3,0) (5,0) (5,4) (7,4) (7,0) (8,0)};
-
 \end{lab_groupplot}
-
-
 
 \begin{lab_groupplot}{\makegroupverticals[3]{90,180,270,360,450,540,630,720}{0}{770}
 }[lab_noticks_2quads,
