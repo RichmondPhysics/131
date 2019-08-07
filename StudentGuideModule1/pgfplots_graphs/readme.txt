@@ -1,6 +1,7 @@
 
 In summer 2019, a few of us (mostly Matt and Mariama) noted that graphs 
-in our lab manuals were not styled consistently.  Some were downright ugly.
+in our lab manuals are not styled consistently.  Many of them look okay, but
+some are downright ugly.
 
 Also, the graphs come from many sources (xfig, Microsoft Word, etc.) or have no 
 source other than an un-editable eps file.  This makes tweaking them hard.
@@ -19,8 +20,8 @@ some other options can be used to create various graphs and axes for the manual.
 In the lab_graph_examples file, I've shown how to use a bunch of different 
 preset styles and options that I have created for convenience.  But the way 
 pgfplots is written, there is no limit to the amount of additional customization 
-you can do.  (And personally, if anyone wants to ignore my presets entirely, 
-that's fine with me.)
+you can do.  (And personally, if anyone wants to ignore my presets entirely 
+and code your own graphs from scratch, that's fine with me.)
 
 Having worked with pgfplots for about a week, my own opinion is that it's kind 
 of a pain in the ass to use.  The syntax is difficult, and the documentation 
@@ -44,7 +45,7 @@ Pros:
 1. Will set stylistic consistency as the default (though it won't preclude you from breaking it if you want to).
 2. If individual graphs are tweaked later, Github will actually show what changes were made to each graph.  (Currently it just says, "binary file changed", which doesn't really help, and doesn't offer a good way to see both versions.)
 3. Although figuring out pgfplots is kind of a pain, using preset styles that are already set up isn't that bad.
-4. Very easy to tweak styles later if we want to.  A change made to a preset style will automatically affect all graphs.
+4. It's very easy to tweak styles later if we want to.  A change made to a preset style will automatically affect all graphs.
 5. Pgfplots appears to be extremely powerful, and will not limit anything we want to do.  (Though I'm not necessarily in favor of using it for EVERY single one-of-a-kind graph in the manual.  For really complicated graphs with lots of annotations, that would be a nuisance.)
 
 --Matt Trawick, July 31, 2019
