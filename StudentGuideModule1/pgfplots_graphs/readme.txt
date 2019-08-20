@@ -37,15 +37,17 @@ graphs would be fine.
 Here's a summary of what I believe are the main arguments for and against using pgfplots for all our graphs:
 
 Cons:
-1. Pgfplots isn't a wysiwyg editor like Microsoft Word.  You write lines of script (as in Latex or Mathematica) and it gets compiled into a pretty figure within your Latex document.
-2. pgfplots is a pain to use, IMHO.  (quirky syntax, manual not great, not tons of help online).
-3. Changing all of the graphs will be a reasonable amount of work.  (Though Matt volunteers.)
+1. Most of us don't know anything about pgfplots, and would have to learn something new in order to make graphs this way.  (It won't be too hard, assuming you mostly follow the examples I've already made.)  Matt will always help you figure something out if you need it.
+2. Pgfplots isn't a wysiwyg editor like Microsoft Word.  You write lines of script (as in Latex or Mathematica) and it gets compiled into a pretty figure within your Latex document.
+3. pgfplots is a pain to use, IMHO.  (quirky syntax, manual not great, not tons of help online).
+4. Changing all of the graphs will be a reasonable amount of work.  (Though Matt volunteers to do it.)
 
 Pros:
 1. Will set stylistic consistency as the default (though it won't preclude you from breaking it if you want to).
 2. If individual graphs are tweaked later, Github will actually show what changes were made to each graph.  (Currently it just says, "binary file changed", which doesn't really help, and doesn't offer a good way to see both versions.)
 3. Although figuring out pgfplots is kind of a pain, using preset styles that are already set up isn't that bad.
 4. It's very easy to tweak styles later if we want to.  A change made to a preset style will automatically affect all graphs.
-5. Pgfplots appears to be extremely powerful, and will not limit anything we want to do.  (Though I'm not necessarily in favor of using it for EVERY single one-of-a-kind graph in the manual.  For really complicated graphs with lots of annotations, that would be a nuisance.)
+5. Pgfplots appears to be extremely powerful, and will not limit anything we want to do.  (That said, I'm not necessarily in favor of using it for EVERY single one-of-a-kind graph in the manual.  For really complicated graphs with lots of annotations, that would be a nuisance, and I think it would be totally fine to make a few graphs in Mathematica or
+Excel or whatever, roughly matching the style of the other plots in the manual.)
 
 --Matt Trawick, July 31, 2019

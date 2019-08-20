@@ -12,7 +12,7 @@ A blank set of axes, in one quadrant, with labels:
 ]
 \end{lab_axis}
 
-Two quadrants, with a graph:
+Two quadrants, with a graph, centered:
 
 \begin{lab_axis*}[lab_noticks_2quads,
 	xlabel={time (s)},
@@ -191,7 +191,7 @@ Finally, you can drop alignment marks between graphs, as the next two examples s
 %\addplot coordinates{(0,1) (1,1)};
 \addplot coordinates{(0,1) (1,1) (3,5) (5,5) (7,13) (8,13)};
 
-\nextgroupplot[ymax=5, ylabel={velocity (m/s)}]
+\nextgroupplot[ymin=0,ymax=5, minor y tick num=1, ylabel={velocity (m/s)}]
 \addplot coordinates{(0.5,0.5)};
 %Weird!!! Note that the nonfunctional addplot line just above is needed, even though it makes no actual mark.
 %Without the addplot, with at least ONE point somewhere in the visible area, the scale of the x axis is totally wrong.
