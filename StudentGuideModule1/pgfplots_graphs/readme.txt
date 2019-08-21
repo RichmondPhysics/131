@@ -11,11 +11,11 @@ The idea is to use pgfplots to generate at least most of the graphs in the manua
 If this is done using a handful of presets, it will generally enforce stylistic 
 consistency, while still allowing customization as necessary.
 
-As of July 31, 2019, this directory contains both a working file of the presets and
+As of August 21, 2019, this directory contains both a working file of the presets and
 definitions, lab_graph_definitions.tex (which would eventually be read by the 
 labmanual_formatting_commands.tex file), and also a standalone document, 
 lab_graph_examples.tex, which contains several examples of how the presets and 
-some other options can be used to create various graphs and axes for the manual.
+some other options can be used to create various graphs and axes for the manual. It also contains a user manual (tex and pdf) with brief descriptions of the eight different styles and short-cuts I've defined.
 
 In the lab_graph_examples file, I've shown how to use a bunch of different 
 preset styles and options that I have created for convenience.  But the way 

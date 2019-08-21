@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[parfill]{parskip}
+
+\begin{document}
+
+This document is a brief manual explaining the use of a few new styles and commands I have designed for making graphs in our lab manuals with pgfplots.  It's not meant to be a complete how-to guide for how to make graphs.  (For that, see the manual for pgfplots, or look in our existing lab manual .tex files for examples.)
+
+\section{Environments}
+
+\textbf{\textbackslash begin\{lab\_axis\}...\textbackslash end\{lab\_axis\}:} This is how you begin and end a simple graph.  In fact, it is mostly just a short-hand for ``\textbackslash begin\{tikzpicture\} \textbackslash begin\{axis\}'', though it also adds a tiny bit of vertical space before and afterwords.  The starred version (\textbackslash begin\{lab\_axis*\} or \textbackslash begin\{lab\_axis\}*) also centers the graph horizontally.
+
+\textbf{\textbackslash begin\{lab\_groupplot\}\{\}...\textbackslash end\{lab\_groupplot\}:} This is how you begin and end a ``groupplot'', which means a set of similar axes aligned together.  Again, it's short-hand for ``\textbackslash begin\{tikzpicture\} \textbackslash begin\{groupplot\}'', with extra spacing.  The starred version (must be \textbackslash begin\{lab\_axis\}*\{\}) also centers it.  There is a required set of braces after the command, which are empty in the examples so far.  Inside those braces is where you put any additional commands (like annotations or vertical alignment lines) that get done after leaving the groupplot environment, but while still in the tikzpicture environment.
+
+\section{Styles}
+
+\textbf{lab\_noticks\_1quad:} $x$ and $y$ axes with no tick marks or grids, only showing quadrant I.  (That is, the origin is in the lower-left corner.)  The $x$ and $y$ scales both go from 0 to 1, in case you want to add a plot.
+
+\textbf{lab\_noticks\_2quads:} $x$ and $y$ axes with no tick marks or grids, showing quadrants I and IV.  The $x$ scale goes from 0 to 1, and the $y$ scale goes from $-1$ to 1.
+
+\textbf{lab\_noticks\_4quads:} $x$ and $y$ axes with no tick marks or grids, showing all four quadrants.  (That is, the origin is in the center.)  The $x$ and $y$ scales both go from $-1$ to 1.
+
+\textbf{lab\_grid:} A rectangular area with major grid lines in $x$ and $y$, scales on lower and left edges.  The $y=0$ line is in black.  Minor gridlines can be added by ``minor tick num = 4'', or ``minor x tick num = 2''. 
+
+\section{Other Stuff}
+
+\textbf{plus\_minus\_zero\_labels:} This pgfplots style can be used as a single command to place $+$, $-$, and $0$ labels on the $y$ axis to denote positive and negative regions.
+
+\textbf{\textbackslash makegroupverticals[$N$]\{$x_1, x_2, x_3...$\}\{$x_{\rm min}$\}\{$x_{\rm max}$\}:} This LaTeX command draws dashed vertical lines between multiple graphs in a groupplot at specified $x$ values.  Here $N$ is the number of graphs stacked vertically; if omitted the default is $N=2$. (In any case, there must be only a single column of graphs.)  The values $x_1$, $x_2$, etc. give the $x$ values for the vertical lines.  The values $x_{\rm min}$ and $x_{\rm max}$ give the minimum and maximum values of the $x$ axis, which unfortunately need to be re-specified here in order to make the vertical lines go in the right place.
+
+
+\end{document}
