@@ -95,7 +95,7 @@
 		grid=both, 
 		major tick length=0pt,
 		minor tick length=0pt},
-	extra y ticks={0},
+%	extra y ticks={0},
 %	extra x ticks={0},
 	extra tick style={
 		major grid style=black,
@@ -182,13 +182,13 @@
 	\IfBooleanTF #1
 		{ \begin{center} } %if starred
 		{} %if not starred, do nothing
-	\vspace{1em}
+	\vspace{0em}
 	\begin{tikzpicture} 
 	\begin{axis}
 	}
 	{\end{axis} 
 	\end{tikzpicture}
-	\vspace{1em}
+	\vspace{0em}
 	\IfBooleanTF #1
 		{\end{center} } %if starred
 		{} %if not starred, do nothing

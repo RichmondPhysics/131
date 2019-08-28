@@ -7,13 +7,30 @@ locally and may not have been classroom tested at Dickinson College.
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
+\bigskip
+
 \textbf{Objectives} 
 
-\begin{itemize}
+\begin{itemize}[nosep]
 \item To learn about two of the ways that physicists can describe motion in one dimension-words
 and graphs. 
 \item To learn how to relate graphs of position \textit{vs.}~time to the motions they represent.
 \end{itemize}
+
+\bigskip
+
+\textbf{Apparatus} 
+
+\begin{itemize}[nosep]
+\item Pasco 550 Interface
+\item Ultrasonic motion detector 
+\item \textit{Capstone} software (\filename{P\_Graphs.cap} experiment file)
+\item Wooden board
+\item Masking tape for marking distances
+\end{itemize}
+
+\bigskip
+
 \textbf{Introduction} 
 
 The focus of this unit on kinematics is to be able to describe your position
@@ -38,15 +55,6 @@ along the floor, but don't be surprised to see small bumps in velocity graphs.
 ``seen'' well by a motion detector. Hold a wooden board in front of you when 
 doing the activities below so the motion detector can see a smooth surface.
 
-\textbf{Apparatus} 
-
-\begin{itemize}
-\item Pasco 550 Interface
-\item Ultrasonic motion detector 
-\item \textit{Capstone} software (\filename{P\_Graphs.cap} experiment file)
-\item Wooden board
-\item Masking tape for marking distances
-\end{itemize}
 \textbf{Position \textit{vs.}~Time Graphs of Your Motion }
 
 The purpose of this unit is to learn how to relate graphs of position as a function
@@ -92,21 +100,38 @@ observe in each case:
 and steadily.
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig1.eps} \par}
+%{\par\centering \includegraphics{position/position_fig1.eps} \par}
 %\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
 (b) Walk away from the origin medium-fast and steadily.
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig1.eps} \par}
+%{\par\centering \includegraphics{position/position_fig1.eps} \par}
 %\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
-\pagebreak[2]
 (c) Walk toward the detector (origin) slowly and steadily.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{position/position_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
 (d) Describe the difference between the graph you made by walking away slowly
 and the one made by walking away more quickly.
@@ -123,9 +148,22 @@ slowly and steadily for 4 seconds, stop for 4 seconds, and then walk toward
 the detector quickly. Sketch your prediction on the axes below using a dashed
 line.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig2.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{position/position_fig2.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {3in},
+	width = {6in},
+	xlabel={Time (s)},
+	ylabel={Position (m)},
+	xmin=0, xmax=12,
+	ymin=0, ymax=3,
+	xtick distance = 4,
+%	ytick distance = 1,
+	minor y tick num=1,
+	minor x tick num=3,
+	]
+\end{lab_axis}
 
 (b) Test your prediction by moving in the way described and making a graph of
 your motion with the motion detector. Sketch the trace of your actual motion
@@ -139,8 +177,22 @@ would move to make a graph that looks like your prediction.
 \textbf{Activity 3: Matching Position \textit{vs.}~Time Graphs}
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.7\textwidth]{position/position_fig3.eps} \par}
-\vspace{-0.1cm}
+%{\par\centering \includegraphics[width=0.7\textwidth]{position/position_fig3.eps} \par}
+%\vspace{-0.1cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in},
+	width = {5in},
+	xlabel={Time (s)},
+	ylabel={Position (m)},
+	xmin=0, xmax=20,
+	ymin=0, ymax=4,
+	xtick distance = 4,
+	ytick distance = 2,
+	minor y tick num=1,
+	minor x tick num=1,
+	]
+\addplot coordinates{(0,0.5) (6,0.5) (8,2) (12,2) (16,3) (20,3)};
+\end{lab_axis}
 
 (a) Describe in your own words how you would move in order to match the graph
 shown above.
@@ -157,10 +209,31 @@ sloped parts of the graph you just matched?
 
 (d) Make curved position \textit{vs.}~time graphs like those shown below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.5\textwidth]{position/position_fig4.eps} \par}
-\vspace{-0.1cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.5\textwidth]{position/position_fig4.eps} \par}
+%\vspace{-0.1cm}
+\begin{center}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.5in}, width = {2in},
+	xlabel={Time},
+	ylabel={Position},
+	title={Graph 1},
+	]
+\addplot[domain=0:0.9] {0.8*x^2 + 0.2};
+\end{lab_axis}
+\hspace{0.5in}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.5in}, width = {2in},
+	xlabel={Time},
+	ylabel={Position},
+	title={Graph 2},
+	]
+\addplot[domain=0:0.9] {-0.8*x^2 + 0.9};
+\end{lab_axis}
+\end{center}
+%\vspace{-2em}
 
+%\newpage
 (e) Describe how you must move to produce a position \textit{vs.}~time graph with each
 of the shapes shown.
 
@@ -170,10 +243,11 @@ Graph 1 answer:
 Graph 2 answer:
 \answerspace{10mm}
 
+\pagebreak[2]
 (f) What is the general difference between motions which result in a straight-line
 position \textit{vs.}~time graph and those that result in a curved-line position vs.
 time graph?
-\answerspace{20mm}
+\answerspace{15mm}
 
 \pagebreak[2]
 \textbf{Homework} 
@@ -182,37 +256,72 @@ Answer the following questions in the spaces provided.
 
 1.What do you do to create a horizontal line on a position-time graph?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig5.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig5.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.6in}, width = {2.0in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot[domain=0:0.9] {0.5};
+\end{lab_axis}
 
 2. How do you walk to create a straight line that slopes up?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig6.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig6.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.6in}, width = {2.0in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot[domain=0:0.9] {x};
+\end{lab_axis}
 
 3. How do you walk to create a straight line that slopes down?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.6in}, width = {2.0in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot[domain=0:0.9] {0.9 - 0.8*x};
+\end{lab_axis}
 
 4. How do you move so the graph goes up steeply at first, then continues up
 gradually?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig8.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig8.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.6in}, width = {2.0in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot coordinates{(0,0) (0.25, 0.4) (0.9,0.7)};
+\end{lab_axis}
 
 5. How do you walk to create a U-shaped graph?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig9.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig9.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.6in}, width = {2.0in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot [smooth, tension=0.95] coordinates{(0,0.8) (0.2, 0.7) (0.5,0.25) (0.8, 0.7) (1.0, 0.8)};
+\end{lab_axis}
 
 \pagebreak[2]
-Answer the following about the two objects , A and B, whose motion produced
+Answer the following about the two objects A and B, whose motion produced
 the following position-time graphs.
 
 6. (a) Which object is moving faster? (b) Which starts ahead? Define what you
@@ -220,58 +329,101 @@ mean by ``ahead.''
 
 (c) What does the intersection mean?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig10.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig10.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.9in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot coordinates {(0,0.0) (0.9,0.9)} node[right] {B};
+\addplot coordinates {(0,0.4) (0.9,0.7)} node[right] {A};
+\end{lab_axis}
 
 7. (a) Which object is moving faster? (b) Which object has a negative velocity
 according to the convention we have established?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig11.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig11.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.9in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot coordinates {(0,0.0) (0.9,0.9)} node[right] {A};
+\addplot coordinates {(0,0.6) (0.9,0.3)} node[right] {B};
+\end{lab_axis}
 
 8. (a) Which object is moving faster? (b) Which starts ahead? Define what you
 mean by ``ahead.''
 
-
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{position/position_fig12.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{position/position_fig12.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.9in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\addplot coordinates {(0,0.9) (0.9,0.1)} node[right] {A};
+\addplot coordinates {(0,0.6) (0.9,0.3)} node[right] {B};
+\end{lab_axis}
 
 Sketch the position-time graph corresponding to each of the following descriptions
 of the motion of an object.
 
 9. The object moves with a steady (constant) velocity away from the origin.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig13.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{position/position_fig13.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {1.8in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
+\pagebreak
 10. The object is standing still.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig13.eps} \par}
-\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {1.8in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
 11. The object moves with a steady (constant) velocity toward the origin for
 5 seconds and stands still for 5 seconds.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig13.eps} \par}
-\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {1.8in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
 12. The object moves with a steady velocity away from the origin for 5 seconds,
 then reverses direction and moves at the same speed toward the origin for 5
 seconds.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig13.eps} \par}
-\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {1.8in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
 
 13. The object moves away from the origin, starting slowly and speeding up.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{position/position_fig13.eps} \par}
-\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	height = {1.8in}, width = {2.8in},
+	xlabel={Time},
+	ylabel={Position},
+	]
+\end{lab_axis}
+
 

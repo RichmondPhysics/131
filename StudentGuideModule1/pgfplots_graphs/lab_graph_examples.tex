@@ -1,5 +1,6 @@
 \documentclass{article}
 \input{lab_graph_definitions}
+\usepackage[parfill]{parskip}
 
 \begin{document}
 
@@ -9,7 +10,7 @@ A blank set of axes, in one quadrant, with labels:
 	height = {1.7in}, width = {2in},
 	xlabel={time (s)},
 	ylabel={position (m)},
-]
+	]
 \end{lab_axis}
 
 Two quadrants, with a graph, centered:
@@ -67,8 +68,6 @@ And, finally, four quadrants:
 \node[anchor=west] at (axis cs: 0.0,0.5)  {$U = \frac{1}{2}kx^2$};
 \end{lab_axis}
 
-\vspace{-2em}
-(Note that there's a little problem with the spacing above.  The lab\_axis environment puts a little \verb!vspace! before and after each graph.  When two graphs appear on the same line, as above, the vertical space between them gets shoved AFTER both graphs, making the vertical spacing after the graphs too large.  It can be removed by \verb!\vspace{-2em}!.
 
 \bigskip
 I also defined a style that includes a grid: 
@@ -112,6 +111,7 @@ And you can make various labels disappear:
 	ylabel={position (m)},
 	xmin=0, xmax=20,
 	ymin=-2, ymax=2,
+	extra y ticks={0},
 ]
 \end{lab_axis}
 \begin{lab_axis}[lab_grid,
@@ -120,6 +120,7 @@ And you can make various labels disappear:
 	xmin=0, xmax=20,
 	ymin=-2, ymax=2,
 	yticklabels = { , , },
+	extra y ticks={0},
 ]
 \end{lab_axis}
 
@@ -142,8 +143,6 @@ And you can make various labels disappear:
 	xticklabels = { , , },
 ]
 \end{lab_axis}
-
-\newpage
 
 Note that the "groupplot" feature can be used to stack graphs:
 
