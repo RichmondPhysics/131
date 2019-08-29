@@ -102,9 +102,22 @@ by hand and on the computer.
 data you collected, including the (0,0) point listed on the first line of the
 above table.  Sketch a line through the data points.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{measuring/measuring_fig1.eps} \par}
-\answerspace{0.6cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{measuring/measuring_fig1.eps} \par}
+%\answerspace{0.6cm}
+\begin{lab_axis}*[lab_grid,
+	height = {3in},
+	width = {5in},
+	xlabel={Time ( )},
+	ylabel={Position ( )},
+	xmin=0, xmax=10,
+	ymin=0, ymax=6,
+	xtick distance = 12,
+	ytick distance = 7,
+	minor y tick num=6,
+	minor x tick num=11,
+	]
+\end{lab_axis}
 
 (b) Now use \textit{Excel} on the computer to create the same graph. Just plot the 
 data points; don't try to fit with a line (we will do that in Activity 4). 
@@ -121,9 +134,38 @@ with $x$ so that $y = mx + b$, where
 $m$ is the slope and $b$ is the y intercept. In
 figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 
-\answerspace{0.3cm}
-{\par\centering \includegraphics{measuring/measuring_fig2.eps} \par}
-\answerspace{0.8cm}
+%\answerspace{0.3cm}
+%{\par\centering \includegraphics{measuring/measuring_fig2.eps} \par}
+%\answerspace{0.8cm}
+\begin{center}
+\begin{lab_axis}[lab_noticks_4quads,
+	height = {2.2in}, width = {2.2in},
+	xlabel={$x$},
+	ylabel={$y$},
+	title={(a)},
+	]
+\addplot[domain=-0.9:0.9] {-1.4*(x-0.5)^2 + 0.8};
+\end{lab_axis}
+\hspace{0.3in}
+\begin{lab_axis}[lab_noticks_4quads,
+	height = {2.2in}, width = {2.2in},
+	xlabel={$x$},
+	ylabel={$y$},
+	title={(b)},
+	]
+\addplot[domain=-0.9:0.9] {0.7*x + 0.3};
+\end{lab_axis}
+\hspace{0.3in}
+\begin{lab_axis}[lab_noticks_4quads,
+	height = {2.2in}, width = {2.2in},
+	xlabel={$x$},
+	ylabel={$y$},
+	title={(c)},
+	]
+\addplot[domain=-0.9:0.9] {x};
+\end{lab_axis}
+\end{center}
+
 
 \pagebreak[3]
 \textbf{Activity 3: The Mathematical Relationships} 
@@ -171,9 +213,18 @@ The diagram below shows the graphs of three possible relationships between the
 time, $t$, in seconds and the position, $x$, in centimeters that the object has
 traveled.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{measuring/measuring_fig3.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{measuring/measuring_fig3.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_4quads,
+	height = {2.5in}, width = {3.0in},
+	xlabel={$t$ (s)},
+	ylabel={$x$ (m)},
+	]
+\addplot coordinates {(-0.3,0.7) (-0.9,-0.8) } node[right] {A};
+\addplot[domain=-0.5:0.5] {-1.6*x} node[right] {B};
+\addplot[domain=0:0.9] {-1.6*x^2 + 0.6} node[right] {C};
+\end{lab_axis}
 
 (a) Which graphs represent position as a linear function of time? A, B, and/or
 C?
