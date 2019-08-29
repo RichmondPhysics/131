@@ -110,7 +110,7 @@
 
 %Use this to add y axis labels +, -, and 0 to graphs, presumably to lab_noticks_2quads style graphs.
 \pgfplotsset{plus_minus_zero_labels/.style={
-	tick style={major tick length=0pt},
+	extra y tick style={major tick length=0pt},
 	extra y ticks = {-0.8, 0, 0.8},
 	extra y tick labels = {\scriptsize{$-$},0,\scriptsize{$+$}},
 }}
