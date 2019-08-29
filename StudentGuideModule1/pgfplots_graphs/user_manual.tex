@@ -7,9 +7,9 @@ This document is a brief manual explaining the use of a few new styles and comma
 
 \section{Environments}
 
-\textbf{\textbackslash begin\{lab\_axis\}...\textbackslash end\{lab\_axis\}:} This is how you begin and end a simple graph.  In fact, it is mostly just a short-hand for ``\textbackslash begin\{tikzpicture\} \textbackslash begin\{axis\}'', though it also adds a tiny bit of vertical space before and afterwords.  The starred version (\textbackslash begin\{lab\_axis*\} or \textbackslash begin\{lab\_axis\}*) also centers the graph horizontally.
+\textbf{\textbackslash begin\{lab\_axis\}...\textbackslash end\{lab\_axis\}:} This is how you begin and end a simple graph.  In fact, it is mostly a short-hand for ``\textbackslash begin\{tikzpicture\} \textbackslash begin\{axis\}''.  The starred version (\textbackslash begin\{lab\_axis*\} or \textbackslash begin\{lab\_axis\}*) also centers the graph horizontally.
 
-\textbf{\textbackslash begin\{lab\_groupplot\}\{\}...\textbackslash end\{lab\_groupplot\}:} This is how you begin and end a ``groupplot'', which means a set of similar axes aligned together.  Again, it's short-hand for ``\textbackslash begin\{tikzpicture\} \textbackslash begin\{groupplot\}'', with extra spacing.  The starred version (must be \textbackslash begin\{lab\_axis\}*\{\}) also centers it.  There is a required set of braces after the command, which are empty in the examples so far.  Inside those braces is where you put any additional commands (like annotations or vertical alignment lines) that get done after leaving the groupplot environment, but while still in the tikzpicture environment.
+\textbf{\textbackslash begin\{lab\_groupplot\}\{\}...\textbackslash end\{lab\_groupplot\}:} This is how you begin and end a ``groupplot'', which means a set of similar axes aligned together.  Again, it's short-hand for ``\textbackslash begin\{tikzpicture\} \textbackslash begin\{groupplot\}''.  The starred version (must be \textbackslash begin\{lab\_axis\}*\{\}) also centers it.  There is a required set of braces after the command, which are empty in all of the examples in this paragraph.  Inside those braces is where you put any additional commands (like annotations or vertical alignment lines) that get done after leaving the groupplot environment, but while still in the tikzpicture environment.
 
 \section{Styles}
 
@@ -19,9 +19,11 @@ This document is a brief manual explaining the use of a few new styles and comma
 
 \textbf{lab\_noticks\_4quads:} $x$ and $y$ axes with no tick marks or grids, showing all four quadrants.  (That is, the origin is in the center.)  The $x$ and $y$ scales both go from $-1$ to 1.
 
-\textbf{lab\_grid:} A rectangular area with major grid lines in $x$ and $y$, scales on lower and left edges.  The $y=0$ line is in black.  Minor gridlines can be added by ``minor tick num = 4'', or ``minor x tick num = 2''. 
+\textbf{lab\_grid:} A rectangular area with major grid lines in $x$ and $y$, scales on lower and left edges.  Minor gridlines can be added by ``minor tick num = 4'', or ``minor x tick num = 3''.  (The latter would add 3 minor grid lines between every major grid line along the $x$ axis.)
 
 \section{Other Stuff}
+
+\textbf{y0\_line:} Adds a horizontal black line at $y=0$ to the lab\_grid style.
 
 \textbf{plus\_minus\_zero\_labels:} This pgfplots style can be used as a single command to place $+$, $-$, and $0$ labels on the $y$ axis to denote positive and negative regions.
 

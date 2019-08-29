@@ -102,6 +102,13 @@
 		},
 }}
 
+
+% Use this to add a darker horizontal line at y=0 to lab_grid style graphs.
+\pgfplotsset{y0_line/.style={
+	extra y ticks={0},
+}}
+
+%Use this to add y axis labels +, -, and 0 to graphs, presumably to lab_noticks_2quads style graphs.
 \pgfplotsset{plus_minus_zero_labels/.style={
 	tick style={major tick length=0pt},
 	extra y ticks = {-0.8, 0, 0.8},
@@ -182,7 +189,7 @@
 	\IfBooleanTF #1
 		{ \begin{center} } %if starred
 		{} %if not starred, do nothing
-	\vspace{0em}
+	\vspace{0em} % Because our lab manual skips lines between paragraphs, we don't need extra space 
 	\begin{tikzpicture} 
 	\begin{axis}
 	}
