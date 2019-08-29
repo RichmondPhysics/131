@@ -7,12 +7,26 @@ locally and may not have been classroom tested at Dickinson College.
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
+\bigskip
+
 \textbf{Objectives }
 
-\begin{itemize}
+\begin{itemize}[nosep]
 \item To acquire an intuitive understanding of speed and velocity in one dimension. 
 \item To learn how to relate graphs of velocity \textit{vs.}~time to the motions they represent.
 \end{itemize}
+
+\bigskip
+\textbf{Apparatus}
+
+\begin{itemize}[nosep]
+\item Pasco 550 Interface
+\item Ultrasonic motion detector
+\item \textit{Capstone} software (\filename{V\_Graph.cap} experiment file)
+\item Wooden board
+\end{itemize}
+
+\bigskip
 \textbf{Introduction} 
 
 You have already plotted your position as a function of time. Another way to
@@ -27,42 +41,67 @@ on whether the object is moving in the positive or negative direction.
 Graphs of velocity over time are more challenging to create and interpret than
 those for position. A good way to learn to interpret them is to create and examine velocity \textit{vs.}~time graphs of your own body motions, as you will do in the next few activities.
 
-\medskip
-\textbf{Apparatus}
-
-\begin{itemize}
-\item Pasco 550 Interface
-\item Ultrasonic motion detector
-\item \textit{Capstone} software (\filename{V\_Graph.cap} experiment file)
-\item Wooden board
-\end{itemize}
-
-To make the graphs in the following activities, open the \filename{V\_Graph.cap} application in the \filename{\coursefolder} folder. Click \textbf{Record} to begin, \textbf{Stop} to end a data run.
+\bigskip
 
 \textbf{Activity 1: Making Velocity \textit{vs.}~Time Graphs} 
+
+To make the graphs in the following activities, open the \filename{V\_Graph.cap} application in the \filename{\coursefolder} folder. Click \textbf{Record} to begin, \textbf{Stop} to end a data run.
 
 (a) Make a velocity graph by walking away from the detector slowly and steadily.
 Try again until you get a graph you're satisfied with and then sketch your result
 on the graph that follows. (We suggest you draw smooth patterns by ignoring
 smaller bumps that are mostly due to your steps.)
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{velocity/velocity_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{velocity/velocity_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in}, width = {5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=5.5,
+	ymin=-1.5, ymax=1.5,
+	xtick distance = 1,
+	ytick distance = 1,
+	y0_line,
+	]
+\end{lab_axis}
 
 (b) Make a velocity graph, walking away from the detector steadily at a medium
 speed. Sketch your graph below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in}, width = {5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=5.5,
+	ymin=-1.5, ymax=1.5,
+	xtick distance = 1,
+	ytick distance = 1,
+	y0_line,
+	]
+\end{lab_axis}
 
 (c) Make a velocity graph, walking toward the detector slowly and steadily.
 Sketch your graph below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in}, width = {5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=5.5,
+	ymin=-1.5, ymax=1.5,
+	xtick distance = 1,
+	ytick distance = 1,
+	y0_line,
+	]
+\end{lab_axis}
 
 (d) What is the most important difference between the graph made by slowly walking
 away from the detector and the one made by walking away more quickly? 
@@ -82,9 +121,20 @@ from the detector slowly and steadily for 6 seconds, (2) stand still for 6 secon
 (a) Use a dashed line in the graph that follows to record your prediction of
 the shape of the velocity graph that will result from the motion described above.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig2.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig2.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in}, width = {5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=16,
+	ymin=-1.5, ymax=1.5,
+	xtick distance = 3,
+	ytick distance = 1,
+	y0_line,
+	]
+\end{lab_axis}
 
 (b) Compare predictions with your partner(s) and see if you can all agree. Use
 a solid line to sketch your group prediction in the graph above.
@@ -94,9 +144,20 @@ motion until you are confident that it matches the description in words and
 then draw the actual graph on the axes below. Be sure the 6-second stop shows
 clearly.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig2.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.7\textwidth]{velocity/velocity_fig2.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in}, width = {5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=16,
+	ymin=-1.5, ymax=1.5,
+	xtick distance = 3,
+	ytick distance = 1,
+	y0_line,
+	]
+\end{lab_axis}
 
 (d) Did your prediction match your real motion? If not, what misunderstanding
 of what elements of the graph did you have?
@@ -164,9 +225,23 @@ in the prediction you made in Activity 2.
 (a) Describe how you think you will have to move in order to match the velocity
 graph shown below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{velocity/velocity_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{velocity/velocity_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = {2.5in}, width = {5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=22,
+	ymin=-1, ymax=1,
+	xtick distance = 4,
+	ytick distance = 1,
+	minor y tick num=1,
+	y0_line,
+	]
+\addplot coordinates {(0,0) (4,0) (4,0.5) (8,0.5) (8,0) (12,0) (12,-0.5) (18,-0.5) (18,0) (22,0)};
+\end{lab_axis}
+
 
 \answerspace{25mm}
 (b) Move in such a way that you can reproduce the graph shown. You may have
@@ -192,40 +267,92 @@ Answer the following questions in the spaces provided.
 1. How do you move to create a horizontal line in the positive part of a velocity-time
 graph, as shown below?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig8.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig8.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\addplot[domain=0:0.9] {0.5};
+\end{lab_axis}
+\answerspace{0.2in}
 
 2. How do you move to create a straight-line velocity-time graph that slopes
 up from zero, as shown below?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig9.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig9.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\addplot[domain=0:0.9] {x};
+\end{lab_axis}
+\answerspace{0.2in}
 
 3. How do you move to create a straight-line velocity-time graph that slopes
 down, as shown below?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig10.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig10.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\addplot[domain=0:0.9] {0.9 - x};
+\end{lab_axis}
+\answerspace{0.2in}
 
 4. How do you move to make a horizontal line in the negative part of a velocity-time
 graph, as shown below?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig11.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig11.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {2.0in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\addplot[domain=0:0.9] {-0.5};
+\end{lab_axis}
+\answerspace{0.2in}
 
-\pagebreak[2]
+\pagebreak[4]
 5. The velocity-time graph of an object is shown below. Figure out the total
 change in position (displacement) of the object. Show your work.
 
 Displacement = \_\_\_\_\_\_\_\_\_\_\_\_ meters.
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.55\textwidth]{velocity/velocity_fig12.eps} \par}
-\answerspace{0.6cm}
+\bigskip
+
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.55\textwidth]{velocity/velocity_fig12.eps} \par}
+%\answerspace{0.6cm}
+\begin{lab_axis}[lab_grid,
+	height = {1.8in}, width = {3.5in},
+	xlabel={Time (s)},
+	ylabel={Velocity (m/s)},
+	xmin=0, xmax=9,
+	ymin=-1, ymax=3,
+	xtick distance = 2,
+	ytick distance = 2,
+%	minor y tick num=1,
+	y0_line,
+	]
+\addplot coordinates {(0,0) (2,0) (2,2) (6,2) (6,0) (10,0) };
+\end{lab_axis}
+\answerspace{0.1in}
 
 6. The velocity graph below shows the motion of two objects, A and B. Answer
 the following questions separately. Explain your answers when necessary. (a)
@@ -234,9 +361,18 @@ the intersection mean? (c) Can one tell which object is ``ahead''?
 (define ``ahead'') (d) Does either object A or B reverse direction?
 Explain.
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig13.eps} \par}
-\answerspace{0.6cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig13.eps} \par}
+%\answerspace{0.6cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time},
+	ylabel={Velocity},
+	]
+\addplot coordinates {(0, 0.2) (0.9, 0.9)} node[right] {A};
+\addplot coordinates {(0, 0.2) (0.9, 0.4)} node[right] {B};
+\end{lab_axis}
+\answerspace{0.7in}
 
 7. The velocity graph below shows the motion of two objects, A and B. Answer
 the following questions separately. Explain your answers when necessary. (a)
@@ -245,38 +381,81 @@ the intersection mean? (c) Can one tell which object is ``ahead''?
 (define ``ahead'') (d) Does either object A or B reverse direction?
 Explain.
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig14.eps} \par}
-\answerspace{0.6cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics[width=0.45\textwidth]{velocity/velocity_fig14.eps} \par}
+%\answerspace{0.6cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time},
+	ylabel={Velocity},
+	]
+\addplot coordinates {(0, 0.9) (0.7, 0.1)} node[right] {A};
+\addplot coordinates {(0, 0.3) (0.9, 0.6)} node[right] {B};
+\end{lab_axis}
+\answerspace{0.7in}
 
-\pagebreak[2]
+\pagebreak[3]
 Sketch the velocity-time graph corresponding to each of the following descriptions
 of the motion of an object.
 
 8. The object is moving away from the origin at a constant velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{velocity/velocity_fig15.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{velocity/velocity_fig15.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
 
 9. The object is standing still.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{velocity/velocity_fig15.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{velocity/velocity_fig15.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
 
 10. The object moves toward the origin at a steady (constant) velocity for 10
 s and then stands still for 10 s.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{velocity/velocity_fig16.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{velocity/velocity_fig16.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time (s)},
+	ylabel={Velocity},
+	xmax=23,
+	xtick={10,20},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+
 
 11. The object moves away from the origin at a steady (constant) velocity for
 10 s, reverses direction and moves back toward the origin at the same speed
 for 10 s.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{velocity/velocity_fig16.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{velocity/velocity_fig16.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time (s)},
+	ylabel={Velocity},
+	xmax=23,
+	xtick={10,20},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+
 
