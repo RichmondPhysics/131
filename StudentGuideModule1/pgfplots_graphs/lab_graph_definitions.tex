@@ -95,20 +95,32 @@
 		grid=both, 
 		major tick length=0pt,
 		minor tick length=0pt},
-%	extra y ticks={0},
-%	extra x ticks={0},
-	extra tick style={
-		major grid style=black,
-		},
 }}
 
 
 % Use this to add a darker horizontal line at y=0 to lab_grid style graphs.
 \pgfplotsset{y0_line/.style={
 	extra y ticks={0},
+	extra tick style={
+		major grid style=black,
+		},
 }}
 
-%Use this to add y axis labels +, -, and 0 to graphs, presumably to lab_noticks_2quads style graphs.
+
+% In a groupplot, the y labels can be misaligned if one graph has "longer" tick lables, such as ones that include
+% a negative sign.  This command bumps the y label of the current to the left, to match the alignment of the
+% y label of the other graph.  To tell it how much to move it over, you need to give it the longest tick label text 
+% of the other graph as an argument.  Example: 
+% 		ylabel_align={-10}
+% Note that it works by actually creating an "extra y tick" on the current graph, but writing the label as
+% phantom text that doesn't show up.  For this reason, it will not work with y0_line, because that also works
+% by defining an "extra y tick" at zero.
+\pgfplotsset{ylabel_align/.style={
+	extra y ticks={\pgfkeysvalueof{/pgfplots/xmin}},
+	extra y tick labels={\phantom{$#1$}}, 
+}}
+
+% Use this to add y axis labels +, -, and 0 to graphs, presumably to lab_noticks_2quads style graphs.
 \pgfplotsset{plus_minus_zero_labels/.style={
 	extra y tick style={major tick length=0pt},
 	extra y ticks = {-0.8, 0, 0.8},
@@ -126,7 +138,7 @@
 %
 % This was a giant pain to get to work.  
 % The problem seems to be that INSIDE the groupplot environment, tikz knows about xmin and xmax
-% (since it can get it from \pgfkeysvalueof{/pgfplots/xmin) but does not know about the top and bottom
+% (since it can get it from \pgfkeysvalueof{/pgfplots/xmin} ) but does not know about the top and bottom
 % of the whole group; only of a single axis.
 % But OUTSIDE the grouplot environment, tikz knows about the top and bottom of the group
 % (from group c1r1.north west, for instance), but does not know about the scale of the x axis.

@@ -25,6 +25,10 @@ This document is a brief manual explaining the use of a few new styles and comma
 
 \textbf{y0\_line:} Adds a horizontal black line at $y=0$ to the lab\_grid style.
 
+\textbf{ylabel\_align=\{xxx\}:} This bumps the y label to the left enough to make room for a tick label "xxx".  In group plots, sometimes the y labels aren't aligned between the graphs if the y scales are different, and one of the graphs
+has longer tick label text than the other graph.  This command adds the specified fake (invisible) label to the 
+current axis, thus bumping the y label slightly to the left.
+
 \textbf{plus\_minus\_zero\_labels:} This pgfplots style can be used as a single command to place $+$, $-$, and $0$ labels on the $y$ axis to denote positive and negative regions.
 
 \textbf{\textbackslash makegroupverticals[$N$]\{$x_1, x_2, x_3...$\}\{$x_{\rm min}$\}\{$x_{\rm max}$\}:} This LaTeX command draws dashed vertical lines between multiple graphs in a groupplot at specified $x$ values.  Here $N$ is the number of graphs stacked vertically; if omitted the default is $N=2$. (In any case, there must be only a single column of graphs.)  The values $x_1$, $x_2$, etc. give the $x$ values for the vertical lines.  The values $x_{\rm min}$ and $x_{\rm max}$ give the minimum and maximum values of the $x$ axis, which unfortunately need to be re-specified here in order to make the vertical lines go in the right place.
