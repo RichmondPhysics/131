@@ -93,7 +93,46 @@ curve?
 \answerspace{20mm}
 
 \pagebreak[2]
-\vspace{0.3cm}
-{\par\centering \includegraphics{instantaneous_velocity/instantaneous_velocity_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{instantaneous_velocity/instantaneous_velocity_fig1.eps} \par}
+%\vspace{0.3cm}
 
+\begin{lab_axis}*[lab_grid,
+	height = {3in}, width = {3.0in},
+	xlabel={Time (s)},
+	ylabel={Position (cm)},
+	xmin=0,xmax=10,
+	ymin=-14, ymax = 26,
+	ytick={-14,-4,6,16,26},
+	minor y tick num=4,
+	minor x tick num=3,
+	]
+\addplot coordinates {(2.5,14) (3.5,14) (3.5,18) (2.5,18) (2.5,14) };
+\addplot[domain=0:10] {-2*(x-4)^2 + 18} ;
+\end{lab_axis}
+
+\begin{lab_axis}*[lab_grid,
+	height = {3in}, width = {3.0in},
+	xlabel={Time (s)},
+	ylabel={Position (cm)},
+	xmin=2.5,xmax=3.5,
+	ymin=14, ymax = 18,
+	minor y tick num=1,
+	xtick = {2.5,3.0,3.5},
+	minor x tick num=4,
+	ylabel_align={-14},
+	]
+\end{lab_axis}
+
+\begin{lab_axis}*[lab_grid,
+	height = {3in}, width = {3.0in},
+	xlabel={Time (s)},
+	ylabel={Position (cm)},
+	xmin=2.95,xmax=3.05,
+	ymin=15.8, ymax = 16.2,
+	minor y tick num=1,
+	xtick = {2.95,3.0,3.05},
+	minor x tick num=4,
+	ylabel_align={-14},
+	]
+\end{lab_axis}
