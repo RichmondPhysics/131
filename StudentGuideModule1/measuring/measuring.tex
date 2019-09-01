@@ -108,8 +108,8 @@ above table.  Sketch a line through the data points.
 \begin{lab_axis}*[lab_grid,
 	height = {3in},
 	width = {5in},
-	xlabel={Time ( )},
-	ylabel={Position ( )},
+	xlabel={Time (~~~)},
+	ylabel={Position (~~~)},
 	xmin=0, xmax=10,
 	ymin=0, ymax=6,
 	xtick distance = 12,
@@ -143,6 +143,7 @@ figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 	xlabel={$x$},
 	ylabel={$y$},
 	title={(a)},
+	title style={at={(0,1)}},
 	]
 \addplot[domain=-0.9:0.9] {-1.4*(x-0.5)^2 + 0.8};
 \end{lab_axis}
@@ -152,6 +153,7 @@ figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 	xlabel={$x$},
 	ylabel={$y$},
 	title={(b)},
+	title style={at={(0,1)}},
 	]
 \addplot[domain=-0.9:0.9] {0.7*x + 0.3};
 \end{lab_axis}
@@ -161,6 +163,7 @@ figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 	xlabel={$x$},
 	ylabel={$y$},
 	title={(c)},
+	title style={at={(0,1)}},
 	]
 \addplot[domain=-0.9:0.9] {x};
 \end{lab_axis}
@@ -209,17 +212,16 @@ the velocity as $v$ = slope \( \pm \ \Delta  \)slope, rounding off the numbers a
 
 \textbf{Homework} 
 
-The diagram below shows the graphs of three possible relationships between the
-time, $t$, in seconds and the position, $x$, in centimeters that the object has
-traveled.
+The diagram below shows the graphs of three possible relationships between 
+an object's position $x$ and time $t$.
 
 %\vspace{0.3cm}
 %{\par\centering \includegraphics{measuring/measuring_fig3.eps} \par}
 %\vspace{0.3cm}
 \begin{lab_axis}*[lab_noticks_4quads,
 	height = {2.5in}, width = {3.0in},
-	xlabel={$t$ (s)},
-	ylabel={$x$ (m)},
+	xlabel={$t$},
+	ylabel={$x$},
 	]
 \addplot coordinates {(-0.3,0.7) (-0.9,-0.8) } node[right] {A};
 \addplot[domain=-0.5:0.5] {-1.6*x} node[right] {B};
