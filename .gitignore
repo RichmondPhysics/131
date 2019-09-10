@@ -1,0 +1,35 @@
+# This file excludes files we don't want as part of the repository.
+# Note that using the **/ wildcard should exclude these types of files from all subdirectories.
+**/*.aux
+**/*.idx
+**/*.lof
+**/*.log
+**/*.lot
+**/*.tex~
+**/*.toc
+**/*.dvi
+**/*~
+**/*eps-converted-to.pdf
+
+# Other file types, put there by various operating systems
+**/*.DS_Store
+**/Thumbs.db
+
+## Build tool auxiliary files:
+**/*.fdb_latexmk
+**/*.synctex
+**/*.synctex.gz
+**/*.synctex.gz(busy)
+**/*.pdfsync
+
+# Finally, ignore the pdf files created in the main directory:
+StudentGuideModule1/master*.pdf
+
+# Lines below copied from https://github.com/github/gitignore/blob/master/TeX.gitignore
+# We don't have any of these, so for now they are commented out.
+# *.fls
+# *.out
+
+
+
+
