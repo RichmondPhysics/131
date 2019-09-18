@@ -68,15 +68,57 @@ velocity away from the motion detector starting at the 0.5 meter mark? Sketch
 your predictions with dashed lines on the axes that follow.
 
 %\vspace{-0.1in}
-{\par\centering \includegraphics[scale=1]{changing/changing_fig1.eps} \par}
-\vspace{-0.1in}
+%{\par\centering \includegraphics[scale=1]{changing/changing_fig1.eps} \par}
+%\vspace{-0.1in}
+
+\begin{lab_groupplot}*{}
+					[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	scale only axis=true,
+	width=5in,  %by setting only the width, it automatically preserves default aspect ratio of 1:1
+	xlabel=Time (s),
+	xmin=0, xmax=5,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=0,ymax=2, 
+	ylabel={Position (m)},
+	ylabel_align={-1},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Velocity (m/s)},
+	]
+\end{lab_groupplot}
 
 (b) Acceleration is defined as the time rate of change of velocity. Sketch your
 prediction of the cart acceleration on the axes that follow using a dashed line.
 
+\begin{lab_axis}*[lab_grid,
+	scale only axis=true,
+	width=5in,
+	xlabel={Time (s)},
+	xmin=0, xmax=5,
+	ymin=-1,ymax=1, 
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1,
+	y0_line,
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_axis}
+
 %\vspace{-0.1in}
-{\par\centering \includegraphics[scale=1]{changing/changing_fig2.eps} \par}
+%{\par\centering \includegraphics[scale=1]{changing/changing_fig2.eps} \par}
 %\vspace{-0.1in}
+
 
 (c) Test your prediction. Be sure that the cart is never closer than 0.15 meter
 from the motion detector. Try several times until you get a fairly constant
@@ -146,13 +188,48 @@ track several centimeters at the end where the motion detector is mounted}.
 for the cart moving away from the sensor and speeding up. Sketch your predictions
 on the following axes using dashed lines.
 
-\vspace{-0.2cm}
-{\par\centering \includegraphics[scale=0.93]{changing/changing_fig1.eps} \par}
-%\vspace{0.3cm}
+%\vspace{-0.2cm}
+%{\par\centering \includegraphics[scale=0.93]{changing/changing_fig1.eps} \par}
+%%\vspace{0.3cm}
 
-\vspace{-0.4cm}
-{\par\centering \includegraphics[scale=0.93,trim={0 0 0 0.4cm},clip]{changing/changing_fig2.eps} \par}
-%\vspace{0.3cm}
+%\vspace{-0.4cm}
+%{\par\centering \includegraphics[scale=0.93,trim={0 0 0 0.4cm},clip]{changing/changing_fig2.eps} \par}
+%%\vspace{0.3cm}
+
+\begin{lab_groupplot}*{}
+					[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	scale only axis=true,
+	axis equal image,
+	width=4.5in,  %by setting only the width, it automatically preserves aspect ratio of 1:1
+	xlabel=Time (s),
+	xmin=0, xmax=5,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=0,ymax=2, 
+	ylabel={Position (m)},
+	ylabel_align={-1},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_groupplot}
+
+
 
 (b) Create graphs of the motion of your cart as it moves away from the detector
 and speeds up. Sketch the graphs neatly on the above axes using solid lines.
@@ -256,9 +333,37 @@ acceleration you calculated from the acceleration \textit{vs.}~time graph? Do yo
 (b) Resketch the velocity and acceleration graphs you found in Activity 3 using
 the axes that follow.
 
-\vspace{-0.3cm}
-{\par\centering \includegraphics{changing/changing_fig5.eps} \par}
-\vspace{-0.3cm}
+%\vspace{-0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig5.eps} \par}
+%\vspace{-0.3cm}
+
+\begin{lab_groupplot}*{}
+					[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	scale only axis=true,
+	axis equal image,
+	width=3.5in,  %by setting only the width, it automatically preserves aspect ratio of 1:1
+	xlabel=Time (s),
+	xmin=0, xmax=4,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_groupplot}
 
 (c) In the previous set of axes, use a dashed line or another color to sketch
 your predictions for the general graphs that depict a cart speeding up at a
@@ -268,9 +373,36 @@ think the general shapes of the graphs will change.
 \pagebreak[2]
 (d) Test your predictions by accelerating the cart with the end of the track raised several centimeters more than in Activity 3. Repeat if necessary to get nice graphs and then sketch the results using the axes that follow.
 
-%\vspace{0.3cm}
-{\par\centering \includegraphics{changing/changing_fig5.eps} \par}
-%\vspace{0.3cm}
+%%\vspace{0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig5.eps} \par}
+%%\vspace{0.3cm}
+\begin{lab_groupplot}*{}
+					[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	scale only axis=true,
+	axis equal image,
+	width=3.5in,  %by setting only the width, it automatically preserves aspect ratio of 1:1
+	xlabel=Time (s),
+	xmin=0, xmax=4,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	y0_line,
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_groupplot}
 
 (e) Did the general shapes of your velocity and acceleration graphs agree with
 your predictions? How is the greater magnitude (size) of acceleration represented
@@ -285,49 +417,151 @@ vs. time graph?
 \textbf{Homework} 
 
 1. An object moving along a line (the + position axis) has the acceleration-time
-graph shown below. Describe how might the object move to create this graph if
-it is moving away from the origin?
+graph shown below. Describe how the object might move to create this graph if
+it is moving away from the origin.
 
-\vspace{0.3cm}
-{\par \centering \includegraphics{changing/changing_fig6.eps} \par}
-\answerspace{1.5cm}
+%\vspace{0.3cm}
+%{\par \centering \includegraphics{changing/changing_fig6.eps} \par}
+\hspace{0.4in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time},
+	ylabel={Acceleration},
+	plus_minus_zero_labels,
+	]
+\addplot[domain=0:0.9] {0.5};
+\end{lab_axis}
+%\answerspace{1.5cm}
 
 2. Sketch on the axes below a velocity-time graph that goes with the above acceleration-time
 graph.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{changing/changing_fig7.eps} \par}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig7.eps} \par}
 %\answerspace{1.0cm}
-\vspace{0.4cm}
+%\vspace{0.4cm}
+\hspace{0.4in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {3.0in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+
 
 3. For each of the velocity-time graphs below, sketch the shape of the acceleration-time
 graph that goes with it.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{changing/changing_fig8.eps} \par}
-\vspace{0.3cm}
+\hspace{0.4in}
+\begin{lab_groupplot}{}
+					[lab_noticks_2quads,
+	group style={
+		group size=1 by 2,
+		vertical sep=0.2in,
+		},
+	height = {1.8in}, width = {2.5in},
+	xlabel=Time,
+	plus_minus_zero_labels,
+	]
+\nextgroupplot[
+	ylabel={Velocity},
+	]
+\addplot coordinates {(0, 0.0) (0.9, 0.8)};
+\nextgroupplot[
+	ylabel={Acceleration},
+	]
+\end{lab_groupplot}
+\hspace{0.3in}
+\begin{lab_groupplot}{\makegroupverticals[2]{0.3,0.6}{0}{1}}
+					[lab_noticks_2quads,
+	group style={
+		group size=1 by 2,
+		vertical sep=0.2in,
+		},
+	height = {1.8in}, width = {2.5in},
+	xlabel=Time,
+	plus_minus_zero_labels,
+	]
+\nextgroupplot[
+	ylabel={Velocity},
+	]
+\addplot coordinates {(0, 0.0) (0.3, 0.0) (0.6,0.8) (0.9,0.8)};
+\nextgroupplot[
+	ylabel={Acceleration},
+	]
+\end{lab_groupplot}
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{changing/changing_fig9.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig8.eps} \par}
+%\vspace{0.3cm}
 
-4. The following is a velocity-time graph for a car.
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig9.eps} \par}
+%\vspace{0.3cm}
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{changing/changing_fig10.eps} \par}
-\vspace{0.3cm}
+4. The following is a velocity-time graph for a car.  What is the car's average acceleration? Show your work below.
 
-What is the average acceleration of the car? Show your work below.
-\answerspace{30mm}
 
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig10.eps} \par}
+%\vspace{0.3cm}
+%
+%\answerspace{30mm}
+\hspace{0.4in}
+\begin{lab_axis}[lab_grid,
+	scale only axis=true,
+	height = {1.5in}, width = {2.5in},
+%	width=5in,
+	xlabel={Time (s)},
+	xmin=0, xmax=10,
+	ymin=-4,ymax=4, 
+%	xtick distance = 1, 
+%	ytick distance = 1, 
+%	minor tick num=1,
+	y0_line,
+	ylabel={Velocity (m/s)},
+	]
+\addplot coordinates {(0, 1.0) (10, 4)};
+\end{lab_axis}
+
+\pagebreak[3]
 5. Which position-time graph below could be that for a cart that is steadily
 accelerating away from the origin?
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{changing/changing_fig11.eps} \par}
-\vspace{0.3cm}
+\begin{center}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.5in}, width = {2in},
+	xlabel={Time},
+	ylabel={Position},
+	title={(a)},
+	]
+\addplot coordinates {(0, 0) (0.9,0.9)};
+\end{lab_axis}
+\hspace{0.3in}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.5in}, width = {2in},
+	xlabel={Time},
+	ylabel={Position},
+	title={(b)},
+	]
+\addplot coordinates {(0, 0) (0.2,0.1) (0.7,0.8) (0.9,0.9)};
+\end{lab_axis}
+\hspace{0.3in}
+\begin{lab_axis}[lab_noticks_1quad,
+	height = {1.5in}, width = {2in},
+	xlabel={Time},
+	ylabel={Position},
+	title={(c)},
+	]
+\addplot[domain=0:0.9] {x^2 };
+\end{lab_axis}
+\end{center}
 
-\pagebreak[2]
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{changing/changing_fig11.eps} \par}
+%\vspace{0.3cm}
+
 A car can move along a line (the + position axis). Sketch velocity-time and
 acceleration-time graphs which correspond to each of the following descriptions
 of the car's motion.
@@ -335,29 +569,94 @@ of the car's motion.
 6. The car starts from rest and moves away from the origin increasing its speed
 at a steady rate.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
+%\answerspace{0.3cm}
+\hspace{0.4in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+\hspace{0.2in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Acceleration},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
 
 7. The car is moving away from the origin at a constant velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
+%\answerspace{0.3cm}
 
 %\pagebreak[2]
-\newpage
+%\newpage
+\hspace{0.4in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+\hspace{0.2in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Acceleration},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+
 8. The car starts from rest and moves away from the origin increasing its speed
 at a steady rate twice as large as in (6) above.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
+%\vspace{0.3cm}
+\hspace{0.4in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+\hspace{0.2in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Acceleration},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
 
 9. The car is moving away from the origin at a constant velocity twice as large
 as in (7) above.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.55\textwidth]{changing/changing_fig12.eps} \par}
+%\vspace{0.3cm}
+\hspace{0.4in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Velocity},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
+\hspace{0.2in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.8in}, width = {2.5in},
+	xlabel={Time},
+	ylabel={Acceleration},
+	plus_minus_zero_labels,
+	]
+\end{lab_axis}
 
