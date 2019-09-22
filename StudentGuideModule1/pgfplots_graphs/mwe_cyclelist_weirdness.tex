@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16} %Version 1.16 is the current version, as of July 2019
+
+\begin{document}
+
+% If I end with a comma after "red", it interprets it as if there is a second list item which is empty,
+% Which means that it uses the default settings for every other plot, making every second plot black.
+% Therefore, I must never end a list with a comma.
+% This seems like a bug, since in other lists of options in pgfplots, I CAN put a comma on the last item.
+\pgfplotscreateplotcyclelist{mycycle1}{
+	red
+}
+
+% If I want a cycle with ONLY one item (all plots the same), but specifying two different attributes, 
+% it appears I'm screwed no matter what I do.  
+% If I DO put a comma at the end of the line, then it interprets as if there's an empty second item in the list,
+% making every other line black and thin.
+% But if I DON't put a comma at the end of the line, it ignores the braces around the two entries,
+% alternating between "blue and thin" and "black and thick"
+\pgfplotscreateplotcyclelist{mycycle2}{
+	{blue,  line width = 2pt},
+}
+
+% The only solution I can find is that whenever I want a plot cycle list with one entry but several attributes,
+% I need to manually repeat the entire entry.  And I must not put a comma after the second time.
+\pgfplotscreateplotcyclelist{mycycle3}{
+	{green, line width = 2pt, mark=none},
+	{green, line width = 2pt, mark=none}
+}
+
+\begin{tikzpicture}
+\begin{axis}[
+	cycle list name = mycycle3,
+	]
+\addplot {x} ;
+\addplot {x-1} ;
+\addplot {x-2} ;
+\addplot {x-3} ;
+\addplot {x-4} ;
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
