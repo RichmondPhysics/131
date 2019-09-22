@@ -81,19 +81,6 @@
 	tick style={xtick=\empty,ytick=\empty},
 }}
 
-% two quadrants (I and IV), but with labels like for a mathematical function:
-\pgfplotsset{lab_noticks_2quads_algebraic/.style={
-	cycle list name = lab_solid,
-	axis x line= {middle, x axis line style={->}}, 
-	axis y line= {left, y axis line style={<->}},
-%	xlabel style={at=(current axis.right of origin), anchor=north east},
-%	ylabel style={at=(ticklabel* cs:1.0),  rotate=-90, anchor=north east},
-algebraic_labels,
-	xmin=0, xmax=1,
-	ymin=-1, ymax=1, 
-	tick style={xtick=\empty,ytick=\empty},
-}}
-
 %four quadrants:
 \pgfplotsset{lab_noticks_4quads/.style={
 	cycle list name = lab_solid,
