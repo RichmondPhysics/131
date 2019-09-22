@@ -28,12 +28,18 @@
 %  label style = {font=\sffamily}
 	samples = 200,
 	height = {2in}, width = {2in},
+	every axis/.append style={line width=0.8pt}, %default appears to be about 0.4pt
 }
 
+
 % This pre-defines a "cycle" of colors and styles that can be used for successive plots added to an axis.
-% In this case the "cycle" has only one entry, so all plots look the same.
+% In this case the "cycle" effectively has only one entry, so all plots look the same.
+% But note that in order to achieve that effect, I need to repeat the entry, once with a comma, and once
+% without a comma.  See the file mwe_cyclelist_weirdness.tex for details.
 \pgfplotscreateplotcyclelist{lab_solid}{
-	{black}
+	{black, line width = 4pt, mark=none},
+	{black, line width = 4pt, mark=none}
+	% Note: by my eye, "thick"=0.8 pt, "very thick" = 1.2 pt, "ultra thick" = 1.6 pt
 }
 
 %---------------------------------------------------------------------------
@@ -53,7 +59,9 @@
 % single quadrant:
 \pgfplotsset{lab_noticks_1quad/.style={
 	cycle list name = lab_solid,
-	every axis plot/.append style={very thick},
+	% every axis plot/.append style={very thick},
+	% I now specify thickness in the lab_solid cycle definition, so previous line is not needed.
+	every axis plot/.append style={domain=0:0.9*\pgfkeysvalueof{/pgfplots/xmax}},
 	axis x line={left, x axis line style={->}}, % solid line with no arrow.
 	axis y line={left, y axis line style={->}},
 	xmin=0, xmax=1,
@@ -64,7 +72,7 @@
 % two quadrants (I and IV):
 \pgfplotsset{lab_noticks_2quads/.style={
 	cycle list name = lab_solid,
-	every axis plot/.append style={very thick},
+	every axis plot/.append style={domain=0:0.9*\pgfkeysvalueof{/pgfplots/xmax}},
 	axis x line= {middle, x axis line style={->}}, 
 	axis y line= {left,  y axis line style={<->}},
       xlabel style={at=(current axis.right of origin), anchor=west},
@@ -76,11 +84,11 @@
 % two quadrants (I and IV), but with labels like for a mathematical function:
 \pgfplotsset{lab_noticks_2quads_algebraic/.style={
 	cycle list name = lab_solid,
-	every axis plot/.append style={very thick},
 	axis x line= {middle, x axis line style={->}}, 
-	axis y line= {middle, y axis line style={<->}},
-	xlabel style={at=(current axis.right of origin), anchor=north east},
-	ylabel style={at=(ticklabel* cs:1.0), anchor=north east},
+	axis y line= {left, y axis line style={<->}},
+%	xlabel style={at=(current axis.right of origin), anchor=north east},
+%	ylabel style={at=(ticklabel* cs:1.0),  rotate=-90, anchor=north east},
+algebraic_labels,
 	xmin=0, xmax=1,
 	ymin=-1, ymax=1, 
 	tick style={xtick=\empty,ytick=\empty},
@@ -89,7 +97,8 @@
 %four quadrants:
 \pgfplotsset{lab_noticks_4quads/.style={
 	cycle list name = lab_solid,
-	every axis plot/.append style={very thick},
+	every axis plot/.append style={domain=0.85*\pgfkeysvalueof{/pgfplots/xmin} : 
+                                                                  0.85*\pgfkeysvalueof{/pgfplots/xmax}  },
 	axis x line= {middle, x axis line style={<->}}, 
 	axis y line= {middle, y axis line style={<->}},
 	xlabel style={at=(current axis.right of origin), anchor=north east},
@@ -101,7 +110,8 @@
 
 \pgfplotsset{lab_grid/.style={
 	cycle list name = lab_solid,
-	every axis plot/.append style={very thick},
+	% every axis plot/.append style={ultra thick},
+	% Interestingly, previous line does NOT override thickness in lab_solid
 %	tick style={grid=both,major tick length=0pt},
 	axis line style={draw=none},
 	tick style={
@@ -110,12 +120,17 @@
 		minor tick length=0pt},
 }}
 
+\pgfplotsset{algebraic_labels/.append style={
+	xlabel style={at=(current axis.right of origin), anchor=north east},
+	ylabel style={at=(ticklabel* cs:1.0), rotate=-90, anchor=north east},
+}}
 
 % Use this to add a darker horizontal line at y=0 to lab_grid style graphs.
 \pgfplotsset{y0_line/.style={
 	extra y ticks={0},
-	extra tick style={
+	extra y tick style={
 		major grid style=black,
+		major tick length=0pt,
 		},
 }}
 
@@ -130,7 +145,10 @@
 % by defining an "extra y tick" at zero.
 \pgfplotsset{ylabel_align/.style={
 	extra y ticks={\pgfkeysvalueof{/pgfplots/xmin}},
-	extra y tick labels={\phantom{$#1$}}, 
+	extra y tick labels={\phantom{$#1$}},
+ 	extra y tick style={
+		major tick length=0pt,
+		},
 }}
 
 % Use this to add y axis labels +, -, and 0 to graphs, presumably to lab_noticks_2quads style graphs.

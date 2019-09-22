@@ -145,7 +145,7 @@ figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 	title={(a)},
 	title style={at={(0,1)}},
 	]
-\addplot[domain=-0.9:0.9] {-1.4*(x-0.5)^2 + 0.8};
+\addplot {-1.4*(x-0.5)^2 + 0.8};
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_noticks_4quads,
@@ -155,7 +155,7 @@ figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 	title={(b)},
 	title style={at={(0,1)}},
 	]
-\addplot[domain=-0.9:0.9] {0.7*x + 0.3};
+\addplot {0.7*x + 0.3};
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_noticks_4quads,
@@ -165,7 +165,7 @@ figure (c) $y$ is proportional to $x$ ($y = mx$ where $b = 0$).
 	title={(c)},
 	title style={at={(0,1)}},
 	]
-\addplot[domain=-0.9:0.9] {x};
+\addplot {x};
 \end{lab_axis}
 \end{center}
 
@@ -224,8 +224,8 @@ an object's position $x$ and time $t$.
 	ylabel={$x$},
 	]
 \addplot coordinates {(-0.3,0.7) (-0.9,-0.8) } node[right] {A};
-\addplot[domain=-0.5:0.5] {-1.6*x} node[right] {B};
-\addplot[domain=0:0.9] {-1.6*x^2 + 0.6} node[right] {C};
+\addplot +[domain=-0.5:0.5] {-1.6*x} node[right] {B};
+\addplot +[domain=0:0.9] {-1.6*x^2 + 0.6} node[right] {C};
 \end{lab_axis}
 
 (a) Which graphs represent position as a linear function of time? A, B, and/or

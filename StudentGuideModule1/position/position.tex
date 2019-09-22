@@ -219,7 +219,7 @@ sloped parts of the graph you just matched?
 	ylabel={Position},
 	title={Graph 1},
 	]
-\addplot[domain=0:0.9] {0.8*x^2 + 0.2};
+\addplot {0.8*x^2 + 0.2};
 \end{lab_axis}
 \hspace{0.5in}
 \begin{lab_axis}[lab_noticks_1quad,
@@ -228,7 +228,7 @@ sloped parts of the graph you just matched?
 	ylabel={Position},
 	title={Graph 2},
 	]
-\addplot[domain=0:0.9] {-0.8*x^2 + 0.9};
+\addplot {-0.8*x^2 + 0.9};
 \end{lab_axis}
 \end{center}
 
@@ -263,7 +263,7 @@ Answer the following questions in the spaces provided.
 	xlabel={Time},
 	ylabel={Position},
 	]
-\addplot[domain=0:0.9] {0.5};
+\addplot {0.5};
 \end{lab_axis}
 
 2. How do you walk to create a straight line that slopes up?
@@ -276,7 +276,7 @@ Answer the following questions in the spaces provided.
 	xlabel={Time},
 	ylabel={Position},
 	]
-\addplot[domain=0:0.9] {x};
+\addplot {x};
 \end{lab_axis}
 
 3. How do you walk to create a straight line that slopes down?
@@ -289,7 +289,7 @@ Answer the following questions in the spaces provided.
 	xlabel={Time},
 	ylabel={Position},
 	]
-\addplot[domain=0:0.9] {0.9 - 0.8*x};
+\addplot {0.9 - 0.8*x};
 \end{lab_axis}
 
 4. How do you move so the graph goes up steeply at first, then continues up
@@ -316,7 +316,7 @@ gradually?
 	xlabel={Time},
 	ylabel={Position},
 	]
-\addplot [smooth, tension=0.95] coordinates{(0,0.8) (0.2, 0.7) (0.5,0.25) (0.8, 0.7) (1.0, 0.8)};
+\addplot +[smooth, tension=0.95] coordinates{(0,0.8) (0.2, 0.7) (0.5,0.25) (0.8, 0.7) (1.0, 0.8)};
 \end{lab_axis}
 
 \pagebreak[2]
