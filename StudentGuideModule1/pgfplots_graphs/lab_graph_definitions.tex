@@ -29,6 +29,7 @@
 	samples = 200,
 	height = {2in}, width = {2in},
 	every axis/.append style={line width=0.8pt}, %default appears to be about 0.4pt
+	tick style={black, line width=0.8pt}, %default appears to be gray and about 0.4pt
 }
 
 
@@ -83,15 +84,35 @@
 
 %four quadrants:
 \pgfplotsset{lab_noticks_4quads/.style={
+	scale only axis=true,
 	cycle list name = lab_solid,
 	every axis plot/.append style={domain=0.85*\pgfkeysvalueof{/pgfplots/xmin} : 
                                                                   0.85*\pgfkeysvalueof{/pgfplots/xmax}  },
-	axis x line= {middle, x axis line style={<->}}, 
-	axis y line= {middle, y axis line style={<->}},
-	xlabel style={at=(current axis.right of origin), anchor=north east},
-	ylabel style={at=(ticklabel* cs:1.0), anchor=north east},
+%old way:
+%	axis x line= {middle, x axis line style={<->}}, 
+%	axis y line= {middle, y axis line style={<->}},
+%	xlabel style={at=(current axis.right of origin), anchor=north east},
+%	ylabel style={at=(ticklabel* cs:1.0), anchor=north east},
+%new way:
+	axis x line*= {middle, x axis line style={<->}}, 
+	axis y line*= {middle, y axis line style={<->}},
+	algebraic_labels,
 	xmin=-1, xmax=1,
 	ymin=-1, ymax=1, 
+	tick style={xtick=\empty,ytick=\empty},
+	title style={at={(0,1)}},
+}}
+
+\pgfplotsset{lab_noticks_1axis/.style={
+	cycle list name = lab_solid,
+	scale only axis=true,
+	width={3.0in}, height={0.1in},
+	xlabel={$x$},
+	axis x line= {middle, x axis line style={<->}}, 
+	xlabel style={at=(current axis.right of origin), anchor=north east},
+	y axis line style = {draw=none},
+	xmin=-1, xmax=1,
+	ymin=-1, ymax=1, %Apparently we need to set SOME range to avoid pgfplots throwing a warning at us.
 	tick style={xtick=\empty,ytick=\empty},
 }}
 
@@ -211,13 +232,13 @@
 
 % The lab_axis environment, defined below, is basically a thin wrapper around the "tikzpicture" and "axis" 
 % environments, combined.  When called in the starred version ("*", see below) it also centers the graph.
-% Note that it also puts small vertical spaces above and below the graph.  If this is called multiple times on 
-% one line, the vertical spaces will build up and be placed after the graphs, requiring a 
-%		\vspace{-2em} 
-% (or whatever length you need) to undo.
+% Because the * version uses \begin{center}, it adds a little extra space before and after the graph
+% compared to the non-starred version.  I thought about fixing this by substituting \hspace*{\fill}, but in
+% fact that makes things look too squished.
 \NewDocumentEnvironment{lab_axis}{s}{
 	\IfBooleanTF #1
-		{ \begin{center} } %if starred
+		{\begin{center}} %if starred
+%		{\hspace*{\fill}}
 		{} %if not starred, do nothing
 	\vspace{0em} % Because our lab manual skips lines between paragraphs, we don't need extra space 
 	\begin{tikzpicture} 
@@ -227,7 +248,8 @@
 	\end{tikzpicture}
 	\vspace{0em}
 	\IfBooleanTF #1
-		{\end{center} } %if starred
+		{\end{center}} %if starred
+%		{\hspace*{\fill}}
 		{} %if not starred, do nothing
 	 }
 % Next four lines allow either 
