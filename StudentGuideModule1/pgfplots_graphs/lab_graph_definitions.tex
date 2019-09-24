@@ -10,6 +10,7 @@
 \usepgfplotslibrary{groupplots}
 \usetikzlibrary{pgfplots.groupplots}
 \usetikzlibrary{math}
+\usetikzlibrary{decorations.markings}
 \usepackage{xparse} %used for \NewDocumentCommand
 % xparse is actually used elsewhere as well, so doesn't need to be called here for the main lab manual.
 % I'm keeping the line in for when this file is called by another .tex file, for instance if you're just testing
@@ -42,6 +43,18 @@
 	{black, line width = 2pt, mark=none}
 	% Note: by my eye, "thick"=0.8 pt, "very thick" = 1.2 pt, "ultra thick" = 1.6 pt
 }
+
+% This style can be called for a plot (addplot [path_leg] ...).  It puts an arrow head in the middle of the path.
+\pgfplotsset{path_leg/.style={
+	line width=1.5pt, 
+	postaction={decorate, decoration={markings,
+	mark=at position 0.55 with {\arrow{>};},
+}}}}
+
+\pgfplotsset{path_point/.style={
+	only marks, 
+	mark=*
+}}
 
 %---------------------------------------------------------------------------
 % This part predefines several named styles ("lab_noticks_1quad" for a single-quadrant set of blank axes, etc.)
