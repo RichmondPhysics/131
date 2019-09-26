@@ -59,11 +59,10 @@ smaller bumps that are mostly due to your steps.)
 	height = {2.5in}, width = {5in},
 	xlabel={Time (s)},
 	ylabel={Velocity (m/s)},
-	xmin=0, xmax=5.5,
-	ymin=-1.5, ymax=1.5,
+	xmin=0, xmax=6,
+	ymin=-2, ymax=2,
 	xtick distance = 1,
 	ytick distance = 1,
-	y0_line,
 	]
 \end{lab_axis}
 
@@ -81,7 +80,6 @@ speed. Sketch your graph below.
 	ymin=-1.5, ymax=1.5,
 	xtick distance = 1,
 	ytick distance = 1,
-	y0_line,
 	]
 \end{lab_axis}
 
@@ -99,7 +97,6 @@ Sketch your graph below.
 	ymin=-1.5, ymax=1.5,
 	xtick distance = 1,
 	ytick distance = 1,
-	y0_line,
 	]
 \end{lab_axis}
 
@@ -132,7 +129,6 @@ the shape of the velocity graph that will result from the motion described above
 	ymin=-1.5, ymax=1.5,
 	xtick distance = 3,
 	ytick distance = 1,
-	y0_line,
 	]
 \end{lab_axis}
 
@@ -155,7 +151,6 @@ clearly.
 	ymin=-1.5, ymax=1.5,
 	xtick distance = 3,
 	ytick distance = 1,
-	y0_line,
 	]
 \end{lab_axis}
 
@@ -232,12 +227,11 @@ graph shown below.
 	height = {2.5in}, width = {5in},
 	xlabel={Time (s)},
 	ylabel={Velocity (m/s)},
-	xmin=0, xmax=22,
+	xmin=0, xmax=20,
 	ymin=-1, ymax=1,
 	xtick distance = 4,
 	ytick distance = 1,
 	minor y tick num=1,
-	y0_line,
 	]
 \addplot coordinates {(0,0) (4,0) (4,0.5) (8,0.5) (8,0) (12,0) (12,-0.5) (18,-0.5) (18,0) (22,0)};
 \end{lab_axis}
@@ -308,7 +302,7 @@ down, as shown below?
 	ylabel={Velocity},
 	plus_minus_zero_labels,
 	]
-\addplot {0.9 - x};
+\addplot {0.8 - 8/9*x};
 \end{lab_axis}
 \answerspace{0.2in}
 
@@ -348,7 +342,6 @@ Displacement = \_\_\_\_\_\_\_\_\_\_\_\_ meters.
 	xtick distance = 2,
 	ytick distance = 2,
 %	minor y tick num=1,
-	y0_line,
 	]
 \addplot coordinates {(0,0) (2,0) (2,2) (6,2) (6,0) (10,0) };
 \end{lab_axis}

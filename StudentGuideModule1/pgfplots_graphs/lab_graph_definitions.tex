@@ -113,7 +113,7 @@
 	xmin=-1, xmax=1,
 	ymin=-1, ymax=1, 
 	tick style={xtick=\empty,ytick=\empty},
-	title style={at={(0,1)}},
+%	title style={at={(0,1)}},
 }}
 
 \pgfplotsset{lab_noticks_1axis/.style={
@@ -134,43 +134,76 @@
 	% every axis plot/.append style={ultra thick},
 	% Interestingly, previous line does NOT override thickness in lab_solid
 %	tick style={grid=both,major tick length=0pt},
+	xmin=0, xmax=3,
+	ymin=-1, ymax=1,
 	axis line style={draw=none},
 	tick style={
 		grid=both, 
 		major tick length=0pt,
 		minor tick length=0pt},
+	y0_line, x0_line,
 }}
 
+% This option puts the labels next to the ends of the axes, rotated right-side up.
 \pgfplotsset{algebraic_labels/.append style={
 	xlabel style={at=(current axis.right of origin), anchor=north east},
 	ylabel style={at=(ticklabel* cs:1.0), rotate=-90, anchor=north east},
 }}
 
-% Use this to add a darker horizontal line at y=0 to lab_grid style graphs.
+% Note that the following three options, y0_line, x0_line, and ylabel_align, achieve their results by adding
+% "Extra ticks" on the y-axis, with labels that are either missing completely or "hidden".
+
+% This option adds a darker horizontal line at y=0.  It is now standard on lab_grid style graphs.
+% You can cancel this option by using
+%			extra y ticks={},
+% as needed, but be sure to do so BEFORE using the ylabel_align option, as it will cancel that too.
 \pgfplotsset{y0_line/.style={
 	extra y ticks={0},
+	extra y tick labels = {},
 	extra y tick style={
-		major grid style=black,
+		major grid style={black, line width=0.8pt},
 		major tick length=0pt,
 		},
 }}
 
+% This option adds a darker vertical line at x=0.  It is now standard on lab_grid style graphs.
+% You can cancel this option by using
+%			extra x ticks={},
+% as needed.
+\pgfplotsset{x0_line/.style={
+	extra x ticks={0},
+	extra x tick style={
+		major grid style={black, line width=0.8pt},
+		major tick length=0pt,
+		xticklabels = {},
+		},
+}}
 
 % In a groupplot, the y labels can be misaligned if one graph has "longer" tick lables, such as ones that include
 % a negative sign.  This command bumps the y label of the current to the left, to match the alignment of the
 % y label of the other graph.  To tell it how much to move it over, you need to give it the longest tick label text 
 % of the other graph as an argument.  Example: 
 % 		ylabel_align={-10}
-% Note that it works by actually creating an "extra y tick" on the current graph, but writing the label as
-% phantom text that doesn't show up.  For this reason, it will not work with y0_line, because that also works
-% by defining an "extra y tick" at zero.
 \pgfplotsset{ylabel_align/.style={
-	extra y ticks={\pgfkeysvalueof{/pgfplots/xmin}},
+	extra y ticks={\pgfkeysvalueof{/pgfplots/ymin}},
 	extra y tick labels={\phantom{$#1$}},
  	extra y tick style={
 		major tick length=0pt,
 		},
 }}
+
+% This version of the function does the same as above, but uses a length as the argument:
+%		ylabel_align_length{0.5in}
+% Because it does not define a phantom label, it is more robust and plays nicely with y0_line.
+% Eventually I should change this to use actual text for the argument, using something like the
+% widthof function, but there seem to be technical issues getting that to work.
+\pgfplotsset{ylabel_align_length/.style={
+	every axis y label/.style={
+		at={(0,0.5)}, % do I need this line?
+		xshift=-#1, 
+		rotate=90, % do I need this line?
+}}}  
+
 
 % Use this to add y axis labels +, -, and 0 to graphs, presumably to lab_noticks_2quads style graphs.
 \pgfplotsset{plus_minus_zero_labels/.style={
