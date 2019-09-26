@@ -106,15 +106,12 @@ above table.  Sketch a line through the data points.
 %{\par\centering \includegraphics{measuring/measuring_fig1.eps} \par}
 %\answerspace{0.6cm}
 \begin{lab_axis}*[lab_grid,
-	height = {3in},
-	width = {5in},
-%	axis y line*= {middle, y axis line style={-}},
-%	axis x line= {middle, x axis line style={-}, draw},
+	height = 2.7in, width = 4.5in,
 	xlabel={Time (~~~)},
 	ylabel={Position (~~~)},
 	xmin=0, xmax=10,
 	ymin=0, ymax=6,
-	xtick distance = 12,
+	xtick distance = 12,  %tricking it into ONLY putting a tick label at x=0, y=0
 	ytick distance = 7,
 	minor y tick num=6,
 	minor x tick num=11,

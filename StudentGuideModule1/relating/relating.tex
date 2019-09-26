@@ -7,13 +7,13 @@ locally and may not have been classroom tested at Dickinson College.
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
-\medskip
-\textbf{Objective }
+%\medskip
+%\textbf{Objective }
+%
+%To understand the relationship between position \textit{vs.}~time and velocity \textit{vs.}~time
+%graphs.
 
-To understand the relationship between position \textit{vs.}~time and velocity \textit{vs.}~time
-graphs.
-
-\medskip
+\bigskip
 
 \textbf{Apparatus} 
 
@@ -24,7 +24,7 @@ graphs.
 \item Wooden board
 \end{itemize}
 
-\medskip
+\bigskip
 \textbf{Introduction} 
 
 You have looked at position and velocity \textit{vs.}~time graphs separately. Since position
@@ -35,7 +35,7 @@ to be able to figure out how far someone has traveled (change in position) from
 a velocity \textit{vs.}~time graph.
 
 
-\medskip
+\bigskip
 
 \textbf{Activity 1: Predicting Velocity Graphs from Position Graphs} 
 
@@ -55,13 +55,12 @@ axes.
 	group style={
 		group size=1 by 2,
 		xlabels at=edge bottom,
-%		xticklabels at=edge bottom,
 		vertical sep=0.4in
 		},
-	width=4in,
-	height=2in,
+	width=4.5in, height=1.8in,
 	xlabel=Time (s),
 	xmin=0, xmax=5,
+	xtick distance = 1,
 	minor x tick num=1,
 	]
 \nextgroupplot[
@@ -132,18 +131,16 @@ Record the values of \( \Delta x\) and \( \Delta t\) here:
 %\vspace{0.3cm}
 %{\par\centering \includegraphics{relating/relating_fig2.eps} \par}
 %\answerspace{0.3cm}
-\begin{lab_groupplot}*{\makegroupverticals[2]{3,6,9}{0}{11}}
+\begin{lab_groupplot}*{\makegroupverticals[2]{3,6,9}{0}{10}}
 					[lab_grid,
 	group style={
 		group size=1 by 2,
 		xlabels at=edge bottom,
-%		xticklabels at=edge bottom,
-		vertical sep=0.5in
+		vertical sep=0.4in
 		},
-	width=5in,
-	height=2in,
+	width=4.5in, height=1.8in,
 	xlabel=Time (s),
-	xmin=0, xmax=11,
+	xmin=0, xmax=10,
 	xtick distance = 2,
 	minor x tick num=1,
 	minor y tick num=1,
@@ -153,6 +150,8 @@ Record the values of \( \Delta x\) and \( \Delta t\) here:
 	ytick distance = 2,
 	ylabel={Position (m)},
 	ylabel_align={-1},
+	xticklabels={0,0,2,4,~~6,8,10}, %keep the "6" from being overwritten by the dashed line.
+	%I don't know why I had to put the extra "0" in front of the list!
 	]
 \addplot coordinates{(0,1) (1.5,1)};
 
@@ -174,6 +173,7 @@ changed direction?
 (d) What is the velocity at the moment the direction changes? 
 \answerspace{10mm}
 
+\pagebreak[2]
 (e) Is it possible to actually move your body (or an object) to make vertical
 lines on a position \textit{vs.}~time graph? Why or why not? What would the velocity
 be for a vertical section of a position \textit{vs.}~time graph? 
@@ -196,7 +196,7 @@ change velocity so quickly that it looks instantaneous with this time scale.
 
 \begin{center}
 \begin{lab_axis}[lab_grid,
-	height=1.6in, width=2in,
+	height=1.2in, width=1.5in,
 	xmin=0,xmax=5,
 	xlabel={Time (s)},
 	ymin=0,ymax=4,
@@ -207,7 +207,7 @@ change velocity so quickly that it looks instantaneous with this time scale.
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_grid,
-	height=1.6in, width=2in,
+	height=1.2in, width=1.5in,
 	xmin=0,xmax=5,
 	xlabel={Time (s)},
 	ymin=-2,ymax=2,
@@ -219,7 +219,7 @@ change velocity so quickly that it looks instantaneous with this time scale.
 
 \begin{center}
 \begin{lab_axis}[lab_grid,
-	height=1.6in, width=2in,
+	height=1.2in, width=1.5in,
 	xmin=0,xmax=5,
 	xlabel={Time (s)},
 	ymin=0,ymax=4,
@@ -230,7 +230,7 @@ change velocity so quickly that it looks instantaneous with this time scale.
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_grid,
-	height=1.6in, width=2in,
+	height=1.2in, width=1.5in,
 	xmin=0,xmax=5,
 	xlabel={Time (s)},
 	ymin=-2,ymax=2,
@@ -242,7 +242,7 @@ change velocity so quickly that it looks instantaneous with this time scale.
 
 \begin{center}
 \begin{lab_axis}[lab_grid,
-	height=1.6in, width=2in,
+	height=1.2in, width=1.5in,
 	xmin=0,xmax=5,
 	xlabel={Time (s)},
 	ymin=0,ymax=4,
@@ -253,7 +253,7 @@ change velocity so quickly that it looks instantaneous with this time scale.
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_grid,
-	height=1.6in, width=2in,
+	height=1.2in, width=1.5in,
 	xmin=0,xmax=5,
 	xlabel={Time (s)},
 	ymin=-2,ymax=2,
@@ -291,13 +291,12 @@ stands still for the last 5 seconds.
 	group style={
 		group size=1 by 2,
 		xlabels at=edge bottom,
-%		xticklabels at=edge bottom,
 		vertical sep=0.3in,
 		},
-	width=4in,
-	height=2in,
+	width=4.5in, height=1.8in,
 	xlabel=Time (s),
 	xmin=0, xmax=25,
+	xtick distance = 5,
 	minor x tick num=1
 	]
 \nextgroupplot[

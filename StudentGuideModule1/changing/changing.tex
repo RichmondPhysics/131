@@ -78,8 +78,7 @@ your predictions with dashed lines on the axes that follow.
 		xlabels at=edge bottom,
 		vertical sep=0.4in,
 		},
-	scale only axis=true,
-	width=5in,  %by setting only the width, it automatically preserves default aspect ratio of 1:1
+	width=4.5in, height=1.8in,
 	xlabel=Time (s),
 	xmin=0, xmax=5,
 	xtick distance = 1, 
@@ -101,8 +100,7 @@ your predictions with dashed lines on the axes that follow.
 prediction of the cart acceleration on the axes that follow using a dashed line.
 
 \begin{lab_axis}*[lab_grid,
-	scale only axis=true,
-	width=5in,
+	width=4.5in, height=1.8in,
 	xlabel={Time (s)},
 	xmin=0, xmax=5,
 	ymin=-1,ymax=1, 
@@ -124,6 +122,9 @@ velocity. Sketch your results with solid lines on the axes shown above. The
 acceleration \textit{vs.}~time graphs will exhibit small fluctuations due to irregularities
 in the motion of the cart. You should ignore these fluctuations and draw smooth
 patterns.
+\answerspace{0.2in}
+%There's not really a question that needs an answerspace here, but I wanted to put in a
+% variable space at the end of the page.
 
 \pagebreak[2]
 (d) Did your graphs agree with your predictions? What characterizes constant
@@ -201,9 +202,7 @@ on the following axes using dashed lines.
 		xlabels at=edge bottom,
 		vertical sep=0.4in,
 		},
-	scale only axis=true,
-	axis equal image,
-	width=4.5in,  %by setting only the width, it automatically preserves aspect ratio of 1:1
+	width=4.5in,  height=1.8in,
 	xlabel=Time (s),
 	xmin=0, xmax=5,
 	xtick distance = 1, 
@@ -340,11 +339,9 @@ the axes that follow.
 		xlabels at=edge bottom,
 		vertical sep=0.4in,
 		},
-	scale only axis=true,
-	axis equal image,
-	width=3.5in,  %by setting only the width, it automatically preserves aspect ratio of 1:1
+	width=4.5in,  height=1.8in,
 	xlabel=Time (s),
-	xmin=0, xmax=4,
+	xmin=0, xmax=5,
 	xtick distance = 1, 
 	ytick distance = 1, 
 	minor tick num=1
@@ -377,21 +374,15 @@ think the general shapes of the graphs will change.
 		xlabels at=edge bottom,
 		vertical sep=0.4in,
 		},
-	scale only axis=true,
-	axis equal image,
-	width=3.5in,  %by setting only the width, it automatically preserves aspect ratio of 1:1
 	xlabel=Time (s),
-	xmin=0, xmax=4,
 	xtick distance = 1, 
 	ytick distance = 1, 
 	minor tick num=1
 	]
 \nextgroupplot[
-	ymin=-1,ymax=1, 
 	ylabel={Velocity (m/s)},
 	]
 \nextgroupplot[
-	ymin=-1,ymax=1, 
 	ylabel={Acceleration (m/s$^2$)},
 	]
 \end{lab_groupplot}
@@ -416,7 +407,6 @@ it is moving away from the origin.
 %{\par \centering \includegraphics{changing/changing_fig6.eps} \par}
 \hspace{0.4in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {2.4in},
 	xlabel={Time},
 	ylabel={Acceleration},
@@ -435,7 +425,6 @@ graph.
 %\vspace{0.4cm}
 \hspace{0.4in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {2.4in},
 	xlabel={Time},
 	ylabel={Velocity},
@@ -450,7 +439,6 @@ graph that goes with it.
 \hspace{0.4in}
 \begin{lab_groupplot}{}
 					[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	group style={
 		group size=1 by 2,
@@ -470,7 +458,6 @@ graph that goes with it.
 \hspace{0.3in}
 \begin{lab_groupplot}{\makegroupverticals[2]{0.3,0.6}{0}{1}}
 					[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	group style={
 		group size=1 by 2,
@@ -506,16 +493,16 @@ graph that goes with it.
 %\answerspace{30mm}
 \hspace{0.4in}
 \begin{lab_axis}[lab_grid,
-	scale only axis=true,
-	height = {1.5in}, width = {2.5in},
+	height = {1.2in}, width = {2.0in},
 %	width=5in,
 	xlabel={Time (s)},
 	xmin=0, xmax=10,
-	ymin=-4,ymax=4, 
+	ymin=-2,ymax=4, 
 	ylabel={Velocity (m/s)},
 	]
 \addplot coordinates {(0, 1.0) (10, 4)};
 \end{lab_axis}
+\answerspace{0.2in}
 
 \pagebreak[3]
 5. Which position-time graph below could be that for a cart that is steadily
@@ -523,7 +510,6 @@ accelerating away from the origin?
 
 \begin{center}
 \begin{lab_axis}[lab_noticks_1quad,
-	scale only axis=true,
 	height = {1.0in}, width = {1.4in},
 	xlabel={Time},
 	ylabel={Position},
@@ -533,7 +519,6 @@ accelerating away from the origin?
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_noticks_1quad,
-	scale only axis=true,
 	height = {1.0in}, width = {1.4in},
 	xlabel={Time},
 	ylabel={Position},
@@ -543,7 +528,6 @@ accelerating away from the origin?
 \end{lab_axis}
 \hspace{0.3in}
 \begin{lab_axis}[lab_noticks_1quad,
-	scale only axis=true,
 	height = {1.0in}, width = {1.4in},
 	xlabel={Time},
 	ylabel={Position},
@@ -569,7 +553,6 @@ at a steady rate.
 %\answerspace{0.3cm}
 \hspace{0.4in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Velocity},
@@ -578,7 +561,6 @@ at a steady rate.
 \end{lab_axis}
 \hspace{0.2in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Acceleration},
@@ -596,7 +578,6 @@ at a steady rate.
 %\newpage
 \hspace{0.4in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Velocity},
@@ -605,7 +586,6 @@ at a steady rate.
 \end{lab_axis}
 \hspace{0.2in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Acceleration},
@@ -621,7 +601,6 @@ at a steady rate twice as large as in (6) above.
 %\vspace{0.3cm}
 \hspace{0.4in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Velocity},
@@ -630,7 +609,6 @@ at a steady rate twice as large as in (6) above.
 \end{lab_axis}
 \hspace{0.2in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Acceleration},
@@ -646,7 +624,6 @@ as in (7) above.
 %\vspace{0.3cm}
 \hspace{0.4in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Velocity},
@@ -655,7 +632,6 @@ as in (7) above.
 \end{lab_axis}
 \hspace{0.2in}
 \begin{lab_axis}[lab_noticks_2quads,
-	scale only axis=true,
 	height = {1.2in}, width = {1.9in},
 	xlabel={Time},
 	ylabel={Acceleration},
