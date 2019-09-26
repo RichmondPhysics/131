@@ -72,6 +72,7 @@
 
 % single quadrant:
 \pgfplotsset{lab_noticks_1quad/.style={
+	scale only axis=true,
 	cycle list name = lab_solid,
 	% every axis plot/.append style={very thick},
 	% I now specify thickness in the lab_solid cycle definition, so previous line is not needed.
@@ -85,6 +86,7 @@
 
 % two quadrants (I and IV):
 \pgfplotsset{lab_noticks_2quads/.style={
+	scale only axis=true,
 	cycle list name = lab_solid,
 	every axis plot/.append style={domain=0:0.9*\pgfkeysvalueof{/pgfplots/xmax}},
 	axis x line= {middle, x axis line style={->}}, 
@@ -113,7 +115,7 @@
 	xmin=-1, xmax=1,
 	ymin=-1, ymax=1, 
 	tick style={xtick=\empty,ytick=\empty},
-%	title style={at={(0,1)}},
+	title style={at={(0,1)}},
 }}
 
 \pgfplotsset{lab_noticks_1axis/.style={
