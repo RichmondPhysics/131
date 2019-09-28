@@ -43,9 +43,24 @@ predictions for the position \textit{vs.}~time and velocity \textit{vs.}~time gr
 of the object using dashed lines on the axes below. Assume that the positive
 position axis is down.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{acceleration/acceleration_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{acceleration/acceleration_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=2.0in,  height=1.2in,
+	xlabel=Time,
+	]
+\nextgroupplot[
+	lab_noticks_1quad,
+	ylabel=Position,
+	ylabel_align={0},
+	]
+\nextgroupplot[
+	ylabel=Velocity,
+	plus_minus_zero_labels,
+	]
+\end{lab_groupplot}
 
 (b) Test your predictions by measuring the free fall of the picket fence. Open
 the file \filename{Free\_Fall.cap} in the \filename{\coursefolder} folder. 
