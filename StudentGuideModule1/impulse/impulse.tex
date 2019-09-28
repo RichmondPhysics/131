@@ -87,9 +87,16 @@ seconds?
 (d) Attempt a rough sketch of the shape of the force the wall exerts on a moving
 object during a collision.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{impulse/impulse_fig2.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{impulse/impulse_fig2.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	width=2in, height=1.4in,
+	xlabel=Time,
+	ylabel= {Force $F_{\rm wall}$}
+]
+\end{lab_axis}
+
 
 \textbf{Verification of the Impulse-Momentum Theorem} 
 
@@ -103,8 +110,20 @@ holds, where the impulse integral can be calculated by finding the area under
 the curve of a graph of $F$ \textit{vs.}~$t$.
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics[width=2.5in]{impulse/impulse_fig3_new.eps} \par}
+%{\par\centering \includegraphics[width=2.5in]{impulse/impulse_fig3_new.eps} \par}
 %\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	width=2.5in, height=1.2in,
+	algebraic_labels,
+	xlabel=$t$,
+	ylabel= $F$,
+	xmin=0,xmax=21,
+	ymin=0,ymax=10,
+]
+\addplot +[smooth, tension=0.90, fill= lightgray] coordinates{(0,0) (1,0.5)(3,4) (6,5) (9,8)(11,9)(14,8)(18,1.5)(20,0)};
+\addplot +[line width=0.8pt] coordinates{(0,0) (21,0)}; %fixes annoying problem that the fill partially paints over the axis
+\node[anchor=south] at (axis cs: 10,0.5)  {Area $\displaystyle =\int_{t_{i}}^{t_{f}}{\vec  F}\,dt$};
+\end{lab_axis}
 
 In this experiment you will investigate this theorem by measuring the impulse
 and the change in momentum of a cart undergoing a one-dimensional collision.
