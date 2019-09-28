@@ -69,9 +69,31 @@ will the acceleration be positive, negative or zero (after it is released)?
 Sketch your predictions for the velocity \textit{vs.}~time and acceleration \textit{vs.}~time
 graphs on the axes below using dashed lines.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	width=4.5in,  height=1.8in,
+	xlabel=Time (s),
+	xmin=0, xmax=5,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_groupplot}
 
 (b) To test your predictions, open the \filename{P\_V\_A\_Graphs.cap} file as you did in the previous experiment. Locate the cart 0.15 m from the motion detector and gently push the cart away from the motion detector once it starts clicking. Catch the cart \textit{before} it turns around or hits the end of the track.
 
@@ -166,8 +188,30 @@ of the velocity and acceleration graphs. Sketch your predictions using dashed
 lines on the axes that follow.
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig1.eps} \par}
+%{\par\centering \includegraphics{slowing/slowing_fig1.eps} \par}
 %\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	width=4.5in,  height=1.8in,
+	xlabel=Time (s),
+	xmin=0, xmax=5,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_groupplot}
 
 (b) Test your predictions by releasing the cart from rest at the raised end of the track after the motion detector starts clicking. Catch the cart before it gets too close to the detector.  
 Draw the results using solid lines on the axes above. You may have to try a
@@ -283,9 +327,31 @@ Acceleration&
 (b) Sketch the predicted shapes of the velocity \textit{vs.}~time and acceleration 
 \textit{vs.}~time graphs of this entire motion on the axes that follow using dashed lines.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig5.eps} \par}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig5.eps} \par}
 %\vspace{13mm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.4in,
+		},
+	width=4.5in,  height=1.8in,
+	xlabel=Time (s),
+	xmin=0, xmax=5,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor tick num=1
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\end{lab_groupplot}
 
 (c) Test your predictions by making graphs of the motion. Use the procedures
 you used in the slowing down and speeding up activities. You may have to try
@@ -355,50 +421,98 @@ which you just observed?
 \pagebreak[3]
 \textbf{Homework} 
 
-1. An object moving along a line (the + position axis) has the acceleration-time graph below. How might the object move to create this graph if it is moving
+1. An object moving along a line (the + position axis) has the acceleration vs. time graph below. How might the object move to create this graph if it is moving
 \emph{toward the origin}?
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig6.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig6.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\addplot {0.4};
+\end{lab_axis}
 
-2. Sketch on the axes below the velocity-time graph that goes with the above
-acceleration- time graph.
+2. Sketch on the axes below a velocity vs. time graph that goes with the above
+acceleration vs. time graph.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Velocity,
+	]
+\end{lab_axis}
 
 3. How would an object move to create each of the three \emph{labeled} parts of the
-acceleration-time graph shown below? (Consider the labeled straight line segments only, not the connectors between them.)
+acceleration-time graph shown below? (Consider the labeled horizontal line segments only, not the connectors between them.)
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig8.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig8.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=3.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	xmax=1.0,
+	xtick={0.15,0.45,0.75},
+	xticklabels={A,B,C},
+	]
+\addplot coordinates {(0,0) (0.02,0.5) (0.28,0.5) (0.3,0.0) (0.6,0) (0.62,-0.5) (0.88,-0.5) (0.9,0.0)};
+\end{lab_axis}
 
 \hspace{20mm}A: 
-\answerspace{10mm}
+\answerspace{0.5in}
 
 \hspace{20mm}B: 
-\answerspace{10mm}
+\answerspace{0.5in}
 
 \hspace{20mm}C:
-\answerspace{10mm}
+\answerspace{0.5in}
 
 \pagebreak[2]
 4. Sketch below a velocity-time graph which might go with the acceleration-time
 graph in question (3). (Again, consider the straight line segments only.)
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig9.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig9.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Velocity,
+	]
+\end{lab_axis}
 
 5. Sketch the shape of the acceleration-time graph that goes with the velocity-time
 graph shown below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig10.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig10.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	]
+\nextgroupplot[
+	ylabel=Velocity,
+	]
+\addplot coordinates {(0,0.8) (0.9,0)};
+\nextgroupplot[
+	ylabel=Acceleration,
+	]
+\end{lab_groupplot}
+
 
 6. A car moves along a line {[}the + position axis{]}. Fill in the table below
 with the sign (+ or -) of the velocity and acceleration of the car for each
@@ -449,27 +563,71 @@ the Origin&
 velocity-time and acceleration-time graphs.
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.85\textwidth]{slowing/slowing_fig11_new.eps} \par}
+%{\par\centering \includegraphics[width=0.85\textwidth]{slowing/slowing_fig11_new.eps} \par}
 %\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_noticks_1quad,
+	group style={group size=3 by 3},
+	width=1.5in,  height=1.2in,
+	xlabel=Time,
+	]
+\nextgroupplot[ylabel=Position]
+	\addplot {x};
+\nextgroupplot[ylabel=Position]
+	\addplot{x^2 + 0.2};
+\nextgroupplot[ylabel=Position]
+	\addplot +[domain=0.00:0.25]{2*x^2 + 0.2};
+	\addplot +[domain=0.25:0.60]{x + 0.075};
+	\addplot +[domain=0.60:0.85]{-2*(x-0.85)^2 + 0.8};
+	\addplot +[dashed, thick] coordinates{(0.25,0) (0.25,0.32)};
+	\addplot +[dashed, thick] coordinates{(0.60,0) (0.60,0.7)};
+\nextgroupplot[ylabel=Velocity]
+\nextgroupplot[ylabel=Velocity]
+\nextgroupplot[ylabel=Velocity]
+\nextgroupplot[ylabel=Acceleration]
+\nextgroupplot[ylabel=Acceleration]
+\nextgroupplot[ylabel=Acceleration]
+\end{lab_groupplot}
 
 8. Describe how you would move to produce the velocity-time graph shown below.
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{slowing/slowing_fig12.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{slowing/slowing_fig12.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\addplot coordinates {(0,0.8) (0.9,-0.8)};
+\end{lab_axis}
 
 9. Sketch a position-time graph corresponding to the velocity-time graph above.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig13.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig13.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_1quad,
+	width=2.0in,  height=1.2in,
+	xlabel=Time,
+	ylabel=Position,
+	]
+\end{lab_axis}
 
+\pagebreak
 10. Sketch an acceleration-time graph corresponding to the velocity-time graph
 above.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig14.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig14.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\end{lab_axis}
 
 A car can move in either direction along a line (the + position axis). Sketch
 velocity-time and acceleration-time graphs that correspond to each of the following
@@ -477,25 +635,65 @@ descriptions of the car's motion.
 
 11. The car is moving toward the origin at a constant velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig15.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig15.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	]
+\nextgroupplot[
+	ylabel=Velocity,
+	]
+\nextgroupplot[
+	ylabel=Acceleration,
+	]
+\end{lab_groupplot}
 
 12. The car starts from rest and moves toward the origin, speeding up at a steady
 rate.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig15.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig15.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	]
+\nextgroupplot[
+	ylabel=Velocity,
+	]
+\nextgroupplot[
+	ylabel=Acceleration,
+	]
+\end{lab_groupplot}
 
 13. A ball is tossed in the air. It moves upward, reaches its highest point
 and falls back downward. Sketch a velocity-time and an acceleration-time graph
 for the ball from the moment it leaves the thrower's hand until the moment just
 before it reaches her hand again. Consider the positive direction to be upward.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{slowing/slowing_fig15.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{slowing/slowing_fig15.eps} \par}
+%\vspace{0.3cm}
+
+\begin{lab_groupplot}*{}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	]
+\nextgroupplot[
+	ylabel=Velocity,
+	]
+\nextgroupplot[
+	ylabel=Acceleration,
+	]
+\end{lab_groupplot}
 
 14. Each of the pictures below represents a car driving down a road. The motion
 of the car is described. In each case, draw velocity and acceleration vectors
@@ -530,9 +728,95 @@ Answer the following questions. You may use a graph more than once or not at
 all, and there may be more correct choices than blanks. If none of the graphs
 is correct, answer none.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[trim={0.2cm 0 0.2cm 0},clip,width=\textwidth]{slowing/slowing_fig17.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[trim={0.2cm 0 0.2cm 0},clip,width=\textwidth]{slowing/slowing_fig17.eps} \par}
+%\vspace{0.3cm}
+
+\begin{center}
+\begin{lab_groupplot}{}[lab_noticks_2quads,
+	group style={
+		group size=1 by 3,
+		},
+	width=1.2in,  height=1.0in,
+	xlabel=Time,
+      title style={anchor=north},
+	]
+\nextgroupplot[
+	lab_noticks_1quad,
+	ylabel=Position,
+	ylabel_align={0},
+	title=(A),
+	]
+\addplot coordinates {(0,0.8) (0.9,0)};
+\nextgroupplot[
+	ylabel=Velocity,
+	plus_minus_zero_labels,
+	title=(D),
+	]
+\addplot coordinates {(0,0) (0.9,0.8)};
+\nextgroupplot[
+	ylabel=Acceleration,
+	plus_minus_zero_labels,
+	title=(H),
+	]
+\addplot coordinates {(0,0) (0.9,0.8)};
+\end{lab_groupplot}
+\begin{lab_groupplot}{}[lab_noticks_2quads,
+	group style={
+		group size=1 by 3,
+		},
+	width=1.2in,  height=1.0in,
+	xlabel=Time,
+      title style={anchor=north},
+	]
+\nextgroupplot[
+	lab_noticks_1quad,
+	ylabel=Position,
+	ylabel_align={0},
+	title=(B),
+	]
+\addplot coordinates {(0,0) (0.3,0.1) (0.6,0.7) (0.9,0.8)};
+\nextgroupplot[
+	ylabel=Velocity,
+	plus_minus_zero_labels,
+	title=(E),
+	]
+\addplot +[domain=0:0.46] {2.2*x^2 + 0.2};
+\addplot +[domain=0.45:0.9] {2.2*(x-0.9)^2 + 0.2};
+\nextgroupplot[
+	ylabel=Acceleration,
+	plus_minus_zero_labels,
+	title=(G),
+	]
+\addplot {-0.4};
+\end{lab_groupplot}
+\begin{lab_groupplot}{}[lab_noticks_2quads,
+	group style={
+		group size=1 by 3,
+		},
+	width=1.2in,  height=1.0in,
+	xlabel=Time,
+      title style={anchor=north},
+	plus_minus_zero_labels,
+	]
+\nextgroupplot[
+	ylabel=Velocity,
+	ylabel_align={0},
+	title=(C),
+	]
+\addplot coordinates {(0,0.8) (0.9,-0.8)};
+\nextgroupplot[
+	ylabel=Velocity,
+	title=(F),
+	]
+\addplot {0.4};
+\nextgroupplot[
+	ylabel=Acceleration,
+	title=(I),
+	]
+\addplot {0};
+\end{lab_groupplot}
+\end{center}
 
 15. Pick one graph that gives enough information to indicate that the velocity
 is always negative. \rule{0.5in}{0.1pt}
