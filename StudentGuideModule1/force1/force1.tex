@@ -82,32 +82,61 @@ Measure the mass of the cart and force probe assembly (using the compact scale),
 
 \newpage
 (b) Suppose you grasp the hook on the force probe and move the cart forwards
-and backwards in front of the motion detector. Do you think that either the
-velocity or the acceleration graph will look like the force graph? Is either
-of these motion quantities related to force? That is to say, if you apply a
-changing force to the cart, will the velocity or acceleration change in the
-same way as the force?
-\answerspace{10mm}
+and backwards in front of the motion detector. Will either the
+velocity or the acceleration graph will look like the force graph? 
+%Is either of these motion quantities related to force? 
+%That is to say, if you apply a
+%changing force to the cart, will the velocity or acceleration change in the
+%same way as the force?
+\answerspace{8mm}
 
 \pagebreak[3]
 (c) To test your predictions, click the \textbf{Record} button, grasp the
 hook on the force probe and push and pull the cart back and forth 3 or 4 times. Be sure that
 the cart never gets closer than 0.15 m away from the detector and be careful
-of the wires. Repeat until you get a good run, and adjust the sampling rate to
-10-20 Hz 
+of the wires. Repeat until you get a good run, and adjust the sampling rate 
 and scale of the axes if necessary. Sketch your graphs on the axes that follow.
 
-\vspace{-0.3cm}
-{\par\centering \includegraphics[scale=0.95]{force1/force1_fig2.eps} \par}
-\vspace{-0.4cm}
+%\vspace{-0.3cm}
+%{\par\centering \includegraphics[scale=0.95]{force1/force1_fig2.eps} \par}
+%\vspace{-0.4cm}
+
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
 
 (d) Does either graph---velocity or acceleration---resemble the force graph? Which
 one? Explain.
-\answerspace{15mm}
+\answerspace{10mm}
 
 (e) Based on your observations, does it appear that either the velocity or acceleration
 of the cart might be related to the applied force? Explain.
-\answerspace{15mm}
+\answerspace{10mm}
 
 \pagebreak[3]
 \textbf{Activity 2: Speeding Up }
@@ -119,21 +148,50 @@ related. But just what is the relationship between force and acceleration?
 cart with a constant force as shown below on the force-time graph. Predict with sketches on
 the axes below the velocity-time and acceleration-time graphs of the cart's motion.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig3.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig3.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\addplot coordinates {(0,0.5) (10,0.5)};
+\end{lab_groupplot}
 
 (b) Describe in words the predicted shape of the velocity \textit{vs.}~time and acceleration
 \textit{vs.}~time graphs for the cart.
-\vspace{20mm}
+\vspace{15mm}
 
-\newpage
 
 %\begin{figure}
 \begin{center}
 \includegraphics{force1/force1_fig4.eps}
 
-{Equipment setup for quantitative measurements of force and motion.}
+\vspace{-0.2in}
+\textit{Equipment setup for quantitative measurements of force and motion.}
 \end{center}
 %\end{figure}
 
@@ -164,9 +222,37 @@ the actual velocity, acceleration and force graphs for the motion of interest
 on the axes below and indicate the scale on the axes. Draw smooth graphs; don't
 worry about small bumps.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
 
 (d) Is the force which is applied to the cart by the string constant, increasing
 or decreasing? Explain based on your graph.
@@ -208,9 +294,38 @@ Now create graphs of the motion as before.
 Repeat until you have a good run. Sketch the
 results on the axes that follow. Don't forget to put the scale on the axes.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
+
 
 (c) Use the \textbf{Highlight} and  \textbf{Statistics} functions to find the 
 average force and the average acceleration
@@ -323,9 +438,20 @@ Comment: The relationship which you have been examining between the acceleration
 below. Assuming that friction is negligible, sketch a force-time graph of the
 force on the object on the axes below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig6.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig6.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{\makegroupverticals[2]{0.5,1,1.5,2}{0}{2.3}}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=3.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	xmin=0,xmax=2.3
+	]
+\nextgroupplot[ylabel=Acceleration,]
+	\addplot +[domain=0:2] {0.8*sin(360*x)};
+\nextgroupplot[ylabel=Force,]
+\end{lab_groupplot}
 
 Explain your answer:
 \vspace{10mm}
@@ -340,24 +466,58 @@ is the
 \fi
 of velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{\makegroupverticals[1]{0.5,1,1.5,2}{0}{2.3}}[lab_noticks_2quads,
+	group style={group size=1 by 1},
+	width=3.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	xmin=0,xmax=2.3
+	]
+\nextgroupplot[ylabel=Velocity,]
+\end{lab_groupplot}
 
 3. A cart can move along a horizontal line (the + position axis). It moves with
 the velocity shown below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig8.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig8.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Velocity,
+	]
+\addplot coordinates {(0,0.6) (0.9,0.6)};
+\end{lab_axis}
+
 
 \pagebreak[2]
 Assuming that friction is so small that it can be neglected, sketch on the axes
 that follow the acceleration-time and force-time graphs of the cart's motion.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig9.eps} \par}
-\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\end{lab_axis}
+
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
+
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig9.eps} \par}
+%\vspace{0.3cm}
 
 Explain both of your graphs.
 \answerspace{20mm}
@@ -369,53 +529,119 @@ object which would produce the motion described.
 
 4. The object moves away from the origin with a constant acceleration.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 5. The object moves toward the origin with a constant acceleration.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 \pagebreak[2]
 6. The object moves away from the origin with a constant velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 Questions 7 and 8 refer to an object which can move along a horizontal line
 (the + position axis). Assume that friction is so small that it can be ignored.
 The object's velocity-time graph is shown below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[scale=1.1]{force1/force1_fig11.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[scale=1.1]{force1/force1_fig11.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Velocity,
+	]
+\addplot coordinates {(0,0.0) (0.85,0.8)};
+\end{lab_axis}
 
 7. Sketch the shapes of the acceleration-time and force-time graphs on the axes
 below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[scale=1.1]{force1/force1_fig9.eps} \par}
-\answerspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[scale=1.1]{force1/force1_fig9.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\end{lab_axis}
+
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 8. Suppose that the force applied to the object were twice as large. Sketch
 with dashed lines on the same axes above the force, acceleration, and velocity.
+\answerspace{0.3in} %don't really need an answer; just expandable space to make the page look good.
 
 \pagebreak[4]
-Question 9 refers to an object which can move along a horizontal line (the +
+9.  An object moves along a horizontal line (the +
 position axis). Assume that friction is so small that it can be ignored. The
 object's velocity-time graph is shown below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig12.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig12.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{\makegroupverticals[1]{2,4}{0}{5.5}}[lab_noticks_2quads,
+	group style={group size=1 by 1},
+	width=3.0in,  height=1.5in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	xmin=0,xmax=5.5
+	]
+\nextgroupplot[ylabel=Velocity,]
+	\addplot coordinates {(0,0) (2,0.3) (4,0.3) (5,0.8)};
+\end{lab_groupplot}
 
-9. Sketch the shapes of the acceleration and force graphs on the axes below.
+Sketch the shapes of the acceleration and force graphs on the axes below.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force1/force1_fig9.eps} \par}
-\vspace{0.3cm}
+\begin{lab_groupplot}*{\makegroupverticals[2]{2,4}{0}{5.5}}[lab_noticks_2quads,
+	group style={group size=1 by 2},
+	width=3.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	xmin=0,xmax=5.5
+	]
+\nextgroupplot[ylabel=Acceleration,]
+\nextgroupplot[ylabel=Force,]
+\end{lab_groupplot}
+
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force1/force1_fig9.eps} \par}
+%\vspace{0.3cm}
 
