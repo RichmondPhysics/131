@@ -101,25 +101,52 @@ below. (Be sure that the cable from the force probe doesn't interfere with the
 motion of the cart, and is out of the way of the motion detector.)
 \bigskip
 
-\vspace{0.3cm}
+\answerspace{0.5cm}
 {\par\centering \includegraphics{force1/force1_fig4.eps} \par}
-\vspace{0.5cm}
+\answerspace{0.5cm}
 
 (c) We will define a mass scale in which the unit is the mass of the cart (including the force probe), called one cart mass. Use the compact scale to determine the mass of the cart and force probe. This will be defined as one cart mass. Assemble masses which you can add to the cart to make the cart's mass equal to approximately 1.5, 2.0. 2.5 and 3.0 cart masses. Record the amount of mass to be added in each case.
-\medskip
+\answerspace{1in}
 
 (d) Now add masses to make the cart's mass 2.0 cart masses.
-\medskip
 
+\pagebreak[3]
 (e) Hang 100 g from the end of the string.
 Start recording data and release the car from rest when you hear the clicks
 of the motion detector. Repeat until you get a good run. Sketch the graphs on
 the axes below. Don't forget to label the axes.
 
-\pagebreak[2]
-\answerspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
-\answerspace{0.3cm}
+%\answerspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
+%\answerspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
 
 (f) Use the \textbf{Delta Tool} (in \textbf{Capstone}) to determine the average force and average acceleration
 during the time interval when they are nearly constant, and record them in the
@@ -425,8 +452,15 @@ right of constant magnitude is applied to the car.
 graph of the car.
 
 %\vspace{0.3cm}
-{\par\centering \includegraphics{force_mass/force_mass_fig1.eps} \par}
+%{\par\centering \includegraphics{force_mass/force_mass_fig1.eps} \par}
 %\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\end{lab_axis}
 
 2. Suppose that the mass of the car were twice as large. The same constant force
 is applied to the car. Sketch on the axes above using a dashed line the acceleration-time
