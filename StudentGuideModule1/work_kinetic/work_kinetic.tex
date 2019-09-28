@@ -112,9 +112,21 @@ on an object is not constant.
 
 (a) Using your data from Activity 2, calculate the width of each displacement, \( \Delta x \), and the average external force, \(\langle F_{\rm ext} \rangle\) for each displacement, and record the values in the table above. This means for each mass take an average of the force value and the previous force value. You now have columns 5 and 6 filled in. Plot \( \langle F_{\rm ext} \rangle\) \textit{vs.}~$x$ as a bar graph on the grid below.  (Choose appropriate scales for the axes before making the graph.) Alternatively, you can plot the bar graph in \textit{Excel}.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics[height=3.250in]{work_kinetic/workAndKEF2.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics[height=3.250in]{work_kinetic/workAndKEF2.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_grid,
+	height = 2.7in, width = 4.5in,
+	xlabel={Position $x$ (m)},
+	ylabel={Average force $\langle F_{\rm ext} \rangle$ (N)},
+	xmin=0, xmax=10,
+	ymin=0, ymax=6,
+	xtick distance = 12,  %tricking it into ONLY putting a tick label at x=0, y=0
+	ytick distance = 7,
+	minor y tick num=6,
+	minor x tick num=11,
+	]
+\end{lab_axis}
 
 How can we calculate the work done in stretching the spring? We can use several
 equivalent techniques: (1) adding up little pieces of \( \langle F_{\rm ext} 
@@ -128,6 +140,7 @@ two methods. If you have studied integrals in calculus you may want to consult
 your instructor or the textbook about how to set up the appropriate definite
 integral to calculate the work needed to stretch the spring. 
 
+\pagebreak[3]
 \textbf{Activity 4: Calculation of Work }
 
 (a) Calculate the work needed to stretch the spring by calculating small increments of \( \langle F_{\rm ext} \rangle \Delta  x\) (this is \( \Delta W\), or column 7 in your table). Record the running sum in the table (this is \( W_{\rm total} \), or column 8) for each mass. (The ``running sum'' is the sum of all the values of \( \Delta W\) up to that point.) Indicate the final value of \( W_{\rm total} \) below. Don't forget to specify units.
