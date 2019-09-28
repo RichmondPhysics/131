@@ -39,9 +39,36 @@ Adjust the height of the support so that the mass comes no closer than 15 cm
 to the detector. Record data for a few seconds to display position-time and 
 velocity-time graphs of the motion. Sketch the graphs on the following axes.
 
-\begin{center}
-\includegraphics[height=3.5in]{periodic_motion/periodic_motion_fig1_new.eps}
-\end{center}
+%\begin{center}
+%\includegraphics[height=3.5in]{periodic_motion/periodic_motion_fig1_new.eps}
+%\end{center}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 2,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=3,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor x tick num=3,
+	minor y tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ytick distance = 1, 
+	minor y tick num=3,
+	ymin=0,ymax=1, 
+	ylabel={Position (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\end{lab_groupplot}
 
 \textit{Note that when an object returns to the same position, it 
 does not necessarily mean that a cycle is ending. It must return to the same 
@@ -146,13 +173,51 @@ and the initial position was 15 cm. Sketch the position and velocity graphs
 that you observed on the axes below using dashed lines.
 
 %\vspace{0.3cm}
-\begin{center}
+%\begin{center}
 %\hspace{0.15in}
 %\includegraphics[width=4in]{periodic_motion/periodic_motion_fig2.eps}
 %\includegraphics[width=4in]{periodic_motion/periodic_motion_fig3.eps}
-\includegraphics[width=4in]{periodic_motion/periodic_motion_fig2_new.eps}
-\includegraphics[width=4in]{periodic_motion/periodic_motion_fig3_new.eps}
-\end{center}
+%\includegraphics[width=4in]{periodic_motion/periodic_motion_fig2_new.eps}
+%\includegraphics[width=4in]{periodic_motion/periodic_motion_fig3_new.eps}
+%\end{center}
+
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 4,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=3,
+	xtick distance = 1, 
+	ytick distance = 1, 
+	minor x tick num=3,
+	minor y tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ytick distance = 1, 
+	minor y tick num=3,
+	ymin=0,ymax=1, 
+	ylabel={Position (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
+
+
 
 (b) Based on what you know about the relationships between velocity, 
 acceleration, and force, use dashed lines to sketch your predictions for the 
