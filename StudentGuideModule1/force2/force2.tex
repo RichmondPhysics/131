@@ -110,19 +110,49 @@ always be at least 0.15 meter from the motion detector.
 \item Start recording data. When the motion detector starts clicking, give the cart
 a short push away from the motion detector and then let it go. Stop the cart
 before it reverses its direction. Repeat until you get a good run. 
-\item Sketch your velocity, acceleration and force graphs on the axes below. Label
-the time scale on these axes. Indicate with an arrow the time when the push
+\item Sketch your velocity, acceleration and force graphs on the axes below. 
+%Label the time scale on these axes. 
+Indicate with an arrow the time when the push
 stopped.
 \end{enumerate}
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
+%\vspace{0.3cm}
+
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
 
 (d) Did the signs of the velocity, force and acceleration agree with your predictions?
 If not, can you now explain the signs?
-\answerspace{20mm}
+\answerspace{30mm}
 
-\pagebreak[2]
+\pagebreak[3]
 (e) Did the velocity and acceleration both have the same sign? Explain these
 signs based on the relationship between acceleration and velocity.
 \answerspace{20mm}
@@ -210,42 +240,85 @@ in each statement.
 
 1. The toy car moves away from the origin with a constant velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 2. The toy car moves toward the origin with a constant velocity.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 3. The toy car moves away from the origin with a steadily decreasing velocity
 (a constant acceleration).
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
+
 
 4. The toy car moves away from the origin, speeds up and then slows down.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 5. The toy car moves toward the origin with a steadily increasing speed ( a
 constant acceleration).
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 6. The toy car is given a push away form the origin and released. It continues
 to move with a constant velocity. sketch the force after the car is released.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
-\vspace{1.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Force,
+	]
+\end{lab_axis}
 
 7. A cart is moving toward the right and speeding up, as shown in the diagram
 below. Draw arrows above the cart representing the magnitudes and directions
@@ -293,9 +366,16 @@ Assume that friction is so small that it can be ignored. A force toward the
 right of constant magnitude is applied to the car. Sketch on the axes below
 using a solid line the shape of the acceleration-time graph of the car.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig10.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig10.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}*[lab_noticks_2quads,
+	width=2.0in,  height=1.2in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	ylabel=Acceleration,
+	]
+\end{lab_axis}
 
 Explain the shape of your graph in terms of the applied force.
 
