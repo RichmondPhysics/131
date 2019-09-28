@@ -55,26 +55,56 @@ investigate how combined forces change the motion of an object.
 (a) Suppose you apply two 0.5-N forces to the cart in the same direction. How
 will the motion compare with the motion you observed in the previous unit for
 a 1-N force?
-\vspace{10mm}
+\answerspace{20mm}
 
+\pagebreak[3]
 (b) Test your predictions. Set up a second pulley next to the first one, attach
 a second string from the force probe hook over the second pulley, and hang 50
 g from each string. Graph the motion as in the previous unit. Repeat until you
 get a good run and sketch the results on the axes below. Don't forget to label
 the axes.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
 
 (c) Do the results agree with your predictions? Explain.
-\answerspace{20mm}
+\answerspace{30mm}
 
 (d) Draw arrows in the space below that represent a scale drawing of the magnitudes
 and directions of the forces applied to the cart in this activity and the previous
 one.
-\answerspace{20mm}
+\answerspace{30mm}
 
+\pagebreak[3]
 \textbf{Activity 2: Two Equal Forces in Opposite Directions}
 
 (a) Suppose two equal and opposite forces were applied to the cart. What would
@@ -122,13 +152,24 @@ the acceleration of the object?
 graph below. Sketch on the axes below the acceleration-time graph of the cart,
 and the force-time graph of the combined force after the cart begins moving.
 
-\vspace{0.3cm}
-{\par\centering \includegraphics{combining/combining_fig1.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{combining/combining_fig1.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_noticks_2quads,
+	group style={group size=1 by 3},
+	width=2.5in,  height=1.4in,
+	plus_minus_zero_labels,
+	xlabel=Time,
+	]
+\nextgroupplot[ylabel=Velocity,]
+	\addplot {0.6};
+\nextgroupplot[ylabel=Acceleration,]
+\nextgroupplot[ylabel=Force,]
+\end{lab_groupplot}
 
 (b) Describe in words the acceleration of the cart and the combined force needed
 to keep it moving at a constant velocity.
-\vspace{15mm}
+\answerspace{15mm}
 
 (c) Test your prediction. Remove the strings from the force probe and give the
 cart a push away from the motion detector. Notice that the cart slows down and
@@ -143,9 +184,37 @@ in contact with the cart after the graphing started, indicate with an arrow
 the time when the push stopped.
 
 \pagebreak[2]
-\vspace{0.3cm}
-{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_groupplot}*{}[lab_grid,
+	group style={
+		group size=1 by 3,
+		xlabels at=edge bottom,
+		vertical sep=0.3in,
+		},
+	width=4.2in,  height=1.4in,
+	xlabel=Time (s),
+	xmin=0, xmax=12,
+	xtick distance = 2, 
+	ytick distance = 1, 
+	minor tick num=1,
+	ytick = {-1,0,1},
+	yticklabels = {$-$, 0, $+$},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Velocity (m/s)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Acceleration (m/s$^2$)},
+	]
+\nextgroupplot[
+	ymin=-1,ymax=1, 
+	ylabel={Force (N)},
+	]
+\end{lab_groupplot}
 
 (d) Do the graphs agree with your predictions? If not, how do they differ?
 \answerspace{20mm}
