@@ -334,9 +334,23 @@ the slope of a continuous function and proceed from there.
 at the highlighted point in terms of \( x_{1} \), \( x_{2} \), \( t_{1} \),
 and \( t_{2} \)?
 
-\vspace{0.3cm}
-{\par\raggedright \includegraphics{equations/equations_fig2.eps} \par}
-\vspace{0.3cm}
+%\vspace{0.3cm}
+%{\par\raggedright \includegraphics{equations/equations_fig2.eps} \par}
+%\vspace{0.3cm}
+\begin{lab_axis}[lab_noticks_1quad,
+	width=2.0in,  height=1.5in,
+	xlabel=Time,
+	ylabel=Position,
+	xtick={0.7,0.8},
+	xticklabels={$t_1$,$t_2$},
+	ytick={0.575,0.74},
+	yticklabels={$x_1$,$x_2$},
+	tick label style = {font=\itshape},
+]
+\addplot {1.5*(x-0.2)^2+0.2};
+\addplot +[dashed,thick] coordinates {(0.7,0.0) (0.7,0.575) (0,0.575)};
+\addplot +[dashed,thick] coordinates {(0.8,0.0) (0.8,0.74) (0,0.74)};
+\end{lab_axis}
 
 (b) How is the value of the slope related to the average velocity in the time
 interval 
