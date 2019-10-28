@@ -8,6 +8,7 @@
 **/*.tex~
 **/*.toc
 **/*.dvi
+**/*.out
 **/*~
 **/*eps-converted-to.pdf
 
@@ -28,7 +29,6 @@ StudentGuideModule1/master*.pdf
 # Lines below copied from https://github.com/github/gitignore/blob/master/TeX.gitignore
 # We don't have any of these, so for now they are commented out.
 # *.fls
-# *.out
 
 
 
