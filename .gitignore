@@ -9,6 +9,8 @@
 **/*.toc
 **/*.dvi
 **/*.out
+**/*.ent
+# .ent file is produced while handling endnotes
 **/*~
 **/*eps-converted-to.pdf
 

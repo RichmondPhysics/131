@@ -1,0 +1,48 @@
+\usepackage{endnotes}
+
+% The following code is for handling endnotes, used for notes for instructors.
+% see https://tex.stackexchange.com/questions/84914/chapter-numbers-in-endnotes
+
+% Note that it redefines \section AGAIN
+\makeatletter
+\renewcommand\enoteheading{%
+  \setcounter{secnumdepth}{-2}
+%  \chapter*{\notesname}
+  \section*{\notesname}
+  \mbox{}\par\vskip-\baselineskip
+%  \let\@afterindentfalse\@afterindenttrue
+}
+\makeatother
+
+\let\latexsection\section
+
+\RenewDocumentCommand{\section}{som}{%
+  \IfBooleanTF{#1}
+    {\latexsection*{#3}}
+    {\IfNoValueTF{#2}
+       {\latexsection{#3}}
+       {\latexsection[#2]{#3}}%
+     \addtoendnotes{%
+%\unexpanded{\enotedivision{\subsection}{#3}}}
+     \noexpand\enotedivision{\noexpand\subsection}
+%         {\sectionname\ \thesection. \unexpanded{#3}}}%
+         {\headersupplementmark\ \thesection: \unexpanded{#3}}}%   }%
+	}
+}
+\makeatletter
+\def\enotedivision#1#2{\@ifnextchar\enotedivision{}{#1{#2}}}
+\makeatother
+
+\newcommand{\startendnotes}{
+	\addtoendnotes{\unexpanded{\enotedivision{}{}}}
+
+	%\begingroup
+	{\parindent 0pt
+	\parskip 2ex
+	\def\enotesize{\normalsize}
+	\def\makeenmark{}%\theenmark}
+	\theendnotes
+	}%\endgroup
+
+}
+% End of code for endnotes
