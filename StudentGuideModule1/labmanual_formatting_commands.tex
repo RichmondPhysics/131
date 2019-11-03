@@ -66,31 +66,14 @@
 %\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
 \usepackage{authblk}
 
-\usepackage{hyperref}
+\usepackage[hyperfootnotes=false]{hyperref} %hypderfootnotes disabled for compatibility with footmisc.
+\usepackage[stable]{footmisc} %option [stable] removes footnotes from section title in TOC and header.
 
-%---------------------------------------------------------------------------------------------------
-%Footnotes
-% Note by MT, 3/19/2017: I have no idea what the code below is actually doing.  
-% But the Latex compiler crashes whenI take it out, so for now I'm leaving it in.
-
-%% Special footnote code from the package 'stblftnt.sty'
-%% Author: Robin Fairbairns -- Last revised Dec 13 1996
-\makeatletter
-\let\SF@@footnote\footnote
-\def\footnote{\ifx\protect\@typeset@protect
-    \expandafter\SF@@footnote
-  \else
-    \expandafter\SF@gobble@opt
-  \fi
-}
-\expandafter\def\csname SF@gobble@opt \endcsname{\@ifnextchar[%]
-  \SF@gobble@twobracket
-  \@gobble
-}
-\edef\SF@gobble@opt{\noexpand\protect
-  \expandafter\noexpand\csname SF@gobble@opt \endcsname}
-\def\SF@gobble@twobracket[#1]#2{}
-\makeatother
+% The following two lines fix an additional problem that arises when a footnote comes within a section title.
+% Hyperref normally includes the footnote text in the pdf table of contents, and throws a warning.
+% The code below excludes the footnote text, and also makes it so no warning is issued.
+\let\regularfootnote\footnote
+\renewcommand{\footnote}[1]{\texorpdfstring{\regularfootnote{#1}}{}}
 
 
 %---------------------------------------------------------------------------------------------------
