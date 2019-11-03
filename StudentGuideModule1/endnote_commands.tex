@@ -3,6 +3,8 @@
 % The following code is for handling endnotes, used for notes for instructors.
 % see https://tex.stackexchange.com/questions/84914/chapter-numbers-in-endnotes
 
+\renewcommand\notesname{Instructor Notes}
+
 % Note that it redefines \section AGAIN
 \makeatletter
 \renewcommand\enoteheading{%
@@ -36,13 +38,19 @@
 \newcommand{\startendnotes}{
 	\addtoendnotes{\unexpanded{\enotedivision{}{}}}
 
-	%\begingroup
-	{\parindent 0pt
+	\begingroup
+	\parindent 0pt
 	\parskip 2ex
 	\def\enotesize{\normalsize}
 	\def\makeenmark{}%\theenmark}
+	\setlength\parindent{0pt}
+\fancyhead[LO,RE]{\slshape \rightmark} 
+\fancyhead[LE,RO]{\slshape \MakeUppercase{\notesname}}
+
+%	\renewcommand{\footnote}[1]{foo foo foo}
+%	\def\footnote{}
 	\theendnotes
-	}%\endgroup
+	\endgroup
 
 }
 % End of code for endnotes
