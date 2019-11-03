@@ -5,6 +5,12 @@
 
 \renewcommand\notesname{Instructor Notes}
 
+% Next two lines changes format of endnotes to no indenting.
+% See https://tex.stackexchange.com/questions/31574/how-to-control-the-indent-in-endnotes
+\usepackage{etoolbox}
+\patchcmd{\enoteformat}{1.8em}{0pt}{}{}
+
+
 % Note that it redefines \section AGAIN
 \makeatletter
 \renewcommand\enoteheading{%
@@ -28,27 +34,25 @@
 %\unexpanded{\enotedivision{\subsection}{#3}}}
      \noexpand\enotedivision{\noexpand\subsection}
 %         {\sectionname\ \thesection. \unexpanded{#3}}}%
-         {\headersupplementmark\ \thesection: \unexpanded{#3}}}%   }%
+%         {\headersupplementmark\ \thesection: \unexpanded{#3}}}%   }%
+% removing "\unexpanded" gets rid of the footnotes in the instructor notes.
+         {\headersupplementmark\ \thesection: {#3}}}%   }%
 	}
 }
 \makeatletter
 \def\enotedivision#1#2{\@ifnextchar\enotedivision{}{#1{#2}}}
 \makeatother
 
-\newcommand{\startendnotes}{
+\newcommand{\startinstructornotes}{
 	\addtoendnotes{\unexpanded{\enotedivision{}{}}}
 
 	\begingroup
-	\parindent 0pt
 	\parskip 2ex
 	\def\enotesize{\normalsize}
 	\def\makeenmark{}%\theenmark}
-	\setlength\parindent{0pt}
-\fancyhead[LO,RE]{\slshape \rightmark} 
-\fancyhead[LE,RO]{\slshape \MakeUppercase{\notesname}}
+	\fancyhead[LO,RE]{\slshape \rightmark} 
+	\fancyhead[LE,RO]{\slshape \MakeUppercase{\notesname}}
 
-%	\renewcommand{\footnote}[1]{foo foo foo}
-%	\def\footnote{}
 	\theendnotes
 	\endgroup
 
