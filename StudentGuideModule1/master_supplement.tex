@@ -3,7 +3,7 @@
 \input{../../131/StudentGuideModule1/labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
 \newcommand{\coursefolder}{Phys131} %This defines the place students will look for various files
 \ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
-\externaldocument{master}
+\externaldocument{master131}
 
 %syntax: \includeonly{lab1,lab2,lab3} with no spaces after the commas.
 %\includeonly{biot_savart_law/biot_savart_law, charge_density/charge_density,eoverm/eoverm }
@@ -17,17 +17,19 @@
 
 \begin{document}
 
-\setcounter{page}{243}  %Set this to desired first page
-\setcounter{section}{40} %set this to desired first section number MINUS ONE
+\setcounter{page}{237}  %Set this to desired first page
+\setcounter{section}{38} %set this to desired first section number MINUS ONE
 
 %--------------------------------------------
 %Put include or includelab statements for labs below here.
 %\include{charge_dist_water_mol/charge_dist_water_mol}
-\includelab{1}{eoverm2/eoverm2}
+\includelab{1}{gravity_normal_elevators/gravity_normal_elevators}
+\includelab{1}{tangential_and_centripetal_acc/tangential_and_centripetal_acc}
+\includelab{1}{drag_force/drag_force}
 
 %--------------------------------------------
 \appendix
 \setcounter{section}{4} %set this counter to number MINUS ONE corresponding to desired appendix letter. (4 for `E', etc.)
 %Put include statements for supplementary appendices below here.
-%\include{appendices/nuke_safety/nuke_safety}
+%\includelab{1}{appendices/nuke_safety/nuke_safety}
 \end{document}
