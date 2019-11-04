@@ -7,7 +7,7 @@ By Matt Trawick, 11/2019 (though surely many people have done similar things bef
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
-\medskip
+\bigskip
 \textbf{Apparatus}
 
 \begin{itemize}[nosep]
@@ -18,11 +18,13 @@ By Matt Trawick, 11/2019 (though surely many people have done similar things bef
 \item \textit{Capstone} software (\filename{P\_V\_A\_graphs.cap} experiment file)
 \end{itemize}
 
-\medskip
+\bigskip
 \textbf{Activity 1: Predictions and First Data}
 
+A ``drag force'' $F_{\rm drag}$ is a force caused by the air hitting against a moving object.  You would feel a drag force if you held your arm out of a moving car, for instance.\footnote{Don't try this at home.  Keep arms and legs inside moving vehicle at all times.}
+  
 \begin{enumerate}[labparts]
-\item A ``drag force'' $F_{\rm drag}$ is a force caused by the air hitting against a moving object.  You would feel a drag force if you held your arm out of a moving car.\footnote{Don't try this at home.  Keep arms and legs inside moving vehicle at all times.}  If the car's speed increased, would the drag force on your hand increase, decrease, or stay the same?
+\item If the car's speed increased, would the drag force on your hand increase, decrease, or stay the same?
 \answerspace{0.3in}
 
 \item Suppose you drop an object, like a ball or a tissue.  Draw a free body diagram for the object as it falls, including the drag force.
@@ -50,6 +52,7 @@ By Matt Trawick, 11/2019 (though surely many people have done similar things bef
 	ylabel={Velocity (m/s)},
 	width=4.5in, height=1.8in,
 	xmin=0, xmax=5,
+	ymin=-2, ymax=2,
 	xtick distance = 1,
 %	ytick distance = 1,
 	minor x tick num=1,
@@ -126,7 +129,11 @@ typical pickup truck & 0.40 \\ \hline
 \item What is the cross-sectional area $A$ of your stack of coffee filters?  Note that this is NOT the actual surface area of the filters.  It's more like the area of the \textit{shadow} cast by the filters if light were shining in the direction of motion.
 \answerspace{0.8in}
 
-\item Perform a fit to your data based on Equation (1) above.  Based on your data, what is the drag coefficient $C$ for your stack of coffee filters?  Also check that your number seems sensible in light of the other values of $C$ in the table above.  Is your stack of coffee filters as ``aerodynamic'' as a Toyota Prius?
+%\hspace{\fill}
+%\includegraphics[scale=0.8]{drag_force/cross_sectional_area.eps}
+
+Next, you will perform a fit of your data to Equation (1) above.  To do this, you will use the LINEST function in Excel, described in Appendix \ref{excel}.  But to make LINEST fit your $F_{\rm drag}$ values to $v^2$ instead of $v$, you will enter ``\verb!^2!'' after your $v$ data (what Excel calls the ``known $x$ values'') so that your entire line will look something like ``\verb!=linest(B1:B5, A1:A5^2, 0, 1)!''.
+\item Based on your data, what is the drag coefficient $C$ for your stack of coffee filters?  Also check that your number seems sensible in light of the other values of $C$ in the table above.  Is your stack of coffee filters as ``aerodynamic'' as a Toyota Prius?
 \answerspace{0.8in}
 
 
