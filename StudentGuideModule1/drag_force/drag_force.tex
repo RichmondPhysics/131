@@ -137,7 +137,7 @@ typical pickup truck & 0.40 \\ \hline
 %\hspace{\fill}
 %\includegraphics[scale=0.8]{drag_force/cross_sectional_area.eps}
 
-Next, you will perform a fit of your data to Equation (1) above.  To do this, you will use the LINEST function in Excel, described in Appendix \ref{excel}.  But to make LINEST fit your $F_{\rm drag}$ values to $v^2$ instead of $v$, you will enter ``\verb!^2!'' after your $v$ data (what Excel calls the ``known $x$ values'') so that your entire line will look something like ``\verb!=linest(B1:B5, A1:A5^2, 0, 1)!''.
+Next, you will perform a fit of your data to Equation (1) above.  To do this, you will use the LINEST function in Excel, described in Appendix \ref{excel}.  But to make LINEST fit your $F_{\rm drag}$ values to $v^2$ instead of $v$, you will enter ``\specialcaret \verb!2!'' after selecting your $v$ data (what Excel calls the ``known $x$ values'') so that your entire line will look something like ``\verb!=linest(B1:B5, A1:A5!\specialcaret \verb!2, 0, 1)!''.
 \item Based on your data, what is the drag coefficient $C$ for your stack of coffee filters?  Also check that your number seems sensible in light of the other values of $C$ in the table above.  Is your stack of coffee filters as ``aerodynamic'' as a Toyota Prius?
 \answerspace{0.8in}
 
