@@ -1,0 +1,263 @@
+\section{Oscillators with Damping and Driving Forces}
+
+\instructornote{%
+By Matt Trawick, 2019.  Time: 90 minutes?
+
+This lab is designed to be a standalone introduction to damped, driven oscillators.  It assumes that students have already seen $x(t)=A\cos (\omega t)$, $\omega = \sqrt{k/m}$, and the differential equation for a mass on a spring, 
+$\displaystyle -kx=m\frac{d^2x}{dt^2}$.  Beyond that, there's technically no need for any introductory remarks here.
+
+This lab does not go into much detail about the fact that we're assuming $F_{\rm drag} \propto v$ instead of 
+$F_{\rm drag} \propto v$.  In fact, I'm pretty sure this means that the decay of the amplitude is not strictly exponential.  For that reason, it is probably important to start the system at the same initial amplitude $A_0$ in order to get a meaningful comparison for $b$ with a half index card vs. a full index card.  In Activity 1, students should get about $b \approx 0.008$~kg/s for a full index card and $b \approx 0.004$~kg/s for a half index card.
+
+Note on notation, from Matt: Many books and websites use just ``$\omega$'' for the driving frequency.  I have chosen to use ``$\omega_d$'' instead, to avoid confusion with  the regular ``$\omega$'' which we used for the natural frequency of a mass on a spring earlier in the lab.  Knight doesn't do quite as much with driving forces as we do in this lab, and he uses ``$f_{\rm ext}$'' for the frequency of this ``external'' driving force.
+
+Equipment notes:
+
+This lab uses light spring, with a spring constant of $\approx 0.3$~N/m.  
+}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\bigskip
+\textbf{Apparatus:}
+\begin{itemize}[nosep]
+\item Collection of masses 
+\item Two index cards
+\item Masking tape
+\item Light duty spring
+\item String vibrator with two banana cables
+\item Motion detector
+\item Lab stands, to support spring, vibrator, and motion detector
+\item \textit{Capstone} software (\filename{Damping.cap} experiment file)
+\end{itemize}
+
+
+\bigskip
+\textbf{Activity 1: An Introduction to Damping} 
+
+In your study of oscillations so far, you have seen that a mass and spring system with a ``restoring force'' of $F=-kx$ leads to simple harmonic motion that can be described by
+\begin{equation}
+x(t)=A\cos (\omega t)
+\label{equation_undamped}
+\end{equation}
+where $\omega = \sqrt{k/m}$ is the system's angular frequency.
+But Equation (\ref{equation_undamped}) implies that the system keeps vibrating forever, and your experience tells you that's not true.  You know that if you start a mass vibrating, the amplitude will gradually decrease over time; it certainly won't still be going if you come back to check on it an hour later.  Something is missing from our description of simple harmonic motion so far.
+
+
+\begin{enumerate}[labparts]
+
+\item Make a prediction: if you hang a mass from a spring and start it oscillating up and down, which graph below looks most like the motion you would see?  Why do you think so?
+
+\begin{center}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.2in}, width = {1.6in},
+	algebraic_labels,
+	xlabel={$t$},
+	ylabel={$x$},
+	title={(a)},
+	]
+\addplot {sin(3000*x)*(1-x^2)};
+\addplot +[dashed, thick] {1-x^2};
+\addplot +[dashed, thick] {-(1-x^2)};
+\end{lab_axis}
+\hspace{0.2in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.2in}, width = {1.6in},
+	algebraic_labels,
+	xlabel={$t$},
+	ylabel={$x$},
+	title={(b)},
+	]
+\addplot {sin(3000*x)*(1-x)};
+\addplot +[dashed, thick] {1-x};
+\addplot +[dashed, thick] {-(1-x)};
+\end{lab_axis}
+\hspace{0.2in}
+\begin{lab_axis}[lab_noticks_2quads,
+	height = {1.2in}, width = {1.6in},
+	algebraic_labels,
+	xlabel={$t$},
+	ylabel={$x$},
+	title={(c)},
+	]
+\addplot {sin(3000*x)*exp(-3*x)};
+\addplot +[dashed, thick] {exp(-3*x)};
+\addplot +[dashed, thick] {-exp(-3*x)};
+\end{lab_axis}
+\end{center}
+
+\answerspace{0.6in}
+
+Well, let's try it!  Hang a 50~g mass on the spring, over the edge of the table.  Move the ``string vibrator'' box out of the way for now; you'll use that in Activity 4.  Adjust the height of the spring so the bottom of the mass is about 60 cm above the floor.  Use masking tape to stick an index card on the bottom of your mass.  Open the file \filename{Damping.cap} in the \filename{\coursefolder} folder.   It will be most convenient if you set the equilibrium position of your mass to be at $x=0$.  To do this, let your mass hang at equilibrium over the motion sensor, click on \button{Hardware Setup} on the left sidebar, click on the gear icon to the right of \button{Motion Sensor II}, and click on the \button{Zero Sensor Now} button. 
+
+\item Now take some data: lift your mass up 10~cm above its equilibrium position, let it go, and hit \button{Record}. You'll want to take data for about one minute.  Was your prediction correct?  If not, which graph does your data most resemble?
+\answerspace{0.6in}
+
+The piece that was missing from our description of simple harmonic motion so far is an additional ``damping force'' that slows the system down over time.  The damping force could be a frictional force, $F_{\rm fric}=\mu_k F_{\rm normal}$,  from two things rubbing together, or it could be a drag force, $F_{\rm drag} = \frac{1}{2}C_d A \rho v^2$, from an object moving through the air.  
+But both of those are mathematically difficult to analyze.  Instead, we'll use a slightly different model for drag force that assumes $F_{\rm drag}$ is proportional to $v$, not $v^2$:
+\begin{equation}
+F_{\rm drag}=-bv,
+\label{equation_Fdrag}
+\end{equation}
+where the proportionality constant $b$, also called the ``damping coefficient,'' presumably depends on things like the size and shape of the object, and the density and viscosity of the medium the object moves in.
+
+\item What does the negative sign in Equation (\ref{equation_Fdrag}) indicate?
+\answerspace{0.6in}
+
+When we include the damping force as well as the restoring force, then Newton's second law $F_{\rm NET} = ma$ for our object becomes
+\begin{equation}
+-kx-b\frac{dx}{dt}=m\frac{d^2x}{dt^2}.
+\label{equation_damped_diff_eq}
+\end{equation}
+Actually \textit{deriving} the solution for the function $x(t)$ that satisfies Equation (\ref{equation_damped_diff_eq}) would require more advanced math than fits in this course.  Instead, we'll simply present the solution here without any proof:  
+\begin{equation}
+x(t)=\underbrace{A_0e^{-bt/2m}}_{%
+\let\scriptstyle\textstyle 
+\substack{A(t)}}
+\cos(\omega t)
+\label{equation_damped_amplitude}
+\end{equation}
+You can see that while the amplitude in Equation (\ref{equation_undamped}) was just a constant $A$, the amplitude above is now a function 
+$A(t)$ that decays exponentially with time, according to $A(t) = A_0e^{-bt/2m}$.   
+
+\item What is the initial amplitude $A_0$ in your data?
+\answerspace{0.6in}
+
+\item Equation (\ref{equation_damped_amplitude}) says that $A(t)$ decays to about one third of its initial value (actually $\dfrac{1}{e}A_0$, or $\approx 0.37A_0$) at time $t=2m/b$.  At what time $t$ does that happen in your data?
+\answerspace{0.6in}
+
+\item From your answer above, what is the value of the damping coefficient $b$ for your system?  What are the units of $b$? \label{b_for_full_index_card}
+\answerspace{0.6in}
+
+\item Make a prediction: if you reduced the surface area of the index card under your weight to 1/2 of its original size?  Would the damping coefficient $b$ \textit{increase}, \textit{decrease}, or \textit{stay the same}?  Why do you think so?
+\answerspace{0.6in}
+
+\item Test your prediction by folding your index card in half, and securing it with a small piece of masking tape.  (Folding is better than cutting, because it doesn't change the mass.) \textit{Note: do not delete your previous data.  You'll refer to it again later.}  Start your mass by lifting it up by the same 10~cm as before and letting it go.  What is the value of $b$ for your system with a half-size card?  Was your prediction correct?
+\answerspace{1.0in}
+
+\end{enumerate}
+
+\textbf{Activity 2: Damping and Frequency}
+
+It turns out that the damping coefficient $b$ also affects the frequency of an oscillator.  There probably wasn't a noticeable change in the two trials you did in Activity 1, because the damping coefficients here are just too small.  But you can probably imagine what would happen if you increased the damping coefficient $b$ by \textit{a lot}, for instance by putting your system under water, or even inside a big vat of molasses.  
+
+\begin{enumerate}[labparts]
+
+\item Would doing this experiment under water make the frequency of your system \textit{increase}, \textit{decrease}, or \textit{stay the same}?  
+\answerspace{0.6in}
+
+Again, the derivation is more than we can do here, but the actual angular frequency of a damped oscillator is given by
+\begin{equation}
+\omega =\sqrt{\frac{k}{m} - \left( \frac{b}{2m}\right)^2}.
+\label{equation_damped_frequency}
+\end{equation}
+You can see from the equation above that any increase in $b$ reduces the angular frequency $\omega$ of the system from its undamped value of $\omega_0=\sqrt{k/m}$.  
+
+\item Remove the index card from the bottom of your mass, and record a few cycles of the mass oscillating up and down.  Make a careful measurement of the angular frequency by measuring the time of ten complete cycles.  Record your values of the period $T$, the angular frequency $\omega$, the frequency $f$, and the spring constant $k$ below.
+\answerspace{1.2in}
+
+\item Use the value of $b$ that you calculated in Activity 1, part \ref{b_for_full_index_card}, to calculate what the angular frequency $\omega$ should be with the full index card stuck to the bottom.  How big a difference in frequency do you expect? 
+\answerspace{0.6in}
+ 
+\end{enumerate}
+
+\textbf{Activity 3: Driving Forces (the Theory Part)}
+
+In addition to a damping force, we can also add a periodic driving force, $F_{\rm drive}=F_0 \sin(\omega_d t)$ to our system.  This is an external force that keeps the oscillations going---just as you would be doing if you pumped your legs back and forth on a swing at a playground.  Such a system eventually reaches a steady state where the effect of the driving force (increasing the oscillations) and the damping force (decreasing the oscillations) exactly balance each other.  The steady state motion is described by
+\begin{equation}
+x = A \cos(\omega_d t),
+\end{equation}
+where it's important to note that the resulting angular frequency of the oscillator is the \textit{driving frequency} 
+$\omega_d$, not the natural frequency $\omega_0=\sqrt{k/m}$ of the mass and spring.  
+The amplitude $A$ of the motion is given by the (admittedly intimidating) expression
+\begin{equation}
+A = \frac{F_0/m}{\sqrt{\bigg( \omega_d^2 - \omega_0^2 \bigg)^2 + \left( \dfrac{b\omega_d}{m} \right)^2}}.
+\end{equation}
+There's a lot packed into this last equation, so let's step through it piece by piece.
+
+\begin{enumerate}[labparts]
+
+\item If you keep everything constant, but increase \textit{only} the magnitude of the sinusoidal driving force $F_{\rm drive}$, what happens to the amplitude $A$?  Does it \textit{increase}, \textit{decrease}, or \textit{stay the same}?
+\answerspace{0.7in}
+
+\item If you keep everything constant, but increase \textit{only} the damping coefficient $b$, does the amplitude $A$ \textit{increase}, \textit{decrease}, or \textit{stay the same}?
+\answerspace{0.7in}
+
+\item If the damping force is negligibly small, what value of the driving frequency $\omega_d$ would you choose to make the resulting amplitude $A$ as large as possible?
+\answerspace{0.7in}
+
+\item If the driving frequency is \textit{much, much bigger} than the natural frequency, do you expect the resulting amplitude to be very large, or very small?
+\answerspace{0.7in}
+
+\item If the driving frequency is \textit{much, much smaller} than the natural frequency, do you expect the resulting amplitude to be very large, or very small?
+\answerspace{0.7in}
+
+\end{enumerate}
+
+\pagebreak
+\textbf{Activity 4: Driving Forces (the Experiment Part)}
+
+You should have found in the previous activity that the limit of light damping, amplitude $A$ of a damped, driven oscillator is maximized when the driving angular frequency $\omega_d$ exactly matches the natural frequency $\omega_0$ of the oscillator.\footnote{%
+For systems with significant damping, the resonant angular frequency is slightly lower than $\omega_0$, and is given by
+$$
+\omega_d =\sqrt{\frac{k}{m} - 2\left( \frac{b}{2m}\right)^2}.
+$$
+Note that this is also slightly smaller than the frequency of the damped oscillator of Equation (\ref{equation_damped_frequency}), in that the expression includes an extra factor of 2.
+}
+This phenomenon is called \textit{resonance}, and it occurs at the \textit{resonance frequency}.
+
+To observe this effect, you will add a small sinusoidal driving force to your system, and measure its resulting steady-state amplitude.
+The ``string vibrator'' should be clamped onto the table near your spring.  Move it over slightly, and insert the end of its metal arm in between two coils of the spring, about 3 or 4 coils from the top.  You may need to readjust the height of the vibrator so that the metal arm is roughly in the middle of its travel range.
+
+The vibrator should be plugged into the red and black jacks on the right side of the Pasco 550 interface, which will provide a sinusoidally varying voltage to power the vibrator.  To turn on this voltage, click the \button{Signal Generator} button on the left toolbar.  The \button{Waveform} should be set to ``Sine.''  In the \button{Frequency} box, enter ``1.00~Hz''.  You will also need to click the little curved arrow buttons just to right of that to increase the number of digits shown.  Finally, set both the \button{Amplitude} and the \button{Voltage Limit} to 8~Volts, and click the \button{On} button to start it.
+
+\begin{enumerate}[labparts]
+
+\item With the half index card taped to the bottom of your mass and the vibrator set to a frequency of $f_d=1.00$~Hz, allow the amplitude of the mass to reach a steady state.  Record the resulting amplitude in the table below.  If you find that the amplitude never stabilizes, but goes through regular cycles of smaller and larger amplitudes, then record the largest amplitude that you observe.
+
+\begin{center}
+{\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|c|c|C{3in}|} \hline 
+\multicolumn{3}{|l|}{Response curve data for $b=$} \\
+\hline
+Frequency $f_d$ (Hz) & Amplitude $A$ (m) & Notes  \\ 
+\hhline{|=|=|=|}
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+\end{tabular} }
+\end{center}
+
+
+\item Continue to take data for several additional values of $f_d$, initially adjusting the frequency in steps of 0.1 or 0.2 Hz.  Record the steady state amplitudes you observe for driving frequencies $\omega_d$ both above and below $\omega_0$.  Remember that the output of the signal generator is given as an $f$, in Hz, so you will want to compare that to the natural frequency $f_0$ in Hz rather than to $\omega_0$ in rad/s.  What is the maximum amplitude $A$ that you can achieve, and what frequency $f_d$ do you observe it?  (That frequency is called the \textit{resonance frequency}.)
+\answerspace{0.6in}
+
+\item The function $A(f)$ described in the table above, is called the \textit{response curve} of the system.  Make a prediction: how would the response curve change if you used a full index card instead of a half index card?
+\answerspace{0.6in}
+
+\pagebreak[2]
+
+\item Replace the half index card with a full index card. Take data again to see if there is any effect on the response curve.
+\begin{center}
+{\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|c|c|C{3in}|} \hline 
+\multicolumn{3}{|l|}{Response curve data for $b=$} \\
+\hline
+Frequency $f$ (Hz) & Amplitude $A$ (m) & Notes  \\ 
+\hhline{|=|=|=|}
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+ & & \\ \hline 
+\end{tabular} }
+\end{center}
+
+\item Plot your two response curves in Excel, and print out a copy.  Be sure to annotate your graphs (by hand is fine) labeling the two response curves and showing the resonance frequency $f_0$.
+\end{enumerate}
+
+
