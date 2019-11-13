@@ -1,5 +1,21 @@
 \section{The Period of a Pendulum}
 
+\instructornote{%
+By Matt Trawick, 2019.  Time: 50-60 minutes.
+
+The introduction of the lab gives the period for the simple pendulum, but does not explain why or derive it.  Presumably that needs to be done ahead of time.  (Note by Matt: I started out by just deriving the equation of motion, from $\tau=I\alpha$:
+$$
+(mg)(L)\sin \theta = (mL^2)\frac{d^2 \theta}{dt^2},
+$$
+then I asked them if they thought the period would increase or decrease with mass, \textit{before} I actually canceled out the $m$'s on the whiteboard.  Then I let them do activity 1, and then I interrupted them with the rest of a derivation of $T$ for small angles.  Your mileage may vary.)
+
+Equipment notes:
+
+Start by adjusting the string height so that there is enough clearance for the largest (500 g) mass.
+
+The guide hole for the string should actually be turned about 45 degrees, not straight vertical.
+}
+
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
 \bigskip
@@ -10,12 +26,14 @@ To study the influences on the motion of a simple pendulum, and to calculate the
 \bigskip
 \textbf{Apparatus:}
 \begin{itemize}[nosep]
-\item String, attached to lab stand scaffolding
 \item Collection of masses 
+\item String, attached to lab stand scaffolding
+\item Protractor, also attached to lab stand scaffolding
 \item Photogate
 \item \textit{Capstone} software (\filename{pendulum.cap} experiment file)
 \item Meter stick
 \end{itemize}
+
 
 \bigskip
 \textbf{Introduction:}
@@ -24,7 +42,6 @@ The period of a simple pendulum is related to its length $L$ and the acceleratio
 \begin{equation}
 T=2\pi \sqrt{\frac{L}{g}}.
 \end{equation}
-%\qquad [Eq.\: 1]\]
 
 This assumes the oscillations are small. Let's check this prediction experimentally. 
 
@@ -37,9 +54,10 @@ This assumes the oscillations are small. Let's check this prediction experimenta
 \answerspace{0.8in}
 
 To test your prediction, you will use a photogate to measure the period of your pendulum.  
-Open the file \filename{pendulum.cap} in the \filename{\coursefolder} folder.  Adjust the string guide on your lab stand so that the effective length of the pendulum is about 1~meter or as close as you can reasonably get to that.  
+Open the file \filename{pendulum.cap} in the \filename{\coursefolder} folder.  
+Adjust the string guide on your lab stand to its maximum height, so that the effective length of the pendulum is about 1~meter. 
 
-\item For each mass, measure the periods for several oscillations, and record a typical value in the table below.  Use an amplitude of not greater than 10 degrees.  Also, because the weights are slightly different sizes, you will need to readjust the string guide up or down slightly for weight, so that the length $L$ from the pivot point to the weight's approximate center of mass remains constant.  
+\item For each mass, measure the periods for several oscillations, and record a typical value in the table below.  Use a constant amplitude of not greater than 10 degrees.  Also, because the weights are slightly different sizes, you will need to readjust the string guide up or down slightly for each weight, so that the length $L$ from the pivot point to the weight's approximate center of mass remains constant.  
 
 \begin{center}
 {\renewcommand{\arraystretch}{1.8}
@@ -48,7 +66,7 @@ Trial No. & Mass (kg) & Length $L$ (m) & Amplitude $\theta_{\rm max}$ ($^\circ$)
 \hhline{|=|=|=|=|=|}
 1 & 0.050 & & & \\ \hline 
 2 & 0.200 & & & \\ \hline 
-3 & 1.000 & & & \\ \hline 
+3 & 0.500 & & & \\ \hline 
 \end{tabular} }
 \end{center}
 
@@ -97,7 +115,7 @@ But to make LINEST fit your $T$ values to $L^{1/2}$ instead of $L$, you will ent
 Throughout this lab, we have noted that Equation (1) is only valid for ``small'' oscillations.  In this activity, we will see what effect amplitude really has on the period. 
 
 \begin{enumerate}[labparts]
-\item Record the period $T$ for several different amplitudes $\theta_{\rm max}$.  Use a mass of 100~g or 200~g, and maintain a constant value of $L \approx 1$~m. Any differences you see will be small, so you will need to take careful measurements.  Use a mass with a hook that is not crooked, so that the mass hangs straight and the timing won't be affected if the mass spins.  Also, record several periods, and calculate the average and standard deviation of the period for each amplitude. Try to take data for amplitudes of $1^\circ, 2^\circ , 4^\circ , 8^\circ , 16^\circ , 24^\circ ,$ and $32^\circ$.
+\item Record the period $T$ for several different amplitudes $\theta_{\rm max}$.  Use a mass of 100~g or 200~g, and maintain a constant value of $L \approx 1$~m. Any differences you see will be small, so you will need to take careful measurements.  Use a mass with a hook that is not crooked, so that the mass hangs straight and the timing won't be affected if the mass spins.  Also, record several periods, and calculate the average and standard deviation of the period for each amplitude using the statistics function in Capstone. (See Appendix \ref{capstone}.  Also, if you have a few obviously bogus data points at the beginning or end, you may need to select only the points you want using the yellow highlighting tool.)  Try to take data for amplitudes of $1^\circ, 2^\circ , 4^\circ , 8^\circ , 16^\circ , 24^\circ ,$ and $32^\circ$.
 
 \begin{center}
 {\renewcommand{\arraystretch}{1.8}
