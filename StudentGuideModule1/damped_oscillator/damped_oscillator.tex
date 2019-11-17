@@ -7,9 +7,11 @@ This lab is designed to be a standalone introduction to damped, driven oscillato
 $\displaystyle -kx=m\frac{d^2x}{dt^2}$.  Beyond that, there's technically no need for any introductory remarks here.
 
 This lab does not go into much detail about the fact that we're assuming $F_{\rm drag} \propto v$ instead of 
-$F_{\rm drag} \propto v$.  In fact, I'm pretty sure this means that the decay of the amplitude is not strictly exponential.  For that reason, it is probably important to start the system at the same initial amplitude $A_0$ in order to get a meaningful comparison for $b$ with a half index card vs. a full index card.  In Activity 1, students should get about $b \approx 0.008$~kg/s for a full index card and $b \approx 0.004$~kg/s for a half index card.
+$F_{\rm drag} \propto v^2$.  In fact, I'm pretty sure this means that the decay of the amplitude is not strictly exponential.  For that reason, it is probably important in Activity 1 to start the system at the same initial amplitude $A_0$ in order to get a meaningful comparison for $b$ with a half index card vs. a full index card.  Students should get about $b \approx 0.008$~kg/s for a full index card and $b \approx 0.004$~kg/s for a half index card.
 
 Note on notation, from Matt: Many books and websites use just ``$\omega$'' for the driving frequency.  I have chosen to use ``$\omega_d$'' instead, to avoid confusion with  the regular ``$\omega$'' which we used for the natural frequency of a mass on a spring earlier in the lab.  Knight doesn't do quite as much with driving forces as we do in this lab, and he uses ``$f_{\rm ext}$'' for the frequency of this ``external'' driving force.
+
+The driving force used in this lab is not applied directly to the hanging mass; it's actually applied at the other end of the spring, a few coils from the top end. As a result, there are actually two available modes of oscillation.  When students drive the system away from the resonance frequency, they will likely see that the amplitude modulates periodically with time; the graph will often have a well defined beat frequency.  Note from Matt: I took this as an opportunity for a 3-minute diversion to talk about coupled oscillators and normal modes, with a quick demo: I hung two 1-kg masses from equal-length strings, connected by two of the light springs used in this lab (to double the length of the spring).  There's one mode of with the masses swinging in phase, and one mode with the masses swinging out of phase.  If I start only one mass swinging, then the masses alternate between having a large amplitude and having $A=0$.
 
 Equipment notes:
 
@@ -165,7 +167,7 @@ You can see from the equation above that any increase in $b$ reduces the angular
 
 In addition to a damping force, we can also add a periodic driving force, $F_{\rm drive}=F_0 \sin(\omega_d t)$ to our system.  This is an external force that keeps the oscillations going---just as you would be doing if you pumped your legs back and forth on a swing at a playground.  Such a system eventually reaches a steady state where the effect of the driving force (increasing the oscillations) and the damping force (decreasing the oscillations) exactly balance each other.  The steady state motion is described by
 \begin{equation}
-x = A \cos(\omega_d t),
+x = A \cos(\omega_d t + \phi),
 \end{equation}
 where it's important to note that the resulting angular frequency of the oscillator is the \textit{driving frequency} 
 $\omega_d$, not the natural frequency $\omega_0=\sqrt{k/m}$ of the mass and spring.  
