@@ -1,0 +1,126 @@
+\section{Some Activities in Relativity}
+
+\instructornote{%
+By Matt Trawick, 2019.  Time: 30-40 minutes
+
+}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\bigskip
+\textbf{Apparatus:}
+\begin{itemize}[nosep]
+\item \textit{Mathematica}, with notebook file \filename{minkowski\_events.nb}
+\end{itemize}
+
+
+\bigskip
+\textbf{Activity 1: Some Relative Velocity Exercises} 
+
+Problem 1: Anna can swim 2~m/s in still water.  She wants to swim across a river that flows east with a speed of 1~m/s.
+
+\begin{enumerate}[labparts]
+\item Suppose the river is 100~m wide.  If she aims directly north, how far downstream from her intended landing point will she end up?
+\answerspace{0.6in}
+
+\item What is her speed relative to the shore if she aims due north across the river, as in part (a)?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: 2.24~m/s}
+
+\item What is her speed relative to the shore if she swims at an angle so that she ends up on the shore directly across from where she started?  Drawing a picture below will help.
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: 1.73~m/s}
+
+\end{enumerate}
+
+Problem 2: Anna and Bob can both swim at speed $v_s$ in still water.  They decide to have a race in a river of width $L$ that flows at speed $v_r$.
+\begin{itemize}[nosep]
+\item Anna swims across the river and back.  She swims at an angle to the current so she returns exactly to her starting point.
+\item Bob swims up the river a distance $L$ (relative to the shore) and back, also returning exactly to his starting point. 
+\end{itemize}
+
+\begin{enumerate}[labparts]
+
+\item What is Anna's speed relative to the shore?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: $\sqrt{v_s^2-v_r^2}$}
+
+\item What is Bob's speed relative to the shore?  (Two speeds, up and back.)
+\answerspace{0.6in}
+
+%\hspace{\fill}\textit{Answers: $v_s-v_r$ and $v_s+v_r$}
+
+\item What is Anna's time for the round trip?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: $\displaystyle \frac{2L}{\sqrt{v_s^2-v_r^2}}$}
+
+\item What is Bob's time for the round trip?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: $\displaystyle \frac{2Lv_s}{(v_s^2-v_r^2)}$}
+
+\item Who wins the race? \textit{Hint: Put your answers to (c) and (d) over a common denominator.}
+\answerspace{0.8in}
+
+\end{enumerate}
+
+\bigskip
+\textbf{Activity 2: Drawing Spacetime Graphs} 
+
+A spacetime graph, also called a \textit{Minkowski diagram}, is just like a position vs. time graph, except that the axes are flipped.
+
+\begin{enumerate}[labparts]
+
+\item Suppose that you start at the origin and walk at a speed of 0.5~m/s to a vending machine located at $x=10$~m).  Once you are there, it takes you an additional 20 seconds to buy a candy bar.  You then return to your original starting place at a speed of 0.25~m/sec. On the axes below, draw a spacetime graph of the following situation.  This graph of your motion is called your ``worldline.''
+
+\begin{lab_axis}*[lab_grid,
+	width=3in, height=3in,
+	xlabel={Position (m)},
+	ylabel={Time (s)},
+	xmin=-40, xmax=40,
+	ymin=0, ymax=80,
+%	xtick distance = 4,
+%	ytick distance = 2,
+%	minor y tick num=1,
+%	minor x tick num=1,
+	]
+\end{lab_axis}
+
+\pagebreak[2]
+\item There are four ``events'' that take place in the graph you just drew:
+\begin{itemize}[nosep]
+\item You start walking at ($x=0$ m, $t=0$ s).
+\item Your arrival at the machine at ($x=10$ m, $t=20$ s).
+\item Your departure from the machine at ($x=10$ m, $t=40$ s).
+\item Your arrival back where you started ($x=0$ m, $t=80$ s).
+\end{itemize}
+Use the Galilean transforms that you developed in the previous lab to transform the $x$ coordinates of each of those events into a reference frame that starts with you at the origin at time $t=0$ and moves at a constant velocity of $v=+0.5$~m/s throughout your journey.
+\answerspace{1in}
+
+\item On the axes below, draw your ``worldline'' for your round-trip journey as seen in the moving reference frame above.
+
+\begin{lab_axis}*[lab_grid,
+	width=3in, height=3in,
+	xlabel={Position (m)},
+	ylabel={Time (s)},
+	xmin=-40, xmax=40,
+	ymin=0, ymax=80,
+%	xtick distance = 4,
+%	ytick distance = 2,
+%	minor y tick num=1,
+%	minor x tick num=1,
+	]
+\end{lab_axis}
+
+\item Open the file \filename{minkowski\_events.nb}, which will open in Mathematica.  Type \button{Ctrl-A} to select everything, and type \button{Shift-Enter} to excute all of the lines you have selected.  Then scroll down to the first graph you see, titled ``Galilean Transformation''.    It shows a spacetime graph for a regular grid of events, shown as blue dots.  Two particular events are highlighted in green.  As you move the slider left and right, you can see how the events transform into reference frames of different speeds.  Go ahead, try it!
+
+\item You can see the line of code above the graph that generates the two points at (5,1) and (3,2).  Edit these points, and add a third one, to show the last three points in your round-trip journey to the vending machine from part (a).  Divide both $x$ and $t$ by 10 to fit on the graph without having to rescale the axes.  When you are done editing, hit \button{Ctrl-Enter} to make the changes to the graph.
+
+\item Move the slider to view the events in a reference frame with speed $v=0.5$.  Do the results match with your graph above?
+
+\end{enumerate}
+
