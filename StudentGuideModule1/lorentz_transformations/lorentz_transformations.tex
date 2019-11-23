@@ -33,8 +33,6 @@ You have previously discussed a thought experiment in which Anna rides a train a
 \end{wrapfigure}
 emitted to when the photon returns to the laser.  Bob observes the same experiment, standing near the tracks beside the train.  
 
-
-
 \begin{enumerate}[labparts]
 
 \item  
@@ -44,7 +42,7 @@ On the axes below on the left, draw a spacetime graph (Minkowski diagram) of the
 \vspace{0.2in}
 
 \begin{center}
-\raisebox{0.7in}{\parbox{1in}{Galilean \newline Transformation:}}\hspace{0.2in}
+%\raisebox{0.7in}{\parbox{1in}{Galilean \newline Transformation:}}\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
 	xlabel={$x$},
@@ -53,11 +51,13 @@ On the axes below on the left, draw a spacetime graph (Minkowski diagram) of the
 	title={Anna's Frame}
 	]
 \end{lab_axis}
-\hspace{0.3in}
+\hspace{0.2in}
+\raisebox{0.72in}{$\xleftrightarrow[\mbox{Transformation}]{\mbox{Galilean}}$}
+\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
-	xlabel={$x$},
-	ylabel={$t$},
+	xlabel={$x'$},
+	ylabel={$t'$},
 	title style={at={(0.5,1)}},
 	title={Bob's Frame}
 	]
@@ -66,7 +66,7 @@ On the axes below on the left, draw a spacetime graph (Minkowski diagram) of the
 \begin{enumerate}[labparts,resume]
 
 \item 
-Now consider the same two events in the reference frame of Bob, who is standing beside the tracks so that the emission of the photon  happens at $x=0$ and $t=0$ in his reference frame too.
+Now consider the same two events in the reference frame of Bob, who is standing beside the tracks so that the emission of the photon  happens at $x'=0$ and $t'=0$ in his reference frame too.
 On the axes above on the right, draw a spacetime graph of these two events as seen in Bob's reference frame, according to the principle of Galilean relativity (as described the Galilean transformations).
 
 \item Once you have drawn your graph, you can check your answer by 
@@ -79,7 +79,7 @@ opening the file \filename{minkowski\_events.nb}, which will open in Mathematica
 \item On the axes below, redraw the two events as seen in Anna's reference frame on the axes to the left.  On the axes on the right, draw the two events as you know they should be, consistent with the principle of relativity.
 
 \begin{center}
-\raisebox{0.7in}{\parbox{1in}{Lorentz \newline Transformation:}}\hspace{0.2in}
+%\raisebox{0.7in}{\parbox{1in}{Lorentz \newline Transformation:}}\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
 	xlabel={$x$},
@@ -88,11 +88,13 @@ opening the file \filename{minkowski\_events.nb}, which will open in Mathematica
 	title={Anna's Frame}
 	]
 \end{lab_axis}
-\hspace{0.3in}
+\hspace{0.2in}
+\raisebox{0.72in}{$\xleftrightarrow[\mbox{Transformation}]{\mbox{Lorentz}}$}
+\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
-	xlabel={$x$},
-	ylabel={$t$},
+	xlabel={$x'$},
+	ylabel={$t'$},
 	title style={at={(0.5,1)}},
 	title={Bob's Frame}
 	]
@@ -110,7 +112,7 @@ Anna rides on a train in the $+x$ direction.  Facing the side of a train car, sh
 \item On the axes below on the left, draw a spacetime diagram in the reference frame of Anna showing three events: each of the two lightbulbs turning on, and the photons from both bulbs arriving at the tip of Anna's nose.  Take the photons arriving at Anna's nose to happen at $x=0$ and $t=0$.  On the axes to the right, draw the same three events as they would occur in Bob's reference frame, moving to the left with velocity $v=-0.5c$, \textit{according to the Galilean transformations.}
 
 \begin{center}
-\raisebox{0.7in}{\parbox{1in}{Galilean \newline Transformation:}}\hspace{0.2in}
+%\raisebox{0.7in}{\parbox{1in}{Galilean \newline Transformation:}}\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
 	xlabel={$x$},
@@ -118,15 +120,21 @@ Anna rides on a train in the $+x$ direction.  Facing the side of a train car, sh
 	title style={at={(0.5,1)}},
 	title={Anna's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
-\hspace{0.3in}
+\hspace{0.2in}
+\raisebox{0.72in}{$\xleftrightarrow[\mbox{Transformation}]{\mbox{Galilean}}$}
+\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
-	xlabel={$x$},
-	ylabel={$t$},
+	xlabel={$x'$},
+	ylabel={$t'$},
 	title style={at={(0.5,1)}},
 	title={Bob's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
 \end{center}
 
@@ -140,7 +148,7 @@ Anna rides on a train in the $+x$ direction.  Facing the side of a train car, sh
 \item On the axes below, redraw the same three events in both Anna's reference frame and Bob's reference frame, according to the Lorentz transformation.  You can try it on your own first if you like, then use the Lorentz Transformation simulation in Mathematica to confirm or correct your understanding.
 
 \begin{center}
-\raisebox{0.7in}{\parbox{1in}{Lorentz \newline Transformation:}}\hspace{0.2in}
+%\raisebox{0.7in}{\parbox{1in}{Lorentz \newline Transformation:}}\hspace{0.2in}
 \begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
 	xlabel={$x$},
@@ -148,15 +156,20 @@ Anna rides on a train in the $+x$ direction.  Facing the side of a train car, sh
 	title style={at={(0.5,1)}},
 	title={Anna's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
-\hspace{0.3in}
-\begin{lab_axis}[lab_noticks_4quads,
+\hspace{0.2in}
+\raisebox{0.72in}{$\xleftrightarrow[\mbox{Transformation}]{\mbox{Lorentz}}$}
+\hspace{0.2in}\begin{lab_axis}[lab_noticks_4quads,
 	width=1.5in, height=1.5in,
-	xlabel={$x$},
-	ylabel={$t$},
+	xlabel={$x'$},
+	ylabel={$t'$},
 	title style={at={(0.5,1)}},
 	title={Bob's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
 \end{center}
 
