@@ -3,6 +3,11 @@
 \instructornote{%
 By Matt Trawick, 2019.  Time: 30-40 minutes
 
+This lab assumes that students have already seen the Galilean transformations, for instance as developed at the end of the lab "Galilean Relativity."
+
+Activity 1 is just practice making a spacetime graph, and transforming coordinates according to the Galilean transformations.  It introduces a Mathematica simulation to help build some intuition for transformations between reference frames.  The same Mathematica file also contains a nearly identical simulation that performs Lorentz Transformations, but this lab doesn't use it yet.
+
+Activity 2 is a quick exercise in the idea of Galilean relativity, with two quick problems involving swimming across a river.  In the first problem, the first two parts are cribbed directly from Knight, 3rd edition, problem 4.17.  The second problem, swimming parallel vs. perpendicular to the current, is explicitly designed to prepare students for some future discussion of the Michelson-Morley experiment.  There's no particular reason to do Activity 2 if you don't plan to mention the Michelson-Morley experiment.
 }
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
@@ -14,62 +19,9 @@ By Matt Trawick, 2019.  Time: 30-40 minutes
 \end{itemize}
 
 
-\bigskip
-\textbf{Activity 1: Some Relative Velocity Exercises} 
-
-Problem 1: Anna can swim 2~m/s in still water.  She wants to swim across a river that flows east with a speed of 1~m/s.
-
-\begin{enumerate}[labparts]
-\item Suppose the river is 100~m wide.  If she aims directly north, how far downstream from her intended landing point will she end up?
-\answerspace{0.6in}
-
-\item What is her speed relative to the shore if she aims due north across the river, as in part (a)?
-\answerspace{0.6in}
-
-\hspace{\fill}\textit{Answer: 2.24~m/s}
-
-\item What is her speed relative to the shore if she swims at an angle so that she ends up on the shore directly across from where she started?  Drawing a picture below will help.
-\answerspace{0.6in}
-
-\hspace{\fill}\textit{Answer: 1.73~m/s}
-
-\end{enumerate}
-
-Problem 2: Anna and Bob can both swim at speed $v_s$ in still water.  They decide to have a race in a river of width $L$ that flows at speed $v_r$.
-\begin{itemize}[nosep]
-\item Anna swims across the river and back.  She swims at an angle to the current so she returns exactly to her starting point.
-\item Bob swims up the river a distance $L$ (relative to the shore) and back, also returning exactly to his starting point. 
-\end{itemize}
-
-\begin{enumerate}[labparts]
-
-\item What is Anna's speed relative to the shore?
-\answerspace{0.6in}
-
-\hspace{\fill}\textit{Answer: $\sqrt{v_s^2-v_r^2}$}
-
-\item What is Bob's speed relative to the shore?  (Two speeds, up and back.)
-\answerspace{0.6in}
-
-%\hspace{\fill}\textit{Answers: $v_s-v_r$ and $v_s+v_r$}
-
-\item What is Anna's time for the round trip?
-\answerspace{0.6in}
-
-\hspace{\fill}\textit{Answer: $\displaystyle \frac{2L}{\sqrt{v_s^2-v_r^2}}$}
-
-\item What is Bob's time for the round trip?
-\answerspace{0.6in}
-
-\hspace{\fill}\textit{Answer: $\displaystyle \frac{2Lv_s}{(v_s^2-v_r^2)}$}
-
-\item Who wins the race? \textit{Hint: Put your answers to (c) and (d) over a common denominator.}
-\answerspace{0.8in}
-
-\end{enumerate}
 
 \bigskip
-\textbf{Activity 2: Drawing Spacetime Graphs} 
+\textbf{Activity 1: Drawing Spacetime Graphs} 
 
 A spacetime graph, also called a \textit{Minkowski diagram}, is just like a position vs. time graph, except that the axes are flipped.
 
@@ -116,7 +68,7 @@ Use the Galilean transforms that you developed in the previous lab to transform 
 	]
 \end{lab_axis}
 
-\item Open the file \filename{minkowski\_events.nb}, which will open in Mathematica.  Type \button{Ctrl-A} to select everything, and type \button{Shift-Enter} to excute all of the lines you have selected.  Then scroll down to the first graph you see, titled ``Galilean Transformation''.    It shows a spacetime graph for a regular grid of events, shown as blue dots.  Two particular events are highlighted in green.  As you move the slider left and right, you can see how the events transform into reference frames of different speeds.  Go ahead, try it!
+\item Open the file \filename{minkowski\_events.nb}, which will open in Mathematica.  Type \button{Ctrl-A} to select everything, and type \button{Shift-Enter} to execute all of the lines you have selected.  Then scroll down to the first graph you see, titled ``Galilean Transformation''.    It shows a spacetime graph for a regular grid of events, shown as blue dots.  Two particular events are highlighted in green.  As you move the slider left and right, you can see how the events transform into reference frames of different speeds.  Go ahead, try it!
 
 \item You can see the line of code above the graph that generates the two points at (5,1) and (3,2).  Edit these points, and add a third one, to show the last three points in your round-trip journey to the vending machine from part (a).  Divide both $x$ and $t$ by 10 to fit on the graph without having to rescale the axes.  When you are done editing, hit \button{Ctrl-Enter} to make the changes to the graph.
 
@@ -124,3 +76,56 @@ Use the Galilean transforms that you developed in the previous lab to transform 
 
 \end{enumerate}
 
+\bigskip
+\textbf{Activity 2: Crossing a River} 
+
+Problem 1: Anna can swim 2~m/s in still water.  She wants to swim across a river that flows east with a speed of 1~m/s.
+
+\begin{enumerate}[labparts]
+\item Suppose the river is 100~m wide.  If she aims directly north, how far downstream from her intended landing point will she end up?
+\answerspace{0.6in}
+
+\item What is her speed relative to the shore if she aims due north across the river, as in part (a)?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: 2.24~m/s}
+
+\item What is her speed relative to the shore if she swims at an angle so that she ends up on the shore directly across from where she started?  Drawing a picture below will help.
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: 1.73~m/s}
+
+\end{enumerate}
+
+Problem 2: Anna and Bob can both swim at speed $v_s$ in still water.  They decide to have a race in a river of width $L$ that flows east at speed $v_r$.
+\begin{itemize}[nosep]
+\item Anna swims across the river and back.  She swims at an angle to the current so she returns   exactly to her starting point.  (Anna swims north, then south.)
+\item Bob swims upstream in the river against the current for a distance $L$ (relative to the shore), then swims back downstream with the current, also returning exactly to his starting point. (Bob swims west, then east).
+\end{itemize}
+
+\begin{enumerate}[labparts]
+
+\item What is Anna's speed relative to the shore?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: $\sqrt{v_s^2-v_r^2}$}
+
+\item What is Bob's speed relative to the shore when he swims upstream?  What is his speed relative to the shore when he swims downstream?
+\answerspace{0.6in}
+
+%\hspace{\fill}\textit{Answers: $v_s-v_r$ and $v_s+v_r$}
+
+\item What is Anna's time for her round trip?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: $\displaystyle \frac{2L}{\sqrt{v_s^2-v_r^2}}$}
+
+\item What is Bob's time for his round trip?
+\answerspace{0.6in}
+
+\hspace{\fill}\textit{Answer: $\displaystyle \frac{2Lv_s}{(v_s^2-v_r^2)}$}
+
+\item Who wins the race? \textit{Hint: Put your answers to (c) and (d) over a common denominator.}
+\answerspace{0.8in}
+
+\end{enumerate}
