@@ -1,10 +1,9 @@
 \section{The Pole and Barn Paradox}
-%By Matt Trawick.
 
 \makelabheader %(Space for student name, etc., defined in master.tex)
 
 \instructornote{%
-By Matt, added to 131 in 2019.  Time: 50 minutes?
+By Matt Trawick, added to 131 in 2019.  Time: 35 minutes
 
 This lab has been used in Modern for many years before 2019.  It assumes students are familiar with the ideas of length contraction and lorentz transforms.  It doesn't give a lot of introduction to the Mathematica simulation, so it probably kind of assumes they've seen that before in previous labs too.  Otherwise, there is no specific introduction necessary for this lab; it is self-contained.
 }
@@ -55,12 +54,12 @@ From the graph, how long is the barn according to Anna? \label{part_approx_barn_
 \item Now move the slider back to Bob's reference frame. According to Bob, at what time is the pole exactly centered inside the barn?
 \answerspace{0.6in}
 
-\item There are two red dots in the graph at a random location. Edit the Mathematica file in the line that looks like
-$$\verb!ListPlot[{lorentz[n,n,v],lorentz[n,n,v]},PlotStyle→{PointSize[Large],Red}]!$$
-to change the coordinates (the n values) of those dots so that they mark the space and time coordinates of the closing of the two barn doors in Bob's reference frame. What are those exact coordinates?
+\item There are two red dots in the graph at random locations. Edit the Mathematica file in the line that looks like
+$$\verb!ListPlot[{lorentz[-2.5,5.5,v],lorentz[-3,4.5,v]},PlotStyle ->{PointSize[Large],Red}]!$$
+to change the coordinates of those dots so that they mark the space and time coordinates of the closing of the two barn doors in Bob's reference frame. What are those exact coordinates?
 \answerspace{0.8in}
 
-\item Describe the sequence of events in Bob's reference frame (move upward in time).  An event description would be something like ``right end of pole passes open left barn door'' (the first event).
+\item Describe the sequence of events in Bob's reference frame (move upward in time).  An event description would be something like ``right end of pole passes open left barn door'' (the first event), or ``right end of pole crashes through right barn door.''
 \answerspace{1.1in}
 
 

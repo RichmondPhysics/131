@@ -1,13 +1,15 @@
 \section{Galilean Transformations and Lorentz Transformations}
 
 \instructornote{%
-By Matt Trawick, 2019.  Time: ?
+By Matt Trawick, 2019.  Time: 40 minutes
+
+This lab doesn't do much in the way of 
 
 Activity 1 assumes that students have already seen the idea of time dilation and the Lorentz factor $\gamma$, probably by analyzing this exact situation with Anna, Bob, a train, and a flashlight, as in a previous lab.
 
 Activity 2 assumes that students have been introduced to the idea that simultaneity is relative, again, probably by having seen this exact same situation of Anna on a train with two lightbulbs.
 
-Someday I might write an Activity 3 that would clarify the difference between proper distance and proper length.
+Someday Matt might write an Activity 3 that would focus on the difference between proper distance and proper length.
 }
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
@@ -50,6 +52,8 @@ On the axes below on the left, draw a spacetime graph (Minkowski diagram) of the
 	title style={at={(0.5,1)}},
 	title={Anna's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
 \hspace{0.2in}
 \raisebox{0.72in}{$\xleftrightarrow[\mbox{Transformation}]{\mbox{Galilean}}$}
@@ -61,6 +65,8 @@ On the axes below on the left, draw a spacetime graph (Minkowski diagram) of the
 	title style={at={(0.5,1)}},
 	title={Bob's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
 \end{center}
 \begin{enumerate}[labparts,resume]
@@ -70,7 +76,7 @@ Now consider the same two events in the reference frame of Bob, who is standing 
 On the axes above on the right, draw a spacetime graph of these two events as seen in Bob's reference frame, according to the principle of Galilean relativity (as described the Galilean transformations).
 
 \item Once you have drawn your graph, you can check your answer by 
-opening the file \filename{minkowski\_events.nb}, which will open in Mathematica.  Type \button{Ctrl-A} to select everything, and type \button{Shift-Enter} to excute all of the lines you have selected.  Then scroll down to the first graph you see, titled ``Galilean Transformation''.  You will need to edit the line that graphs the two green points.  Make any corrections needed on your graphs above.
+opening the file \filename{minkowski\_events.nb}, which will open in Mathematica.  Type \button{Ctrl-A} to select everything, and type \button{Shift-Enter} to excute all of the lines you have selected.  Then scroll down to the first graph you see, titled ``Galilean Transformation''.  You can see the line of code above the graph that generates the two points at (5,1) and (3,2). Edit the locations of those points to the values for the two events in Anna's reference frame, and hit \button{Shift-Enter} to excute your changes.  Use the slider to see the events in Bob's reference frame, and make any corrections needed on your graphs above.
 
 \item The graph you drew for Bob's reference frame is inconsistent with the principle of relativity, because it implies that the speed of light is not the same in all reference frames.  In Anna's frame, light travels only the vertical distance down and back in some time $t$.  In Bob's frame, the light travels a longer, diagonal path.  According to the Galilean transformations, it does so in the same time $t$ as in Anna's frame, which would mean that Bob would see the light going faster than Anna does.  To correct this, would the time $t$ of the light returning to the flashlight be \textit{earlier} or \textit{later} than in Anna's frame?
 \answerspace{0.4in}
@@ -87,6 +93,8 @@ opening the file \filename{minkowski\_events.nb}, which will open in Mathematica
 	title style={at={(0.5,1)}},
 	title={Anna's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
 \hspace{0.2in}
 \raisebox{0.72in}{$\xleftrightarrow[\mbox{Transformation}]{\mbox{Lorentz}}$}
@@ -98,10 +106,17 @@ opening the file \filename{minkowski\_events.nb}, which will open in Mathematica
 	title style={at={(0.5,1)}},
 	title={Bob's Frame}
 	]
+\addplot +[dashed, thin, gray] {x};
+\addplot +[dashed, thin, gray] {-x};
 \end{lab_axis}
 \end{center}
 
-\item Once you have drawn your graph, you can check your answers again using the same Mathematica simulation as before, but this time scroll down further to the second graph, titled "Lorentz Transformation''.  Again, edit the positions of the two green points, and move the slider to represent the speed of Bob's reference frame relative to Anna's.  Was your prediction correct?  Note any corrections on the graphs above, as needed. 
+  
+
+\item Now that you have drawn your graph above, you can check your answers again using the same Mathematica simulation as before, but this time scroll down further to the second graph, titled "Lorentz Transformation''.  Again, edit the positions of the two green points, and move the slider to represent the speed of Bob's reference frame relative to Anna's.  Was your prediction correct?  Note any corrections on the graphs above, as needed. 
+
+\medskip
+Galilean transformations just don't account for relativistic effects like time dilation or length contraction at very high speeds, though they are an excellent approximation at low speeds, $v \ll c$.  The second graph in the Mathematica file uses \textit{Lorentz transformations} instead, which properly account for changes in space and time at high speeds. 
 \end{enumerate}
 
 \textbf{Activity 2: Simultaneity and the Speed of Light}
