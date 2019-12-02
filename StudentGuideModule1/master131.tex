@@ -2,7 +2,7 @@
 
 \input{labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
 \newcommand{\coursefolder}{Phys131} %This defines the place students will look for various files
-%\ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
+\ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
 
 %The \includeonly line below is a great way to save time so you don't always have to compile the WHOLE latex document, if for instance you've only made changes to a single lab.  If you want to compile more than two labs, the syntax is \includeonly{lab1,lab2,lab3} with no spaces after the commas.
 %The master.pdf produced will have only the title page, TOC, and that single lab, though the other lab names will appear in the TOC.
@@ -54,13 +54,13 @@
 
 \includelab{1}{force1/force1}
 \includelab{1}{force2/force2}
-\includelab{0}{combining/combining}
+\includelab{1}{combining/combining}
 \includelab{1}{force_mass/force_mass}
 \includelab{1}{gravity_normal_elevators/gravity_normal_elevators}
 \includelab{1}{newton/newton}
-\includelab{0}{atwood/atwood}
+\includelab{1}{atwood/atwood}
 \includelab{1}{friction/friction}
-\includelab{1}{check_your_units/check_your_units}
+\includelab{0}{check_your_units/check_your_units}
 \includelab{1}{drag_force/drag_force}
 \includelab{1}{elec_grav/elec_grav}
 \includelab{1}{centripetal/centripetal}
@@ -84,7 +84,7 @@
 %--------------------------------------------
 \part{Rotational Motion}
 
-\includelab{0}{ang_lin_displacement/ang_lin_displacement}
+\includelab{1}{ang_lin_displacement/ang_lin_displacement}
 \includelab{1}{rotation/rotation}
 \includelab{1}{tangential_and_centripetal_acc/tangential_and_centripetal_acc}
 \includelab{1}{moment_inertia_feel/moment_inertia_feel}
@@ -107,12 +107,12 @@
 %--------------------------------------------
 \part{Relativity}
 
-\includelab{1}{galilean_relativity/galilean_relativity}
+\includelab{0}{galilean_relativity/galilean_relativity}
 \includelab{1}{galilean_exercises/galilean_exercises}
 \includelab{1}{time_dilation_length_contraction/time_dilation_length_contraction} 
 \includelab{1}{lorentz_transformations/lorentz_transformations}
 \includelab{1}{pole_and_barn/pole_and_barn} 
-\includelab{1}{twins_paradox/twins_paradox}
+\includelab{0}{twins_paradox/twins_paradox}
 
 %--------------------------------------------
 \startappendix
@@ -121,7 +121,7 @@
 \includelab{1}{appendices/capstone/capstone}
 %\includelab{0}{appendices/video_analysis/video_analysis} %obsolete
 \includelab{1}{appendices/video_analysis_tracker/video_analysis_tracker}
-\includelab{1}{appendices/ipads/ipads}
+\includelab{0}{appendices/ipads/ipads}
 \includelab{1}{appendices/instrumentation/instrumentation}
 \includelab{1}{appendices/excel/excel}
 \includelab{1}{appendices/treatment_data}
