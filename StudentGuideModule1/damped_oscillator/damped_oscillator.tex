@@ -11,11 +11,13 @@ $F_{\rm drag} \propto v^2$.  In fact, I'm pretty sure this means that the decay 
 
 Note on notation, from Matt: Many books and websites use just ``$\omega$'' for the driving frequency.  I have chosen to use ``$\omega_d$'' instead, to avoid confusion with  the regular ``$\omega$'' which we used for the natural frequency of a mass on a spring earlier in the lab.  Knight doesn't do quite as much with driving forces as we do in this lab, and he uses ``$f_{\rm ext}$'' for the frequency of this ``external'' driving force.
 
-The driving force used in this lab is not applied directly to the hanging mass; it's actually applied at the other end of the spring, a few coils from the top end. As a result, there are actually two available modes of oscillation.  When students drive the system away from the resonance frequency, they will likely see that the amplitude modulates periodically with time; the graph will often have a well defined beat frequency.  Note from Matt: I took this as an opportunity for a 3-minute diversion to talk about coupled oscillators and normal modes, with a quick demo: I hung two 1-kg masses from equal-length strings, connected by two of the light springs used in this lab (to double the length of the spring).  There's one mode of with the masses swinging in phase, and one mode with the masses swinging out of phase.  If I start only one mass swinging, then the masses alternate between having a large amplitude and having $A=0$.
+The driving force used in this lab is not applied directly to the hanging mass; it's actually applied at the other end of the spring, a few coils from the top end. As a result, there are actually two available modes of oscillation.  When students drive the system away from the resonance frequency, they will likely see that the amplitude modulates periodically with time; the graph will often have a well-defined beat frequency.  Note from Matt: I took this as an opportunity for a 3-minute diversion to talk about coupled oscillators and normal modes, with a quick demo: I hung two 1-kg masses from equal-length strings, connected by two of the light springs used in this lab (to double the length of the spring).  There's one mode of with the masses swinging in phase, and one mode with the masses swinging out of phase.  If I start only one mass swinging, then the masses alternate between having a large amplitude and having $A=0$.
+
+For reading off amplitudes in the last part, students will want to either expand the scale greatly, or else use the Delta tool.  If they use the delta tool, they'll need to increase the number of digits it gives.
 
 Equipment notes:
 
-This lab uses light spring, with a spring constant of $\approx 0.3$~N/m.  
+This lab uses light spring, with a spring constant of $\approx 3$~N/m.  
 }
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
@@ -96,6 +98,7 @@ Well, let's try it!  Hang a 50~g mass on the spring, over the edge of the table.
 \answerspace{0.6in}
 
 The piece that was missing from our description of simple harmonic motion so far is an additional ``damping force'' that slows the system down over time.  The damping force could be a frictional force, $F_{\rm fric}=\mu_k F_{\rm normal}$,  from two things rubbing together, or it could be a drag force, $F_{\rm drag} = \frac{1}{2}C_d A \rho v^2$, from an object moving through the air.  
+(Here $A$ is the object's cross-sectional area, $\rho$ is the density of the air, and $C_d$ is a dimensionless ``drag coefficient'' that depends on the object's shape.)
 But both of those are mathematically difficult to analyze.  Instead, we'll use a slightly different model for drag force that assumes $F_{\rm drag}$ is proportional to $v$, not $v^2$:
 \begin{equation}
 F_{\rm drag}=-bv,
