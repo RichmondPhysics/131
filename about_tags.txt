@@ -1,0 +1,10 @@
+
+To make tag:
+git tag -m "message to say about it" 2015fall
+
+To see tags:
+git tag
+
+To push tags:
+git push origin --tags
+
