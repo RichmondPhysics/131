@@ -1,0 +1,134 @@
+
+\section{The Derivatives of the Sine and Cosine Function\footnote{
+1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE
+(U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified
+locally and may not have been classroom tested at Dickinson College.
+}}
+
+\makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
+
+\medskip
+\textbf{Objectives }
+
+\begin{itemize}[nosep]
+\item Develop mathematical tools to study the harmonic oscillator.
+\item To apply an oft-used approximation to the sine and cosine functions function to calculate their derivatives.
+\item To compare the previous results to analytical methods.
+\end{itemize}
+\textbf{Overview }
+
+Periodic motion is common in nature and the simple harmonic oscillator ({\it i.e.} a spring) is
+a common example.
+The motion of a system undergoing such motion is usually described with sine
+and/or cosine functions like the following
+\begin{equation}
+x(t) = A\cos(\omega t + \phi)
+\end{equation}
+where $A$ is the amplitude of the oscillation, $\omega$ is the angular frequency, $\phi$ is the
+phase angle, and $t$ is time.
+Inserting this expression for $x(t)$ into Newton's Second Law for an oscillator
+with spring constant $k$
+\begin{equation}
+F_s = -kx = ma = m\frac{d^2x}{dt^2}
+\end{equation}
+which shows we need to take derivatives of the sine and cosine to study the harmonic oscillator.
+
+\textbf{Activity 1: The Derivative of the Sine} 
+
+The definition of the derivative of a function $f(t)$ is 
+\begin{equation}
+\frac{d f(t)}{dt} = \lim_{\Delta t \rightarrow 0} \frac{f(t+\Delta t) - f(t)}{\Delta t}
+\end{equation}
+which can be approximated as
+\begin{equation}
+\frac{d f(t)}{dt} \approx \frac{f(t+\Delta t) - f(t)}{\Delta t}
+\end{equation}\label{eq:approx}
+if $\Delta t$ is small enough.
+We will use this approximation to calculate derivatives and compare the results
+with the analytical form of the derivatives.
+
+(a) First make a plot of the sine function using {\it Excel}. 
+There are instructions in Appendix E of {\it Physics For Doing!}
+Use the first column to hold the angles for the points along the curve.
+Go to the top row of the first column and
+enter `Angle' (cell A1).
+Go to the cell below (cell A2) and enter `=(ROW()-2)*0.1' where the
+`ROW()' function returns the value of the row for that cell. We subtract two from
+the row number so the sine curve will start at zero, and then multiply by a
+scale factor 0.1 which corresponds to a time step of $0.1~s$.
+
+(b) Click in the A2 cell and then click and drag down on the small square in the lower, right corner
+of the cell. Drag down to row 65 of so.
+{\it Excel} will fill the cells with the angle data.
+Enter `Sine' in cell B1 at the top of the second column.
+Click in cell B2, enter `=SIN(A2)'.
+Click and drag down on the square in the lower, right corner of cell B2 to the same bottom row 
+you used before.
+
+(c) Now make a scatterplot the data in columns A and B. Highlight both columns of data and 
+go to {\tt Insert} and select scatterplot in the {\tt Charts} menu. You should see 
+a plot of the sine.
+
+\pagebreak 
+
+(d) Now go to cell C1 and enter `dx/dt'. In cell C2 calculate the slope of the sine
+function between the time for this row and the next one (row 3).
+Click and drag the small square in the lower, right corner of
+cell C2 to the second to last row of your angle calculation.
+Why shouldn't you go all the way to the last row?
+
+\vspace{1.8cm}
+
+(e) Add the data in column C to your plot. Right-click in your plot and then left-click
+on `Select data'. You should see the `Select Data Source' window. Click {\tt Add}.
+You should now get the `Edit Series' window. Make the appropriate entries
+for the series name, $x$ values, and $y$ values.
+When you're done making the plot, click on the large plus sign at upper, right and check
+the boxes for `Legend' and `Axis Titles'.
+
+(f) What familiar function does the approximate derivative curve look like?
+If you're having trouble with this, consult your instructor.
+
+\vspace{1.8cm}
+
+(g) Your curve for $dx/dt$ should closely resemble a cosine which is equal
+to the derivative of the sine function.
+To check the accuracy of your approximation add a cosine curve to your plot
+using the same techniques described in steps (b) and (e). 
+How does the cosine curve compare with your approximate derivative of the sine.
+
+\vspace{1.8cm}
+
+You should have found your approximate derivative of the sine function closely 
+resembles the cosine.
+This is the type of approximation routinely used in physics, for example, in the labs
+where you measure velocity and acceleration extracted from position measurements.
+Keep your spreadsheet and plot for Activity 2.
+Print your plot and attach it to this unit.
+
+
+\textbf{Activity 2: The Derivative of the Cosine} 
+
+Since we will also need the derivative of the cosine function in our study of the
+harmonic oscillator, we now apply the same approximate derivative formula (Eq. 4)
+to the cosine.
+
+(a) You should already have the data for a cosine curve in your spreadsheet.
+Use that data and the same procedures used in Activities 1.(d)-(e) to calculate
+the derivative of the cosine and add that data to your spreadsheet.
+
+(b) Add the data for the approximate derivative of the cosine to your plot.
+What familiar function does the approximate derivative curve resemble?
+If you're having trouble with this, consult your instructor.
+
+\vspace{1.8cm}
+
+(c) How does the sine curve on your plot from Activity 1 compare with 
+your approximate derivative of the cosine?
+
+\vspace{1.8cm}
+
+You should have found your approximate derivative of the cosine function closely 
+resembles the negative of the sine.
+We will use both of these derivatives demonstrated here frequently
+when investigating the simple harmonic oscillator.
