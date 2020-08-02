@@ -3,7 +3,7 @@
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
-\medskip
+\bigskip
 \textbf{Objectives }
 
 \begin{itemize}[nosep]
@@ -11,6 +11,8 @@
 \item To apply an oft-used approximation to the sine and cosine functions function to calculate their derivatives.
 \item To compare the previous results to analytical methods.
 \end{itemize}
+
+\medskip
 \textbf{Overview }
 
 Periodic motion is common in nature and the simple harmonic oscillator ({\it i.e.} a spring) is
@@ -33,12 +35,13 @@ which shows we need to take derivatives of the sine and cosine to study the harm
 
 The definition of the derivative of a function $f(t)$ is 
 \begin{equation}
-\frac{d f(t)}{dt} = \lim_{\Delta t \rightarrow 0} \frac{f(t+\Delta t) - f(t)}{\Delta t}
+\frac{d \, f \! (t)}{dt} = \lim_{\Delta t \rightarrow 0} \frac{f(t+\Delta t) - f(t)}{\Delta t}
 \end{equation}
 which can be approximated as
 \begin{equation}
-\frac{d f(t)}{dt} \approx \frac{f(t+\Delta t) - f(t)}{\Delta t}
-\end{equation}\label{eq:approx}
+\frac{d \, f \! (t)}{dt} \approx \frac{f(t+\Delta t) - f(t)}{\Delta t}
+\label{eq:approx}
+\end{equation}
 if $\Delta t$ is small enough.
 We will use this approximation to calculate derivatives and compare the results
 with the analytical form of the derivatives.
