@@ -2,11 +2,11 @@
 
 \input{labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
 \newcommand{\coursefolder}{Phys131} %This defines the place students will look for various files
-%\ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
+\ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
 
 %The \includeonly line below is a great way to save time so you don't always have to compile the WHOLE latex document, if for instance you've only made changes to a single lab.  If you want to compile more than two labs, the syntax is \includeonly{lab1,lab2,lab3} with no spaces after the commas.
 %The master.pdf produced will have only the title page, TOC, and that single lab, though the other lab names will appear in the TOC.
-%\includeonly{tangential_and_centripetal_acc/tangential_and_centripetal_acc}
+%\includeonly{appendices/instrumentation/vernier_caliper}
 
 %Use the following line to override all of the 1's and 0's in the \includelab statements below
 %\includealllabstrue
@@ -113,7 +113,7 @@
 \part{Relativity}
 
 \includelab{1}{galilean_relativity/galilean_relativity}
-\includelab{0}{galilean_exercises/galilean_exercises}
+\includelab{1}{galilean_exercises/galilean_exercises}
 \includelab{0}{time_dilation_length_contraction/time_dilation_length_contraction} 
 \includelab{0}{lorentz_transformations/lorentz_transformations}
 \includelab{0}{pole_and_barn/pole_and_barn} 
@@ -127,7 +127,8 @@
 %\includelab{0}{appendices/video_analysis/video_analysis} %obsolete
 \includelab{1}{appendices/video_analysis_tracker/video_analysis_tracker}
 \includelab{0}{appendices/ipads/ipads}
-\includelab{1}{appendices/instrumentation/instrumentation}
+\includelab{0}{appendices/instrumentation/instrumentation}
+\includelab{1}{appendices/instrumentation/vernier_caliper}
 \includelab{1}{appendices/excel/excel}
 \includelab{1}{appendices/treatment_data}
 \includelab{1}{appendices/one_page_uncertainty/one_page_uncertainty}
