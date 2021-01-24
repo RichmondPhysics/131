@@ -111,7 +111,15 @@
 	\fi
 	}
 }
-
+% Note on 1/24/2021 by MT: 
+% It appears that a recent (~2020) update of MikTeX has changed the behavior or the import package.
+% It used to be that if the 132 master.tex file used the example above to include the velocity lab from the 131 
+% directory, the aux file would be written inside the 132 directory structure in ./velocity .  Now, the aux file is
+% written in ../../131/StudentGuideModule1/velocity, which is not allowed and causes an error.  
+% (Tex does not allow itself to write anything to a parent or sibling directory, only to a daughter directory.)
+% For now, my workaround has been to override this safety feature by setting an environment variable:
+%           MIKTEX_ALLOWUNSAFEOUTPUTFILES=1
+% But this is not ideal.
 
 %---------------------------------------------------------------------------------------------------
 %Packages and new commands providing general utilities
