@@ -23,6 +23,7 @@
 **/*.synctex
 **/*.synctex.gz
 **/*.synctex.gz(busy)
+**/*.synctex(busy)
 **/*.pdfsync
 
 # Finally, ignore the pdf files created in the main directory:
