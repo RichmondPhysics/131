@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[     14300,        342]
-NotebookOptionsPosition[     13782,        321]
-NotebookOutlinePosition[     14203,        337]
-CellTagsIndexPosition[     14160,        334]
+NotebookDataLength[     15483,        363]
+NotebookOptionsPosition[     14469,        338]
+NotebookOutlinePosition[     14978,        356]
+CellTagsIndexPosition[     14935,        353]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -39,7 +39,8 @@ Cell[BoxData[
        RowBox[{"v", " ", "x"}]}], ")"}], "/", 
      RowBox[{"Sqrt", "[", 
       RowBox[{"1", "-", 
-       RowBox[{"v", "^", "2"}]}], "]"}]}]}], "}"}]}]], "Input"],
+       RowBox[{"v", "^", "2"}]}], "]"}]}]}], "}"}]}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"3f01f5b2-e8ec-4389-a308-48dae3d27ea3"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -59,7 +60,8 @@ Cell[BoxData[
       SuperscriptBox["v", "2"]}]]]}], "}"}]], "Output",
  CellChangeTimes->{3.3984496236595297`*^9, 3.4296085042379875`*^9, 
   3.5559503014261465`*^9, 3.5560159214753675`*^9, 3.5874607337884665`*^9, 
-  3.783701457514138*^9, 3.783702348230423*^9}]
+  3.825314860169566*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"1c98a50d-ac5d-4201-9c60-b84261edd661"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -104,9 +106,13 @@ Cell[BoxData[
            RowBox[{"AxesLabel", "\[Rule]", 
             RowBox[{"{", 
              RowBox[{
-              RowBox[{"x", "'"}], ",", 
-              RowBox[{"ct", "'"}]}], "}"}]}]}], "]"}], ",", 
-         "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"x", "'"}], ",", "14"}], "]"}], ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"ct", "'"}], ",", "14"}], "]"}]}], "}"}]}]}], "]"}], 
+         ",", "\[IndentingNewLine]", 
          RowBox[{"ListPlot", "[", 
           RowBox[{
            RowBox[{"{", 
@@ -165,6 +171,22 @@ Cell[BoxData[
             RowBox[{
              RowBox[{"lorentz", "[", 
               RowBox[{
+               RowBox[{"-", "3"}], ",", "4", ",", "v"}], "]"}], ",", 
+             RowBox[{"lorentz", "[", 
+              RowBox[{
+               RowBox[{"-", "3"}], ",", "4.5", ",", "v"}], "]"}]}], "}"}], 
+           ",", 
+           RowBox[{"PlotStyle", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red"}], 
+             "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"ListPlot", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"lorentz", "[", 
+              RowBox[{
                RowBox[{"-", "100"}], ",", 
                RowBox[{"-", "100"}], ",", "0"}], "]"}], ",", 
              RowBox[{"lorentz", "[", 
@@ -181,23 +203,7 @@ Cell[BoxData[
             RowBox[{"{", 
              RowBox[{"Dashed", ",", " ", 
               RowBox[{"PointSize", "[", "Large", "]"}], ",", "Black"}], 
-             "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"ListPlot", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"lorentz", "[", 
-              RowBox[{
-               RowBox[{"-", "2.5"}], ",", "5.5", ",", "v"}], "]"}], ",", 
-             RowBox[{"lorentz", "[", 
-              RowBox[{
-               RowBox[{"-", "3"}], ",", "4.5", ",", "v"}], "]"}]}], "}"}], 
-           ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red"}], 
-             "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}], "}"}], ",", 
+             "}"}]}]}], "\[IndentingNewLine]", "]"}]}], "]"}]}], "}"}], ",", 
      "Center"}], "]"}], "\[IndentingNewLine]", ",", " ", 
    RowBox[{"{", 
     RowBox[{
@@ -228,9 +234,10 @@ Cell[BoxData[
    3.555951420017753*^9, 3.5559514234185095`*^9}, {3.5559518150860453`*^9, 
    3.555951837581245*^9}, {3.555951924442045*^9, 3.555951925019245*^9}, {
    3.555952416450445*^9, 3.555952450193245*^9}, 3.555953941628399*^9, {
-   3.5560159525817676`*^9, 3.556015992002968*^9}, {3.7837015288469505`*^9, 
-   3.7837015651191597`*^9}, {3.7837016021663866`*^9, 3.7837016346276383`*^9}, 
-   3.783702366500588*^9, {3.7837023979294033`*^9, 3.7837024069094887`*^9}}],
+   3.5560159525817676`*^9, 3.556015992002968*^9}, {3.8253151042699795`*^9, 
+   3.8253151130499287`*^9}, 3.8253151641094604`*^9, {3.8253152380192833`*^9, 
+   3.8253152476793633`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"ea35ea0a-dd39-4bfe-ab08-4524de0a4535"],
 
 Cell[BoxData[
  TagBox[
@@ -240,12 +247,11 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`v$$], 0}, -0.9, 0.9}}, Typeset`size$$ = {
-    576., {293., 299.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`v$163956$$ = 0}, 
+    461., {236.68, 241.48000000000002`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`v$$ = 0}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`v$$, $CellContext`v$163956$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -259,8 +265,10 @@ Cell[BoxData[
 $CellContext`v$$], {$CellContext`x, -10, 10}, {$CellContext`t, -10, 10}], 1], 
            PlotRange -> {{-14, 14}, {-14, 14}}, AspectRatio -> 1, ImageSize -> 
            Large, PlotStyle -> PointSize[Medium], AxesLabel -> {
-             Derivative[1][$CellContext`x], 
-             Derivative[1][$CellContext`ct]}], 
+             Style[
+              Derivative[1][$CellContext`x], 14], 
+             Style[
+              Derivative[1][$CellContext`ct], 14]}], 
           ListPlot[{
             $CellContext`lorentz[-80, -100, $CellContext`v$$], 
             $CellContext`lorentz[80, 100, $CellContext`v$$]}, Joined -> True, 
@@ -278,19 +286,19 @@ $CellContext`v$$], {$CellContext`x, -10, 10}, {$CellContext`t, -10, 10}], 1],
             $CellContext`lorentz[8, 100, $CellContext`v$$]}, Joined -> True, 
            PlotStyle -> {Red}], 
           ListPlot[{
+            $CellContext`lorentz[-3, 4, $CellContext`v$$], 
+            $CellContext`lorentz[-3, 4.5, $CellContext`v$$]}, PlotStyle -> {
+             PointSize[Large], Red}], 
+          ListPlot[{
             $CellContext`lorentz[-100, -100, 0], 
             $CellContext`lorentz[100, 100, 0], 
             $CellContext`lorentz[100, -100, 0], 
             $CellContext`lorentz[-100, 100, 0]}, Joined -> True, 
            PlotStyle -> {Dashed, 
-             PointSize[Large], Black}], 
-          ListPlot[{
-            $CellContext`lorentz[-2.5, 5.5, $CellContext`v$$], 
-            $CellContext`lorentz[-3, 4.5, $CellContext`v$$]}, PlotStyle -> {
-             PointSize[Large], Red}]]}, Center], 
+             PointSize[Large], Black}]]}, Center], 
       "Specifications" :> {{{$CellContext`v$$, 0}, -0.9, 0.9}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{627., {340., 346.}},
+     ImageSizeCache->{680., {262.1, 266.9}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -314,16 +322,27 @@ $CellContext`v$$], {$CellContext`x, -10, 10}, {$CellContext`t, -10, 10}], 1],
    3.555951343469535*^9, 3.5559514244324965`*^9, {3.5559518183932447`*^9, 
    3.555951839406445*^9}, 3.555951926501245*^9, {3.555952424219245*^9, 
    3.555952452876445*^9}, 3.555953554311599*^9, {3.5560159771049676`*^9, 
-   3.5560159936565676`*^9}, 3.5874607338764753`*^9, 3.783701457804434*^9, {
-   3.7837015316099052`*^9, 3.7837015433921304`*^9}, {3.7837016199524794`*^9, 
-   3.7837016358061466`*^9}, 3.783702348471113*^9, 3.783702408515642*^9}]
-}, Open  ]]
+   3.5560159936565676`*^9}, 3.5874607338764753`*^9, 3.8253148605203667`*^9, 
+   3.8253151144394464`*^9, 3.8253151696491776`*^9, 3.8253152508545837`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"3e113339-7aa6-4157-89ad-f1f0f945ee98"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.4614148181399775`*^9, 3.4614148571405697`*^9}, 
+   3.461414926044222*^9},
+ CellLabel->"In[5]:=",ExpressionUUID->"77afb5e3-0aa7-4f53-9dde-6a283d768272"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.4614149278418446`*^9, 3.461414927873107*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"1f90b286-b19c-49fe-b7c8-a4253fa62dc9"]
 },
-WindowSize->{1272, 805},
-WindowMargins->{{-19, Automatic}, {Automatic, 12}},
+WindowSize->{1141.2, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
-FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 6, 2015)",
-StyleDefinitions->"Default.nb"
+Magnification:>0.8 Inherited,
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"19f3f7a4-aed6-4b90-9d9c-ec995254a963"
 ]
 (* End of Notebook Content *)
 
@@ -337,15 +356,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[567, 22, 582, 19, 31, "Input"],
-Cell[1152, 43, 567, 18, 66, "Output"]
+Cell[567, 22, 660, 20, 24, "Input",ExpressionUUID->"3f01f5b2-e8ec-4389-a308-48dae3d27ea3"],
+Cell[1230, 44, 623, 19, 44, "Output",ExpressionUUID->"1c98a50d-ac5d-4201-9c60-b84261edd661"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1756, 66, 7576, 166, 272, "Input"],
-Cell[9335, 234, 4431, 84, 736, "Output"]
-}, Open  ]]
+Cell[1890, 68, 7768, 171, 188, "Input",ExpressionUUID->"ea35ea0a-dd39-4bfe-ab08-4524de0a4535"],
+Cell[9661, 241, 4414, 85, 544, "Output",ExpressionUUID->"3e113339-7aa6-4157-89ad-f1f0f945ee98"]
+}, Open  ]],
+Cell[14090, 329, 200, 3, 22, "Input",ExpressionUUID->"77afb5e3-0aa7-4f53-9dde-6a283d768272"],
+Cell[14293, 334, 172, 2, 22, "Input",ExpressionUUID->"1f90b286-b19c-49fe-b7c8-a4253fa62dc9"]
 }
 ]
 *)
 
-(* End of internal cache information *)
