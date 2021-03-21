@@ -10,15 +10,16 @@ This lab has been used in Modern for many years before 2019.  It assumes student
 Otherwise, there is no specific introduction necessary for this lab; it is self-contained, in the sense that you don't need to explain this specific paradox before they start.
 }
 
-\bigskip
+\medskip
 \textbf{Apparatus:}
 \begin{itemize}[nosep]
 \item \textit{Mathematica}, with notebook file \filename{pole\_and\_barn.nb}
 \end{itemize}
 
-\bigskip
+\medskip
 
-An unrealistically speedy pole vaulter named Anna runs with her 10 meter long pole at $0.8 c$ in the positive $x$ direction. She runs into an 8~meter-long barn, which has doors on both sides.  The right end of the pole enters the barn at $x = 0$, at some time $t < 0$, and the left end of the pole enters the barn at $x = 0$ and $t = 0$.
+An unrealistically speedy pole vaulter named Anna runs with her 10 meter long pole at $0.8 c$ in the positive $x$ direction. She runs into an 8~meter-long barn, which has doors on both sides.  
+%The right end of the pole enters the barn at $x = 0$, at some time $t < 0$, and the left end of the pole enters the barn at $x = 0$ and $t = 0$.
 
 Here's what happens, according to farmer Bob, standing inside the barn:
 \begin{itemize}[nosep]
@@ -38,17 +39,17 @@ This seems like a paradox, since both observers have to agree on any tangible ou
 
 \begin{enumerate}[wide, nosep]
 \item Open the file \filename{pole\_and\_barn.nb} in Mathematica. If you get a pop-up error message, you may need to click \button{Enable Dynamic Content}. Type \button{Ctrl-A} to select all lines, and hit \button{Shift-Enter} to execute them. The graph you see represents a ``spacetime diagram'' (or ``Minkowski diagram'') of this set of events, with $x$ on the horizontal axis and $t$ on the vertical axis. If the units on the horizontal axis are in meters, and the diagonal dotted lines represent objects traveling from the origin at the speed of light, what are the units of the vertical (time) axis?
-\answerspace{0.6in}
+\answerspace{0.5in}
 
-\item With the velocity slider set to $v = 0$ (the default), the diagram is in the reference frame of farmer Bob. The red lines represent the positions in time (so-called ``worldlines'') of the two barn doors, and the purple lines represent the positions in time of the two ends of Anna's pole. Based on this diagram, what is the approximate length of Anna's pole according to Bob?  \label{part_approx_pole_length}
-\answerspace{0.6in}
+\item With the velocity slider set to $v = 0$ (the default), the diagram is in the reference frame of farmer Bob. The red lines represent the positions in time, or \textit{worldlines}, of the two barn doors, and the purple lines represent the worldlines of the two ends of Anna's pole. Based on this diagram, what is the approximate length of Anna's pole according to Bob?  \label{part_approx_pole_length}
+\answerspace{0.5in}
 
 \item Verify your answer in part~\ref{part_approx_pole_length} by doing a calculation to determine the precise length contraction of the pole according to Bob.
 \answerspace{0.6in}
 
 \item Now, move the slider so that you view these events from Anna's reference frame.
 From the graph, how long is the barn according to Anna? \label{part_approx_barn_length}
-\answerspace{0.6in}
+\answerspace{0.5in}
 
 \item Verify your reading of the graph in part~\ref{part_approx_barn_length} by calculating the precise length of the barn in Anna's reference frame.
 \answerspace{0.6in}
@@ -57,19 +58,19 @@ From the graph, how long is the barn according to Anna? \label{part_approx_barn_
 \answerspace{0.6in}
 
 \item There are two red dots in the graph at random locations. Edit the Mathematica file in the line that looks like
-$$\verb!ListPlot[{lorentz[-2.5,5.5,v],lorentz[-3,4.5,v]},PlotStyle ->{PointSize[Large],Red}]!$$
+$$\verb!ListPlot[{lorentz[-3,3,v],lorentz[-3,4.5,v]},PlotStyle ->{PointSize[Large],Red}]!$$
 to change the coordinates of those dots so that they mark the space and time coordinates of the closing of the two barn doors in Bob's reference frame. What are those exact coordinates?
 \answerspace{0.8in}
 
-\item Describe the sequence of events in Bob's reference frame (move upward in time).  An event description would be something like ``right end of pole passes open left barn door'' (the first event), or ``right end of pole crashes through right barn door.''
-\answerspace{1.1in}
+\item Describe the sequence of events in Bob's reference frame (move upward in time).  An event description would be something like ``front end of pole through left barn door'' (the first event), or ``front end of pole crashes through right barn door.''
+\answerspace{1.3in}
 
 
-\item Now move the slider back to Anna's reference frame. Describe the sequence of events according to Anna.  Hint: The first event is ``left hand door passes over right end of pole''.
-\answerspace{1.1in}
+\item Now move the slider back to Anna's reference frame. Describe the sequence of events according to Anna.  Hint: The first event is still ``front end of pole through left barn door''.
+\answerspace{1.3in}
 
 
-\item So, was the pole ever closed inside the barn in either frame? Who has the ``correct'' view —Anna? Bob? Neither? Both?  (The resolution lies in the idea that different observers can measure different times and events that are simultaneous in one frame may not be simultaneous in another.)
+\item So, was the pole ever closed inside the barn in either frame? Who has the ``correct'' view---Anna? Bob? Neither? Both?  (The resolution lies in the idea that different observers can measure different times and events that are simultaneous in one frame may not be simultaneous in another.)
 \answerspace{1.1in}
 
 \end{enumerate}
