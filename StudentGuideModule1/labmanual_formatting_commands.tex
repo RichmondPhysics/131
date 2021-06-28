@@ -67,6 +67,8 @@
 \usepackage{authblk}
 
 \usepackage[hyperfootnotes=false]{hyperref} %hypderfootnotes disabled for compatibility with footmisc.
+\usepackage{bookmark} %including this package magically fixes a problem whereby hyperref messes up the
+                                     %bookmarks (the outline) in the pdf output when run under pdflatex.
 \usepackage[stable]{footmisc} %option [stable] removes footnotes from section title in TOC and header.
 
 % The following two lines fix an additional problem that arises when a footnote comes within a section title.
