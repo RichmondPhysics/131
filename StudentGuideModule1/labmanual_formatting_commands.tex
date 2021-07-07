@@ -37,7 +37,7 @@
 \newcounter{tocpartnum}
 \renewcommand{\part}[1]{
 	\stepcounter{tocpartnum}
-	%\phantomsection
+	\phantomsection %This line fixes a problem in compiling the "bookmarks" (the outline) in hyperref under pdflatex.
 	\immediateaddcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}{}}
 
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
@@ -67,8 +67,9 @@
 \usepackage{authblk}
 
 \usepackage[hyperfootnotes=false]{hyperref} %hypderfootnotes disabled for compatibility with footmisc.
-\usepackage{bookmark} %including this package magically fixes a problem whereby hyperref messes up the
+%\usepackage{bookmark} %including this package magically fixes a problem whereby hyperref messes up the
                                      %bookmarks (the outline) in the pdf output when run under pdflatex.
+                                     %Alternatively, the \phantomsection command above fixes it too.
 \usepackage[stable]{footmisc} %option [stable] removes footnotes from section title in TOC and header.
 
 % The following two lines fix an additional problem that arises when a footnote comes within a section title.
