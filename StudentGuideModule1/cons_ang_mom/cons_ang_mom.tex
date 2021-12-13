@@ -2,186 +2,140 @@
 \section{Conservation of Angular Momentum}
 
 \instructornote{%
-You could choose not to have students use the parallel axis theorem to calculate the moment of inertia of the dropped 
-mass.  Treating it as a point mass instead introduces an error of about 3\% in the moment of inertia.
+This lab was significantly rewritten in Fall 2021 by Matt Trawick.
+
+Rather than using Tracker to take a movie (which is pretty slow), the lab now uses Capstone and a photogate to measure the angular velocity $\omega$ of the disk.  
+
+Also, I've discovered that putting masking tape around the disk keeps the mass from falling off, and also virtually guarantees that the final position of the weight will be right up against the edge of the disk, allowing moment of inertia $I_{\rm final}$ to be calculated ahead of time.  This trick with the masking tape is easily the second smartest thing I've ever done in my life, right after figuring out that ``el-em-en-oh'' in the alphabet song is actually four different letters.
+
+Finally, I rewrote the error analysis part.  Previous version asked students to go around the classroom asking everybody else for their initial and final angular momenta, and then make a histogram of the differences to look for systematic error.  In this version I ask students to estimate the uncertainty in the angular velocity, and then (presumably) use that to estimate the uncertainty of the angular momentum.
+
+This lab has gone back on forth on whether to instruct students to use the parallel axis theorem to calculate the moment of inertia of the dropped mass.  (Treating it as a point mass instead introduces an error of about 3\% in the moment of inertia of the weight.)  In this version, I tell students to use the parallel axis theorem if they know how.
 
 Additional question: You can ask students to calculate the initial and final mechanical energy of the system, and ask
-them whether mechanical energy was conserved.  They can generally do that.  Then you can ask them what external
-force is responsible for the work apparently done on the system, and they overwhelmingly can't do that.  (They don't get that there's friction as the mass slides.)
-
-Equipment tip: if you wrap a couple of rubberbands around the mass top-to-bottom, the rubber makes them stick better on the rotors, allowing students to do the experiment at slightly higher rotational speeds, which helps.
-
-Second equipment tip: The lab currently has you use Tracker and a movie to measure $\omega$.  Matt T. prefers to do
-this using Capstone and the rotational motion sensor. (Ask me for technical details!) Advantage: Capstone is less hassle; students find Tracker kind of tedius.  Additional point: Using the rotational motion sensor, students need to account for the different radii of the larger rotor vs. the smaller wheel on the sensor; this is both a bug and a feature, of course.
+them whether mechanical energy was conserved.  They are often surprised to discover that it's not.  Then you can ask them what external force is responsible for the work apparently done on the system, and they generally get stumped.  (They don't get that there's friction as the mass slides.)
 }
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
-\textbf{Objectives} 
+%\textbf{Objectives} 
+%
+%To test the Law of Conservation of Angular Momentum and to explore the applicability
+%of angular momentum conservation among objects that experience no external torques. 
 
-To test the Law of Conservation of Angular Momentum and to explore the applicability
-of angular momentum conservation among objects that experience no external torques. 
+\begin{wrapfigure}[4]{r}{0.35\textwidth}
+%    \vspace{-0.3in}
+    \includegraphics{cons_ang_mom/apparatus_fig.pdf}
+\end{wrapfigure}
+
+\bigskip
 
 \textbf{Apparatus}
 
-\begin{itemize}
-\item A Rotating Disk System 
+\begin{itemize}[nosep]
+\item Rotating disk system, with paper tabs 
+\item Photogate and Pasco interface
 \item Masses of 500 g, 1 kg 
-\item A movie scaling ruler and a simple cm ruler 
-\item A vernier caliper
-\item A small water bubble level
-\item A video analysis system (\textit{Tracker})
+\item Simple cm ruler 
+\item Vernier caliper
+\item Small water bubble level
+%\item A video analysis system (\textit{Tracker})
+\item \textit{Capstone} software (\filename{conserve\_ang\_mom.cap} experiment file)
+\item Masking tape
 \end{itemize}
+
+\bigskip
 \textbf{Overview }
 
 As a consequence of Newton's laws, angular momentum like linear momentum is
 believed to be conserved in isolated systems. This means that, no matter how
-many internal interactions occur, the total angular momentum of any system should remain constant if there are no external torques. When one of the objects gains some angular momentum another part of the system must lose the same amount. If angular momentum isn't conserved, then we believe that there is some outside torque acting on the system. By expanding the boundary of the system to include the source of that torque we can always preserve the Law of Angular Momentum Conservation. 
+many internal interactions occur, the total angular momentum of any system should remain constant if there are no external torques. When one of the objects gains some angular momentum another part of the system must lose the same amount. If angular momentum isn't conserved, then we believe that there is some outside torque acting on the system. 
 
 In this unit you will test the notion of the conservation of angular momentum.
 As in the test of the conservation of linear momentum, we will investigate what
 happens when two bodies undergo a ``rotational'' collision.
-You will drop a large weight onto a rotating disk and determine the moment of
-inertia, the angular speed, and finally, the angular momentum of the rotator-disk-weight
+You will drop a large weight onto a rotating disk and determine 
+%the moment of inertia, the angular speed, and finally, 
+the angular momentum of the rotator-disk-weight
 system before and after this perfectly inelastic collision.
 
+\medskip
 \textbf{Activity 1: The Moment of Inertia Before and After the Collision}
 
 (a) Calculate the theoretical value of the moment of inertia of the disk
-using basic measurements of its radius and mass. Be sure to state units and
+using basic measurements of its radius and mass. Be sure to include units and
 show the expression you used!
 \vspace{5mm}
 
-\( R_{d} =\)  \hfill{}\( M_{d}= \) \hfill{}
+\hspace{0.5in}\( R_{d} =\)  \hfill{}\( M_{d}= \) \hfill{}
 \vspace{5mm}
 
-\( I_{d}= \)
+\hspace{0.5in}\( I_{d}= \)
 \vspace{5mm}
 
-(b) After dropping the weight on the rotating disk, the system will have a new
-moment of inertia. Write down a formula for the moment of inertia of the weight 
-(mass $m_w$ and radius $r_w$) revolving about the origin at a distance $d$. 
-(You will have to use the parallel axis theorem to do this.)
-Use the vernier caliper to measure the weight's diameter.
+After dropping the weight on the rotating disk, the system will have a new
+moment of inertia. 
+
+(b) First, record the mass $m_w$ and radius $r_w$ of the weight, as well as the distance $d$
+that the center of weight will be from the center of the disk once it slides all the way to the
+masking tape.  You can use the vernier calipers to measure the weight's diameter.
+
+\medskip
+\hspace{0.5in}$m_w=$ \hfill $r_w=$ \hfill $d=$ \hfill 
+\bigskip
+
+(c) Next, write down a formula for the moment of inertia $I_w$ of the weight as it revolves with the disk, 
+and calculate its value based on your measurements above.  
+(If you know how to use the parallel axis theorem, use it!  If not, you can treat the weight as just
+a point mass a distance $d$ from the center of the disk, which turns out to be a reasonable approximation here.)
+
+\medskip
+\hspace{0.5in} $I_w =$
+\answerspace{0.6in}
+\pagebreak[3]
+
 %(You can treat the weight like a point particle.\footnote{Of course the weight isn't 
 %(actually a point particle.  For a really precise calculation, you would also need 
 %(to account for its shape and its rotation about its own center of mass, 
 %(using the \textit{parallel axis theorem}.}  
-Also record the mass of the weight, $m_w$ and its radius $r_w$.
-\vspace{3mm}
 
-$m_w=$ \hspace{22mm} $r_w=$ \hspace{22mm} $I_w =$ \hfill{}  
-\vspace{10mm}
+(c) What is the moment of inertia $I_{\rm final}$ of the whole system after the mass has been dropped on the disk?
 
-%(c) Record the mass of one of the weights and use a vernier caliper to measure its diameter. Obtain its radius from the diameter.
-%\vspace{5mm}
+\medskip
 
-%\( m_{w} =\)  \hfill{}\(r_{w} =\) \hfill{}
-%\vspace{5mm}
+\hspace{0.5in} $I_{\rm final}$ = 
+\answerspace{0.4in}
 
-\pagebreak[2]
-(c) Come up with a formula for the moment of inertia $I$ of the whole system
-before and after the collision and calculate the moment of inertia before the
-collision only. (The moment of inertia after the collision will be determined AFTER you do the experiment, because you will not know \(d \) until after you do the experiment.) Don't forget to include the units in \( I_{\rm before} \).
-\vspace{5mm}
+\bigskip
+\textbf{Activity 2: Measurement of Angular Velocity and Angular Momentum}
 
-\( I_{\mbox{\small before}}= \) 
-\vspace{5mm}
+Open the experiment file \filename{conserve\_ang\_mom.cap} in the \filename{\coursefolder} folder.  
+You will be using a photogate to measure the angular speed $\omega$ of the rotating disk.  The photogate simply measures the elapsed time whenever its beam is broken.  The experiment file has already been set up to calculate $\omega$ from these measured times.  (You're welcome!)
 
-\( I_{\mbox{\small after}} =\)  
-\vspace{5mm}
+Set up your photogate so that its beam is periodically broken by the paper sticking out from between the disks.  When you are ready, give the disk a moderate spin, and hit record in the program.  Wait a few seconds to get a stable measurment of the initial angular speed, then drop the weight gently on the spinning disk, continuing to record the speed for a few seconds.  Print out your graph of $\omega$ vs. time if your instructor requests it.
 
-\textbf{Activity 2: Making a Movie of the Collision} 
+(a) From your graph, determine the angular speeds $\omega_{\rm initial}$ and $\omega_{\rm final}$ of the system both before and after the collision.  Note that there's probably a little bit of friction in the system, which means the speed won't ever be exactly constant.  You'll need to think about how to handle this, and use this to estimate and record the uncertainty $\pm \delta \omega$ for each of your measurements.
 
-(a) Place the video camera about 1 m above the rotator and align the camera with
-the center of the rotator. Open \textbf{Camera} and turn on the camera as explained 
-in \textbf{Appendix \ref{tracker}: Video Analysis Using Tracker}.  Center the rotator in the
-field of view of the camera. Place a ruler of known length in the field of view of the camera and parallel to one side of the frame. Check that the rotator is level with the small water-bubble level.
+\medskip
+\hspace{0.5in} $\omega_{\rm initial} =$
 
-(b) Give the rotator a push and begin recording its motion with the video camera. See \textbf{Appendix \ref{tracker}: Video Analysis Using Tracker} for details on making the movie. 
-While the rotator is moving hold the weight you recorded above near the rim of the disk and 
-close to, but not quite touching, the surface of the moving disk. After at least one revolution
-of the disk drop the weight onto the disk and record the motion of the disk for at least one 
-revolution afterward. Do not rotate the disk too fast or the weight will not stay on it.
+\bigskip
+\hspace{0.5in} $\omega_{\rm final} =$
+\answerspace{0.3in}
 
-(c) \textit{Before removing the weight from the disk}, determine the distance of the center of the weight you dropped from the center of the rotator $d$. 
-%To do this, measure the distance from the center of the rotator to the edge of the weight \( r_{edge} \) and use the result from Activity 1 part (c) for the radius of the weight \( r_{w} \). Calculate the distance from the origin to the center of the weight \( r_{r} \) (it is just the sum of \( r_{edge} \) and \( r_{w} \)). 
-Use this result and your expression from Activity 1 part (c) to calculate the final moment of inertia.
-\answerspace{5mm}
+(b) How did you estimate your uncertainties $\pm \delta \omega$, above?
+\answerspace{1 in}
 
-%\( r_{\mbox{\small edge}}  =\) \hfill{}\( r_{w} \) = \hfill{}\( r_{r} \) =\hfill{}
-$d=$ \hfill{} $I_{\rm after} =$ \hfill{}  
-\answerspace{5mm}
+(c) Calculate the angular momentum $L$ before and after the collision (including units!).  Be sure to include the uncertainty $\pm\delta L$ for each.
 
-%\( I_{\mbox{\small after}} =\)  
-%\vspace{5mm}
+\medskip
+\hspace{0.5in} $L_{\rm initial} =$
+\answerspace{0.6in}
 
-\textbf{Activity 3: Measurement of Angular Velocity}
+\hspace{0.5in} $L_{\rm final} =$
+\answerspace{0.6in}
 
-Determine the angular speed before and after the collision.
+(d) Was the angular momentum of the system conserved during this collision, to within the precision of your measurement?  If not, can you think of any reasons why it might not have been?
+\answerspace{0.6in}
 
-\begin{enumerate}
-%\item Find the last frame before you dropped the weight on the rotator and click on
-%the position of the white marker on the metal disk. Now go backward through the film until the rotator has gone through one full rotation. Estimate how many frames there are in one rotation. (Step through the frames and count.) This will be called \( N_{\rm before}\). You also need to know the time between frames \( \Delta  t_{\rm frame}\), which is just the reciprocal of the capture rate in frames per second.
-%\[
-%N_{\mbox{\small before}}=\qquad \qquad \qquad \Delta t_{\rm frame}=\]
-\item Using \textit{Tracker}, track the outer edge of the white marker on the rotating disk 
-for one full rotation before dropping the weight, and determine the period of rotation from the 
-\textit{Tracker} graph. Record the result here, print the graph, and calculate the corresponding angular velocity 
-in radians per second:
-\[
-T_{\mbox{\small before}}=\qquad \qquad \qquad \omega _{\mbox{\small before}}=\]
-\vspace{5mm}
-\item Follow a similar procedure to determine the angular speed after the collision. You will have 
-to create another ``Point Mass'' in \textit{Tracker} in order to track the outer edge of the white 
-marker after dropping the weight. Determine the period of rotation and the angular velocity as 
-before, print the graph, and record the results here:
-%Under the \textbf{Edit} Menu highlight \textbf{Clear All...} to get rid of your%
-%previous results. 
-%Find the first frame after you dropped the weight on the rotator
-%and click on the position of the white marker. Now go forward through the film and estimate the number of frames in one full rotation.
-%\[
-%N_{\mbox{\small after}}=\qquad \qquad \qquad \Delta t_{\rm frame}=\]
-\[
-T_{\mbox{\small after}}=\qquad \qquad \qquad \omega _{\mbox{\small after}}=\]
-
-\end{enumerate}
-\answerspace{10mm}
-\pagebreak[2]
-\textbf{Activity 4: Calculation of Angular Momentum}
-
-(a) Calculate the angular momentum before and after the collision, including UNITS, using the proper equation for each. Calculate the difference between the two results and record it below. 
-\vspace{5mm}
-
-\( L_{\mbox{\small before}}= \)  
-\vspace{5mm}
-
-\( L_{\mbox{\small after}}= \)
-\vspace{5mm}
-
-\( \Delta L= L_{\mbox{\small after}} - L_{\mbox{\small before}} = \)  
-\vspace{5mm}
-
-(b) Go around to the other lab groups and get their results for the difference between the angular momenta before and after the collision.
-Make a histogram of the results you collect and calculate the average and standard deviation.
-For information on making histograms, see \textbf{Appendix \ref{excel}}. For information on calculating the average and standard deviation, see \textbf{Appendix \ref{treatment}}. 
-Record the average and standard deviation here. Attach the histogram to this unit.
-\vspace{25mm}
-
-
-
-(c) What is your expectation for the difference between the initial and final angular momentum?
-Do the data from the class support this expectation? 
-Use the average and standard deviation for the class to quantitatively answer this question.
-\vspace{25mm}
-
-(d) What does the histogram of the class data tell you? Be quantitative in your answer.
-\vspace{25mm}
-
-(e) Does the class data indicate a systematic error?  What do you suppose causes this?
-\vspace{25mm}
-
-(f) Would the procedure you followed above change if the weight was moving horizontally at a constant velocity when you dropped it? 
-If it changed, what would be different?
-\vspace{20mm}
 
