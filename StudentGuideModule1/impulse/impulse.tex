@@ -1,28 +1,36 @@
-
 \section{Impulse, Momentum, and Interactions\footnote{
 1990-93 Dept. of Physics and Astronomy, Dickinson College. Supported by FIPSE
 (U.S. Dept. of Ed.) and NSF. Portions of this material may have been modified
 locally and may not have been classroom tested at Dickinson College.
 }}
+\instructornote{%
+This lab was slightly modified in Fall 2021 by Matt Trawick.
+
+The previous version had sudents use an inclined track, having the cart accelerate towards the force probe.  My students seemed to find this confusing; they were trying to calculate the change in momentum from the top of the ramp to the bottom, rather than before and after the collision.
+
+I've also added a data table, and tidied up various things.
+}
 
 \makelabheader %(Space for student name, etc., defined in master.tex or labmanual_formatting_commands.tex)
 
+\medskip
 \textbf{Objectives }
 
-\begin{itemize}
+\begin{itemize}[nosep]
 \item To verify the relationship between impulse and momentum experimentally. 
 \item To study the forces between objects that undergo collisions and other types of interactions in a short time period.
 \end{itemize}
-\textbf{Apparatus} 
 
-\begin{itemize}
+\medskip
+\textbf{Apparatus} 
+\begin{itemize}[nosep]
 \item Collision cart with flag and track 
 \item Force probe (force sensor) and bracket
 \item Light duty collision spring and hook (for force probe)
 \item Motion detector
 \item Lab stand
 \item CS2000 compact scale
-\item Pasco 550 Interface
+\item Pasco 550 interface
 \item \textit{Capstone} software (\filename{Impulse-Momentum.cap} experiment file)
 \end{itemize}
 \textbf{The Impulse-Momentum Theorem }
@@ -46,24 +54,23 @@ and a final time $t_{f}$ , we must take the integral of both sides of the
 equation with respect to time. This gives
 
 \begin{equation}
-\int _{t_{i}}^{t_{f}}{\vec  F}dt=\int _{t_{i}}^{t_{f}}\frac{d{\vec  p}}{dt}dt=\left( {{\vec  p}_{f}}-{{\vec  p}_{i}}\right) =\Delta {\vec  p}
+\int _{t_{i}}^{t_{f}}{\vec  F}dt=\int _{t_{i}}^{t_{f}}\frac{d{\vec  p}}{dt}dt=\left( {{\vec  p}_{f}}-{{\vec  p}_{i}}\right) =\Delta {\vec  p}.
 \end{equation}
 
-Impulse is a vector quantity defined by the equation
+Impulse ${\vec  J}$ is a vector quantity defined by the equation
 \begin{equation}
-{\vec  J}=\int_{t_{i}}^{t_{f}}{\vec  F}\,dt
+{\vec  J}=\int_{t_{i}}^{t_{f}}{\vec  F}\,dt,
 \end{equation}
-
+which represents the area under the $F$ vs. $t$ 
+curve.
 By combining equations (2) and (3) we can formulate the impulse-momentum
 theorem in which
 \begin{equation}
-{\vec  J}=\Delta {\vec  p}
+{\vec  J}=\Delta {\vec  p}.
 \end{equation}
 
-If you are not used to mathematical integrals and how to solve them yet, don't
-panic. If you have a fairly smooth graph of how the force $F$ varies as a function
-of time, the impulse integral can be calculated as the area under the $F$-$t$ 
-curve.
+\pagebreak
+\textbf{Activity 1: Predicting Collision Forces That Change }
 
 Let's see qualitatively what an impulse curve might look like in a real collision
 in which the forces change over time during the collision. In particular, let's
@@ -73,8 +80,6 @@ consider the collision of a tennis ball with a wall as shown below.
 %{\par\centering \includegraphics{impulse/impulse_fig1.eps} \par}
 {\par\centering \includegraphics{impulse/ball_hitting_wall.pdf} \par}
 \vspace{0.3cm}
-
-\textbf{Activity 1: Predicting Collision Forces That Change }
 
 (a) Suppose a tennis ball is barreling toward a wall and collides with it. If gravity and air friction are neglected, what is the net force exerted on the object just before it starts to collide?
 \vspace{10mm}
@@ -100,10 +105,10 @@ object during a collision.
 \end{lab_axis}
 
 
-\textbf{Verification of the Impulse-Momentum Theorem} 
+\textbf{Activity 2: Verification of the Impulse-Momentum Theorem} 
 
-To verify the impulse-momentum theorem experimentally we must show that for
-an actual collision involving a single force on an object the equation
+To verify the impulse-momentum theorem experimentally we will show that for
+an actual collision involving a single force on an object, the equation
 \[
 \int_{t_{i}}^{t_{f}}{\vec  F}\,dt=\Delta {\vec  p}\]
 
@@ -127,10 +132,11 @@ the curve of a graph of $F$ \textit{vs.}~$t$.
 \node[anchor=south] at (axis cs: 10,0.5)  {Area $\displaystyle =\int_{t_{i}}^{t_{f}}{\vec  F}\,dt$};
 \end{lab_axis}
 
-In this experiment you will investigate this theorem by measuring the impulse
-and the change in momentum of a cart undergoing a one-dimensional collision.
+
+
 The experimental setup is shown in the figure below.
 %but with the force probe facing the open end of the track so it can be calibrated.  
+Make sure you have a large, heavy spring connected to the force sensor.  
 Open the file \filename{Impulse-Momentum.cap} in the \filename{\coursefolder} folder. 
 %Calibrate the force probe 
 %(see \textit{Calibrating Force Sensors} in \textbf{Appendix \ref{capstone}: Capstone}). 
@@ -140,69 +146,55 @@ Open the file \filename{Impulse-Momentum.cap} in the \filename{\coursefolder} fo
 %other side of the track and tighten wing bolts. Remove hook from force probe and 
 %replace with light duty collision spring. The setup should now look like the figure 
 %The setup should look like the figure below.
-Make sure you have a large, heavy spring connected to the force sensor.
+Set the data acquisition rate 
+on the {\it Capstone} window to 100 Hz and tare the force sensor.
 
-The end of the track with the motion detector should be raised (using lab stand or wooden boards) 
-about 1.5 cm so that, when released, the cart will collide with the force probe. 
+With the track horizontal, give the cart a gentle shove towards the force probe.  (Be sure to pull your hand away from the track afterwards so you can get a clean measurement of the cart's velocity both before and after the collision with the probe.)
 The force probe will measure the force as a function of time during the collision. 
-The motion detector is used to measure the velocity of the cart before and after the 
-collision. You will use the Impulse-Momentum application to make these measurements.
+%The motion detector is used to measure the velocity of the cart before and after the 
+%collision. You will use the Impulse-Momentum application to make these measurements.
 
 \vspace{0.3cm}
 %{\par\centering \resizebox*{0.9\textwidth}{!}{\includegraphics{impulse/impulse_fig4.eps}} \par}
 {\par\centering \resizebox*{0.9\textwidth}{!}{\includegraphics{impulse/cart_ramp_springs.pdf}} \par}
 \vspace{0.3cm}
 
-\textbf{Activity 2: Verification of the Impulse-Momentum Theorem} 
+(a) Measure the mass $m$ of the cart, using the compact scale, and record it here:
+\answerspace{10mm}
 
-(a) Measure the mass of the cart, $m$, using the compact scale, and record it here:
-\vspace{10mm}
+(b) Record data in the table below for several trials, using the initial and final velocities of the cart to calculate its change in momentum $\Delta p$.  To calculate the impulse ${\vec  J}=\int_{t_{i}}^{t_{f}}{\vec  F}\,dt$, you will measure the area under the force curve.  (See \textbf{Appendix \ref{capstone}: Capstone} for instructions on how to measure the area.)
 
-(b) Construct a data table in the space below with the column headings Trial
-\#, Area, \( v_{i} \), and \( v_{f} \). Make enough room to record 6-8 trials.
-You can also use {\it Excel} to make your table instead, but be sure to print it 
-and attach it to this unit at the end.
+If your instructor requests it, print the graphs for one of your trials and include it with this report.  Also, you can use {\it Excel} to make your table instead if you prefer, but be sure to print it and attach it at the end of this unit. 
 
-\newpage
+\begin{center}
+{\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|c|c|c|C{0.8in}|c|C{1in}|} \hline 
+$v_i$ (m/s) & $v_f$ (m/s) & $\Delta p$ (kg$\cdot$m/s) & $J$ (N$\cdot$sec) & difference & \% difference \\ 
+\hhline{|=|=|=|=|=|=|}
+& & & & & \\ \hline 
+& & & & & \\ \hline 
+& & & & & \\ \hline 
+& & & & & \\ \hline 
+& & & & & \\ \hline 
+& & & & & \\ \hline 
+\end{tabular} }
+\end{center}
 
-%(c) Position the force probe part way up the track (to be closer to the motion sensor).
+(c) For each trial above, calculate the difference between $J$ and $\Delta p$, expressing it as a percentage difference as well.  
 
-(c) Set the cart on the track about 60-80 cm from the force probe. Set the data acquisition rate 
-on the {\it Capstone} window to 100 Hz and tare the force sensor.
-Start recording data and release the cart. Stop recording data after the cart collides with the force probe and bounces back. 
-The computer will then display graphs of velocity and force versus time.
 
-(d) Determine the area under the force \textit{vs.}~time graph and record the value in
-your data table. See \textbf{Appendix \ref{capstone}: Capstone} for instructions on how to determine the area under a curve.
+(d) Do your results verify the impulse-momentum theorem? Explain, \textit{quantitatively}.
+\answerspace{1in}
 
-(e) Use the \textbf{Delta Tool} function to find the velocity just before the collision and the
-velocity just after the collision from the velocity versus time graph. Use the 
-PEAK values (positive and negative), even if they do not coincide with where 
-the force curve begins and ends. Be sure and record velocity values 
-(the second number in the Delta Tool reading), not time values. 
-Record these values in your data table.
 
-(f) Repeat parts (c) through (e) 5-7 times, setting the cart at the same place on the track for each trial and taring the force sensor each time. 
-\textbf{Note:} For these trials, the area function and the Delta Tool must be turned off and on for each trial. 
-Print the graphs for one of your trials and include it with this report.
-
-(g) Construct another data table below with the column headings
-Trial \#, $J$, \( \Delta  p\), Diff., and Percent diff. For each trial, record
-the impulse, $J$, and calculate and record the change in momentum, \( \Delta  p\), in kg\,m/s. Also, determine the difference between $J$ and $\Delta p$  for 
-each trial, and the percent difference. Alternatively, this table can be constructed in \textit{Excel}, and the calculations done there. Include table with this unit.
-%Also, show a sample calculation of $I$ and \( \Delta  p\) for one of your trials.
-\vspace{60mm}
-
-(h) What do you expect for the values in the last column of your table (Percent diff)? Make a histogram of your results in that column and calculate the average and standard deviation. For information on making histograms, see \textbf{Appendix \ref{excel}}. For information on calculating the average and standard deviation, see \textbf{Appendix \ref{treatment}} (can also be done in \textit{Excel}). Record the average and standard 
+\pagebreak
+(e) What do you expect for the values in the last column of your table (Percent diff)? Make a histogram of your results in the \% difference column and calculate the average and standard deviation. For information on making histograms, see \textbf{Appendix \ref{excel}}. For information on calculating the average and standard deviation, see \textbf{Appendix \ref{treatment}} (can also be done in \textit{Excel}). Record the average and standard 
 deviation here. Attach the histogram to this unit. Is your data consistent with your expectation?
-\vspace{15mm}
+\answerspace{25mm}
 
-(i) Do your results verify the impulse-momentum theorem? Explain quantitatively.
-\vspace{15mm}
+(f) What does the histogram of your data tell you?
+\answerspace{25mm}
 
-(j) What does the histogram of your data tell you?
-\vspace{15mm}
-
-(k) Is there any indication of a systematic uncertainty? What are the possible
+(g) Is there any indication of a systematic uncertainty? What are the possible
 sources of error?
-
+\answerspace{25mm}
