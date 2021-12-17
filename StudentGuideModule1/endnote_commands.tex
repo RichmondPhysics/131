@@ -43,6 +43,7 @@
 \def\enotedivision#1#2{\@ifnextchar\enotedivision{}{#1{#2}}}
 \makeatother
 
+\newif\ifincludeinstructornotes
 \newcommand{\startinstructornotes}{
 	\addtoendnotes{\unexpanded{\enotedivision{}{}}}
 
@@ -51,7 +52,7 @@
 	\def\enotesize{\normalsize}
 	\def\makeenmark{}%\theenmark}
 	\fancyhead[LO,RE]{\slshape \rightmark} 
-	\fancyhead[LE,RO]{\slshape \MakeUppercase{\notesname}}
+	\fancyhead[RO,LE]{\slshape \MakeUppercase{\notesname}}
 
 	\theendnotes
 	\endgroup
