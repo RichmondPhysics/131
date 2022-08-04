@@ -104,16 +104,20 @@
 
 \NewDocumentCommand \includelab { m o m } {%
   \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
-	\ifnum#1=1 \include{#3} 
-	\else \ifincludealllabs \include{#3} \fi 
+	\ifnum#1=1 \input{#3} 
+	\else \ifincludealllabs \input{#3} \fi 
 	\fi
 	}
   {%There is a directory {#1} {#2} {#3} \par
-	\ifnum#1=1 \subincludefrom{#2} {#3} 
-	\else \ifincludealllabs \subincludefrom{#2} {#3} \fi 
+	\ifnum#1=1 \subinputfrom{#2} {#3} 
+	\else \ifincludealllabs \subinputfrom{#2} {#3} \fi 
 	\fi
 	}
 }
+% Note on 8/4/2022 by MD: 
+%I fixed the problem noticed by MT below.
+%The new command is \input instead of \include, and \subinputfrom instead of \subincludefrom
+
 % Note on 1/24/2021 by MT: 
 % It appears that a recent (~2020) update of MikTeX has changed the behavior or the import package.
 % It used to be that if the 132 master.tex file used the example above to include the velocity lab from the 131 
