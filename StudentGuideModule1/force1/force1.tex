@@ -16,12 +16,8 @@ locally and may not have been classroom tested at Dickinson College.
 \end{itemize}
 \textbf{Overview }
 
-In the previous labs, you have used a motion detector to display position-time,
-velocity-time and acceleration-time graphs of the motion of different objects.
-You were not concerned about how you got the objects to move, i.e., what forces
-(pushes or pulls) acted on the objects. From your experiences, you know that
-force and motion are related in some way. To start your bicycle moving, you
-must apply a force to the pedal. To start up your car, you must step on the
+In the previous labs, you used motion sensors and smart carts to display position-time,
+velocity-time and acceleration-time graphs for different objects. You were not concerned about how you got the objects to move, i.e., what forces (pushes or pulls) acted on the objects. From your experiences, you know that force and motion are related in some way. To start your bicycle moving, you must apply a force to the pedal. To start up your car, you must step on the
 gas pedal to get the engine to apply a force to the road through the tires.
 
 But exactly how is force related to the quantities you used in the previous
@@ -35,18 +31,20 @@ will pay attention to forces and how they affect motion.
 \textbf{Apparatus} 
 
 \begin{itemize} [nosep]
-\item Force probe and variety of hanging masses 
-\item CS2000 compact scale (for measuring mass)
-\item Low friction pulley and string 
-\item Motion detector 
-\item Dynamics cart and track 
-\item Pasco 550 Interface and \textit{Capstone} software (\filename{V\_A\_F\_Graphs.cap} experiment file)
+\item \textit{Capstone} software (\filename{V\_A\_F\_Graphs.cap} experiment file)
+\item CS2000 compact scale
+\item Dynamics track
+\item Hanging masses
+\item Pulley with clamp
+\item String
+\item Wireless smart cart
 \end{itemize}
 \textbf{Measuring Forces} 
 
-In this investigation you will use a force probe (also called a force sensor) to measure forces. The force probe puts out a voltage signal proportional to the force applied to the arm of the probe. Physicists have defined a standard unit of force called the newton, abbreviated N. For your work on forces and the motions they cause, it will be more convenient to have the force probe read directly in newtons rather than voltage. 
+In this investigation you will use a force sensor (built in to the smart cart) to measure forces. The force sensor puts out a voltage signal proportional to the force applied to the arm of the sensor. Physicists have defined a standard unit of force called the newton, abbreviated N. For your work on forces and the motions they cause, it will be more convenient to have the force sensor read directly in newtons rather than voltage. 
 %Before the force probe is used it must be calibrated. Before calibrating the force probe, open the 
-Open the \filename{V\_A\_F\_Graphs.cap} file in the \filename{\coursefolder} folder.
+
+Open the \filename{V\_A\_F\_Graphs.cap} file in the \filename{\coursefolder} folder. Turn on the cart at your station and connect it to the computer via Bluetooth. At the beginning of each experiment, the measurements from the built-in acceleration and forces sensors may not be zero when the acceleration or force is actually zero. To tare the sensors, select the desired sensor (either the \textbf{Smart Cart Acceleration Sensor} or the \textbf{Smart Cart Force Sensor}) in the \textbf{Controls} palette and then click \textbf{Zero Sensor Now}. When taring the sensors, the cart should be at rest and there should be no applied force on the hook.
 %To calibrate the force probe, see \textit{Calibrating Force Sensors} in \textbf{Appendix \ref{capstone}: Capstone}.
 
 %\pagebreak[2]
@@ -60,20 +58,21 @@ Open the \filename{V\_A\_F\_Graphs.cap} file in the \filename{\coursefolder} fol
 
 \textbf{Activity 1: Pushing and Pulling a Cart} 
 
-In this activity you will move a cart by pushing and pulling it with your hand.
-You will measure the force, velocity and acceleration. 
+In this activity you will move a cart by pushing and pulling it with your hand and measure the force exerted on it, as well as the cart's velocity and acceleration. 
 %Then you will be able
 %to look for relationships between the applied force and the motion quantities,
 %to see which is (are) related to force.
 
-\vspace{-0.2cm}
+%\vspace{-0.2cm}
 %{\par\centering \includegraphics{force1/force1_fig1.eps} \par}
-{\par\centering \includegraphics{force1/cart_and_sensors.pdf} \par}
+%{\par\centering \includegraphics{force1/cart_and_sensors.pdf} \par}
 
-(a) Set up the cart, force probe and motion detector on the level track as shown above. 
-Measure the mass of the cart and force probe assembly (using the compact scale), and record the result.
+(a) Measure the mass of the cart (using the compact scale), and record the result below.
+
 \answerspace{10mm}
 
+(b) Place the cart on the level track.  Suppose you were to grasp the hook on the cart (which is attached to the force sensor) and move the cart forwards and backwards. Would either the
+velocity or the acceleration graph look like the force graph?
 %\begin{figure}[t]
 %{\par\centering \includegraphics{force1/force1_fig1.eps} \par}
 
@@ -82,22 +81,17 @@ Measure the mass of the cart and force probe assembly (using the compact scale),
 %{Equipment setup for qualitative measurements of force and motion.}
 %\end{figure}
 
-\newpage
-(b) Suppose you grasp the hook on the force probe and move the cart forwards
-and backwards in front of the motion detector. Will either the
-velocity or the acceleration graph will look like the force graph? 
+%\newpage
+%(b) Place the cart on the level track.  Suppose you were to grasp the hook on the cart (which %is attached to the force sensor) and move the cart forwards and backwards. Would either the
+%velocity or the acceleration graph look like the force graph? Explain. 
 %Is either of these motion quantities related to force? 
 %That is to say, if you apply a
 %changing force to the cart, will the velocity or acceleration change in the
 %same way as the force?
-\answerspace{8mm}
-
+\answerspace{20mm}
 \pagebreak[3]
 (c) To test your predictions, click the \textbf{Record} button, grasp the
-hook on the force probe and push and pull the cart back and forth 3 or 4 times. Be sure that
-the cart never gets closer than 0.15 m away from the detector and be careful
-of the wires. Repeat until you get a good run, and adjust the sampling rate 
-and scale of the axes if necessary. Sketch your graphs on the axes that follow.
+hook on the cart and push and pull the cart back and forth 3 or 4 times. Repeat until you get a good run, and adjust the sampling rate and scale of the axes if necessary. Sketch your graphs on the axes below.
 
 %\vspace{-0.3cm}
 %{\par\centering \includegraphics[scale=0.95]{force1/force1_fig2.eps} \par}
@@ -134,12 +128,12 @@ and scale of the axes if necessary. Sketch your graphs on the axes that follow.
 
 (d) Does either graph---velocity or acceleration---resemble the force graph? Which
 one? Explain.
-\answerspace{10mm}
+\answerspace{15mm}
 
 (e) Based on your observations, does it appear that either the velocity or acceleration
 of the cart might be related to the applied force? Explain.
-\answerspace{10mm}
-
+%\answerspace{10mm}
+\newpage
 \pagebreak[3]
 \textbf{Activity 2: Speeding Up }
 
@@ -147,8 +141,7 @@ You have seen in the previous activity that force and acceleration seem to be
 related. But just what is the relationship between force and acceleration? 
 
 (a) Suppose you have a cart with very little friction, and that you pull this
-cart with a constant force as shown below on the force-time graph. Predict with sketches on
-the axes below the velocity-time and acceleration-time graphs of the cart's motion.
+cart with a constant force as shown below on the force \textit{vs.}~time graph. Predict with sketches on the axes below the velocity \textit{vs.}~time and acceleration \textit{vs.}~time graphs of the cart's motion.
 
 %\vspace{0.3cm}
 %{\par\centering \includegraphics{force1/force1_fig3.eps} \par}
@@ -185,49 +178,27 @@ the axes below the velocity-time and acceleration-time graphs of the cart's moti
 
 (b) Describe in words the predicted shape of the velocity \textit{vs.}~time and acceleration
 \textit{vs.}~time graphs for the cart.
-\vspace{15mm}
-
+\vspace{30mm}
 
 %\begin{figure}
 \begin{center}
 %\includegraphics{force1/force1_fig4.eps}
-\includegraphics{force1/cart_detector_mass.pdf}
+%\includegraphics{force1/cart_detector_mass.pdf}
+\includegraphics{force1/cart_pulley_mass.pdf}
 
 \vspace{-0.2in}
 \textit{Equipment setup for quantitative measurements of force and motion.}
 \end{center}
 %\end{figure}
 
-(c) Test your predictions. Set up the pulley, cart, string, motion detector
-and force probe as shown in the figure above. 
-The cart should be the same mass as before. 
-Place masses of 100 g, 50 g, and two 20-g masses on the top of the cart.
-You will use these masses to create an applied force on the cart by attaching
-them to the string, running the string over the pulley, and letting gravity do
-the work.
-The masses you hang from the string also contribute to the total mass of the 
-object (cart+masses) being accelerated.
-We sit them on the cart until they are used so the total mass is the same for all
-the trials.
+(c) Test your predictions. Set up the pulley, cart, and string as shown in the figure above. 
+The cart should be the same mass as before. At the start of each trial, tare the cart's built-in force sensor when there is no applied force on the hook.  
 
-At the start of each trial press the ``TARE'' button on the side of the force sensor 
-when there is no applied force on the hook.
-This step resets the device so you get a proper reading.
-Now take one of those masses, the 50-g one, from the cart and 
-hang it from the end of the string. 
-Start the data acquisition.
-Release the cart when you hear the clicks of the motion detector. Be sure that
-there is enough slack in the force probe cables to complete the motion and catch
-the cart before it crashes into the pulley. Repeat with this configuration of the
-masses until you get good graphs
-in which the cart is seen by the motion detector over the entire motion. Sketch
-the actual velocity, acceleration and force graphs for the motion of interest
-on the axes below and indicate the scale on the axes. Draw smooth graphs; don't
-worry about small bumps.
-
+Take one of the masses (say, the 50-g one) from the tray and hang it from the end of the string.  Release the cart from rest and create graphs of its motion as it moves in the positive direction (defined by the $x$-axis printed on the top of the cart). Stop the cart before it hits the end of the track. Sketch the graphs neatly on the axes below and indicate the scale on the axes.
 %\vspace{0.3cm}
 %{\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
 %\vspace{0.3cm}
+
 \begin{lab_groupplot}*{}[lab_grid,
 	group style={
 		group size=1 by 3,
@@ -255,7 +226,7 @@ worry about small bumps.
 	ymin=-1,ymax=1, 
 	ylabel={Force (N)},
 	]
-\end{lab_groupplot}
+\end{lab_groupplot} 
 
 (d) Is the force which is applied to the cart by the string constant, increasing
 or decreasing? Explain based on your graph.
@@ -271,19 +242,16 @@ What kind of velocity corresponds to a constant applied force?
 \answerspace{20mm}
 
 (g) Use the \textbf{Highlight} and \textbf{Statistics} functions to determine 
-the average force and the average acceleration
-and record them below. Find the mean values only during the time interval when
-the force and acceleration are nearly constant. See \textbf{Appendix \ref{capstone}} for details on
-the use of the \textbf Highlight and  \textbf{Statistics} functions of Capstone.
+the average force and the average acceleration and record them below. Find the mean values only during the time interval when the force and acceleration are nearly constant. See \textbf{Appendix \ref{capstone}} for details on the use of the \textbf{Highlight} and  \textbf{Statistics} functions of Capstone.
 \answerspace{20mm}
 
 \textbf{Activity 3: Acceleration from Different Forces }
 
-In the previous activity you have examined the motion of a cart with a constant
+In the previous activity you examined the motion of an object with a constant
 force applied to it. But, what is the relationship between acceleration and
-force? If you apply a larger force to the same cart (same mass as before) how
+force? If you apply a larger force to the same object (same mass as before) how
 will the acceleration change? In this activity you will try to answer these
-questions by applying a different force to the cart, and measuring the corresponding
+questions by applying a different force to the object, and measuring the corresponding
 acceleration. 
 
 (a) Suppose you pulled the cart with a force about twice as large as before.
@@ -291,11 +259,7 @@ What would happen to the acceleration of the cart? Explain.
 \answerspace{20mm}
 
 \pagebreak[3]
-(b) Test your prediction by replacing the 50-g mass with the 100-g mass on the cart, 
-returning the 50-g mass to the cart, and taring the force sensor with no force acting on the hook.
-Now create graphs of the motion as before. 
-Repeat until you have a good run. Sketch the
-results on the axes that follow. Don't forget to put the scale on the axes.
+(b) Test your prediction by replacing the 50-g hanging mass with a 100-g mass. Tare the force sensor with no force acting on the hook. Now create graphs of the motion as before.  Repeat until you have a good run. Sketch the results on the axes that follow. Don't forget to put the scale on the axes.
 
 %\vspace{0.3cm}
 %{\par\centering \includegraphics[width=0.65\textwidth]{force1/force1_fig5.eps} \par}
@@ -331,25 +295,20 @@ results on the axes that follow. Don't forget to put the scale on the axes.
 
 
 (c) Use the \textbf{Highlight} and  \textbf{Statistics} functions to find the 
-average force and the average acceleration
-and record them below. Find the mean values only during the time interval when
-the force and acceleration are nearly constant.
-\answerspace{15mm}
+average force and the average acceleration and record them below. Find the mean values only during the time interval when the force and acceleration are nearly constant.
+\answerspace{20mm}
 
-(d) How did the force applied to the cart compare to that with the smaller force
-in Activity 2?
-\answerspace{15mm}
+(d) How did the force applied to the cart compare to the force in Activity 2?
+\answerspace{20mm}
 
-(e) How did the acceleration of the cart compare to that caused by the smaller
-force in Activity 2? Did this agree with your prediction? Explain.
-\answerspace{15mm}
+(e) How did the acceleration of the cart compare to that caused by the force in Activity 2? Did this agree with your prediction? Explain.
+\answerspace{20mm}
 
 \pagebreak[2]
 \textbf{Activity 4: The Relationship Between Acceleration and Force }
 
-If you accelerate the same cart (same mass) with different forces, you can 
-plot a graph of force \textit{vs.}~acceleration.
-You can then find the mathematical relationship between acceleration and force. 
+If you accelerate the same object (same mass) with different forces, you can 
+plot a graph of force \textit{vs.}~acceleration. You can then find the mathematical relationship between acceleration and force. 
 
 (a) Accelerate the cart with a force roughly midway between the other two forces
 tried. Use a hanging mass about midway between those used in the last two activities.
@@ -361,8 +320,7 @@ Activity 3 using dashed lines.
 
 (c) Find the mean acceleration and force, as before, and record the values in
 the table below (in the Activity 4 line). Also, enter the values from the previous 
-two activities in the table.
-Use different combinations of the
+two activities in the table. Use different combinations of the
 masses to get other applied forces and enter the results in the table. 
 
 \vspace{0.3cm}
@@ -423,10 +381,10 @@ Activity 4&
 
 (d) Using \textit{Excel}, plot the average force applied to the cart as a function of the average acceleration of the cart by fitting the data with a linear function. Include a fourth data point (0,0) (since zero force means 0 acceleration). Label and print the graph showing the best fit, and add it to this unit.
 
-(e) Does there appear to be a simple mathematical relationship between the acceleration of a cart (with fixed mass) and the force applied to the cart (measured by the force probe mounted on the cart)? Write down the equation you found and describe the mathematical relationship in words.  What is the slope of the graph?
+(e) Does there appear to be a simple mathematical relationship between the acceleration of the cart (with fixed mass) and the force applied to the cart (measured by the force sensor)? Write down the equation you found and describe the mathematical relationship in words.  What is the slope of the graph?
 \answerspace{20mm}
 
-(f) Use the LINEST function in \textit{Excel} (see \textbf{Appendix \ref{excel}: Excel}) to determine the uncertainty in mass of the cart/force sensor combination based on your data points.  Write your result as \textit{Mass} = $m$ \( \pm \ \Delta  m\). Be sure and include proper units.
+(f) Use the LINEST function in \textit{Excel} (see \textbf{Appendix \ref{excel}: Excel}) to determine the uncertainty in mass of the cart.  Write your result as $m = \overline{m} \pm \Delta m$. Be sure to include proper units.
 \answerspace{20mm}
 
 (g) Does your measurement of $m$ from Activity 1 fall within the range indicated in (f) above? If not, what are some possible sources of systematic error?
@@ -530,7 +488,7 @@ horizontal line (the + position axis). Assume that friction is so small that
 it can be neglected. Sketch the shape of the graph of the force applied to the
 object which would produce the motion described. 
 
-4. The object moves away from the origin with a constant acceleration.
+4. The object moves away from the origin while speeding up at a constant rate.
 
 %\vspace{0.3cm}
 %{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
@@ -543,7 +501,7 @@ object which would produce the motion described.
 	]
 \end{lab_axis}
 
-5. The object moves toward the origin with a constant acceleration.
+5. The object moves toward the origin while speeding up at a constant rate.
 
 %\vspace{0.3cm}
 %{\par\centering \includegraphics[scale=1.1]{force1/force1_fig10.eps} \par}
