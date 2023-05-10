@@ -37,13 +37,13 @@ In this case the object is slowing down in the sense that its speed is decreasin
 \textbf{Apparatus }
 
 \begin{itemize}
-\item Pasco 550 Interface
-\item Force probe 
-\item Variety of hanging masses 
-\item Low friction pulley and string 
-\item Motion detector 
-\item Dynamics cart (with flag) and track 
 \item \textit{Capstone} software (\filename{V\_A\_F\_Graphs.cap} experiment file)
+\item CS2000 compact scale
+\item Dynamics track
+\item Hanging masses
+\item Pulley with clamp
+\item String
+\item Wireless smart cart
 \end{itemize}
 \textbf{Speeding Up and Slowing Down }
 
@@ -58,7 +58,7 @@ The three vectors can be represented as:
 {\par\centering \includegraphics[height=0.7in]{force2/force2_fig1_new.pdf} \par}
 \vspace{0.3cm}
 
-If the positive x direction is toward the right, then you could also say that
+If the positive direction is toward the right, then you could also say that
 the velocity, acceleration and also force are all positive. In this investigation,
 you will examine the vectors representing velocity, force and acceleration for
 other motions of the cart. This will be an extension of your earlier observations
@@ -66,60 +66,41 @@ of changing motion.
 
 \textbf{Activity 1: Slowing Down} 
 
-Set up the cart, pulley, hanging mass and motion detector as shown below. Now
-when you give the cart a push away from the motion detector, it will slow down
-after it is released. In this activity you will examine the acceleration and
-the applied force.
+Set up the pulley, cart, and string as shown in the figure below. Now, if you give the cart a push away from the pulley, it will slow down after it is released. In this activity you will examine the acceleration and the applied force.
 
 \vspace{0.3cm}
 %{\par\centering \includegraphics{force2/force2_fig2.eps} \par}
-{\par\centering \includegraphics{force2/cart_and_detectors.pdf} \par}
+%{\par\centering \includegraphics{force2/cart_and_detectors.pdf} \par}
+{\par\centering \includegraphics{force2/cart_and_pulley.pdf} \par}
 \vspace{0.3cm}
 
-(a) Suppose that you position the cart 0.15 m from the motion detector and give
-it a push away from the motion detector and release it. Draw below vectors which
-might represent the velocity, force and acceleration of the cart at each time
-after it is released and is moving toward the right. Be sure to mark your arrows
-with \( {\vec v} \), \( {\vec a} \), or \( {\vec F} \)
+(a) Suppose that you give the cart a push away from the pulley and release it. Draw on the diagram below vectors which might represent the velocity, force and acceleration of the cart at each time after it is released and is moving away from the pulley. Be sure to mark your arrows with \( {\vec v} \), \( {\vec a} \), or \( {\vec F} \)
 as appropriate.
 
 \vspace{0.3cm}
 {\par\centering \includegraphics{force2/carts_slowing.pdf} \par}
 \vspace{0.3cm}
 
-(b) If the positive x direction is toward the right, what are the signs of the
-velocity, force and acceleration after the cart is released and is moving toward
+(b) If the positive direction is to the right, what are the signs of the velocity, force and acceleration after the cart is released and is moving toward
 the right?
 \vspace{10mm}
 
 (c) To test your predictions: 
 
 \begin{enumerate}
-\item Open the file \filename{V\_A\_F\_Graphs.cap} in the \filename{\coursefolder} folder.
+\item Open the file \filename{V\_A\_F\_Graphs.cap} in the \filename{\coursefolder} folder. Turn on the cart at your station and connect it to the computer via Bluetooth. At the beginning of each experiment, the measurements from the built-in acceleration and forces sensors may not be zero when the acceleration or force is actually zero. To tare the sensors, select the desired sensor (either the \textbf{Smart Cart Acceleration Sensor} or the \textbf{Smart Cart Force Sensor}) in the \textbf{Controls} palette and then click \textbf{Zero Sensor Now}. When taring the sensors, the cart should be at rest and there should be no applied force on the hook.
 
 %\item Calibrate the force probe (see \textit{Calibrating Force Sensors} in \textbf{Appendix \ref{capstone}: Capstone}).
 %\textbf{NOTE:} 
 %The force sensor and motion detector are looking in opposite directions in 
 %this experiment, so when calibrating the force sensor, set the 2nd calibration point to $-1.96$ 
 %newtons, so that the force and acceleration will have the same sign.
-\item The force sensor and motion detector are looking in opposite directions in this experiment
-so we will flip the sign of the force to make the interpretation of your data easier.
-To do this  first click on {\tt Hardware Setup} on the left
-side of the {\tt Capstone} window, then click the gear symbol on {\tt Forces Sensor Ch A},
-and check the box labeled {\tt Change sign}.
-To get back out click {\tt OK} and then {\tt Hardware Setup}.
-
+\item By default, the $x$-axis printed on the top of the cart defines the positive direction for the cart's built-in sensors. Therefore, by default, the positive direction points towards the pulley (or to the left in the figure above). To change this, so that the positive direction points away from the pulley (or to the right), select \textbf{Hardware Setup} in the \textbf{Tools} palette. To change the sign of the cart's velocity and acceleration measurements, select the \textbf{Properties} icon (the gear symbol) in the \textbf{Smart Cart Position Sensor} window and then select the \textbf{Change Sign} checkbox. To change the sign of the cart's built-in force sensor, select the \textbf{Properties} icon in the \textbf{Smart Cart Force Sensor} window and select the \textbf{Change Sign} checkbox. 
 
 \item Hang a 50-g mass from the end of the string.
-\item Test to be sure that the motion detector sees the cart during its complete motion,
-and that the string and force probe cable are not interfering with the motion
-detector. You may need to move the motion detector to the side slightly so that
-it does not see the string. Also make sure that the cables to the motion detector
-do not impede the motion of the cart. Remember that the back of the cart must
-always be at least 0.15 meter from the motion detector. 
-\item Start recording data. When the motion detector starts clicking, give the cart
-a short push away from the motion detector and then let it go. Stop the cart
-before it reverses its direction. Repeat until you get a good run. 
+ 
+\item Click the \textbf{Record} button. Then, give the cart a short push away from the pulley and let it go. Stop the cart before it reverses its direction. Repeat until you get a good run. 
+
 \item Sketch your velocity, acceleration and force graphs on the axes below. 
 %Label the time scale on these axes. 
 Indicate with an arrow the time when the push
@@ -160,63 +141,58 @@ stopped.
 
 (d) Did the signs of the velocity, force and acceleration agree with your predictions?
 If not, can you now explain the signs?
-\answerspace{30mm}
+\answerspace{25mm}
 
-\pagebreak[3]
 (e) Did the velocity and acceleration both have the same sign? Explain these
 signs based on the relationship between acceleration and velocity.
-\answerspace{20mm}
+\answerspace{25mm}
+\pagebreak[3]
 
 (f) Did the force and acceleration have the same sign? Were the force and acceleration
 in the same direction? Explain.
-\answerspace{20mm}
+\answerspace{25mm}
 
 (g) Based on your observations, draw below vectors which might represent the
 velocity, force and acceleration for the cart at the same instant in time. Do
 these agree with your predictions? If not, can you now explain the directions
 of the vectors?
-\answerspace{20mm}
+\answerspace{25mm}
 
 (h) After you released the cart, was the force applied by the falling mass constant,
 increasing or decreasing?  Why is this kind of force necessary to cause
 the observed motion of the cart?
-\answerspace{20mm}
+\answerspace{25mm}
 
 \textbf{Activity 2: Speeding Up Toward the Motion Detector }
 
 Using the same setup as in the last activity, you can start with the cart at
-the opposite end of the table from the motion detector and release it from rest.
-It will then be accelerated toward the motion detector as a result of the force
+the opposite end of the table from the pulley and release it from rest.
+It will then be accelerated toward the pulley as a result of the force
 applied by the falling mass.
 
-(a) Suppose that you release the cart from rest and let it move toward the motion
-detector. Draw on the diagram below vectors which might represent the velocity,
+(a) Suppose that you release the cart from rest and let it move toward the pulley. Draw on the diagram below vectors which might represent the velocity,
 force and acceleration of the cart at each time after it is released and is
 moving toward the left. Be sure to mark your arrows with $\vec{v}$, $\vec{a}$,
 or $\vec{F}$ as appropriate.
 
 \vspace{0.3cm}
 {\par\centering \includegraphics{force2/carts_speeding.pdf} \par}
-%\vspace{0.3cm}
+\vspace{0.3cm}
 
-\pagebreak[3]
 (b) What are the signs of the velocity, force and acceleration after the cart
-is released and is moving toward the motion detector? (The positive $x$ direction
+is released and is moving toward the pulley? (The positive direction
 is toward the right.)
 \answerspace{20mm}
+\pagebreak[3]
 
-(c) Test your predictions. Use a hanging mass of 100 g. Start recording data.
-When you hear the motion detector, release the cart from rest as far away from
-the motion detector as possible. Catch the cart before it hits the motion detector.
-Repeat until you get a good run. Sketch your graphs on the above axes with dashed
-lines.
+(c) Test your predictions. Use a hanging mass of 50 g. Start recording data and release the cart from rest as far away from the pulley as possible. Catch the cart before it hits the end of the track. Repeat until you get a good run. Sketch your graphs on the axes in the previous activity with dashed lines.
 
 %\pagebreak[2]
 (d) Which of the signs -- velocity, force and/or acceleration -- are the same as
 in the previous activity (where the cart was slowing down and moving away), and
 which are different? Explain any differences in terms of the differences in
 the motion of the cart.
-\answerspace{20mm}
+\answerspace{25mm}
 
 (e) Based on your observations, draw below vectors which might represent the
 velocity, force and acceleration for the cart at the same instant in time. Do
@@ -227,15 +203,16 @@ of the vectors?
 (f) Write down a simple rule in words which describes the relationship between
 the direction of the applied force and the direction of the acceleration for
 any motion of the cart.
-\answerspace{20mm}
+\answerspace{25mm}
 
 (g) Is the direction of the velocity always the same as the direction of the
 force? Is the direction of the acceleration always the same as the direction
 of the force?
-\answerspace{20mm}
+\answerspace{25mm}
 
-\pagebreak[2]
-\textbf{Homework }
+\pagebreak[4]
+
+\textbf{Homework}
 
 Questions 1-6 refer to a toy car which can move in either direction along a
 horizontal line (the + position axis).
@@ -302,7 +279,7 @@ in each statement.
 	]
 \end{lab_axis}
 
-5. The toy car moves toward the origin with a steadily increasing speed ( a
+5. The toy car moves toward the origin with a steadily increasing speed (a
 constant acceleration).
 
 %\vspace{0.3cm}
@@ -317,7 +294,7 @@ constant acceleration).
 \end{lab_axis}
 
 6. The toy car is given a push away form the origin and released. It continues
-to move with a constant velocity. sketch the force after the car is released.
+to move with a constant velocity. Sketch the force after the car is released.
 
 %\vspace{0.3cm}
 %{\par\centering \includegraphics{force2/force2_fig7.eps} \par}
