@@ -15,11 +15,11 @@ Additional note by Matt: I did not cover this topic along with the chapters on N
 \textbf{Apparatus}
 
 \begin{itemize}[nosep]
-\item high precision digital lab scale
-\item ruler
-\item about 5 coffee filters
-\item motion sensor, mounted high on lab stand, pointed down
-\item \textit{Capstone} software (\filename{P\_V\_A\_graphs.cap} experiment file)
+\item \textit{Capstone} software (\filename{P\_V\_A\_Sensor\_Graphs.cap} experiment file)
+\item Coffee filters (x5)
+\item High precision digital lab scale
+\item Ruler
+\item Wireless motion sensor (mounted high on lab stand, pointed down)
 \end{itemize}
 
 \bigskip
@@ -49,7 +49,7 @@ A ``drag force'' $F_{\rm drag}$ is a force caused by the air hitting against a m
 	]
 \end{lab_axis}
 
-\item Now let's do the experiment.  Open the file \filename{P\_V\_A\_graphs.cap}, located in the \filename{\coursefolder} folder. Use a stack of three coffee filters nested inside each other, dropping them from just below the motion detector to obtain a graph of $v(t)$.  You may need to try this a few times to get a smooth graph.  Set the switch on the motion detector to the wide beam setting.  If your stack of filters flutters side to side, try bending the edges up to make the filters less flat.  Once you have a good velocity graph, sketch its shape with a solid line on the axes below.  
+\item Now let's do the experiment.  Open the file \filename{P\_V\_A\_Sensor\_Graphs.cap}, located in the \filename{\coursefolder} folder. Turn on the motion sensor at your station and connect it to the computer via Bluetooth. Use a stack of three coffee filters nested inside each other, dropping them from just below the sensor to obtain a graph of $v(t)$.  You may need to try this a few times to get a smooth graph.  If your stack of filters flutters side to side, try bending the edges up to make the filters less flat.  Once you have a good velocity graph, sketch its shape with a solid line on the axes below.  
 
 \begin{lab_axis}*[lab_grid,
 	xlabel={Time (s)},
@@ -72,7 +72,7 @@ A ``drag force'' $F_{\rm drag}$ is a force caused by the air hitting against a m
 \end{enumerate}
 
 \medskip
-\textbf{Activity 2: Drag Force vs. Velocity}
+\textbf{Activity 2: Drag Force \textit{vs.}~Velocity}
 
 %You found in the previous activity that the maximum speed, or ``terminal velocity'' $v_T$ 
 %is reached when  $F_{\rm drag} = F_{\rm grav}$.  
@@ -100,7 +100,7 @@ $n$ & $F_{\rm drag}~ (= F_{\rm grav}$) at $v_T$ & $v_T$ \\
 \end{center}
 
 \pagebreak[2]
-\item Copy your data from the table above into Excel.  Make a log-log graph of $F_{\rm drag}$ vs. $v_T$, plotting the force on the $y$~axis and the speed on the $x$~axis.
+\item Copy your data from the table above into \textit{Excel}.  Make a graph of $F_{\rm drag}$ \textit{vs.}~$v_T$, plotting the force on the $y$~axis and the speed on the $x$~axis.
 Note the twist here: your goal is to understand how the drag force $F_{\rm drag}(v)$ varies as a function of speed $v$.
 This is conceptually the reverse of the experiment you did, where the force was more like the \textit{independent} variable (which you set by changing $F_{\rm grav}$, by altering the number of filters) and the terminal velocity was more like the \textit{dependent} variable which you measured as a result.
 
@@ -136,7 +136,7 @@ typical pickup truck & 0.40 \\ \hline
 %\hspace{\fill}
 %\includegraphics[scale=0.8]{drag_force/cross_sectional_area.eps}
 
-Next, you will perform a fit of your data to Equation (1) above.  To do this, you will use the LINEST function in Excel, described in Appendix \ref{excel}.  But to make LINEST fit your $F_{\rm drag}$ values to $v^2$ instead of $v$, you will enter ``\specialcaret \verb!2!'' after selecting your $v$ data (what Excel calls the ``known $x$ values'') so that your entire line will look something like ``\verb!=linest(B1:B5, A1:A5!\specialcaret \verb!2, 0, 1)!''.
+Next, you will perform a fit of your data to Equation (1) above.  To do this, you will use the LINEST function in \textit{Excel}, described in \textbf{Appendix \ref{excel}}.  But to make LINEST fit your $F_{\rm drag}$ values to $v^2$ instead of $v$, you will enter ``\specialcaret \verb!2!'' after selecting your $v$ data (what \textit{Excel} calls the ``known $x$ values'') so that your entire line will look something like ``\verb!=linest(B1:B5, A1:A5!\specialcaret \verb!2, 0, 1)!''.
 \item Based on your data, what is the drag coefficient $C$ for your stack of coffee filters?  Also check that your number seems sensible in light of the other values of $C$ in the table above.  Is your stack of coffee filters as ``aerodynamic'' as a Toyota Prius?
 \answerspace{0.8in}
 
