@@ -28,15 +28,13 @@ of forces acting on an object.
 \textbf{Apparatus }
 
 \begin{itemize}
-\item Force probe 
-\item Motion detector 
-\item Dynamics cart and track 
-\item Variety of masses to increase the mass of the cart 
-\item CS2000 compact scale
-\item Low friction pulley and string 
-\item Variety of hanging masses 
-\item Pasco 550 Interface
 \item \textit{Capstone} software (\filename{V\_A\_F\_Graphs.cap} experiment file)
+\item CS2000 compact scale
+\item Dynamics track
+\item Hanging masses (x2)
+\item Pulley with clamp
+\item String
+\item Wireless smart cart
 \end{itemize}
 
 \bigskip
@@ -93,30 +91,26 @@ accelerate the cart each time. By measuring the acceleration of different mass
 carts, you can find a mathematical relationship between the acceleration of
 the cart and its mass, with the applied force kept constant.
 
-(a) Open the file \filename{V\_A\_F\_Graphs.cap}  in the \filename{\coursefolder} folder.% and calibrate the force probe (see \textit{Calibrating Force Sensors} in \textbf{Appendix \ref{capstone}: Capstone}).
+(a) Open the file \filename{V\_A\_F\_Graphs.cap}  in the \filename{\coursefolder} folder. Turn on the cart at your station and connect it to the computer via Bluetooth. At the beginning of each experiment, the measurements from the built-in acceleration and forces sensors may not be zero when the acceleration or force is actually zero. To tare the sensors, select the desired sensor (either the \textbf{Smart Cart Acceleration Sensor} or the \textbf{Smart Cart Force Sensor}) in the \textbf{Controls} palette and then click \textbf{Zero Sensor Now}. When taring the sensors, the cart should be at rest and there should be no applied force on the hook.
 \medskip
 
-(b) Set up the pulley, cart, string, motion detector and force probe as shown
-below. (Be sure that the cable from the force probe doesn't interfere with the
-motion of the cart, and is out of the way of the motion detector.)
+(b) Set up the pulley, cart, and string as shown in the figure below.
 \bigskip
 
 \answerspace{0.5cm}
 %{\par\centering \includegraphics{force1/force1_fig4.eps} \par}
-{\par\centering \includegraphics{force1/cart_detector_mass.pdf} \par}
+%{\par\centering \includegraphics{force1/cart_detector_mass.pdf} \par}
+{\par\centering \includegraphics{force1/cart_pulley_mass.pdf} \par}
 \answerspace{0.5cm}
 
-(c) We will define a mass scale in which the unit is the mass of the cart (including the force probe), called one cart mass. Use the compact scale to determine the mass of the cart and force probe. This will be defined as one cart mass. Assemble masses which you can add to the cart to make the cart's mass equal to approximately 1.5, 2.0. 2.5 and 3.0 cart masses. Record the amount of mass to be added in each case.
+(c) We will define a mass scale in which the unit is the mass of the cart, called one cart mass. Use the compact scale to determine the mass of the cart. This will be defined as one cart mass. Assemble masses which you can add to the cart to make the cart's mass equal to approximately 1.5, 2.0. 2.5 and 3.0 cart masses. Record the amount of mass to be added in each case.
 \answerspace{1in}
 
 (d) Now add masses to make the cart's mass 2.0 cart masses.
 
 \pagebreak[3]
-(e) Hang 100 g from the end of the string.
-Start recording data and release the car from rest when you hear the clicks
-of the motion detector. Repeat until you get a good run. Sketch the graphs on
-the axes below. Don't forget to label the axes.
-
+(e) Hang 50 g from the end of the string. Start recording data and release the car from rest.  
+Stop the cart before it hits the end of the track. Repeat until you get a good run. Sketch the graphs neatly on the axes below and indicate the scale on the axes.
 %\answerspace{0.3cm}
 %{\par\centering \includegraphics{force2/force2_fig4.eps} \par}
 %\answerspace{0.3cm}
@@ -148,10 +142,8 @@ the axes below. Don't forget to label the axes.
 	ylabel={Force (N)},
 	]
 \end{lab_groupplot}
-
-(f) Use the \textbf{Delta Tool} (in \textbf{Capstone}) to determine the average force and average acceleration
-during the time interval when they are nearly constant, and record them in the
-third row of the table below.
+(f) Use the \textbf{Highlight} and \textbf{Statistics} functions to determine 
+the average force and the average acceleration during the time interval when they are nearly constant, and record them below. See \textbf{Appendix \ref{capstone}} for details on the use of the \textbf{Highlight} and  \textbf{Statistics} functions of Capstone.
 
 \vspace{0.3cm}
 {\renewcommand{\arraystretch}{2.0}
@@ -182,8 +174,8 @@ decreases once the cart is released. (You will examine why this is so in a later
 lab.) This decrease depends on the size of the acceleration. Therefore, in order
 to keep the applied force constant, you may need to change the hanging mass. 
 
-Adjust the hanging mass until the force probe reading while the cart is accelerating
-is the same as the force you recorded in the third row of the table above. When
+Adjust the hanging mass until the force sensor reading while the cart is accelerating
+is the same as the force you recorded in the third row of the table. When
 you have found the correct hanging mass, graph the motion of the cart. Measure
 the average force and average acceleration of the cart during the time interval
 when the force and acceleration are nearly constant and record these values
@@ -374,40 +366,27 @@ an Acceleration of 1.0 meter/second/second?}
 You have used mass and force measuring devices that have been provided for you.
 You could now see if everything makes sense by accelerating one kilogram of
 mass with a force of about one newton and seeing if an acceleration of about
-one meter per second per second results. Unfortunately, the carts with force
-probes that we have been using typically have a mass greater than 1 kg. So we
-will accelerate a 2.0 kg cart with a 2.0 N force.
+one meter per second per second results. %Unfortunately, the carts with force probes that we have been using typically have a mass greater than 1 kg. So we will accelerate a 2.0 kg cart with a 2.0 N force.
 
-(a) What do you expect the acceleration to be in this case? Show the calculation
-below.
-\vspace{20mm}
+%(a) What do you expect the acceleration to be in this case? Show the calculation below. \vspace{20mm}
 
-(b) Test your prediction. Add masses to the cart so that the total mass is 2.0
-kg. Set up the pulley, weighted cart, string, motion detector and force probe
-as in Activity 1. Check the calibration of the force probe with a force of 2.0
-N (hanging mass of 200 g). Graph the motion and measure the acceleration that
-results from an applied force on the force probe of 2 N. Adjust the hanging
-mass, if necessary, to get an applied force of close to 2 N while the cart is
-accelerating. (Comment: Be careful! Remember that when the cart is being held
-at rest the same hanging mass will exert more applied force on the cart than
-when it is accelerating.) Once you get a good run, measure the average values
-of force and acceleration, and record these values in a table below. Also record
+(a) Add masses to the cart so that the total mass is 1.0 kg. Set up the pulley, weighted cart, and string as in Activity 1. Hang 100 g from the end of the string. Start recording data and release the car from rest. Stop the cart before it hits the end of the track. Adjust the hanging mass, if necessary, to get an applied force of 1 N while the cart is accelerating. (Remember that when the cart is being held at rest the same hanging mass will exert more applied force on the cart than when it is accelerating!) Once you get a good run, measure the average values of force and acceleration, and record these values in a table below. Also record
 the mass of the cart and the hanging mass.
 \vspace{30mm}
 
 (c) How close is your result to the expected value of acceleration? Calculate
 the \% difference.
-\vspace{20mm}
+\vspace{30mm}
 
 (d) A force of 5.4 N is applied to an object, and the object is observed to
 accelerate with an acceleration of 3.0~m/s$^2$. If friction is so small that it
 can be ignored, what is the mass of the object in kg? Show your calculation.
-\vspace{20mm}
+\vspace{30mm}
 
 (e) An object of mass 39~kg is observed to accelerate with an acceleration of
 2.0~m/s$^2$. If friction is negligible, what is the force applied to the object
 in N? Show your calculation.
-\vspace{20mm}
+\vspace{30mm}
 
 \textbf{Comment:} The main purpose of the last three labs has been to explore
 the relationship between the forces on an object, the object's mass, and its
@@ -415,7 +394,7 @@ acceleration. You have been trying to develop Newton's First and Second Laws
 of Motion for one-dimensional situations in which all forces lie in a positive
 or negative direction along the same line. 
 
-\pagebreak[2]
+\pagebreak[3]
 \textbf{Activity 4: Newton's Laws in Your Own Words} 
 
 (a) Express Newton's First Law (the one about constant velocity) in terms of
