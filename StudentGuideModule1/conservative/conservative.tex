@@ -19,13 +19,15 @@ force when an object moves in a closed loop.
 \medskip
 \textbf{Apparatus} 
 \begin{itemize}[nosep]
-\item Wooden block with hook 
-\item Board to use as an incline S
-\item 5.0 newton spring scale 
-\item Meter stick 
-\item Variety of masses 
+\item Board to use as an incline
+\item \textit{Capstone} software (\filename{Force\_Sensor.cap} experiment file)
 \item CS2000 compact scale
+\item Meter stick 
+\item Wireless force sensor
+\item Wooden block with hook 
 \item Stop watch
+\item Variety of masses 
+
 \end{itemize}
 
 \textbf{Introduction }
@@ -34,9 +36,6 @@ You already know that mechanical energy is conserved
 for a freely falling object. Let's investigate whether mechanical energy is
 conserved when an object slides down an inclined plane in the presence of a
 friction force.
-
-
-
 
 \textbf{Activity 1: Is Mechanical Energy Conserved for a Sliding Block? }
 
@@ -47,12 +46,12 @@ friction force.
 
 (a) Raise the incline until the block slides at a constant velocity once it
 is pushed gently to overcome the static friction force. What is the potential
-energy of the block at point A relative to the bottom of the ramp? Show your
+energy of the block at point $A$ relative to the bottom of the ramp? Show your
 data and calculation.
 \answerspace{35mm}
 
 
-(b) What is the potential energy change $\Delta U$ of the block when it reaches point B? Explain.
+(b) What is the potential energy change $\Delta U$ of the block when it reaches point $B$? Explain.
 \answerspace{20mm}
 
 (c) Did the velocity of the block appear reasonably constant as it slid down the ramp?
@@ -60,7 +59,7 @@ data and calculation.
 
 \pagebreak
 (d) Assuming the initial kinetic energy (just after your starter shove) is the
-same as the final kinetic energy, what is the kinetic energy change, $\Delta K$, of the block when it reaches point B? 
+same as the final kinetic energy, what is the kinetic energy change, $\Delta K$, of the block when it reaches point $B$? 
 \answerspace{10mm}
 
 (e) Is mechanical energy conserved as a result of the sliding? Cite the evidence for your answer.
@@ -80,9 +79,9 @@ Physicists have discovered that certain conservative forces such as gravitationa
 
 It is not hard to see that a gravitational force does no net work when an object
 moves at a constant speed through a complete round trip. In the above figure,
-it takes negative external work to lower a mass from point $a$ to point $b$, as
+it takes negative external work to lower a mass from point $A$ to point $B$, as
 the force of gravity takes care of the work. On the other hand, raising the
-mass from point $b$ to point $a$ requires positive external work to be done against the force of gravity, and thus the net work done by the gravitational force
+mass from point $B$ to point $A$ requires positive external work to be done against the force of gravity, and thus the net work done by the gravitational force
 for the complete trip is zero. When a frictional force is present it always
 does net work on an object as it undergoes a round trip. For example, when a
 block slides from point $a$ to point $b$ on a horizontal surface, it takes work
@@ -97,9 +96,9 @@ the block around a similar vertical loop and calculate the work the gravitationa
 \textbf{Activity 2: Are Frictional Forces Conservative According to the Loop
 Rule?} 
 
-(a) Put masses on the wooden block and use the spring scale to pull the block
-around a rectangular path on your table top at constant velocity. Draw arrows
-along the path for the direction of motion and the direction of the friction force exerted on the block. At constant velocity, the friction force will have the same magnitude as the force you measure on the spring scale, but in the opposite direction. List the measured forces and distances for each of the four segments of the path, and calculate the work done by friction around the entire path $a$ to $b$ to $a$ as shown. Remember how we calculated the work done by friction in Activity 2 of  Experiment \ref{work_power}.
+(a) Open the \filename{Force\_Sensor.cap} file in the \filename{\coursefolder} folder. Turn on the force sensor at your station and connect it to the computer via Bluetooth. The measurements from the force sensor may not be zero when the force is actually zero. To tare the sensor, select the desired sensor (the \textbf{Wireless Force Sensor}) in the \textbf{Controls} palette and then click \textbf{Zero Sensor Now}. 
+
+(b) Put masses on the wooden block and attach the force sensor to the wooden block. Click the \textbf{Record} button and use the force sensor to pull the block around a rectangular path on your table top at constant velocity. Draw arrows along the path for the direction of motion and the direction of the friction force exerted on the block. At constant velocity, the friction force will have the same magnitude as the force you measure on the sensor, but in the opposite direction. List the measured forces and distances for each of the four segments of the path, and calculate the work done by friction around the closed path (from $a$ to $b$ to $a$ again, as shown the figure that follows). Remember how we calculated the work done by friction in Activity 2 of Experiment \ref{work_power}.
 
 \vspace{0.3cm}
 {\par\raggedright \includegraphics{conservative/conservative_fig3.pdf} \par}
@@ -111,10 +110,9 @@ along the path for the direction of motion and the direction of the friction for
 
 \answerspace{10mm}
 
-(b) Is the frictional force conservative or non-conservative (i.e., 
+(c) Is the frictional force conservative or non-conservative (i.e., 
 is the total work done by the friction force zero or non-zero) according to the loop rule? Explain.
 \answerspace{20mm}
-
 
 Let's return once again to our old friend the gravitational force and apply
 an external force to move the same block (without the masses) in a vertical
@@ -131,13 +129,9 @@ when it moves down are not the same. What happens to the work when the gravitati
 %\pagebreak
 \textbf{Activity 3: Are Gravitational Forces Conservative? }
 
-(a) Use the spring scale and raise and lower the wooden block around a rectangular
-path above your tabletop at a constant speed without allowing it to slide at
-all. Draw arrows along the path for the direction of motion and the direction
-of the gravitational force exerted on the block. Use your measured distances,
-the measurement of the mass of the block and the dot product notation to calculate the work done by the gravitational force on the block over each of the four segments of the path, and over the entire path $a$ to $b$ to $a$ as shown. Be careful not to let the block slide on the table or rub against it. Don't forget to specify the units! Hints: (1) In path 1 
-\( \Delta  x
-= x_{1}  - x_{0} \), \( \Delta  y = y_{1}  - y_{0} \),
+(a) Use the force sensor to raise and lower the wooden block around a rectangular
+path above your tabletop at a constant speed. Draw arrows along the path for the direction of motion and the direction of the gravitational force exerted on the block. Use your measured distances, the measurement of the mass of the block and the dot product notation to calculate the work done by the gravitational force on the block over each of the four segments of the path, and over the entire path $a$ to $b$ to $a$ as shown. Don't forget to specify the units! Hints: (1) In path 1 
+\( \Delta  x = x_{1}  - x_{0} \), \( \Delta  y = y_{1}  - y_{0} \),
 etc. (2) Keep track of the signs. For which paths is the work negative? positive?
 \answerspace{40mm}
 
