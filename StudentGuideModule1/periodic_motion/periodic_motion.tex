@@ -13,13 +13,12 @@
 \medskip
 \textbf{Apparatus} 
 \begin{itemize}[nosep]
-\item Support with cross bar
-\item Spring
-\item Variety of masses 
-\item Motion detector 
-\item Force probe
-\item Pasco 550 interface
 \item \textit{Capstone} software (\filename{P\_V\_Graphs.cap} and \filename{SHM.cap} experiment files)
+\item Spring
+\item Support with cross bar
+\item Variety of masses 
+\item Wireless force sensor
+\item Wireless motion sensor 
 \end{itemize}
 
 \medskip
@@ -34,9 +33,7 @@ cycles per second, is called \textit{Hertz}.
 \bigskip
 \textbf{Activity 1: Periodic Motion of a Mass-Spring System} 
 
-(a) Open the file \filename{P\_V\_Graphs.cap} in the \filename{\coursefolder} folder. Hang the large spring from the force probe hook with the large diameter coils down and hang a 200-g mass from the spring.  Place the motion detector facing up directly below the spring. Lift the mass straight upward about 10~cm, and let go. 
-You may need to adjust the height of the support for the detector to see the mass well. 
-Record data for a few seconds to display position-time and 
+(a) Open the file \filename{P\_V\_Graphs.cap} in the \filename{\coursefolder} folder. Turn on the motion sensor at your station and connect it to the computer via Bluetooth. Hang the large spring from the force sensor's hook with the large diameter coils down and hang a 200-g mass from the spring.  Place the motion sensor facing up directly below the spring. Lift the mass straight upward about 10~cm, and let go.  You may need to adjust the height of the support for the sensor to see the mass well. Record data for a few seconds to display position-time and 
 velocity-time graphs of the motion. Sketch the graphs on the following axes.
 
 %\begin{center}
@@ -62,7 +59,7 @@ velocity-time graphs of the motion. Sketch the graphs on the following axes.
 	ytick distance = 1, 
 	minor y tick num=3,
 	ymin=0,ymax=1, 
-	ylabel={Position (m/s)},
+	ylabel={Position (m)},
 	]
 \nextgroupplot[
 	ymin=-1,ymax=1, 
@@ -88,12 +85,12 @@ peaks occur at the same times? If not, how are the peaks related in time, i.e.
 what fraction of a period is their phase difference?
 \vspace{20mm}
 
-(c) Use the \button{Delta Tool} to measure the period of the motion. (For
+(c) Use the \textbf{Delta Tool} to measure the period of the motion. (For
 better accuracy, measure the total time over as many cycles as possible and
 divide by the number of cycles.)
 \vspace{20mm}
 
-(d) Using the \button{Statistics} function, determine and record the maximum and minimum 
+(d) Using the \textbf{Statistics} function, determine and record the maximum and minimum 
 displacement.  Determine the amplitude of the motion from $A = (x_{\rm max} - x_{\rm min})/2$.
 \vspace{20mm}
 
@@ -114,7 +111,7 @@ Increase the spring constant (use a stiffer spring)?
 
 (b) Repeat the procedure of part (a), but with a different starting position
 (other than 10~cm). (Warning: Do not make the amplitude so large that the mass
-comes closer than 15~cm from the motion detector.) When you have good graphs,
+comes closer than 15~cm from the motion sensor.) When you have good graphs,
 find and record the period and the amplitude using the methods described in
 Activity 1. 
 \answerspace{15mm}
@@ -201,7 +198,7 @@ that you observed on the axes below using dashed lines.
 	ytick distance = 1, 
 	minor y tick num=3,
 	ymin=0,ymax=1, 
-	ylabel={Position (m/s)},
+	ylabel={Position (m)},
 	]
 \nextgroupplot[
 	ymin=-1,ymax=1, 
@@ -217,33 +214,28 @@ that you observed on the axes below using dashed lines.
 	]
 \end{lab_groupplot}
 
-
-
 (b) Based on what you know about the relationships between velocity, 
 acceleration, and force, use dashed lines to sketch your predictions for the 
 acceleration and force graphs.
 
-(c) Suspend the 200-g mass from the spring and open the file \filename{SHM.cap} in the \filename{\coursefolder} folder. Calibrate the force probe (see Appendix~\ref{capstone}).
-Start the mass oscillating with an amplitude of 10~cm and record data for a few seconds.
-When you have obtained good graphs, sketch the results on the above axes using
-solid lines. Print your graph and attach to this unit.
+%(c) Suspend the 200-g mass from the spring and open the file \filename{SHM.cap} in the \filename{\coursefolder} folder. Calibrate the force probe (see Appendix~\ref{capstone}). Start the mass oscillating with an amplitude of 10~cm and record data for a few seconds. When you have obtained good graphs, sketch the results on the above axes using solid lines. Print your graph and attach to this unit.
 
-(d) When the mass is at its maximum distance from the detector, is the absolute
- value of the velocity
-maximum, minimum or some other value according to your graphs? Does this agree
+(c) Open the file \filename{SHM.cap} in the \filename{\coursefolder} folder. Turn on the motion and force sensors at your station and connect them to the computer via Bluetooth. Tare the force sensor with noe applied force on the sensor's hook. Hang the large spring from the force sensor's hook with the large diameter coils down and hang a 200-g mass from the spring.  Place the motion sensor facing up directly below the spring. Start the mass oscillating with an amplitude of 10~cm and record data for a few seconds. When you have obtained good graphs, sketch the results on the above axes using solid lines. Print your graph and attach to this unit.
+
+(d) When the mass is at its maximum distance from the motion sensor, is the absolute value of the velocity maximum, minimum or some other value according to your graphs? Does this agree
 with your predictions? Does this agree with your observations of the oscillating
 mass? Explain.
 \answerspace{15mm}
 
 \pagebreak[2]
 (e) When the mass has its maximum positive velocity, is its distance from the
-detector maximum, minimum, the equilibrium value or some other value according
+motion sensor maximum, minimum, the equilibrium value or some other value according
 to your graphs? What about when it reaches maximum negative velocity? Does this
 agree with your predictions? Does this agree with your observations of the 
 oscillating mass? Explain. 
 \answerspace{10mm}
 
-(f) According to your graphs, for what distances from the detector is the 
+(f) According to your graphs, for what distances from the motion sensor is the 
 acceleration maximum? For what distances is the acceleration zero? What is the 
 velocity in each of these cases?
 \answerspace{20mm}
@@ -274,7 +266,7 @@ on your distance and velocity graphs above with ``$K=0$''.
 points. Label the point you use on your velocity and distance graphs with a
 1. Use $U = \frac{1}{2}kx^{2}$, where  $x$ is the distance from the equilibrium 
 position and $k$ is the force constant of the spring, which you have already 
-measured. Use the \button{Delta Tool} in the menubar (see Appendix {\it A})
+measured. Use the \textbf{Delta Tool} in the menubar (see Appendix {\it A})
 to measure position, then subtract the 
 equilibrium position to determine $x$. Show your data and calculations 
 in the space below. 
