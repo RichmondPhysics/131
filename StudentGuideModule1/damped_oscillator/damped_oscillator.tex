@@ -25,14 +25,17 @@ This lab uses light spring, with a spring constant of $\approx 3$~N/m.
 \bigskip
 \textbf{Apparatus:}
 \begin{itemize}[nosep]
-\item Collection of masses 
-\item Two index cards
-\item Masking tape
-\item Light duty spring
-\item String vibrator with two banana cables
-\item Motion detector
-\item Lab stands, to support spring, vibrator, and motion detector
 \item \textit{Capstone} software (\filename{Damping.cap} experiment file)
+\item Collection of masses 
+\item Lab stands, to support spring, vibrator, and motion sensor
+\item Light duty spring
+\item PASCO 550 Universal Interface
+\item Masking tape
+\item String vibrator with two banana cables
+\item Two index cards
+\item Wireless motion sensor
+
+
 \end{itemize}
 
 
@@ -92,7 +95,8 @@ But Equation (\ref{equation_undamped}) implies that the system keeps vibrating f
 
 \answerspace{0.6in}
 
-Well, let's try it!  Hang a 50~g mass on the spring, over the edge of the table.  Move the ``string vibrator'' box out of the way for now; you'll use that in Activity 4.  Adjust the height of the spring so the bottom of the mass is about 60 cm above the floor.  Use masking tape to stick an index card on the bottom of your mass.  Open the file \filename{Damping.cap} in the \filename{\coursefolder} folder.   It will be most convenient if you set the equilibrium position of your mass to be at $x=0$.  To do this, let your mass hang at equilibrium over the motion sensor, click on \button{Hardware Setup} on the left sidebar, click on the gear icon to the right of \button{Motion Sensor II}, and click on the \button{Zero Sensor Now} button. 
+Well, let's try it!  Hang a 50~g mass on the spring, over the edge of the table.  Move the ``string vibrator'' box out of the way for now; you'll use that in Activity 4.  Adjust the height of the spring so the bottom of the mass is about 60 cm above the floor.  Use masking tape to stick an index card on the bottom of your mass.  Open the file \filename{Damping.cap} in the \filename{\coursefolder} folder. Turn on the sensor at your station and connect it
+to the computer via Bluetooth. It will be most convenient if you set the equilibrium position of your mass to be at $x=0$.  To do this, let your mass hang at equilibrium over the motion sensor, click on \button{Hardware Setup} on the left sidebar, click on the gear icon to the right of \button{Wireless Motion Sensor}, and click on the \button{Zero Sensor Now} button. 
 
 \item Now take some data: lift your mass up 10~cm above its equilibrium position, let it go, and hit \button{Record}. You'll want to take data for about one minute.  Was your prediction correct?  If not, which graph does your data most resemble?
 \answerspace{0.6in}
@@ -109,7 +113,7 @@ where the proportionality constant $b$, also called the ``damping coefficient,''
 \item What does the negative sign in Equation (\ref{equation_Fdrag}) indicate?
 \answerspace{0.6in}
 
-When we include the damping force as well as the restoring force, then Newton's second law $F_{\rm NET} = ma$ for our object becomes
+When we include the damping force as well as the restoring force, then Newton's second law $F_{\rm net} = ma$ for our object becomes
 \begin{equation}
 -kx-b\frac{dx}{dt}=m\frac{d^2x}{dt^2}.
 \label{equation_damped_diff_eq}
