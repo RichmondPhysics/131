@@ -7,15 +7,19 @@
 \usepackage{babel}
 \usepackage[T1]{fontenc}
 \usepackage[nomarginpar]{geometry}
-\geometry{verbose,letterpaper}
-\addtolength{\oddsidemargin}{1.0cm} %without these two lines, larger margin is on the OUTSIDE.  We want the larger edge on the INSIDE, to allow room for the three hole punches
-\addtolength{\evensidemargin}{-1.0cm}
-\setlength\topmargin{0.2in}
-\addtolength{\hoffset}{-1.0cm}
-\addtolength{\textwidth}{2.0cm}
-\addtolength{\voffset}{-1.5cm} %This line is apparently needed on some versions of MikTex XeLatex.  Comment out if your pages appear shifted too high.
-\addtolength{\textheight}{3.5cm}
-\setlength\headheight{1.25em} %about 12pt for 10-point type; about 14.6pt for 12-point type
+\geometry{verbose=false, showframe=false, twoside, letterpaper, 
+top=1.14in, bottom=0.79in,
+inner=1.0in, outer=0.75in,
+}
+%\setlength\topmargin{0.2in}
+%\addtolength{\voffset}{-1.5cm} %This line is apparently needed on some versions of MikTex XeLatex.  Comment out if your pages appear shifted too high.
+%\addtolength{\textheight}{3.5cm}
+%\setlength\headheight{1.25em} %about 12pt for 10-point type; about 14.6pt for 12-point type
+
+%\addtolength{\oddsidemargin}{1.0cm} %without these two lines, larger margin is on the OUTSIDE.  We want the larger edge on the INSIDE, to allow room for the three hole punches
+%\addtolength{\evensidemargin}{-1.0cm}
+%\addtolength{\hoffset}{-1.0cm}
+%\addtolength{\textwidth}{2.0cm}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
