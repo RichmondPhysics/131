@@ -2,7 +2,7 @@
 
 \input{labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
 \newcommand{\coursefolder}{Phys131} %This defines the place students will look for various files
-\newcommand{\coursesection}{\\Fall 2023} %This defines the section (and/or year) for the title page.
+\newcommand{\coursesection}{\\Fall 2024} %This defines the section (and/or year) for the title page.
 \ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
 
 %The \includeonly line below is a way to save time so you don't always have to compile the WHOLE latex document, if for instance you've only made changes to a single lab.  If you want to compile more than two labs, the syntax is \includeonly{lab1,lab2,lab3} with no spaces after the commas.
@@ -16,7 +16,7 @@
 %\hypersetup{draft}
 
 %Use the following line to print instructor notes at the end of the document
-\includeinstructornotestrue
+%\includeinstructornotestrue
 
 % to generate the pdf on centos7: latex master;  dvipdfmx master
 % another way to generate the pdf on centos7: xelatex master
@@ -142,5 +142,5 @@
 \includelab{0}{appendices/virtual_machine/virtual_machine} %not needed for any lab in 131, I think. --MT, 2017
 
 % The following command prints the "Instructor Notes" section at the end of the manual.
-\ifincludeinstructornotes \startinstructornotes \fi
+%\ifincludeinstructornotes \startinstructornotes \fi
 \end{document}
