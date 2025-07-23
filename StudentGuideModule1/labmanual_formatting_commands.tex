@@ -39,10 +39,15 @@ inner=1.0in, outer=0.75in,
         \endgroup
 }
 \newcounter{tocpartnum}
-\renewcommand{\part}[1]{
-	\stepcounter{tocpartnum}
-	\phantomsection %This line fixes a problem in compiling the "bookmarks" (the outline) in hyperref under pdflatex.
-	\immediateaddcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}{}}
+%\renewcommand{\part}[1]{
+%	\stepcounter{tocpartnum}
+%	\phantomsection %This line fixes a problem in compiling the "bookmarks" (the outline) in hyperref under pdflatex.
+%	\immediateaddcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}{}}
+
+\renewcommand{\part}[1]{%This replaces the code above to remove the use of \immediateaddcontentsline, which manually writes to the TOC with a \write command outside of a float or shipout context--this is prone to error in newer TeX distributions and was causing fatal compile errors 07/18/25 WH
+  \stepcounter{tocpartnum}
+  \phantomsection
+  \addcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}}
 
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
@@ -55,8 +60,10 @@ inner=1.0in, outer=0.75in,
 
 \newcommand{\startappendix}{
 	\appendix
-	\immediateaddcontentsline{toc}{part}{Appendices} 
+	%\immediateaddcontentsline{toc}{part}{Appendices} 
 		%Doing this instead of \part avoids a Roman number for Appendices in the toc
+	\addcontentsline{toc}{part}{Appendices}
+		% This replaces the use of \immediateaddcontentsline above--see note above in \renewcommand{\part} for reasons why
 	\cleardoublepage
 	\NoForceSectionOddPage 
 		%Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
