@@ -21,15 +21,18 @@ inner=1.0in, outer=0.75in,
 %\addtolength{\hoffset}{-1.0cm}
 %\addtolength{\textwidth}{2.0cm}
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
 
+\usepackage{fancyhdr}
 \newcommand{\headersupplementmark}{} %This can be changed to `Lab' or `Appendix' within master.tex
-\fancyhead[LO,RE]{\slshape \rightmark} 
-\fancyhead[LE,RO]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
+\fancypagestyle{labfancy}[fancy]{%
+	\fancyhead[LO,RE]{\slshape \rightmark} 
+	\fancyhead[LE,RO]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
+}
+\pagestyle{labfancy}
 \usepackage{titlesec} %must be called AFTER fancyhead.
-\titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection}{1em}{} % At start of section
+\titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection:}{1ex}{} % At start of section
 \renewcommand{\headersupplementmark}{Lab }
+
 
 \newcommand\immediateaddcontentsline[3]{%
         \begingroup
@@ -53,7 +56,7 @@ inner=1.0in, outer=0.75in,
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
 \renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
 \setcounter{tocdepth}{1}
-\setlength{\cftbeforesecskip}{10.0pt plus 1.0pt minus 3.0pt} %space between chapter listings in TOC.  Default is 10.0pt plus 1.0pt
+\setlength{\cftbeforesecskip}{8.0pt plus 1.0pt minus 3.0pt} %space between chapter listings in TOC.  Default is 10.0pt plus 1.0pt
 
 \setlength\parskip{\medskipamount}
 \setlength\parindent{0pt}
@@ -62,13 +65,14 @@ inner=1.0in, outer=0.75in,
 	\appendix
 	%\immediateaddcontentsline{toc}{part}{Appendices} 
 		%Doing this instead of \part avoids a Roman number for Appendices in the toc
+	\cleardoublepage
+	 \phantomsection
 	\addcontentsline{toc}{part}{Appendices}
 		% This replaces the use of \immediateaddcontentsline above--see note above in \renewcommand{\part} for reasons why
-	\cleardoublepage
-	\NoForceSectionOddPage 
+%	\NoForceSectionOddPage 
 		%Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
 	\renewcommand{\headersupplementmark}{Appendix }
-	\titleformat{\section}{\normalfont\large\bfseries}{\headersupplementmark \thesection :}{1ex}{}
+	\titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection :}{1ex}{}
 }
 
 \usepackage{xcolor}
@@ -116,12 +120,12 @@ inner=1.0in, outer=0.75in,
 \NewDocumentCommand \includelab { m o m } {%
   \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
 	\ifnum#1=1 \input{#3} 
-	\else \ifincludealllabs \input{#3} \fi 
+	\else \ifincludealllabs \include{#3} \fi 
 	\fi
 	}
   {%There is a directory {#1} {#2} {#3} \par
-	\ifnum#1=1 \subinputfrom{#2} {#3} 
-	\else \ifincludealllabs \subinputfrom{#2} {#3} \fi 
+	\ifnum#1=1 \subincludefrom{#2} {#3} 
+	\else \ifincludealllabs \subincludefrom{#2} {#3} \fi 
 	\fi
 	}
 }
@@ -174,7 +178,7 @@ inner=1.0in, outer=0.75in,
 
 \newcounter{activity}
 
-\usepackage{enumitem} %added 3/2016 by MT.  Tested 100% with other labs, looks like it does no harm.
+\usepackage[inline]{enumitem} %added 3/2016 by MT.  Tested 100% with other labs, looks like it does no harm.
 %enumitem package allows enumerate[resume], which allows enumerate to play nicely with wrapfig (see induction1).
 %enumitem package also provides very useful [wide] and [nosep] presets. (See, eg. resonance_tubes).
 \SetEnumitemKey{labparts}{wide, label=(\emph{\alph*})} %defines labparts to number parts as (a), (b), etc.
