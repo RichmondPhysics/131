@@ -193,7 +193,6 @@ inner=1.0in, outer=0.75in,
 \newcommand\specialcaret {\hspace{0.0ex}\raisebox{0.6ex}{\scalebox{0.7}[0.7]{$\boldsymbol{\wedge}$}}\hspace{0.1ex}}
 
 \newcommand{\makelabheader}
-%{Name: \rule{2.0in}{0.1pt}\hfill{}Section: \rule{1.0in}{0.1pt}\hfill{}Date: \rule{1.0in}{0.1pt}}
 {Name: \rule{2.0in}{0.1pt}\hfill{}Lab Partner(s): \rule{3.0in}{0.1pt}}
 
 
@@ -237,6 +236,7 @@ inner=1.0in, outer=0.75in,
 
 
 \newif\ifForOneTwentyFive %is set to true in master.tex for PHYS 125.  Allows alternate versions of the labs.  Use with care!
+%Consider re-coding this using the ``comment'' package, which allows for different versions of the text.
 
 \newcommand{\filename}[1]{{\sffamily\fontshape{sl}\selectfont #1}}
 \newcommand{\button}[1]{{\fontshape{sl}\selectfont #1}}
@@ -249,4 +249,6 @@ inner=1.0in, outer=0.75in,
 \makeatother
 
 \hyphenation{im-ped-ance}
+\usepackage{mfirstuc} %used for the appendix greek_alphabet
+
 

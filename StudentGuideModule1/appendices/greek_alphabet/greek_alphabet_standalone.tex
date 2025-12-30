@@ -1,0 +1,132 @@
+\documentclass[10pt,twoside]{article}
+
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{mfirstuc}
+\usepackage{tabularx} 
+
+%For fixed width columns:
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\begin{document}
+
+%For Physics 132
+%\newcommand{\GreekLettersUsed}{alpha, beta, gamma, delta, Delta, epsilon, eta, theta, kappa, lambda, mu, pi, rho, Sigma, sigma, tau, Phi, phi, Omega, omega}
+
+\begin{center}
+%\textbf{The Greek Alphabet}
+\end{center}
+%By Matt Trawick
+
+This class uses several letters from the Greek alphabet.  The highlighted letters in the table below are the ones you'll need to know.
+\medskip
+
+{  %Beginning of group in which we define local commands and macros
+
+\newcommand{\AllGreekLetters}{alpha,beta,gamma,delta,epsilon, zeta, eta, theta, iota, kappa,lambda, mu, nu, xi,omicron,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega}
+\newcommand{\Alpha}{ $A$  } %Using {\rm A} would be more natural, but I couldn't get it to work.
+\newcommand{\Beta}{ $B$ }
+\newcommand{\Epsilon}{ $E$ }
+\newcommand{\Zeta}{ $Z$ }
+\newcommand{\Eta}{ $H$ }
+\newcommand{\Iota}{ $I$ }
+\newcommand{\Kappa}{ $K$ }
+\newcommand{\Mu}{ $M$ }
+\newcommand{\Nu}{ $N$ }
+\newcommand{\omicron}{ $o$ }
+\newcommand{\Omicron}{ $O$ }
+\newcommand{\Rho}{ $P$ }
+\newcommand{\Tau}{ $T$ }
+\newcommand{\Chi}{ $X$ }
+
+\newcommand{\ucimg}[1] %
+    {\includegraphics[scale=0.70]{pics/uc_#1.png}}
+
+\newcommand{\lcimg}[1] %
+    {{\includegraphics[scale=0.70]{pics/lc_#1.png}}}
+
+\ExplSyntaxOn
+\newcommand{\IfStringInList}[4] %
+  { \clist_if_in:nnTF {#2} {#1} {#3} {#4} }
+\ExplSyntaxOff
+
+\renewcommand{\arraystretch}{1.50}  %increases line spacing in table
+\setlength\tabcolsep{0.05pt}
+
+%%This is where we iterate through the alphabet to create data for the table
+\newcommand{\MakeTableData}{%
+   \def\TableData{} % reset \TableData, not sure if this is needed
+   \foreach \gl in \AllGreekLetters  {
+	\edef\Gl{\MFUsentencecase{\gl}}
+
+	\edef\uccolorbox{\IfStringInList{\Gl}{\GreekLettersUsed}{\colorbox{yellow}}{}}
+	\edef\lccolorbox{\IfStringInList{\gl}{\GreekLettersUsed}{\colorbox{yellow}}{}}
+%%Next is an awkward way to make the name yellow if EITHER  capital or lowercase letter is used.
+	\edef\namecolorbox{\IfStringInList{\gl}{\GreekLettersUsed}{\colorbox{yellow}}
+             {\IfStringInList{\Gl}{\GreekLettersUsed}{\colorbox{yellow}}{~}}}
+
+%%Printed letters
+	\xappto\TableData{\uccolorbox}
+	\xappto\TableData{{$ \csname \Gl \endcsname$}}
+	\xappto\TableData{&, & }
+	\xappto\TableData{\lccolorbox}
+	\xappto\TableData{{$\csname \gl \endcsname $}}
+	\xappto\TableData{ & }
+
+%%Printed notes and exceptions
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{epsilon}{~(or $\varepsilon$) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{phi}{~(or $\varphi$) }{}}
+	\xappto\TableData{ & }
+
+%%Letter names
+	\xappto\TableData{\namecolorbox}
+	\xappto\TableData{{\gl \vrule height 1.6ex depth 0.4ex width 0pt} & }
+
+%%Handwritten letters
+	\appto\TableData{\raisebox{-0.4ex}}
+	\xappto\TableData{{\uccolorbox{\ucimg{\gl}}}}
+ 	\xappto\TableData{&, & }
+	\appto\TableData{\raisebox{-0.4ex}}
+	\xappto\TableData{{\lccolorbox{\lcimg{\gl}}}}
+ 	\xappto\TableData{ & }
+
+%%Printed notes and exceptions
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{alpha}{ (not \lcimg{a}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{epsilon}{ (or \lcimg{varepsilon})}{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{eta}{ (not \lcimg{n}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{kappa}{ (not \lcimg{k}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{mu}{ (not \lcimg{u}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{nu}{ (not \lcimg{u} or \lcimg{v}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{rho}{ (not \lcimg{p}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{tau}{ (not \lcimg{t}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{chi}{ (not \lcimg{x}) }{}}
+	\xappto\TableData{\expandafter\ifstrequal\expandafter{\gl}{omega}{ (not \lcimg{w}) }{}}
+	\xappto\TableData{ \\}
+	}    
+    }%
+	\MakeTableData
+
+%%This is where we actually define the table, though we use the data from the lines above
+\begin{center}
+\begin{tabular}{| C{1.45em}  L{1ex} C{1.25em}  L{0.75in} L{1in} C{2.5em} L{1ex} C{2em} L{1.1in} |}
+	\hline
+	%%headings
+	\multicolumn{4}{|l}{\textbf{~printed}} & {\textbf{\hspace{0.2em}name}} & \multicolumn{4}{l|}{\textbf{~handwritten}} \\
+
+      \TableData
+
+	\hline
+\end{tabular}
+\end{center}
+} %End of group defining local macros
+
+\index{color page}
+
+\medskip
+
+Many Greek capital letters look exactly like the corresponding Roman (English) capital letters, so they aren't used as special symbols in math and physics.  You won't see lowercase iota, omicron, or upsilon very often either, for the same reason.
+
+\end{document}
