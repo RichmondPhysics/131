@@ -11,28 +11,30 @@
 top=1.14in, bottom=0.79in,
 inner=1.0in, outer=0.75in,
 }
-%\setlength\topmargin{0.2in}
-%\addtolength{\voffset}{-1.5cm} %This line is apparently needed on some versions of MikTex XeLatex.  Comment out if your pages appear shifted too high.
-%\addtolength{\textheight}{3.5cm}
-%\setlength\headheight{1.25em} %about 12pt for 10-point type; about 14.6pt for 12-point type
-
-%\addtolength{\oddsidemargin}{1.0cm} %without these two lines, larger margin is on the OUTSIDE.  We want the larger edge on the INSIDE, to allow room for the three hole punches
-%\addtolength{\evensidemargin}{-1.0cm}
-%\addtolength{\hoffset}{-1.0cm}
-%\addtolength{\textwidth}{2.0cm}
-
 
 \usepackage{fancyhdr}
 \newcommand{\headersupplementmark}{} %This can be changed to `Lab' or `Appendix' within master.tex
 \fancypagestyle{labfancy}[fancy]{%
 	\fancyhead[LO,RE]{\slshape \rightmark} 
-	\fancyhead[LE,RO]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
+	\fancyhead[EL,OR]{\slshape \MakeUppercase{\headersupplementmark}\leftmark}
 }
 \pagestyle{labfancy}
+\fancypagestyle{labcontentsfancy}[fancy]{%
+	\fancyhead[LO,RE]{}
+	\fancyhead[LE,RO]{\slshape \MakeUppercase{CONTENTS}}
+}
+\renewcommand{\sectionmark}[1]{\markboth{\MakeUppercase{\thesection:\ #1}}{}}
+
+
+
 \usepackage{titlesec} %must be called AFTER fancyhead.
 \titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection:}{1ex}{} % At start of section
 \renewcommand{\headersupplementmark}{Lab }
 
+%\titleclass{\part}{straight}
+%\titleformat{\part}{\normalfont}{}{0pt}{}
+%\titlespacing{\part}{0pt}{0pt}{0pt}[0pt]
+%\newcommand{\partbreak}{}
 
 \newcommand\immediateaddcontentsline[3]{%
         \begingroup
@@ -42,32 +44,55 @@ inner=1.0in, outer=0.75in,
         \endgroup
 }
 \newcounter{tocpartnum}
-%\renewcommand{\part}[1]{
+%renewcommand{\part}[1]{
 %	\stepcounter{tocpartnum}
 %	\phantomsection %This line fixes a problem in compiling the "bookmarks" (the outline) in hyperref under pdflatex.
 %	\immediateaddcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}{}}
 
 \renewcommand{\part}[1]{%This replaces the code above to remove the use of \immediateaddcontentsline, which manually writes to the TOC with a \write command outside of a float or shipout context--this is prone to error in newer TeX distributions and was causing fatal compile errors 07/18/25 WH
-  \stepcounter{tocpartnum}
-  \phantomsection
-  \addcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}}
+	\stepcounter{tocpartnum}
+ 	\phantomsection
+ 	%\addcontentsline{toc}{part}{\Roman{tocpartnum} \hspace{1ex} #1}}
+
+	\addcontentsline{toc}{part}{Part \Alph{tocpartnum}:\hspace{1ex}#1}
+	 \phantomsection
+}
+
 
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
 \renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
 \setcounter{tocdepth}{1}
 \setlength{\cftbeforesecskip}{8.0pt plus 1.0pt minus 3.0pt} %space between chapter listings in TOC.  Default is 10.0pt plus 1.0pt
+		\makeatletter
+		\newcommand{\cftlotnumberline}[1]{\@cftbsnum #1\@cftasnum\@cftasnumb}
+		\makeatother
+
+		\setlength{\cftsubsecnumwidth}{1.6em}
+		\setlength{\cftbeforesecskip}{7.0pt plus 1.0pt minus 4.0pt} %Default was 10.0pt plus 1.0pt
+		\setlength{\cftsecnumwidth}{1.0em}
+		\renewcommand{\cftmarktoc}{}
+		\renewcommand{\cftsecpresnum}{\headersupplementmark}
+		\renewcommand{\cftsecpresnum}{Lab~}
+		\renewcommand{\cftsecaftersnumb}{:~}
+		\setcounter{tocdepth}{1}
+		\let\numberline\cftlotnumberline
+\cftsetpnumwidth{0.3in}
+\tocloftpagestyle{labcontentsfancy}
 
 \setlength\parskip{\medskipamount}
 \setlength\parindent{0pt}
 
 \newcommand{\startappendix}{
-	\appendix
-	%\immediateaddcontentsline{toc}{part}{Appendices} 
-		%Doing this instead of \part avoids a Roman number for Appendices in the toc
+	\appendix	
+	\addtocontents{toc}{\protect\renewcommand*{\protect\cftsecpresnum}{Appendix~}}
+	\addcontentsline{toc}{part}{Appendices}
 	\cleardoublepage
 	 \phantomsection
-	\addcontentsline{toc}{part}{Appendices}
+	
+	%\immediateaddcontentsline{toc}{part}{Appendices} 
+		%Doing this instead of \part avoids a Roman number for Appendices in the toc
+
 		% This replaces the use of \immediateaddcontentsline above--see note above in \renewcommand{\part} for reasons why
 %	\NoForceSectionOddPage 
 		%Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
@@ -77,7 +102,7 @@ inner=1.0in, outer=0.75in,
 
 \usepackage{xcolor}
 \usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
-\usepackage{microtype} % (apparently not compatible with pdflatex)
+%\usepackage{microtype} % (apparently not compatible with pdflatex)
 %\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
 \usepackage{authblk}
 
@@ -115,17 +140,27 @@ inner=1.0in, outer=0.75in,
 %        \includelab{1}[../../131/StudentGuideModule1/]{velocity/velocity}.  
 % Among other benefits, this creates a file velocity/velocity.aux within the 132 directory structure, 
 % so that the aux file from 132 does not interfere with the aux file from 131.
+
+\newcommand{\labimport}{\clearpage\phantomsection\input}
+\newcommand{\labsubimportfrom}{\clearpage\subinputfrom}
+\newcommand{\includeonlylab}[1]{%
+	\includeonly{#1}
+	\renewcommand{\labimport}{\include}
+	\renewcommand{\labsubimportfrom}{\subincludefrom}
+	}
+
 \newif\ifincludealllabs
 
 \NewDocumentCommand \includelab { m o m } {%
+\phantomsection
   \IfNoValueTF  {#2}  {%NO directory {#1} {#2} {#3} \par 
-	\ifnum#1=1 \input{#3} 
-	\else \ifincludealllabs \include{#3} \fi 
+	\ifnum#1=1  \labimport{#3} 
+	\else \ifincludealllabs \labimport{#3} \fi 
 	\fi
 	}
   {%There is a directory {#1} {#2} {#3} \par
-	\ifnum#1=1 \subincludefrom{#2} {#3} 
-	\else \ifincludealllabs \subincludefrom{#2} {#3} \fi 
+	\ifnum#1=1 \labsubimportfrom{#2} {#3} 
+	\else \ifincludealllabs \labsubimportfrom{#2} {#3} \fi 
 	\fi
 	}
 }
@@ -151,7 +186,7 @@ inner=1.0in, outer=0.75in,
 \usepackage{comment}
 \usepackage{makeidx}
 \usepackage{esvect}
-\usepackage{amsmath} %uncommented by MT 5/2015, used in "E near charged rod"
+\usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools} %added by MT 6/2015, for access to dcases environment in finding_v_from_e
 \usepackage{units} % provides \nicefrac function for nice looking 1/2, used for half-life t_{1/2}
@@ -248,7 +283,36 @@ inner=1.0in, outer=0.75in,
 %See https://tex.stackexchange.com/questions/111311/how-to-make-a-conditional-reference-to-a-text-label
 \makeatother
 
-\hyphenation{im-ped-ance}
 \usepackage{mfirstuc} %used for the appendix greek_alphabet
 
+\usepackage{upgreek}
+\renewcommand{\gamma}{\upgamma}
+\renewcommand{\tau}{\uptau}
 
+\usepackage{isotope} %allows formatting of isotopes, with preceding superscript and subscript for A and Z.
+
+\newcommand{\startsquarepar}{%Command fully justifies (left and right) all lines of a paragraph, including the last line.  It's a terrible kludge to cover the fact that wrapfig doesn't play with enumitem.  Used in electronics lab on op-amps.
+    \par\begingroup \parfillskip 0pt \relax}
+\newcommand{\stopsquarepar}{%
+    \par\endgroup}
+
+\usepackage[lastexercise,answerdelayed]{exercise} %Used by Matt to write homework problems, separate from the labs.
+\usepackage{bm} %for bold math symbols
+\usepackage{pdflscape}
+\usepackage[en-US,showdow]{datetime2}
+
+
+
+\newcommand{\mohm}{~{\rm m}\Omega} %assumes math mode
+\newcommand{\ohm}{~\Omega} %assumes math mode
+\newcommand{\kohm}{~{\rm k}\Omega} %assumes math mode
+\newcommand{\Mohm}{~{\rm M}\Omega} %assumes math mode
+
+\hyphenation{im-ped-ance}
+
+
+% Below, the package zref and the following line is a kluge whose only purpose is to avoid
+% the compile error ``LaTeX Error: No counter 'zref@unique' defined.''
+% See https://www.reddit.com/r/LaTeX/comments/u1hyvw/can_someone_decipher_this_error_for_me_latex/
+\usepackage{zref}
+	\makeatletter\zref@require@unique\makeatother

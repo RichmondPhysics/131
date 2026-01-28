@@ -3,28 +3,25 @@
 \input{labmanual_formatting_commands} %all general latex packages, commands, and definitions now here.
 \newcommand{\coursefolder}{Phys131} %This defines the place students will look for various files
 \newcommand{\coursesection}{\\Fall 2025\\} %This defines the section (and/or year) for the title page.
-\ForceSectionOddPage %This option makes each lab start on odd numbered page (right hand side).
 
-%The \includeonly line below is a way to save time so you don't always have to compile the WHOLE latex document, if for instance you've only made changes to a single lab.  If you want to compile more than two labs, the syntax is \includeonly{lab1,lab2,lab3} with no spaces after the commas.
-%The master.pdf produced will have only the title page, TOC, and that single lab, though the other lab names will appear in the TOC.
-\includeonly{hooke/hooke}
-
-%Use the following line to override all of the 1's and 0's in the \includelab statements below
+%------COMPILE OPTIONS---------
 %\includealllabstrue
-
-%Use the line below to disable hyperlinks, to make sure no markups are visible around references when printing.
+		% ^^^ Overrides all 1's and 0's for individual labs to include
+%\includeonlylab{oscilloscope/oscilloscope,M_problems/M_problems_latex} 
+		% ^^^ Compiles only specified part(s) of manual. (For multiple labs, use commas and no spaces.)
+\ForceSectionOddPage      
+		% ^^^ Makes each lab start on right-hand-page
 \hypersetup{draft}
-
-%Use the following line to print instructor notes at the end of the document
-\includeinstructornotestrue
+		% ^^^ Disables hyperlinks for printing clean-looking hardcopy.
+%\includeinstructornotestrue
+		% ^^^ prints instructor notes at the end of the document
 
 \makeindex
 \begin{document}
 
 \input{131_front_pages/131_title_page}
 
-\tableofcontents{}
-\cleardoublepage
+\tableofcontents{}\thispagestyle{labcontentsfancy}
 
 %--------------------------------------------
 \part{Kinematics}
