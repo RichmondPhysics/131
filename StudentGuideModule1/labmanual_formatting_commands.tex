@@ -1,5 +1,12 @@
 %Various Latex formatting parts are here, to keep master.tex files relatively clean.
 
+\usepackage{iftex}
+%If compiling using pdflatex, this command makes the output file pdf 1.7, and allows up to pdf 1.7 inputs with no warning message.
+\ifpdftex
+   \pdfminorversion 7
+\fi
+
+
 %---------------------------------------------------------------------------------------------------
 %Things related to fonts and overall page appearance
 
@@ -102,8 +109,7 @@ inner=1.0in, outer=0.75in,
 
 \usepackage{xcolor}
 \usepackage[pagecolor={white},nopagecolor={white}]{pagecolor}
-%\usepackage{microtype} % (apparently not compatible with pdflatex)
-%\usepackage{epstopdf} %this package apparently allows pdflatex to work on this document, since all we use are eps figures.
+\usepackage{microtype} 
 \usepackage{authblk}
 
 \usepackage[hyperfootnotes=false]{hyperref} %hypderfootnotes disabled for compatibility with footmisc.
@@ -301,6 +307,21 @@ inner=1.0in, outer=0.75in,
 \usepackage{pdflscape}
 \usepackage[en-US,showdow]{datetime2}
 
+\usepackage{calc}
+\NewDocumentCommand \figuretoright {m O{} m +m} {%
+		% #1 is the picture width
+		% #2 is list of optional parameters to \includegraphics
+
+		% #3 is the picture filename
+		% #4 is the text to the right
+	\begin{minipage}{\textwidth - #1\textwidth - 3pt}
+	#4
+	\end{minipage}
+	\begin{minipage}{(#1\textwidth) - 2pt}
+	\medskip
+	\hfill\includegraphics[#2]{#3}
+	\end{minipage}
+}
 
 
 \newcommand{\mohm}{~{\rm m}\Omega} %assumes math mode
