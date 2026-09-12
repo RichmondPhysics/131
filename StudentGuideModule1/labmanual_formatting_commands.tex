@@ -69,7 +69,8 @@ inner=1.0in, outer=0.75in,
 \usepackage{tocloft} %Allow us to leave page numbers for Parts out of table of contents
 \cftpagenumbersoff{part} %No page numbers for Parts out of table of contents
 \renewcommand{\cftsecdotsep}{\cftsubsecdotsep}
-\setcounter{tocdepth}{1}
+\renewcommand{\cftsubsecaftersnumb}{~Problems:~}
+\setcounter{tocdepth}{2} %Matt uses subsections for homework problems
 \setlength{\cftbeforesecskip}{8.0pt plus 1.0pt minus 3.0pt} %space between chapter listings in TOC.  Default is 10.0pt plus 1.0pt
 		\makeatletter
 		\newcommand{\cftlotnumberline}[1]{\@cftbsnum #1\@cftasnum\@cftasnumb}
@@ -190,6 +191,12 @@ inner=1.0in, outer=0.75in,
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{comment}
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\excludecomment}{\message{Excluding '#1' comment.}}{}{}{} %supresses messages in output from every comment
+%\makeatother
+%\usepackage{silence}
+%\WarningFilter{comment}{Excluding}
 \usepackage{makeidx}
 \usepackage{esvect}
 \usepackage{amsmath}
