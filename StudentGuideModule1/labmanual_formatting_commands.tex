@@ -83,6 +83,8 @@ inner=1.0in, outer=0.75in,
 		\renewcommand{\cftsecpresnum}{Lab~}
 		\renewcommand{\cftsecaftersnumb}{:~}
 		\setcounter{tocdepth}{2} %Matt uses subsections for homework problems
+		\counterwithin{footnote}{subsection}
+		\renewcommand{\thefootnote}{\arabic{footnote}}
 		\let\numberline\cftlotnumberline
 \cftsetpnumwidth{0.3in}
 \tocloftpagestyle{labcontentsfancy}
@@ -105,6 +107,8 @@ inner=1.0in, outer=0.75in,
 		%Makes NO extra page break after each appendix; Appendices can start on odd or even page (right or left side).
 	\renewcommand{\headersupplementmark}{Appendix }
 	\titleformat{\section}{\normalfont\Large\bfseries}{\headersupplementmark \thesection :}{1ex}{}
+	\setcounter{page}{1}
+	\renewcommand{\thepage}{A-\arabic{page}}
 }
 
 \usepackage{xcolor}
